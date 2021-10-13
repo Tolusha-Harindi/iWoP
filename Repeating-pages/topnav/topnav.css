@@ -1,0 +1,72 @@
+/* Add a white background color to the top navigation */
+.topnav {
+    position: fixed;
+    background-color: rgb(250, 250, 250);
+    overflow: hidden;
+    height: 10%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  /* The sticky class is added to the navbar  when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: Right;
+    color: #000000;
+    text-align: center;
+    padding: 30px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color:#FFD041;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link - Register*/
+  .topnav a.active {
+    background-color:#151965;
+    color: white;
+    border-radius: 40px;
+    margin-top: 10px;
+    line-height: 5px;
+    padding: 25px;  
+  }
+
+  .topnav a.activeY {
+    background-color:#151965;
+    color: white;
+    margin-top: 0px;
+    line-height: 25px;
+    padding: 25px; 
+  }
+
+  /* logo*/
+  .logo input {
+    width: 5%;
+    height: 100%; 
+    position: absolute;   
+  }
+  
+
+  /* Add a color to the active/current link - Payments*/
+  .topnav a.active1 {
+    background-color:#FFD041;
+    color:black;
+    border-radius: 6px;
+    margin-top: 10px;
+    line-height: 5px;
+    padding: 25px;  
+  }

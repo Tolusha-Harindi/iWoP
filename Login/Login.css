@@ -1,0 +1,143 @@
+
+
+/*background image*/
+body {
+  background-image: url('../Images/bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 100%;
+}
+
+/*Login  section */
+.box {
+    background-color: #b4b0ae;
+    float: right;
+    align-items: center;
+    margin-top: 10%;
+    margin-right:5%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.4s;
+    width: 32%;
+    height: 70%;
+    border-radius: 10%;   
+}
+  .box-heading{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+  }
+
+/*Space between two input fields*/
+.info .group{
+	margin-bottom:4%;
+}
+
+.error-log_in {
+  font-size: 0.8rem;
+  background-color: #F2DEDE;
+  color: #A94442;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  width: 80%;
+  margin:auto;
+  
+}
+
+
+/*input data*/
+.info .group .label,
+.info .group .input{
+	width:80%;
+	color:black; /*change color of input data*/
+	display:block;
+  margin: auto;
+}
+
+/*input field box*/
+.info .group .input{
+	border:none;
+	padding:15px 25px;
+  background:white;
+}
+
+.login-start{
+	margin:auto;
+	max-width:85%;
+	min-height:110%;
+	position:relative;
+  
+}
+
+
+/*Keep me signed in*/
+  .container{
+    color:black;
+    font-size:12px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+  }
+
+ /*login, Register button*/ 
+  .button
+{
+	    position: relative;
+    	display: inline-block;
+    	padding: 15px 25px;
+    	width: 25%;
+      border: none;
+    	text-align: center;
+      font-family: 'Poppins', sans-serif;
+    	color: #fff !important;
+    	text-decoration: none;
+    	font-size: 17px;
+    	overflow: hidden;
+    	background-color: black;
+      margin-bottom: 4%; 
+}
+
+
+/*forgot password*/
+.forgetpw{
+	text-align:center;
+	color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  margin-bottom: 5%;
+}
+
+
+
+/*Register as a worker or company*/
+.box1 {
+  background-color: #b4b0ae;
+  float: right;
+  align-items: center;
+  margin-top: 6%;
+  margin-right:5%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.4s;
+  width: 35%;
+  height: 90%;
+  border-radius: 10%;
+  border:none;   
+}
+
+
+
+/*Register as a customer*/
+.box2 {
+  background-color: #b4b0ae;
+  float: right;
+  align-items: center;
+  margin-top: 7%;
+  margin-right:5%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.4s;
+  width: 35%;
+  height: 85%;
+  border-radius: 10%;   
+}
+
+
+
+

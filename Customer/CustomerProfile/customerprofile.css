@@ -1,0 +1,106 @@
+
+/*------------------------heading1 - Profile-------------------------------*/
+.heading1{
+    position: relative;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    margin-top: 100px;
+}
+
+ 
+/*-----------------Profile image in Profile page*-------------------*/
+.floatRight{
+  max-height: 120px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 50%;
+}
+
+
+/*------------------------------------------form-----------------------------------------------*
+/*Space between two input fields*/
+.info .group{
+	margin-bottom:2%;
+    margin-left: 45%;
+}
+
+/*input data*/
+.info .group .input{
+	
+	color:black; /*change color of input data*/
+	display:block;
+}
+
+/*input field box*/
+.info .group .input{
+	border:none;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	padding:15px 15px;
+    background:white;
+    width:80%;
+}
+
+/*-----------------names--------------------------------*/
+.field{
+    float:left;
+    margin-left: -30%;
+    margin-top: 2%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+.button4, .button5{
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    text-align: center;
+    color: #fff !important;
+    text-decoration: none;
+}
+/*----------Update button--------------*/
+.button4{
+    float:left;
+    margin-top:0%;
+    margin-left:58%;
+    padding: 15px 45px;
+    background-color: #E95B5B;
+}
+
+/*------------Delete Account button-------------------*/
+.button5{
+    float:left;
+    margin-top:-3.3%;
+    margin-left:70%;
+    padding: 15px 35px;
+    background-color: #151965;
+}
+
+
+/*---------------------button hover color---------------------*/
+.button4:hover,.button5:hover {
+    background-color: blue;
+  }
+
+  
+/*--------------------------camera icon----------------------*/
+.cam{
+    float: left;
+    margin-top:-4.5%;
+    margin-left: 55%;
+    width: 60px;
+    height: 60px;
+}
+
+
+/*------------------------edit icon--------------------------*/
+.edit{
+    float: right;
+    margin-top:-4%;
+    margin-right: 10%;
+    width: 20px;
+    height: 20px;
+}
+

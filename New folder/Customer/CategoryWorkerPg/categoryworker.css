@@ -1,0 +1,220 @@
+
+/*--------------------------Search bar-----------------------------*/
+
+/*District*/
+.c1,.c3{
+    position:relative;
+    margin-top:30px;
+    margin-left:35px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+}
+
+/*---Select district-----------*/
+   #list1{
+    align-items: center;
+    justify-content: center;
+    /* margin: 0 auto;*/
+    height: 5vh;
+    width: 300px;
+    margin-left: 0%;
+    margin-top: 2%;
+   }
+
+   /*-----Select city------*/
+   #list2{
+    align-items: center;
+    justify-content: center;
+    /* margin: 0 auto;*/
+    height: 5vh;
+    width: 300px;
+    margin-left: 0%;
+    margin-top: 2%;
+   }
+
+
+ /*---------------------------------Near to you--------------------------------*/
+
+/*Near to you*/
+.c2{
+    position:relative;
+    margin-top:100px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    text-align:center;
+}
+
+/*Outer box-workers list - Right*/
+.box{
+    position: relative;
+    align-items: center;
+    margin-top: -18%;
+    margin-left:35%;
+    border:gray;
+    border-style: solid;
+    transition: 0.4s;
+    width: 60%;
+    height: 75%;
+}
+
+
+/*inner box*/
+.box2{
+    position: relative;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 5%;
+    margin-left:5%;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+    transition: 0.4s;
+    width: 90%;
+    height: 40%;
+}
+
+/*divide into unequal columns*/
+.column{
+    align-items: center;
+
+}
+
+/*left and right columns*/
+.left, .right{
+     width: 40%;
+}
+
+.middle{
+    width:20%;
+}
+
+
+/*profile image*/
+.prof{
+    height: 85px;
+    width: 85px;
+    margin-left: 6%;
+    margin-top:2% ;
+}
+
+/*location icon*/
+.location{
+    height: 35px;
+    width: 35px;
+    margin-left: 40%;
+    margin-top:3% ;
+}
+
+/*job icon*/
+.job{
+    height: 35px;
+    width: 35px;
+    margin-left: 40%;
+    margin-top:3% ;
+}
+
+/*last active*/
+.lastactive{
+    color: #082690;
+    margin-left:5%;
+    margin-top:1%;
+}
+
+/*job count*/
+.txt1{
+    margin-left:5%;
+    margin-top:1%;
+}
+
+
+/*bold name*/
+.txt3{
+    margin-left: 40%;
+    margin-top: -22%;
+}
+
+/* details*/
+.txt4{
+    margin-left: 60%;
+    margin-top: -17%;
+    margin-bottom: 22%;
+}
+
+/*---------Stars------*/
+.star{
+    margin-left:5%;
+    margin-top: -0.5%;
+  }
+
+  /*--------Checked-Ratings-----------*/
+  .checked {
+    color: orange;
+  }
+
+  /*star count*/
+.txt2{
+    margin-left:17%;
+    margin-top:-2%;
+}
+
+/*box4--- phone number---*/
+.box4{
+    padding:15px 15px;
+    width: 15%;
+    height:5%;
+    background-color: #2EAB2B;
+    margin-left: 78%;
+    margin-top: -22%;
+    
+}
+
+/*phone number*/
+.txt5{
+    color:white;
+    text-align:center;
+}
+
+
+/*-------------------------------Vertical menu--------------------------------*/
+
+/*Top -head - All category*/
+.box1 {
+    position: fixed;
+    background-color:black ;
+    color: white;
+    width: 250px;
+    height: 50px;
+    margin-top:-280px;
+    margin-left: 50px;
+}
+
+.box1-heading{
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Entire menu*/
+.vertical-menu {
+    width: 250px;
+    height: 250px;
+    overflow-y: auto;
+    margin-top:0;
+    margin-left: 0px;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+}
+
+/*Categories-one by one*/
+.vertical-menu a {
+    background-color: white;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 4px;
+    box-shadow: 0px 4px 32px 0px rgba(0,0,0,0.2);
+}
+
+/*hiver color-when clicking*/
+.vertical-menu a:hover {
+    background-color:#fbc531 ;
+}

@@ -1,0 +1,113 @@
+
+/*------------------------heading1 - Manager-------------------------------*/
+.heading1{
+    position: relative;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+
+/*----------------------Add New Manager Button-------------------------*/
+.button1, .button2, .button3, .button4, .button5{
+    float: right;
+    padding: 18px 25px;
+    background-color: #151965;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    text-align: center;
+    color: #fff !important;
+    text-decoration: none;
+    margin-right: 5%;
+    margin-top: 0%;
+}
+
+/*--------------------------View Profile button----------------------*/
+.button2{
+    padding: 15px 25px;
+    background-color: #E95B5B;
+    margin-top: 12%;
+}
+
+/*-------------------------------Remove button -----------------------------------*/
+.button3{
+    padding: 15px 38px;
+    background-color: #2EAB2B;
+    margin-top: 22%;
+    margin-right: -14%;
+}
+
+/*----------Add button--------------*/
+.button4{
+    float:left;
+    margin-top:0%;
+    margin-left:58%;
+    padding: 15px 45px;
+    border: none;
+    background-color: #E95B5B;
+}
+
+/*------------Cancel button-------------------*/
+.button5{
+    float:left;
+    margin-top:-3.3%;
+    margin-left:70%;
+    padding: 15px 35px;
+    border: none;
+    background-color: #151965;
+}
+/*--------------------Outer box Manager ------------------------------*/
+.box1{
+    position: relative;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 30%;
+    box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2);
+    width:65%;
+    height: 55%; 
+}
+
+/*------------------------------Profile image---------------------------*/
+.profimg{
+    float: left;
+    margin-top:10%;
+    margin-left: 20%;
+}
+
+/*------------------------------------------form-----------------------------------------------*
+/*Space between two input fields*/
+.info .group{
+  margin-top: 1em;
+	margin-bottom:2%;
+    margin-left: 45%;
+}
+
+/*input data*/
+.info .group .label,
+.info .group .input{
+	
+	color:black; /*change color of input data*/
+	display:block;
+}
+
+/*input field box*/
+.info .group .input{
+	border:none;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	padding:15px 15px;
+    background:white;
+    width:80%;
+}
+
+/*-----------------names--------------------------------*/
+.field{
+    float:left;
+    margin-left: -25%;
+    margin-top: 2%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+}
+
+
