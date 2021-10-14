@@ -1,1 +1,1 @@
-# iWoP
+# iWoP project
