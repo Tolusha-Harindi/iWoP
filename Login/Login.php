@@ -1,3 +1,16 @@
+<?php 
+session_start();
+if(isset($_SESSION['email'])){
+    session_unset();
+    session_destroy();
+    header('location:Login.php');
+    exit();
+}
+else{
+
+?>
+
+
 <html>
 <title> Login Page </title>
 
@@ -59,3 +72,7 @@
 </body>
 
 </html>
+
+<?php 
+    }
+?>

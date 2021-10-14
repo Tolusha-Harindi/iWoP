@@ -28,10 +28,14 @@ if(isset($_POST['submit'])){
         header('location:Login.php?error=Email is required');
         exit();
       }
-    else if (empty($password)) {
+    else if(empty($password)) {
         header('location:Login.php?error=Password is required');
         exit();
     }
+    /*else if(empty($email && $password)){
+        header('location: Login.php?error= Email and Password are required');
+        exit();
+    }*/
     else{
         /*------------------------admin-------------------------*/
         if(mysqli_num_rows($query_admin)===1){

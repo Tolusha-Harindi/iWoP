@@ -130,7 +130,7 @@
     <!---------------------------------------Right--------------------------------------->
       <div class="split right1">
         <div class="centered">
-            <button class="button1"> <b>Pay</b></button> 
+            <a  href="../Payment-cus/payment_cus.php" class="button1" > <b>Pay</b></a> <!-----------------Pay button----------->
             <div class="details">
                 <b class="t5"> Kamal Perera</b> </br>
                 <hr> 
@@ -163,7 +163,7 @@
                     <span class="fa fa-star"></span>
                     <span class="fa fa-star"></span>
                 </div>
-                
+                <!----------------Feedback section------------>
                     <form name = "reg-w"  method="post" action="feedback.php">
                         <p class="field"> <b>Name</b></p>
                         <input id="name" name="name" type="text" placeholder = "Name" class="input" required>

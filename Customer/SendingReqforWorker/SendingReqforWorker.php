@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../Repeating-pages/topnav/topnav.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="SendingReqforWorkers.css">
+    <link rel="stylesheet" type="text/css" href="SendingReqforWorkers.css">
 
     <?php
         include '../../Repeating-pages/topnav/topnav2-customer.php'
@@ -16,7 +16,6 @@
 </head>
 
 <body>
-
     <div>
         <h1 class="heading1">Requesting</h1>
         <div class="box">

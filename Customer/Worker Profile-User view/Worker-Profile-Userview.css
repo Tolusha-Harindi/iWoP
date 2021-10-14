@@ -197,14 +197,14 @@
   }
 
 
-  /*---Pay Button--*/
+  /*-------------Pay Button------------*/
   .button1, .button2, .button3{
     background-color: #082690;
     padding: 16px 20px;
     color:white;
     border: none;
     border-radius: 0;
-    width: 100px;
+    width: 15%;
     margin-left: 100%;
     margin-top: 0%;
     margin-bottom: 5%;

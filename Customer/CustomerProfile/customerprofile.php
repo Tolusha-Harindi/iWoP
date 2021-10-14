@@ -1,4 +1,14 @@
 
+<?php
+session_start();
+if(isset($_SESSION['email'])){
+
+  include '../../Backend/db_connection.php'; //check mangers id or not
+  $temp= $_SESSION['email']; 
+  $sql = "SELECT email FROM customer WHERE email='$temp'";
+  $result = mysqli_query($db,$sql);
+  if(mysqli_num_rows($result)>0){ 
+?>
 
 <html lang="en" dir="ltr"></html>
     <title> Customer profile </title>
@@ -125,14 +135,32 @@
                                     </div>  
                         </div>
                     </div>
-                </form>
-              </div>
-
-              <div>
+                    <div>
                 <input type="submit" value="Save"  class="button4"> 
                 <input type="reset" value="Delete Account" class="button5"> 
             </div> 
+                </form>
+              </div>
+
+             
     </div>
     </body>
 
     </html>
+
+    <?php 
+  }
+  else{
+    echo '<script type="text/javascript">javascript:history.go(-1)</script>'; //redirect to previous page
+    exit();
+  }
+ 
+  
+}
+
+
+else{
+  header('location:../../Login/Login.php');
+  exit();
+}
+?>
