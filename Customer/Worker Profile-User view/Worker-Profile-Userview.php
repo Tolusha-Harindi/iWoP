@@ -130,7 +130,7 @@
     <!---------------------------------------Right--------------------------------------->
       <div class="split right1">
         <div class="centered">
-            <button class="button1"> <b>Pay</b></button> 
+            <a  href="../Payment-cus/payment_cus.php" class="button1" > <b>Pay</b></a> <!-----------------Pay button----------->
             <div class="details">
                 <b class="t5"> Kamal Perera</b> </br>
                 <hr> 
