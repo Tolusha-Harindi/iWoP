@@ -163,7 +163,7 @@
                     <span class="fa fa-star"></span>
                     <span class="fa fa-star"></span>
                 </div>
-                
+                <!----------------Feedback section------------>
                     <form name = "reg-w"  method="post" action="feedback.php">
                         <p class="field"> <b>Name</b></p>
                         <input id="name" name="name" type="text" placeholder = "Name" class="input" required>

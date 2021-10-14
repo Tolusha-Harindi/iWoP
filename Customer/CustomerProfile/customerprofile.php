@@ -135,13 +135,14 @@ if(isset($_SESSION['email'])){
                                     </div>  
                         </div>
                     </div>
-                </form>
-              </div>
-
-              <div>
+                    <div>
                 <input type="submit" value="Save"  class="button4"> 
                 <input type="reset" value="Delete Account" class="button5"> 
             </div> 
+                </form>
+              </div>
+
+             
     </div>
     </body>
 

@@ -97,39 +97,40 @@
               <script src="../../Repeating-pages/sidenav/sidenavigation.js"></script>
 
               <div>
-                <form name = "reg-w" onsubmit="return validation()" method="post">
+                <form name = "reg-w" method="post" action="new_manager.php">
                     <div class="reg-start">
                             <div class="info">
                                     <div class="group">
                                         <p class="field"> <b>Name</b></p>
-                                        <input id="name" type="text" placeholder = "Name" class="input" required>
+                                        <input id="name" name="name" type="text" placeholder = "Name" class="input" required>
                                     </div>
                                     <div class="group">
                                         <p class="field"> <b>Contact Number</b></p>
-                                        <input id="contact" type="tel" placeholder = "Contact Number" class="input" required>
+                                        <input id="contact" name="contact"type="tel" placeholder = "Contact Number" class="input" required>
                                     </div>
                                     <div class="group">
                                         <p class="field"> <b>NIC Number</b></p>
-                                        <input id="NIC" type="text" placeholder = "NIC Number" class="input" required>
+                                        <input id="NIC" name="NIC" type="text" placeholder = "NIC Number" class="input" required>
                                     </div>
                                     <div class="group">
                                         <p class="field"> <b>Email</b> </p>
-                                        <input id="email" type="email" placeholder = "Email" class="input" required>
+                                        <input id="email" name="email" type="email" placeholder = "Email" class="input" required>
                                     </div>
                                     <div class="group">
                                         <p class="field"> <b>Password</b></p>
-                                        <input id="pass" type="password" placeholder= "Password" class="input" data-type="password" required>
+                                        <input id="pass" name="pass" type="password" placeholder= "Password" class="input" data-type="password" required>
                                     </div>
                                     
                         </div>
                     </div>
+                    <div>
+                <input type="submit" name="submit" value="Add" class="button4">
+                <input type="reset" name="reset" value="Cancel" class="button5">
+            </div> 
                 </form>
               </div>
 
-              <div>
-                <input type="submit" value="Add" class="button4">
-                <input type="button" value="Cancel" class="button5">
-            </div> 
+            
    
     </body>
 
