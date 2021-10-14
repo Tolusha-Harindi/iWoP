@@ -1,0 +1,129 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/*heading - Payments*/
+.full{
+    margin-top: 10%;
+    text-align: center;
+    font-size:40px;
+}
+
+/*topic*/
+.topic{
+    margin-top: 3%;
+    margin-left: -45%;
+    font-size:35px;
+    font-size:30px;
+    margin-bottom: 3%;
+    color: darkblue;
+}
+
+
+/*field and text*/
+.field{
+    margin-bottom: 1%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    text-align: left;
+    margin-left:5%;
+}
+
+/*input fields*/
+.input{
+    border: solid;
+    width: 25%;
+    height: 5%;
+	padding:5px 5px;
+    background:white;
+    display:block;
+    margin-left: 20%;
+    font-size: 18px;
+    margin-top: -2%;
+}
+
+/*Select category*/
+.select{
+    position:relative;
+    font-size: 18px; 
+    width: 25%;
+    height: 5%;
+    padding:5px 5px;
+    margin-left: -35%;
+    margin-top:-2%;
+    border: solid;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/*Pay*/
+.button1, .button2
+{
+	    position: relative;
+    	display: inline-block;
+    	padding: 15px 45px;
+    	width: 10%;
+    	text-align: center;
+        font-family: 'Poppins', sans-serif;
+    	color: #fff !important;
+    	text-decoration: none;
+    	font-size: 17px;
+    	overflow: hidden;
+    	background-color: #2EAB2B;
+        border: none;
+        margin-left: 0%;
+        margin-top: 6%;
+}
+
+/*cancel*/
+.button2
+{
+    	background-color: #F63A10;
+        margin-left: 5%;
+        margin-bottom: 4%;
+}
+
+/*-----Verticle line-----------*/
+.vl {
+    border-left: 4px solid grey;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 35%;
+  }
+
+  /*---------------------------------------Worker details----------------------------------------*/
+
+/*topic*/
+.topic2{
+    margin-top: -48%;
+    margin-left: 40%;
+    font-size:35px;
+    font-size:30px;
+    margin-bottom: 3%;
+    color: darkblue;
+}
+
+
+  /*input fields*/
+.input2{
+    border: solid;
+    width: 25%;
+    height: 5%;
+	padding:5px 5px;
+    background:white;
+    display:block;
+    margin-left: 70%;
+    font-size: 18px;
+    margin-top: -2%;
+}
+
+
+/*field and text*/
+.field2{
+    font-size: 18px;
+    text-align: left;
+    margin-left:55%;
+}
