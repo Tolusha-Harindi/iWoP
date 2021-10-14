@@ -60,13 +60,14 @@
     color: #fff !important;
     text-decoration: none;
 }
-/*----------Update button--------------*/
+/*----------Save button--------------*/
 .button4{
     float:left;
     margin-top:0%;
     margin-left:58%;
     padding: 15px 45px;
     background-color: #E95B5B;
+    border: none;
 }
 
 /*------------Delete Account button-------------------*/
@@ -76,6 +77,7 @@
     margin-left:70%;
     padding: 15px 35px;
     background-color: #151965;
+    border: none;
 }
 
 
