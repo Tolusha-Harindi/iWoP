@@ -3,15 +3,19 @@
     <title> New Manager </title>
 
     <head> 
+
+    <?php
+      $result = require 'all_dash.php';
+    ?>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../../Repeating-pages/topnav/topnav.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!----Profile---->
-        <link rel="stylesheet" href="ManagerPageforAdmin.css"> 
+        <link rel="stylesheet" href="admin_dashboard.css"> 
         <link rel="stylesheet" href="../../Repeating-pages/sidenav/sidenavigation.css"> 
          <!-- Boxiocns CDN Link -->
-        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'><!------------side nav icons----->
 
         <div class="sticky">
           <div class="topnav">
@@ -98,40 +102,39 @@
               <script src="../../Repeating-pages/sidenav/sidenavigation.js"></script>
 
 
-<!------------------------------------Form-------------------------------->
-              <div>
-                <form name = "reg-w" method="post" action="new_manager.php">
-                    <div class="reg-start">
-                            <div class="info">
-                                    <div class="group">
-                                        <p class="field"> <b>Name</b></p>
-                                        <input id="name" name="name" type="text" placeholder = "Name" class="input" required>
-                                    </div>
-                                    <div class="group">
-                                        <p class="field"> <b>Contact Number</b></p>
-                                        <input id="contact" name="contact"type="tel" placeholder = "Contact Number" class="input" required>
-                                    </div>
-                                    <div class="group">
-                                        <p class="field"> <b>NIC Number</b></p>
-                                        <input id="NIC" name="NIC" type="text" placeholder = "NIC Number" class="input" required>
-                                    </div>
-                                    <div class="group">
-                                        <p class="field"> <b>Email</b> </p>
-                                        <input id="email" name="email" type="email" placeholder = "Email" class="input" required>
-                                    </div>
-                                    <div class="group">
-                                        <p class="field"> <b>Password</b></p>
-                                        <input id="pass" name="pass" type="password" placeholder= "Password" class="input" data-type="password" required>
-                                    </div>
-                                    
-                        </div>
-                    </div>
-                    <div>
-                      <input type="submit" name="submit" value="Add" class="button4">
-                      <input type="reset" name="reset" value="Cancel" class="button5">
-                  </div> 
-                </form>
-              </div>
+<!------------------- Mnagers table-------------------->
+
+        <div class= "container"> 
+        <div class="table-wrapper">
+            <table style="border-spacing: 25px" class="fl-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Contact No</th>
+                        <th>Email</th>
+                        <th>NIC</th>
+                    </tr>
+                </thead>
+                <tbody>
+                
+                    <?php
+            while ($rows = mysqli_fetch_array($result)){
+                echo "<tr>
+                    <td>".$rows['name']."</td>
+                    <td>".$rows['contact_No']."</td>
+                    <td>".$rows['email']."</td>
+                    <td>".$rows['NIC']."</td>
+                    
+                </tr>";
+            }
+          ?>
+                   
+                    
+                </tbody>
+            </table>
+    </div>
+
+
 
     </body>
 
