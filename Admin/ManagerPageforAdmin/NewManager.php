@@ -17,7 +17,7 @@
               <div class="logo"> 
                   <input type="image" id="image" alt="Landing" src="../../Images/Logo.jpg">
               </div>
-               <a href="../../Landing/Landing.html"> <b>| Logout  </b></a> <!--logout -->
+              <a href="../../Landing/Landing.html"> <b>| Logout  </b></a> 
               <a href="#help"> <b>| Help page  </b></a> 
               <a href="#category"><b> | Category </b></a> 
               <a href="#alladds"> <b>| All Adds </b></a> 

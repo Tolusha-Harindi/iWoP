@@ -88,7 +88,7 @@
 	    position: relative;
     	display: inline-block;
     	padding: 15px 45px;
-    	width: 60%;
+    	width: 15%;
     	text-align: center;
         font-family: 'Poppins', sans-serif;
     	color: #fff !important;
@@ -97,15 +97,16 @@
     	overflow: hidden;
     	background-color: #2EAB2B;
         border: none;
-        margin-left: 50%;
+        margin-left: 38%;
+        margin-bottom: 4%;
 }
 
 /*cancel*/
  .button2
 {
     	background-color: #F63A10;
-        margin-left: 70%;
-    
+        margin-left: 5%;
+        margin-bottom: 4%;
 }
 
 .txt1{
