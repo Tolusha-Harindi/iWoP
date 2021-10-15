@@ -39,32 +39,32 @@ if(isset($_SESSION['email'])){
 
                 <ul class="nav-links">
                 <li>
-                    <a href="#">
+                    <a href="../CustomerProfile/customerprofile">
                     <i class='bx bxs-user' ></i>
                     <span class="link_name">My Profile</span>
                     </a>
                     <ul class="sub-menu blank">
-                    <li><a class="link_name" href="#">My Profile</a></li>
+                    <li><a class="link_name" href="../CustomerProfile/customerprofile">My Profile</a></li>
                     </ul>
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="../Changepassword/changepassword.php">
                     <i class='bx bxs-check-shield' ></i>
                     <span class="link_name">Change Password</span>
                     </a>
                     <ul class="sub-menu blank">
-                    <li><a class="link_name" href="#">Change Password</a></li>
+                    <li><a class="link_name" href="../Changepassword/changepassword.php">Change Password</a></li>
                     </ul>
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="../Wantedads/wantedads.php">
                     <i class='bx bxs-image' ></i>
                     <span class="link_name">Post Your Ads</span>
                     </a>
                     <ul class="sub-menu blank">
-                    <li><a class="link_name" href="#">Post Your Ads</a></li>
+                    <li><a class="link_name" href="../Wantedads/wantedads.php">Post Your Ads</a></li>
                     </ul>
                 </li>
 
@@ -79,17 +79,17 @@ if(isset($_SESSION['email'])){
                     <ul class="sub-menu">
                     <li><a class="link_name" href="#">Responses</a></li>
                     <li><a href="../ResponsesByWorkers/ResponsesbyWorkers.php">Job invite Requests</a></li>
-                    <li><a href="#">Posted Ads</a></li>
+                    <li><a href="../ApplyforJob-Responses/ApplyforJob-customerview.php">Posted Ads</a></li>
                     <!-- <li><a href="#">PHP & MySQL</a></li>-->
                     </ul>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="../RecentWorkers/RecentWorkers.php">
                     <i class= 'bx bxs-group'></i>
                     <span class="link_name">Recent Workers</span>
                     </a>
                     <ul class="sub-menu blank">
-                    <li><a class="link_name" href="#">Recent Workers</a></li>
+                    <li><a class="link_name" href="../RecentWorkers/RecentWorkers.php">Recent Workers</a></li>
                     </ul>
                 </li>
             </ul>
