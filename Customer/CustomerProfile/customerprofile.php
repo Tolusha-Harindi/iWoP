@@ -3,7 +3,7 @@
 session_start();
 if(isset($_SESSION['email'])){
 
-  include '../../Backend/db_connection.php'; //check mangers id or not
+  include '../../Backend/db_connection.php'; //check customer id or not
   $temp= $_SESSION['email']; 
   $sql = "SELECT email FROM customer WHERE email='$temp'";
   $result = mysqli_query($db,$sql);
