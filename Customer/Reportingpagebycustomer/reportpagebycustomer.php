@@ -23,7 +23,7 @@
 
     <div class="heading1"> Report</div>
     <div class="box1"> 
- <a href="#" class="previous">&laquo; Previous</a>
+ <a href="../WorkerProfile-UserView/Worker-Profile-Userview.php" class="previous">&laquo; Previous</a>
           <div class="imguser">
               <img src="user.png" alt="user">
 </div>
@@ -57,9 +57,10 @@
                 </table>
                 <br>
                <textarea rows="10" cols="70" name="comment" form="">Other reasons......</textarea><br><br>
+               <button class="send" type="button" onclick="alert('send successfully')">Send</button>
                 <button  class="cancel"type="button" onclick="alert('cancel')">Cancel</button>
 
-               <button class="send" type="button" onclick="alert('send successfully')">Send</button>
+               
                
             </div>
         </div>

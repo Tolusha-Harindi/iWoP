@@ -2,7 +2,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>admin change password</title>
     <link rel="stylesheet" href="changepwd.css">
     <link rel="stylesheet" href="../../Repeating-pages/sidenav/sidenavigation.css"> 
     <!-- Boxiocns CDN Link -->

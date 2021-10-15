@@ -154,7 +154,7 @@
                         <img src="../../Images/company.jpg" class="upload" >
                 </div>
                 <a href="../SendingReqforWorker/SendingReqforWorker.php" input type="submit" value="button"  class="button2"> Job Invite </a> 
-                <a href="#" input type="button" value="button" class="button3"> Report </a> </br>
+                <a href="../Reportingpagebycustomer/reportpagebycustomer.php" input type="button" value="button" class="button3"> Report </a> </br>
                 <b class="t7">Give Your Feedbacks and Ratings</b> </br>
 
                 <div class="star2">
