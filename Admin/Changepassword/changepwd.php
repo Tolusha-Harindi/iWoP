@@ -91,40 +91,30 @@
 </section>
 
 <script src="../../Repeating-pages/sidenav/sidenavigation.js"></script>
-
+<!--------------------------------------------------------------------------------------------------------->
 
 </div>
 
-<div class="box2">
-    <div class="mainDiv">
         <div class="cardStyle">
             <form action="changePassword.jsp" method="post">
                 <img src="key.png" class="floatRight">
                 <div class="inputDiv">
-                    <label class="inputLabel" for="currnetPassword">Current Password</label>
+                    <label class="inputLabel" for="currnetPassword">Current Password</label> </br>
                     <input type="password" id="current password" name="currentpassword" required>
                 </div>
                 <div class="inputDiv">
-                    <label class="inputLabel" for="password">New Password</label>
+                    <label class="inputLabel" for="password">New Password</label> </br>
                     <input type="password" id="password" name="password" required>
                 </div>
 
                 <div class="inputDiv">
-                    <label class="inputLabel" for="confirmPassword">Confirm Password</label>
+                    <label class="inputLabel" for="confirmPassword">Confirm Password</label> </br>
                     <input type="password" id="confirmPassword" name="confirmPassword">
                 </div>
-
-                <div class="buttonWrapper">
-                    <button type="submit" id="submitButton" onclick="validateSignupForm()" class="submitButton pure-button pure-button-primary">
-                        <span>Change Password</span>
-
-                    </button>
-                </div>
+                
+                <input type="submit" value="Change Password"  class="button4"> 
+               
             </form>
         </div>
-
-</div>
-</div>
-
 </body>
 </html>
