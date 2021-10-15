@@ -48,7 +48,6 @@
     font-size: 16px;
     /*float: right;*/
     cursor: pointer;
-    border-radius: 50px;
     margin-left: 100%;
 
 }
@@ -93,7 +92,6 @@ input[type="text"]::placeholder{
     font-size: 16px;
     /*float: right;*/
     cursor: pointer;
-    border-radius: 50px;
     margin-top: 2%;
     margin-bottom: 2%;
     margin-left: 100%;
