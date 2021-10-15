@@ -20,7 +20,7 @@ if(isset($_POST['submit'])){
     $query_customer = mysqli_query($db, $sql_customer);
     $sql_worker ="SELECT * FROM worker WHERE email='$email' LIMIT 1";
     $query_worker = mysqli_query($db, $sql_worker);
-    $sql_company ="SELECT * FROM company WHERE email='$email' LIMIT 1";
+    $sql_company ="SELECT * FROM company WHERE Email='$email' LIMIT 1";
     $query_company = mysqli_query($db, $sql_company);
     
 
