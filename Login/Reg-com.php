@@ -26,14 +26,13 @@ if(isset($_POST['submit'])){
     else{
         $password = password_hash($password_1, PASSWORD_DEFAULT);
 
-        $sql="INSERT INTO company VALUES ( '$name', '$contact', '$CRN', '$email', '$password')";
+        $sql="INSERT INTO company VALUES ('$name', '$CRN','$email','$password','$contact')";
         $result=mysqli_query($db, $sql);
 
-        $sql2= "INSERT INTO users values ('$name','$CRN', '$email', '$password', '2')";
-        $result1= mysqli_query($db, $sql2);
+        
 
-        if($result && $result1){
-            header('location: Login.php'); //page we want to redirect
+        if($result){
+            header('location:Login.php'); //page we want to redirect
             //echo "yes";
         }
         else{
