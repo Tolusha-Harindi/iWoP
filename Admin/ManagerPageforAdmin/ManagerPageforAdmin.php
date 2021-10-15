@@ -68,34 +68,34 @@
             
             
                   <li>
-                    <a href="#">
-                      <i class='bx bxs-check-shield' ></i>
-                      <span class="link_name">Change Password</span>
-                    </a>
-                    <ul class="sub-menu blank">
-                      <li><a class="link_name" href="#">Change Password</a></li>
-                    </ul>
-                  </li>
-            
-                  <li>
-                    <a href="#">
-                      <i class='bx bxs-spreadsheet' ></i>
-                      <span class="link_name">Catogary</span>
-                    </a>
-                    <ul class="sub-menu blank">
-                      <li><a class="link_name" href="#">Catogary</a></li>
-                    </ul>
-                  </li>
-            
-                  <li>
-                    <a href="#">
-                      <i class='bx bxs-hand-right' ></i>
-                      <span class="link_name">Reports</span>
-                    </a>
-                    <ul class="sub-menu blank">
-                      <li><a class="link_name" href="#">Reports</a></li>
-                    </ul>
-                  </li> </li>
+                <a href="../Changepassword/changepwd.php">
+                    <i class='bx bxs-check-shield' ></i>
+                    <span class="link_name">Change Password</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="../Changepassword/changepwd.php">Change Password</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="../Adddeletecategory/Adddelcategory.php">
+                    <i class='bx bxs-spreadsheet' ></i>
+                    <span class="link_name">Category</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="../Adddeletecategory/Adddeletecategory.php">Category</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="../Reportpage/reportpage.php">
+                    <i class='bx bxs-hand-right' ></i>
+                    <span class="link_name">Reports</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="../Reportpage/reportpage.php">Reports</a></li>
+                </ul>
+            </li> </li>
             </ul>
               </div>
               <section class="home-section">
