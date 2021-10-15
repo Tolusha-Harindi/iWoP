@@ -26,12 +26,12 @@
 
     <ul class="nav-links">
     <li>
-        <a href="#">
+        <a href="../CustomerProfile/customerprofile.php">
         <i class='bx bxs-user' ></i>
         <span class="link_name">My Profile</span>
         </a>
         <ul class="sub-menu blank">
-        <li><a class="link_name" href="#">My Profile</a></li>
+        <li><a class="link_name" href="../CustomerProfile/customerprofile.php">My Profile</a></li>
         </ul>
     </li>
 
@@ -65,18 +65,18 @@
         </div>
         <ul class="sub-menu">
         <li><a class="link_name" href="#">Responses</a></li>
-        <li><a href="#">Job invite Requests</a></li>
-        <li><a href="#">Posted Ads</a></li>
+        <li><a href="../ResponsesByWorkers/ResponsesbyWorkers.php">Job invite Requests</a></li>
+        <li><a href="../ApplyforJob-Responses/ApplyforJob-customerview.php">Posted Ads</a></li>
         <!-- <li><a href="#">PHP & MySQL</a></li>-->
         </ul>
     </li>
     <li>
-        <a href="#">
+        <a href="RecentWorkers.php">
         <i class= 'bx bxs-group'></i>
         <span class="link_name">Recent Workers</span>
         </a>
         <ul class="sub-menu blank">
-        <li><a class="link_name" href="#">Recent Workers</a></li>
+        <li><a class="link_name" href="RecentWorkers.php">Recent Workers</a></li>
         </ul>
     </li>
 </ul>

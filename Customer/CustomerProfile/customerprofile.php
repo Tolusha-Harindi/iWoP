@@ -78,7 +78,7 @@ if(isset($_SESSION['email'])){
                     </div>
                     <ul class="sub-menu">
                     <li><a class="link_name" href="#">Responses</a></li>
-                    <li><a href="#">Job invite Requests</a></li>
+                    <li><a href="../ResponsesByWorkers/ResponsesbyWorkers.php">Job invite Requests</a></li>
                     <li><a href="#">Posted Ads</a></li>
                     <!-- <li><a href="#">PHP & MySQL</a></li>-->
                     </ul>
