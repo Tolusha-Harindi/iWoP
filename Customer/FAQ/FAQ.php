@@ -23,7 +23,7 @@
             }
 
             .fluid-container {
-                width: 80%;
+                width: 100%;
         	    margin: 0 auto;
         	    margin-top: 10px;
                
@@ -48,9 +48,9 @@
             .accordian {
         	    width: 100%;
         	    padding: 0 5px;
-        	    border: 3px solid #333333		;
+        	    border: 3px solid #333333;
         	    cursor: pointer;
-        	    border-radius: 100px;
+        	    border-radius: 200px;
         	    display: flex;
         	    margin: 10px 0;
         	    align-items: center;
@@ -60,7 +60,7 @@
         	    width: 30px;
         	    height: 30px;
         	    background: url(plus.png) no-repeat 8px 7px #CC9933;
-        	    border-radius: 50%;
+        	    border-radius: 100%;
         	    float: left;
         	    transition: all .5s ease-in;
             }
@@ -106,11 +106,13 @@
                                     <div class="icon">
                                     </div>
                                     <center>
-                                        <h4>How can I select the item category  which I need ?<br><br></h4>
+                                        <h4>How can I select the item category  which I neeHow to add my service as a ‘Service Provider’/Worker ?<br><br></h4>
                                     </center>
                                 </div>
                                 <div class="panel">
-                                    <p>The "Products" page has a filter option. Then select the desired category and click the "Filter" button. The system will then show you the items related to the category you want.</p>
+                                    <p>Firstly you have to register to our website  as  a worker.
+                                        If you are looking for jobs  ,you have to register as  a worker and then you can fill your details in my profile page.
+                                    </p>
                                 </div>
                             </center>
                         </th>
@@ -120,10 +122,10 @@
                                 <div class="accordian">
                                     <div class="icon">
                                     </div>
-                                    <h4>Is it permissible to sell more than one item at a time?<br><br></h4>
+                                    <h4> I‘m getting contacted about an ad I didn’t post. Can you help me?<br><br></h4>
                                 </div>
                                 <div class="panel">
-                                    <p>Yes,you can sell one or more items at a time.</p>
+                                    <p>Yes, of course. Call us on 011 xxx xxxx & we will help you accordingly.</p>
                                 </div>
                             </center>
                         </th>
@@ -136,11 +138,11 @@
                                     <div class="icon">
                                     </div>
                                     <center>
-                                        <h4>What is the payment method which i can use for buy items ?<br><br></h4>
+                                        <h4> Are these service providers trustworthy?<br><br></h4>
                                     </center>
                                 </div>
                                 <div class="panel">
-                                    <p>You are allowed to pay by card payment or "cash on delivery".</p>
+                                    <p>The service providers listed here are same as any other service provider. Owner should be aware iWop is only an intermediary</p>
                                 </div>
                             </center>
                         </th>
@@ -150,10 +152,12 @@
                                 <div class="accordian">
                                     <div class="icon">
                                     </div>
-                                    <h4>What can I do if there any damage in an item which I purchased ?</h4>
+                                    <h4> Have these service providers provided honest information, such as experience?</h4>
                                 </div>
                                 <div class="panel">
-                                    <p>You must inform it. Fill out the "Return a Product" form on the home page.</p>
+                                    <p>•	Most of the time yes.
+	                                    Most of the published information of Service Providers have been gathered through the information they have sent with the News Paper Ad. Other information has been gathered from known parties. Iwop Customer Service calls all the service providers in every 4 months. Therefore, info gets verified twice. Service receiver can double check with the reviews they have received & by directly contacting them.
+                                    </p>
                                 </div>
                             </center>
                         </th>
@@ -167,11 +171,11 @@
                                     <div class="icon">
                                     </div>
                                     <center>
-                                        <h4>Can I exchange an item I purchased, to another item of the same price?<br><br></h4>
+                                        <h4> Do I have to pay for this service?<br><br></h4>
                                     </center>
                                 </div>
                                 <div class="panel">
-                                    <p>You will not be allowed to exchange products, but you will receive a replacement for any damaged product.</p>
+                                    <p> No. This is an absolutely free service.</p>
                                 </div>
                             </center>
                         </th>
@@ -190,35 +194,7 @@
                         </th>
                     </tr>
                     <tr>
-                        <!-- 1 -->
-                        <th>
-                            <center>
-                                <div class="accordian">
-                                    <div class="icon">
-                                    </div>
-                                    <center>
-                                        <h4>Within how many days should inform about a damaged item ?<br><br></h4>
-                                    </center>
-                                </div>
-                                <div class="panel">
-                                    <p>You must inform us of any damaged items within one week of receiving them.</p>
-                                </div>
-                            </center>
-                        </th>
-                        <!-- 2 -->
-                        <th>
-                            <center>
-                                <div class="accordian">
-                                    <div class="icon">
-                                    </div>
-                                    <h4>Does the delivery charge depend on the quantity of items purchased?</h4>
-                                </div>
-                                <div class="panel">
-                                    <p>Delivery charges are depends on the distance traveled to deliver the items and the quantity of items does not consider.</p>
-                                </div>
-                            </center>
-                        </th>
-                    </tr>
+                        
                 </table>
 
                 <script >
