@@ -1,6 +1,11 @@
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+
 /*-----------------------------heading -Report-------------------------------------*/
 .heading1, .heading2{
-    font-family: 'Poppins', sans-serif;
     font-size: 50px;
     text-align: center;
     margin-top: 100px;
@@ -30,19 +35,24 @@
 .nameforworker{
   margin-left:150px ;
   margin-top: 0;
+  font-size: 30px;
 }
 .typeofwork{
   margin-top: 0;
   margin-left: 180px;
+  font-size: 20px;
 }
 .cityofwork{
   margin-left: 180px;
+  font-size: 20px;
 }
 .experince{
- margin-left: 150px;
+ margin-left: 135px;
+ font-size: 20px;
 }
 .telnum{
   margin-left: 170px;
+  font-size: 20px;
 }
 /*---------------------Right-Outer-box- Report----------------------------------------*/
 .box2{
@@ -66,9 +76,8 @@
 /*-------------------------Buttons----------------------------------------*/
 .cancel {background-color:rgba(229, 47, 47, 1);
     margin-left: auto;
-   
     color: white;
-    padding: 10px 20px;
+    padding: 10px 25px;
     text-align: center;
     border: none;
     display: inline-block;
@@ -91,7 +100,9 @@
 .center{
 
 margin-left: auto;
- margin-right: auto;}
+margin-right: auto;
+font-size:18px;
+}
 
 /*prevbutton*/
 a {
