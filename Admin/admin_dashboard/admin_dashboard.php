@@ -61,12 +61,12 @@
                   </li>
             
                   <li>
-                    <a href="#">
+                    <a href="../ManagerPageforAdmin/ManagerPageforAdmin.php">
                       <i class='bx bx-street-view' ></i>
                       <span class="link_name">Managers</span>
                     </a>
                     <ul class="sub-menu blank">
-                      <li><a class="link_name" href="#">Managers</a></li>
+                      <li><a class="link_name" href="../ManagerPageforAdmin/ManagerPageforAdmin.php">Managers</a></li>
                     </ul>
                   </li>
             

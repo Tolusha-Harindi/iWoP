@@ -17,7 +17,7 @@
               <div class="logo"> 
                   <input type="image" id="image" alt="Landing" src="../../Images/Logo.jpg">
               </div>
-              <a href="../../Landing/Landing.html"> <b>| Logout  </b></a> 
+              <a href="../../Login/Login.php"> <b>| Logout  </b></a> 
               <a href="#help"> <b>| Help page  </b></a> 
               <a href="#category"><b> | Category </b></a> 
               <a href="#alladds"> <b>| All Adds </b></a> 
@@ -31,7 +31,7 @@
     <body>
         <div class ="heading1" > Manager
             <div>
-                <a href="#" input type="button" value="button" class="button1"> Add New Manager </a>
+                <a href="NewManager.php" input type="button" value="button" class="button1"> Add New Manager </a>
            
             <div class="sidebar close">
 
@@ -57,12 +57,12 @@
                   </li>
             
                   <li>
-                    <a href="#">
+                    <a href="ManagerPageforAdmin.php">
                       <i class='bx bx-street-view' ></i>
                       <span class="link_name">Managers</span>
                     </a>
                     <ul class="sub-menu blank">
-                      <li><a class="link_name" href="#">Managers</a></li>
+                      <li><a class="link_name" href="ManagerPageforAdmin.php">Managers</a></li>
                     </ul>
                   </li>
             
@@ -110,7 +110,7 @@
 
               <div class="box1">
                 <image src="../../Images/img.png" width="160px" height="160px" alt="profile image" class="profimg"></image>
-                <a href="#" input type="button" value="button" class="button2"> View profile </a>
+                <a href="../../Manager/ManagerProfile/ManagerProfile.php" input type="button" value="button" class="button2"> View profile </a>
                 <a href="#" input type="button" value="button" class="button3"> Remove </a>
             </div>
        
