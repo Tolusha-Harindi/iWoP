@@ -37,6 +37,8 @@
                     <b class="t2"> Best Time to call</b>
                     <p class="spacing"> 6.00pm   -    9.00pm</p> 
                 </div> </br>
+
+                <!----------------Viewing Feedbacks and ratings------------------------------>
                 <b class="t3">Feedbacks and Ratings</b> </br>
                 <div class="box2">
                     <div class="splt left2"> <img src="../../Images/img.png" class="prof" alt="User profile"></div>
@@ -50,7 +52,6 @@
                             <span class="fa fa-star"></span>
                         </div>
                         <p class="t8"> Feedback </p>
-                        
                     </div>
                 </div>
                 <div class="box2">
