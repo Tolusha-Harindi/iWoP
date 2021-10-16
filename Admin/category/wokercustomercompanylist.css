@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+}
 
 .mainbox1, .box2{
     float: left;
@@ -178,12 +180,13 @@ h4{
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-    background-color: #ddd;
+    background-color: #151965;
+    color:white;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-    background-color: #ccc;
+    background-color: gray;
 }
 
 /* Style the tab content */
@@ -200,7 +203,7 @@ h4{
     position: fixed;
     background-color:black ;
     color: white;
-    width: 250px;
+    width: 350px;
     height: 50px;
     margin-top:-3.5%;
     margin-left: 0%;
@@ -209,17 +212,16 @@ h4{
 .box1-heading{
     text-align: center;
     font-size: 18px;
-    font-family: 'Poppins', sans-serif;
     
 }
 
 /*Entire menu*/
 .vertical-menu {
-    width: 250px;
-    height: 250px;
+    width: 350px;
+    height: 500px;
     overflow-y: auto;
-    margin-top:220px;
-    margin-left: 100px;
+    margin-top:7%;
+    margin-left: 55px;
     box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
     position: fixed;
    
