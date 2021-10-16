@@ -20,12 +20,12 @@
 
         <ul class="nav-links">
           <li>
-            <a href="#">
+            <a href="../workerprofile/workerprofile.php">
               <i class='bx bxs-user' ></i>
               <span class="link_name">My Profile</span>
             </a>
             <ul class="sub-menu blank">
-              <li><a class="link_name" href="#">My Profile</a></li>
+              <li><a class="link_name" href="..workerprofile/workerprofile.php">My Profile</a></li>
             </ul>
           </li>
     
@@ -106,56 +106,56 @@
     <div class="mainDiv">
    <div class="cardStyle">
         <form action="" method="post">
-            <img src="user.png" class="floatRight">
-            <input type="file" id="myFile" name="filename">
+            <img src="../../Images/img.png" class="floatRight">
+           <div class="chooseimagefile"><input type="file" id="myFile" name="filename"></div> 
 
             <!-- <img src="camere.png" alt="camera" class="camera"> -->
             <div class="inputDiv">
-                <label class="inputLabel" for="name">Name</label>
+                <label class="inputLabel" for="name">Name</label><br>
                 <input type="text" id="name" name="name" required>
             </div>
             <div class="inputDiv">
-                <label class="inputLabel" for="address">Address</label>
+                <label class="inputLabel" for="address">Address</label><br>
                 <input type="text" id="address" name="Address" required>
             </div>
 
             <div class="inputDiv">
-                <label class="inputLabel" for="district">District</label>
+                <label class="inputLabel" for="district">District</label><br>
                 <input type="text" id="district" name="district">
             </div>
 
             <div class="inputDiv">
-                <label class="inputLabel" for="city">City</label>
+                <label class="inputLabel" for="city">City</label><br>
                 <input type="text" id="city" name="city">
             </div>
 
             <div class="inputDiv">
-                <label class="inputLabel" for="city">Email</label>
+                <label class="inputLabel" for="city">Email</label><br>
                 <input type="email" id="email" name="email">
             </div>
 
             <div class="inputDiv">
-                <label class="inputLabel" for="city">Contact No1</label>
+                <label class="inputLabel" for="city">Contact No1</label><br>
                 <input type="tel" id="contactno1" name="contactno1">
             </div>
 
             <div class="inputDiv">
-                <label class="inputLabel" for="city">Contact No2</label>
+                <label class="inputLabel" for="city">Contact No2</label><br>
                 <input type="tel" id="contactno2" name="contactno2">
             </div>
 
             <div class="inputDiv">
-                <label class="inputLabel" for="city">NIC Number</label>
+                <label class="inputLabel" for="city">NIC Number</label><br>
                 <input type="text" id="nic" name="nic">
             </div>
 
 
             <div class="inputDiv">
-                <label class="inputLabel" for="img1">Scan Copy Of NIC: &nbsp;Front Side</label>
+                <label class="inputLabel" for="img1">Scan Copy Of NIC: &nbsp;Front Side</label><br>
                 <input type="file" id="img1" name="img" accept="image/*">
             </div>
             <div class="inputDiv">
-                <label class="inputLabel" for="img2">Scan Copy Of NIC: &nbsp;Back Side</label>
+                <label class="inputLabel" for="img2">Scan Copy Of NIC: &nbsp;Back Side</label><br>
                 <input type="file" id="img2" name="img" accept="image/*">
             </div>
 
