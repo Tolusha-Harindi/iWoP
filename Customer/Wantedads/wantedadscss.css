@@ -11,30 +11,29 @@ body{
 .box1, .box2{
     float: left;
     width: 20%;
-    height: 70%;
+    height: 50%;
     margin-left: 2%;
     align-items: center;
 }
 
-/*---------------------Right-Outer-box- Ads----------------------------------------*/
+/*---------------------Right-Outer-box-Post your  Ads----------------------------------------*/
 .box2{
     float:right;
     width: 70%;
-    margin-right:4%;
-    /*border: 1px solid red;*/
-    height: 1100px;
+    margin-right:6%;
+    height: 100%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    margin-top: 90px;
+    margin-top: 85px;
 }
 
-/* Style the tab */
+/*-------------------------------------------------- Style the tab ---------------------------------------------------------------------*/
 .tab {
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
 }
 
-/* Style the buttons inside the tab */
+/* ------------------------------------------------Style the buttons inside the tab---------------------------------------------------- */
 .tab button {
     background-color: inherit;
     float: left;
@@ -43,24 +42,26 @@ body{
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
-    font-size: 17px;
+    font-size: 18px;
+    border-radius: 0;
+    height: 65px;
 }
 
-/* Change background color of buttons on hover */
+/*----------------------------------------------- Change background color of buttons on hover------------------------------------------ */
 .tab button:hover {
-    background-color: #ddd;
+    background-color: gray;
 }
 
-/* Create an active/current tablink class */
+/* -------------------------------------------Create an active/current tablink class -----------------------------------------------*/
 .tab button.active {
-    background-color: #ccc;
+    background-color: #151965;
+    color:white;
 }
 
 /* Style the tab content */
 .tabcontent {
     display: none;
     padding: 6px 12px;
-
     border-top: none;
 }
 .img{
@@ -91,7 +92,10 @@ body{
     margin-top: 20px;
     margin-left: 300px;
 }
-/*form*/
+
+
+
+/*---------------------------------form----------------------------------------*/
 .mainDiv {
     display: flex;
     min-height: 100%;
@@ -101,13 +105,12 @@ body{
     font-family: 'Poppins Sans', sans-serif;
 }
 .cardStyle {
-    width: 70%;
-    /*border-color: white;*/
+    width: 80%;
     background: #fff;
     padding: 36px 0;
     border-radius: 4px;
     margin: 30px 0;
-    box-shadow: 0px 0 2px 0 rgba(0,0,0,0.25);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 .floatRight{
     max-height: 100px;
@@ -120,12 +123,12 @@ body{
     margin-top: 20px;
     color: #2F2D3B;
     text-align: center;
-    font-size: 18px;
+    font-size: 25px;
 }
 
 .inputLabel {
     font-size: 17px;
-    color: #555;
+    /*color: #555;*/
     margin-bottom: 6px;
     margin-top: 24px;
     font-family: 'Poppins', sans-serif;
@@ -137,15 +140,31 @@ body{
     flex-direction: column;
     margin: auto;
     font-family: 'Poppins', sans-serif;
-    height: 5%;
+    height: 7%;
 }
 .inputDiv input {
     height: 40px;
     font-size: 16px;
-    border-radius: 4px;
-    border: solid 1px #ccc;
+    border: solid 2px ;
     padding: 0 11px;
 }
+
+
+#lang{
+    position:relative;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px; 
+    width: 100%;
+    height: 8%;
+    padding:5px 5px;
+    margin-left: 0%;
+    margin-top: 2%;
+    margin-bottom: -1%;
+    border: solid 2px;
+    align-items: center;
+    justify-content: center;
+}
+
 input:disabled {
     cursor: not-allowed;
     border: solid 1px #eee;
@@ -154,15 +173,14 @@ input:disabled {
     margin-top: 40px;
 }
 .submitButton {
-    width: 40%;
-    height: 40px;
+    width: 18%;
+    height: 45px;
     margin: auto;
     display: block;
     color: #fff;
     background-color:rgba(46, 171, 43, 1);
-
+    border: none;
     font-family: 'Poppins', sans-serif;
-    border-radius: 4px;
     font-size: 17px;
     cursor: pointer;
 }
@@ -175,7 +193,7 @@ button[disabled] {
 
 
 
-/*----------------home button------------*/
+/*-------------------------------------------------home button----------------------------------------*/
 .home-section{
     position: relative;
     background: #f9fafc;
@@ -214,5 +232,80 @@ button[disabled] {
     .sidebar.close .nav-links li .sub-menu{
         display: none;
     }
+}
+
+
+
+/*------------------------------------------Outer-box - adds------------------------------*/
+.box3{
+    float: left;
+    width: 94%;
+    height: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-left: 4%;
+    margin-top:5%;
+    margin-bottom: 2%;
+    align-items: center;
+}
+
+/*---------------------------------------------------Title---------------------------------------------*/
+.txt1{
+    color:#082690;
+    font-size: 25px;
+    margin-left: 10%;
+    margin-top:4%;
+}
+
+
+/*-------job----*/
+.txt2{
+    margin-left:10%;
+    margin-top:4%;
+}
+
+/*-------------divide into unequal columns-------------*/
+.column1{
+    align-items: center;
+}
+
+
+/*bold name*/
+.txt3{
+    margin-left: 55%;
+    margin-top: -18%;
+}
+
+
+/* details*/
+.txt4{
+    margin-left: 75%;
+    margin-top: -16%;
+    margin-bottom: 22%;
+}
+
+/*location icon*/
+.location-red{
+    height: 48px;
+    width: 35px;
+    margin-left: 58%;
+    margin-top:-105% ;
+}
+
+/*box4--- phone number---*/
+.box4{
+    padding:15px 15px;
+    width: 15%;
+    height:5%;
+    background-color: #2EAB2B;
+    margin-left: 75%;
+    margin-top: -18%;
+    margin-bottom: 2%;
+    
+}
+
+/*phone number*/
+.txt5{
+    color:white;
+    text-align:center;
 }
 

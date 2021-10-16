@@ -42,7 +42,9 @@
                     <p class="spacing"> 6.00pm   -    9.00pm</p> 
                 </div> </br>
 
-                <!----------------Viewing Feedbacks and ratings------------------------------>
+
+  <!--------------------------------------------Viewing Feedbacks and ratings------------------------------>
+  
                 <?php
                     while($row=mysqli_fetch_array($result)){
                 ?>
