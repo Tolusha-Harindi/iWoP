@@ -128,38 +128,36 @@ sidebarBtn.addEventListener("click", ()=>{
                     <div class="inputDiv">
                         <label class="inputLabel" for="category">Category</label>
                         <select name="category" id="lang" >
-                            <option value="">Plumber</option>
-                            <option value="">Masons</option>
-                            <option value="">Tile</option>
-                            <option value="">Carpenter</option>
-                            <option value="">Painter</option>
-                            <option value="">Electrician</option>
-                            <option value="">Landscaping</option>
-                            <option value="">  Contractors</option>
-                            <option value="">  Professionals</option>
-                            <option value=""> Stones/Sand/soil</option>
-                            <option value="">Concrete slab</option>
-                            <option value=""> Equipment Repairing</option>
-                            <option value=""> A/C</option>
-                            <option value=""> Welding</option>
-                            <option value="">Cooking</option>
-                            <option value="">Cushion works</option>
-                            <option value="">Vehicle repairs</option>
-                            <option value="">Cleaners</option>
-                            <option value="">CCTV</option>
-                            <option value="">Ceiling</option>
-                            <option value="">Well</option>
-                            <option value=""> Chair weavers</option>
-                            <option value="">Solar panel fixing</option>
-                            <option value=""> Demolishing</option>
-                            <option value=""> Pest control</option>
-                            <option value="">Mug Designer</option>
-                            <option value="">Movers</option>
-                            <option value=""> Aluminium</option>
-                            <option value="">Catering</option>
-                            <option value="">Makeup Artists</option>
-
-
+                            <option value="Plumber">Plumber</option>
+                            <option value="Masons">Masons</option>
+                            <option value="Tile">Tile</option>
+                            <option value="Carpenter">Carpenter</option>
+                            <option value="Painter">Painter</option>
+                            <option value="Electrician">Electrician</option>
+                            <option value="Landscaping">Landscaping</option>
+                            <option value="Contractors">  Contractors</option>
+                            <option value="Professionals">  Professionals</option>
+                            <option value="Stones/Sand/soil"> Stones/Sand/soil</option>
+                            <option value="Concrete slab">Concrete slab</option>
+                            <option value="Equipment Repairing"> Equipment Repairing</option>
+                            <option value="A/C"> A/C</option>
+                            <option value="Welding"> Welding</option>
+                            <option value="Cooking">Cooking</option>
+                            <option value="Cushion works">Cushion works</option>
+                            <option value="Vehicle repairs">Vehicle repairs</option>
+                            <option value="Cleaners">Cleaners</option>
+                            <option value="CCTV">CCTV</option>
+                            <option value="Ceiling">Ceiling</option>
+                            <option value="Well">Well</option>
+                            <option value="Chair weavers"> Chair weavers</option>
+                            <option value="Solar panel fixing">Solar panel fixing</option>
+                            <option value="Demolishing"> Demolishing</option>
+                            <option value=" Pest control"> Pest control</option>
+                            <option value="Mug Designer">Mug Designer</option>
+                            <option value="Movers">Movers</option>
+                            <option value="Aluminium"> Aluminium</option>
+                            <option value="Catering">Catering</option>
+                            <option value="Makeup Artists">Makeup Artists</option>
                             <option value=""></option>
                         </select>
 
@@ -188,16 +186,16 @@ sidebarBtn.addEventListener("click", ()=>{
                     </div>
                     <div class="inputDiv">
                         <label class="inputLabel" for="jobdescription">Starting Date</label>
-                        <input type="date" name="start_date" id="start_date">
+                        <input type="date" name="startDate" id="start_date">
                     </div>
 
                     <div class="inputDiv">
                         <label class="inputLabel" for="duedate">Due Date</label>
-                        <input type="date"name="due_date" id="duedate">
+                        <input type="date"name="dueDate" id="duedate">
                     </div>
                     <div class="inputDiv">
                         <label class="inputLabel" for="numofworkers">Number of Workers</label>
-                        <input type="number" name="no_of_workers" id="no_of_workers" >
+                        <input type="number" name="noOfWorkers" id="no_of_workers" >
                     </div>
 
                     <div class="inputDiv">
@@ -221,7 +219,7 @@ sidebarBtn.addEventListener("click", ()=>{
         <img class="img" src="job.png" alt="job" width="100px" height="100px" style = "position:relative; left:350px; top:30px; right:100px" >
         <h2 class="anyads">You don't have any ads yet</h2>
         <h3 class="post">Click the "Post a New add" button to post your add</h3>
-        <button  class="postButton"> Post a new Add</button>
+        <a href="wantedads.php" class="postButton"> Post a new Add</a>
     </div>
 
 
