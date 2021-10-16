@@ -20,15 +20,16 @@
 <div class="sidebar close">
 
 <ul class="nav-links">
-    <li>
-        <a href="../Adminprofile/Adminprofile.php">
-            <i class='bx bxs-user' ></i>
-            <span class="link_name">My Profile</span>
-        </a>
-        <ul class="sub-menu blank">
-            <li><a class="link_name" href="../Adminprofile/Adminprofile.php">My Profile</a></li>
-        </ul>
-    </li>
+            <li>
+                <a href="../Adminprofile/Adminprofile.php">
+                    <i class='bx bxs-user' ></i>
+                    <span class="link_name">My Profile</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="../Adminprofile/Adminprofile.php">My Profile</a></li>
+                </ul>
+            </li>
+
 
     <li>
                     <a href="../admin_dashboard/admin_dashboard.php">
@@ -95,6 +96,9 @@
 
 </div>
 
+
+
+<!------------------------Form---------------------------->
         <div class="cardStyle">
             <form action="changePassword.jsp" method="post"></br>
                 <img src="key.png" class="floatRight">

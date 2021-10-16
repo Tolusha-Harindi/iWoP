@@ -32,6 +32,17 @@
                 </ul>
             </li>
 
+
+            <li>
+                    <a href="../admin_dashboard/admin_dashboard.php">
+                      <i class='bx bx-plus' ></i>
+                      <span class="link_name">Dashboard</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                      <li><a class="link_name" href="../admin_dashboard/admin_dashboard.php">Dashboard</a></li>
+                    </ul>
+                  </li>
+
             <li>
                 <a href="../ManagerPageforAdmin/ManagerPageforAdmin.php">
                     <i class='bx bx-street-view' ></i>
@@ -148,3 +159,4 @@
 </div>
 </body>
 </html>
+

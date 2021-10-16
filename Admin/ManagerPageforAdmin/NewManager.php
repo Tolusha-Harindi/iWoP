@@ -33,20 +33,21 @@
         <div class ="heading1" > New Manager </div>
            
           <!--------------------Side bar---------------------->
-            <div class="sidebar close">
+          <div class="sidebar close">
 
-                <ul class="nav-links">
-                  <li>
-                    <a href="#">
-                      <i class='bx bxs-user' ></i>
-                      <span class="link_name">My Profile</span>
-                    </a>
-                    <ul class="sub-menu blank">
-                      <li><a class="link_name" href="#">My Profile</a></li>
-                    </ul>
-                  </li>
+<ul class="nav-links">
+            <li>
+                <a href="../Adminprofile/Adminprofile.php">
+                    <i class='bx bxs-user' ></i>
+                    <span class="link_name">My Profile</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="../Adminprofile/Adminprofile.php">My Profile</a></li>
+                </ul>
+            </li>
 
-                  <li>
+
+    <li>
                     <a href="../admin_dashboard/admin_dashboard.php">
                       <i class='bx bx-plus' ></i>
                       <span class="link_name">Dashboard</span>
@@ -55,57 +56,58 @@
                       <li><a class="link_name" href="../admin_dashboard/admin_dashboard.php">Dashboard</a></li>
                     </ul>
                   </li>
-            
-                  <li>
-                    <a href="ManagerPageforAdmin.php">
-                      <i class='bx bx-street-view' ></i>
-                      <span class="link_name">Managers</span>
-                    </a>
-                    <ul class="sub-menu blank">
-                      <li><a class="link_name" href="ManagerPageforAdmin.php">Managers</a></li>
-                    </ul>
-                  </li>
-            
-            
-                  <li>
-                    <a href="#">
-                      <i class='bx bxs-check-shield' ></i>
-                      <span class="link_name">Change Password</span>
-                    </a>
-                    <ul class="sub-menu blank">
-                      <li><a class="link_name" href="#">Change Password</a></li>
-                    </ul>
-                  </li>
-            
-                  <li>
-                    <a href="#">
-                      <i class='bx bxs-spreadsheet' ></i>
-                      <span class="link_name">Catogary</span>
-                    </a>
-                    <ul class="sub-menu blank">
-                      <li><a class="link_name" href="#">Catogary</a></li>
-                    </ul>
-                  </li>
-            
-                  <li>
-                    <a href="#">
-                      <i class='bx bxs-hand-right' ></i>
-                      <span class="link_name">Reports</span>
-                    </a>
-                    <ul class="sub-menu blank">
-                      <li><a class="link_name" href="#">Reports</a></li>
-                    </ul>
-                  </li> </li>
-            </ul>
-              </div>
-              <section class="home-section">
-                <div class="home-content">
-                  <i class='bx bx-menu' ></i>
-            <!--       <span class="text">Drop Down Sidebar</span>
-             -->    </div>
-              </section>
-            
-              <script src="../../Repeating-pages/sidenav/sidenavigation.js"></script>
+
+    <li>
+        <a href="../ManagerPageforAdmin/ManagerPageforAdmin.php">
+            <i class='bx bx-street-view' ></i>
+            <span class="link_name">Managers</span>
+        </a>
+        <ul class="sub-menu blank">
+            <li><a class="link_name" href="../ManagerPageforAdmin/ManagerPageforAdmin.php">Managers</a></li>
+        </ul>
+    </li>
+
+
+    <li>
+        <a href="../Changepassword/changepwd.php">
+            <i class='bx bxs-check-shield' ></i>
+            <span class="link_name">Change Password</span>
+        </a>
+        <ul class="sub-menu blank">
+            <li><a class="link_name" href="../Changepassword/changepwd.php">Change Password</a></li>
+        </ul>
+    </li>
+
+    <li>
+        <a href="../Adddeletecategory/Adddelcategory.php">
+            <i class='bx bxs-spreadsheet' ></i>
+            <span class="link_name">Category</span>
+        </a>
+        <ul class="sub-menu blank">
+            <li><a class="link_name" href="../Adddeletecategory/Adddeletecategory.php">Category</a></li>
+        </ul>
+    </li>
+
+    <li>
+        <a href="../Reportpage/reportpage.php">
+            <i class='bx bxs-hand-right' ></i>
+            <span class="link_name">Reports</span>
+        </a>
+        <ul class="sub-menu blank">
+            <li><a class="link_name" href="../Reportpage/reportpage.php">Reports</a></li>
+        </ul>
+    </li> </li>
+</ul>
+</div>
+
+<section class="home-section">
+<div class="home-content">
+    <i class='bx bx-menu' ></i>
+    <!--       <span class="text">Drop Down Sidebar</span>
+     -->    </div>
+</section>
+
+<script src="../../Repeating-pages/sidenav/sidenavigation.js"></script>
 
 
 <!------------------------------------Form-------------------------------->
