@@ -96,7 +96,7 @@
 </div>
 
         <div class="cardStyle">
-            <form action="changePassword.jsp" method="post">
+            <form action="changePassword.jsp" method="post"></br>
                 <img src="key.png" class="floatRight">
                 <div class="inputDiv">
                     <label class="inputLabel" for="currnetPassword">Current Password</label> </br>
@@ -105,14 +105,14 @@
                 <div class="inputDiv">
                     <label class="inputLabel" for="password">New Password</label> </br>
                     <input type="password" id="password" name="password" required>
-                </div>
+                </div> 
 
                 <div class="inputDiv">
                     <label class="inputLabel" for="confirmPassword">Confirm Password</label> </br>
                     <input type="password" id="confirmPassword" name="confirmPassword">
-                </div>
+                </div> </br></br></br> </br>
                 
-                <input type="submit" value="Change Password"  class="button4"> 
+                </br><input type="submit" name="changePassword" id="changePassword" value="Change Password"  class="change">
                
             </form>
         </div>
