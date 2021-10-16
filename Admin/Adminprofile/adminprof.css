@@ -66,22 +66,24 @@
     text-align: center;
 }
 .inputLabel {
-    font-size: 20px;
+    font-size: 25px;
     color: #555;
     margin-bottom: 6px;
     margin-top: 24px;
+    font-weight: bold;
 }
 .inputDiv {
     width: 80%;
     display: flex;
     flex-direction: column;
     margin: auto;
+    
 }
 .inputDiv input {
     height: 40px;
     font-size: 16px;
     border-radius: 4px;
-
+    height: 45px;
     border: solid 1px #ccc;
     padding: 0 11px;
 }
@@ -103,7 +105,7 @@ input:disabled {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 18px;
+    font-size: 25px;
 }
 .update:hover{
     background-color: rgb(18, 156, 37);
@@ -111,4 +113,11 @@ input:disabled {
 input[type=file]{
     margin-left: 500px;
     font-size: 16px
+}
+input[type=email]{
+    border: 1px solid black;
+}
+
+input[type=text]{
+    border: 1px solid black;
 }
