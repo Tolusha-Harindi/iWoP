@@ -22,8 +22,8 @@
 <div class="heading1"> Post your Ads</div>
 <div class="box1">
 
-     <!-----------------------------------Side navigation--------------------------------------------->
-     <div class="sidebar close">
+    <!-----------------------------------Side navigation--------------------------------------------->
+   <div class="sidebar close">
 
 <ul class="nav-links">
 <li>
@@ -32,7 +32,7 @@
     <span class="link_name">My Profile</span>
     </a>
     <ul class="sub-menu blank">
-    <li><a class="link_name" href="../CustomerProfile/customerprofile">My Profile</a></li>
+    <li><a class="link_name" href="../CustomerProfile/customerprofile.php">My Profile</a></li>
     </ul>
 </li>
 
