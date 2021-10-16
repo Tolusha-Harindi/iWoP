@@ -10,12 +10,16 @@
     <link rel="stylesheet" href="Worker-Profile-Userview.css">
 
     <?php
-        include '../../Repeating-pages/topnav/topnav2-customer.php'
+        include '../../Repeating-pages/topnav/topnav2-customer.php';
+        // receive feedbacks as results
+        $result = require 'all-feedback.php';
+        
     ?>
+    
 </head>
 
 <body>
-    <!-----------------Left------------------------------->
+    <!-----------------Left------------------------------->  
     <div class="split left1">
         <div class="centered">
                 <img src="../../Images/img.png" alt="Profile Image" class="profile">
@@ -39,11 +43,14 @@
                 </div> </br>
 
                 <!----------------Viewing Feedbacks and ratings------------------------------>
+                <?php
+                    while($row=mysqli_fetch_array($result)){
+                ?>
                 <b class="t3">Feedbacks and Ratings</b> </br>
                 <div class="box2">
                     <div class="splt left2"> <img src="../../Images/img.png" class="prof" alt="User profile"></div>
                     <div class="splt right2"> 
-                        <b class="t4">Name</b> </br>
+                        <b class="t4"><?php echo $row['name']; ?></b> </br>
                         <div class="star">
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
@@ -51,82 +58,15 @@
                             <span class="fa fa-star"></span>
                             <span class="fa fa-star"></span>
                         </div>
-                        <p class="t8"> Feedback </p>
+                        <p class="t8"><?php echo $row['review']; ?></p>
                     </div>
                 </div>
-                <div class="box2">
-                    <div class="splt left2"> <img src="../../Images/img.png" class="prof" alt="User profile"></div>
-                    <div class="splt right2"> 
-                        <b class="t4">Name</b> </br>
-                        <div class="star">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                        </div>
-                        <p class="t8"> Feedback </p>
-                    </div>
-                </div>
-                <div class="box2">
-                    <div class="splt left2"> <img src="../../Images/img.png" class="prof" alt="User profile"></div>
-                    <div class="splt right2"> 
-                        <b class="t4">Name</b> </br>
-                        <div class="star">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                        </div>
-                        <p class="t8"> Feedback </p>
-                    </div>
-                </div>
-                <div class="box2">
-                    <div class="splt left2"> <img src="../../Images/img.png" class="prof" alt="User profile"></div>
-                    <div class="splt right2"> 
-                        <b class="t4">Name</b> </br>
-                        <div class="star">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                        </div>
-                        <p class="t8"> Feedback </p>
-                    </div>
-                </div>
-                <div class="box2">
-                    <div class="splt left2"> <img src="../../Images/img.png" class="prof" alt="User profile"></div>
-                    <div class="splt right2"> 
-                        <b class="t4">Name</b> </br>
-                        <div class="star">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                        </div>
-                        <p class="t8"> Feedback </p>
-                    </div>
-                </div>
-                <div class="box2">
-                    <div class="splt left2"> <img src="../../Images/img.png" class="prof" alt="User profile"></div>
-                    <div class="splt right2"> 
-                        <b class="t4">Name</b> </br>
-                        <div class="star">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                        </div>
-                        <p class="t8"> Feedback </p>
-                    </div>
-                </div>
+                <?php
+                    }    
+                ?> 
         </div>
     </div>
-      
+    
 
     <!---------------------------------------Right--------------------------------------->
       <div class="split right1">
@@ -157,15 +97,16 @@
                 <a href="../Reportingpagebycustomer/reportpagebycustomer.php" input type="button" value="button" class="button3"> Report </a> </br>
                 <b class="t7">Give Your Feedbacks and Ratings</b> </br>
 
-                <div class="star2">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                </div>
+               
                 <!----------------Feedback section------------>
                     <form name = "reg-w"  method="post" action="feedback.php">
+                        <div class="star2">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
                         <p class="field"> <b>Name</b></p>
                         <input id="name" name="name" type="text" placeholder = "Name" class="input" required>
                         <p class="field"> <b>Email</b></p>
