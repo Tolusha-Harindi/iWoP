@@ -10,21 +10,17 @@ body{
 
 .box1, .box2{
     float: left;
-    width: 30%;
+    width: 20%;
     height: 70%;
-   
-    margin-left: 3%;
-   
+    margin-left: 2%;
     align-items: center;
 }
-.box1{
-    height: 700px;
-}
+
 /*---------------------Right-Outer-box- Ads----------------------------------------*/
 .box2{
     float:right;
-    width: 60%;
-    margin-right:3%;
+    width: 70%;
+    margin-right:4%;
     /*border: 1px solid red;*/
     height: 1100px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -105,7 +101,7 @@ body{
     font-family: 'Poppins Sans', sans-serif;
 }
 .cardStyle {
-    width: 600px;
+    width: 70%;
     /*border-color: white;*/
     background: #fff;
     padding: 36px 0;
@@ -126,6 +122,7 @@ body{
     text-align: center;
     font-size: 18px;
 }
+
 .inputLabel {
     font-size: 17px;
     color: #555;
@@ -140,6 +137,7 @@ body{
     flex-direction: column;
     margin: auto;
     font-family: 'Poppins', sans-serif;
+    height: 5%;
 }
 .inputDiv input {
     height: 40px;
