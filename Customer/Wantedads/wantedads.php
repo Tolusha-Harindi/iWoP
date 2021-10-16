@@ -11,8 +11,12 @@
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
    <!--------------------------Top nav----------------------------------------->
+
     <?php
-        include '../../Repeating-pages/topnav/topnav2-customer.php'
+        include '../../Repeating-pages/topnav/topnav2-customer.php';
+        // view posted ads as results
+        $result = require 'all-wantedads.php';
+        
     ?>
 
 
@@ -27,7 +31,7 @@
 
 <ul class="nav-links">
 <li>
-    <a href="../CustomerProfile/customerprofile">
+    <a href="../CustomerProfile/customerprofile.php">
     <i class='bx bxs-user' ></i>
     <span class="link_name">My Profile</span>
     </a>
@@ -117,6 +121,8 @@ sidebarBtn.addEventListener("click", ()=>{
 
     </div>
 
+
+        <!----------------------------Form - Post a ad------------------------------------->
     <div id="NewAd" class="tabcontent">
         <div class="mainDiv">
             <div class="cardStyle">
@@ -215,13 +221,44 @@ sidebarBtn.addEventListener("click", ()=>{
         </div>
     </div>
 
-    <div id="Posted" class="tabcontent">
+   <!------ <div id="Posted" class="tabcontent">
         <img class="img" src="job.png" alt="job" width="100px" height="100px" style = "position:relative; left:350px; top:30px; right:100px" >
         <h2 class="anyads">You don't have any ads yet</h2>
         <h3 class="post">Click the "Post a New add" button to post your add</h3>
         <a href="wantedads.php" class="postButton"> Post a new Add</a>
-    </div>
+    </div>  -------------------------------->
 
+
+    <div id="Posted" class="tabcontent">
+        
+            <!---------------------------View posted ads deatils------------------------------->
+            
+
+             <?php
+                    while($row=mysqli_fetch_array($result)){
+            ?>
+            <div class="box3">
+                <div class="column">
+                    <div class="txt1"> <?php echo $row['title'];?></div>
+                    <div class="txt2"> <?php echo $row ['category']; ?></div>
+                    <div class="txt2"><i><?php echo $row['job']; ?></i></div>
+                </div>
+                <div class="column">
+                    <img src="../../Images/location-red.png" alt="location" class="location-red"> 
+                    <div class="txt3"> <b> Posted by :</b> </div>
+                </div>
+                <div class="column">
+                    <div class="txt4"> Dasun Peiris</div>
+                    <div class="txt4"><?php echo $row['nearest_city']; ?></div>
+                    <div class="txt4"> 2 weeks ago</div>
+                </div>
+                <div class="box4">
+                    <div class="txt5"><?php echo $row['contact']; ?></div> 
+                </div>
+            </div> 
+            <?php
+                 }    
+            ?> 
 
     <script src="tabs.js">
 

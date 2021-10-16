@@ -24,7 +24,7 @@
 
 <ul class="nav-links">
 <li>
-    <a href="../CustomerProfile/customerprofile">
+    <a href="../CustomerProfile/customerprofile.php">
     <i class='bx bxs-user' ></i>
     <span class="link_name">My Profile</span>
     </a>
