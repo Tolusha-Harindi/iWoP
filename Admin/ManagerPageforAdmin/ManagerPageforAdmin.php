@@ -12,19 +12,9 @@
          <!-- Boxiocns CDN Link -->
         <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
-        <div class="sticky">
-          <div class="topnav">
-              <div class="logo"> 
-                  <input type="image" id="image" alt="Landing" src="../../Images/Logo.jpg">
-              </div>
-              <a href="../../Login/Login.php"> <b>| Logout  </b></a> 
-              <a href="#help"> <b>| Help page  </b></a> 
-              <a href="#category"><b> | Category </b></a> 
-              <a href="#alladds"> <b>| All Adds </b></a> 
-              <a href="#postadds"> <b>| Post Adds </b></a>
-              <a href="#"><i class="fa fa-user-circle-o fa-2x"></i> </a>
-          </div> 
-      </div> 
+        <?php 
+          include '../../Repeating-pages/topnav/topnav8-admin.php'
+        ?>
 
     </head>
 
@@ -113,7 +103,6 @@
                 <a href="../../Manager/ManagerProfile/ManagerProfile.php" input type="button" value="button" class="button2"> View profile </a>
                 <a href="#" input type="button" value="button" class="button3"> Remove </a>
             </div>
-       
     </div>
     </body>
 

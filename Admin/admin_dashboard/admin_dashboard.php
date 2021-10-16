@@ -16,20 +16,10 @@
         <link rel="stylesheet" href="../../Repeating-pages/sidenav/sidenavigation.css"> 
          <!-- Boxiocns CDN Link -->
         <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'><!------------side nav icons----->
-
-        <div class="sticky">
-          <div class="topnav">
-              <div class="logo"> 
-                  <input type="image" id="image" alt="Landing" src="../../Images/Logo.jpg">
-              </div>
-              <a href="../../Landing/Landing.html"> <b>| Logout  </b></a> 
-              <a href="#help"> <b>| Help page  </b></a> 
-              <a href="#category"><b> | Category </b></a> 
-              <a href="#alladds"> <b>| All Adds </b></a> 
-              <a href="#postadds"> <b>| Post Adds </b></a>
-              <a href="#"><i class="fa fa-user-circle-o fa-2x"></i> </a>
-            </div> 
-      </div> 
+        
+        <?php 
+          include '../../Repeating-pages/topnav/topnav8-admin.php'
+        ?>
 
     </head>
 

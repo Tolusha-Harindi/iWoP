@@ -1,6 +1,6 @@
 .box1, .box2{
     float: left;
-    width: 30%;
+    width: 40%;
     height: 70%;
     
     margin-left: 3%;
@@ -16,7 +16,7 @@
 /*---------------------Right-Outer-box- Report----------------------------------------*/
 .box2{
     float:right;
-    width: 60%;
+    width: 70%;
     margin-right:3%;
     /*border: 1px solid red;*/
     height: 700px;
