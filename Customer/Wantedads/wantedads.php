@@ -120,14 +120,14 @@ sidebarBtn.addEventListener("click", ()=>{
     <div id="NewAd" class="tabcontent">
         <div class="mainDiv">
             <div class="cardStyle">
-                <form action="" method="post" name="signupForm" id="signupForm">
+                <form action="wanted_ads.php" method="post" name="signupForm" id="signupForm">
 
                     <h2 class="formTitle">
                         Post your Ads
                     </h2>
                     <div class="inputDiv">
                         <label class="inputLabel" for="category">Category</label>
-                        <select name="deletecategory" id="lang" >
+                        <select name="category" id="lang" >
                             <option value="">Plumber</option>
                             <option value="">Masons</option>
                             <option value="">Tile</option>
@@ -169,35 +169,35 @@ sidebarBtn.addEventListener("click", ()=>{
 
                     <div class="inputDiv">
                         <label class="inputLabel" for="title">Title</label>
-                        <input type="text" id="title" name="title" required>
+                        <input type="text" name="title" id="title"  required>
                     </div>
 
                     <div class="inputDiv">
                         <label class="inputLabel" for="jobdescription">Job description</label>
-                        <input type="text" id="jobdescription" name="jobdescription">
+                        <input type="text"name="job" id="jobdescription" required>
                     </div>
 
                     <div class="inputDiv">
                         <label class="inputLabel" for="city">Nearest City or Town</label>
-                        <input type="text" id="city" name="city">
+                        <input type="text" name="nearest_city" id="city" required>
                     </div>
 
                     <div class="inputDiv">
                         <label class="inputLabel" for="phonenum">Phone Number</label>
-                        <input type="tel" id="phonenum" name="phonenum>
+                        <input type="tel" name="contact" id="phonenum" required>
                     </div>
                     <div class="inputDiv">
                         <label class="inputLabel" for="jobdescription">Starting Date</label>
-                        <input type="date" id="sdate" name="sdate">
+                        <input type="date" name="start_date" id="start_date">
                     </div>
 
                     <div class="inputDiv">
                         <label class="inputLabel" for="duedate">Due Date</label>
-                        <input type="date" id="duedate" name="duedate">
+                        <input type="date"name="due_date" id="duedate">
                     </div>
                     <div class="inputDiv">
                         <label class="inputLabel" for="numofworkers">Number of Workers</label>
-                        <input type="number" id="numofworkers" name="numofworkers">
+                        <input type="number" name="no_of_workers" id="no_of_workers" >
                     </div>
 
                     <div class="inputDiv">
@@ -206,7 +206,7 @@ sidebarBtn.addEventListener("click", ()=>{
                     </div>
 
                     <div class="buttonWrapper">
-                        <button type="submit" id="submitButton" onclick="validateSignupForm()" class="submitButton pure-button pure-button-primary">
+                        <button type="submit" name="submit" id="submitButton" onclick="validateSignupForm()" class="submitButton pure-button pure-button-primary">
                             <span>Submit</span>
 
                         </button>
@@ -221,7 +221,7 @@ sidebarBtn.addEventListener("click", ()=>{
         <img class="img" src="job.png" alt="job" width="100px" height="100px" style = "position:relative; left:350px; top:30px; right:100px" >
         <h2 class="anyads">You don't have any ads yet</h2>
         <h3 class="post">Click the "Post a New add" button to post your add</h3>
-        <button class="postButton"> Post a new Add</button>
+        <button  class="postButton"> Post a new Add</button>
     </div>
 
 
