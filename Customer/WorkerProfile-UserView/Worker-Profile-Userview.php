@@ -42,9 +42,7 @@
                     <p class="spacing"> 6.00pm   -    9.00pm</p> 
                 </div> </br>
 
-
-  <!--------------------------------------------Viewing Feedbacks and ratings------------------------------>
-  
+                <!----------------Viewing Feedbacks and ratings------------------------------>
                 <?php
                     while($row=mysqli_fetch_array($result)){
                 ?>
@@ -53,12 +51,18 @@
                     <div class="splt left2"> <img src="../../Images/img.png" class="prof" alt="User profile"></div>
                     <div class="splt right2"> 
                         <b class="t4"><?php echo $row['name']; ?></b> </br>
+                        <?php 
+                            $ratings=array();
+                            for ($x = 0; $x < $row['rating']; $x++) {
+                                $ratings[$x]="checked";
+                            }
+                        ?>
                         <div class="star">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star <?php echo $ratings[0] ?>"></span>
+                            <span class="fa fa-star <?php echo $ratings[1] ?>"></span>
+                            <span class="fa fa-star <?php echo $ratings[2] ?>"></span>
+                            <span class="fa fa-star <?php echo $ratings[3] ?>"></span>
+                            <span class="fa fa-star <?php echo $ratings[4] ?>"></span>
                         </div>
                         <p class="t8"><?php echo $row['review']; ?></p>
                     </div>
@@ -99,16 +103,23 @@
                 <a href="../Reportingpagebycustomer/reportpagebycustomer.php" input type="button" value="button" class="button3"> Report </a> </br>
                 <b class="t7">Give Your Feedbacks and Ratings</b> </br>
 
-               
+                
                 <!----------------Feedback section------------>
                     <form name = "reg-w"  method="post" action="feedback.php">
+
                         <div class="star2">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
+                            <input type="radio" class="star-input" name="rating" id="star-1" value="1">
+                            <label for="star-1" class="starform"><i class="fa fa-star"></i></label>
+                            <input type="radio" class="star-input" name="rating" id="star-2" value="2">
+                            <label for="star-2" class="starform"><i class="fa fa-star"></i></label>
+                            <input type="radio" class="star-input" name="rating" id="star-3" value="3">
+                            <label for="star-3" class="starform"><i class="fa fa-star"></i></label>
+                            <input type="radio" class="star-input" name="rating" id="star-4" value="4">
+                            <label for="star-4" class="starform"><i class="fa fa-star"></i></label>
+                            <input type="radio" class="star-input" name="rating" id="star-5" value="5" checked>
+                            <label for="star-5" class="starform"><i class="fa fa-star"></i></label>
                         </div>
+
                         <p class="field"> <b>Name</b></p>
                         <input id="name" name="name" type="text" placeholder = "Name" class="input" required>
                         <p class="field"> <b>Email</b></p>
