@@ -1,17 +1,14 @@
 .box1, .box2{
     float: left;
     width: 40%;
-    height: 70%;
-    
     margin-left: 3%;
-    
     align-items: center;
 
 }
 
 .box1{
     height: 700px;
-    margin-top: 120px;
+    margin-top: 15%;
 }
 /*---------------------Right-Outer-box- Report----------------------------------------*/
 .box2{
@@ -20,8 +17,7 @@
     margin-right:3%;
     /*border: 1px solid red;*/
     height: 700px;
-    margin-top: 120px;
-
+    margin-top: -50%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
@@ -139,13 +135,13 @@ h4{
 
 #view{
     background-color: rgba(233, 91, 91, 1);
-border: none;
-color: white;
-padding: 15px 15px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: 16px;
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
     margin-top: 20px;
     cursor: pointer;
 
@@ -188,7 +184,7 @@ font-size: 16px;
 }
 .sidebar{
   position: fixed;
-  margin-top: 2%;
+  margin-top: 10%;
   left: 0;
   height: 70%;
   width: 260px;
@@ -399,6 +395,7 @@ font-size: 16px;
   width: 0px;
   /*width: calc(100% - 260px);*/
   transition: all 0.5s ease;
+  margin-top:4%;
 }
 
 /*home button space*/
