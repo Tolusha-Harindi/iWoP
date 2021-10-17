@@ -9,11 +9,12 @@ include('../../Backend/db_connection.php');
   // Feedbcak function
   if(isset($_POST['submit'])){
 
+    $rating=$_POST['rating'];
     $name=$_POST['name'];
     $email=$_POST['email'];
     $review=$_POST['review'];
 
-    $sql="INSERT INTO customerfeedback VALUES (NULL, '$name',  '$email', '$review')";
+    $sql="INSERT INTO customerfeedback VALUES (NULL, '$rating', '$name',  '$email', '$review')";
         echo $sql;
         $result=mysqli_query($db, $sql);
 
