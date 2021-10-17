@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <?php
-        include '../../Repeating-pages/topnav/topnav4-company.php'
+        include '../../Repeating-pages/topnav/topnav8-admin.php'
     ?>
 <link rel="stylesheet" href="../../Repeating-pages/topnav/topnav.css">
 
@@ -93,6 +93,8 @@
 
 </div>
 
+
+<!-----------------------------viewing reports sent by customers and workers----------------------------------->
 <div class="box2">
     <div class="tabs">
         <input type="radio" name="tabs" id="tabone" checked="checked">

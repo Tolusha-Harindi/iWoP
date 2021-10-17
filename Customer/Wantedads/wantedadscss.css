@@ -242,7 +242,7 @@ button[disabled] {
     width: 94%;
     height: 30%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    margin-left: 4%;
+    margin-left: 3%;
     margin-top:5%;
     margin-bottom: 2%;
     align-items: center;
@@ -288,7 +288,7 @@ button[disabled] {
     height: 48px;
     width: 35px;
     margin-left: 58%;
-    margin-top:-105% ;
+    margin-top:-15% ;
 }
 
 /*box4--- phone number---*/

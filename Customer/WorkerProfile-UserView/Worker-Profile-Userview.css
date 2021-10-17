@@ -141,9 +141,23 @@
   margin-left:-20%;
   margin-top: 6%;
 }
+
+/* -------------------------rating stars in the form ------------------------*/
 .star2{
-  margin-left:70%;
+  margin-left:65%;
   margin-top: 10%;
+}
+
+.star-input{
+  display: none;
+}
+
+.starform{
+  color: orange;
+}
+
+.star-input:checked + .starform ~ .starform{
+  color: black;
 }
 
 
