@@ -18,7 +18,7 @@
             <a href="#help"> <b>| Help page  </b></a> 
             <a href="#category"><b> | Category </b></a>
             <a href="#payments"> <b>| Payments </b></a> 
-            <a href="#alladds"> <b>| All Adds </b></a> 
+            <a href="#alladds"> <b>| All Ads </b></a> 
             <a href="../../Worker/WorkerProfile/workerprofile.php"><i class="fa fa-user-circle-o fa-2x"></i> </a>
         </div>
     </div>

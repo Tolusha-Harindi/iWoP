@@ -16,8 +16,8 @@
             <a href="../../Login/Logout.php"> <b>| Logout  </b></a> 
             <a href="#help"> <b>| Help page  </b></a> 
             <a href="../../Customer/Allcategories/categories.php"><b> | Category </b></a> 
-            <a href="#alladds"> <b>| All Adds </b></a> 
-            <a href="#postadds"> <b>| Post Adds </b></a>
+            <a href="#alladds"> <b>| All Ads </b></a> 
+            <a href="../../Customer/Wantedads/wantedads.php"> <b>| Post Ads </b></a>
             <a href="../../Customer/CustomerProfile/customerprofile.php"><i class="fa fa-user-circle-o fa-2x"></i> </a>
         </div>
     </div>

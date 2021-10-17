@@ -17,7 +17,7 @@
             <a href="../../Landing/Landing.php"> <b>| Logout  </b></a> 
             <a href="#help"> <b>| Help page  </b></a> 
             <a href="#category"><b> | Category </b></a> 
-            <a href="#alladds"> <b>| All Adds </b></a> 
+            <a href="#alladds"> <b>| All Ads </b></a> 
             <a href="../../Company/CompanyProfile/companyprofile.php"><i class="fa fa-user-circle-o fa-2x"></i> </a>
         </div>
     </div>
