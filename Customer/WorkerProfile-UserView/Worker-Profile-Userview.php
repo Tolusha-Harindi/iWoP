@@ -92,7 +92,7 @@
                 <hr>
                 <img src="../../Images/chat.png" class="icon"> 
                 <p class="t6"> Chat</p> </br>
-                <p class="t6"><a href="#"> Click here to chat</a></p> </br>
+                <p class="t6"><a href="../chat/chatcustomer6.php"> Click here to chat</a></p> </br>
                 <hr>
            
                 <div class="box3"> 
