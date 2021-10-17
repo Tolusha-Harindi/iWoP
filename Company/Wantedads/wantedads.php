@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Company Post ads</title>
     <link rel="stylesheet" href="wantedadscss.css">
    <link rel="stylesheet" href="../../Repeating-pages/topnav/topnav.css">
 <link rel="stylesheet" href="../../Repeating-pages/sidenav/sidenavigation.css"> 
