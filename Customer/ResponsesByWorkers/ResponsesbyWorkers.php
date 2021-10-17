@@ -87,29 +87,40 @@
 </section>
 
 <script src="../../Repeating-pages/sidenav/sidenavigation.js"></script>
-<!--Recent workers-->
-  <div class= "box">
+<!--Responses-->
+<div class= "box2">
     <div class= "container">
         <p class="box-heading"> Responses </p>
-        <div class= "box1"> 
+        <div class= "box3"> 
             <div class="hor">
-                </hr> <a href="#" input type = "button"  value ="button" class="button"> View Profile </a>
+                </hr> 
+                <img src="../../Images/img.png" alt="propic" class = "profpic">
+                <div class="txt4"> <b>Nimal Peiris</b> </div>
+               <p class="txt5"> Accepted </p>
+                <a href="#" input type = "button"  value ="button" class="button2"> View Profile </a>
             </div>
             <div class="hor">
-                </hr> <a href="#" input type = "button"  value ="button" class="button"> View Profile </a>
+                </hr> 
+                <img src="../../Images/img.png" alt="propic" class = "profpic">
+                <div class="txt4"> <b>Nimal Peiris</b> </div>
+                <p class="txt1"> Rejected </p>
+                <a href="#" input type = "button"  value ="button" class="button2"> View Profile </a>
             </div>
             <div class="hor">
-                </hr> <a href="#" input type = "button"  value ="button" class="button"> View Profile </a>
+                </hr> 
+                <img src="../../Images/img.png" alt="propic" class = "profpic">
+                <div class="txt4"> <b>Nimal Peiris</b> </div>
+                <p class="txt5"> Accepted </p>
+                <a href="#" input type = "button"  value ="button" class="button2"> View Profile </a>
             </div>
             <div class="hor">
-                </hr> <a href="#" input type = "button"  value ="button" class="button"> View Profile </a>
+                </hr> 
+                <img src="../../Images/img.png" alt="propic" class = "profpic">
+                <div class="txt4"> <b>Nimal Peiris</b> </div>
+                <p class="txt5"> Accepted </p>
+                <a href="#" input type = "button"  value ="button" class="button2"> View Profile </a>
             </div>
-            <div class="hor">
-                </hr> <a href="#" input type = "button"  value ="button" class="button"> View Profile </a>
-            </div>
-            <div class="hor">
-                </hr> <a href="#" input type = "button"  value ="button" class="button"> View Profile </a>
-            </div>
+            
         </div>
     </div>
   </div>
