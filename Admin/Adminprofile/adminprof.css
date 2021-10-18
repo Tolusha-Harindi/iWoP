@@ -9,16 +9,16 @@
 
 .box1{
     height: 25%;
-    /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);*/
 }
+
+
 /*---------------------Right-Outer-box- Report----------------------------------------*/
 .box2{
     float:right;
-    width: 70%;
+    width: 75%;
     margin-right:5%;
-    /*border: 1px solid red;*/
-    height: 20%;
-    margin-top: 6%;
+    height: 30%;
+    margin-top: -6%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
@@ -48,9 +48,10 @@
    
 }
 .userimg{
-    max-height: 100px;
+    max-height: 120px;
     margin: auto;
     display: flex;
+    margin-top:-2%;
 
 }
 .camera{
@@ -64,9 +65,13 @@
     color: #2F2D3B;
     text-align: center;
 }
+
+.input{
+    border:  solid black;
+}
+
 .inputLabel {
     font-size: 20px;
-    color: #555;
     margin-bottom: 6px;
     margin-top: 24px;
 }
@@ -75,13 +80,12 @@
     display: flex;
     flex-direction: column;
     margin: auto;
+    
 }
 .inputDiv input {
     height: 40px;
     font-size: 16px;
-    border-radius: 4px;
-
-    border: solid 1px #ccc;
+    border: solid 2px black;
     padding: 0 11px;
 }
 input:disabled {
@@ -90,10 +94,11 @@ input:disabled {
 }
 
 
-
+/*-------update button------------*/
 .update{
     margin-left: 350px;
     margin-top: 5%;
+    margin-bottom: 0%;
     background-color: rgba(46, 171, 43, 1);
     color: white;
     cursor: pointer;
@@ -104,6 +109,7 @@ input:disabled {
     display: inline-block;
     font-size: 18px;
 }
+
 .update:hover{
     background-color: rgb(18, 156, 37);
 }

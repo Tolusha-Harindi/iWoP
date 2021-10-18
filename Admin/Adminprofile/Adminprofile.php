@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Admin Profile</title>
     <link rel="stylesheet" href="adminprof.css">
     <link rel="stylesheet" href="../../Repeating-pages/topnav/topnav.css">
     <link rel="stylesheet" href="../../Repeating-pages/sidenav/sidenavigation.css"> 
@@ -92,6 +92,8 @@
 </section>
     
 <script src="../../Repeating-pages/sidenav/sidenavigation.js"></script>
+<!--------------------------End of side nav------------------------------------->
+
 
 </div>
 <div class="box2">
@@ -100,18 +102,18 @@
         <div class="cardStyle">
             <form action="" method="post">
                 <img src="user.png" class="userimg">
-                <input type="file" id="myFile" name="filename">
+                <input type="file" id="myFile" name="filename"> </br> </br>
                
                 <!--<img src="camere.png" alt="camera" class="camera">-->
                 <div class="inputDiv">
                     <label class="inputLabel" for="name">Name</label> </br>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="name" class="input" required>
                 </div>
 
 
                 <div class="inputDiv">
                     <label class="inputLabel" for="email">Email</label> </br>
-                    <input type="email" id="email" name="email">
+                    <input type="email" id="email" name="email" class="input">
                 </div>
 
                 <button type="submit" id="submitButton" onclick="validateSignupForm()" class="update">
