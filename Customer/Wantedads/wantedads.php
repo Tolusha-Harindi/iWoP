@@ -229,7 +229,7 @@ sidebarBtn.addEventListener("click", ()=>{
     </div>  -------------------------------->
 
 
-    <div id="Posted" class="tabcontent">
+    <div id="Posted" class="tabcontent posted">
         
             <!---------------------------View posted ads deatils------------------------------->
             
@@ -256,6 +256,7 @@ sidebarBtn.addEventListener("click", ()=>{
                     <div class="txt5"><?php echo $row['contact']; ?></div> 
                 </div>
             </div> 
+
             <?php
                  }    
             ?> 
@@ -263,6 +264,7 @@ sidebarBtn.addEventListener("click", ()=>{
     <script src="tabs.js">
 
     </script>
+    
 </div>
 
 </body>
