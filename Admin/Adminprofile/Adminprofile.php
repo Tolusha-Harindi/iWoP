@@ -102,9 +102,7 @@
         <div class="cardStyle">
             <form action="" method="post">
 
-                <img src="user.png" class="userimg">
-                <input type="file" id="myFile" name="filename"> </br> </br>
-=======
+
                 <img src="../../Images/img.png" class="userimg">
                 <input type="file" id="myFile" name="filename">
 
@@ -118,7 +116,7 @@
 
                 <div class="inputDiv">
                     <label class="inputLabel" for="email">Email</label> </br>
-                    <input type="email" id="email" name="email" class="input">
+                    <input type="email" id="email" name="email" class="input" required>
                 </div>
 
                 <button type="submit" id="submitButton" onclick="validateSignupForm()" class="update">
