@@ -100,6 +100,7 @@
 
               <div class="box1">
                 <image src="../../Images/img.png" width="160px" height="160px" alt="profile image" class="profimg"></image>
+                <!------<p clas="detail"> Manager Name </p>--------->
                 <a href="../../Manager/ManagerProfile/ManagerProfile.php" input type="button" value="button" class="button2"> View profile </a>
                 <a href="#" input type="button" value="button" class="button3"> Remove </a>
             </div>
