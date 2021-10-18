@@ -14,7 +14,7 @@
 </head>
 <body>
 
-<div class="mainbox1">
+<div>
   <div class="vertical-menu">
     <div class="box1">
       <p class="box1-heading">All Category</p>
