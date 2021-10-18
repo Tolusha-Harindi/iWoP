@@ -112,7 +112,7 @@
     </br><h3>Add new category</h3> </br> </br>
 
     <form>
-        <input type="text" id="lname" name="lname" placeholder="Enter the new category name" required><br><br>
+        <input type="text" id="lname" name="lname" placeholder="Enter the new category name"  required><br><br>
         <input type="submit" name="add" id="name" class="addButton" value="Add" required> </br>
     </form>
 
