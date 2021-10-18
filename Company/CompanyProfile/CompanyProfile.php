@@ -105,34 +105,35 @@ if(isset($_SESSION['email'])){
                             <div class="info">
                                     <div class="group">
                                         <p class="field"> <b>Company Name</b></p>
-                                        <input id="name" type="text" placeholder = "Company Name" class="input" required>
+                                        <input id="name" name="name" type="text" placeholder = "Company Name" class="input" required>
                                         <input type="image" id="edit" alt="edit" src="../../Images/edit.png" class="edit"> 
                                     </div>
                                     <div class="group">
                                       <p class="field"> <b>Company Owner Name</b></p>
-                                      <input id="name" type="text" placeholder = "Company Owner Name" class="input" required>
+                                      <input id="coname" name="coname" type="text" placeholder = "Company Owner Name" class="input" required>
                                       <input type="image" id="edit" alt="edit" src="../../Images/edit.png" class="edit"> 
                                     </div>
                                     <div class="group">
                                       <p class="field"> <b>Company Registered No</b></p>
-                                      <input id="name" type="text" placeholder = "Company Registered No" class="input" required>
+                                      <input id="co_no" name="co_no" type="text" placeholder = "Company Registered No" class="input" required>
                                       <input type="image" id="edit" alt="edit" src="../../Images/edit.png" class="edit"> 
                                     </div>
                                     <div class="group">
                                       <p class="field"> <b>Address</b></p>
-                                      <input id="Address" type="text" placeholder = "Address" class="input" required>
+                                      <input id="Address" name="address" type="text" placeholder = "Address" class="input" required>
                                       <input type="image" id="edit" alt="edit" src="../../Images/edit.png" class="edit"> 
                                     </div>
                                     <div class="group">
                                         <p class="field"> <b>Email</b> </p>
-                                        <input id="email" type="email" placeholder = "Email" class="input" required>
+                                        <input id="email" name="email" type="email" placeholder = "Email" class="input" required>
                                         <input type="image" id="edit" alt="edit" src="../../Images/edit.png" class="edit"> 
                                     </div>
                                     <div class="group">
                                         <p class="field"> <b>Contact Number</b></p>
-                                        <input id="contact" type="tel" placeholder = "Contact Number" class="input" required>
+                                        <input id="contact" name="contact" type="tel" placeholder = "Contact Number" class="input" required>
                                         <input type="image" id="edit" alt="edit" src="../../Images/edit.png" class="edit"> 
-                                    </div>  
+                                    </div> 
+                                    
                         </div>
                     </div>
                 </form>

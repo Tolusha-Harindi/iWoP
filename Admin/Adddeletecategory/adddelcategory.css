@@ -24,7 +24,7 @@
 }
 /*----view all users button---*/
 .viewButton{
-    background-color: rgba(21, 25, 101, 1) ;/* blue */
+    background-color: #E95B5B ;/* blue */
     border: none;
     color: white;
     padding: 15px 20px;
@@ -38,14 +38,14 @@
 }
 /*add button*/
 .addButton{
-    background-color:rgba(54, 203, 17, 1) ;/* green */
+    background-color: #2EAB2B ;/* green */
     border: none;
     color: white;
     padding: 15px 40px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 18px;
     /*float: right;*/
     cursor: pointer;
     margin-left: 100%;
@@ -58,12 +58,16 @@ h3{
     font-size: 30px;
     margin-left: 10%;
 }
+
+
 /*change the postion of textinput*/
 #lname{
     width: 65%;
     height: 6vh;
     margin-left: 20%;
 }
+
+
 /*change the font size of placeholder words Enter the category name*/
 input[type="text"]::placeholder{
     font-size: 20px;
@@ -82,14 +86,14 @@ input[type="text"]::placeholder{
 
 /*delete button*/
 .deleteButton {
-    background-color: rgba(54, 203, 17, 1); /* green */
+    background-color: #2EAB2B; /* green */
     border: none;
     color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 18px;
     /*float: right;*/
     cursor: pointer;
     margin-top: 2%;
@@ -102,8 +106,8 @@ input[type="text"]::placeholder{
 /* Google Fonts Import Link */
 /*-----------------------------------------------------------Side bar----------------------------------------------------------------------------*/
 
-/* Google Fonts Import Link */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
