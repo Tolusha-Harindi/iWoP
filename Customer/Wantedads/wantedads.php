@@ -116,7 +116,7 @@ sidebarBtn.addEventListener("click", ()=>{
 
 
     <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'NewAd')" >Post a New Ad</button>
+        <button class="tablinks" onclick="openCity(event, 'NewAd')" id="defaultOpen">Post a New Ad</button>
         <button class="tablinks" onclick="openCity(event, 'Posted')">Posted Ads</button>
 
     </div>

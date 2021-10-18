@@ -22,11 +22,7 @@
     <link rel="stylesheet" href="css/layout/header.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link
-            href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"
-            rel="stylesheet"
-    />
-
+    
 
     <title>Change Password</title>
 
@@ -66,34 +62,21 @@
             }
         }
     </style>
-
+      <link rel="stylesheet" href="../../Repeating-pages/topnav/topnav.css">
+      <!--------------------------Top nav----------------------------------------->
+      <?php
+        include '../../Repeating-pages/topnav/topnav4-company.php'
+    ?>
 </head>
 
 <body>
 <script src="js/app.js" async defer></script>
-<header>
-    <img src="images/Logo.jpg" alt="Landing" id="image" class="logo" height="80px">
-    <nav>
-        <a href="#"><i class="fas fa-user-circle fa-2x"></i> </a>
-        <a href="#alladds"> <b>| All Adds </b></a>
-        <a href="#payments"> <b>| Payments </b></a>
-        <a href="#category"><b> | Category </b></a>
-        <a href="#help"> <b>| Help page </b></a>
-        <a href="#Logout"> <b>| Logout </b></a>
-    </nav>
-    <div>
-        <button class="button">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-    </div>
-</header>
+
 
 <div class="main-box">
-    <div class="down-row" style="padding: 0;">
-        <div class="col-left-30" style="padding: 0;"></div>
-        <div class="col-right-70" style="padding: 0;">
+    <div class="down-row" style="padding: 50;">
+        <div class="col-left-30" style="padding: 10;"></div>
+        <div class="col-right-70" style="padding: 10;">
             <h3>Password Change</h3>
         </div>
     </div>
@@ -103,42 +86,42 @@
                 <div class="sidebar close">
                     <ul class="nav-links">
                         <li>
-                            <a href="#">
+                            <a href="../CompanyProfile/Companyprofile">
                                 <i class='bx bxs-user'></i>
                                 <span class="link_name">My Profile</span>
                             </a>
                             <ul class="sub-menu blank">
-                                <li><a class="link_name" href="#">My Profile</a></li>
+                                <li><a class="link_name" href="../CompanyProfile/Companyprofile">My Profile</a></li>
                             </ul>
                         </li>
 
                         <li class="list-select">
-                            <a href="#">
+                            <a href="../Change password/Company Change password">
                                 <i class='bx bxs-check-shield'></i>
                                 <span class="link_name">Change Password</span>
                             </a>
                             <ul class="sub-menu blank">
-                                <li><a class="link_name" href="#">Change Password</a></li>
+                                <li><a class="link_name" href="../Change password/Company Change password">Change Password</a></li>
                             </ul>
                         </li>
 
                         <li>
-                            <a href="#">
+                            <a href="../Wantedads/wantedads">
                                 <i class='bx bxs-image'></i>
                                 <span class="link_name">Post Your Ads</span>
                             </a>
                             <ul class="sub-menu blank">
-                                <li><a class="link_name" href="#">Post Your Ads</a></li>
+                                <li><a class="link_name" href="../Wantedads/wantedads">Post Your Ads</a></li>
                             </ul>
                         </li>
 
                         <li>
-                            <a href="#">
+                            <a href="../ApplyforJob-Responses/ApplyforJob-companyview">
                                 <i class='bx bxs-share' ></i>
                                 <span class="link_name">Responses</span>
                             </a>
                             <ul class="sub-menu blank">
-                                <li><a class="link_name" href="#">Responses</a></li>
+                                <li><a class="link_name" href="../ApplyforJob-Responses/ApplyforJob-companyview">Responses</a></li>
                             </ul>
                         </li>
                         </li>
@@ -158,15 +141,18 @@
                 <div class="col-left-30">
                     <img src="images/key.png" alt="Key" id="side-img">
                 </div>
-                <div class="col-right-70" style="padding: 0;">
+                <div class="col-right-70" style="padding: 20;">
                     <label for="cPassword">Current Password <i class="red-s">*</i></label>
                     <input type="text" id="cPassword" name="cPassword" required>
                     <label for="nPassword">New Password <i class="red-s">*</i></label>
                     <input type="text" id="nPassword" name="nPassword" required>
                     <label for="ccPassword">Confirm Password <i class="red-s">*</i></label>
                     <input type="text" id="ccPassword" name="ccPassword" required>
-                    <input type="button" value="Change Button"
-                           style="width: 150px; height: 30px; background: #2eab2b; color:#ffffff; border: none; cursor: pointer">
+                    <input type="button" value="Change Password"
+                           style=" padding: 20px 30px 30px 30px ;width: 200px; height: 40px; background: #2eab2b; color:#ffffff; border: none; cursor: pointer;
+                            text-align: center;
+                          text-decoration: none;
+                         display: inline-block;">
                 </div>
             </div>
         </div>

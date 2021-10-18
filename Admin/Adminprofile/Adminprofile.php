@@ -101,8 +101,13 @@
     <div class="mainDiv">
         <div class="cardStyle">
             <form action="" method="post">
+
                 <img src="user.png" class="userimg">
                 <input type="file" id="myFile" name="filename"> </br> </br>
+=======
+                <img src="../../Images/img.png" class="userimg">
+                <input type="file" id="myFile" name="filename">
+
                
                 <!--<img src="camere.png" alt="camera" class="camera">-->
                 <div class="inputDiv">
