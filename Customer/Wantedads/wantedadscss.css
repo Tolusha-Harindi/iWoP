@@ -60,10 +60,11 @@ body{
 
 /* Style the tab content */
 .tabcontent {
-    display: none;
+    /*display: none;*/
     padding: 6px 12px;
     border-top: none;
 }
+
 .img{
     margin-top: 80px;
     padding-bottom: 20px;
@@ -237,6 +238,11 @@ button[disabled] {
 
 
 /*------------------------------------------Outer-box - adds------------------------------*/
+
+.posted{
+    display:none;
+}
+
 .box3{
     float: left;
     width: 94%;
