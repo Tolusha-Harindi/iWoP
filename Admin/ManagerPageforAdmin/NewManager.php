@@ -102,7 +102,7 @@
 
 
 <!------------------------------------Form-------------------------------->
-              <div>
+              <div class="box2">
                 <form name = "reg-w" method="post" action="new_manager.php">
                     <div class="reg-start">
                             <div class="info">

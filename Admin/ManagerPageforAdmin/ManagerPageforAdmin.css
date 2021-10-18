@@ -5,7 +5,7 @@
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-size: 40px;
-    margin-top: 10%;
+    margin-top: 12%;
     margin-bottom: 5%;
 }
 
@@ -33,11 +33,10 @@
 
 /*-------------------------------Remove button -----------------------------------*/
 .button3{
-    
     padding: 15px 38px;
     background-color: #2EAB2B;
     margin-top: 22%;
-   
+    margin-right: -14%;
 }
 
 /*----------View Profile--------------*/
@@ -111,12 +110,7 @@
     font-size: 17px;
 }
 
-/*-----Manager name------*/
-.detail{
-    font-size:25px;
-    margin-top: 15%;
-    margin-left: 5%;
-}
+
 
 
 
