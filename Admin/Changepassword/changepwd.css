@@ -9,6 +9,8 @@
 }
 
 
+
+
 /*---------------------Right-Outer-box- Report----------------------------------------*/
 
 
@@ -25,6 +27,13 @@
     height:80%;  
 }
 
+/*--------------Change password-----------------*/
+.heading{
+    font-size:40px;
+    text-align: center;
+    margin-top: 8%;
+}
+
 .floatRight{
     margin-top: 5%;
 }
@@ -36,15 +45,16 @@
 }
 .inputLabel {
     font-size: 18px;
-    color: #555;
     margin-bottom: 6px;
     margin-top: 24px;
+    color: black;
 }
 .inputDiv {
     width: 70%;
     display: flex;
     flex-direction: column;
     margin: auto;
+    
 }
  .inputDiv input {
     height: 40px;
@@ -53,6 +63,10 @@
     border: none;
     border: solid 1px #ccc;
     padding: 0 11px;
+}
+
+.input{
+    border:2px black solid;
 }
 
 .change{
@@ -69,8 +83,7 @@
 
 /*-----------------------------------------------------------Side bar----------------------------------------------------------------------------*/
 
-/* Google Fonts Import Link */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
