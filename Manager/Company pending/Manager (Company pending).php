@@ -190,8 +190,8 @@
         </div>
         <div class="col-right-70" style="border: 1px solid black; margin: 2px;">
             <div id="tim-low">
-                <input type="button" value="Pending Registration" style="background-color: #9e9aa8;">
-                <input type="button" value="Company List">
+                <!-- <input type="button" value="Pending Registration" style="background-color: #9e9aa8;"> -->
+                <!-- <input type="button" value="Company List"> -->
             </div>
         <div class="down-row">
             <table width="100%">
