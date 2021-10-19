@@ -136,7 +136,7 @@
                 </section>
             </div>
         </div>
-        <div class="col-right-70" id="cont-box" style="border: 1px solid black; margin: 2px;">
+        <div class="col-right-70" id="cont-box" style=" box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); margin: 2px;">
             <div class="down-row">
                 <div class="col-left-30">
                     <img src="images/key.png" alt="Key" id="side-img">
