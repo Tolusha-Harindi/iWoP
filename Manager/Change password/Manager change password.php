@@ -74,12 +74,12 @@
 <header>
     <img src="images/Logo.jpg" alt="Landing" id="image" class="logo" height="80px">
     <nav>
-        <a href="#"><i class="fas fa-user-circle fa-2x"></i> </a>
+        <a href="../../Manager/ManagerProfile/ManagerProfile.php"><i class="fas fa-user-circle fa-2x"></i> </a>
         <a href="#postads"> <b>| Post Ads </b></a>
         <a href="#alladds"> <b>| All Adds </b></a>
-        <a href="#category"><b> | Category </b></a>
-        <a href="#help"> <b>| Help page </b></a>
-        <a href="#Logout"> <b>| Logout </b></a>
+        <a href="../../Unregistered-user/Allcategories/categories.php"><b> | Category </b></a>
+        <a href="../../Customer/FAQ/FAQ.php"> <b>| Help page </b></a>
+        <a href="../../Login/Logout.php"> <b>| Logout </b></a>
     </nav>
     <div>
         <button class="button">
@@ -108,7 +108,7 @@
                                 <span class="link_name">My Profile</span>
                             </a>
                             <ul class="sub-menu blank">
-                                <li><a class="link_name" href="#">My Profile</a></li>
+                                <li><a class="link_name" href="../../Manager/ManagerProfile/ManagerProfile.php">My Profile</a></li>
                             </ul>
                         </li>
 
@@ -118,7 +118,7 @@
                                 <span class="link_name">Change Password</span>
                             </a>
                             <ul class="sub-menu blank">
-                                <li><a class="link_name" href="#">Change Password</a></li>
+                                <li><a class="link_name" href="../Change password/Manager change password.php">Change Password</a></li>
                             </ul>
                         </li>
 
@@ -128,7 +128,7 @@
                                 <span class="link_name">Workers</span>
                             </a>
                             <ul class="sub-menu blank">
-                                <li><a class="link_name" href="#">Workers</a></li>
+                                <li><a class="link_name" href="../worker list/Manager (worker list).php">Workers</a></li>
                             </ul>
                         </li>
 
@@ -138,7 +138,7 @@
                                 <span class="link_name">Company</span>
                             </a>
                             <ul class="sub-menu blank">
-                                <li><a class="link_name" href="#">Company</a></li>
+                                <li><a class="link_name" href="../Company list/Manager (company list).php">Company</a></li>
                             </ul>
                         </li>
                         </li>

@@ -72,11 +72,11 @@
 <header>
     <img src="images/Logo.jpg" alt="Landing" id="image" class="logo" height="80px">
     <nav>
-        <a href="#"><i class="fas fa-user-circle fa-2x"></i> </a>
+        <a href="../../Manager/ManagerProfile/ManagerProfile.php"><i class="fas fa-user-circle fa-2x"></i> </a>
         <a href="#alladds"> <b>| All Adds </b></a>
-        <a href="#category"><b> | Category </b></a>
-        <a href="#help"> <b>| Help page </b></a>
-        <a href="#Logout"> <b>| Logout </b></a>
+        <a href="../../Unregistered-user/Allcategories/categories.php"><b> | Category </b></a>
+        <a href="../../Customer/FAQ/FAQ.php"> <b>| Help page </b></a>
+        <a href="../../Login/Logout.php"> <b>| Logout </b></a>
     </nav>
     <div>
         <button class="button">
