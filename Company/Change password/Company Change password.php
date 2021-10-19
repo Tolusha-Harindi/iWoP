@@ -81,7 +81,7 @@
         </div>
     </div>
     <div class="down-row">
-        <div class="col-left-30" style="border: 1px solid black; margin: 2px; height: 500px;">
+        <div class="col-left-30" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); margin: 2px; height: 500px;">
             <div class="box1">
                 <div class="sidebar close">
                     <ul class="nav-links">
