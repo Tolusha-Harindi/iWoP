@@ -1,6 +1,6 @@
-/* Google Fonts Import Link */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
+body{
+    font-family: 'Poppins', sans-serif;
+}
 
 
 
@@ -8,9 +8,7 @@
     float: left;
     width: 30%;
     height: 70%;
-    
     margin-left: 3%;
-    
     align-items: center;
 
 }
@@ -19,16 +17,15 @@
     height: 700px;
     margin-top: 60px;
 }
-/*---------------------Right-Outer-box- Report----------------------------------------*/
+
+/*---------------------Right-Outer-box-----------------------------------------*/
 .box2{
     float:right;
-    width: 60%;
-    margin-right:3%;
-    /*border: 1px solid red;*/
+    width: 68%;
+    margin-right:6%;
     height: 700px;
-    margin-top: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-
+    margin-top: -45%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
 }
 
 /*box 2*/
@@ -38,10 +35,9 @@
     align-items: center;
     justify-content: center;
     background-color: #f9f9f9;
-    font-family: 'Poppins', sans-serif;
 }
 .cardStyle {
-    width: 600px;
+    width: 75%;
     border-color: white;
     background: #fff;
     padding: 36px 0;
@@ -55,23 +51,25 @@
     
     
 }
-/*#imgdiv{
-   
-    border: 1px solid black;
-}*/
+
 .formTitle{
     font-weight: 600;
     margin-top: 20px;
     color: #2F2D3B;
     text-align: center;
 }
+
 .inputLabel {
     font-size: 17px;
-    color: #555;
     margin-bottom: 6px;
     margin-top: 24px;
-    font-family: 'Poppins', sans-serif;
 }
+
+/*----red star-----*/
+.red{
+    color:red;
+}
+
 .inputDiv {
     width: 70%;
     display: flex;
@@ -82,49 +80,46 @@
     height: 40px;
     font-size: 16px;
     border-radius: 4px;
-
-    border: solid 1px #ccc;
+    border: solid 2px black;
     padding: 0 11px;
+    border-radius: 0;
 }
+
 input:disabled {
     cursor: not-allowed;
     border: solid 1px #eee;
 }
+
 .buttonWrapper {
     margin-top: 40px;
 }
+
+/*-----------submit button----------------*/
 .submitButton {
-    width: 70%;
-    height: 40px;
+    width: 25%;
+    height: 50px;
     margin: auto;
     display: block;
     color: #fff;
     background-color: rgba(46, 171, 43, 1);
-
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.035);
-    border-radius: 4px;
     font-size: 17px;
     cursor: pointer;
-    font-family: 'Poppins', sans-serif;
+    border:none;
 }
+
 .submitButton:disabled,
 button[disabled] {
-
-
     background-color: #cccccc;
     color: #666666;
 }
+
 /*change password word*/
 .changepwd{
-   margin-top: 80px;
-   font-size: 40px;
-  text-align: center;
- 
-
-}
-body{
-    font-family: 'Poppins', sans-serif;
+    margin-top: 10%;
+    font-size: 40px;
+    margin-left:40%;
 }
 
 
