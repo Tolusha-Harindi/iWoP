@@ -1,7 +1,7 @@
 /* Add a white background color to the top navigation */
 .topnav {
     position: fixed;
-    background-color: #151965 ;
+    background-color: #151965;
     overflow: hidden;
     height: 10%;
     width: 100%;

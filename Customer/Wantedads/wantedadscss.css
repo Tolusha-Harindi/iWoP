@@ -2,7 +2,13 @@
 
 body{
     font-family: 'Poppins', sans-serif;
+    /* background-image: url('../../Images/bg2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;  */
+
 }
+
 
 .heading1{
     font-size: 40px;
@@ -70,7 +76,7 @@ body{
     padding-bottom: 20px;
     height: 100px;
     width: 100px;
-     margin-left:100px ;
+    margin-left:100px ;
 }
 .postButton{
     background-color: rgba(46, 171, 43, 1); /* Green */
@@ -140,7 +146,6 @@ body{
     display: flex;
     flex-direction: column;
     margin: auto;
-    font-family: 'Poppins', sans-serif;
     height: 7%;
 }
 .inputDiv input {
@@ -150,10 +155,15 @@ body{
     padding: 0 11px;
 }
 
+/*----red star------*/
+.red{
+    color:red;
+}
+
+
 
 #lang{
     position:relative;
-    font-family: 'Poppins', sans-serif;
     font-size: 18px; 
     width: 100%;
     height: 8%;
@@ -170,9 +180,11 @@ input:disabled {
     cursor: not-allowed;
     border: solid 1px #eee;
 }
+
 .buttonWrapper {
     margin-top: 40px;
 }
+
 .submitButton {
     width: 18%;
     height: 45px;
@@ -185,6 +197,7 @@ input:disabled {
     font-size: 17px;
     cursor: pointer;
 }
+
 .submitButton:disabled,
 button[disabled] {
 
