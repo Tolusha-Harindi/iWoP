@@ -13,9 +13,9 @@
             <div class="logo"> 
                 <input type="image" id="image" alt="Landing" src="../../Images/Logo.jpg">
             </div>
-            <a class="active" href="../../Login/Login.php"> <b>| Login  </b></a> 
-            <a href="#help"> <b>| Help Page </b></a> 
-            <a href="#category"><b> | Category </b></a> 
+            <a class="active" href="../Login/Login.php"> <b>| Login  </b></a> 
+            <a href="../../Customer/FAQ/FAQ.php"> <b>| Help Page </b></a> 
+            <a href="../../Customer/CategoryWorkerPg/CategoryWorker.php"><b> | Category </b></a> 
             <a href="#alladds"> <b>| All Adds </b></a>   
         </div>
     </div>
