@@ -32,23 +32,23 @@
               
               <ul class="nav-links">
                 <li>
-                  <a href="#">
+                  <a href="../CompanyProfile/Companyprofile">
                     <i class='bx bxs-user' ></i>
                     <span class="link_name">My Profile</span>
                   </a>
                   <ul class="sub-menu blank">
-                    <li><a class="link_name" href="#">My Profile</a></li>
+                    <li><a class="link_name" href="../CompanyProfile/Companyprofile">My Profile</a></li>
                   </ul>
                 </li>
           
                 
                 <li>
-                  <a href="#">
+                  <a href="../Change password/Company change password">
                     <i class='bx bxs-check-shield' ></i>
                     <span class="link_name">Change Password</span>
                   </a>
                   <ul class="sub-menu blank">
-                    <li><a class="link_name" href="#">Change Password</a></li>
+                    <li><a class="link_name" href="../Change password/Company change password">Change Password</a></li>
                   </ul>
                 </li>
           
@@ -63,12 +63,12 @@
                 </li>
           
                 <li>
-                  <a href="#">
+                  <a href="../ApplyforJob-Responses/ApplyforJob-companyview">
                     <i class='bx bxs-share' ></i>
                     <span class="link_name">Responses</span>
                   </a>
                   <ul class="sub-menu blank">
-                    <li><a class="link_name" href="#">Responses</a></li>
+                    <li><a class="link_name" href="../ApplyforJob-Responses/ApplyforJob-companyview">Responses</a></li>
                   </ul>
                 </li>
           </li>
