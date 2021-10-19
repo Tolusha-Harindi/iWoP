@@ -32,6 +32,7 @@ else{
         <div class="box">
             <div class="container">
                 <h2 class="box-heading"> LOGIN </h2>
+                <?php //var_dump($_SESSION); ?>
                 <form name="login"  id="login" method="post" action="Login-data.php">
                     <div class="login-start">
                             <div class="info">

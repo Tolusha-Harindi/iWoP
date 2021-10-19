@@ -1,10 +1,10 @@
 <?php
 session_start();
-if(isset($_SESSION['email'])){
+if(isset($_SESSION['Email'])){
 
   include '../../Backend/db_connection.php'; //check company id or not
-  $temp= $_SESSION['email']; 
-  $sql = "SELECT email FROM company WHERE email='$temp'";
+  $temp= $_SESSION['Email']; 
+  $sql = "SELECT Email FROM company WHERE Email='$temp'";
   $result = mysqli_query($db,$sql);
   if(mysqli_num_rows($result)>0){ 
 ?>

@@ -119,20 +119,20 @@ if(isset($_POST['submit'])){
         }
 
             /*-------------------------company-------------------------*/
-        else if(mysqli_num_rows($query_company)===1){
+            else if(mysqli_num_rows($query_company)===1){
 
-            $usertypes=mysqli_fetch_assoc($query_company); //fetch data to array
-            
-            if($usertypes['email']==$email && password_verify($password, $usertypes['password']))
-            {
-                $_SESSION['Name']=$usertypes['name'];
-                $_SESSION['contact']=$usertypes['contact'];
-                $_SESSION['Com_reg_no']=$usertypes['Com_reg_no'];
-                $_SESSION['Email']=$usertypes['email'];
-
-                header('location:../Company/CompanyProfile/CompanyProfile.php');
-                exit();
-            }
+                $usertypes=mysqli_fetch_assoc($query_company); //fetch data to array
+                
+                if($usertypes['Email']==$email && password_verify($password, $usertypes['Password']))
+                {
+                    $_SESSION['Name']=$usertypes['Name'];
+                    $_SESSION['contact']=$usertypes['contact'];
+                    $_SESSION['Com_reg_no']=$usertypes['Com_reg_no'];
+                    $_SESSION['Email']=$usertypes['Email'];
+    
+                    header('location:../Company/CompanyProfile/CompanyProfile.php');
+                    exit();
+                }
             else{
                 header('location:Login.php?error= Incorrect email or password');
                 exit();
