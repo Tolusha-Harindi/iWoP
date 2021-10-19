@@ -113,133 +113,132 @@
                     </div> 
                </a>
 
-               <div class="grid-item">
-                    <a href="../CategoryWorkerPg/CategoryWorker.php">
-                         <img src="../../Images/category/welding.png" alt="welding" id="img">
-                         <h4>Welding</h4>
-                    </a>
-               </div> 
+               <a href="../CategoryWorkerPg/CategoryWorker.php">
+                    <div class="grid-item">
+                              <img src="../../Images/category/welding.png" alt="welding" id="img">
+                              <h4>Welding</h4>
+                    </div> 
+               </a>
 
-               <div class="grid-item">
-                    <a href="../CategoryWorkerPg/CategoryWorker.php">
-                         <img src="../../Images/category/whisk-and-bowl.png" alt="cooking" id="img">
-                         <h4>Cooking</h4>  
-                    </a>
-               </div> 
+               <a href="../CategoryWorkerPg/CategoryWorker.php">
+                    <div class="grid-item">
+                              <img src="../../Images/category/whisk-and-bowl.png" alt="cooking" id="img">
+                              <h4>Cooking</h4>  
+                    </div> 
+               </a>
 
-               <div class="grid-item">
-                    <a href="../CategoryWorkerPg/CategoryWorker.php">
-                         <img src="../../Images/category/armchair.png" alt="cushion" id="img">
-                         <h4>Cushions</h4>
-                    </a>
-               </div> 
+               <a href="../CategoryWorkerPg/CategoryWorker.php">
+                    <div class="grid-item">
+                              <img src="../../Images/category/armchair.png" alt="cushion" id="img">
+                              <h4>Cushions</h4>
+                    </div> 
+               </a>
 
-               <div class="grid-item">
-                    <a href="../CategoryWorkerPg/CategoryWorker.php">
-                         <img src="../../Images/category/repairing-car.png" alt="repairs" id="img">
-                         <h4> vehicle <br>Repairs</h4>
-                    </a>
-               </div> 
+               <a href="../CategoryWorkerPg/CategoryWorker.php">
+                    <div class="grid-item">
+                              <img src="../../Images/category/repairing-car.png" alt="repairs" id="img">
+                              <h4> vehicle <br>Repairs</h4>
+                    </div> 
+               </a>
 
-               <div class="grid-item">
-                    <a href="../CategoryWorkerPg/CategoryWorker.php">
-                         <img src="../../Images/category/cleaning.png" alt="cleaners" id="img">
-                         <h4>Cleaners</h4>
-                    </a>
-               </div>
+               <a href="../CategoryWorkerPg/CategoryWorker.php">
+                    <div class="grid-item">
+                              <img src="../../Images/category/cleaning.png" alt="cleaners" id="img">
+                              <h4>Cleaners</h4>
+                    </div>
+               </a>
 
-               <div class="grid-item">
-                    <a href="../CategoryWorkerPg/CategoryWorker.php">
-                         <img src="../../Images/category/cctv.png" alt="cctv" id="img">
-                         <h4>CCTV</h4>
-                    </a>
-               </div> 
+               <a href="../CategoryWorkerPg/CategoryWorker.php">
+                    <div class="grid-item">
+                              <img src="../../Images/category/cctv.png" alt="cctv" id="img">
+                              <h4>CCTV</h4>
+                    </div>
+               </a> 
 
-               <div class="grid-item">
-                    <a href="../CategoryWorkerPg/CategoryWorker.php">
-                         <img src="../../Images/category/ceiling.png" alt="ceiling" id="img">
-                         <h4>Ceiling</h4>
-                    </a>
-               </div> 
+               <a href="../CategoryWorkerPg/CategoryWorker.php">
+                    <div class="grid-item">
+                              <img src="../../Images/category/ceiling.png" alt="ceiling" id="img">
+                              <h4>Ceiling</h4>
+                    </div> 
+               </a>
 
-               <div class="grid-item">
-                    <a href="../CategoryWorkerPg/CategoryWorker.php">
-                         <img src="../../Images/category/water-well.png" alt="well" id="img">
-                         <h4>Well</h4>
-                    </a>
-               </div> 
+               <a href="../CategoryWorkerPg/CategoryWorker.php">
+                    <div class="grid-item">
+                              <img src="../../Images/category/water-well.png" alt="well" id="img">
+                              <h4>Well</h4>
+                    </div> 
+               </a>
 
-               <div class="grid-item">
-                    <a href="../CategoryWorkerPg/CategoryWorker.php">
-                         <img src="../../Images/category/rocking-chair.png" alt="chair" id="img">
-                         <h4>Chairs</h4>
-                    </a>
-               </div> 
+               <a href="../CategoryWorkerPg/CategoryWorker.php">
+                    <div class="grid-item">
+                              <img src="../../Images/category/rocking-chair.png" alt="chair" id="img">
+                              <h4>Chairs</h4>
+                    </div> 
+               </a>
 
-               <div class="grid-item">
-                    <a href="../CategoryWorkerPg/CategoryWorker.php">
-                         <img src="../../Images/category/rent-hanging-signal.png" alt="rent tools" id="img">
-                         <h4>Rent-tools</h4> 
-                    </a>
-               </div> 
+               <a href="../CategoryWorkerPg/CategoryWorker.php">
+                    <div class="grid-item">
+                              <img src="../../Images/category/rent-hanging-signal.png" alt="rent tools" id="img">
+                              <h4>Rent-tools</h4> 
+                    </div> 
+               </a>
 
-               <div class="grid-item">
-                    <a href="../CategoryWorkerPg/CategoryWorker.php">
-                         <img src="../../Images/category/curtains.png" alt="curtains" id="img">
-                         <p class=category>
-                         <h4>Curtains</h4>
-                    </a>
-                    
-               </div> 
+               <a href="../CategoryWorkerPg/CategoryWorker.php">
+                    <div class="grid-item">
+                              <img src="../../Images/category/curtains.png" alt="curtains" id="img">
+                              <p class=category>
+                              <h4>Curtains</h4>
+                    </div>
+               </a> 
 
-               <div class="grid-item">
-                    <a href="../CategoryWorkerPg/CategoryWorker.php">
-                         <img src="../../Images/category/solar-panel.png" alt="solar" id="img">
-                         <h4>Solar</h4>
-                    </a>
-               </div> 
+               <a href="../CategoryWorkerPg/CategoryWorker.php">
+                    <div class="grid-item">
+                              <img src="../../Images/category/solar-panel.png" alt="solar" id="img">
+                              <h4>Solar</h4>
+                    </div> 
+               </a>
 
-               <div class="grid-item">
-                    <a href="../CategoryWorkerPg/CategoryWorker.php">
-                         <img src="../../Images/category/demolition.png" alt="demo" id="img">
-                         <h4>Demolition</h4>
-                    </a>
-               </div> 
+               <a href="../CategoryWorkerPg/CategoryWorker.php">
+                    <div class="grid-item">
+                              <img src="../../Images/category/demolition.png" alt="demo" id="img">
+                              <h4>Demolition</h4>
+                    </div>
+               </a> 
 
-               <div class="grid-item">
-                    <a href="../CategoryWorkerPg/CategoryWorker.php">
-                         <img src="../../Images/category/insecticide.png" alt="pest"id="img">
-                         <h4>Pest</h4>
-                    </a>
-               </div>
+               <a href="../CategoryWorkerPg/CategoryWorker.php">
+                    <div class="grid-item">
+                              <img src="../../Images/category/insecticide.png" alt="pest"id="img">
+                              <h4>Pest</h4>
+                    </div>
+               </a>
 
-               <div class="grid-item">
-                    <a href="../CategoryWorkerPg/CategoryWorker.php">
-                         <img src="../../Images/category/tea-mug.png" alt="design" id="img">
-                         <h4>Mug<br> designer</h4>
-                    </a>
-               </div> 
+               <a href="../CategoryWorkerPg/CategoryWorker.php">
+                    <div class="grid-item">
+                              <img src="../../Images/category/tea-mug.png" alt="design" id="img">
+                              <h4>Mug<br> designer</h4>
+                    </div> 
+               </a>
 
-               <div class="grid-item">
-                    <a href="../CategoryWorkerPg/CategoryWorker.php">
-                         <img src="../../Images/category/moving.png" alt="movers" id="img">
-                         <h4>Movers</h4>
-                    </a>
-               </div> 
+               <a href="../CategoryWorkerPg/CategoryWorker.php">
+                    <div class="grid-item">
+                              <img src="../../Images/category/moving.png" alt="movers" id="img">
+                              <h4>Movers</h4>
+                    </div> 
+               </a>
 
-               <div class="grid-item">
-                    <a href="../CategoryWorkerPg/CategoryWorker.php">
-                         <img src="../../Images/category/recycle.png" alt="aluminium" id="img">
-                         <h4>Aluminium</h4>
-                    </a>
-               </div>
+               <a href="../CategoryWorkerPg/CategoryWorker.php">
+                    <div class="grid-item">
+                              <img src="../../Images/category/recycle.png" alt="aluminium" id="img">
+                              <h4>Aluminium</h4>
+                    </div>
+               </a>
 
-               <div class="grid-item">
-                    <a href="../CategoryWorkerPg/CategoryWorker.php">
-                         <img src="../../Images/category/waiter.png" alt="waiter" id="img">
-                         <h4>Catering</h4>
-                    </a>
-               </div> 
+               <a href="../CategoryWorkerPg/CategoryWorker.php">
+                    <div class="grid-item">
+                              <img src="../../Images/category/waiter.png" alt="waiter" id="img">
+                              <h4>Catering</h4>
+                    </div> 
+               </a>
           </div>
         </div>
       </div>
