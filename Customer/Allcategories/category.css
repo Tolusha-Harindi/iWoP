@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
 .box1{
    /* border: 1px solid red;*/
     height: 600px;
@@ -16,18 +19,18 @@
     grid-template-columns: auto auto auto auto auto auto auto auto ;
     background-color:white;
     padding: 6px;
+    color:#151965;
   }
   
   .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
-   /* border: 1px solid rgba(0, 0, 0, 0.8);*/
     padding: 10px;
-    font-size: 30px;
-    text-align: center;
-    
+    font-size: 20px;
+    text-align: center; 
   }
   .grid-item:hover{
-      background-color:#7ed6df;
+      background-color:#FFD044;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
   }
 
   #img{
@@ -38,9 +41,11 @@
  .category{
      text-decoration: none;
  }
+
+ /*-------category name --------------*/
  h4{
-    font-family: 'Poppins', sans-serif;
      text-decoration: none;
+     color:#082690;
  }
  a:link {
     text-decoration: none;
@@ -52,12 +57,11 @@
     color: black;
   }
   h2{
-    text-shadow: 2px 2px 5px #7d5fff;
+      /*text-shadow: 2px 2px 5px blue;*/
       text-align: center;
       font-size: 55px;
-      font-family: 'Poppins', sans-serif;
+      color:#082690;
   }
   .headingcategory{
-    /*  border: 1px solid red;*/
       margin-top: 100px;
   }
