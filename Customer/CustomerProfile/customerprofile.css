@@ -44,6 +44,12 @@
     width:80%;
 }
 
+
+/*-----red star-----*/
+.red{
+    color:red;
+}
+
 /*-----------------names--------------------------------*/
 .field{
     float:left;
@@ -60,6 +66,8 @@
     color: #fff !important;
     text-decoration: none;
 }
+
+
 /*----------Save button--------------*/
 .button4{
     float:left;

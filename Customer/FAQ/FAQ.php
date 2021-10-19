@@ -1,4 +1,5 @@
 <?php include('../../Backend/db_connection.php'); ?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -15,11 +16,10 @@
          <style type="text/css">
             body {
                 font-family: 'Poppins', sans-serif;
-                background-image: url('./images/a.png');
-                height: 100%;
-                background-position: center;
+                background-image: url('../../Images/bg2.jpg');
                 background-repeat: no-repeat;
-                background-size: cover;
+                background-attachment: fixed;
+                background-size: cover;  */
             }
 
             .fluid-container {
@@ -55,12 +55,13 @@
         	    display: flex;
         	    margin: 10px 0;
         	    align-items: center;
+                background-color:white;
             }
             .accordian .icon {
         	    margin: 0 10px 0 0;
         	    width: 30px;
         	    height: 30px;
-        	    background: url(plus.png) no-repeat 8px 7px #CC9933;
+        	    background: url(plus.png) no-repeat 8px 7px #151965;
         	    border-radius: 50%;
         	    float: left;
         	    transition: all .5s ease-in;
@@ -81,9 +82,11 @@
         	    overflow: hidden;
         	    max-height: 0;
         	    transition: all .5s ease-in;
+                background-color:white;
+                box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.4);
             }
             .panel p {
-                color: #000000;
+                color:  #0000ff;
             }
         </style>
     </head>
@@ -93,7 +96,7 @@
         <div class="container">
           	<div class="fluid-container">
           		<center>
-                    <p style="margin: 2em; font-size: 3em"> 
+                    <p style="margin: 2em; font-size: 3em "> 
                         <b><span style="color: #e0ac1c; font-size: 2em">F</span>requently <span style="color: #e0ac1c; font-size: 2em">A</span>sked <span style="color: #e0ac1c; font-size: 2em">Q</span>uestions</b>	
                     </p>
                 </center>
@@ -156,7 +159,7 @@
                                     <h4> Have these service providers provided honest information, such as experience?</h4>
                                 </div>
                                 <div class="panel">
-                                    <p>•	Most of the time yes.
+                                    <p>Most of the time yes.
 	                                    Most of the published information of Service Providers have been gathered through the information they have sent with the News Paper Ad. Other information has been gathered from known parties. Iwop Customer Service calls all the service providers in every 4 months. Therefore, info gets verified twice. Service receiver can double check with the reviews they have received & by directly contacting them.
                                     </p>
                                 </div>
