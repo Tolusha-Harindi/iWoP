@@ -12,9 +12,9 @@
         <?php
         include '../../Repeating-pages/topnav/topnav2-customer.php'
         ?> 
-        <style type="text/css">
+         <style type="text/css">
             body {
-                font-family: 'Baloo Bhaina 2', cursive;
+                font-family: 'Poppins', sans-serif;
                 background-image: url('./images/a.png');
                 height: 100%;
                 background-position: center;
@@ -23,7 +23,7 @@
             }
 
             .fluid-container {
-                width: 100%;
+                width: 80%;
         	    margin: 0 auto;
         	    margin-top: 10px;
                
@@ -48,9 +48,10 @@
             .accordian {
         	    width: 100%;
         	    padding: 0 5px;
-        	    border: 3px solid #333333;
+        	   /* border: 3px solid #333333;*/
+                box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.4);		;
         	    cursor: pointer;
-        	    border-radius: 200px;
+        	    border-radius: 0;
         	    display: flex;
         	    margin: 10px 0;
         	    align-items: center;
@@ -60,7 +61,7 @@
         	    width: 30px;
         	    height: 30px;
         	    background: url(plus.png) no-repeat 8px 7px #CC9933;
-        	    border-radius: 100%;
+        	    border-radius: 50%;
         	    float: left;
         	    transition: all .5s ease-in;
             }
@@ -92,7 +93,7 @@
         <div class="container">
           	<div class="fluid-container">
           		<center>
-                    <p style="margin: 1em; font-size: 3em"> 
+                    <p style="margin: 2em; font-size: 3em"> 
                         <b><span style="color: #e0ac1c; font-size: 2em">F</span>requently <span style="color: #e0ac1c; font-size: 2em">A</span>sked <span style="color: #e0ac1c; font-size: 2em">Q</span>uestions</b>	
                     </p>
                 </center>
@@ -106,7 +107,7 @@
                                     <div class="icon">
                                     </div>
                                     <center>
-                                        <h4>How can I select the item category  which I neeHow to add my service as a ‘Service Provider’/Worker ?<br><br></h4>
+                                        <h4>How to add my service as a ‘Service Provider’/Worker ?<br><br></h4>
                                     </center>
                                 </div>
                                 <div class="panel">
