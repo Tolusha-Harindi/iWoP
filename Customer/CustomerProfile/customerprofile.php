@@ -114,22 +114,22 @@ if(isset($_SESSION['email'])){
                     <div class="reg-start">
                             <div class="info">
                                     <div class="group">
-                                        <p class="field"> <b>Name</b></p>
+                                        <p class="field"> <b>Name<b class="red"> * </b> </b></p>
                                         <input id="name" type="text" placeholder = "Name" class="input" required>
                                         <input type="image" id="edit" alt="edit" src="../../Images/edit.png" class="edit"> 
                                     </div>
                                     <div class="group">
-                                        <p class="field"> <b>Address</b></p>
+                                        <p class="field"> <b>Address<b class="red"> * </b> </b></p>
                                         <input id="Address" type="text" placeholder = "Address" class="input" required>
                                         <input type="image" id="edit" alt="edit" src="../../Images/edit.png" class="edit"> 
                                     </div>
                                     <div class="group">
-                                        <p class="field"> <b>Email</b> </p>
+                                        <p class="field"> <b>Email<b class="red"> * </b> </b> </p>
                                         <input id="email" type="email" placeholder = "Email" class="input" required>
                                         <input type="image" id="edit" alt="edit" src="../../Images/edit.png" class="edit"> 
                                     </div>
                                     <div class="group">
-                                        <p class="field"> <b>Contact Number</b></p>
+                                        <p class="field"> <b>Contact Number<b class="red"> * </b> </b></p>
                                         <input id="contact" type="tel" placeholder = "Contact Number" class="input" required>
                                         <input type="image" id="edit" alt="edit" src="../../Images/edit.png" class="edit"> 
                                     </div>  
