@@ -18,7 +18,7 @@
 
     <body>
         
-        <div class="c2"> Near to You .......</div>
+        <div class="c2"> Near to You .......</div> </br>
         <div class="c1"> District  
             <div class="search1">
                 <form name = "select" onsubmit="return validation()" method="post">
@@ -63,12 +63,15 @@
                 </form>
             </div>
         </div>
+        
          <!------------------------Near to you Outerbox------------------------>
         <div class="box">
             <!---------------------------Worker deatils------------------------------->
             <div class="box2">
                 <div class="column">
-                    <img src="../../Images/img.png" alt="profile" class="prof">
+                    <a href="../WorkerProfile-Userview/Worker-Profile-Userview.php">
+                        <img src="../../Images/img.png" alt="profile" class="prof">
+                    </a>
                     <div class="lastactive"> Last active 2d</div>
                     <p class="txt1">Job count (10)</p>
                     <div class="star">
@@ -96,7 +99,9 @@
             <!-------------------------------------------------------------------------------->
             <div class="box2">
                 <div class="column">
-                    <img src="../../Images/img.png" alt="profile" class="prof">
+                    <a href="../WorkerProfile-Userview/Worker-Profile-Userview.php">
+                        <img src="../../Images/img.png" alt="profile" class="prof">
+                    </a>
                     <div class="lastactive"> Last active 2d</div>
                     <p class="txt1">Job count (10)</p>
                     <div class="star">
