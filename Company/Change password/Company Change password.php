@@ -189,10 +189,10 @@
             <h3>Help & Support</h3>
             <div class="border1"></div> <!--for the underline -->
             <ul>
-                <a href="#">
+                <a href="../../Repeating-pages/FAQ/FAQ.php">
                     <li>FAQ</li>
                 </a>
-                <a href="#">
+                <a href="../../Unregistered-user/Contactus/contactus.php">
                     <li>Contact Us</li>
                 </a>
             </ul>
@@ -203,13 +203,13 @@
             <h3>About Us</h3>
             <div class="border1"></div>  <!--for the underline -->
             <ul>
-                <a href="#">
+                <a href="../../Unregistered-user/Aboutus/aboutus.php">
                     <li>About Us</li>
                 </a>
-                <a href="termsandcondition.html">
+                <a href="../../Unregistered-user/Terms&conditions/Other(terms&conditions).php">
                     <li>Terms & Condition</li>
                 </a>
-                <a href="#">
+                <a href="../../Unregistered-user/Privacy Policy/Other(privacy policy).php">
                     <li>Privacy Policy</li>
                 </a>
             </ul>
