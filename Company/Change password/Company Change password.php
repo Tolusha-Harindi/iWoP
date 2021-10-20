@@ -87,32 +87,32 @@
                 <div class="sidebar close">
                     <ul class="nav-links">
                         <li>
-                            <a href="../CompanyProfile/Companyprofile">
+                            <a href="../CompanyProfile/Companyprofile.php">
                                 <i class='bx bxs-user'></i>
                                 <span class="link_name">My Profile</span>
                             </a>
                             <ul class="sub-menu blank">
-                                <li><a class="link_name" href="../CompanyProfile/Companyprofile">My Profile</a></li>
+                                <li><a class="link_name" href="../CompanyProfile/Companyprofile.php">My Profile</a></li>
                             </ul>
                         </li>
 
                         <li class="list-select">
-                            <a href="../Change password/Company Change password">
+                            <a href="../Change password/Company Change password.php">
                                 <i class='bx bxs-check-shield'></i>
                                 <span class="link_name">Change Password</span>
                             </a>
                             <ul class="sub-menu blank">
-                                <li><a class="link_name" href="../Change password/Company Change password">Change Password</a></li>
+                                <li><a class="link_name" href="../Change password/Company Change password.php">Change Password</a></li>
                             </ul>
                         </li>
 
                         <li>
-                            <a href="../Wantedads/wantedads">
+                            <a href="../Wantedads/wantedads.php">
                                 <i class='bx bxs-image'></i>
                                 <span class="link_name">Post Your Ads</span>
                             </a>
                             <ul class="sub-menu blank">
-                                <li><a class="link_name" href="../Wantedads/wantedads">Post Your Ads</a></li>
+                                <li><a class="link_name" href="../Wantedads/wantedads.php">Post Your Ads</a></li>
                             </ul>
                         </li>
 
