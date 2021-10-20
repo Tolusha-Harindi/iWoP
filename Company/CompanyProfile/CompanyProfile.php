@@ -40,23 +40,23 @@ if(isset($_SESSION['Email'])){
               
                   <ul class="nav-links">
                     <li>
-                      <a href="#">
+                      <a href="../CompanyProfile/CompanyProfile.php">
                         <i class='bx bxs-user' ></i>
                         <span class="link_name">My Profile</span>
                       </a>
                       <ul class="sub-menu blank">
-                        <li><a class="link_name" href="#">My Profile</a></li>
+                        <li><a class="link_name" href="../CompanyProfile/CompanyProfile.php">My Profile</a></li>
                       </ul>
                     </li>
               
                     
                     <li>
-                      <a href="#">
+                      <a href="../Change password/Company Change password.php">
                         <i class='bx bxs-check-shield' ></i>
                         <span class="link_name">Change Password</span>
                       </a>
                       <ul class="sub-menu blank">
-                        <li><a class="link_name" href="#">Change Password</a></li>
+                        <li><a class="link_name" href="../Change password/Company Change password.php">Change Password</a></li>
                       </ul>
                     </li>
               
