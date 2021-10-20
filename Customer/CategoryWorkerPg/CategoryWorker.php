@@ -65,7 +65,7 @@
         </div>
         
          <!------------------------Near to you Outerbox------------------------>
-        <div class="box">
+        <div class="box"></br>
             <!---------------------------Worker deatils------------------------------->
             <div class="box2">
                 <div class="column">

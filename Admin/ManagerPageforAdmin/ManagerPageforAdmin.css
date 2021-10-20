@@ -1,3 +1,10 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../../Images/bg5.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 
 /*------------------------heading1 - Manager-------------------------------*/
 .heading1{
@@ -36,14 +43,14 @@
     padding: 15px 38px;
     background-color: #2EAB2B;
     margin-top: 22%;
-    margin-right: -14%;
+    margin-right: -12%;
 }
 
 /*----------View Profile--------------*/
 .button4{
     float:left;
     margin-top:0%;
-    margin-left:58%;
+    margin-right:-12%;
     padding: 15px 45px;
     border: none;
     background-color: #E95B5B;
@@ -64,9 +71,13 @@
     align-items: center;
     margin-top: 5%;
     margin-left: 20%;
-    box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.4);
     width:75%;
     height: 55%; 
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.3); /* Black background with 0.5 opacity */
+    color: white; /* White text */
+    padding: 20px; /* Some padding */
 }
 
 /*------------------------------Profile image---------------------------*/
@@ -79,8 +90,8 @@
 /*------------------------------------------form-----------------------------------------------*
 /*Space between two input fields*/
 .info .group{
-  margin-top: 1em;
-	margin-bottom:2%;
+    margin-top: 1em;
+    margin-bottom:2%;
     margin-left: 45%;
 }
 
@@ -104,9 +115,8 @@
 /*-----------------names--------------------------------*/
 .field{
     float:left;
-    margin-left: -25%;
+    margin-left: -28%;
     margin-top: 2%;
-    font-family: 'Poppins', sans-serif;
     font-size: 17px;
 }
 

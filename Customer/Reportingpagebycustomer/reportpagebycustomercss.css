@@ -1,14 +1,17 @@
-
 body{
   font-family: 'Poppins', sans-serif;
+  background-image: url('../../Images/bg5.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
-
 
 /*-----------------------------heading -Report-------------------------------------*/
 .heading1, .heading2{
     font-size: 50px;
     text-align: center;
     margin-top: 100px;
+    color: black;
 }
 
 
@@ -17,42 +20,45 @@ body{
     float: left;
     width: 30%;
     height: 72%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.9);
     margin-left: 3%;
     margin-top: 50px;
     align-items: center;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: white; /* White text */
 }
 
 /*------------------------------left-outer-box-content----------------------*/
 .imguser{
-  margin-top: 124px;
+  margin-top: 16%;
   margin-left: 160px;
-  
   height: 130px;
   width: 200px;
  
 }
 .nameforworker{
-  margin-left:150px ;
+  text-align:center;
   margin-top: 0;
-  font-size: 30px;
+  font-size: 25px;
 }
+
 .typeofwork{
   margin-top: 0;
-  margin-left: 180px;
-  font-size: 20px;
+  text-align:center;
+  font-size: 18px;
 }
 .cityofwork{
-  margin-left: 180px;
-  font-size: 20px;
+  text-align:center;
+  font-size: 18px;
 }
 .experince{
- margin-left: 135px;
- font-size: 20px;
+  text-align:center;
+  font-size: 18px;
 }
 .telnum{
-  margin-left: 170px;
-  font-size: 20px;
+  text-align:center;
+  font-size: 18px;
 }
 /*---------------------Right-Outer-box- Report----------------------------------------*/
 .box2{
@@ -102,6 +108,7 @@ body{
 margin-left: auto;
 margin-right: auto;
 font-size:18px;
+color: white;
 }
 
 /*prevbutton*/

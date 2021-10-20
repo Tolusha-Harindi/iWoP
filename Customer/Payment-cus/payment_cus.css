@@ -2,13 +2,18 @@
 
 body{
     font-family: 'Poppins', sans-serif;
+    background-image: url('../../Images/bg5.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 /*heading - Payments*/
 .full{
-    margin-top: 10%;
+    margin-top: 8%;
     text-align: center;
     font-size:40px;
+    color: darkblue;
 }
 
 /*topic*/
@@ -18,7 +23,7 @@ body{
     font-size:35px;
     font-size:30px;
     margin-bottom: 3%;
-    color: darkblue;
+    color: black;
 }
 
 
@@ -29,11 +34,12 @@ body{
     font-size: 18px;
     text-align: left;
     margin-left:5%;
+    color: white;
 }
 
 /*input fields*/
 .input{
-    border: solid;
+    border: none;
     width: 25%;
     height: 5%;
 	padding:5px 5px;
@@ -53,7 +59,7 @@ body{
     padding:5px 5px;
     margin-left: -35%;
     margin-top:-2%;
-    border: solid;
+    border: none;
     align-items: center;
     justify-content: center;
     
@@ -105,13 +111,13 @@ body{
     font-size:35px;
     font-size:30px;
     margin-bottom: 3%;
-    color: darkblue;
+    color: black;
 }
 
 
   /*input fields*/
 .input2{
-    border: solid;
+    border: none;
     width: 25%;
     height: 5%;
 	padding:5px 5px;
@@ -128,4 +134,5 @@ body{
     font-size: 18px;
     text-align: left;
     margin-left:55%;
+    color:white;
 }

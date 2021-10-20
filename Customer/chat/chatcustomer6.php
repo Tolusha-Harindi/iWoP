@@ -13,21 +13,23 @@
 </head>
 <body>
 <div class="arrowclass">
-<a href=#><img id="arrow" src="arrow.png" alt="arrow"></a>
+    <form>
+        <input type="button" value="Go back!" class="back" onclick="history.back()">
+    </form>
 </div>
 <div class="box1">
-    <img src="user.png" alt="user"  id="userimgbox1">
-    <h3 class="box1name">Kamal Perera</h3>
-    <h4 class="useratings" > User ratings &nbsp; 25%</h4>
-    <div class="box1star">
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star"></span>
-    <span class="fa fa-star"></span>
-    </div>
-    <h4 class="experience">Expereince :  &nbsp; 5 years</h4>
-    <h4 class="phone">0775896332</h4>
+        <img src="user.png" alt="user"  id="userimgbox1">
+        <h3 class="box1name">Kamal Perera</h3>
+        <h4 class="useratings" > User ratings &nbsp; 25%</h4>
+        <div class="box1star">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        </div>
+        <h4 class="experience">Expereince :  &nbsp; 5 years</h4>
+        <h4 class="phone">0775896332</h4>
 </div>
 
 <div class="box2">

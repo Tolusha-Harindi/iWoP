@@ -2,17 +2,13 @@ body{
   font-family: 'Poppins', sans-serif;
 }
 
+
 .box1{
    /* border: 1px solid red;*/
     height: 600px;
     margin-top: 0px;
     
 }
-/*.imageboxes{
-    border: 1px solid  blue;
-
-}*/
-
 
 .grid-container {
     display: grid;

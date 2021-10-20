@@ -1,3 +1,12 @@
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background-image: url('../../Images/bg5.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 /* Split the screen in half */
 .split {
     height: 80%;
@@ -68,12 +77,6 @@
       max-height: 35px;
   }
 
-/*text*/
-  body{
-    font-family: 'Poppins', sans-serif;
-  }
-
-
 /*--------no of ratings----------*/
 .no{
   margin-top: -5%;
@@ -82,20 +85,20 @@
 
   /*--Last active text*/
   .t1{
-      color: #082690; 
+      color: white; 
   }
 
 
   /*----Work detals------*/
   .t2{
     margin-left: -65%;
-    color: #082690; 
+    color: white; 
   }
 
   /*--feedbacks and ratings---*/
   .t3{
     margin-left: -45%;
-    color: #082690; 
+    color: white; 
   }
 
   /*--feedbacks and rating content---*/
@@ -168,29 +171,34 @@
 
   /*-------box1------------*/
   .box1{
-      border: 1px solid gray;
       height:200px;
       width:400px;
       margin-top:10%;
       margin-bottom: 10%;
+      box-shadow: 2px 2px 4px 2px rgba(0,0,0,0.9);
+      background: rgb(0, 0, 0); /* Fallback color */
+      background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+      color: white; /* White text */
+      padding: 20px; /* Some padding */
   }
 
   /*-------box2 - Feedbacks and ratings------------*/
   .box2{
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 2px 4px 8px 2px rgba(0,0,0,0.9);
     height:100px;
     width:400px;
     margin-top:5%;
     margin-bottom: 5%;
+    background-color: bisque;
 }
 
  /*-------box3------------*/
  .box3{
-  border: 1px solid gray;
   height:200px;
   width:400px;
   margin-top:10%;
   margin-left:-16%;
+  box-shadow: 2px 4px 8px 2px rgba(0,0,0,0.9);
 }
 
 /*-------box4------------*/

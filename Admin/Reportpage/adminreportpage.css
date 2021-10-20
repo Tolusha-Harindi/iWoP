@@ -1,3 +1,12 @@
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background-image: url('../../Images/bg5.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 .box1, .box2{
     float: left;
     width: 40%;
@@ -15,7 +24,6 @@
     float:right;
     width: 70%;
     margin-right:3%;
-    /*border: 1px solid red;*/
     height: 700px;
     margin-top: -50%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -29,17 +37,17 @@
 }
 .tabs label {
     order: 1; /*Put the labels first*/
-display: block;
+    display: block;
     padding: 1rem 2rem;/*change padding inside tabs posted add and new add atbs*/
-margin-right: 0.2rem;
+    margin-right: 0.2rem;
     cursor: pointer;
     background: lightgray;/*tabs colors*/
-font-weight: bold;
+    font-weight: bold;
     transition: background ease 0.2s;
 }
 .tabs .tab {
     order: 99; /*Put the tabs last*/
-flex-grow: 1;
+    flex-grow: 1;
     width: 100%;
     display: none;
     padding: 1rem;
@@ -67,31 +75,15 @@ flex-grow: 1;
     }
 }
 
-/**
- * Generic Styling
-*/
-/*body {
-    background: #eee;
-    min-height: 100vh;
-    box-sizing: border-box;
-    padding-top: 30vh;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-weight: 300;
-    line-height: 1.5;
-    max-width: 60rem;
-    /*margin: 0 auto;*/
-/* margin-left: 400px;
-
- font-size: 112%;
-}*/
-
 .descipdiv{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     height: 200px;
-    width: 800px;
-   margin-left: 50px;
-
-
+    width: 90%;
+    margin-left: 50px;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: white; /* White text */
+    padding: 20px; /* Some padding */
 }
 .descipdivleft{
 
@@ -102,17 +94,16 @@ flex-grow: 1;
 
 }
 .descipdivright{
-     margin-top: 10px;
+    margin-top: 10px;
     height: 200px;
     width: 400px;
-   margin-left: 300px;
-
-   padding-top: 50px;
+    margin-left: 300px;
+    padding-top: 50px;
 }
 h4{
     margin-left: 20px;
-   line-height: 25px;
-   margin-top:10px
+    line-height: 25px;
+    margin-top:10px
 }
 
 
@@ -122,15 +113,7 @@ h4{
     padding-top: 10px;
     margin-left: 50px;
 }
-/*.button {
-    background-color: #4CAF50; /* Green */
-    /*border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;}*/
+
 
 
 #view{
@@ -174,8 +157,7 @@ h4{
 
 /*-----------------------------------------------------------Side bar----------------------------------------------------------------------------*/
 
-/* Google Fonts Import Link */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 *{
   margin: 0;
   padding: 0;

@@ -127,7 +127,6 @@
 
             <!----------------------------Form - Post a ad------------------------------------->
         <div id="NewAd" class="tabcontent">
-            <div class="mainDiv">
                 <div class="cardStyle">
                     <form action="wanted_ads.php" method="post" name="signupForm" id="signupForm">
 
@@ -220,7 +219,6 @@
 
                     </form>
                 </div>
-            </div>
         </div>
 
    <!------ <div id="Posted" class="tabcontent">
