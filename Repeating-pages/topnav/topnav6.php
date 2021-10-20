@@ -14,7 +14,7 @@
             <div class="logo"> 
                 <input type="image" id="image" alt="Landing" src="Logo.jpg">
             </div>
-            <a class="active" href="#Register"> <b>| Register  </b></a> 
+            <a href="#Register"> <b>| Register  </b></a> 
             <a href="#help"> <b>| Help page  </b></a> 
             <a class="active1"href="#category"><b> | Category </b></a>
             <a href="#alladds"> <b>| All Adds </b></a> 
