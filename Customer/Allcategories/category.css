@@ -10,6 +10,7 @@ body{
     
 }
 
+
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto auto ;
@@ -36,9 +37,9 @@ body{
 
      
   #img2{
-    max-height: 100%;
-    max-width:100%;
-    padding:10px 15px;
+    max-height: 10%;
+    max-width:10%;
+    padding:5px 5px;
   } 
 
   .grid-item2  {

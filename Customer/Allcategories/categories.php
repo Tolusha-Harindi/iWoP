@@ -243,7 +243,6 @@
                     </div> 
                </a>
 
-               
                <!--------------------Viewing results -categories-------------------->
                 <?php
                     $text = "";
@@ -252,23 +251,14 @@
                          while ($images = mysqli_fetch_assoc($result)) {
                               $text .= "<a href='../CategoryWorkerPg/CategoryWorker.php'>";
                               $text .= "<div class='grid-item2'>";
-                              $text .= "<img src='../../Admin/Adddeletecategory/uploads/".$images['file_url']."' id='img".$a."'>";
+                              $text .= "<img src='../../Admin/Adddeletecategory/uploads/".$images['file_url']."' id='img2".$a."'>";
                               $text .= "</div></a>";
                               $a++;
                          }
                     }
                     echo $text;
                 ?>
-                <?php
-                         //  while($row=mysqli_fetch_array($result)){
-                    ?>
-                               <!-- <h4> <?php //echo $row['category_name']; ?> </h4>  -->
-                    </div> 
-               <!-- </a> -->
-               <?php
-                    // }    
-                ?>
-
+              
           </div>
         </div>
       </div>
