@@ -78,6 +78,7 @@ body{
     width: 100px;
     margin-left:100px ;
 }
+
 .postButton{
     background-color: rgba(46, 171, 43, 1); /* Green */
     border: none;
@@ -91,10 +92,12 @@ body{
     cursor: pointer;
     margin-top: 30px;
 }
+
 .anyads{
     margin-top: 20px;
     margin-left: 350px;
 }
+
 .post{
     margin-top: 20px;
     margin-left: 300px;
