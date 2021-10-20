@@ -49,11 +49,11 @@
     /*float: right;*/
     cursor: pointer;
     margin-left: 100%;
-
+    margin-top: -6%;
 }
 /*add catgory */
 h3{
-    padding-top:50px;
+    padding-top:40px;
     color: rgba(4, 15, 123, 1);
     font-size: 30px;
     margin-left: 10%;
@@ -66,6 +66,11 @@ h3{
     height: 6vh;
     margin-left: 20%;
     border: 2px solid;
+}
+
+/*-----file upload------------*/
+.fileupload{
+    margin-left:65%;
 }
 
 
@@ -98,8 +103,8 @@ input[type="text"]::placeholder{
     font-size: 18px;
     /*float: right;*/
     cursor: pointer;
-    margin-top: 2%;
-    margin-bottom: 2%;
+    margin-top: -2%;
+    margin-bottom: 4%;
     margin-left: 100%;
 }
 /*footer*/

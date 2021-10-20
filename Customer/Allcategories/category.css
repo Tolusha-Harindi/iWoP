@@ -9,10 +9,10 @@ body{
     
 }
 /*.imageboxes{
-   /* border: 1px solid  blue;
+    border: 1px solid  blue;
 
-}
-*/
+}*/
+
 
 .grid-container {
     display: grid;
@@ -37,6 +37,33 @@ body{
      height: 70px;
       width: 70px;
      }
+
+     /* ------------viewing results------------------
+     /* .grid-item2 {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 15px;
+      font-size: 20px;
+      text-align: center; 
+    }
+     */
+  
+  #img2{
+      height: 80px;
+      width: 80px;
+  } 
+
+  .grid-item2  {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    font-size: 20px;
+    text-align: center; 
+  }
+
+  .grid-item2:hover{
+    background-color:#FFD044;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+  }
+
 
  .category{
      text-decoration: none;

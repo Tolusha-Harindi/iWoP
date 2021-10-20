@@ -237,6 +237,13 @@
             
 
              <?php
+                    // if(mysqli_num_rows($result)<1){
+                    //     <img class="img" src="job.png" alt="job" width="100px" height="100px" style = "position:relative; left:350px; top:30px; right:100px" >
+                    //     <h2 class="anyads">You don't have any ads yet</h2>
+                    //     <h3 class="post">Click the "Post a New add" button to post your add</h3>
+                    //     <a href="wantedads.php" class="postButton"> Post a new Add</a>
+                    // }
+
                     while($row=mysqli_fetch_array($result)){
             ?>
 

@@ -104,7 +104,7 @@
                 <b class="t7">Give Your Feedbacks and Ratings</b> </br>
 
                 
-                <!----------------Feedback section------------>
+<!------------------------------------------------------Feedback section---------------------------------------------------->
                     <form name = "reg-w"  method="post" action="feedback.php">
 
                         <div class="star2">
