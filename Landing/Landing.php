@@ -15,10 +15,25 @@
               background-attachment: scroll;
               background-size: 100% ;
             }
+
+            
+            /* Add a white background color to the top navigation */
+            .topnav {
+                position: fixed;
+                background-color: 	#696969;
+                overflow: hidden;
+                height: 10%;
+                width: 100%;
+                top: 0%;
+                left: 0%;
+                align-items: center;
+                margin-bottom: 10px;
+            }
+        
             
             .content{
                 
-                font-family: 'Poppins', sans-serif;
+                font-family: 'Poppins', sans-serif;	
                 font-size: 40px;
                 color: blue;
                 text-transform: uppercase;
@@ -48,9 +63,9 @@
             <div class="logo"> 
                 <input type="image" id="image" alt="Landing" src="../Images/Logo.jpg">
             </div>
-            <a class="active" href="../Login/Login.php"> <b>| Login  </b></a> 
-            <a href="#help"> <b>| Help  </b></a> 
-            <a href="#category"><b> | Category </b></a> 
+            <a href="../Login/Login.php"> <b>| Login  </b></a> 
+            <a href="../Repeating-pages/FAQ/FAQ.php"> <b>| Help  </b></a> 
+            <a href="../Repeating-pages/Allcategories/categories.php"><b> | Category </b></a> 
             <a href="#alladds"> <b>| All Adds </b></a>   
         </div>
     </div>
