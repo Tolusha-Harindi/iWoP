@@ -53,12 +53,12 @@
                 </li>
           
                 <li>
-                  <a href="#">
+                  <a href="../Wantedads/wantedads.php">
                     <i class='bx bxs-image' ></i>
                     <span class="link_name">Post your Ads</span>
                   </a>
                   <ul class="sub-menu blank">
-                    <li><a class="link_name" href="#">Post your Ads</a></li>
+                    <li><a class="link_name" href="../Wantedads/wantedads.php">Post your Ads</a></li>
                   </ul>
                 </li>
           
