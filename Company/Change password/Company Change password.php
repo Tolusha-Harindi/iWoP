@@ -178,7 +178,7 @@
                 <a href="#">
                     <li>How To Select Categories</li>
                 </a>
-                <a href="#">
+                <a href="../../Unregistered-user/Advertiesment/Other (advertiesment).php">
                     <li>Banner Advertising</li>
                 </a>
             </ul>
