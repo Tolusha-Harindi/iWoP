@@ -1,4 +1,5 @@
 <?php
+
     $db = mysqli_connect("localhost", "root", "", "test1");
 
     if (mysqli_connect_errno()){
