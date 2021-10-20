@@ -1,3 +1,13 @@
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../../Images/bg5.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
 .box1{
     float: left;
     width: 50%;
@@ -15,6 +25,10 @@
     margin-left:26%;
     margin-top:2%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: white; /* White text */
+    padding: 20px; /* Some padding */
     
 }
 /*box2 content*/
@@ -24,7 +38,7 @@
 }
 /*----view all users button---*/
 .viewButton{
-    background-color: #E95B5B ;/* blue */
+    background-color: blue ;/* blue */
     border: none;
     color: white;
     padding: 15px 20px;
@@ -54,7 +68,7 @@
 /*add catgory */
 h3{
     padding-top:40px;
-    color: rgba(4, 15, 123, 1);
+    color: white;
     font-size: 30px;
     margin-left: 10%;
 }
@@ -65,7 +79,7 @@ h3{
     width: 65%;
     height: 6vh;
     margin-left: 20%;
-    border: 2px solid;
+    border: 2px solid white;
 }
 
 /*-----file upload------------*/
@@ -87,7 +101,7 @@ input[type="text"]::placeholder{
     width: 65%;
     margin-left: 20%;
     font-size: 18px;
-    border: 2px solid;
+    border: 2px solid white;
 }
 
 
