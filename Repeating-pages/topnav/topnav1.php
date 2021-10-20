@@ -6,6 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="topnav.css">
 
+    <style>
+        /* Add a white background color to the top navigation */
+        .topnav {
+            position: fixed;
+            background-color: 	#696969;
+            overflow: hidden;
+            height: 10%;
+            width: 100%;
+            top: 0%;
+            left: 0%;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+            </style>
+
     <div class="sticky">
         <div class="topnav">
             <div class="logo"> 
