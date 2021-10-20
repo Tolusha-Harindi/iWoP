@@ -12,7 +12,7 @@
   
   <?php
         include '../../Repeating-pages/topnav/topnav8-admin.php';
-    ?>
+  ?>
 
 
 </head>
@@ -111,9 +111,10 @@
         
     </br><h3>Add new category</h3> </br> </br>
 
-    <form>
-        <input type="text" id="lname" name="lname" placeholder="Enter the new category name"  required><br><br>
-        <input type="submit" name="add" id="name" class="addButton" value="Add" required> </br>
+    <form method="post" action="add_delete_insert.php" enctype="multipart/form-data">
+        <input type="text" id="lname" name="category_name" placeholder="Enter the new category name"  required><br><br>
+        <input type="file"  name="upload_file"  class="fileupload" required />
+        <input type="submit" name="submit"  class="addButton" value="Add" required> </br>
     </form>
 
         <h3>Delete category</h3></br> </br>
@@ -126,13 +127,13 @@
             <option value="">Painter</option>
             <option value="">Electrician</option>
             <option value="">Landscaping</option>
-            <option value="">  Contractors</option>
-            <option value="">  Professionals</option>
-            <option value=""> Stones/Sand/soil</option>
+            <option value="">Contractors</option>
+            <option value="">Professionals</option>
+            <option value="">Stones/Sand/soil</option>
             <option value="">Concrete slab</option>
-            <option value=""> Equipment Repairing</option>
-            <option value=""> A/C</option>
-            <option value=""> Welding</option>
+            <option value="">Equipment Repairing</option>
+            <option value="">A/C</option>
+            <option value="">Welding</option>
             <option value="">Cooking</option>
             <option value="">Cushion works</option>
             <option value="">Vehicle repairs</option>
@@ -140,13 +141,13 @@
             <option value="">CCTV</option>
             <option value="">Ceiling</option>
             <option value="">Well</option>
-            <option value=""> Chair weavers</option>
+            <option value="">Chair weavers</option>
             <option value="">Solar panel fixing</option>
-            <option value=""> Demolishing</option>
-            <option value=""> Pest control</option>
+            <option value="">Demolishing</option>
+            <option value="">Pest control</option>
             <option value="">Mug Designer</option>
             <option value="">Movers</option>
-            <option value=""> Aluminium</option>
+            <option value="">Aluminium</option>
             <option value="">Catering</option>
             <option value="">Makeup Artists</option>
 
