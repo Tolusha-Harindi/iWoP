@@ -21,7 +21,7 @@ body{
     float:right;
     width: 75%;
     margin-right:5%;
-    height: 30%;
+    height: 20%;
     margin-top: -6%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
@@ -30,7 +30,7 @@ body{
 .txt{
   font-size: 40px;
   text-align: center;
-  margin-top:5%;
+  margin-top:4%;
 }
 
 /*form*/
@@ -54,7 +54,7 @@ body{
     max-height: 120px;
     margin: auto;
     display: flex;
-    margin-top:-2%;
+    margin-top:-4%;
 
 }
 .camera{
@@ -77,6 +77,7 @@ body{
     margin-top: 24px;
     font-weight: bold;
 }
+
 .inputDiv {
     width: 80%;
     display: flex;
@@ -93,6 +94,7 @@ body{
     border: solid 1px #ccc;
     padding: 0 11px;
 }
+
 input:disabled {
     cursor: not-allowed;
     border: solid 1px #eee;
@@ -104,7 +106,7 @@ input:disabled {
     margin-left: 350px;
     margin-top: 5%;
     margin-bottom: 0%;
-    background-color: rgba(46, 171, 43, 1);
+    background-color: #2EAB2B;
     color: white;
     cursor: pointer;
     border: none;
@@ -118,7 +120,7 @@ input:disabled {
 }
 
 .update:hover{
-    background-color: rgb(18, 156, 37);
+    background-color: red;
 }
 input[type=file]{
     margin-left: 500px;
