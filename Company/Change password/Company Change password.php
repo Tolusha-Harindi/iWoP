@@ -172,7 +172,7 @@
             <h3>How To Add Services</h3>
             <div class="border1"></div> <!--for the underline -->
             <ul>
-                <a href="#">
+                <a href="../../Unregistered-user/Enter Service/other (enter service).php">
                     <li>How To Add My Services</li>
                 </a>
                 <a href="#">
