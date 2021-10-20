@@ -117,12 +117,12 @@
                         </li>
 
                         <li>
-                            <a href="../ApplyforJob-Responses/ApplyforJob-companyview">
+                            <a href="../ApplyforJob-Responses/ApplyforJob-companyview.php">
                                 <i class='bx bxs-share' ></i>
                                 <span class="link_name">Responses</span>
                             </a>
                             <ul class="sub-menu blank">
-                                <li><a class="link_name" href="../ApplyforJob-Responses/ApplyforJob-companyview">Responses</a></li>
+                                <li><a class="link_name" href="../ApplyforJob-Responses/ApplyforJob-companyview.php">Responses</a></li>
                             </ul>
                         </li>
                         </li>
