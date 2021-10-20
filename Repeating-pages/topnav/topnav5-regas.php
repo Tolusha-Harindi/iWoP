@@ -1,5 +1,5 @@
 <html>
-<title> topnav7 </title>
+<title> topnav5 </title>
 
 <head> 
     <meta charset="utf-8">
@@ -13,13 +13,12 @@
             <div class="logo"> 
                 <input type="image" id="image" alt="Landing" src="../../Images/Logo.jpg">
             </div>
-            <a href="../Login/Login.php"> <b>| Login  </b></a> 
-            <a href="../Repeating-pages/FAQ/FAQ.php"> <b>| Help Page </b></a> 
-            <a href="../Repeating-pages/Allcategories/categories.php"><b> | Category </b></a> 
+            <a href="../../Login/Login.php"> <b>| Login  </b></a> 
+            <a href="../../Repeating-pages/FAQ/FAQ.php"> <b>| Help Page </b></a> 
+            <a href="../../Repeating-pages/Allcategories/categories.php"><b> | Category </b></a> 
             <a href="#alladds"> <b>| All Adds </b></a>   
         </div>
     </div>
     
 </head>
 </html>
-
