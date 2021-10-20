@@ -9,6 +9,14 @@ body {
     color: red;
 }
 
+#currentpwd,#newpwd,#conpwd{
+    font-weight: bold;
+    font-size: 25px;
+  
+}
+ 
+
+ 
 @media (orientation: landscape) {
 
     /*.main-box {

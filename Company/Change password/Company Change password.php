@@ -143,17 +143,19 @@
                     <img src="images/key.png" alt="Key" id="side-img">
                 </div>
                 <div class="col-right-70" style="padding: 20;">
-                    <label for="cPassword">Current Password <i class="red-s">*</i></label>
+                    <label for="cPassword" id="currentpwd">Current Password <i class="red-s">*</i></label>
                     <input type="text" id="cPassword" name="cPassword" required>
-                    <label for="nPassword">New Password <i class="red-s">*</i></label>
+                    <label for="nPassword" id ="newpwd">New Password <i class="red-s">*</i></label>
                     <input type="text" id="nPassword" name="nPassword" required>
-                    <label for="ccPassword">Confirm Password <i class="red-s">*</i></label>
+                    <label for="ccPassword" id="conpwd">Confirm Password <i class="red-s">*</i></label>
                     <input type="text" id="ccPassword" name="ccPassword" required>
                     <input type="button" value="Change Password"
-                           style=" padding: 20px 30px 30px 30px ;width: 200px; height: 40px; background: #2eab2b; color:#ffffff; border: none; cursor: pointer;
+                           style=" padding: 30px 32px ; background: #2eab2b; color:#ffffff; border: none; cursor: pointer;
                             text-align: center;
                           text-decoration: none;
-                         display: inline-block;">
+                         display: inline-block;
+                         margin-top:20px;
+                         font-size:20px">
                 </div>
             </div>
         </div>
