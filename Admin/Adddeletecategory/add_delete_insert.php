@@ -35,7 +35,6 @@ if (isset($_POST['submit']) && isset($_FILES['upload_file'])) {
 	echo "<pre>";
 	print_r($_FILES['upload_file']);
 	echo "</pre>";
-
 	$img_name = $_FILES['upload_file']['name'];
 	$img_size = $_FILES['upload_file']['size'];
 	$tmp_name = $_FILES['upload_file']['tmp_name'];
@@ -57,8 +56,8 @@ if (isset($_POST['submit']) && isset($_FILES['upload_file'])) {
 				move_uploaded_file($tmp_name, $img_upload_path);
 
 				// Insert into Database
-				$sql = "INSERT INTO add_or_delete_category(file_url) 
-				        VALUES('$new_img_name')";
+				$sql = "INSERT INTO add_or_delete_category(category_name,file_url) 
+				        VALUES($new_img_name')";
 				mysqli_query($db, $sql);
 				header("Location:../../Customer/Allcategories/categories.php ");
 			}else {

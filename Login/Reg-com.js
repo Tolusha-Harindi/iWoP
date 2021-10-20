@@ -35,6 +35,16 @@ form.addEventListener('submit', (e) => {
     inputs[1].value="";
     inputs[1].style.border = "3px solid rgb(228, 29, 22)";
     inputs[1].placeholder="Contact number is not valid";
+    validity=false; 
+  }
+
+
+  //validate company regsitered  no
+  let regType = /^[\d/]{14}$/;
+  if (inputs[2].value!="" && inputs[2].value.match(regType)==null) {
+    inputs[2].value="";
+    inputs[2].style.border = "3px solid rgb(228, 29, 22)";
+    inputs[2].placeholder="Email number is not valid";
     validity=false;
   }
 

@@ -245,26 +245,29 @@
 
                
                <!--------------------Viewing results -categories-------------------->
-               <?php    if (mysqli_num_rows($result) > 0) {
-          	          while ($images = mysqli_fetch_assoc($result)) {  ?>
-               <a href="../CategoryWorkerPg/CategoryWorker.php">
-               <div class="grid-item2">    
-                         <img src="../../Admin/Adddeletecategory/uploads/<?=$images['file_url']?>" id="img2"> 
-                    <?php  }
+                <?php
+                    $text = "";
+                    if (mysqli_num_rows($result) > 0) {   
+                         $a=1;       
+                         while ($images = mysqli_fetch_assoc($result)) {
+                              $text .= "<a href='../CategoryWorkerPg/CategoryWorker.php'>";
+                              $text .= "<div class='grid-item2'>";
+                              $text .= "<img src='../../Admin/Adddeletecategory/uploads/".$images['file_url']."' id='img".$a."'>";
+                              $text .= "</div></a>";
+                              $a++;
                          }
+                    }
+                    echo $text;
+                ?>
+                <?php
+                         //  while($row=mysqli_fetch_array($result)){
                     ?>
-                              <?php //echo $row['filename']; ?> <!---<img src="../../Images/category/waiter.png" alt="waiter" id="img">-->
-                              
-                              
-                    <?php
-                         // while($row=mysqli_fetch_array($result)){
-                    ?>
-                              <!-- <h4> <?php //echo $row['category_name']; ?> </h4> -->
+                               <!-- <h4> <?php //echo $row['category_name']; ?> </h4>  -->
                     </div> 
-               </a>
+               <!-- </a> -->
                <?php
-                   // }    
-                ?> 
+                    // }    
+                ?>
 
           </div>
         </div>
