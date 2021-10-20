@@ -32,23 +32,23 @@
               
               <ul class="nav-links">
                 <li>
-                  <a href="../CompanyProfile/Companyprofile">
+                  <a href="../CompanyProfile/Companyprofile.php">
                     <i class='bx bxs-user' ></i>
                     <span class="link_name">My Profile</span>
                   </a>
                   <ul class="sub-menu blank">
-                    <li><a class="link_name" href="../CompanyProfile/Companyprofile">My Profile</a></li>
+                    <li><a class="link_name" href="../CompanyProfile/Companyprofile.php">My Profile</a></li>
                   </ul>
                 </li>
           
                 
                 <li>
-                  <a href="../Change password/Company change password">
+                  <a href="../Change password/Company change password.php">
                     <i class='bx bxs-check-shield' ></i>
                     <span class="link_name">Change Password</span>
                   </a>
                   <ul class="sub-menu blank">
-                    <li><a class="link_name" href="../Change password/Company change password">Change Password</a></li>
+                    <li><a class="link_name" href="../Change password/Company change password.php">Change Password</a></li>
                   </ul>
                 </li>
           
