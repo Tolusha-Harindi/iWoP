@@ -38,23 +38,16 @@ body{
       width: 70px;
      }
 
-     /* ------------viewing results------------------
-     /* .grid-item2 {
-      background-color: rgba(255, 255, 255, 0.8);
-      padding: 15px;
-      font-size: 20px;
-      text-align: center; 
-    }
-     */
-  
+     
   #img2{
-      height: 80px;
-      width: 80px;
+    max-height: 100%;
+    max-width:100%;
+    padding:10px 15px;
   } 
 
   .grid-item2  {
     background-color: rgba(255, 255, 255, 0.8);
-    padding: 15px;
+    padding: -25px;
     font-size: 20px;
     text-align: center; 
   }
