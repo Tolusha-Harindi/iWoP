@@ -19,7 +19,7 @@
                 background-image: url('../../Images/bg2.jpg');
                 background-repeat: no-repeat;
                 background-attachment: fixed;
-                background-size: cover;  */
+                background-size: cover;  
             }
 
             .fluid-container {
