@@ -1,5 +1,9 @@
 body{
     font-family: 'Poppins', sans-serif;
+    background-image: url('../../Images/bg5.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .mainbox1, .box2{
@@ -30,8 +34,9 @@ body{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     height: 300px;
     width: 850px;
-   margin-left: 40px;
+    margin-left: 10px;
     margin-top: 20px;
+    background-color: white;
 
 }
 #userimg{
@@ -59,14 +64,16 @@ h4{
 
     width: 200px;
 }
+
 /*customer box3*/
 .box3left{
 
-   margin-top: 60px;
+    margin-top: 60px;
     margin-left: 100px;
     height: 250px;
     width: 400px;
-   float: left;
+    float: left;
+    color: black;
 
 }
 .box3right{
@@ -75,6 +82,7 @@ h4{
     margin-left: 500px;
     height: 400px;
     width: 250px;
+    color: black;
 
 }
 /*details box of worker*/
@@ -128,8 +136,9 @@ h4{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     height: 300px;
     width: 850px;
-    margin-left: 40px;
+    margin-left: 10px;
     margin-top: 20px;
+    background-color: white;
 }
 /*company tab*/
 #comimg{
@@ -144,6 +153,7 @@ h4{
     height: 200px;
     width: 300px;
     font-size: 25px;
+    color: black;
 }
 .des{
     padding-top: 10px;
@@ -195,6 +205,10 @@ h4{
 .tabcontent {
     padding: 6px 12px;
     border-top: none;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: white; /* White text */
+    padding: 20px; /* Some padding */
 }
 /*-------------------------------Vertical menu--------------------------------*/
 
