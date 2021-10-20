@@ -93,8 +93,6 @@
     Change Password </br>
     </div>
     <div class="box2">
-
-        <div class="mainDiv">
             <div class="cardStyle">
                 <form action="" method="post">
                 <div id="imgdiv"> <img src="../../Images/key.png" class="floatRight"></div> 
@@ -119,7 +117,6 @@
                     </div>
                 </form>
             </div>
-        </div>
     </div>
 </body>
 </html>

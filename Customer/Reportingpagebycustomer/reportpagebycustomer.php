@@ -23,11 +23,11 @@
 
     <div class="heading1"> Report</div>
     <div class="box1"> 
- <a href="../WorkerProfile-UserView/Worker-Profile-Userview.php" class="previous">&laquo; Previous</a>
+        <a href="../WorkerProfile-UserView/Worker-Profile-Userview.php" class="previous">&laquo; Previous</a>
           <div class="imguser">
               <img src="user.png" alt="user">
-</div>
-   <h1 class="nameforworker">Kamal Perera</h1>
+    </div>
+    <h1 class="nameforworker">Kamal Perera</h1>
     <h2 class="typeofwork"> Electrician </h2>
     <h2 class="cityofwork">Colombo </h2>
     <h2 class="experince">Five year Experince </h2>

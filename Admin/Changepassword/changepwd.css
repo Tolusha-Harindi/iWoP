@@ -1,3 +1,12 @@
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../../Images/bg5.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 .box1{
     float: left;
     width: 30%;
@@ -7,8 +16,6 @@
     align-items: center;
 
 }
-
-
 
 
 /*---------------------Right-Outer-box- Report----------------------------------------*/
@@ -21,22 +28,29 @@
     background-color:#fff;
     font-family: 'Open Sans', sans-serif;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    margin-top: 10%;
-    width:70%;
-    margin-left:25%;
-    height:80%;  
+    margin-top: 8%;
+    width:50%;
+    margin-left:30%;
+    height:60%; 
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: white; /* White text */
+    padding: 20px; /* Some padding */ 
 }
 
 /*--------------Change password-----------------*/
 .heading{
     font-size:40px;
     text-align: center;
-    margin-top: 8%;
+    margin-top: 2%;
+    margin-left: -5%;
 }
 
 .floatRight{
     margin-top: 5%;
+    margin-left: -8%;
 }
+
 .formTitle{
     font-weight: 600;
     margin-top: 20px;
@@ -47,7 +61,7 @@
     font-size: 18px;
     margin-bottom: 6px;
     margin-top: 24px;
-    color: black;
+    color: white;
 }
 .inputDiv {
     width: 70%;
@@ -72,7 +86,7 @@
 .change{
     float:left;
     margin-top:-5%;
-    margin-left:45%;
+    margin-left:40%;
     padding: 15px 25px;
     background-color: #2EAB2B;
     border: none;

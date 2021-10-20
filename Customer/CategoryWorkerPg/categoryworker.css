@@ -1,4 +1,12 @@
 
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../../Images/bg5.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 /*--------------------------Search bar-----------------------------*/
 
 /*District*/
@@ -8,6 +16,7 @@
     margin-left:35px;
     font-family: 'Poppins', sans-serif;
     font-size: 25px;
+    color: white;
 }
 
 /*---Select district-----------*/
@@ -50,11 +59,10 @@
     align-items: center;
     margin-top: -18%;
     margin-left:35%;
-    border:gray;
-    border-style: solid;
     transition: 0.4s;
     width: 60%;
     height: 75%;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.9);
 }
 
 
@@ -63,12 +71,16 @@
     position: relative;
     align-items: center;
     font-family: 'Poppins', sans-serif;
-    margin-top: 5%;
-    margin-left:5%;
-    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+    margin-top: 2%;
+    margin-left:3%;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.9);
     transition: 0.4s;
     width: 90%;
-    height: 40%;
+    height: 35%;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: white; /* White text */
+    padding: 20px; /* Some padding */
 }
 
 /*divide into unequal columns*/
@@ -100,7 +112,8 @@
     height: 35px;
     width: 35px;
     margin-left: 40%;
-    margin-top:3% ;
+    margin-top:3%;
+    background-color: none;
 }
 
 /*job icon*/
@@ -113,7 +126,7 @@
 
 /*last active*/
 .lastactive{
-    color: #082690;
+    color: white;
     margin-left:5%;
     margin-top:1%;
 }
@@ -151,7 +164,7 @@
 
   /*star count*/
 .txt2{
-    margin-left:17%;
+    margin-left:18%;
     margin-top:-2%;
 }
 

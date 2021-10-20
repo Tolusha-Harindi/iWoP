@@ -107,9 +107,9 @@ if(isset($_SESSION['email'])){
  <!-----------------------------Form------------------------------------------>
               <div class=box1>
                 <img src="../../Images/img.png" class="floatRight">
-                <div > 
+                <!-- <div > 
                     <input type="image" id="cam" alt="camera" src="../../Images/cam.png" class="cam">
-                </div>
+                </div> -->
                 <form name = "reg-w" id ="reg-w" action="cust-prof.php" method="post">
                     <div class="reg-start">
                             <div class="info">

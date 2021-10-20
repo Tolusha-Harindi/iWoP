@@ -2,11 +2,10 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    /* background-image: url('../../Images/bg2.jpg');
+    background-image: url('../../Images/bg5.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;  */
-
+    background-size: cover;
 }
 
 
@@ -30,6 +29,10 @@ body{
     height: 100%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     margin-top:2%;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: white; /* White text */
+    padding: 20px; /* Some padding */
 }
 
 /*-------------------------------------------------- Style the tab ---------------------------------------------------------------------*/
@@ -64,11 +67,15 @@ body{
     color:white;
 }
 
-/* Style the tab content */
+/* ------------------------------------------Style the tab content------------------------------------------------------------------- */
 .tabcontent {
     /*display: none;*/
     padding: 6px 12px;
     border-top: none;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: white; /* White text */
+    padding: 20px; /* Some padding */
 }
 
 .img{
@@ -106,20 +113,15 @@ body{
 
 
 /*---------------------------------form----------------------------------------*/
-.mainDiv {
-    display: flex;
-    min-height: 100%;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
-    font-family: 'Poppins Sans', sans-serif;
-}
+
+
 .cardStyle {
     width: 80%;
     background: #fff;
     padding: 36px 0;
     border-radius: 4px;
     margin: 30px 0;
+    margin-left: 10%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 .floatRight{
@@ -138,10 +140,10 @@ body{
 
 .inputLabel {
     font-size: 17px;
-    /*color: #555;*/
     margin-bottom: 6px;
     margin-top: 24px;
     font-family: 'Poppins', sans-serif;
+    color: black;
 
 }
 .inputDiv {
@@ -151,6 +153,7 @@ body{
     margin: auto;
     height: 7%;
 }
+
 .inputDiv input {
     height: 40px;
     font-size: 16px;
@@ -162,7 +165,6 @@ body{
 .red{
     color:red;
 }
-
 
 
 #lang{
@@ -196,7 +198,6 @@ input:disabled {
     color: #fff;
     background-color:rgba(46, 171, 43, 1);
     border: none;
-    font-family: 'Poppins', sans-serif;
     font-size: 17px;
     cursor: pointer;
 }
@@ -268,6 +269,8 @@ button[disabled] {
     margin-top:5%;
     margin-bottom: 2%;
     align-items: center;
+    background-color: white;
+    color: black;
 }
 
 /*---------------------------------------------------Title---------------------------------------------*/
@@ -310,7 +313,7 @@ button[disabled] {
     height: 48px;
     width: 35px;
     margin-left: 58%;
-    margin-top:-15% ;
+    margin-top:-18% ;
 }
 
 /*box4--- phone number---*/

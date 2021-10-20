@@ -1,5 +1,9 @@
 body{
     font-family: 'Poppins', sans-serif;
+    background-image: url('../../Images/bg5.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 
@@ -21,35 +25,33 @@ body{
 /*---------------------Right-Outer-box-----------------------------------------*/
 .box2{
     float:right;
-    width: 68%;
-    margin-right:6%;
+    width: 55%;
+    margin-right:18%;
     height: 700px;
     margin-top: -45%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: white; /* White text */
+    padding: 20px; /* Some padding */
 }
 
-/*box 2*/
-.mainDiv {
-    display: flex;
-    min-height: 100%;
-    align-items: center;
-    justify-content: center;
-    background-color: #f9f9f9;
-}
+
 .cardStyle {
-    width: 75%;
+    width: 90%;
     border-color: white;
     background: #fff;
     padding: 36px 0;
     border-radius: 4px;
     margin: 30px 0;
     box-shadow: 0px 0 2px 0 rgba(0,0,0,0.25);
+    margin-left: 5%;
+    color: black;
 }
+
 .floatRight{
     max-height: 100px;
     padding-left: -85px;
-    
-    
 }
 
 .formTitle{
@@ -115,9 +117,9 @@ button[disabled] {
     color: #666666;
 }
 
-/*change password word*/
+/*-------Title change password word-----------*/
 .changepwd{
-    margin-top: 10%;
+    margin-top: 8%;
     font-size: 40px;
     margin-left:40%;
 }

@@ -245,6 +245,10 @@
 /*-----------------------------------------Responses----------------------------*/
 body{
   font-family: 'Poppins', sans-serif;
+  background-image: url('../../Images/bg5.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 /*left box*/
@@ -259,25 +263,25 @@ body{
 }
 
 
-
 /*Responses*/
 .box2 {
     float: right;
     align-items: center;
     margin-top: 7%;
     margin-right:2%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
     transition: 0.4s;
     width: 75%;
     height: 100%;
-     
   }
+
+
 /*heading*/
   .box-heading{
     text-align: center;
     font-size: 40px;
     margin-top: 4%;
-    color: #F63A10;
+    color: #082690;
   }
 
  /*inner box*/
@@ -285,11 +289,14 @@ body{
     align-items: center;
     margin-top: 2%;
     margin-left:2%;
-    border:gray;
-    border-style: solid;
     transition: 0.4s;
     width: 95%;
     height: 85%;
+     background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: white; /* White text */
+    padding: 20px; /* Some padding */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5); 
   }
 
   /*horizonatl line*/
@@ -313,16 +320,14 @@ body{
     	text-decoration: none;
     	font-size: 17px;
     	overflow: hidden;
-      background-color: #E95B5B;
-      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+      background-color: #d83939;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5); 
 }
 
 
- 
-
 /*----title-----*/
 .txt1{
-  color:#082690  ;
+  color: #d83939;
   font-size: 18px;
   margin-left:60%;
   margin-top:-2%;
@@ -362,5 +367,5 @@ body{
     height: 85px;
     width: 85px;
     margin-left: 2%;
-    margin-top:-10% ;
+    margin-top:-10%;
 }
