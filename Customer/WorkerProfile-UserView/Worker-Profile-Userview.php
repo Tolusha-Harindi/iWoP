@@ -54,7 +54,7 @@
                         <?php 
                             $ratings=array();
                             for ($x = 0; $x < $row['rating']; $x++) {
-                                $ratings[$x]="checked";
+                                $ratings[$x]="checked"; 
                             }
                         ?>
                         <div class="star">
