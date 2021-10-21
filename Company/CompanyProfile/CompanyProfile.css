@@ -1,4 +1,11 @@
 
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../../Images/bg5.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 /*------------------------heading1 - Profile-------------------------------*/
 .heading1{
     position: relative;
