@@ -45,20 +45,7 @@
     <div class= "container">
         <p class="box-heading"> Responses </p>
         <div class= "box3"> 
-            <div class="hor">
-                </hr> 
-                <img src="../../Images/img.png" alt="propic" class = "profpic">
-                <div class="txt4"> <b>Nimal Peiris</b> </div>
-                <a href="#" input type = "button"  value ="button" class="button1"> Approve </a>
-                <a href="#" input type = "button"  value ="button" class="button2"> Reject </a>
-            </div>
-            <div class="hor">
-                </hr>
-                <img src="../../Images/img.png" alt="propic" class = "profpic">
-                <div class="txt4"> <b>Nimal Peiris</b> </div>
-                <a href="#" input type = "button"  value ="button" class="button1"> Approve </a>
-                <a href="#" input type = "button"  value ="button" class="button2"> Reject </a>
-            </div>
+            
             <div class="hor">
                 </hr>
                 <img src="../../Images/img.png" alt="propic" class = "profpic">

@@ -1,6 +1,11 @@
 
 body{
   font-family: 'Poppins', sans-serif;
+  background-image: url('../../Images/bg5.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
 }
 
 /*left box*/
@@ -12,6 +17,11 @@ body{
     margin-left: 2%;
     align-items: center;
     margin-top: 7%;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.3); /* Black background with 0.5 opacity */
+    color: white; /* White text */
+    padding: 20px; /* Some padding */
+
 }
 
 
@@ -22,10 +32,11 @@ body{
     align-items: center;
     margin-top: 7%;
     margin-right:2%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.9);
     transition: 0.4s;
     width: 55%;
     height: 100%;
+    
      
   }
 /*heading*/
@@ -42,7 +53,7 @@ body{
     margin-top: -3%;
     margin-left:2%;
     border:gray;
-    border-style: solid;
+    border:  1px solid rgb(17, 16, 16);
     transition: 0.4s;
     width: 95%;
     height: 80%;
@@ -51,9 +62,10 @@ body{
   /*horizonatl line*/
   .hor{
     width :90%;
-    border: 1px solid  gray;
+    border: 1px solid white ;
     margin-left:5%;
     margin-top:14%;
+
   }
 
   /*view profile button*/
@@ -93,7 +105,7 @@ body{
 
 /*----title-----*/
 .txt1{
-  color:#082690;
+  color:red;
   font-size: 2em;
   text-align: center;
   margin-top:1em;
@@ -104,6 +116,7 @@ body{
   margin-left: 3em;
   margin-top: 5em;
   font-size: 20px;
+  color: white;
 }
 
 /*-----Extracting data from database----*/
@@ -112,6 +125,7 @@ body{
   margin-top: 6em;
   font-size: 17px;
   margin-right: 3em;
+  color: white;
 }
 
 .txt4{
