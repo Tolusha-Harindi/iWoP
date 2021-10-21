@@ -174,9 +174,9 @@
   padding: 12px 0;
   transition: all 0.5s ease;
 }
-.sidebar .list-select{
+/*.sidebar .list-select{
   background: #ffd041;
-}
+}*/
 .sidebar.close .profile-details {
   background: none;
 }
