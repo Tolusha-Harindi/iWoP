@@ -82,7 +82,10 @@
     </div>
     <!--------------------------------------- side navigation ------------------------------------>
     <div class="down-row">
-        <div class="col-left-30" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); margin: 2px; height: 500px;">
+        <div class="col-left-30" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); margin: 2px; height: 500px;
+        background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.3); /* Black background with 0.5 opacity */
+    color: white; /* White text */">
             <div class="box1">
                 <div class="sidebar close">
                     <ul class="nav-links">
