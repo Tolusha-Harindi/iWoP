@@ -153,10 +153,11 @@
                     <label for="ccPassword" id="conpwd">Confirm Password <i class="red-s">*</i></label>
                     <input type="text" id="ccPassword" name="ccPassword" required>
                     <input type="button" value="Change Password"
-                           style=" padding: 30px 32px ; background: #2eab2b; color:#ffffff; border: none; cursor: pointer;text-align: center;text-decoration: none;
+                           style=" padding: 15px 32px ; background: #2eab2b; color:#ffffff; border: none; cursor: pointer;text-align: center;text-decoration: none;
                             display: inline-block;
                             margin-top:20px;
-                            font-size:20px">
+                            font-size:23px"
+                            >
                 </div>
             </div>
         </div>
