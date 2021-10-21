@@ -75,7 +75,8 @@
 
 <div class="main-box">
     <div class="down-row" style="padding: 50;">
-        <div class="col-left-30" style="padding: 10;"></div>
+        <div class="col-left-30" style="padding: 10;">
+     </div>
         <div class="col-right-70" style="padding: 10;">
             <h3>Password Change</h3>
         </div>
@@ -156,8 +157,7 @@
                            style=" padding: 15px 32px ; background: #2eab2b; color:#ffffff; border: none; cursor: pointer;text-align: center;text-decoration: none;
                             display: inline-block;
                             margin-top:20px;
-                            font-size:23px"
-                            >
+                            font-size:23px" >
                 </div>
             </div>
         </div>
