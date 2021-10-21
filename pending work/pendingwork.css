@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.flex-container {
+  margin-left: 3%;
+  width: 96%;
+  display: flex;
+  height: 520px;
+  flex-direction: row;
+  background-color: white;
+  margin-top: 7%;
+  border:none;
+}
+
+/*back arrow*/
+.flex-container a{
+   margin-left: 36%;
+   margin-top: 1%;
+}
+
+/*left outcomes*/
+.flex-container> .left{
+    margin-top: 6%;
+    margin-left:-57%;
+    border: none;
+    transition: 0.4s;
+    width: 46%;
+    height: 80%;
+    box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2);
+    overflow: auto;
+}
+
+/*right outcomes*/
+.flex-container> .right{
+    margin-top: 6%;
+    margin-left:3%;
+    border: none;
+    transition: 0.4s;
+    width: 46%;
+    height: 80%;
+    box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2);
+    overflow: auto;
+}
+
+/*heading*/
+.flex-container h1{
+    margin-top: 0%;
+    margin-left: 2%;
+    font-size: 30px;
+    font-family: Verdana, sans-serif;;
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+    text-shadow: 1px 1px 2px #000000;
+}
