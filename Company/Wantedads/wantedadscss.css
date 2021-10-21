@@ -2,6 +2,10 @@
 
 body{
     font-family: 'Poppins', sans-serif;
+    background-image: url('../../Images/bg5.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .heading1{
@@ -250,11 +254,14 @@ button[disabled] {
     margin-top:5%;
     margin-bottom: 2%;
     align-items: center;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.3); /* Black background with 0.5 opacity */
+    color: white; /* White text */
 }
 
 /*---------------------------------------------------Title---------------------------------------------*/
 .txt1{
-    color:#082690;
+    color:red;
     font-size: 25px;
     margin-left: 10%;
     margin-top:4%;
