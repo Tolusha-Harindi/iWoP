@@ -84,8 +84,8 @@
     <div class="down-row">
         <div class="col-left-30" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); margin: 2px; height: 500px;
         background: rgb(0, 0, 0); /* Fallback color */
-    background: rgba(0, 0, 0, 0.3); /* Black background with 0.5 opacity */
-    color: white; /* White text */">
+        background: rgba(0, 0, 0, 0.3); /* Black background with 0.5 opacity */
+        color: white; /* White text */">
             <div class="box1">
                 <div class="sidebar close">
                     <ul class="nav-links">
@@ -153,12 +153,10 @@
                     <label for="ccPassword" id="conpwd">Confirm Password <i class="red-s">*</i></label>
                     <input type="text" id="ccPassword" name="ccPassword" required>
                     <input type="button" value="Change Password"
-                           style=" padding: 30px 32px ; background: #2eab2b; color:#ffffff; border: none; cursor: pointer;
-                            text-align: center;
-                          text-decoration: none;
-                         display: inline-block;
-                         margin-top:20px;
-                         font-size:20px">
+                           style=" padding: 30px 32px ; background: #2eab2b; color:#ffffff; border: none; cursor: pointer;text-align: center;text-decoration: none;
+                            display: inline-block;
+                            margin-top:20px;
+                            font-size:20px">
                 </div>
             </div>
         </div>
