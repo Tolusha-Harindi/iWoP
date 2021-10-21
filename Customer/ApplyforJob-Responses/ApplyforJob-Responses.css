@@ -7,67 +7,72 @@ body{
   background-size: cover;
 }
 
-/*left box*/
+tr{
+  padding: 10px 25px;
+}
+
+/*-------------------------------------------------------------left box----------------------------------------------------------*/
 .box1{
     float: left;
-    width: 35%;
-    height: 85%;
+    max-width: 90%;
+    max-height: 100%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.9);
-    margin-left: 2%;
+    margin-left: 10%;
     align-items: center;
-    margin-top: 7%;
+    margin-top: 12%;
     background: rgb(0, 0, 0); /* Fallback color */
     background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
     color: white; /* White text */
-    padding: 20px; /* Some padding */
+    padding: 110px 10px; /* Some padding */
 }
 
 
 
-/*Responses*/
+/*-----------------------------------------------------------------------Responses-------------------------------------------------------*/
 .box2 {
-    float: right;
     align-items: center;
-    margin-top: 7%;
-    margin-right:2%;
+    margin-top: 14%;
+    margin-left:10%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.9);
     transition: 0.4s;
-    width: 55%;
+    width: 100%;
     height: 100%;
+    padding: 38px 100px;
      
   }
-/*heading*/
+/*----------------------------heading--------------------------------*/
   .box-heading{
     text-align: center;
     font-size: 40px;
-    margin-top: 2%;
+    margin-top: -2%;
     color: #F63A10;
   }
 
- /*inner box*/
+ /*-----------------------------inner box----------------------------*/
  .box3 {
     align-items: center;
     margin-top: -3%;
-    margin-left:2%;
+    margin-left:-11%;
     border:#151965;
     border-style: solid;
     transition: 0.4s;
-    width: 95%;
-    height: 80%;
+    width: 100%;
+    height: 90%;
+    padding: 30px 58px;
   }
 
-  /*horizonatl line*/
+  /*---------------------horizonatl line-------------------------*/
   .hor{
-    width :90%;
+    width :100%;
     border: 1px solid  #151965;
     margin-left:5%;
     margin-top:14%;
   }
 
-  /*view profile button*/
+  /*--------------view profile button--------------------*/
   .button1, .button2, .button3{
       margin-top: -2%;
-      margin-left: 28%;
+      margin-left: 20%;
 	    position: absolute;
     	display: block;
     	padding: 15px 10px;
@@ -81,36 +86,36 @@ body{
       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5); 
 }
 
-/*Approve*/
+/*-----------------Approve-----------------------*/
 .button2
 {
-      margin-left: 38%;
+      margin-left: 30%;
     	background-color: #E95B5B;  
 }
 
-/*delete button*/
+/*---------------delete button---------------*/
 .button3
 {
-      margin-top: 42%;
-      margin-left: 15%;
+      margin-top: 12%;
+      margin-left: 12%;
       border-radius: 100px;
     	width: 8%;
     	background-color: #2EAB2B;  
 }
   
 
-/*----title-----*/
+/*-----------title----------------*/
 .txt1{
   color:red;
   font-size: 2em;
   text-align: center;
-  margin-top:1em;
+  margin-top:-5%;
 }
 
-/*-----bold section----*/
+/*--------------bold section-------*/
 .txt2{
   margin-left: 3em;
-  margin-top: 5em;
+  margin-top: 5%;
   font-size: 20px;
   color: white;
 }
@@ -118,22 +123,22 @@ body{
 /*-----Extracting data from database----*/
 .txt3{
   margin-left: 5em;
-  margin-top: 6em;
+  margin-top: 5%;
   font-size: 17px;
   margin-right: 3em;
   color:white;
 }
 
 .txt4{
-  margin-top:-4em;
+  margin-top:-10%;
   margin-left: 10em;
 }
 
 
 /*--------Propic---------*/
 .profpic{
-  height: 75px;
+    height: 75px;
     width: 75px;
     margin-left: 0%;
-    margin-top:-12% ;
+    margin-top:-14% ;
 }
