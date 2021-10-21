@@ -1,0 +1,341 @@
+﻿body{
+  font-family: 'Poppins', sans-serif;
+  background-image: url('../images/bg5.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.flex-container {
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: black; /* White text */
+  margin-left: 20%;
+  width: 76%;
+  display: flex;
+  height: 1775px;
+  flex-direction: row;
+  background-color: white;
+  margin-top: -2%;
+  border: hidden;
+}
+
+.flex-container h2{
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-left: 43%;
+    margin-top: 1%;
+    font-weight: bold;
+    color: #000000;
+   text-shadow: 1px 1px 2px #000000;
+}
+
+/*container without heading - form*/
+.flex-container> .main-container{
+   margin-top:7%;
+  margin-left: -52%;
+  background-color: white;
+  width: 96%;
+  height: 1685px;
+  line-height: 3px;
+  padding: 30px;
+  font-family: 'Poppins', sans-serif;
+   box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/*container without heading - form*/
+.main-container> .category{
+   margin-top: 0%;
+  margin-left: 2%;
+  background-color: white;
+  width: 94%;
+  height: 300px;
+  line-height: 3px;
+  padding: 0px;
+  font-family: 'Poppins', sans-serif;
+  overflow-y: auto;
+  /*box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2);*/
+}
+
+.category img{
+   width: 100%;
+   height: 100%;
+}
+
+.main-container> .select-c1{
+  margin-top: 2%;
+  margin-left: 2%;
+  color: #082690;
+  padding-bottom: 20px;
+}
+
+select{
+   margin-top: 20px;
+   width: 250px;
+   box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2);
+   border: none;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.main-container> .area{
+   margin-top: -1%;
+  margin-left: -1%;
+  background-color: white;
+  width: 99%;
+  height: 200px;
+  line-height: 3px;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.area> .select-c1{
+  margin-top: 2%;
+  margin-left: 2%;
+  color: #082690;
+  padding-bottom: 20px;
+}
+
+.area p{
+	margin-left: -5px;
+	padding-bottom: 10px;
+}
+
+.main-container> .verification{
+   margin-top: 2%;
+  margin-left: -1%;
+  background-color: white;
+  width: 99%;
+  height: 200px;
+  line-height: 3px;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.verification p{
+	margin-left: -5px;
+	padding-bottom: 10px;
+}
+
+.verification> .select-2{
+  margin-top: 2%;
+  margin-left: 2%;
+  color: #082690;
+  padding-bottom: 20px;
+}
+
+.select-2 input{
+   margin-top: 20px;
+   width: 500px;
+   height: 45px;
+   box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2);
+   border: none;
+}
+
+.main-container> .time{
+   margin-top: 4%;
+  margin-left: 0%;
+  background-color: white;
+  width: 100%;
+  height: 150px;
+  line-height: 3px;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.time p{
+	margin-left: -5px;
+	padding-bottom: 10px;
+}
+
+.time> .t1{
+   margin-top: 2%;
+  margin-left: -1%;
+  background-color: white;
+  width: 30%;
+  height: 80px;
+   line-height: 3px;
+   color: #082690;
+  padding-bottom: 20px;
+}
+
+.time> .t2{
+   margin-top: -9%;
+  margin-left: 38%;
+  background-color: white;
+  width: 30%;
+  height: 75px;
+   line-height: 3px;
+   color: #082690;
+  padding-bottom: 20px;
+}
+
+.time> .t3{
+   margin-top: -9%;
+  margin-left: 75%;
+  background-color: white;
+  width: 30%;
+  height: 75px;
+   line-height: 3px;
+   color: #082690;
+  padding-bottom: 20px;
+}
+
+.time input, .time select{
+   margin-left: 3px;
+   margin-top: 20px;
+   width: 200px;
+   height: 45px;
+   box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2);
+   border: none;
+}
+
+ /* Chrome, Safari, Edge, Opera */
+.time .t1 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.time .t1 input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.main-container> .days{
+   margin-top: 0%;
+  margin-left: 0%;
+  background-color: white;
+  width: 100%;
+  height: 115px;
+  line-height: 3px;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.days p{
+	margin-left: -5px;
+	padding-bottom: 10px;
+}
+
+/*.days input [type=checkbox]{
+   box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2);
+   border: none;
+}*/
+
+.days div{
+  background-color: white;
+  width: 115px;
+  height: 35px;
+  line-height: 3px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  text-size: 15px;
+}
+
+.days> .c1{
+  margin-left: 0%;
+  margin-top: 2%;
+}
+
+.days> .c2{
+  margin-left: 15%;
+  margin-top: -4%;
+}
+
+.days> .c3{
+  margin-left: 30%;
+  margin-top: -4%;
+  width: 140px;
+}
+
+.days> .c4{
+  margin-left: 48%;
+  margin-top: -4%;
+}
+
+.days> .c5{
+  margin-left: 63%;
+  margin-top: -4%;
+  width: 100px;
+}
+
+.days> .c6{
+  margin-left: 76%;
+  margin-top: -4%;
+}
+
+.days> .c7{
+  margin-left: 91%;
+  margin-top: -4%;
+}
+
+.main-container> .past{
+   margin-top: -1%;
+  margin-left: 0%;
+  background-color: white;
+  width: 100%;
+  height: 170px;
+  line-height: 3px;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: 'Poppins', sans-serif;
+  color: #082690;
+}
+
+.past input{
+   box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2);
+   border: none;
+   width: 700px;
+   height: 65px;
+   margin-top: 10px;
+}
+
+.add{
+    margin-left: 645px;
+    margin-top: 20px;
+    background-color: rgba(46, 171, 43, 1);
+    color: white;
+   cursor: pointer;
+    border: none;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 7px;
+}
+.edit{
+    margin-left: 25px;
+    margin-top: 20px;
+    background-color: #082690;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius:7px;
+}
+
+/*@media screen and (max-width: 1400px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.flex-container {margin-left: 0%;}
+}
+
