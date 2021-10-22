@@ -263,7 +263,7 @@ button[disabled] {
 .box3{
     float: left;
     width: 94%;
-    height: 30%;
+    height: 25%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     margin-left: 3%;
     margin-top:5%;
@@ -313,11 +313,11 @@ button[disabled] {
     height: 48px;
     width: 35px;
     margin-left: 58%;
-    margin-top:-18% ;
+    margin-top:-28% ;
 }
 
 /*box4--- phone number---*/
-.box4{
+/* .box4{
     padding:15px 15px;
     width: 15%;
     height:5%;
@@ -326,11 +326,14 @@ button[disabled] {
     margin-top: -18%;
     margin-bottom: 2%;
     
-}
+} */
 
 /*phone number*/
 .txt5{
-    color:white;
-    text-align:center;
+    margin-top: -15%;
+    font-size:25px;
+    margin-left: 75%;
+    color: #2EAB2B;
+    margin-bottom: 4%;
 }
 

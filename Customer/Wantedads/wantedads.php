@@ -263,9 +263,9 @@
                     <div class="txt4"> 2 weeks ago</div>
                 </div>
 
-                <div class="box4">
+                
                     <div class="txt5"><?php echo $row['contact']; ?></div> 
-                </div>
+               
 
             </div> 
 
