@@ -45,7 +45,7 @@ if(isset($_POST['submit'])){
             {
                 $_SESSION['admin_ID']=$usertypes['admin_ID'];
                 
-                header('location: ../Admin/Adminprofile/Adminprofile.php');
+                header('location: ../Admin/admin_dashboard/admin_dashboard.php');
                 exit();
             }
             else{

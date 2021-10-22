@@ -24,7 +24,7 @@
     </head>
 
     <body>
-        <div class ="heading1" > New Manager </div>
+        <div class ="heading1" >  </div>
            
           <!--------------------Side bar---------------------->
             <div class="sidebar close">
@@ -85,10 +85,10 @@
                   <li>
                     <a href="#">
                       <i class='bx bxs-hand-right' ></i>
-                      <span class="link_name">Reports</span>
+                      <span class="link_name">Complaints</span>
                     </a>
                     <ul class="sub-menu blank">
-                      <li><a class="link_name" href="#">Reports</a></li>
+                      <li><a class="link_name" href="#">Complaints</a></li>
                     </ul>
                   </li> </li>
             </ul>
@@ -103,8 +103,17 @@
               <script src="../../Repeating-pages/sidenav/sidenavigation.js"></script>
 
 
-<!------------------- Mnagers table-------------------->
+<!----------------Dashboard------------------------------->
+<b class="dashboard"> Dashboard </b> </br>
 
+<div class="box3">  <div class="txt5"> Category Count </div> </div>
+<div class="box4"> </div>
+<div class="box5"> </div>
+
+
+
+<!------------------- Mnagers table-------------------->
+<div class ="heading1" > Managers </div>
         <div class= "container"> 
         <div class="table-wrapper">
             <table style="border-spacing: 25px" class="fl-table">
@@ -131,8 +140,46 @@
           ?>
                     
                 </tbody>
+            </table> 
+    </div> 
+
+    
+
+    <!---------------------Added categories------------------>
+    <div class ="heading1" > Added categories </div>
+    <div class= "container"> 
+        <div class="table-wrapper">
+            <table style="border-spacing: 25px" class="fl-table">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Image</th>
+                        <th>Added Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                  <tr>
+                      <td> Pottery </td>
+                      <td> <img src="../../Images/category/waiter.png" class="image"> </td>
+                      <td> 10/10/2021 </td>
+                  </tr>
+                
+                    <?php
+            // while ($rows = mysqli_fetch_array($result)){
+            //     echo "<tr>
+            //         <td>".$rows['name']."</td>
+            //         <td>".$rows['contact_No']."</td>
+            //         <td>".$rows['email']."</td>
+            //         <td>".$rows['NIC']."</td>
+                    
+            //     </tr>";
+            // }
+          ?>
+                    
+                </tbody>
             </table>
-    </div>
+    </div> </br>
 
 
 

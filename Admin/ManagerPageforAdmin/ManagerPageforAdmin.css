@@ -29,41 +29,42 @@ body{
     text-decoration: none;
     margin-right: 5%;
     margin-top: 0%;
+    box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.4);
 }
 
 /*--------------------------View Profile button----------------------*/
 .button2{
     padding: 15px 25px;
-    background-color: #E95B5B;
+    background-color:#2EAB2B ;
     margin-top: 12%;
 }
 
 /*-------------------------------Remove button -----------------------------------*/
 .button3{
     padding: 15px 38px;
-    background-color: #2EAB2B;
+    background-color:  #E95B5B;
     margin-top: 22%;
     margin-right: -12%;
 }
 
-/*----------View Profile--------------*/
+/*----------Add--------------*/
 .button4{
     float:left;
     margin-top:0%;
     margin-right:-12%;
     padding: 15px 45px;
     border: none;
-    background-color: #E95B5B;
+    background-color:  #151965;
 }
 
-/*------------add new manager button-------------------*/
+/*------------ Cancel-------------------*/
 .button5{
     float:left;
     margin-top:-3.3%;
     margin-left:70%;
     padding: 15px 35px;
     border: none;
-    background-color: #151965;
+    background-color: #E95B5B ;
 }
 /*--------------------Outer box Manager ------------------------------*/
 .box1{
@@ -72,10 +73,11 @@ body{
     margin-top: 5%;
     margin-left: 20%;
     box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.4);
-    width:75%;
+    width:65%;
     height: 55%; 
-    background: rgb(0, 0, 0); /* Fallback color */
-    background: rgba(0, 0, 0, 0.3); /* Black background with 0.5 opacity */
+    background-color: white;
+    /* background: rgb(0, 0, 0); /* Fallback color */
+    /*background: rgba(139, 100, 100, 0.3); Black background with 0.5 opacity */
     color: white; /* White text */
     padding: 20px; /* Some padding */
 }
