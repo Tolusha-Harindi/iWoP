@@ -68,7 +68,9 @@ body{
     padding: 6px 12px;
     border-top: none;
 }
-
+p{
+    font-size: 20px;
+}
 .posted{
     display: none;
 }
@@ -111,6 +113,10 @@ body{
     justify-content: center;
     background-color: #fff;
     font-family: 'Poppins Sans', sans-serif;
+    background-image: url('../../Images/bg5.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 .cardStyle {
     width: 80%;
