@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>Company Post ads</title>
     <link rel="stylesheet" href="wantedadscss.css">
-   <link rel="stylesheet" href="../../Repeating-pages/topnav/topnav.css">
-<link rel="stylesheet" href="../../Repeating-pages/sidenav/sidenavigation.css"> 
+    <link rel="stylesheet" href="../../Repeating-pages/topnav/topnav.css">
+    <link rel="stylesheet" href="../../Repeating-pages/sidenav/sidenavigation.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Boxiocns CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
@@ -119,8 +119,8 @@ sidebarBtn.addEventListener("click", ()=>{
 
 
     <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'NewAd')" >Post a New Ad</button>
-        <button class="tablinks" onclick="openCity(event, 'Posted')">Posted Ads</button>
+        <button class="tablinks" onclick="openCity(event, 'NewAd')" ><p >Post a New Ad</p></button>
+        <button class="tablinks" onclick="openCity(event, 'Posted')"><p >Posted Ads</p></button>
 
     </div>
 
