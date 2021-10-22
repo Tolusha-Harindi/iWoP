@@ -1,0 +1,226 @@
+﻿.flex-container {
+   font-family: 'Poppins', sans-serif;
+  background-image: url('../images/bg5.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin-left: 0%;
+  width: 100%;
+  display: flex;
+  height: 550px;
+  flex-direction: row;
+  background-color: white;
+  margin-top: 5%;
+  border: hidden;
+}
+
+/*back arrow*/
+.flex-container img{
+	align: left;
+	margin-top: 3%;
+	width: 38px;
+	height: 30px;
+
+}
+
+/*left side box*/
+.flex-container> .left{
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: black; /* White text */
+  margin-top: 10%;
+  margin-left: -15px;
+  background-color: white;
+  width: 16%;
+  height: 64%;
+  line-height: 5px;
+  border: none;
+  padding-top: 55px;
+  padding-left: 40px;
+  padding-right: 16px;
+  padding-bottom: 40px;
+  border-radius: 10px;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.left input{
+  width: 15%;
+  margin-left: 35px;
+  margin-top: 5px;
+  padding: 12px 20px;
+  padding-bottom: 15px;
+  display: block;
+  box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2);
+  border: none;
+}
+
+ /* Chrome, Safari, Edge, Opera */
+.left
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.left input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/*pending work button*/
+.left button{
+    margin-left: -9%;
+    margin-top: 5px;
+    background-color: black;
+    color: white;
+   cursor: pointer;
+    border: none;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 7px;
+}
+
+.left button:hover {
+  background-color: #EACB09;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/*schedule box*/
+.flex-container> .center{
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: black; /* White text */
+  margin-top: 2%;
+  margin-left: 3%;
+  background-color: white;
+  width: 38%;
+  height: 88%;
+  line-height: 5px;
+  border:none;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.center h3{
+	text-align:center;
+	margin-top: 18px;
+	font-size:22px
+}
+
+.right h3{
+	text-align:center;
+	margin-top: 10px;
+	font-size:27px
+}
+
+/*shedule outcomes*/
+.center> .mainbox{
+  margin-top: 3%;
+  margin-left: 2%;
+  background-color: white;
+  width: 95%;
+  height: 90%;
+  line-height: 5px;
+  border: none;
+  /*padding-top: 55px;
+  padding-left: 50px;
+  padding-right: 20px;
+  padding-bottom: 40px;*/
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+.mainbox img{
+    width: 100%;
+    height: 100%;
+}
+
+/*request box*/
+.flex-container> .right{
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: black; /* White text */
+  margin-top: 2%;
+  margin-left: 3%;
+  background-color: white;
+  width: 38%;
+  height: 88%;
+  line-height: 5px;
+  border: none;
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-right: 8px;
+  padding-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/*request details show box*/
+.right> .subbox{
+  margin-top: 5%;
+  margin-left: 2%;
+  background-color: white;
+  width: 95%;
+  height: 80%;
+  line-height: 5px;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  overflow-y: auto;
+}
+
+.subbox img{
+    margin-left: 6%;
+    width: 90%;
+    height: 70%;
+}
+
+/*accept button*/
+.btn1{
+    margin-left: 145px;
+    margin-top: 12px;
+    background-color: rgba(46, 171, 43, 1);
+    color: white;
+   cursor: pointer;
+    border: none;
+    padding: 12px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 7px;
+}
+
+/*reject button*/
+.btn2{
+    margin-left: 30px;
+    margin-top: 10px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 12px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius:7px;
+}
+
+.right button:hover {
+  background-color: #EACB09;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 767px) {
+  .flex-container {
+    flex-direction: column;
+  }
