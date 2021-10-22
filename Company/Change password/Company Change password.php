@@ -86,10 +86,24 @@
         <div class="col-left-30" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); margin: 2px; height: 500px;
         background: rgb(0, 0, 0); /* Fallback color */
         background: rgba(0, 0, 0, 0.3); /* Black background with 0.5 opacity */
-        color: white; /* White text */">
+        color: white; /* White text */
+        margin-top:0px;">
             <div class="box1">
                 <div class="sidebar close">
                     <ul class="nav-links">
+
+                     
+                        <li>
+
+                            <a href="../CompanyDashboard/Companydashboard.php">
+                                <i class='bx bxs-dashboard'></i>
+                                <span class="link_name">Dashboard</span>
+                            </a>
+                            <ul class="sub-menu blank">
+                                <li><a class="link_name" href="../CompanyDashboard/Companydashboard.php">Dashboard</a></li>
+                            </ul>
+                        </li>
+
                         <li>
                             <a href="../CompanyProfile/Companyprofile.php">
                                 <i class='bx bxs-user'></i>
@@ -129,7 +143,7 @@
                                 <li><a class="link_name" href="../ApplyforJob-Responses/ApplyforJob-companyview.php">Responses</a></li>
                             </ul>
                         </li>
-                        </li>
+                     </li>
                     </ul>
                 </div>
                 <section class="home-section">
