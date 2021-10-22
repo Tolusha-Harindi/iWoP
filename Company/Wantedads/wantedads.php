@@ -190,8 +190,8 @@ sidebarBtn.addEventListener("click", ()=>{
                     </div>
 
                     <div class="inputDiv">
-                        <label class="inputLabel" for="phonenum">Phone Number</label>
-                        <input type="tel" name="contact" id="phonenum" required>
+                        <label class="inputLabel" for="phonenum">Contact Number</label>
+                        <input type="tel" name="contact" id="phonenum" maxlength="10" placeholder="071-3204333" pattern="[0-8]{3}-[0-9]{2}-[0-9]{3}" required>
                     </div>
                     <div class="inputDiv">
                         <label class="inputLabel" for="jobdescription">Starting Date</label>
