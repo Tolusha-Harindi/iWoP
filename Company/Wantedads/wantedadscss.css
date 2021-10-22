@@ -67,6 +67,8 @@ body{
     /*display: none;*/
     padding: 6px 12px;
     border-top: none;
+   
+
 }
 p{
     font-size: 20px;
@@ -138,16 +140,19 @@ p{
     color: #2F2D3B;
     text-align: center;
     font-size: 25px;
+    font-weight: bold;
 }
 
 .inputLabel {
-    font-size: 17px;
+    font-size: 20px;
     /*color: #555;*/
     margin-bottom: 6px;
     margin-top: 24px;
     font-family: 'Poppins', sans-serif;
 
 }
+
+
 .inputDiv {
     width: 70%;
     display: flex;
@@ -195,8 +200,11 @@ input:disabled {
     background-color:rgba(46, 171, 43, 1);
     border: none;
     font-family: 'Poppins', sans-serif;
-    font-size: 17px;
+    font-size: 20px;
     cursor: pointer;
+}
+.submitButton:hover{
+    background-color:#27ae60 ;
 }
 .submitButton:disabled,
 button[disabled] {
@@ -261,14 +269,14 @@ button[disabled] {
     margin-bottom: 2%;
     align-items: center;
     background: rgb(0, 0, 0); /* Fallback color */
-    background: rgba(0, 0, 0, 0.3); /* Black background with 0.5 opacity */
+    background: rgba(0, 0, 0, 0.6); /* Black background with 0.5 opacity */
     color: white; /* White text */
 }
 
 /*---------------------------------------------------Title---------------------------------------------*/
 .txt1{
     color:red;
-    font-size: 25px;
+    font-size: 30px;
     margin-left: 10%;
     margin-top:4%;
 }
@@ -278,6 +286,7 @@ button[disabled] {
 .txt2{
     margin-left:10%;
     margin-top:4%;
+    font-size: 20px;
 }
 
 /*-------------divide into unequal columns-------------*/
@@ -290,6 +299,8 @@ button[disabled] {
 .txt3{
     margin-left: 55%;
     margin-top: -18%;
+    font-size: 20px;
+    
 }
 
 
@@ -298,6 +309,7 @@ button[disabled] {
     margin-left: 75%;
     margin-top: -16%;
     margin-bottom: 22%;
+    font-size: 20px;
 }
 
 /*location icon*/
@@ -305,7 +317,7 @@ button[disabled] {
     height: 48px;
     width: 35px;
     margin-left: 58%;
-    margin-top:-15% ;
+    margin-top:-20% ;
 }
 
 /*box4--- phone number---*/
@@ -324,5 +336,6 @@ button[disabled] {
 .txt5{
     color:white;
     text-align:center;
+    font-size: 25px;
 }
 
