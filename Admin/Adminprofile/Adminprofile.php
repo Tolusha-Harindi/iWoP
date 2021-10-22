@@ -52,7 +52,7 @@
     </li>
 
 
-    <li>
+    <!-- <li>
         <a href="../Changepassword/changepwd.php">
             <i class='bx bxs-check-shield' ></i>
             <span class="link_name">Change Password</span>
@@ -60,7 +60,7 @@
         <ul class="sub-menu blank">
             <li><a class="link_name" href="../Changepassword/changepwd.php">Change Password</a></li>
         </ul>
-    </li>
+    </li> -->
 
     <li>
         <a href="../Adddeletecategory/Adddelcategory.php">
@@ -97,7 +97,7 @@
 
 </div>
 <div class="box2">
-  <div class="txt">  Profile </div>
+  <div class="txt">  Profile </div> </br>
     <div class="mainDiv">
         <div class="cardStyle">
             <form action="" method="post">
@@ -110,12 +110,27 @@
                 <!--<img src="camere.png" alt="camera" class="camera">-->
                 <div class="inputDiv">
                     <label class="inputLabel" for="name">Name</label> </br>
-                    <input type="text" id="name" name="name" class="input" required>
+                    <input type="text" id="name" placeholder="Kasun Perera" name="name" class="input" required>
                 </div>
 
 
                 <div class="inputDiv">
                     <label class="inputLabel" for="email">Email</label> </br>
+                    <input type="email" id="email" placeholder="kasun128@gmail.com" name="email" class="input" required>
+                </div>
+
+                <div class="inputDiv">
+                    <label class="inputLabel" for="email"> Current Password</label> </br>
+                    <input type="email" id="email" name="email" class="input" required>
+                </div>
+
+                <div class="inputDiv">
+                    <label class="inputLabel" for="email">New Password </label> </br>
+                    <input type="email" id="email" name="email" class="input" required>
+                </div>
+
+                <div class="inputDiv">
+                    <label class="inputLabel" for="email">Change Password </label> </br>
                     <input type="email" id="email" name="email" class="input" required>
                 </div>
 

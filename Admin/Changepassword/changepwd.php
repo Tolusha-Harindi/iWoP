@@ -112,7 +112,7 @@
                 </div> 
 
                 <div class="inputDiv">
-                    <label class="inputLabel" for="confirmPassword">Confirm Password</label> </br>
+                    <label class="inputLabel" for="confirmPassword">Change Password</label> </br>
                     <input type="password" id="confirmPassword" name="confirmPassword" class="input" required>
                 </div> </br></br></br> </br>
                 
