@@ -55,11 +55,11 @@ else{
                                         </label>
                                     </div> -->
                                     <div>
-                                        <br /> <input type = "submit" name="submit" id="submit" value ="Login" class="button">
-                                    </div>
-                                    <div class="forgetpw">
+                                        <br /> <input type = "submit" name="submit" id="submit" value ="Login" class="button"> 
+                                    </div></br>
+                                    <!-- <div class="forgetpw">
                                         <a href="#forgot">Forgot Password?</a>
-                                    </div>
+                                    </div> -->
                                     <div class="forgetpw">
                                         <label class="container"><b> Haven't Registered yet? Click here to </b><a href="../Unregistered-user/RegisterAs/RegisterAs.php">Register</a>
                                     </div> 

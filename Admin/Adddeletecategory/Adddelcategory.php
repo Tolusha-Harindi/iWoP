@@ -56,7 +56,7 @@
             </li>
 
 
-            <li>
+            <!-- <li>
                 <a href="../Changepassword/changepwd.php">
                     <i class='bx bxs-check-shield' ></i>
                     <span class="link_name">Change Password</span>
@@ -64,7 +64,7 @@
                 <ul class="sub-menu blank">
                     <li><a class="link_name" href="../Changepassword/changepwd.php">Change Password</a></li>
                 </ul>
-            </li>
+            </li> -->
 
             <li>
                 <a href="../Adddeletecategory/Adddelcategory.php">

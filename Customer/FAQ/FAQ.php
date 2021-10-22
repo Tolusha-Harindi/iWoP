@@ -88,6 +88,11 @@
             .panel p {
                 color:  #0000ff;
             }
+
+            .faq_table{
+                max-height: 10vh;
+                overflow-y: scroll;
+            }
         </style>
     </head>
     <body> 
@@ -96,12 +101,12 @@
         <div class="container">
           	<div class="fluid-container">
           		<center>
-                    <p style="margin: 2em; font-size: 3em "> 
+                    <p style="margin: 4rem auto 1rem  auto; font-size: 3em "> 
                         <b><span style="color: #e0ac1c; font-size: 2em">F</span>requently <span style="color: #e0ac1c; font-size: 2em">A</span>sked <span style="color: #e0ac1c; font-size: 2em">Q</span>uestions</b>	
                     </p>
                 </center>
           	    
-                <table cellspacing="30">
+                <table cellspacing="30" class="faq_table">
                     <tr>
                         <!-- 1 -->
                         <th>
