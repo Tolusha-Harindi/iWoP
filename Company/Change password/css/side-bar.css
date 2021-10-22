@@ -10,13 +10,14 @@
   position: absolute;
   margin-top: 2%;
   left: 0;
-  height: 40%;
+  height: 50%;
   width: 260px;
   z-index: 100;
   transition: all 0.5s ease;
   top: 100px;
   left: 86px;
   background-color: gainsboro;
+  padding-top: -10%;
 }
 .sidebar.close {
   width: 78px;
