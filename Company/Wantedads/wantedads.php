@@ -45,52 +45,53 @@
 
                 <li>
                   <a href="../CompanyProfile/Companyprofile.php">
-                    <i class='bx bxs-user' ></i>
-                    <span class="link_name">My Profile</span>
-                  </a>
+                     <i class='bx bxs-user' ></i>
+                     <span class="link_name">My Profile</span>
+                   </a>
                   <ul class="sub-menu blank">
-                    <li><a class="link_name" href="../CompanyProfile/Companyprofile.php">My Profile</a></li>
+                      <li><a class="link_name" href="../CompanyProfile/Companyprofile.php">My Profile</a></li>
                   </ul>
                 </li>
           
                 
                 <li>
                   <a href="../Change password/Company change password.php">
-                    <i class='bx bxs-check-shield' ></i>
-                    <span class="link_name">Change Password</span>
+                     <i class='bx bxs-check-shield' ></i>
+                     <span class="link_name">Change Password</span>
                   </a>
                   <ul class="sub-menu blank">
-                    <li><a class="link_name" href="../Change password/Company change password.php">Change Password</a></li>
+                     <li><a class="link_name" href="../Change password/Company change password.php">Change Password</a></li>
                   </ul>
                 </li>
           
                 <li>
                   <a href="../Wantedads/wantedads.php">
-                    <i class='bx bxs-image' ></i>
-                    <span class="link_name">Post your Ads</span>
+                     <i class='bx bxs-image' ></i>
+                     <span class="link_name">Post your Ads</span>
                   </a>
                   <ul class="sub-menu blank">
-                    <li><a class="link_name" href="../Wantedads/wantedads.php">Post your Ads</a></li>
+                     <li><a class="link_name" href="../Wantedads/wantedads.php">Post your Ads</a></li>
                   </ul>
                 </li>
           
                 <li>
                   <a href="../ApplyforJob-Responses/ApplyforJob-companyview.php">
-                    <i class='bx bxs-share' ></i>
-                    <span class="link_name">Responses</span>
+                     <i class='bx bxs-share' ></i>
+                     <span class="link_name">Responses</span>
                   </a>
                   <ul class="sub-menu blank">
-                    <li><a class="link_name" href="../ApplyforJob-Responses/ApplyforJob-companyview.php">Responses</a></li>
+                     <li><a class="link_name" href="../ApplyforJob-Responses/ApplyforJob-companyview.php">Responses</a></li>
                   </ul>
                 </li>
           </li>
       </ul>
             </div>
             <section class="home-section">
-              <div class="home-content">
-                <i class='bx bx-menu' ></i>
-              <!--       <span class="text">Drop Down Sidebar</span>
-               -->    </div>
+               <div class="home-content">
+                    <i class='bx bx-menu' ></i>
+                       <!--       <span class="text">Drop Down Sidebar</span>
+                        -->    
+               </div>
             </section>
 
 
