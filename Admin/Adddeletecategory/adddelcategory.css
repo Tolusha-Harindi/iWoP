@@ -21,7 +21,7 @@ body{
 /*---------------------Right-Outer-box- Report----------------------------------------*/
 .box2{
     float:left;
-    width: 70%;
+    width: 60%;
     margin-left:26%;
     margin-top:2%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -33,8 +33,8 @@ body{
 }
 /*box2 content*/
 .main{
-    width: 80%;
-    height:30%;
+    width: 70%;
+    height:25%;
 }
 /*----view all users button---*/
 .viewButton{
@@ -58,18 +58,19 @@ body{
     padding: 15px 40px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 18px;
     /*float: right;*/
     cursor: pointer;
-    margin-left: 100%;
-    margin-top: -6%;
+    margin-left: 110%;
+    margin-top: -30%;
 }
+
+
 /*add catgory */
 h3{
     padding-top:40px;
     color: white;
-    font-size: 30px;
+    font-size: 20px;
     margin-left: 10%;
 }
 
@@ -77,14 +78,16 @@ h3{
 /*change the postion of textinput*/
 #lname{
     width: 65%;
-    height: 6vh;
-    margin-left: 20%;
+    height: 5vh;
+    margin-left: 10%;
     border: 2px solid white;
+    font-size: 10px;
 }
 
 /*-----file upload------------*/
 .fileupload{
-    margin-left:65%;
+    margin-left:40%;
+    margin-top: -45%;
 }
 
 
@@ -97,9 +100,9 @@ input[type="text"]::placeholder{
     align-items: center;
     justify-content: center;
     /* margin: 0 auto;*/
-    height: 6vh;
+    height: 5vh;
     width: 65%;
-    margin-left: 20%;
+    margin-left: 10%;
     font-size: 18px;
     border: 2px solid white;
 }
@@ -107,7 +110,7 @@ input[type="text"]::placeholder{
 
 /*delete button*/
 .deleteButton {
-    background-color: #2EAB2B; /* green */
+    background-color: red; /* green */
     border: none;
     color: white;
     padding: 15px 32px;
@@ -117,9 +120,8 @@ input[type="text"]::placeholder{
     font-size: 18px;
     /*float: right;*/
     cursor: pointer;
-    margin-top: -2%;
-    margin-bottom: 4%;
-    margin-left: 100%;
+    margin-top: -4%;
+    margin-left: 110%;
 }
 /*footer*/
 
@@ -350,7 +352,7 @@ input[type="text"]::placeholder{
     width: 0px;
     /*width: calc(100% - 260px);*/
     transition: all 0.5s ease;
-    margin-top: 10%;
+    margin-top: 15%;
 }
 
 /*home button space*/

@@ -113,9 +113,9 @@
 
     <form method="post" action="add_delete_insert.php" enctype="multipart/form-data">
         <input type="text" id="lname" name="category_name" placeholder="Enter the new category name"  required><br><br>
-        <input type="file"  name="upload_file"  class="fileupload" required />
+        <input type="file"  name="upload_file"  class="fileupload" required>
         <input type="submit" name="submit"  class="addButton" value="Add" required> </br>
-    </form>
+   
 
         <h3>Delete category</h3></br> </br>
         <select name="deletecategory" id="lang">
@@ -155,6 +155,7 @@
             <option value=""></option>
         </select>
         <input type="reset" name="delete" id="delete" class="deleteButton" value="Delete" required> 
+        </form>
     </div>
 </div>>
 

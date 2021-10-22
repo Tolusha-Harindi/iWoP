@@ -63,27 +63,27 @@
             
             
                   <li>
-                    <a href="#">
+                    <a href="../Changepassword/changepwd.php">
                       <i class='bx bxs-check-shield' ></i>
                       <span class="link_name">Change Password</span>
                     </a>
                     <ul class="sub-menu blank">
-                      <li><a class="link_name" href="#">Change Password</a></li>
+                      <li><a class="link_name" href="../Changepassword/changepwd.php">Change Password</a></li>
                     </ul>
                   </li>
             
                   <li>
-                    <a href="#">
+                    <a href="../Adddeletecategory/Adddelcategory.php">
                       <i class='bx bxs-spreadsheet' ></i>
-                      <span class="link_name">Catogary</span>
+                      <span class="link_name">Category</span>
                     </a>
                     <ul class="sub-menu blank">
-                      <li><a class="link_name" href="#">Catogary</a></li>
+                      <li><a class="link_name" href="../Adddeletecategory/Adddelcategory.php">Category</a></li>
                     </ul>
                   </li>
             
                   <li>
-                    <a href="#">
+                    <a href="../Reportpage/reportpage.php">
                       <i class='bx bxs-hand-right' ></i>
                       <span class="link_name">Complaints</span>
                     </a>
@@ -107,8 +107,8 @@
 <b class="dashboard"> Dashboard </b> </br>
 
 <div class="box3">  <div class="txt5"> Category Count </div> </div>
-<div class="box4"> </div>
-<div class="box5"> </div>
+<div class="box4"> <div class="txt6"> Complaints </div>  </div>
+<div class="box5">  </div>
 
 
 
