@@ -103,8 +103,8 @@
             <div class="descipdiv">
                 <div class="descipdivleft">
                 <img src="../../Images/img.png" alt="user" id="userimg">
-                <h4 > Name:</h4>
-                <h4> Reason:</h4>
+                <h4 > Name:  Kasun Perera</h4>
+                <h4> Reason:  Budget is high</h4>
                 </div>
                 <div class="descipdivright">
                 <button id="view">
@@ -121,8 +121,8 @@
             <div class="descipdiv">
                 <div class="descipdivleft">
                     <img src="../../Images/img.png" alt="user" id="userimg">
-                    <h4 > Name:</h4>
-                    <h4> Reason:</h4>
+                    <h4 > Name: Kasun Perera</h4>
+                    <h4> Reason:  Budget is high</h4>
                 </div>
                 <div class="descipdivright">
                     <button id="view">
@@ -139,8 +139,8 @@
             <div class="descipdiv">
                 <div class="descipdivleft">
                     <img src="../../Images/img.png" alt="user" id="userimg">
-                    <h4 > Name:</h4>
-                    <h4> Reason:</h4>
+                    <h4 > Name: Kasun Perera</h4>
+                    <h4> Reason:  Budget is high</h4>
                 </div>
                 <div class="descipdivright">
                     <button id="view">
@@ -162,8 +162,8 @@
             <div class="descipdiv">
                 <div class="descipdivleft">
                     <img src="../../Images/img.png" alt="user" id="userimg">
-                    <h4 > Name:</h4>
-                    <h4> Reason:</h4>
+                    <h4 > Name:  Kasun Perera</h4>
+                    <h4> Reason: Budget is high</h4>
                 </div>
                 <div class="descipdivright">
                     <button id="view">
@@ -180,8 +180,8 @@
             <div class="descipdiv">
                 <div class="descipdivleft">
                     <img src="../../Images/img.png" alt="user" id="userimg">
-                    <h4 > Name:</h4>
-                    <h4> Reason:</h4>
+                    <h4 > Name: Kasun Perera</h4>
+                    <h4> Reason: Budget is high</h4>
                 </div>
                 <div class="descipdivright">
                     <button id="view">
@@ -198,8 +198,8 @@
             <div class="descipdiv">
                 <div class="descipdivleft">
                     <img src="../../Images/img.png" alt="user" id="userimg">
-                    <h4 > Name:</h4>
-                    <h4> Reason:</h4>
+                    <h4 > Name: Kasun Perera</h4>
+                    <h4> Reason: Budget is high</h4>
                 </div>
                 <div class="descipdivright">
                     <button id="view">

@@ -48,12 +48,12 @@ else{
                                             <p class = "error-log_in"><?php echo $_GET['error'];?></p>
                                     <?php }   ?>
                                         </div>
-                                    <div class="group">
+                                    <!-- <div class="group">
                                         <input type="checkbox" checked="checked">
                                         <label class="container"> <b> Keep Me Signed in </b>
                                         <span class="checkmark"></span>
                                         </label>
-                                    </div>
+                                    </div> -->
                                     <div>
                                         <br /> <input type = "submit" name="submit" id="submit" value ="Login" class="button">
                                     </div>

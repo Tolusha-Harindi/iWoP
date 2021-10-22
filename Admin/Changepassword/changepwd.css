@@ -33,7 +33,7 @@ body{
     margin-left:30%;
     height:60%; 
     background: rgb(0, 0, 0); /* Fallback color */
-    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    background: rgba(0, 0, 0, 0.3); /* Black background with 0.5 opacity */
     color: white; /* White text */
     padding: 20px; /* Some padding */ 
 }
