@@ -12,7 +12,7 @@
             <div class="content-wrapper">
                 <h1>Individual Workers Online Platform</h1>
                 <nav>
-                    <a href="index.php">Home</a>
+                    <a href="home.php">Home</a>
                     <a href="../Repeating-pages/FAQ/FAQ.php">Help</a>
                    
                 </nav>
@@ -28,7 +28,8 @@
                         </script>
                 </div>
             </div>
-        </header>
+</header>
+
 <main>
     <div class="featured">
         <h2>iWoP</h2> </br></br>
@@ -37,55 +38,53 @@
 </main>
 <br>
 
+        <div class="slideshow-container">
+        <div class="slideshow fade">
+            <img src="../Images/landing/7.jpg" style="width:100% ; height:auto">
+        </div>
+        <div class="slideshow fade">
+            <img src="../Images/landing/14.jpg" style="width:100% ; height:auto">
+        </div>
 
+        <div class="slideshow fade">
+            <img src="../Images/landing/2.jpg" style="width:100% ; height:auto">
+        </div>
 
-<div class="slideshow-container">
-  <div class="slideshow fade">
-    <img src="../Images/landing/7.jpg" style="width:100% ; height:auto">
-  </div>
-  <div class="slideshow fade">
-    <img src="../Images/landing/14.jpg" style="width:100% ; height:auto">
-  </div>
+        <div class="slideshow fade">
+            <img src="../Images/landing/3.jpg" style="width:100% ; height:auto">
+        </div>
 
-  <div class="slideshow fade">
-    <img src="../Images/landing/2.jpg" style="width:100% ; height:auto">
-  </div>
-
-  <div class="slideshow fade">
-    <img src="../Images/landing/3.jpg" style="width:100% ; height:auto">
-  </div>
-
-  <div class="slideshow fade">
-    <img src="../Images/landing/8.jpg" style="width:100% ; height:auto">
-  </div>
-  <div class="slideshow fade">
-    <img src="../Images/landing/9.jpg" style="width:100% ; height:auto">
-  </div>
-  <div class="slideshow fade">
-    <img src="../Images/landing/18.jpg" style="width:100% ; height:auto">
-  </div>
-  <div class="slideshow fade">
-    <img src="../Images/landing/12.jpg" style="width:100% ; height:auto">
-  </div>
-  <div class="slideshow fade">
-    <img src="../Images/landing/22.jpg" style="width:100% ; height:auto">
-  </div>
+        <div class="slideshow fade">
+            <img src="../Images/landing/8.jpg" style="width:100% ; height:auto">
+        </div>
+        <div class="slideshow fade">
+            <img src="../Images/landing/9.jpg" style="width:100% ; height:auto">
+        </div>
+        <div class="slideshow fade">
+            <img src="../Images/landing/18.jpg" style="width:100% ; height:auto">
+        </div>
+        <div class="slideshow fade">
+            <img src="../Images/landing/12.jpg" style="width:100% ; height:auto">
+        </div>
+        <div class="slideshow fade">
+            <img src="../Images/landing/22.jpg" style="width:100% ; height:auto">
+        </div>
 
 </div>
 
 <br>
 
-<div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span>
-  <span class="dot"></span>
-  <span class="dot"></span>
-  <span class="dot"></span> 
-  <span class="dot"></span>
-  <span class="dot"></span>
-  <span class="dot"></span>
-</div>
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span> 
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
 
 <div class="header" id="products">
   <h1>Our Services</h1>

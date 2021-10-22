@@ -73,7 +73,7 @@
                 <dt><h4>Privacy</h4></dt>
                 <dd><p>We collect screen, record and use selected information of good service providers in the household
                     repairs and construction industry to bridge the gap between service providers and household/offices.
-                    We do not demand money from service provides for listing their information on WoP site. Also, we do
+                    We do not demand money from service provides for listing their information on iWoP site. Also, we do
                     not sell information to household and offices for sharing information.</p></dd>
             </dl>
         </div>
