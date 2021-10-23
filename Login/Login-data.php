@@ -130,7 +130,8 @@ if(isset($_POST['submit'])){
                     $_SESSION['Com_reg_no']=$usertypes['Com_reg_no'];
                     $_SESSION['Email']=$usertypes['Email'];
     
-                    header('location:../Company/CompanyProfile/CompanyProfile.php');
+                    header('location:../Company/CompanyDashboard/Company-dashboard.php
+                    ');
                     exit();
                 }
             else{

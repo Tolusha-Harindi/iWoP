@@ -48,7 +48,7 @@
         .button3{
             background-color: black;
             padding: 20px 25px;
-            margin-top:2%;
+            margin-top:0.5%;
             margin-left:2.6%;
         }
 
@@ -153,7 +153,7 @@
         </div>
         <div class="card3">
             <div class="container">
-                <h2><b>Do you like to provide job opportunities ?</b></h2>
+                <h2><b>Do your company like to provide job opportunities ?</b></h2>
                 <a href="../../Login/RegisterCompany.php" input type="button"  value ="submit" class="button3"> Register </a>
             </div>
         </div>
