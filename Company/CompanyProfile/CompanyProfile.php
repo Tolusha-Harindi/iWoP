@@ -41,12 +41,12 @@ if(isset($_SESSION['Email'])){
                   <ul class="nav-links">
 
                   <li>
-                        <a href="../CompanyDashboard/Companydashboard.php">
+                        <a href="../CompanyDashboard/Company-dashboard.php">
                            <i class='bx bxs-dashboard'></i>
                              <span class="link_name">Dashboard</span>
                        </a>
                          <ul class="sub-menu blank">
-                            <li><a class="link_name" href="../CompanyDashboard/Companydashboard.php">Dashboard</a></li>
+                            <li><a class="link_name" href="../CompanyDashboard/Company-dashboard.php">Dashboard</a></li>
                          </ul>
                   </li>
 

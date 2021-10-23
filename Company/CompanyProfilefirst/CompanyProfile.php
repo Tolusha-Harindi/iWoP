@@ -91,44 +91,44 @@
     <div class="mainDiv">
        <div class="cardStyle">
         <form action="" method="post">
-            <img src="user.png" class="floatRight">
-            <img src="camere.png" alt="camera" class="camera">
+            <img src="img2.jpg" class="floatRight">
+           
             <div class="inputDiv">
-                <label class="inputLabel" for="name">Company Name</label>
+                <label class="inputLabel" for="name">Company Name</label><br>
                 <input type="text" id="comname" name="companyname" required>
             </div>
             <div class="inputDiv">
-                <label class="inputLabel" for="address">Company Owner Name</label>
+                <label class="inputLabel" for="address">Company Owner Name</label><br>
                 <input type="text" id="address" name="comowner" required>
             </div>
 
             <div class="inputDiv">
-                <label class="inputLabel" for="district">Company Registered Number</label>
+                <label class="inputLabel" for="district">Company Registered Number</label><br>
                 <input type="text" id="district" name="comregnumber">
             </div>
 
             <div class="inputDiv">
-                <label class="inputLabel" for="city">Address</label>
+                <label class="inputLabel" for="city">Address</label><br>
                 <input type="text" id="city" name="address">
             </div>
 
             <div class="inputDiv">
-                <label class="inputLabel" for="city">Email</label>
+                <label class="inputLabel" for="city">Email</label><br>
                 <input type="email" id="email" name="email">
             </div>
 
             <div class="inputDiv">
-                <label class="inputLabel" for="city">Contact No1</label>
-                <input type="tel" id="contactno1" name="contactno1">
+                <label class="inputLabel" for="city">Contact No</label><br>
+                <input type="tel" id="contactno1" name="contactno">
             </div>
 
             <div class="inputDiv">
-                <label class="inputLabel" for="city">GS certificate</label>
+                <label class="inputLabel" for="city">GS certificate</label><br>
                 <input type="file" id="img1" name="img" accept="image/*">
             </div>
 
             <div class="inputDiv">
-                <label class="inputLabel" for="city">Company Registered  Certificate</label>
+                <label class="inputLabel" for="city">Company Registered  Certificate</label><br>
                 <input type="file" id="img1" name="img2" accept="image/*">
             </div>
 
