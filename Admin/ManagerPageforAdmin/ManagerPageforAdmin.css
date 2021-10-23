@@ -18,8 +18,8 @@ body{
 
 
 /*----------------------Add New Manager Button-------------------------*/
-.button1, .button2, .button3, .button4, .button5{
-    float: right;
+.button1, .button4, .button5{
+    float: left;
     padding: 18px 25px;
     background-color: #151965;
     font-family: 'Poppins', sans-serif;
@@ -27,24 +27,28 @@ body{
     text-align: center;
     color: #fff !important;
     text-decoration: none;
-    margin-right: 5%;
+    margin-left: 5%;
     margin-top: 0%;
     box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.4);
+    border: none;
 }
 
 /*--------------------------View Profile button----------------------*/
 .button2{
-    padding: 15px 25px;
+    padding: 15px 40px;
     background-color:#2EAB2B ;
-    margin-top: 12%;
+    margin-top: 10%;
+    margin-left: -10%;
+    border: none;
 }
 
 /*-------------------------------Remove button -----------------------------------*/
 .button3{
     padding: 15px 38px;
     background-color:  #E95B5B;
-    margin-top: 22%;
-    margin-right: -12%;
+    margin-top: 10%;
+    margin-left: 10%;
+    border: none;
 }
 
 /*----------Add--------------*/
@@ -85,8 +89,9 @@ body{
 /*------------------------------Profile image---------------------------*/
 .profimg{
     float: left;
-    margin-top:10%;
-    margin-left: 20%;
+    margin-top:-10%;
+    margin-left: 30%;
+    border-radius: 100px;
 }
 
 /*------------------------------------------form-----------------------------------------------*
@@ -121,6 +126,13 @@ body{
     margin-top: 2%;
     font-size: 17px;
 }
+
+/* 
+.detail{
+    font-size: 22px;
+    margin-top:12%;
+    margin-left:5%;
+} */
 
 
 
