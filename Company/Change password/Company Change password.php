@@ -1,3 +1,15 @@
+<?php
+session_start();
+if(isset($_SESSION['Email'])){
+
+  include '../../Backend/db_connection.php'; //check company id or not
+  $temp= $_SESSION['Email']; 
+  $sql = "SELECT Email FROM company WHERE Email='$temp'";
+  $result = mysqli_query($db,$sql);
+  if(mysqli_num_rows($result)>0){ 
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -261,3 +273,19 @@
 <script src="./js/app.js"></script>
 </body>
 </html>
+<?php 
+  }
+  else{
+    echo '<script type="text/javascript">javascript:history.go(-1)</script>'; //redirect to previous page
+    exit();
+  }
+ 
+  
+}
+
+
+else{
+  header('location:../../Login/Login.php');
+  exit();
+}
+?>
