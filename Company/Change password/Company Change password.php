@@ -82,10 +82,12 @@
         </div>
     </div>
     <!--------------------------------------- side navigation ------------------------------------>
+    <!-- box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+         background: rgb(0, 0, 0); /* Fallback color */
+        background: rgba(0, 0, 0, 0.3); /* Black background with 0.5 opacity */ -->
     <div class="down-row">
-        <div class="col-left-30" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); margin: 2px; height: 500px;
-        background: rgb(0, 0, 0); /* Fallback color */
-        background: rgba(0, 0, 0, 0.3); /* Black background with 0.5 opacity */
+        <div class="col-left-30" style=" margin: 2px; height: 500px;
+        
         color: white; /* White text */
         margin-top:0px;">
             <div class="box1">
