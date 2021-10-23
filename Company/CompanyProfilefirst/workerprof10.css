@@ -1,10 +1,19 @@
+body{
+  font-family: 'Poppins', sans-serif;
+  background-image: url('../../Images/bg5.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
 .box1{
     float: left;
     width: 30%;
     height: 70%;
     height: 700px;
     margin-left: 3%;
-    margin-top: 90px;
+    margin-top: 130px;
     align-items: center;
 
    
@@ -19,7 +28,7 @@
     margin-right:3%;
     /*border: 1px solid red;*/
     height: 700px;
-    margin-top: 90px;
+    margin-top: 150px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
    height: 70%;
    
@@ -121,7 +130,7 @@ input:disabled {
   position: fixed;
   margin-top: 2%;
   left: 0;
-  height: 70%;
+  height: 50%;
   width: 260px;
   background: #ffffff;
   z-index: 100;
