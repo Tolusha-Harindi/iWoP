@@ -9,10 +9,10 @@
 
     <style>
         body {
-          background-image: url('../../Images/bg.jpg');
+          background-image: url('../../Images/landing/28.jpg');
           background-repeat: no-repeat;
           background-attachment: scroll;
-          background-size: 100% ;
+          background-size:  100%;
           font-family: 'Poppins', sans-serif;
         }
        
