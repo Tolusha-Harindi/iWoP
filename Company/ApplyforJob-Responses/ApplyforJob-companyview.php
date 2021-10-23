@@ -1,3 +1,16 @@
+<?php
+session_start();
+if(isset($_SESSION['Email'])){
+
+  include '../../Backend/db_connection.php'; //check company id or not
+  $temp= $_SESSION['Email']; 
+  $sql = "SELECT Email FROM company WHERE Email='$temp'";
+  $result = mysqli_query($db,$sql);
+  if(mysqli_num_rows($result)>0){ 
+?>
+
+
+
 <html lang="en" dir="ltr">
 <title> applyforJobs-Responses- company view </title>
 
@@ -67,6 +80,17 @@
                 <a href="#" input type = "button"  value ="button" class="button1"> Approve </a>
                 <a href="#" input type = "button"  value ="button" class="button2"> Reject </a>
             </div>
+
+            <div class="hor">
+                </hr> 
+                <img src="../../Images/img.png" alt="propic" class = "profpic">
+                <div class="txt4"> <b>Nimal Peiris</b> </div>
+                <a href="#" input type = "button"  value ="button" class="button1"> Approve </a>
+                <a href="#" input type = "button"  value ="button" class="button2"> Reject </a>
+            </div>
+
+            
+            
             
         </div>
     </div>
@@ -74,3 +98,19 @@
   
 </body>
 </html>
+<?php 
+  }
+  else{
+    echo '<script type="text/javascript">javascript:history.go(-1)</script>'; //redirect to previous page
+    exit();
+  }
+ 
+  
+}
+
+
+else{
+  header('location:../../Login/Login.php');
+  exit();
+}
+?>
