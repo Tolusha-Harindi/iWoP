@@ -1,16 +1,28 @@
 
 <?php
-session_start();
-if(isset($_SESSION['email'])){
+// session_start();
+// if(isset($_SESSION['email'])){
 
-  include '../../Backend/db_connection.php'; //check mangers id or not
-  $temp= $_SESSION['email']; 
-  $sql = "SELECT email FROM manager WHERE email='$temp'";
-  $result = mysqli_query($db,$sql);
-  if(mysqli_num_rows($result)>0){
+//   include '../../Backend/db_connection.php'; //check mangers id or not
+//   $temp= $_SESSION['email']; 
+//   $sql = "SELECT email FROM manager WHERE email='$temp'";
+//   $result = mysqli_query($db,$sql);
+//   if(mysqli_num_rows($result)>0){
 
   
 ?>
+<head>
+ <style>
+  body{
+  font-family: 'Poppins', sans-serif;
+  background-image: url('../../Images/bg5.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+
+</head>
 
 
 <html lang="en" dir="ltr"></html>
@@ -32,11 +44,11 @@ if(isset($_SESSION['email'])){
                 <div class="logo"> 
                     <input type="image" id="image" alt="Landing" src="../../Images/Logo.jpg">
                 </div>
-                <a href="../../Landing/Landing.html"> <b>| Logout  </b></a> 
-                <a href="#help"> <b>| Help page  </b></a> 
-                <a href="#category"><b> | Category </b></a> 
+                <a href="../../Login/Logout.php"> <b>| Logout  </b></a> 
+                <a href="../../Customer/FAQ/FAQ.php"> <b>| Help page  </b></a> 
+                <a href="../../Unregistered-user/Allcategories/categories.php"><b> | Category </b></a> 
                 <a href="#alladds"> <b>| All Adds </b></a>
-                <a href="ManagerProfile.html"><i class="fa fa-user-circle-o fa-2x"></i> </a>
+                <a href="../../Manager/ManagerProfile/ManagerProfile.php"><i class="fa fa-user-circle-o fa-2x"></i> </a>
             </div> 
         </div>
     </head>
@@ -56,7 +68,7 @@ if(isset($_SESSION['email'])){
            <span class="link_name">My Profile</span>
          </a>
          <ul class="sub-menu blank">
-           <li><a class="link_name" href="#">My Profile</a></li>
+           <li><a class="link_name" href="../../Manager/ManagerProfile/ManagerProfile.php">My Profile</a></li>
          </ul>
        </li>
  
@@ -67,7 +79,7 @@ if(isset($_SESSION['email'])){
            <span class="link_name">Change Password</span>
          </a>
          <ul class="sub-menu blank">
-           <li><a class="link_name" href="#">Change Password</a></li>
+           <li><a class="link_name" href="../Change password/Manager change password.php">Change Password</a></li>
          </ul>
        </li>
  
@@ -77,7 +89,7 @@ if(isset($_SESSION['email'])){
            <span class="link_name">Workers</span>
          </a>
          <ul class="sub-menu blank">
-           <li><a class="link_name" href="#">Workers</a></li>
+           <li><a class="link_name" href="../worker list/Manager (worker list).php">Workers</a></li>
          </ul>
        </li>
  
@@ -87,7 +99,7 @@ if(isset($_SESSION['email'])){
            <span class="link_name">Company</span>
          </a>
          <ul class="sub-menu blank">
-           <li><a class="link_name" href="#">Company</a></li>
+           <li><a class="link_name" href="../Company list/Manager (company list).php">Company</a></li>
          </ul>
        </li>
  
@@ -148,18 +160,18 @@ if(isset($_SESSION['email'])){
     </html>
 
 <?php 
-  }
-  else{
-    echo '<script type="text/javascript">javascript:history.go(-1)</script>'; //redirect to previous page
-    exit();
-  }
+//   }
+//   else{
+//     echo '<script type="text/javascript">javascript:history.go(-1)</script>'; //redirect to previous page
+//     exit();
+//   }
  
   
-}
+// }
 
 
-else{
-  header('location:../../Login/Login.php');
-  exit();
-}
+// else{
+//   header('location:../../Login/Login.php');
+//   exit();
+// }
 ?>
