@@ -95,7 +95,7 @@
                      
                         <li>
 
-                            <a href="../CompanyDashboard/Companydashboard.php">
+                            <a href="../CompanyDashboard/Company-dashboard.php">
                                 <i class='bx bxs-dashboard'></i>
                                 <span class="link_name">Dashboard</span>
                             </a>
