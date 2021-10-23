@@ -204,7 +204,7 @@ body{
 
 .dash-card{
     background-color: rgb(174, 179, 182);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
     color: rgb(17, 16, 16);
     width: 390px;
     height: 150px;

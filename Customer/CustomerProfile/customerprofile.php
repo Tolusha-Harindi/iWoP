@@ -159,8 +159,8 @@ if(isset($_SESSION['email'])){
 }
 
 
-else{
-  header('location:../../Login/Login.php');
-  exit();
-}
+    else{
+        header('location:../../Login/Login.php');
+        exit();
+    }
 ?>
