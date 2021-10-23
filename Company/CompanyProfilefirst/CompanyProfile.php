@@ -20,7 +20,7 @@
 <div class="box1">
     <div class="sidebar close">
 
-        <ul class="nav-links">
+    <ul class="nav-links">
         <li>
 
                    <a href="../CompanyDashboard/Company-dashboard.php">
@@ -51,24 +51,24 @@
                     
                         <ul class="sub-menu blank">
                   <li><a class="link_name" href="../Change password/Company Change password.php">Change Password</a></li>
-            </ul>
+    </ul>
                  </li>
 
                    <li>
-              <a href="../Wantedads/wantedads.php">
-                       <i class='bx bxs-image'></i>
-                       <span class="link_name">Post Your Ads</span>
-             </a>
-             <ul class="sub-menu blank">
-                         <li><a class="link_name" href="../Wantedads/wantedads.php">Post Your Ads</a></li>
-            </ul>
-          </li>
+                           <a href="../Wantedads/wantedads.php">
+                                 <i class='bx bxs-image'></i>
+                                     <span class="link_name">Post Your Ads</span>
+                           </a>
+                              <ul class="sub-menu blank">
+                                     <li><a class="link_name" href="../Wantedads/wantedads.php">Post Your Ads</a></li>
+                              </ul>
+                  </li>
 
               <li>
                     <a href="../ApplyforJob-Responses/ApplyforJob-companyview.php">
                          <i class='bx bxs-share' ></i>
                              <span class="link_name">Responses</span>
-                   </a>
+                    </a>
                           <ul class="sub-menu blank">
                                   <li><a class="link_name" href="../ApplyforJob-Responses/ApplyforJob-companyview.php">Responses</a></li>
                           </ul>
@@ -89,7 +89,7 @@
 <div class="box2">
 
     <div class="mainDiv">
-   <div class="cardStyle">
+       <div class="cardStyle">
         <form action="" method="post">
             <img src="user.png" class="floatRight">
             <img src="camere.png" alt="camera" class="camera">
@@ -141,12 +141,9 @@
                     <span>Save</span>
                 </button>
                
-
-
-
-    </form>
-   </div>
-</div>
+           </form>
+     </div>
+  </div>
 </div>
 </body>
 </html>
