@@ -1,0 +1,23 @@
+.manzoku {
+    background: radial-gradient(circle closest-side, transparent 66%, white 0), conic-gradient(#4e79a7 0, #4e79a7 80%, #f28e2c 0, #f28e2c 100%);
+    position: relative;
+    width: 100%;
+    min-height: 350px;
+    margin: 0;
+}
+.manzoku p.right {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+}
+.manzoku p.right span {
+    font-size: 10px;
+}
+.manzoku p.left {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}
