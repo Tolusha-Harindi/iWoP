@@ -97,46 +97,46 @@
 
 <div class="heading1"> Dashboard </div> </br>
 
-<div class="tile-line">
-  <div class="row1">
-    <div class="dash-card" id="card1">
-      <h1>Responses Count for Ads</h1>
-      <h3> 8 </h3>
-      <img src="../../Images/complain.png" alt="">
-    </div>
-  
-    <div class="dash-card" id="card2">
-      <h1>Accepted count by workers</h1>
-      <h3> 255 </h3>
-      <img src="../../Images/worker.png" alt="">
-    </div>
-  </div>
+    <div class="tile-line">
+      <div class="row1">
+        <div class="dash-card" id="card1">
+          <h1>Responses Count for Ads</h1>
+          <h3> 8 </h3>
+          <img src="../../Images/complain.png" alt="">
+        </div>
+      
+        <div class="dash-card" id="card2">
+          <h1>Accepted count by workers</h1>
+          <h3> 255 </h3>
+          <img src="../../Images/worker.png" alt="">
+        </div>
+      </div>
 
-  <div class="row2">
-    <div class="dash-card" id="card3">
-      <h1>Customers Count</h1>
-      <h3> 208 </h3>
-      <img src="../../Images/customer.png" alt="">
+      <div class="row2">
+        <div class="dash-card" id="card3">
+          <h1>Customers Count</h1>
+          <h3> 208 </h3>
+          <img src="../../Images/customer.png" alt="">
+        </div>
+      
+        <div class="dash-card" id="card4">
+          <h1>Company Count</h1>
+          <h3> 150 </h3>
+          <img src="../../Images/company.png" alt="">
+        </div>
+      </div>
     </div>
-  
-    <div class="dash-card" id="card4">
-      <h1>Company Count</h1>
-      <h3> 150 </h3>
-      <img src="../../Images/company.png" alt="">
-    </div>
-  </div>
-</div>
-<!-- <div class="tiles">
-  <div class="box3"> 
-    <div class="dash-card">
-      <h1>Pending Stock</h1>
-      <img src="/img/icons/stock.png" alt="">
-    </div>
-  </div>
-  <div class="box4"> 
-    <div class="dash-card">
-      <h1>Pending Requests</h1>
-      <img src="/img/icons/offer.png" alt="">
+    <!-- <div class="tiles">
+      <div class="box3"> 
+        <div class="dash-card">
+          <h1>Pending Stock</h1>
+          <img src="/img/icons/stock.png" alt="">
+        </div>
+      </div>
+      <div class="box4"> 
+        <div class="dash-card">
+          <h1>Pending Requests</h1>
+          <img src="/img/icons/offer.png" alt="">
     </div>
   </div>
   <div class="box5"> 
