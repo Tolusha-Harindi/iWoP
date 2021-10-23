@@ -181,8 +181,8 @@
             <div class="descipdiv">
                 <div class="descipdivleft">
                     <img src="../../Images/customer.png" alt="user" id="userimg">
-                    <h4 > Name: Kasun Perera</h4>
-                    <h4> Reason: Budget is high</h4>
+                    <h4 > Name: Pubudu Gamage</h4>
+                    <h4> Reason: Not responding</h4>
                 </div>
                 <div class="descipdivright">
                     <button id="view">
@@ -199,7 +199,7 @@
             <div class="descipdiv">
                 <div class="descipdivleft">
                     <img src="../../Images/customer.png" alt="user" id="userimg">
-                    <h4 > Name: Kasun Perera</h4>
+                    <h4 > Name: Hasini Perera</h4>
                     <h4> Reason: Budget is high</h4>
                 </div>
                 <div class="descipdivright">

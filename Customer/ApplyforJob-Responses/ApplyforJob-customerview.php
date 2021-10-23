@@ -46,7 +46,10 @@
                             <td> <div class="txt3"> <?php echo "Rs."." " .$row['budget']; ?> </div></td> </br>
                         </tr>
                         <tr> <!--------------------------------------------Delete button---------------------------------------->
-                                <a href="#" input type = "Reset"  value ="Reset"  class="button3"> Delete </a>
+                                <form action="deleteads.php" method="post">
+                                    <input type="hidden" name="adId" value="<?php echo $row['ads_id'] ?>">
+                                    <input type = "submit" name="delete"  value ="Delete"  class="button3"> 
+                                </form>
                         </tr>
                     </table>
                 </div>

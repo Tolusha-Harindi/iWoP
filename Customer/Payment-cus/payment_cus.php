@@ -19,37 +19,36 @@
     <div class="full">
         <div class="box"> <b> Payments </b> 
         <div class="topic"> <b> Customer Details </b> </div>
-        <form name = "reg-w"  method="post" action="#">
-                        <p class="field"> <b>Name</b></p>
-                        <input id="name" name="name" type="text" placeholder = "Name" class="input" required>
-                        <p class="field"> <b>Contact Number</b></p>
-                        <input id="contact" name="contact" type="int" placeholder = "Contact Number" class="input" required>
-                        <p class="field"> <b>Amount</b></p>
-                        <input id="amount" name="amount" type="int" placeholder = "Amonut" class="input" required>
-                        <p class="field"> <b>Card No</b></p>
-                        <input id="card_no" name="card_no" type="int" placeholder = "Card No" class="input" required>
-                        <p class="field"> <b>Expiry</b></p>
-                        <input id="expiry" name="expiry" type="date" placeholder = "Expiry" class="input" required>
-                        <p class="field"> <b>CVC</b></p>
-                        <input id="cvc" name="cvc" type="int" placeholder = "CVC" class="input" required>
-                        <p class="field"> <b>Card Type</b></p>
-                        <div>
-                        <select name=category class="select" required>
-                            <option selected label="All">  </option> 
-                            <option value="1" label="Master-card">Master Card</option>
-                            <option value="2" label="Visa">VISA</option>
-                            <option value="3" label="American_express">American Express</option>
-                        </select>
-                        </div>
-                        <input type="submit" id="submit" name="submit" value="Pay"  class="button1">
-                        <input type="reset" id="reset" name="reset" value="Cancel"  class="button2">
-                    </form>
-        
+        <div class="topic1">
+        <form class="payForm" name = "reg-w" method="post" action="https://sandbox.payhere.lk/pay/checkout">   
+            <input type="hidden" name="merchant_id" value="1218941">    <!-- Replace your Merchant ID -->
+            <input type="hidden" name="return_url" value="http://localhost/iWoP-git/Customer/Payment-cus/payment_cus.php">
+            <input type="hidden" name="cancel_url" value="http://sample.com/cancel">
+            <input type="hidden" name="notify_url" value="http://sample.com/notify">  
+            <input type="hidden" name="order_id" value="ItemNo12345">
+            <input type="hidden" name="items" value="iWoP Service"><br>
+            <input type="hidden" name="currency" value="LKR">
+            <p class="field"><b>Fisrt Name</b></p>
+            <input id="name" name="first_name" type="text" placeholder = "Fisrt Name" class="input" value="" required>
+            <p class="field"> <b>Last Name</b></p>
+            <input id="name" name="last_name" type="text" placeholder = "Last Name" class="input" value="" required>
+            <input type="hidden" name="email" value="samanp@gmail.com">
+            <p class="field"><b>Contact Number</b></p>
+            <input id="contact" name="phone" type="text" placeholder = "Contact Number" class="input" value="" required>
+            <p class="field"> <b>Amount</b></p>
+            <input id="amount" name="amount" type="int" placeholder = "Amonut" class="input" required>
+            <input type="hidden" name="address" value="No.1, Galle Road">
+            <input type="hidden" name="city" value="Colombo">
+            <input type="hidden" name="country" value="Sri Lanka"><br><br> 
+            <input type="submit" id="submit" name="submit" value="Pay"  class="button1">
+            <input type="reset" id="reset" name="reset" value="Cancel"  class="button2"> 
+        </form> 
+        </div>
 
         <div class="vl"></div>
 
         <div class="topic2"> <b> Worker Details </b> </div>
-            <form name = "reg"  method="post" action="#">
+            <form class="workerform" name = "reg"  method="post" action="#">
                         <p class="field2"> <b>Full Name</b></p>
                         <input id="name1" name="name1" type="text" placeholder = "Name" class="input2" required>
                         <p class="field2"> <b>Bank Name</b></p>
