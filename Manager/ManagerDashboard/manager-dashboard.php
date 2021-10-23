@@ -128,26 +128,16 @@
 
 <body>
 <script src="js/app.js" async defer></script>
-<header>
-    <img src="images/Logo.jpg" alt="Landing" id="image" class="logo" height="80px">
-    <nav>
-        <a href="#"><i class="fas fa-user-circle fa-2x"></i> </a>
-        <a href="#alladds"> <b>| All Adds </b></a>
-        <a href="#category"><b> | Category </b></a>
-        <a href="#help"> <b>| Help page </b></a>
-        <a href="#Logout"> <b>| Logout </b></a>
-    </nav>
-    <div>
-        <button class="button">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-    </div>
-</header>
+
+<link rel="stylesheet" href="../../Repeating-pages/topnav/topnav.css">
+      <!--------------------------Top nav----------------------------------------->
+      <?php
+        include '../../Repeating-pages/topnav/topnav-manager.php'
+    ?>
+
 
 <div class="main-box">
-    <div class="down-row" id="tim" style="padding: 0">
+    <div class="down-row" id="tim" style="padding: 0; margin-top: 100px">
         <div class="col-left-70" style="padding: 0;"></div>
         <div class="col-right-30" style="padding: 0;">
             <div>
