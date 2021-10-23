@@ -1,5 +1,5 @@
 /* Google Fonts Import Link */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -10,12 +10,13 @@
   position: absolute;
   margin-top: 2%;
   left: 0;
-  height: 70%;
+  height: 50%;
   width: 260px;
   z-index: 100;
   transition: all 0.5s ease;
   top: 100px;
   left: 86px;
+  background-color: gainsboro;
 }
 .sidebar.close {
   width: 78px;
