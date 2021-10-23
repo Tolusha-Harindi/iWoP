@@ -1,10 +1,10 @@
 
 body{
   font-family: 'Poppins', sans-serif;
-  /*background-image: url('../../Images/bg5.jpg');
+  background-image: url('../../Images/bg5.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;*/
+  background-size: cover;
 }
 
 .box1, .box2{
@@ -51,10 +51,12 @@ body{
 .tabs .tab {
     order: 99; /*Put the tabs last*/
     flex-grow: 1;
-    width: 100%;
+    width: 80%;
     display: none;
     padding: 1rem;
-    background: #fff;
+    color: #fff;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
 }
 .tabs input[type="radio"] {
     display: none;
@@ -114,6 +116,8 @@ h4{
     width: 100px;
     padding-top: 10px;
     margin-left: 50px;
+    background: white;
+    border-radius: 100px;
 }
 
 

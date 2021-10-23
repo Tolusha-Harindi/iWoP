@@ -30,6 +30,17 @@
             <div class="sidebar close">
 
                 <ul class="nav-links">
+
+                <li>
+                    <a href="../admin_dashboard/admin_dashboard.php">
+                      <i class='bx bxs-dashboard' ></i>
+                      <span class="link_name">Dashboard</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                      <li><a class="link_name" href="../admin_dashboard/admin_dashboard.php">Dashboard</a></li>
+                    </ul>
+                  </li>
+
                   <li>
                       <a href="../Adminprofile/Adminprofile.php">
                           <i class='bx bxs-user' ></i>
@@ -40,41 +51,31 @@
                       </ul>
                   </li>
 
-
-                  <li>
-                    <a href="../admin_dashboard/admin_dashboard.php">
-                      <i class='bx bx-plus' ></i>
-                      <span class="link_name">Dashboard</span>
-                    </a>
-                    <ul class="sub-menu blank">
-                      <li><a class="link_name" href="../admin_dashboard/admin_dashboard.php">Dashboard</a></li>
-                    </ul>
-                  </li>
             
                   <li>
-                    <a href="../ManagerPageforAdmin/ManagerPageforAdmin.php">
+                  <a  href="../ManagerPageforAdmin/NewManager.php">
                       <i class='bx bx-street-view' ></i>
                       <span class="link_name">Managers</span>
                     </a>
                     <ul class="sub-menu blank">
-                      <li><a class="link_name" href="../ManagerPageforAdmin/ManagerPageforAdmin.php">Managers</a></li>
+                      <!-- <li><a class="link_name" href="../ManagerPageforAdmin/ManagerPageforAdmin.php">Managers</a></li> -->
+                      <li><a class="link_name" href="../ManagerPageforAdmin/NewManager.php">Managers</a></li>
                     </ul>
                   </li>
             
-<!--             
                   <li>
-                    <a href="#">
-                      <i class='bx bxs-check-shield' ></i>
-                      <span class="link_name">Change Password</span>
+                    <a href="../Adddeletecategory/adddelcategory.php">
+                      <i class='bx bxs-spreadsheet' ></i>
+                      <span class="link_name">Categories</span>
                     </a>
                     <ul class="sub-menu blank">
-                      <li><a class="link_name" href="#">Change Password</a></li>
+                      <li><a class="link_name" href="../Adddeletecategory/adddelcategory.php">Categories</a></li>
                     </ul>
-                  </li> -->
-            
+                  </li>
+
                   <li>
                     <a href="../category/category.php">
-                      <i class='bx bxs-spreadsheet' ></i>
+                      <i class='bx bxs-user-check' ></i>
                       <span class="link_name">Registered Users</span>
                     </a>
                     <ul class="sub-menu blank">
@@ -83,7 +84,7 @@
                   </li>
             
                   <li>
-                    <a href="../Report">
+                    <a href="../Reportpage/reportpage.php">
                       <i class='bx bxs-hand-right' ></i>
                       <span class="link_name">Complaints</span>
                     </a>
