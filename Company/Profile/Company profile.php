@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/normalize.css"/>
     <link rel="stylesheet" href="./css/footer2.css">
     <link rel="stylesheet" href="./css/body-content.css">
-
+    <link rel="stylesheet" href="../../Repeating-pages/topnav/topnav.css">
     <link rel="stylesheet" href="./css/side-bar.css"/>
 
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
@@ -26,7 +26,9 @@
             href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"
             rel="stylesheet"
     />
-
+    <?php
+        include '../../Repeating-pages/topnav/topnav4-company.php'
+        ?>
 
     <title>Profile</title>
 
@@ -82,27 +84,10 @@
 
 <body>
 <script src="js/app.js" async defer></script>
-<header>
-    <img src="images/Logo.jpg" alt="Landing" id="image" class="logo" height="80px">
-    <nav>
-        <a href="#"><i class="fas fa-user-circle fa-2x"></i> </a>
-        <a href="#alladds"> <b>| All Adds </b></a>
-        <a href="#payments"> <b>| Payments </b></a>
-        <a href="#category"><b> | Category </b></a>
-        <a href="#help"> <b>| Help page </b></a>
-        <a href="#Logout"> <b>| Logout </b></a>
-    </nav>
-    <div>
-        <button class="button">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-    </div>
-</header>
+
 
 <div class="main-box">
-    <div class="down-row" style="padding: 0;">
+    <div class="down-row" style="padding: 40px;">
         <div class="col-left-30" style="padding: 0;"></div>
         <div class="col-right-70" style="padding: 0;">
             <h3>Profile</h3>
