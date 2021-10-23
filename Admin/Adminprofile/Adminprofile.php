@@ -103,7 +103,7 @@
             <form action="" method="post">
 
 
-                <img src="../../Images/img.png" class="userimg">
+                <img src="../../Images/propic.jpg" class="userimg">
                 <input type="file" id="myFile" name="filename">
 
                
@@ -121,17 +121,17 @@
 
                 <div class="inputDiv">
                     <label class="inputLabel" for="email"> Current Password</label> </br>
-                    <input type="email" id="email" name="email" class="input" required>
+                    <input type="password" id="email" name="email" class="input" required>
                 </div>
 
                 <div class="inputDiv">
                     <label class="inputLabel" for="email">New Password </label> </br>
-                    <input type="email" id="email" name="email" class="input" required>
+                    <input type="password" id="email" name="email" class="input" required>
                 </div>
 
                 <div class="inputDiv">
                     <label class="inputLabel" for="email">Change Password </label> </br>
-                    <input type="email" id="email" name="email" class="input" required>
+                    <input type="password" id="email" name="email" class="input" required>
                 </div>
 
                 <button type="submit" id="submitButton" onclick="validateSignupForm()" class="update">
