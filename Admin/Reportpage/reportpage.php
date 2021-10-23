@@ -42,7 +42,7 @@
 
 
             <li>
-            <a  href="../ManagerPageforAdmin/NewManager.php">
+            <a class="link_name" href="../ManagerPageforAdmin/NewManager.php">
                 <i class='bx bx-street-view' ></i>
                 <span class="link_name">Managers</span>
                 </a>
