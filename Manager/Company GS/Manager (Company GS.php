@@ -65,24 +65,13 @@
 
 <body>
 <script src="js/app.js" async defer></script>
-<header>
-    <img src="images/Logo.jpg" alt="Landing" id="image" class="logo" height="80px">
-    <nav>
-        <a href="#"><i class="fas fa-user-circle fa-2x"></i> </a>
-        <a href="#alladds"> <b>| All Adds </b></a>
-        <a href="#payments"> <b>| Payments </b></a>
-        <a href="#category"><b> | Category </b></a>
-        <a href="#help"> <b>| Help page </b></a>
-        <a href="#Logout"> <b>| Logout </b></a>
-    </nav>
-    <div>
-        <button class="button">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-    </div>
-</header>
+
+<link rel="stylesheet" href="../../Repeating-pages/topnav/topnav.css">
+      <!--------------------------Top nav----------------------------------------->
+      <?php
+        include '../../Repeating-pages/topnav/topnav-manager.php'
+    ?>
+
 
 <div class="main-box">
     <div id="head-title">
@@ -91,12 +80,12 @@
         </div>
         <div>
             <center>
-                <h2>Detail Page</h2>
+                <h2 style= "margin-top:100px">Detail Page</h2>
             </center>
         </div>
     </div>
     <div class="down-row">
-        <div class="col-left-30" style="margin: 2px;">
+        <div class="col-left-30" style="margin: 0px; margin-top:20px">
             <center>
                 <i class="far fa-image fa-10x"></i>
             </center>
