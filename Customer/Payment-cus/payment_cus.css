@@ -10,6 +10,7 @@ body{
 
 /*heading - Payments*/
 .full{
+    z-index: -1;
     margin-top: 8%;
     text-align: center;
     font-size:40px;
@@ -26,6 +27,11 @@ body{
     color: black;
 }
 
+/* paymentform */
+.payForm{
+    z-index: 2;
+}
+
 
 /*field and text*/
 .field{
@@ -35,6 +41,7 @@ body{
     text-align: left;
     margin-left:5%;
     color: white;
+    
 }
 
 /*input fields*/
@@ -48,6 +55,7 @@ body{
     margin-left: 20%;
     font-size: 18px;
     margin-top: -2%;
+    z-index: 7;
 }
 
 /*Select category*/
@@ -81,7 +89,7 @@ body{
     	background-color: #2EAB2B;
         border: none;
         margin-left: 0%;
-        margin-top: 6%;
+        margin-top: 1%;
 }
 
 /*cancel*/
@@ -94,8 +102,8 @@ body{
 
 /*-----Verticle line-----------*/
 .vl {
-    border-left: 4px solid grey;
-    height: 500px;
+    border-left: 2px solid black;
+    height: 380px;
     position: absolute;
     left: 50%;
     margin-left: -3px;
@@ -105,8 +113,13 @@ body{
   /*---------------------------------------Worker details----------------------------------------*/
 
 /*topic*/
+.topic1{
+    z-index: 5;
+}
 .topic2{
-    margin-top: -48%;
+    width: 50%;
+    margin-top: -41.5%;
+    padding-bottom: 4rem;
     margin-left: 40%;
     font-size:35px;
     font-size:30px;
@@ -136,3 +149,4 @@ body{
     margin-left:55%;
     color:white;
 }
+
