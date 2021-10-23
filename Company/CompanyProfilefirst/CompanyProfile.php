@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="workerprof10.css">
+    <link rel="stylesheet" href="companyprof.css">
      
      <link rel="stylesheet" href="../../Repeating-pages/topnav/topnav.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
