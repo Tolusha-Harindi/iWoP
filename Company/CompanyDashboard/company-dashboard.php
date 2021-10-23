@@ -128,93 +128,100 @@
 
 <body>
 <script src="js/app.js" async defer></script>
-<header>
-    <img src="images/Logo.jpg" alt="Landing" id="image" class="logo" height="80px">
-    <nav>
-        <a href="#"><i class="fas fa-user-circle fa-2x"></i> </a>
-        <a href="#alladds"> <b>| All Adds </b></a>
-        <a href="#category"><b> | Category </b></a>
-        <a href="#help"> <b>| Help page </b></a>
-        <a href="#Logout"> <b>| Logout </b></a>
-    </nav>
-    <div>
-        <button class="button">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-    </div>
-</header>
 
-<div class="main-box">
-    <div class="down-row" id="tim" style="padding: 0">
-        <div class="col-left-70" style="padding: 0;"></div>
-        <div class="col-right-30" style="padding: 0;">
-            <div>
-                <input type="text" name="search" placeholder="Search..">
-            </div>
+<link rel="stylesheet" href="../../Repeating-pages/topnav/topnav.css">
+      <!--------------------------Top nav----------------------------------------->
+      <?php
+        include '../../Repeating-pages/topnav/topnav4-company.php'
+    ?>
+
+ <div class="main-box">
+                         
+           <div class="down-row" id="tim" style="padding: 0px; margin-top: 100px">
+                              
+                   <div class="col-left-70" style="padding: 0px;"></div>
+                               <div class="col-right-30" style="padding: 0px;">
+                                    <div>
+                                      <input type="text" name="search" placeholder="Search..">
+                                     </div>
+                               </div>
+                           </div>
+                          <div class="down-row" style="margin-top: 0; padding-top: 0">
+                             <div class="col-left-30" style="margin: 2px;height: 500px;">
+                               <div class="box1">
+                              <div class="sidebar close">
+                                     <ul class="nav-links">
+                               
+                  <li>
+
+                      <a href="../CompanyDashboard/Company-dashboard.php">
+                           <i class='bx bxs-dashboard'></i>
+                            <span class="link_name">Dashboard</span>
+                      </a>
+                      <ul class="sub-menu blank">
+                         <li><a class="link_name" href="../CompanyDashboard/Companydashboard.php">Dashboard</a></li>
+                      </ul>
+                </li>
+
+                <li>
+                     <a href="../CompanyProfile/Companyprofile.php">
+                         <i class='bx bxs-user'></i>
+                        <span class="link_name">My Profile</span>
+                    </a>
+                  <ul class="sub-menu blank">
+                     <li><a class="link_name" href="../CompanyProfile/Companyprofile.php">My Profile</a></li>
+                 </ul>
+              </li>
+
+              <li class="list-select">
+                     <a href="../Change password/Company Change password.php">
+                      <i class='bx bxs-check-shield'></i>
+                          <span class="link_name">Change Password</span>
+                    </a>
+                 <ul class="sub-menu blank">
+                     <li><a class="link_name" href="../Change password/Company Change password.php">Change Password</a></li>
+                 </ul>
+            </li>
+
+                  
+              <li>
+               <a href="../Wantedads/wantedads.php">
+                   <i class='bx bxs-image'></i>
+                        <span class="link_name">Post Your Ads</span>
+              </a>
+                <ul class="sub-menu blank">
+                     <li><a class="link_name" href="../Wantedads/wantedads.php">Post Your Ads</a></li>
+              </ul>
+              
+            </li>
+
+               <li>
+                    <a href="../ApplyforJob-Responses/ApplyforJob-companyview.php">
+                       <i class='bx bxs-share' ></i>
+                              <span class="link_name">Responses</span>
+                    </a>
+                            <ul class="sub-menu blank">
+                              <li><a class="link_name" href="../ApplyforJob-Responses/ApplyforJob-companyview.php">Responses</a></li>
+                          </ul>
+              </li></li>
+                         </ul>
         </div>
-    </div>
-    <div class="down-row" style="margin-top: 0; padding-top: 0">
-        <div class="col-left-30" style="margin: 2px;height: 500px;">
-            <div class="box1">
-                <div class="sidebar close">
-                    <ul class="nav-links">
-                        <li>
-                            <a href="#">
-                                <i class='bx bxs-user'></i>
-                                <span class="link_name">My Profile</span>
-                            </a>
-                            <ul class="sub-menu blank">
-                                <li><a class="link_name" href="#">My Profile</a></li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <a href="#">
-                                <i class='bx bxs-check-shield'></i>
-                                <span class="link_name">Change Password</span>
-                            </a>
-                            <ul class="sub-menu blank">
-                                <li><a class="link_name" href="#">Change Password</a></li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <a href="#">
-                                <i class='bx bxs-briefcase'></i>
-                                <span class="link_name">Workers</span>
-                            </a>
-                            <ul class="sub-menu blank">
-                                <li><a class="link_name" href="#">Workers</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="list-select">
-                            <a href="#">
-                                <i class='bx bxs-business'></i>
-                                <span class="link_name">Company</span>
-                            </a>
-                            <ul class="sub-menu blank">
-                                <li><a class="link_name" href="#">Company</a></li>
-                            </ul>
-                        </li>
-                        </li>
-                    </ul>
-                </div>
-                <section class="home-section">
-                    <div class="home-content">
-                        <i class='bx bx-menu'></i>
-                        <!--       <span class="text">Drop Down Sidebar</span>
-                 -->
-                    </div>
-                </section>
-            </div>
-        </div>
+                   <section class="home-section">
+                        <div class="home-content">
+                                 <i class='bx bx-menu'></i>
+                         <!--       <span class="text">Drop Down Sidebar</span>
+                                  -->
+                        </div>
+                  </section>
+              
+              
+      </div>
+       
+</div>
         <div class="col-right-70" style="margin: 2px;">
             <div id="tim-low">
                 <div>
-                    <input type="text" name="search" placeholder="Search..">
+                    <input type="text" id="search" name="search" placeholder="Search..">
                 </div>
             </div>
             <div class="down-row" style="width: 100%;">
