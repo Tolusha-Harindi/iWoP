@@ -9,7 +9,10 @@
         <link rel="stylesheet" href="../navigation bar/topnavigation.css"> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         <link rel="stylesheet" href="../navigation bar/footer.css">
+        <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"><!--footer icon-->
+    <script src="https://kit.fontawesome.com/8a31a46eb4.js" crossorigin="anonymous"></script>
     <title>All Wanted Ads</title>
 </head>
 <body>
@@ -28,7 +31,8 @@
   </div>
 
    <div class="flex-container">
-      <a href="../worker profile/worker profile.php"><img src="../images/Arrow.jpg"  height="20" width="25"></a>
+      <!--<a href="../worker profile/worker profile.php"><img src="../images/Arrow.jpg"  height="20" width="25"></a>-->
+      <a href="../worker profile/worker profile.php"><i class="fas fa-long-arrow-alt-left  fa-4x" style="color:white; margin-top:-35%;"></i></a>
       <h1>Ads</h1>
       <div class="left">
          <h3>Sort By Results</h3>
@@ -90,10 +94,60 @@
 
       <div class="right">
         <div class="mainbox">
-          <img src="../images/allads.png">
+
+          <div class="box1">
+            <h2 style="color:blue; text-align:left; margin-left:2%;">Title</h2>
+            <div style="margin-top: 2%; margin-bottom: 1%;">
+               <img style="padding-right: 10px" src="../images/masons.png" alt="Masons" height="40px" width="45px" > <span> Mason </span>
+            </div>
+            <p><span style="font-weight:bold; margin-top:10px; padding-bottom: 25px;">Description :</span>  ......aaaaaa.......aaaaaaaaaaaaaaa..........aaaaaa....</p>
+            <div class="eye">
+              <a href="../customer profile- worker view/customer profile-worker view.php" style="text-decoration: none; color:black;"><i class="far fa-eye" style="padding:5px"></i>view</a>
+            </div>
+            <div class="com">
+              <a href="../comment-worker/comment-worker.php" style="text-decoration: none; color:black;"><i class="far fa-comments" style="padding:5px"></i>comment</a>
+            </div>
+          </div>
+
+          <div class="vl"></div>
+
+          <div class="box2">
+            <div class="loc">
+              <i class="fas fa-map-marker-alt"></i> <b>Colombo</b>
+            </div>
+            <h3>Posted By: Kamal Perera</h3>
+            <h3><b>2 Weeks ago </b></h3>
+            <button> 0774572106</button>
+          </div>
+         
+          <div class="box1">
+            <h2 style="color:blue; text-align:left; margin-left:2%;">Title</h2>
+            <div style="margin-top: 2%; margin-bottom: 1%;">
+               <img style="padding-right: 10px" src="../images/masons.png" alt="Masons" height="40px" width="45px" > <span> Mason </span>
+            </div>
+            <p><span style="font-weight:bold; margin-top:10px; padding-bottom: 25px;">Description :</span>  ......aaaaaa.......aaaaaaaaaaaaaaa..........aaaaaa....</p>
+            <div class="eye">
+              <a href="../customer profile- worker view/customer profile-worker view.php" style="text-decoration: none; color:black;"><i class="far fa-eye" style="padding:5px"></i>view</a>
+            </div>
+            <div class="com">
+              <a href="../comment-worker/comment-worker.php" style="text-decoration: none; color:black;"><i class="far fa-comments" style="padding:5px"></i>comment</a>
+            </div>
+          </div>
+
+          <div class="vl"></div>
+
+          <div class="box2">
+            <div class="loc">
+              <i class="fas fa-map-marker-alt"></i> <b>Colombo</b>
+            </div>
+            <h3>Posted By: Kamal Perera</h3>
+            <h3><b>2 Weeks ago </b></h3>
+            <button> 0774572106</button>
+          </div>
         </div>
       </div>
    </div>
+ </div>
 
    <footer class="footer">
       <div class="container">

@@ -30,7 +30,7 @@
    </div>
 
    <div class="flex-container">
-     <a href="../worker profile/worker profile.php"><img src="../images/Arrow.jpg"></a>
+     <a href="../worker profile/worker profile.php"><i class="fas fa-long-arrow-alt-left  fa-4x" style="color:white"></i></a>
      <div class="left">
        <label class="got-work">No of works got</label><br/><br/>
        <input type="number" id="got-work">
@@ -59,8 +59,22 @@
      <div class="right">
        <h3 class="heading" style="font-size:27px">Requests</h3>
        <div class="subbox">
-          <img src="../images/request.png"><br/>
-          <img src="../images/request.png">
+          <div class="block">
+            <p>Krishnakanth Aathiran</p>
+            <p>Time : 10.00 a.m</p>
+            <p>Date : 06/11/2021</p> <input type="checkbox">
+            <p>Category : Painter</p>
+            <p>Location : Colombo 06</p>
+            <p>Budget : 5000.00</p>
+          </div>
+          <div class="block">
+            <p>Krishnakanth Aathiran</p>
+            <p>Time : 10.00 a.m</p>
+            <p>Date : 06/11/2021</p> <input type="checkbox">
+            <p>Category : Painter</p>
+            <p>Location : Colombo 06</p>
+            <p>Budget : 5000.00</p>
+          </div>
        </div>
        <button class="btn1">Accept</button>
        <button class="btn2">Reject</button>

@@ -27,10 +27,10 @@
 .flex-container> .left{
   background: rgb(0, 0, 0); /* Fallback color */
   background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-  color: black; /* White text */
+  color: white; /* White text */
   margin-top: 10%;
   margin-left: -15px;
-  background-color: white;
+  
   width: 16%;
   height: 64%;
   line-height: 5px;
@@ -93,10 +93,9 @@ input::-webkit-inner-spin-button {
 .flex-container> .center{
   background: rgb(0, 0, 0); /* Fallback color */
   background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-  color: black; /* White text */
+  color: white; /* White text */
   margin-top: 2%;
   margin-left: 3%;
-  background-color: white;
   width: 38%;
   height: 88%;
   line-height: 5px;
@@ -145,10 +144,9 @@ input::-webkit-inner-spin-button {
 .flex-container> .right{
   background: rgb(0, 0, 0); /* Fallback color */
   background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-  color: black; /* White text */
+  color: white; /* White text */
   margin-top: 2%;
   margin-left: 3%;
-  background-color: white;
   width: 38%;
   height: 88%;
   line-height: 5px;
@@ -168,6 +166,7 @@ input::-webkit-inner-spin-button {
   background-color: white;
   width: 95%;
   height: 80%;
+  color: black;
   line-height: 5px;
   border: none;
   border-radius: 5px;
@@ -175,10 +174,24 @@ input::-webkit-inner-spin-button {
   overflow-y: auto;
 }
 
-.subbox img{
-    margin-left: 6%;
+.subbox> .block{
+    margin-left: 2%;
+    margin-top: 2%;
     width: 90%;
-    height: 70%;
+    height: 50%;
+    box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.block p{
+    padding: 12px;
+    margin-left: 3%;
+}
+
+.block input[type=checkbox]{
+    margin-left: 78%;
+    margin-top:-6%;
+    width: 25px;
+    height: 25px;
 }
 
 /*accept button*/

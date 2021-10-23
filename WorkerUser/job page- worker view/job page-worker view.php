@@ -87,7 +87,7 @@
         <span class="link_name">Bank Details</span>
         </a>
         <ul class="sub-menu blank">
-        <li><a class="link_name" href="#">Bank Details</a></li>
+        <li><a class="link_name" href="../bank-edit/bank-edit.php">Bank Details</a></li>
         </ul>
     </li>
 
@@ -111,6 +111,7 @@
 
 
       <div class="flex-container">
+        <h2>Jobs</h2>
         <div class="left">
            <div class="box1">                       
                <p class="box1-heading">All Category</p> 
@@ -149,10 +150,32 @@
         </div>
         <div class="right">
           <div class="job1">
-            <img src="../images/job.png"> 
+            <div class="pic">
+               <i class="far fa-image"></i><h2>Logo</h2>
+            </div>
+            <div class="content">
+            <p>Compny Name</p><br/>
+            <p>Vaccancy Job</p>
+            <p>Salary</p>
+            <p>Description</p>
+            <p>Contact Number</p>
+            <p>Website Link</p>
+            <button> Apply</button>
+            </div>
           </div>
           <div class="job2">
-            <img src="../images/job.png"> 
+            <div class="pic">
+               <i class="far fa-image"></i><h2>Logo</h2>
+            </div>
+            <div class="content">
+            <p>Compny Name</p><br/>
+            <p>Vaccancy Job</p>
+            <p>Salary</p>
+            <p>Description</p>
+            <p>Contact Number</p>
+            <p>Website Link</p>
+            <button> Apply</button>
+            </div>
           </div>
         </div>
       </div>

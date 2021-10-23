@@ -1,10 +1,20 @@
+body{
+  font-family: 'Poppins', sans-serif;
+  background-image: url('../images/bg5.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 .flex-container {
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: black; /* White text */
   margin-left: 22%;
   width: 72%;
   display: flex;
   height: 500px;
   flex-direction: row;
-  background-color: white;
   margin-top: -3%;
   border:none;
   box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2);
@@ -16,6 +26,7 @@
 	margin-top: 0px;
 	font-family: 'Poppins', sans-serif;
 	margin-left: 40%;
+	color: white;
 }
 
 /*show profile pic*/
@@ -27,8 +38,7 @@
   height: 140px;
   line-height: 5px;
   border:none;
-  padding: 7px;
-  border-radius: 100px;
+
 }
 
 .mainbox input{
@@ -45,11 +55,13 @@
   width: 60px;
   height: 60px;
   border-style: hidden;
+  border-radius: 100px;
 }
 
 img{
 	width:100%;
 	height:100%;
+	border-radius: 100px;
 }
 
 /*form*/
@@ -62,7 +74,6 @@ img{
   line-height: 5px;
   border-style: hidden;
   padding: 40px 30px;
-  border-radius: 75px;
   font-family: 'Poppins', sans-serif;
 }
 

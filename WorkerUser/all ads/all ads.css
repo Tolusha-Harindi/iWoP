@@ -5,12 +5,11 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  margin-left: 2%;
+  margin-left: 0%;
   width:100%;
   display: flex;
   height: 575px;
   flex-direction: row;
-  background-color: white;
   margin-top: 5%;
   border: hidden;
 }
@@ -42,7 +41,7 @@
     padding: 20px; /* Some padding */
     align-items: center;
     margin-top: 9%;
-    margin-left:-51%;
+    margin-left:-49%;
     border:none;
     box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.4s;
@@ -145,8 +144,7 @@
 .flex-container> .right{
     background: rgb(0, 0, 0); /* Fallback color */
     background: rgba(0, 0, 0, 0.3); /* Black background with 0.5 opacity */
-    color: white; /* White text */
-    padding: 20px; /* Some padding */
+    color: black; /* White text */
     align-items: center;
     margin-top: 5%;
     margin-left: 5%;
@@ -161,7 +159,6 @@
 .right> .mainbox{
     margin-top: 2%;
     margin-left: 2%;
-    border:none;
     transition: 0.4s;
     width: 95%;
     height: 93%;
@@ -169,9 +166,76 @@
     overflow-y:auto;
 }
 
-.mainbox img{
-    width: 100%;
-    height: 100%;
+.mainbox> .box1{
+  margin-top: 2%;
+  margin-left: 2%;
+  border:none;
+  width: 48%;
+  height: 40%;
+  text-decoration: none;
+  background-color: white;
+  box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2);
+  color: black;
+  align-items: center;
+}
+
+.box1> .eye{
+  margin-top: 2%;
+  margin-left: 0%;
+  color: black;
+  width: 30%;
+  height: 15%;
+ 
+}
+
+.box1> .com{
+  margin-top: -7%;
+  margin-left: 40%;
+  color: black;
+  width: 50%;
+  height: 15%;
+ 
+}
+
+.mainbox>.vl {
+  border-left: 1px solid white;
+  height: 40%;
+  margin-left: 53%;
+  margin-top: -21%;
+}
+
+.mainbox> .box2{
+   margin-top: -22%;
+  margin-left: 56%;
+  border:none;
+  box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 42%;
+  height: 40%;
+  color: black;
+  background-color: white;
+}
+
+.box2> .loc{
+  margin-top: 2%;
+  margin-left: 4%;
+  width: 45%;
+  height: 15%;
+  
+}
+
+.box2 h3{
+    margin-left: 4%;
+    padding: 6px;
+}
+
+.box2 button{
+   margin-top: 2%;
+  margin-left: 60%;
+  font-size: 17px;
+  background-color: green;
+  color: white;
+  padding: 10px 22px;
+  border: none;
 }
 
 .left button:hover {
