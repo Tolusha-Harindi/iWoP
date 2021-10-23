@@ -150,28 +150,42 @@
             <div class="box1">
                 <div class="sidebar close">
                     <ul class="nav-links">
+                    <li>
+
+                       <a href="../ManagerDashboard/Manager-dashboard.php">
+                           <i class='bx bxs-dashboard'></i>
+                                 <span class="link_name">Dashboard</span>
+                       </a>
+                             <ul class="sub-menu blank">
+                                 <li><a class="link_name" href="../ManagerDashboard/Manager-dashboard.php">Dashboard</a></li>
+                             </ul>
+                   </li>
+
+
+
+
                         <li>
-                            <a href="#">
+                            <a href="../ManagerProfile/ManagerProfile.php">
                                 <i class='bx bxs-user'></i>
                                 <span class="link_name">My Profile</span>
                             </a>
                             <ul class="sub-menu blank">
-                                <li><a class="link_name" href="#">My Profile</a></li>
+                                <li><a class="link_name" href="../ManagerProfile/ManagerProfile.php">My Profile</a></li>
                             </ul>
                         </li>
 
                         <li>
-                            <a href="#">
+                            <a href="../Change password/Manager change password.php">
                                 <i class='bx bxs-check-shield'></i>
                                 <span class="link_name">Change Password</span>
                             </a>
                             <ul class="sub-menu blank">
-                                <li><a class="link_name" href="#">Change Password</a></li>
+                                <li><a class="link_name" href="../Change password/Manager change password.php">Change Password</a></li>
                             </ul>
                         </li>
 
                         <li>
-                            <a href="#">
+                            <a href="">
                                 <i class='bx bxs-briefcase'></i>
                                 <span class="link_name">Workers</span>
                             </a>

@@ -1,167 +1,178 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="workerprof10.css">
-     
-     <link rel="stylesheet" href="../../Repeating-pages/topnav/topnav.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Boxiocns CDN Link -->
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-   
 <?php
-        include '../../Repeating-pages/topnav/topnav2-customer.php'
-    ?>
-</head>
-<body>
-<div class="box1">
-    <div class="sidebar close">
+session_start();
+if(isset($_SESSION['Email'])){
 
-        <ul class="nav-links">
-          <li>
-            <a href="#">
-              <i class='bx bxs-user' ></i>
-              <span class="link_name">My Profile</span>
-            </a>
-            <ul class="sub-menu blank">
-              <li><a class="link_name" href="#">My Profile</a></li>
-            </ul>
-          </li>
-    
-          <li>
-            <a href="#">
-              <i class='bx bxs-collection' ></i>
-              <span class="link_name">My Services</span>
-            </a>
-            <ul class="sub-menu blank">
-              <li><a class="link_name" href="#">My Services</a></li>
-            </ul>
-          </li>
-    
-    
-          <li>
-            <a href="#">
-              <i class='bx bxs-check-shield' ></i>
-              <span class="link_name">Change Password</span>
-            </a>
-            <ul class="sub-menu blank">
-              <li><a class="link_name" href="#">Change Password</a></li>
-            </ul>
-          </li>
-    
-          <li>
-            <a href="#">
-              <i class='bx bxs-image' ></i>
-              <span class="link_name">Posted Ads</span>
-            </a>
-            <ul class="sub-menu blank">
-              <li><a class="link_name" href="#">Posted Ads</a></li>
-            </ul>
-          </li>
-    
-          <li>
-            <a href="#">
-              <i class='bx bxs-user-check' ></i>
-              <span class="link_name">Job Vacancies</span>
-            </a>
-            <ul class="sub-menu blank">
-              <li><a class="link_name" href="#">Job Vacancies</a></li>
-            </ul>
-          </li>
-    
-           <li>
-            <a href="#">
-              <i class='bx bxs-bank' ></i>
-              <span class="link_name">Bank Details</span>
-            </a>
-            <ul class="sub-menu blank">
-              <li><a class="link_name" href="#">Bank Details</a></li>
-            </ul>
-          </li>
-    
-          <li>
-            <a href="#">
-              <i class='bx bxs-calendar-event' ></i>
-              <span class="link_name">Work Schedule</span>
-            </a>
-            <ul class="sub-menu blank">
-              <li><a class="link_name" href="#">Work Schedule</a></li>
-            </ul>
-          </li>
-     </li>
-    </ul>
-      </div>
-      <section class="home-section">
-        <div class="home-content">
-          <i class='bx bx-menu' ></i>
-    <!--       <span class="text">Drop Down Sidebar</span>
-     -->    </div>
-      </section>
-    
-      <script src="script.js"></script>
-</div>
-<div class="box2">
-
-    <div class="mainDiv">
-   <div class="cardStyle">
-        <form action="" method="post">
-            <img src="user.png" class="floatRight">
-            <img src="camere.png" alt="camera" class="camera">
-            <div class="inputDiv">
-                <label class="inputLabel" for="name">Company Name</label>
-                <input type="text" id="comname" name="companyname" required>
-            </div>
-            <div class="inputDiv">
-                <label class="inputLabel" for="address">Company Owner Name</label>
-                <input type="text" id="address" name="comowner" required>
-            </div>
-
-            <div class="inputDiv">
-                <label class="inputLabel" for="district">Company Registered Number</label>
-                <input type="text" id="district" name="comregnumber">
-            </div>
-
-            <div class="inputDiv">
-                <label class="inputLabel" for="city">Address</label>
-                <input type="text" id="city" name="address">
-            </div>
-
-            <div class="inputDiv">
-                <label class="inputLabel" for="city">Email</label>
-                <input type="email" id="email" name="email">
-            </div>
-
-            <div class="inputDiv">
-                <label class="inputLabel" for="city">Contact No1</label>
-                <input type="tel" id="contactno1" name="contactno1">
-            </div>
-
-            <div class="inputDiv">
-                <label class="inputLabel" for="city">GS certificate</label>
-                <input type="file" id="img1" name="img" accept="image/*">
-            </div>
-
-            <div class="inputDiv">
-                <label class="inputLabel" for="city">Company Registered  Certificate</label>
-                <input type="file" id="img1" name="img2" accept="image/*">
-            </div>
+  include '../../Backend/db_connection.php'; //check company id or not
+  $temp= $_SESSION['Email']; 
+  $sql = "SELECT Email FROM company WHERE Email='$temp'";
+  $result = mysqli_query($db,$sql);
+  if(mysqli_num_rows($result)>0){ 
+?>
 
 
-            
-            
+<html lang="en" dir="ltr"></html>
+    <title> Company profile </title>
+
+    <head> 
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../Repeating-pages/topnav/topnav.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!----Profile---->
+        <link rel="stylesheet" href="../../Repeating-pages/sidenav/sidenavigation.css"> 
+        <link rel="stylesheet" href="CompanyProfile.css">
+         <!-- Boxiocns CDN Link -->
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+        <?php
+        include '../../Repeating-pages/topnav/topnav4-company.php'
+        ?>
+
+    </head>
+
+    <body>
+        <div class ="heading1" > Profile
+  
+
+              <!-----------------------------------Side navigation--------------------------------------------->
+
+                <div class="sidebar close">
+              
+                  <ul class="nav-links">
+
+                  <li>
+                        <a href="../CompanyDashboard/Companydashboard.php">
+                           <i class='bx bxs-dashboard'></i>
+                             <span class="link_name">Dashboard</span>
+                       </a>
+                         <ul class="sub-menu blank">
+                            <li><a class="link_name" href="../CompanyDashboard/Companydashboard.php">Dashboard</a></li>
+                         </ul>
+                  </li>
 
 
-                <button type="submit" id="submitButton" onclick="validateSignupForm()" class="update">
-                    <span>Save</span>
-                </button>
-               
+                    <li>
+                      <a href="../CompanyProfile/CompanyProfile.php">
+                        <i class='bx bxs-user' ></i>
+                        <span class="link_name">My Profile</span>
+                      </a>
+                      <ul class="sub-menu blank">
+                        <li><a class="link_name" href="../CompanyProfile/CompanyProfile.php">My Profile</a></li>
+                      </ul>
+                    </li>
+              
+                    
+                    <li>
+                      <a href="../Change password/Company Change password.php">
+                        <i class='bx bxs-check-shield' ></i>
+                        <span class="link_name">Change Password</span>
+                      </a>
+                      <ul class="sub-menu blank">
+                        <li><a class="link_name" href="../Change password/Company Change password.php">Change Password</a></li>
+                      </ul>
+                    </li>
+              
+                    <li>
+                      <a href="../Wantedads/wantedads.php">
+                        <i class='bx bxs-image' ></i>
+                        <span class="link_name">Post your Ads</span>
+                      </a>
+                      <ul class="sub-menu blank">
+                        <li><a class="link_name" href="../Wantedads/wantedads.php">Post your Ads</a></li>
+                      </ul>
+                    </li>
+              
+                    <li>
+                      <a href="../ApplyforJob-Responses/ApplyforJob-companyview.php">
+                        <i class='bx bxs-share' ></i>
+                        <span class="link_name">Responses</span>
+                      </a>
+                      <ul class="sub-menu blank">
+                        <li><a class="link_name" href="../ApplyforJob-Responses/ApplyforJob-companyview.php">Responses</a></li>
+                      </ul>
+                    </li>
+              </li>
+              </ul>
+                </div>
+                <section class="home-section">
+                  <div class="home-content">
+                    <i class='bx bx-menu' ></i>
+              <!--       <span class="text">Drop Down Sidebar</span>
+                -->    </div>
+                </section>
+ 
+ 
+
+            <script src="../../Repeating-pages/sidenav/sidenavigation.js"></script>
 
 
+ <!-----------------------------Form------------------------------------------>
+              <div>
+                <img src="../../Images/company.jpg" class="floatRight">
+                <div > 
+                  <input type="image" id="cam" alt="camera" src="../../Images/cam.png" class="cam"> </br>
+                </div>
+                <form name = "reg-w" onsubmit="return validation()" method="post">
+                    <div class="reg-start">
+                            <div class="info">
+                                    <div class="group">
+                                        <p class="field"> <b>Company Name</b></p>
+                                        <input id="name" name="name" type="text" placeholder = "Company Name" class="input" required>
+                                        <input type="image" id="edit" alt="edit" src="../../Images/edit.png" class="edit"> 
+                                    </div>
+                                    <div class="group">
+                                      <p class="field"> <b>Company Owner Name</b></p>
+                                      <input id="coname" name="coname" type="text" placeholder = "Company Owner Name" class="input" required>
+                                      <input type="image" id="edit" alt="edit" src="../../Images/edit.png" class="edit"> 
+                                    </div>
+                                    <div class="group">
+                                      <p class="field"> <b>Company Registered No</b></p>
+                                      <input id="co_no" name="co_no" type="text" placeholder = "Company Registered No" class="input" required>
+                                      <input type="image" id="edit" alt="edit" src="../../Images/edit.png" class="edit"> 
+                                    </div>
+                                    <div class="group">
+                                      <p class="field"> <b>Address</b></p>
+                                      <input id="Address" name="address" type="text" placeholder = "Address" class="input" required>
+                                      <input type="image" id="edit" alt="edit" src="../../Images/edit.png" class="edit"> 
+                                    </div>
+                                    <div class="group">
+                                        <p class="field"> <b>Email</b> </p>
+                                        <input id="email" name="email" type="email" placeholder = "Email" class="input" required>
+                                        <input type="image" id="edit" alt="edit" src="../../Images/edit.png" class="edit"> 
+                                    </div>
+                                    <div class="group">
+                                        <p class="field"> <b>Contact Number</b></p>
+                                        <input id="contact" name="contact" type="tel" placeholder = "Contact Number" class="input" required>
+                                        <input type="image" id="edit" alt="edit" src="../../Images/edit.png" class="edit"> 
+                                    </div> 
+                                    
+                        </div>
+                    </div>
+                </form>
+              </div>
 
-    </form>
-   </div>
-</div>
-</div>
-</body>
-</html>
+              <div>
+                <a href="#" input type="submit" value="submit"  class="button4"> Update </a> 
+                <a href="#" input type="Reset" value="Reset" class="button5"> Delete Account </a> 
+            </div> 
+    </div>
+    </body>
+
+    </html>
+
+    <?php 
+  }
+  else{
+    echo '<script type="text/javascript">javascript:history.go(-1)</script>'; //redirect to previous page
+    exit();
+  }
+ 
+  
+}
+
+
+else{
+  header('location:../../Login/Login.php');
+  exit();
+}
+?>
