@@ -1,3 +1,15 @@
+<?php
+session_start();
+if(isset($_SESSION['Email'])){
+
+  include '../../Backend/db_connection.php'; //check company id or not
+  $temp= $_SESSION['Email']; 
+  $sql = "SELECT Email FROM company WHERE Email='$temp'";
+  $result = mysqli_query($db,$sql);
+  if(mysqli_num_rows($result)>0){ 
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,7 +78,7 @@
       <!--------------------------Top nav----------------------------------------->
       <?php
         include '../../Repeating-pages/topnav/topnav4-company.php'
-    ?>
+       ?>
 </head>
 
 <body>
@@ -75,17 +87,19 @@
 
 <div class="main-box">
     <div class="down-row" style="padding: 50;">
-        <div class="col-left-30" style="padding: 10;">
+        <div class="col-left-30" style="padding: 0;">
      </div>
-        <div class="col-right-70" style="padding: 10;">
-            <h3>Password Change</h3>
+        <div class="col-right-70" style="padding: 0;">
+          
         </div>
     </div>
     <!--------------------------------------- side navigation ------------------------------------>
+    <!-- box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+         background: rgb(0, 0, 0); /* Fallback color */
+        background: rgba(0, 0, 0, 0.3); /* Black background with 0.5 opacity */ -->
     <div class="down-row">
-        <div class="col-left-30" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); margin: 2px; height: 500px;
-        background: rgb(0, 0, 0); /* Fallback color */
-        background: rgba(0, 0, 0, 0.3); /* Black background with 0.5 opacity */
+        <div class="col-left-30" style=" margin: 2px; height: 500px;
+        
         color: white; /* White text */
         margin-top:0px;">
             <div class="box1">
@@ -95,7 +109,7 @@
                      
                         <li>
 
-                            <a href="../CompanyDashboard/Companydashboard.php">
+                            <a href="../CompanyDashboard/Company-dashboard.php">
                                 <i class='bx bxs-dashboard'></i>
                                 <span class="link_name">Dashboard</span>
                             </a>
@@ -259,3 +273,19 @@
 <script src="./js/app.js"></script>
 </body>
 </html>
+<?php 
+  }
+  else{
+    echo '<script type="text/javascript">javascript:history.go(-1)</script>'; //redirect to previous page
+    exit();
+  }
+ 
+  
+}
+
+
+else{
+  header('location:../../Login/Login.php');
+  exit();
+}
+?>

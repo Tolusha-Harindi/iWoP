@@ -18,80 +18,83 @@
 <body>
 <div class="box1">
 
-<div class="sidebar close">
+        <!--------------------Side bar---------------------->
+        <div class="sidebar close">
 
-<ul class="nav-links">
-    <li>
-        <a href="../Adminprofile/Adminprofile.php">
-            <i class='bx bxs-user' ></i>
-            <span class="link_name">My Profile</span>
-        </a>
-        <ul class="sub-menu blank">
-            <li><a class="link_name" href="../Adminprofile/Adminprofile.php">My Profile</a></li>
-        </ul>
-    </li>
+        <ul class="nav-links">
 
-    <li>
-        <a href="../admin_dashboard/admin_dashboard.php">
-            <i class='bx bx-plus' ></i>
+        <li>
+            <a href="../admin_dashboard/admin_dashboard.php">
+            <i class='bx bxs-dashboard' ></i>
             <span class="link_name">Dashboard</span>
-        </a>
-        <ul class="sub-menu blank">
+            </a>
+            <ul class="sub-menu blank">
             <li><a class="link_name" href="../admin_dashboard/admin_dashboard.php">Dashboard</a></li>
-        </ul>
+            </ul>
         </li>
 
-    <li>
-        <a href="../ManagerPageforAdmin/ManagerPageforAdmin.php">
+        <li>
+            <a href="../Adminprofile/Adminprofile.php">
+                <i class='bx bxs-user' ></i>
+                <span class="link_name">My Profile</span>
+            </a>
+            <ul class="sub-menu blank">
+                <li><a class="link_name" href="../Adminprofile/Adminprofile.php">My Profile</a></li>
+            </ul>
+        </li>
+
+
+        <li>
+        <a  href="../ManagerPageforAdmin/NewManager.php">
             <i class='bx bx-street-view' ></i>
             <span class="link_name">Managers</span>
-        </a>
-        <ul class="sub-menu blank">
-            <li><a class="link_name" href="../ManagerPageforAdmin/ManagerPageforAdmin.php">Managers</a></li>
-        </ul>
-    </li>
+            </a>
+            <ul class="sub-menu blank">
+            <!-- <li><a class="link_name" href="../ManagerPageforAdmin/ManagerPageforAdmin.php">Managers</a></li> -->
+            <li><a class="link_name" href="../ManagerPageforAdmin/NewManager.php">Managers</a></li>
+            </ul>
+        </li>
 
-
-    <!-- <li>
-        <a href="../Changepassword/changepwd.php">
-            <i class='bx bxs-check-shield' ></i>
-            <span class="link_name">Change Password</span>
-        </a>
-        <ul class="sub-menu blank">
-            <li><a class="link_name" href="../Changepassword/changepwd.php">Change Password</a></li>
-        </ul>
-    </li> -->
-
-    <li>
-        <a href="../Adddeletecategory/Adddelcategory.php">
+        <li>
+            <a href="../Adddeletecategory/adddelcategory.php">
             <i class='bx bxs-spreadsheet' ></i>
-            <span class="link_name">Category</span>
-        </a>
-        <ul class="sub-menu blank">
-            <li><a class="link_name" href="../Adddeletecategory/Adddeletecategory.php">Category</a></li>
-        </ul>
-    </li>
+            <span class="link_name">Categories</span>
+            </a>
+            <ul class="sub-menu blank">
+            <li><a class="link_name" href="../Adddeletecategory/adddelcategory.php">Categories</a></li>
+            </ul>
+        </li>
 
-    <li>
-        <a href="../Reportpage/reportpage.php">
+        <li>
+            <a href="../category/category.php">
+            <i class='bx bxs-user-check' ></i>
+            <span class="link_name">Registered Users</span>
+            </a>
+            <ul class="sub-menu blank">
+            <li><a class="link_name" href="../category/category.php">Registered Users</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="../Reportpage/reportpage.php">
             <i class='bx bxs-hand-right' ></i>
-            <span class="link_name">Reports</span>
-        </a>
-        <ul class="sub-menu blank">
-            <li><a class="link_name" href="../Reportpage/reportpage.php">Reports</a></li>
+            <span class="link_name">Complaints</span>
+            </a>
+            <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Complaints</a></li>
+            </ul>
+        </li> </li>
         </ul>
-    </li> </li>
-</ul>
-</div>
+        </div>
+        <section class="home-section">
+        <div class="home-content">
+        <i class='bx bx-menu' ></i>
+        <!--       <span class="text">Drop Down Sidebar</span>
+        -->    </div>
+        </section>
 
-<section class="home-section">
-<div class="home-content">
-    <i class='bx bx-menu' ></i>
-    <!--       <span class="text">Drop Down Sidebar</span>
-     -->    </div>
-</section>
-    
-<script src="../../Repeating-pages/sidenav/sidenavigation.js"></script>
+        <script src="../../Repeating-pages/sidenav/sidenavigation.js"></script>
+
 <!--------------------------End of side nav------------------------------------->
 
 
@@ -103,7 +106,7 @@
             <form action="" method="post">
 
 
-                <img src="../../Images/img.png" class="userimg">
+                <img src="../../Images/propic.jpg" class="userimg">
                 <input type="file" id="myFile" name="filename">
 
                
@@ -121,17 +124,17 @@
 
                 <div class="inputDiv">
                     <label class="inputLabel" for="email"> Current Password</label> </br>
-                    <input type="email" id="email" name="email" class="input" required>
+                    <input type="password" id="email" name="email" class="input" required>
                 </div>
 
                 <div class="inputDiv">
                     <label class="inputLabel" for="email">New Password </label> </br>
-                    <input type="email" id="email" name="email" class="input" required>
+                    <input type="password" id="email" name="email" class="input" required>
                 </div>
 
                 <div class="inputDiv">
                     <label class="inputLabel" for="email">Change Password </label> </br>
-                    <input type="email" id="email" name="email" class="input" required>
+                    <input type="password" id="email" name="email" class="input" required>
                 </div>
 
                 <button type="submit" id="submitButton" onclick="validateSignupForm()" class="update">

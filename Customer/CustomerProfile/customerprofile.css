@@ -11,7 +11,6 @@ body{
 /*------------------------heading1 - Profile-------------------------------*/
 .heading1{
     position: relative;
-    /*text-align: center;*/
     font-family: 'Poppins', sans-serif;
     font-size: 40px;
     margin-top: 100px;
@@ -21,13 +20,13 @@ body{
  
 /*-----------------Profile image in Profile page*-------------------*/
 .floatRight{
-  max-height: 120px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  margin-left: 45%;
+    max-height: 120px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 45%;
 }
 
 

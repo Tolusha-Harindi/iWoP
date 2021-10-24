@@ -30,6 +30,17 @@
             <div class="sidebar close">
 
                 <ul class="nav-links">
+
+                <li>
+                    <a href="../admin_dashboard/admin_dashboard.php">
+                      <i class='bx bxs-dashboard' ></i>
+                      <span class="link_name">Dashboard</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                      <li><a class="link_name" href="../admin_dashboard/admin_dashboard.php">Dashboard</a></li>
+                    </ul>
+                  </li>
+
                   <li>
                       <a href="../Adminprofile/Adminprofile.php">
                           <i class='bx bxs-user' ></i>
@@ -40,50 +51,40 @@
                       </ul>
                   </li>
 
-
-                  <li>
-                    <a href="../admin_dashboard/admin_dashboard.php">
-                      <i class='bx bx-plus' ></i>
-                      <span class="link_name">Dashboard</span>
-                    </a>
-                    <ul class="sub-menu blank">
-                      <li><a class="link_name" href="../admin_dashboard/admin_dashboard.php">Dashboard</a></li>
-                    </ul>
-                  </li>
             
                   <li>
-                    <a href="../ManagerPageforAdmin/ManagerPageforAdmin.php">
+                  <a  href="../ManagerPageforAdmin/NewManager.php">
                       <i class='bx bx-street-view' ></i>
                       <span class="link_name">Managers</span>
                     </a>
                     <ul class="sub-menu blank">
-                      <li><a class="link_name" href="../ManagerPageforAdmin/ManagerPageforAdmin.php">Managers</a></li>
+                      <!-- <li><a class="link_name" href="../ManagerPageforAdmin/ManagerPageforAdmin.php">Managers</a></li> -->
+                      <li><a class="link_name" href="../ManagerPageforAdmin/NewManager.php">Managers</a></li>
                     </ul>
                   </li>
             
-<!--             
                   <li>
-                    <a href="#">
-                      <i class='bx bxs-check-shield' ></i>
-                      <span class="link_name">Change Password</span>
+                    <a href="../Adddeletecategory/adddelcategory.php">
+                      <i class='bx bxs-spreadsheet' ></i>
+                      <span class="link_name">Categories</span>
                     </a>
                     <ul class="sub-menu blank">
-                      <li><a class="link_name" href="#">Change Password</a></li>
+                      <li><a class="link_name" href="../Adddeletecategory/adddelcategory.php">Categories</a></li>
                     </ul>
-                  </li> -->
-            
+                  </li>
+
                   <li>
                     <a href="../category/category.php">
-                      <i class='bx bxs-spreadsheet' ></i>
-                      <span class="link_name">Category</span>
+                      <i class='bx bxs-user-check' ></i>
+                      <span class="link_name">Registered Users</span>
                     </a>
                     <ul class="sub-menu blank">
-                      <li><a class="link_name" href="../category/category.php">Category</a></li>
+                      <li><a class="link_name" href="../category/category.php">Registered Users</a></li>
                     </ul>
                   </li>
             
                   <li>
-                    <a href="../Report">
+                    <a href="../Reportpage/reportpage.php">
                       <i class='bx bxs-hand-right' ></i>
                       <span class="link_name">Complaints</span>
                     </a>
@@ -110,11 +111,13 @@
   <div class="row1">
     <div class="dash-card" id="card1">
       <h1>Complaints Count</h1>
+      <h3> 28 </h3>
       <img src="../../Images/complain.png" alt="">
     </div>
   
     <div class="dash-card" id="card2">
       <h1>Workers Count</h1>
+      <h3> 255 </h3>
       <img src="../../Images/worker.png" alt="">
     </div>
   </div>
@@ -122,11 +125,13 @@
   <div class="row2">
     <div class="dash-card" id="card3">
       <h1>Customers Count</h1>
+      <h3> 208 </h3>
       <img src="../../Images/customer.png" alt="">
     </div>
   
     <div class="dash-card" id="card4">
       <h1>Company Count</h1>
+      <h3> 150 </h3>
       <img src="../../Images/company.png" alt="">
     </div>
   </div>
@@ -156,7 +161,7 @@
 
 
 <!------------------- Mnagers table-------------------->
-<div class ="heading1" > Managers </div>
+<div class ="heading1"> Managers </div>
         <div class= "container"> 
         <div class="table-wrapper">
             <table style="border-spacing: 25px" class="fl-table">
@@ -206,6 +211,42 @@
                       <td> Pottery </td>
                       <td> <img src="../../Images/category/waiter.png" class="image"> </td>
                       <td> 10/10/2021 </td>
+                  </tr>
+                
+                    <?php
+            // while ($rows = mysqli_fetch_array($result)){
+            //     echo "<tr>
+            //         <td>".$rows['name']."</td>
+            //         <td>".$rows['contact_No']."</td>
+            //         <td>".$rows['email']."</td>
+            //         <td>".$rows['NIC']."</td>
+                    
+            //     </tr>";
+            // }
+          ?>
+                    
+                </tbody>
+            </table>
+    </div> </br>
+
+     <!---------------------Deleted categories------------------>
+     <div class ="heading1" > Deleted categories </div>
+    <div class= "container"> 
+        <div class="table-wrapper">
+            <table style="border-spacing: 25px" class="fl-table">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Image</th>
+                        <th>Deleted Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                  <tr>
+                      <td> Lanscaping </td>
+                      <td> <img src="../../Images/category/planting.png" class="image"> </td>
+                      <td> 18/09/2021 </td>
                   </tr>
                 
                     <?php

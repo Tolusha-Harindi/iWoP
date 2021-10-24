@@ -15,83 +15,84 @@
 </head>
 <body>
 <div class="box1">
-<div class="sidebar close">
+            <!--------------------Side bar---------------------->
+            <div class="sidebar close">
 
-<ul class="nav-links">
-    <li>
-        <a href="../Adminprofile/Adminprofile.php">
-            <i class='bx bxs-user' ></i>
-            <span class="link_name">My Profile</span>
-        </a>
-        <ul class="sub-menu blank">
-            <li><a class="link_name" href="../Adminprofile/Adminprofile.php">My Profile</a></li>
-        </ul>
-    </li>
+            <ul class="nav-links">
 
-    <li>
-                    <a href="../admin_dashboard/admin_dashboard.php">
-                      <i class='bx bx-plus' ></i>
-                      <span class="link_name">Dashboard</span>
-                    </a>
-                    <ul class="sub-menu blank">
-                      <li><a class="link_name" href="../admin_dashboard/admin_dashboard.php">Dashboard</a></li>
-                    </ul>
-                  </li>
+            <li>
+                <a href="../admin_dashboard/admin_dashboard.php">
+                <i class='bx bxs-dashboard' ></i>
+                <span class="link_name">Dashboard</span>
+                </a>
+                <ul class="sub-menu blank">
+                <li><a class="link_name" href="../admin_dashboard/admin_dashboard.php">Dashboard</a></li>
+                </ul>
+            </li>
 
-    <li>
-        <a href="../ManagerPageforAdmin/ManagerPageforAdmin.php">
-            <i class='bx bx-street-view' ></i>
-            <span class="link_name">Managers</span>
-        </a>
-        <ul class="sub-menu blank">
-            <li><a class="link_name" href="../ManagerPageforAdmin/ManagerPageforAdmin.php">Managers</a></li>
-        </ul>
-    </li>
-
-<!-- 
-    <li>
-        <a href="../Changepassword/changepwd.php">
-            <i class='bx bxs-check-shield' ></i>
-            <span class="link_name">Change Password</span>
-        </a>
-        <ul class="sub-menu blank">
-            <li><a class="link_name" href="../Changepassword/changepwd.php">Change Password</a></li>
-        </ul>
-    </li> -->
-
-    <li>
-        <a href="../Adddeletecategory/Adddelcategory.php">
-            <i class='bx bxs-spreadsheet' ></i>
-            <span class="link_name">Category</span>
-        </a>
-        <ul class="sub-menu blank">
-            <li><a class="link_name" href="../Adddeletecategory/Adddeletecategory.php">Category</a></li>
-        </ul>
-    </li>
-
-    <li>
-        <a href="../Reportpage/reportpage.php">
-            <i class='bx bxs-hand-right' ></i>
-            <span class="link_name">Reports</span>
-        </a>
-        <ul class="sub-menu blank">
-            <li><a class="link_name" href="../Reportpage/reportpage.php">Reports</a></li>
-        </ul>
-    </li> </li>
-</ul>
-</div>
-
-<section class="home-section">
-<div class="home-content">
-    <i class='bx bx-menu' ></i>
-    <!--       <span class="text">Drop Down Sidebar</span>
-     -->    </div>
-</section>
-
-<script src="../../Repeating-pages/sidenav/sidenavigation.js"></script>
+            <li>
+                <a href="../Adminprofile/Adminprofile.php">
+                    <i class='bx bxs-user' ></i>
+                    <span class="link_name">My Profile</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="../Adminprofile/Adminprofile.php">My Profile</a></li>
+                </ul>
+            </li>
 
 
-</div>
+            <li>
+            <a class="link_name" href="../ManagerPageforAdmin/NewManager.php">
+                <i class='bx bx-street-view' ></i>
+                <span class="link_name">Managers</span>
+                </a>
+                <ul class="sub-menu blank">
+                <!-- <li><a class="link_name" href="../ManagerPageforAdmin/ManagerPageforAdmin.php">Managers</a></li> -->
+                <li><a class="link_name" href="../ManagerPageforAdmin/NewManager.php">Managers</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="../Adddeletecategory/adddelcategory.php">
+                <i class='bx bxs-spreadsheet' ></i>
+                <span class="link_name">Categories</span>
+                </a>
+                <ul class="sub-menu blank">
+                <li><a class="link_name" href="../Adddeletecategory/adddelcategory.php">Categories</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="../category/category.php">
+                <i class='bx bxs-user-check' ></i>
+                <span class="link_name">Registered Users</span>
+                </a>
+                <ul class="sub-menu blank">
+                <li><a class="link_name" href="../category/category.php">Registered Users</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="../Reportpage/reportpage.php">
+                <i class='bx bxs-hand-right' ></i>
+                <span class="link_name">Complaints</span>
+                </a>
+                <ul class="sub-menu blank">
+                <li><a class="link_name" href="#">Complaints</a></li>
+                </ul>
+            </li> </li>
+            </ul>
+            </div>
+            <section class="home-section">
+            <div class="home-content">
+            <i class='bx bx-menu' ></i>
+            <!--       <span class="text">Drop Down Sidebar</span>
+            -->    </div>
+            </section>
+
+            <script src="../../Repeating-pages/sidenav/sidenavigation.js"></script>
+            </div>
+
 
 
 <!-----------------------------viewing reports sent by customers and workers----------------------------------->
@@ -102,7 +103,7 @@
         <div class="tab">
             <div class="descipdiv">
                 <div class="descipdivleft">
-                <img src="../../Images/img.png" alt="user" id="userimg">
+                <img src="../../Images/customer.png" alt="user" id="userimg">
                 <h4 > Name:  Kasun Perera</h4>
                 <h4> Reason:  Budget is high</h4>
                 </div>
@@ -120,7 +121,7 @@
             </div>
             <div class="descipdiv">
                 <div class="descipdivleft">
-                    <img src="../../Images/img.png" alt="user" id="userimg">
+                    <img src="../../Images/customer.png" alt="user" id="userimg">
                     <h4 > Name: Kasun Perera</h4>
                     <h4> Reason:  Budget is high</h4>
                 </div>
@@ -138,7 +139,7 @@
             </div>
             <div class="descipdiv">
                 <div class="descipdivleft">
-                    <img src="../../Images/img.png" alt="user" id="userimg">
+                    <img src="../../Images/customer.png" alt="user" id="userimg">
                     <h4 > Name: Kasun Perera</h4>
                     <h4> Reason:  Budget is high</h4>
                 </div>
@@ -161,7 +162,7 @@
         <div class="tab">
             <div class="descipdiv">
                 <div class="descipdivleft">
-                    <img src="../../Images/img.png" alt="user" id="userimg">
+                    <img src="../../Images/customer.png" alt="user" id="userimg">
                     <h4 > Name:  Kasun Perera</h4>
                     <h4> Reason: Budget is high</h4>
                 </div>
@@ -179,9 +180,9 @@
             </div>
             <div class="descipdiv">
                 <div class="descipdivleft">
-                    <img src="../../Images/img.png" alt="user" id="userimg">
-                    <h4 > Name: Kasun Perera</h4>
-                    <h4> Reason: Budget is high</h4>
+                    <img src="../../Images/customer.png" alt="user" id="userimg">
+                    <h4 > Name: Pubudu Gamage</h4>
+                    <h4> Reason: Not responding</h4>
                 </div>
                 <div class="descipdivright">
                     <button id="view">
@@ -197,8 +198,8 @@
             </div>
             <div class="descipdiv">
                 <div class="descipdivleft">
-                    <img src="../../Images/img.png" alt="user" id="userimg">
-                    <h4 > Name: Kasun Perera</h4>
+                    <img src="../../Images/customer.png" alt="user" id="userimg">
+                    <h4 > Name: Hasini Perera</h4>
                     <h4> Reason: Budget is high</h4>
                 </div>
                 <div class="descipdivright">

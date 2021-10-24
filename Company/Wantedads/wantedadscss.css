@@ -11,11 +11,13 @@ body{
 .heading1{
     font-size: 40px;
 }
-
+.box1{
+    height: 50%;
+}
 .box1, .box2{
     float: left;
     width: 20%;
-    height: 50%;
+    
     margin-left: 2%;
     align-items: center;
 }
@@ -67,7 +69,7 @@ body{
     /*display: none;*/
     padding: 6px 12px;
     border-top: none;
-   
+  
 
 }
 p{
@@ -262,7 +264,7 @@ button[disabled] {
 .box3{
     float: left;
     width: 94%;
-    height: 30%;
+    height: 40%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     margin-left: 3%;
     margin-top:5%;
@@ -314,21 +316,23 @@ button[disabled] {
 
 /*location icon*/
 .location-red{
-    height: 48px;
+   height: 48px;
     width: 35px;
     margin-left: 58%;
-    margin-top:-20% ;
+    margin-top:-10% ;
+
 }
 
 /*box4--- phone number---*/
 .box4{
     padding:15px 15px;
     width: 15%;
-    height:5%;
+    height:15%;
     background-color: #2EAB2B;
     margin-left: 75%;
     margin-top: -18%;
     margin-bottom: 2%;
+
     
 }
 

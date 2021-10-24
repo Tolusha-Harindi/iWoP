@@ -100,7 +100,8 @@ tr{
       margin-left: 12%;
       border-radius: 100px;
     	width: 8%;
-    	background-color: #2EAB2B;  
+    	background-color: #2EAB2B; 
+      border: none; 
 }
   
 

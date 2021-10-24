@@ -89,6 +89,98 @@ body{
     display: inline-block;
     font-size: 20px;
     cursor: pointer;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  background-image: url('../../Images/bg5.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/*-----------------------------heading -Report-------------------------------------*/
+.heading1, .heading2{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 100px;
+    color: black;
+}
+
+
+/*-------------Left-Outer-box - viewing worker detail-------------------------------*/
+.box1, .box2{
+    float: left;
+    width: 30%;
+    height: 72%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.9);
+    margin-left: 3%;
+    margin-top: 50px;
+    align-items: center;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: white; /* White text */
+}
+
+/*------------------------------left-outer-box-content----------------------*/
+.imguser{
+  margin-top: 16%;
+  margin-left: 160px;
+  height: 130px;
+  width: 200px;
+ 
+}
+.nameforworker{
+  text-align:center;
+  margin-top: 0;
+  font-size: 25px;
+}
+
+.typeofwork{
+  margin-top: 0;
+  text-align:center;
+  font-size: 18px;
+}
+.cityofwork{
+  text-align:center;
+  font-size: 18px;
+}
+.experince{
+  text-align:center;
+  font-size: 18px;
+}
+.telnum{
+  text-align:center;
+  font-size: 18px;
+}
+/*---------------------Right-Outer-box- Report----------------------------------------*/
+.box2{
+    float:right;
+    width: 60%;
+    margin-right:3%;
+}
+
+/*heading2 - Reason*/
+.heading2{
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+/*Reasons- Radio buttons*/
+.reason{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    padding: 25px ;
+}
+/*-------------------------Buttons----------------------------------------*/
+.cancel {background-color:rgba(229, 47, 47, 1);
+    margin-left: auto;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    border: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
 
 }
 .send {background-color:rgba(46, 171, 43, 1) ;
@@ -128,4 +220,55 @@ a:hover {
   background-color: #f1f1f1;
   color: black;
   font-size:25px;
+}
+
+/* state other reason */
+.othertext{
+  display:none;
+  margin: auto;
+}
+
+.send {background-color:rgba(46, 171, 43, 1) ;
+    margin-left: auto;
+    
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    border: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    }
+
+.center{
+
+margin-left: auto;
+margin-right: auto;
+font-size:18px;
+color: white;
+}
+
+/*prevbutton*/
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  margin-top:0px;
+  background-color: #f1f1f1;
+  color: black;
+  font-size:25px;
+}
+
+/* state other reason */
+.othertext{
+  display:none;
+  margin: auto;
 }

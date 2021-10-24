@@ -25,7 +25,7 @@ if(isset($_POST['submit'])){
     
 
     if(empty($email)) {
-        header('location:Login.php?error=Email is required');
+        header('location:Login.php?error=Email and Password required');
         exit();
       }
     else if(empty($password)) {

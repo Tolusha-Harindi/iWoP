@@ -12,19 +12,19 @@ body{
     float: left;
     width: 30%;
     margin-left: 3%;
-    margin-top: 7%;
+    margin-top: 12%;
     align-items: center;
-    height: 25%;
+    height: 30%;
 }
 
 
 
 
-/*---------------------Right-Outer-box- Report----------------------------------------*/
+/*---------------------Right-Outer-box- Profile----------------------------------------*/
 .box2{
     float:left;
     width: 45%;
-    margin-left:2%;
+    margin-left:-2%;
     height: 15%;
     margin-top: 10%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -36,20 +36,20 @@ body{
 
 /*---------topic -profile-----------*/
 .txt{
-  font-size: 40px;
-  text-align: center;
-  margin-top:1%;
-  color: white;
+    font-size: 40px;
+    text-align: center;
+    margin-top:1%;
+    color: white;
 }
 
 
-
 .userimg{
-    max-height: 120px;
+    max-height: 180px;
+    max-width: 180px;
     margin: auto;
     display: flex;
     margin-top:2%;
-
+    border-radius: 100%;
 }
 .camera{
     margin-left: 410px;
@@ -80,9 +80,7 @@ body{
 }
 .inputDiv input {
     height: 40px;
-    font-size: 16px;
-    border-radius: 4px;
-    height: 45px;
+    font-size: 16px;;
     border: solid 1px #ccc;
     padding: 0 11px;
 }
@@ -95,7 +93,7 @@ input:disabled {
 
 /*-------update button------------*/
 .update{
-    margin-left:35%;
+    margin-left:37%;
     margin-top: 5%;
     margin-bottom: 0%;
     background-color: #2EAB2B;
@@ -106,8 +104,8 @@ input:disabled {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 18px;
-    width: 28%;
+    font-size: 17px;
+    width: 26%;
     height:10%;
 }
 
@@ -115,9 +113,10 @@ input:disabled {
     background-color: red;
 }
 input[type=file]{
-    margin-left: 400px;
+    margin-left: 275.5px;
     font-size: 16px;
     color: black;
+    margin-top:1%;
 }
 input[type=email]{
     border: 2px solid white;
@@ -129,6 +128,15 @@ input[type=text]{
     border: 2px solid white;
     border-radius: 0;
     color: black;
+    border-radius: 0;
+}
+
+
+input[type=password]{
+  border: 2px solid white;
+  border-radius: 0;
+  color: black;
+  border-radius: 0;
 }
 
 
@@ -350,7 +358,7 @@ input[type=text]{
     position: fixed;
     background: #f9fafc;
     /*height: 100vh;*/
-    margin-top:5%;
+    margin-top:10%;
     left: 0px;
     width: 0px;
     /*width: calc(100% - 260px);*/

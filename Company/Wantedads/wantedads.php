@@ -1,3 +1,16 @@
+<?php
+session_start();
+if(isset($_SESSION['Email'])){
+
+  include '../../Backend/db_connection.php'; //check company id or not
+  $temp= $_SESSION['Email']; 
+  $sql = "SELECT Email FROM company WHERE Email='$temp'";
+  $result = mysqli_query($db,$sql);
+  if(mysqli_num_rows($result)>0){ 
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,12 +46,12 @@
          <ul class="nav-links">
 
                  <li>
-                        <a href="../CompanyDashboard/Companydashboard.php">
+                        <a href="../CompanyDashboard/Company-dashboard.php">
                            <i class='bx bxs-dashboard'></i>
                             <span class="link_name">Dashboard</span>
                        </a>
                         <ul class="sub-menu blank">
-                            <li><a class="link_name" href="../CompanyDashboard/Companydashboard.php">Dashboard</a></li>
+                            <li><a class="link_name" href="../CompanyDashboard/Company-dashboard.php">Dashboard</a></li>
                         </ul>
                  </li>
 
@@ -270,3 +283,20 @@ sidebarBtn.addEventListener("click", ()=>{
 
 </body>
 </html>
+
+<?php 
+  }
+  else{
+    echo '<script type="text/javascript">javascript:history.go(-1)</script>'; //redirect to previous page
+    exit();
+  }
+ 
+  
+}
+
+
+else{
+  header('location:../../Login/Login.php');
+  exit();
+}
+?>

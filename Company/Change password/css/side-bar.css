@@ -8,16 +8,17 @@
 }
 .sidebar {
   position: absolute;
-  margin-top: 2%;
+  margin-top: 7%;
   left: 0;
-  height: 50%;
+  height: 45%;
   width: 260px;
   z-index: 100;
   transition: all 0.5s ease;
   top: 100px;
-  left: 86px;
+  left: 0px;
   background-color: gainsboro;
   padding-top: -10%;
+  margin-left: 0px;
 }
 .sidebar.close {
   width: 78px;
@@ -67,6 +68,7 @@
 }
 .sidebar .nav-links li:hover {
   background: #ffd041;
+  /*background: #e67e22;*/
 }
 .sidebar .nav-links li .iocn-link {
   display: flex;

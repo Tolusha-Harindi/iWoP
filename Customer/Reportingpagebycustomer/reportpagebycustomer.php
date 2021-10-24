@@ -37,33 +37,41 @@
         <div class ="heading2">
             <p> Reason</p>
             <div class="reason">
-                <table class="center">
-                    <tr>   
-                        <td> <input type=radio name=Pass value=NotResponding > Not Responding </td>
+                <form method="post" action="addcustomerreport.php">
+                    <input type="hidden" name="nic" value="928331129V">
+                    <input type="hidden" name="name" value="Kamal Perera">
+                    <table class="center">
+                        <tr>   
+                            <td> <input type="radio" name="comment" value="Not Responding" onclick="ShowHidetxt()"> Not Responding </td>
+                            <td></td>
+                            <td> <input type="radio" name="comment" value="Unprofessional" onclick="ShowHidetxt()"> Unprofessional </td>
+                        </tr>  
+                        <tr> </tr> <tr> </tr>
+                        <tr> </tr> <tr> </tr>
+                        <tr> </tr> <tr> </tr>
+                        <tr> </tr> <tr> </tr>
+                        <tr> </tr> <tr> </tr>
+                        <tr>
+                        <td> <input type="radio" name="comment" value="Did not complete the Job" onclick="ShowHidetxt()"> Did not complete the Job </td>
                         <td></td>
-                        <td> <input type=radio name=Pass value= Unprofessional> Unprofessional </td>
-                    </tr>
-                    <tr>  
-                    <tr> </tr> <tr> </tr>
-                     <tr> </tr> <tr> </tr>
-                     <tr> </tr> <tr> </tr>
-                      <tr> </tr> <tr> </tr>
-                       <tr> </tr> <tr> </tr>
-                       <td> <input type=radio name=Pass value=Did not complete the Job> Did not complete the Job </td>
-                        <td></td>
-                        <td>  <input type=radio name=Pass value=Charges are high> Charges are high </td>
-                    </tr>
-                    
-                </table>
-                <br>
-               <textarea rows="10" cols="70" name="comment" form="">Other reasons......</textarea><br><br>
-               <button class="send" type="button" onclick="alert('send successfully')">Send</button>
-                <button  class="cancel"type="button" onclick="alert('cancel')">Cancel</button>
+                        <td> <input type="radio" name="comment" value="Charges are high" onclick="ShowHidetxt()"> Charges are high </td>
+                        </tr>
+                        <tr> </tr> <tr> </tr>
+                        <tr> </tr> <tr> </tr>
+                        <tr> </tr> <tr> </tr>
+                        <tr> </tr> <tr> </tr>
+                        <tr> </tr> <tr> </tr>
+                        <tr><td> <input type="radio" name="comment" id="other" class="comment" value="" onclick="ShowHidetxt()"> Other </td></tr>
+                    </table>
+                    <br>
+                    <textarea id="othertext" class="othertext" rows="10" cols="70" name="other" placeholder="Other reasons......"></textarea><br><br>
+                    <button class="send" type="submit" name="send" onclick="alert('send successfully')">Send</button>
+                    <button  class="cancel"type="button" onclick="alert('cancel')">Cancel</button>
 
-               
+                </form>   
                
             </div>
         </div>
     </div>
-    
+    <script src="otherReason.js"></script>
 </body>
