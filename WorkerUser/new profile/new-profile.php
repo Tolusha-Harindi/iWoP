@@ -84,12 +84,12 @@
     </li>
 
     <li>
-        <a href="../bank-edit/bank-edit.php">
+        <a href="../bank-detail/bank-detail.php">
         <i class='bx bxs-bank' ></i>
         <span class="link_name">Bank Details</span>
         </a>
         <ul class="sub-menu blank">
-        <li><a class="link_name" href="#">Bank Details</a></li>
+        <li><a class="link_name" href="../bank-detail/bank-detail.php">Bank Details</a></li>
         </ul>
     </li>
 

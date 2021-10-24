@@ -115,7 +115,7 @@
        <h1 class="heading">Profile</h1>
        <div class="main-container">
           <div class="mainbox">
-              <input type="image" src="../images/add-image.png" alt="Submit">
+              <img src="../images/profile.jpg">
           </div>
           <div class="mainbox-side">
             <form action="worker profile.php">

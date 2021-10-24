@@ -88,7 +88,7 @@
         <span class="link_name">Bank Details</span>
         </a>
         <ul class="sub-menu blank">
-        <li><a class="link_name" href="#">Bank Details</a></li>
+        <li><a class="link_name" href="../bank-edit/bank-edit.php">Bank Details</a></li>
         </ul>
     </li>
 
@@ -126,7 +126,12 @@
           <label for="num">Contact No</label>
           <input type="tel" id="num" name="num" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
           <br/><br/><br/><br/>
-          <button class="btn" onclick="../report/report.php">Report</button>
+          <button class="btn" onclick="myFun()">Report</button>
+          <script>
+          function myFun() {
+           window.location.href="../report/report.php";  
+     }
+   </script>
        </form>
     </div>
     <div class="sms">

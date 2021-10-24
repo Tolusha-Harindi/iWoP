@@ -89,7 +89,7 @@
         <span class="link_name">Bank Details</span>
         </a>
         <ul class="sub-menu blank">
-        <li><a class="link_name" href="#">Bank Details</a></li>
+        <li><a class="link_name" href="../bank-edit/bank-edit.php">Bank Details</a></li>
         </ul>
     </li>
 

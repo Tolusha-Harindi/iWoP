@@ -1,4 +1,5 @@
 <?php  
+require_once 'db.con.php';
 
 function insertData($conn){
     if (isset($_POST['submit'])) {
@@ -29,5 +30,15 @@ function insertData($conn){
        }
       
 }
+
+if(insertData($conn)){
+    header('location: ./../bank-detail/bank-detail.php?msg=InsertSuccessful' );
+    exit();
+}
+else{
+    header('location: ./../bank-detail/bank-detail.php?msg=InsertFailed' );
+    exit();
+}
+
 
 ?>

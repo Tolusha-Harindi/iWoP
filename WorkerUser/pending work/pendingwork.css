@@ -37,6 +37,38 @@
     overflow: auto;
 }
 
+.left> .block{
+    margin-top: 2%;
+    margin-left: 2%;
+    border: none;
+    width: 95%;
+    height: 45%;
+    box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color:white;
+}
+
+.block> .content, .block1> .content{
+   margin-top: 3%;
+   margin-left: 4%;
+   width: 55%;
+   height: 80%;
+   padding: 10px;
+}
+
+.block button, .block1 button{
+    margin-left: 380px;
+    margin-top: -500px;
+    background-color:blue;
+    color: white;
+   cursor: pointer;
+    border: none;
+    padding: 12px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    
+}
 /*right outcomes*/
 .flex-container> .right{
     background: rgb(0, 0, 0); /* Fallback color */
@@ -52,6 +84,28 @@
     overflow: auto;
 }
 
+.right> .block{
+    margin-top: 2%;
+    margin-left: 2%;
+    border: none;
+    width: 95%;
+    height: 45%;
+    box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color:white;
+}
+
+.right> .block1{
+    margin-top: 2%;
+    margin-left: 2%;
+    border: none;
+    width: 95%;
+    height: 45%;
+    box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color:white;
+}
+
+
+
 /*heading*/
 .flex-container h1{
     margin-top: 0%;
@@ -62,4 +116,14 @@
     font-weight: bold;
     color: #000000;
     text-shadow: 1px 1px 2px #000000;
+}
+
+.left> .block1{
+    margin-top: 2%;
+    margin-left: 2%;
+    border: none;
+    width: 95%;
+    height: 45%;
+    box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color:white;
 }

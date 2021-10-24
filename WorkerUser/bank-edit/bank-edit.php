@@ -88,7 +88,7 @@
         <span class="link_name">Bank Details</span>
         </a>
         <ul class="sub-menu blank">
-        <li><a class="link_name" href="#">Bank Details</a></li>
+        <li><a class="link_name" href="../bank-edit/bank-edit.php">Bank Details</a></li>
         </ul>
     </li>
 
@@ -113,36 +113,36 @@
    <div class="flex-container">
        <h1 class="heading">Bank Details</h1>
        <div class="main-container">
-          <form method="POST">
+          <form method="POST" action="../Model/model-edit.php">
              <div class="item">
                 <label for="fname">Full Name</label>
               </div>
               <div class="input">
-                <input type="text" id="fname" name="fname" required>
+                <input type="text" id="fname" value="<?php echo $fname;?>" name="fname" required>
               </div>
               <div class="item">
                 <label for="bname">Bank Name</label>
               </div>
               <div class="input">
-                <input type="text" id="bname" name="bname" required>
+                <input type="text" id="bname" value="<?php echo $bname;?>" name="bname" required>
               </div>
               <div class="item">
                 <label for="branch">Bank Branch</label>
               </div>
               <div class="input">
-                <input type="text" id="branch" name="branch" required>
+                <input type="text" id="branch" value="<?php echo $branch;?>" name="branch" required>
               </div>
               <div class="item">
                 <label for="code">Bank Code</label>
               </div>
               <div class="input">
-                <input type="number" id="code" name="code" required>
+                <input type="number" id="code" value="<?php echo $code;?>" name="code" required>
               </div>
               <div class="item">
                 <label for="num">Account No</label>
               </div>
               <div class="input">
-                <input type="number" id="num" name="num" required>
+                <input type="number" value="<?php echo $anum;?>" id="num" name="num" required>
              </div>
              <button class="btn" name="update">Update</button>
           </form>

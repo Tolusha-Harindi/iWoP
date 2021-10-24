@@ -84,23 +84,59 @@
     border:none;
     transition: 0.4s;
     width: 98%;
-    height: 95%;
+    height: 38%;
+    background-color: white;
 }
 
-.block img{
-    margin-bottom: 2%;
-    margin-left: 2%;
-    width: 500px;
-    height: 210px;
+.block table, .block1 table{
+    margin-left:3%;
+    border: none;
+    border-collapse: collapse;
+}
+
+.block td, .block1 td{
+   text-decoration: none;
+   border-bottom: 1px solid black;
+   padding: 18px 30px;
+}
+
+.block button, .block1 button{
+  font-size: 17px;
+  background-color: green;
+  color: white;
+  padding: 10px 22px;
+  border: none;
+}
+
+.left> .block1{
+    align-items: center;
+    margin-top: 2%;
+    margin-left:1%;
+    border:none;
+    transition: 0.4s;
+    width: 98%;
+    height: 38%;
+    background-color: white;
 }
 
 .right> .block-r{
     align-items: center;
     margin-top: 2%;
-    margin-left:2%;
+    margin-left:1%;
     border:none;
     transition: 0.4s;
     width: 98%;
-    height: 95%;
+    height: 96%;
+    background-color: white;
 }
 
+.block-r table{
+     margin-left:3%;
+    border: none;
+    border-collapse: collapse;
+}
+
+.block-r th, td{
+  border-bottom: 1px solid black;
+   padding: 18px 38px;
+}

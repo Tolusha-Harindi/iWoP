@@ -31,8 +31,42 @@
       <div class="left">
          <h2>Payments to Get</h2>
          <div class="block">
-           <img src="../images/get-pay.png"><br/>
-           <img src="../images/get-pay.png">
+           <table>
+             <tr>
+               <td>Name</td>
+               <td>Sunil Peries</td>
+               <td><a href="../customer profile- worker view/customer profile-worker view.php"><span style="color:red">View profile</span></a></td>
+             </tr>
+             <tr>
+               <td>Amount</td>
+               <td>Rs: 3000.00</td>
+               <td></td>
+             </tr>
+             <tr style="border-bottom: hidden;">
+               <td>Completed Date</td>
+               <td>08/11/2021</td>
+               <td><button style="font-size: 17px; background-color: green; color: white; padding: 10px 22px; border: none;">Paid</button></td>
+             </tr>
+           </table>
+         </div>
+         <div class="block1">
+           <table>
+             <tr>
+               <td>Name</td>
+               <td>Sunil Peries</td>
+               <td><a href="../customer profile- worker view/customer profile-worker view.php"><span style="color:red">View profile</span></a></td>
+             </tr>
+             <tr>
+               <td>Amount</td>
+               <td>Rs: 3000.00</td>
+               <td></td>
+             </tr>
+             <tr style="border-bottom: hidden;">
+               <td>Completed Date</td>
+               <td>08/11/2021</td>
+               <td><button style="font-size: 17px; background-color: green; color: white; padding: 10px 22px; border: none;">Paid</button></td>
+             </tr>
+           </table>
          </div>
       </div>
 
@@ -41,7 +75,43 @@
       <div class="right">
          <h2>Recieved</h2>
          <div class="block-r">
-            <img src="../images/receive-pay.png">
+            <table>
+              <tr>
+                 <th></th>
+                 <th>Date</th>
+                 <th>Rs.</th>
+               </tr>
+               <tr>
+                 <td>Nithila Vishva</td>
+                 <td>07/11/2021</td>
+                 <td>3000.00</td>
+               </tr>
+               <tr>
+                 <td>Nithila Vishva</td>
+                 <td>07/11/2021</td>
+                 <td>3000.00</td>
+               </tr>
+               <tr>
+                 <td>Nithila Vishva</td>
+                 <td>07/11/2021</td>
+                 <td>3000.00</td>
+               </tr>
+               <tr>
+                 <td>Nithila Vishva</td>
+                 <td>07/11/2021</td>
+                 <td>3000.00</td>
+               </tr>
+               <tr>
+                 <td>Nithila Vishva</td>
+                 <td>07/11/2021</td>
+                 <td>3000.00</td>
+               </tr>
+               <tr style="border-bottom: hidden; font-weight: bold; color: blue;">
+                 <td></td>
+                 <td>Total</td>
+                 <td>15000.00</td>
+               </tr>
+            </table>
          </div>
       </div>
     </div>

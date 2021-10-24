@@ -28,14 +28,56 @@
    </div>
 
       <div class="flex-container">
-          <a href="../shedule/schedule.php"><img src="../images/Arrow.jpg"  height="20" width="25"></a>
+          <a href="../shedule/schedule.php"><i class="fas fa-long-arrow-alt-left  fa-4x" style="margin-top:-30%"></i></a>
           <h1>Pending Works</h1>
           <div class="left"> 
-             <img src="../images/pending.png" style="margin-top:2%; margin-left: 5%; width: 90%;">
+             <div class="block">
+                <div class="content">
+                <p>Vinotha Lingeswaran</p>
+                <p>Time : 10.00 a.m</p>
+                <p>Date : 10/11/2021</p>
+                <p>Category : Cleaner</p>
+                <p>Location : Colombo</p>
+                <p>Budget : 4000.00</p>
+               </div>
+                <button>Finish</button>
+             </div>
+             <div class="block1">
+                <div class="content">
+                <p>Vinotha Lingeswaran</p>
+                <p>Time : 10.00 a.m</p>
+                <p>Date : 10/11/2021</p>
+                <p>Category : Cleaner</p>
+                <p>Location : Colombo</p>
+                <p>Budget : 4000.00</p>
+               </div>
+                <button>Finish</button>
+             </div>
           </div>
 
           <div class="right">
-             <img src="../images/pending.png" style="margin-top:2%; margin-left: 5%; width: 90%;">
+            <div class="block">
+                <div class="content">
+                <p>Vinotha Lingeswaran</p>
+                <p>Time : 10.00 a.m</p>
+                <p>Date : 10/11/2021</p>
+                <p>Category : Cleaner</p>
+                <p>Location : Colombo</p>
+                <p>Budget : 4000.00</p>
+               </div>
+                <button>Finish</button>
+             </div>
+             <div class="block1">
+                <div class="content">
+                <p>Vinotha Lingeswaran</p>
+                <p>Time : 10.00 a.m</p>
+                <p>Date : 10/11/2021</p>
+                <p>Category : Cleaner</p>
+                <p>Location : Colombo</p>
+                <p>Budget : 4000.00</p>
+               </div>
+                <button>Finish</button>
+             </div>
           </div>
           
       </div>

@@ -1,4 +1,4 @@
-.sticky {
+/*.sticky {
   position: fixed;
   top: 0;
   width: 100%;
@@ -17,25 +17,25 @@
     
   }
   
-  /* Style the links inside the navigation bar */
+  /* Style the links inside the navigation bar 
   .topnav a {
     float: Right;
     color: white;
     text-align: center;
-    padding: 20px 15px;
+    padding: 20px 12px;
     text-decoration: none;
     font-size: 17px;
     font-family: 'Poppins', sans-serif;
   
   }
   
-  /* Change the color of links on hover */
+  /* Change the color of links on hover 
   .topnav a:hover {
     background-color: #FFD041;
     color: black;
   }
   
-  /* Add a color to the active/current link */
+  /* Add a color to the active/current link 
   .topnav a.active {
     background-color:#151965;
     color: white;
@@ -45,18 +45,100 @@
     padding: 25px;  
   }
   
-  /* logo*/
+  /* logo
 .logo input{
       width: 5%;
       height: 95%; 
       position: absolute;   
   }
   
-/*profile pic*/  
+/*profile pic 
 .prof{
     width: 45px;
     height: 45px;
 	left: 734px;
 	margin-top: -6px;
+    border-radius: 21px;
+}*/
+
+/* Add a white background color to the top navigation */
+.topnav {
+    position: fixed;
+    background-color: #151965;
+    overflow: hidden;
+    height: 10%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  /* The sticky class is added to the navbar  when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: Right;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color:#FFD041;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link - Register*/
+  .topnav a.active {
+    background-color:#151965;
+    color: white;
+    border-radius: 40px;
+    margin-top: 10px;
+    line-height: 5px;
+    padding: 25px;  
+  }
+
+  .topnav a.activeY {
+    background-color:#151965;
+    color: white;
+    margin-top: 0px;
+    line-height: 25px;
+    padding: 25px; 
+  }
+
+  /* logo*/
+  .logo input {
+    width: 5%;
+    height: 100%; 
+    position: absolute;   
+  }
+  
+
+  /* Add a color to the active/current link - Payments*/
+  .topnav a.active1 {
+    background-color:#FFD041;
+    color:black;
+    border-radius: 6px;
+    margin-top: 10px;
+    line-height: 5px;
+    padding: 25px;  
+  }
+
+  /*profile pic*/
+.prof{
+    width: 45px;
+    height: 45px;
+	left: 734px;
+	margin-top: -12px;
     border-radius: 21px;
 }

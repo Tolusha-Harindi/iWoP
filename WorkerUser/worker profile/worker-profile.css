@@ -9,13 +9,13 @@ body{
 .flex-container {
   background: rgb(0, 0, 0); /* Fallback color */
   background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-  color: black; /* White text */
+  color:white; /* White text */
   margin-left: 22%;
   width: 72%;
   display: flex;
   height: 1190px;
   flex-direction: row;
-  background-color: white;
+  
   margin-top: -2%;
   border: hidden;
 }
@@ -26,6 +26,7 @@ body{
 	margin-top: 0px;
 	font-family: 'Poppins', sans-serif;
 	margin-left: 45%;
+    color: white;
 }
 
 /*show profile pic*/
@@ -33,35 +34,39 @@ body{
   margin-top: 15%;
   margin-left: -455px;
   background-color: #F2F3F4;
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   line-height: 5px;
   border-style: outset;
-  padding: 80px;
+  padding: 0px;
   border-radius: 50px;
 }
 
-.mainbox input{
+.mainbox img{
+    margin-top: 7%;
 	align: center;
+    width:12%;
+    height: 12%;
+    border-radius: 50px;
 }
 
 /*container without heading*/
 .flex-container> .main-container{
-   margin-top: 6%;
+   margin-top: 3%;
   margin-left: -500px;
-  background-color: white;
+  /*background-color: white;*/
   width: 95%;
   height: 1100px;
   line-height: 5px;
   padding: 60px;
-  box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2);
+  /*box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2);*/
 }
 
 /*form*/
 .main-container> .mainbox-side{
-   margin-top: -12%;
+   margin-top: -20%;
   margin-left: 185px;
-  background-color: #ffffff;
+  /*background-color: #ffffff;*/
   width: 649px;
   height: 1080px;
   line-height: 5px;

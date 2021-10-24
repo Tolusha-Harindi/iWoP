@@ -29,14 +29,14 @@ form.addEventListener('submit', (e) => {
   }
 
   let bankType = /^[a-zA-Z]+ [a-zA-Z]+$/;
-  if (inputs[1].value!="" && inputs[0].value.match(bankType)==null) {
+  if (inputs[1].value!="" && inputs[1].value.match(bankType)==null) {
     inputs[1].value="";
     inputs[1].placeholder="Please enter your correct bank name";
     validity=false;
   }
 
   let branchType = /^[a-zA-Z]+ [a-zA-Z]+$/;
-  if (inputs[2].value!="" && inputs[0].value.match(branchType)==null) {
+  if (inputs[2].value!="" && inputs[2].value.match(branchType)==null) {
     inputs[2].value="";
     inputs[2].placeholder="Please enter your correct branch name";
     validity=false;
@@ -44,7 +44,7 @@ form.addEventListener('submit', (e) => {
 
   //check the account number
   let accountType = /^\d{10}$/;
-  if (inputs[4].value!="" && inputs[1].value.match(accountType)==null) {
+  if (inputs[4].value!="" && inputs[4].value.match(accountType)==null) {
     inputs[4].value="";
     inputs[4].placeholder="Please enter a valid account number";
     validity=false;
@@ -52,7 +52,7 @@ form.addEventListener('submit', (e) => {
 
    //check the code number
   let codeType = /^\d{10}$/;
-  if (inputs[3].value!="" && inputs[1].value.match(codeType)==null) {
+  if (inputs[3].value!="" && inputs[3].value.match(codeType)==null) {
     inputs[3].value="";
     inputs[3].placeholder="Please enter a valid code number";
     validity=false;
