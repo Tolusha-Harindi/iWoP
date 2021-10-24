@@ -10,143 +10,160 @@ if(isset($_SESSION['email'])){
   if(mysqli_num_rows($result)>0){ 
 ?>
 
-<html lang="en" dir="ltr"></html>
-    <title> Customer profile </title>
-
-    <head> 
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../../Repeating-pages/topnav/topnav.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!----Profile---->
-        <link rel="stylesheet" href="../../Repeating-pages/sidenav/sidenavigation.css"> 
-        <link rel="stylesheet" href="customerprofile.css">
-         <!-- Boxiocns CDN Link -->
-        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-
-        <?php
-        include '../../Repeating-pages/topnav/topnav2-customer.php'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Profile</title>
+    <link rel="stylesheet" href="customerprofile.css">
+    <link rel="stylesheet" href="../../Repeating-pages/topnav/topnav.css">
+    <link rel="stylesheet" href="../../Repeating-pages/sidenav/sidenavigation.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    
+    <?php 
+          include '../../Repeating-pages/topnav/topnav2-customer.php'
     ?>
 
-    </head>
+</head>
+<body>
+<div class="box1">
 
-    <body>
-        <div class ="heading1" > Profile
-  
+        <!--------------------Side bar---------------------->
+        <div class="sidebar close">
 
-<!-----------------------------------Side navigation--------------------------------------------->
-<div class="sidebar close">
+        <ul class="nav-links">
 
-<ul class="nav-links">
-<li>
-    <a href="../CustomerProfile/customerprofile.php">
-    <i class='bx bxs-user' ></i>
-    <span class="link_name">My Profile</span>
-    </a>
-    <ul class="sub-menu blank">
-    <li><a class="link_name" href="../CustomerProfile/customerprofile.php">My Profile</a></li>
-    </ul>
-</li>
+        <li>
+            <a href="../admin_dashboard/admin_dashboard.php">
+            <i class='bx bxs-dashboard' ></i>
+            <span class="link_name">Dashboard</span>
+            </a>
+            <ul class="sub-menu blank">
+            <li><a class="link_name" href="../admin_dashboard/admin_dashboard.php">Dashboard</a></li>
+            </ul>
+        </li>
 
-<li>
-    <a href="../Changepassword/changepassword.php">
-    <i class='bx bxs-check-shield' ></i>
-    <span class="link_name">Change Password</span>
-    </a>
-    <ul class="sub-menu blank">
-    <li><a class="link_name" href="../Changepassword/changepassword.php">Change Password</a></li>
-    </ul>
-</li>
+        <li>
+            <a href="../Adminprofile/Adminprofile.php">
+                <i class='bx bxs-user' ></i>
+                <span class="link_name">My Profile</span>
+            </a>
+            <ul class="sub-menu blank">
+                <li><a class="link_name" href="../Adminprofile/Adminprofile.php">My Profile</a></li>
+            </ul>
+        </li>
 
-<li>
-    <a href="../Wantedads/wantedads.php">
-    <i class='bx bxs-image' ></i>
-    <span class="link_name">Post Your Ads</span>
-    </a>
-    <ul class="sub-menu blank">
-    <li><a class="link_name" href="../Wantedads/wantedads.php">Post Your Ads</a></li>
-    </ul>
-</li>
 
-<li>
-    <div class="iocn-link">
-    <a href="#">
-        <i class= 'bx bxs-share'></i>
-        <span class="link_name">Responses</span>
-    </a>
-    <i class='bx bxs-chevron-down arrow' ></i>
-    </div>
-    <ul class="sub-menu">
-    <li><a class="link_name" href="#">Responses</a></li>
-    <li><a href="../ResponsesByWorkers/ResponsesbyWorkers.php">Job invite Requests</a></li>
-    <li><a href="../ApplyforJob-Responses/ApplyforJob-customerview.php">Posted Ads</a></li>
-    <!-- <li><a href="#">PHP & MySQL</a></li>-->
-    </ul>
-</li>
-<li>
-    <a href="../RecentWorkers/RecentWorkers.php">
-    <i class= 'bx bxs-group'></i>
-    <span class="link_name">Recent Workers</span>
-    </a>
-    <ul class="sub-menu blank">
-    <li><a class="link_name" href="../RecentWorkers/RecentWorkers.php">Recent Workers</a></li>
-    </ul>
-</li>
-</ul>
+        <li>
+        <a  href="../ManagerPageforAdmin/NewManager.php">
+            <i class='bx bx-street-view' ></i>
+            <span class="link_name">Managers</span>
+            </a>
+            <ul class="sub-menu blank">
+            <!-- <li><a class="link_name" href="../ManagerPageforAdmin/ManagerPageforAdmin.php">Managers</a></li> -->
+            <li><a class="link_name" href="../ManagerPageforAdmin/NewManager.php">Managers</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="../Adddeletecategory/adddelcategory.php">
+            <i class='bx bxs-spreadsheet' ></i>
+            <span class="link_name">Categories</span>
+            </a>
+            <ul class="sub-menu blank">
+            <li><a class="link_name" href="../Adddeletecategory/adddelcategory.php">Categories</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="../category/category.php">
+            <i class='bx bxs-user-check' ></i>
+            <span class="link_name">Registered Users</span>
+            </a>
+            <ul class="sub-menu blank">
+            <li><a class="link_name" href="../category/category.php">Registered Users</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="../Reportpage/reportpage.php">
+            <i class='bx bxs-hand-right' ></i>
+            <span class="link_name">Complaints</span>
+            </a>
+            <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Complaints</a></li>
+            </ul>
+        </li> </li>
+        </ul>
+        </div>
+        <section class="home-section">
+        <div class="home-content">
+        <i class='bx bx-menu' ></i>
+        <!--       <span class="text">Drop Down Sidebar</span>
+        -->    </div>
+        </section>
+
+        <script src="../../Repeating-pages/sidenav/sidenavigation.js"></script>
+
+<!--------------------------End of side nav------------------------------------->
+
+
 </div>
-<section class="home-section">
-<div class="home-content">
-<i class='bx bx-menu' ></i>
-<!--       <span class="text">Drop Down Sidebar</span>
--->    </div>
-</section>
-
-<script src="../../Repeating-pages/sidenav/sidenavigation.js"></script>
+<div class="box2">
+  <div class="txt">  Profile </div> </br>
+    <div class="mainDiv">
+        <div class="cardStyle">
+            <form action="" method="post">
 
 
- <!-----------------------------Form------------------------------------------>
-              <div class=box1>
-                <img src="../../Images/img.png" class="floatRight">
-                <!-- <div > 
-                    <input type="image" id="cam" alt="camera" src="../../Images/cam.png" class="cam">
-                </div> -->
-                <form name = "reg-w" id ="reg-w" action="cust-prof.php" method="post">
-                    <div class="reg-start">
-                            <div class="info">
-                                    <div class="group">
-                                        <p class="field"> <b>Name<b class="red"> * </b> </b></p>
-                                        <input id="name" type="text" placeholder = "Name" class="input" required>
-                                        <input type="image" id="edit" alt="edit" src="../../Images/edit.png" class="edit"> 
-                                    </div>
-                                    <div class="group">
-                                        <p class="field"> <b>Address<b class="red"> * </b> </b></p>
-                                        <input id="Address" type="text" placeholder = "Address" class="input" required>
-                                        <input type="image" id="edit" alt="edit" src="../../Images/edit.png" class="edit"> 
-                                    </div>
-                                    <div class="group">
-                                        <p class="field"> <b>Email<b class="red"> * </b> </b> </p>
-                                        <input id="email" type="email" placeholder = "Email" class="input" required>
-                                        <input type="image" id="edit" alt="edit" src="../../Images/edit.png" class="edit"> 
-                                    </div>
-                                    <div class="group">
-                                        <p class="field"> <b>Contact Number<b class="red"> * </b> </b></p>
-                                        <input id="contact" type="tel" placeholder = "Contact Number" class="input" required>
-                                        <input type="image" id="edit" alt="edit" src="../../Images/edit.png" class="edit"> 
-                                    </div>  
-                        </div>
-                    </div>
-                    <div>
-                <input type="submit" value="Save"  class="button4"> 
-                <input type="reset" value="Delete Account" class="button5"> 
-            </div> 
-                </form>
-              </div>
+                <img src="../../Images/propic.jpg" class="userimg">
+                <input type="file" id="myFile" name="filename">
 
-             
+               
+                <!--<img src="camere.png" alt="camera" class="camera">-->
+                <div class="inputDiv">
+                    <label class="inputLabel" for="name">Name</label> </br>
+                    <input type="text" id="name" placeholder="Kasun Perera" name="name" class="input" required>
+                </div>
+
+
+                <div class="inputDiv">
+                    <label class="inputLabel" for="email">Email</label> </br>
+                    <input type="email" id="email" placeholder="kasun128@gmail.com" name="email" class="input" required>
+                </div>
+
+                <div class="inputDiv">
+                    <label class="inputLabel" for="email"> Current Password</label> </br>
+                    <input type="password" id="email" name="email" class="input" required>
+                </div>
+
+                <div class="inputDiv">
+                    <label class="inputLabel" for="email">New Password </label> </br>
+                    <input type="password" id="email" name="email" class="input" required>
+                </div>
+
+                <div class="inputDiv">
+                    <label class="inputLabel" for="email">Change Password </label> </br>
+                    <input type="password" id="email" name="email" class="input" required>
+                </div>
+
+                <button type="submit" id="submitButton" onclick="validateSignupForm()" class="update">
+                    <span>Update details</span>
+
+                </button>
+
+
+
+            </form>
+        </div>
     </div>
-    </body>
 
-    </html>
+</div>
+
+</body>
+</html>
 
     <?php 
   }

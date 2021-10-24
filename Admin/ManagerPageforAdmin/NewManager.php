@@ -1,4 +1,15 @@
 
+<?php
+session_start();
+if(isset($_SESSION['email'])){
+
+  include '../../Backend/db_connection.php'; //check customer id or not
+  $temp= $_SESSION['email']; 
+  $sql = "SELECT email FROM admin WHERE email='$temp'";
+  $result = mysqli_query($db,$sql);
+  if(mysqli_num_rows($result)>0){ 
+?>
+
 <html lang="en" dir="ltr"></html>
     <title> New Manager </title>
 
@@ -140,3 +151,20 @@
     </body>
 
     </html>
+
+    <?php 
+        }
+        else{
+          echo '<script type="text/javascript">javascript:history.go(-1)</script>'; //redirect to previous page
+          exit();
+        }
+      
+        
+      }
+
+
+          else{
+              header('location:../../Login/Login.php');
+              exit();
+          }
+?>

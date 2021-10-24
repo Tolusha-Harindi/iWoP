@@ -1,4 +1,16 @@
 
+<?php
+session_start();
+if(isset($_SESSION['email'])){
+
+  include '../../Backend/db_connection.php'; //check customer id or not
+  $temp= $_SESSION['email']; 
+  $sql = "SELECT email FROM customer WHERE email='$temp'";
+  $result = mysqli_query($db,$sql);
+  if(mysqli_num_rows($result)>0){ 
+?>
+
+
 <html lang="en" dir="ltr"></html>
     <title> New Manager </title>
 
@@ -22,7 +34,7 @@
     </head>
 
     <body>
-
+    </br> </br> </br> </br> </br> </br>
     <!-----------------------------------Side navigation--------------------------------------------->
         <div class="sidebar close">
 
@@ -95,7 +107,10 @@
 
 <!----------------Dashboard------------------------------->
 
-<div class="heading1"> Dashboard </div> </br>
+<div class="heading1">  </div> 
+ 
+
+<div class="heading1">  Dashboard</div> </br>
 
     <div class="tile-line">
       <div class="row1">
@@ -123,6 +138,20 @@
           <h1>Company Count</h1>
           <h3> 150 </h3>
           <img src="../../Images/company.png" alt="">
+        </div>
+      </div> </br> </br>
+
+      <div class="row3"> 
+        <div class="dash-card" id="card5">
+          <h1> Posted Ads</h1>
+          <h3> 28 </h3>
+          <img src="../../Images/ads1.png" alt="">
+        </div>
+      
+        <div class="dash-card" id="card6">
+          <h1> Deleted Ads</h1>
+          <h3> 30 </h3>
+          <img src="../../Images/trash-bin.png" alt="">
         </div>
       </div>
     </div>
@@ -152,4 +181,21 @@
     </body>
 
     </html>
+
+    <?php 
+  }
+  else{
+    echo '<script type="text/javascript">javascript:history.go(-1)</script>'; //redirect to previous page
+    exit();
+  }
+ 
+  
+}
+
+
+    else{
+        header('location:../../Login/Login.php');
+        exit();
+    }
+?>
    
