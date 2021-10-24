@@ -29,6 +29,13 @@
 
 
     <style>
+         body{
+  font-family: 'Poppins', sans-serif;
+  background-image: url('../../Images/bg5.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
 
         .hr-side {
             width: 100%;
@@ -65,12 +72,6 @@
 
 <body>
 <script src="js/app.js" async defer></script>
-
-<link rel="stylesheet" href="../../Repeating-pages/topnav/topnav.css">
-      <!--------------------------Top nav----------------------------------------->
-      <?php
-        include '../../Repeating-pages/topnav/topnav-manager.php'
-    ?>
 
 
 <div class="main-box">
