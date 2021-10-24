@@ -21,7 +21,6 @@
     text-decoration: none;
     margin-right: 5%;
     margin-top: 0%;
-    
 }
 
 /*--------------------------View Profile button----------------------*/
@@ -130,12 +129,11 @@
 }
 .sidebar{
   position: fixed;
-  margin-top: 50px;
-  margin-bottom: 0%;
+  margin-top: 2%;
   left: 0;
-  height: 95%;
+  height: 50%;
   width: 260px;
-  background: rgb(220, 220, 220);
+  background: gainsboro;
   z-index: 100;
   transition: all 0.5s ease;
 }
@@ -183,8 +181,6 @@
   position: relative;
   list-style: none;
   transition: all 0.4s ease;
-  margin-top: 45px;
-  padding-bottom: 25px;
 }
 .sidebar .nav-links li:hover{
   background:#FFD041;
@@ -223,7 +219,6 @@
   font-weight: 400;
   color: rgb(12, 12, 12);
   transition: all 0.4s ease;
- 
 }
 .sidebar.close .nav-links li a .link_name{
   opacity: 0;
@@ -341,7 +336,7 @@
   position: fixed;
   background: #f9fafc;
   /*height: 100vh;*/
-  margin-top:0px;
+  margin-top:-2%;
   left: 0px;
   width: 0px;
   /*width: calc(100% - 260px);*/
@@ -355,7 +350,7 @@
   /*width: calc(100% - 78px);*/
 }
 .home-section .home-content{
-  height: 20px;
+  height: 60px;
   display: flex;
   align-items: center;
 }
