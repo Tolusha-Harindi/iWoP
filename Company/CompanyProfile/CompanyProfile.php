@@ -31,7 +31,7 @@ if(isset($_SESSION['Email'])){
     </head>
 
     <body>
-        <div class ="heading1" > Profile
+        <div class ="heading1" > Profile</div>
   
 
               <!-----------------------------------Side navigation--------------------------------------------->
@@ -108,9 +108,9 @@ if(isset($_SESSION['Email'])){
 
  <!-----------------------------Form------------------------------------------>
               <div>
-                <img src="../../Images/company.jpg" class="floatRight">
+                <img src="img2.jpg" class="floatRight">
                 <div > 
-                  <input type="image" id="cam" alt="camera" src="../../Images/cam.png" class="cam"> </br>
+                  
                 </div>
                 <form name = "reg-w" onsubmit="return validation()" method="post">
                     <div class="reg-start">
