@@ -87,7 +87,7 @@
         </div>
 
 <div class="header" id="products">
-  <h1>Our Services</h1>
+  <h1>Service Providers</h1>
 </div>
 
 <div class="container" >

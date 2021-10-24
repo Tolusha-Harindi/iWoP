@@ -30,72 +30,64 @@ if(isset($_SESSION['email'])){
 <body>
 <div class="box1">
 
-        <!--------------------Side bar---------------------->
+        <!-----------------------------------Side navigation--------------------------------------------->
         <div class="sidebar close">
 
         <ul class="nav-links">
+        <li>
+            <a href="../CustomerProfile/customerprofile.php">
+            <i class='bx bxs-user' ></i>
+            <span class="link_name">My Profile</span>
+            </a>
+            <ul class="sub-menu blank">
+            <li><a class="link_name" href="../CustomerProfile/customerprofile.php">My Profile</a></li>
+            </ul>
+        </li>
 
         <li>
-            <a href="../admin_dashboard/admin_dashboard.php">
+            <a href="../customer_dashboard/customer_dashboard.php">
             <i class='bx bxs-dashboard' ></i>
             <span class="link_name">Dashboard</span>
             </a>
             <ul class="sub-menu blank">
-            <li><a class="link_name" href="../admin_dashboard/admin_dashboard.php">Dashboard</a></li>
+            <li><a class="link_name" href="../customer_dashboard/customer_dashboard.php">Dashboard</a></li>
             </ul>
         </li>
 
         <li>
-            <a href="../Adminprofile/Adminprofile.php">
-                <i class='bx bxs-user' ></i>
-                <span class="link_name">My Profile</span>
+            <a href="../Wantedads/wantedads.php">
+            <i class='bx bxs-image' ></i>
+            <span class="link_name">Post Your Ads</span>
             </a>
             <ul class="sub-menu blank">
-                <li><a class="link_name" href="../Adminprofile/Adminprofile.php">My Profile</a></li>
-            </ul>
-        </li>
-
-
-        <li>
-        <a  href="../ManagerPageforAdmin/NewManager.php">
-            <i class='bx bx-street-view' ></i>
-            <span class="link_name">Managers</span>
-            </a>
-            <ul class="sub-menu blank">
-            <!-- <li><a class="link_name" href="../ManagerPageforAdmin/ManagerPageforAdmin.php">Managers</a></li> -->
-            <li><a class="link_name" href="../ManagerPageforAdmin/NewManager.php">Managers</a></li>
+            <li><a class="link_name" href="../Wantedads/wantedads.php">Post Your Ads</a></li>
             </ul>
         </li>
 
         <li>
-            <a href="../Adddeletecategory/adddelcategory.php">
-            <i class='bx bxs-spreadsheet' ></i>
-            <span class="link_name">Categories</span>
+            <div class="iocn-link">
+            <a href="#">
+                <i class= 'bx bxs-share'></i>
+                <span class="link_name">Responses</span>
             </a>
-            <ul class="sub-menu blank">
-            <li><a class="link_name" href="../Adddeletecategory/adddelcategory.php">Categories</a></li>
+            <i class='bx bxs-chevron-down arrow' ></i>
+            </div>
+            <ul class="sub-menu">
+            <li><a class="link_name" href="#">Responses</a></li>
+            <li><a href="../ResponsesByWorkers/ResponsesbyWorkers.php">Job invite Requests</a></li>
+            <li><a href="../ApplyforJob-Responses/ApplyforJob-customerview.php">Posted Ads</a></li>
+            <!-- <li><a href="#">PHP & MySQL</a></li>-->
             </ul>
         </li>
-
         <li>
-            <a href="../category/category.php">
-            <i class='bx bxs-user-check' ></i>
-            <span class="link_name">Registered Users</span>
+            <a href="../RecentWorkers/RecentWorkers.php">
+            <i class= 'bx bxs-group'></i>
+            <span class="link_name">Recent Workers</span>
             </a>
             <ul class="sub-menu blank">
-            <li><a class="link_name" href="../category/category.php">Registered Users</a></li>
+            <li><a class="link_name" href="../RecentWorkers/RecentWorkers.php">Recent Workers</a></li>
             </ul>
         </li>
-
-        <li>
-            <a href="../Reportpage/reportpage.php">
-            <i class='bx bxs-hand-right' ></i>
-            <span class="link_name">Complaints</span>
-            </a>
-            <ul class="sub-menu blank">
-            <li><a class="link_name" href="#">Complaints</a></li>
-            </ul>
-        </li> </li>
         </ul>
         </div>
         <section class="home-section">
@@ -118,7 +110,7 @@ if(isset($_SESSION['email'])){
             <form action="" method="post">
 
 
-                <img src="../../Images/propic.jpg" class="userimg">
+                <img src="../../Images/manager.jpg" class="userimg">
                 <input type="file" id="myFile" name="filename">
 
                
@@ -131,6 +123,11 @@ if(isset($_SESSION['email'])){
 
                 <div class="inputDiv">
                     <label class="inputLabel" for="email">Email</label> </br>
+                    <input type="email" id="email" placeholder="kasun128@gmail.com" name="email" class="input" required>
+                </div>
+
+                <div class="inputDiv">
+                    <label class="inputLabel" for="email">Contact Number</label> </br>
                     <input type="email" id="email" placeholder="kasun128@gmail.com" name="email" class="input" required>
                 </div>
 

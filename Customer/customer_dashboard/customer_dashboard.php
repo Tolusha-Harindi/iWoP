@@ -36,73 +36,75 @@ if(isset($_SESSION['email'])){
     <body>
     </br> </br> </br> </br> </br> </br>
     <!-----------------------------------Side navigation--------------------------------------------->
-        <div class="sidebar close">
+    <div class="sidebar close">
 
-        <ul class="nav-links">
-        <li>
-            <a href="../CustomerProfile/customerprofile.php">
-            <i class='bx bxs-user' ></i>
-            <span class="link_name">My Profile</span>
-            </a>
-            <ul class="sub-menu blank">
-            <li><a class="link_name" href="../CustomerProfile/customerprofile.php">My Profile</a></li>
-            </ul>
-        </li>
+<ul class="nav-links">
+<li>
+    <a href="../CustomerProfile/customerprofile.php">
+    <i class='bx bxs-user' ></i>
+    <span class="link_name">My Profile</span>
+    </a>
+    <ul class="sub-menu blank">
+    <li><a class="link_name" href="../CustomerProfile/customerprofile.php">My Profile</a></li>
+    </ul>
+</li>
 
-        <li>
-            <a href="../Changepassword/changepassword.php">
-            <i class='bx bxs-check-shield' ></i>
-            <span class="link_name">Change Password</span>
-            </a>
-            <ul class="sub-menu blank">
-            <li><a class="link_name" href="../Changepassword/changepassword.php">Change Password</a></li>
-            </ul>
-        </li>
+<li>
+    <a href="../customer_dashboard/customer_dashboard.php">
+    <i class='bx bxs-dashboard' ></i>
+    <span class="link_name">Dashboard</span>
+    </a>
+    <ul class="sub-menu blank">
+    <li><a class="link_name" href="../customer_dashboard/customer_dashboard.php">Dashboard</a></li>
+    </ul>
+</li>
 
-        <li>
-            <a href="../Wantedads/wantedads.php">
-            <i class='bx bxs-image' ></i>
-            <span class="link_name">Post Your Ads</span>
-            </a>
-            <ul class="sub-menu blank">
-            <li><a class="link_name" href="../Wantedads/wantedads.php">Post Your Ads</a></li>
-            </ul>
-        </li>
+<li>
+    <a href="../Wantedads/wantedads.php">
+    <i class='bx bxs-image' ></i>
+    <span class="link_name">Post Your Ads</span>
+    </a>
+    <ul class="sub-menu blank">
+    <li><a class="link_name" href="../Wantedads/wantedads.php">Post Your Ads</a></li>
+    </ul>
+</li>
 
-        <li>
-            <div class="iocn-link">
-            <a href="#">
-                <i class= 'bx bxs-share'></i>
-                <span class="link_name">Responses</span>
-            </a>
-            <i class='bx bxs-chevron-down arrow' ></i>
-            </div>
-            <ul class="sub-menu">
-            <li><a class="link_name" href="#">Responses</a></li>
-            <li><a href="../ResponsesByWorkers/ResponsesbyWorkers.php">Job invite Requests</a></li>
-            <li><a href="../ApplyforJob-Responses/ApplyforJob-customerview.php">Posted Ads</a></li>
-            <!-- <li><a href="#">PHP & MySQL</a></li>-->
-            </ul>
-        </li>
-        <li>
-            <a href="../RecentWorkers/RecentWorkers.php">
-            <i class= 'bx bxs-group'></i>
-            <span class="link_name">Recent Workers</span>
-            </a>
-            <ul class="sub-menu blank">
-            <li><a class="link_name" href="../RecentWorkers/RecentWorkers.php">Recent Workers</a></li>
-            </ul>
-        </li>
-        </ul>
-        </div>
-        <section class="home-section">
-        <div class="home-content">
-        <i class='bx bx-menu' ></i>
-        <!--       <span class="text">Drop Down Sidebar</span>
-        -->    </div>
-        </section>
+<li>
+    <div class="iocn-link">
+    <a href="#">
+        <i class= 'bx bxs-share'></i>
+        <span class="link_name">Responses</span>
+    </a>
+    <i class='bx bxs-chevron-down arrow' ></i>
+    </div>
+    <ul class="sub-menu">
+    <li><a class="link_name" href="#">Responses</a></li>
+    <li><a href="../ResponsesByWorkers/ResponsesbyWorkers.php">Job invite Requests</a></li>
+    <li><a href="../ApplyforJob-Responses/ApplyforJob-customerview.php">Posted Ads</a></li>
+    <!-- <li><a href="#">PHP & MySQL</a></li>-->
+    </ul>
+</li>
+<li>
+    <a href="../RecentWorkers/RecentWorkers.php">
+    <i class= 'bx bxs-group'></i>
+    <span class="link_name">Recent Workers</span>
+    </a>
+    <ul class="sub-menu blank">
+    <li><a class="link_name" href="../RecentWorkers/RecentWorkers.php">Recent Workers</a></li>
+    </ul>
+</li>
+</ul>
+</div>
+<section class="home-section">
+<div class="home-content">
+<i class='bx bx-menu' ></i>
+<!--       <span class="text">Drop Down Sidebar</span>
+-->    </div>
+</section>
 
-        <script src="../../Repeating-pages/sidenav/sidenavigation.js"></script>
+<script src="../../Repeating-pages/sidenav/sidenavigation.js"></script>
+
+<!--------------------------End of side nav------------------------------------->
 
 
 <!----------------Dashboard------------------------------->
