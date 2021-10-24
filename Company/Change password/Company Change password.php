@@ -87,10 +87,10 @@ if(isset($_SESSION['Email'])){
 
 <div class="main-box">
     <div class="down-row" style="padding: 50;">
-        <div class="col-left-30" style="padding: 10;">
+        <div class="col-left-30" style="padding: 0;">
      </div>
-        <div class="col-right-70" style="padding: 10;">
-            <h3>Password Change</h3>
+        <div class="col-right-70" style="padding: 0;">
+          
         </div>
     </div>
     <!--------------------------------------- side navigation ------------------------------------>
