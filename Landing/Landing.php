@@ -12,7 +12,7 @@
             <div class="content-wrapper">
                 <h1>Individual Workers Online Platform</h1>
                 <nav>
-                    <a href="home.php">Home</a>
+                    <a href="home/home.php">Home</a>
                     <a href="../Repeating-pages/FAQ/FAQ.php">Help</a>
                    
                 </nav>
