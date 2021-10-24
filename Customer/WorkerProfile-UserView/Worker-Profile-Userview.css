@@ -222,11 +222,11 @@ body{
   /*-------------Pay Button------------*/
   .button1, .button2, .button3{
     background-color: #082690;
-    padding: 16px 20px;
+    padding: 16px 35px;
     color:white;
     border: none;
     border-radius: 0;
-    width: 15%;
+    width: 25%;
     margin-left: 100%;
     margin-top: 0%;
     margin-bottom: 5%;

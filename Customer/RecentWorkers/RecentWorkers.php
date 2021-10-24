@@ -21,7 +21,7 @@ if(isset($_SESSION['email'])){
     <link rel="stylesheet" href="../../Repeating-pages/topnav/topnav.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="RecentWorkers.css">
-    <link rel="stylesheet" href="../../Repeating-pages/sidenav/sidenavigation.css">
+    <!-- <link rel="stylesheet" href="../../Repeating-pages/sidenav/sidenavigation.css"> -->
 
     <!-- Boxiocns CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
@@ -49,12 +49,12 @@ if(isset($_SESSION['email'])){
 </li>
 
 <li>
-    <a href="../Changepassword/changepassword.php">
-    <i class='bx bxs-check-shield' ></i>
-    <span class="link_name">Change Password</span>
+    <a href="../customer_dashboard/customer_dashboard.php">
+    <i class='bx bxs-dashboard' ></i>
+    <span class="link_name">Dashboard</span>
     </a>
     <ul class="sub-menu blank">
-    <li><a class="link_name" href="../Changepassword/changepassword.php">Change Password</a></li>
+    <li><a class="link_name" href="../customer_dashboard/customer_dashboard.php">Dashboard</a></li>
     </ul>
 </li>
 
@@ -102,6 +102,8 @@ if(isset($_SESSION['email'])){
 </section>
 
 <script src="../../Repeating-pages/sidenav/sidenavigation.js"></script>
+
+<!--------------------------End of side nav------------------------------------->
 
 <!----------------------------------------------------Recent workers---------------------------------------->
   

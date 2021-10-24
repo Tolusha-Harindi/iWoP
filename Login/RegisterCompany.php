@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="Login.css">
 
     <?php
-        include '../Repeating-pages/topnav/topnav7-login.php'
+        include '../Repeating-pages/topnav/topnav7-login.php';
     ?>
    
 
