@@ -86,7 +86,7 @@ if(isset($_POST['submit'])){
                 $_SESSION['email']=$usertypes['email'];
                 $_SESSION['contact_No']=$usertypes['contact_No'];
 
-                header('location:../Customer/CustomerProfile/customerprofile.php');
+                header('location:../Customer/customer_dashboard/customer_dashboard.php');
                 exit();
             }
             else{

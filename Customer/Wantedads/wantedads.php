@@ -287,7 +287,7 @@ if(isset($_SESSION['email'])){
             ?> 
 
     <script src="tabs.js">
-
+                // alert("This is an alert message box.");
     </script>
     
 </div>
