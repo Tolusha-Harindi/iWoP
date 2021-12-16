@@ -1,0 +1,134 @@
+.card-link {
+    text-decoration: none;
+}
+
+.card {
+    /* position: relative; */
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 4px 8px 16px lightgray;
+    border-radius: 10px;
+    width: 12vw;
+    height: 28vh;
+    margin-left: 7em;
+    margin-right: 1em;
+    margin-top: 9em;
+    padding: 0 0.5em;
+    display: flex;
+    flex-direction: column;
+    transition: all ease-in-out 0.5s;
+}
+
+.card:hover {
+    box-shadow: 1px 2px 4px gray;
+}
+
+.img1{
+    border-radius: 50px;
+    height: 70px;
+    width: 70px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5em;
+    
+}
+
+.title {
+    color: black;
+    font-weight: 600;
+    font-size: 1em;
+    text-align: center;
+}
+
+.list {
+    /* position: relative; */
+    top: 1em;
+    font-size: 15px;
+    color: white;
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.list > li {
+    background-color: #0526BA;
+    border-radius: 5px;
+    margin: 3px 25px;
+    padding: 6px 0;
+    transition: all ease-in-out 0.5s;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.5);
+}
+
+.list > li:hover, .side-list > li:hover, .side-list-active > li:hover {
+    color: black;
+    background: orange;
+}
+
+
+/*-------------------sidenav bar---------------------*/
+.sidebar {
+    /* position: relative; */
+    cursor: pointer;
+    background: white;
+    box-shadow: 4px 8px 16px lightgray;
+    border-radius: 10px;
+    width: 14vw;
+    margin-left: 6em;
+    margin-right: 1em;
+    margin-top: 3em;
+    padding: 1.5em 0.5em 1em;
+    display: flex;
+    flex-direction: column;
+    transition: all ease-in-out 0.5s;
+}
+
+.side-link-active{
+    text-decoration: none;
+}
+
+.side-list-active {
+    /* position: relative; */
+    top: 2em;
+    font-size: 15px;
+    color: white;
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.side-list-active > li {
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.5);
+    background-color: #0526BA;
+    border-radius: 5px;
+    margin: 3px 10px;
+    padding: 10px 0;
+    transition: all ease-in-out 0.5s;
+    margin-bottom: 0.8em;
+}
+
+.side-link{
+    text-decoration: none;
+}
+
+.side-list{
+    /* position: relative; */
+    top: 5em;
+    font-size: 15px;
+    color: black;
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.side-list > li {
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    margin: 3px 10px;
+    padding: 10px 0;
+    transition: all ease-in-out 0.5s;
+    margin-bottom: 0.8em;
+}
