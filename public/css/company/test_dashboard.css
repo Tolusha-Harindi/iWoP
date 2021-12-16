@@ -1,0 +1,167 @@
+.right {
+    width: 100%;
+  }
+
+.dashboard{
+    font-family: 'Rancho', sans-serif;
+    font-size:45px;
+    margin-left: 53%;
+    color:#051A77;
+    margin-top: -15em;
+}
+
+.heading{
+    font-family: 'Rancho', sans-serif;
+    color:#051A77; 
+    font-size:30px;
+    margin-top: 1em;
+    margin-left: 18em;
+}
+
+.tile-line{
+    
+    margin-left: 33em;
+    margin-top: 2em;
+    margin-bottom: 20px;
+}
+
+.tile-line .row1{
+    display: flex;
+    margin-bottom: 3em;
+}
+
+.dash-card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    color: rgb(17, 16, 16);
+    width: 16em;
+    height: 6em;
+    text-align: center;
+    border-radius: 5px;
+    float: right;
+    transition: 0.3s;
+    margin-right: 30px;
+    transition: all ease-in-out 0.5s;
+}
+
+
+/* h1:hover{
+    color: whitesmoke;
+} */
+
+
+#card1{
+    background-color: #EF8677;
+    color: whitesmoke;
+}
+
+#card2{
+    background-color: #A4DE02;
+    color: whitesmoke;
+}
+
+#card3{
+    background-color: #00BCD4;
+    color: whitesmoke;
+}
+
+#card1:hover, #card2:hover, #card3:hover{
+    background-color: rgb(187, 184, 184);
+    color: white;
+}
+
+
+/* .dash-card:hover{
+    background-color: #19B6FA;
+    color: black;
+} */
+
+.dash-card h1{
+
+    text-align: left;
+    margin-bottom: 2px;
+    padding-left: 30px;
+    font-size: 28px;
+    transition: 0.3s;
+    color: whitesmoke;
+}
+
+.dash-card h3{
+
+    text-align: left;
+    margin-top: 10px;
+    padding-left: 30px;
+    font-size: 16px;
+    margin-bottom: 2px;
+    transition: 0.3s;
+    color: rgb(104, 102, 102);
+}
+
+.dash-card img{
+    width: 46px;
+    height: 46px;
+    float: right;
+    margin-right: 14px;
+    margin-top:-16%;
+}
+
+
+/*-------Top 5 jobs-----------*/
+.dash-card-top{
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    color: rgb(17, 16, 16);
+    width: 8em;
+    height: 8em;
+    text-align: center;
+    border-radius: 5px;
+    transition: all ease-in-out 0.5s;
+    margin-right: 40px;
+    align-items: center;
+}
+
+.dash-card-top:hover {
+    box-shadow: 1px 2px 4px gray;
+}
+
+.dash-card-top img{
+    width: 50px;
+    height: 50px;
+    margin-top:0.5em;
+}
+
+.dash-card-top p{
+    margin-top: 2em;
+    font-size: 14px;
+    transition: 0.3s;
+    color: black;
+}
+
+/*-------------Top 5 service providers-------------*/
+.dash-card-top-service{
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    color: rgb(17, 16, 16);
+    width: 8em;
+    text-align: center;
+    border-radius: 5px;
+    transition: all ease-in-out 0.5s;
+    margin-right: 40px;
+    align-items: center;
+}
+
+.dash-card-top-service:hover {
+    box-shadow: 1px 2px 4px gray;
+}
+
+.dash-card-top-service img{
+    width: 50px;
+    height: 50px;
+    margin-top:0.5em;
+}
+
+.dash-card-top-service p{
+    margin-top: 1em;
+    font-size: 14px;
+    transition: 0.3s;
+    color: black;
+}

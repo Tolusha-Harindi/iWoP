@@ -1,0 +1,43 @@
+.calender{
+    margin-left: 23em;
+    margin-top: 2em;
+    margin-bottom: 20px;
+    background-color: aquamarine;
+}
+
+.calender .row-01{
+    display: flex;
+    margin-bottom: 3em;
+    background-color: bisque;
+}
+
+.day-time{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    color: rgb(17, 16, 16);
+    width: 28em;
+    height: 18em;
+    text-align: center;
+    border-radius: 5px;
+    float: right;
+    transition: 0.3s;
+    margin-right: 40px;
+    transition: all ease-in-out 0.5s;
+}
+
+.date p{
+    font-size: 3em;
+    text-align: left;
+}
+
+.scheduling{
+    margin-left: 23em;
+    margin-top: 2em;
+    margin-bottom: 20px;
+    background-color: aquamarine;
+}
+
+.scheduling .row-01{
+    display: flex;
+    margin-bottom: 3em;
+    background-color: bisque;
+}
