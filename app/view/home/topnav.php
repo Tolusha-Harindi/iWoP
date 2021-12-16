@@ -13,52 +13,53 @@
 </head>
 <body>
 
-<nav class = "navbar">
-    <ul class="link-list">
-        <div class='logo-container'>
-            <a href="#" class="anchor-tag-logo">iWoP</a>
-        </div>
+<div class="fade-in">
+    <nav class = "navbar">
+        <ul class="link-list">
+            <div class='logo-container'>
+                <a href="#" class="anchor-tag-logo">iWoP</a>
+            </div>
+            
+            <li class="link"> 
+                <a href="#" class="anchor-tag"> <i class="fa fa-bell" aria-hidden="true"></i> </a>
+            </li>
+            <li class="link"> 
+                <a href="#" class="anchor-tag"> Home </a>
+            </li>
+            <li class="link"> 
+                <a href="#" class="anchor-tag"> FAQ </a>
+            </li>
+            <li class="link"> 
+                <a href="#" class="anchor-tag"> Services </a>
+            </li>
+            <li class="link"> 
+                <a href="#" class="anchor-tag"> About Us </a>
+            </li>
+            <li class="link"> 
+                <a href="#" class="anchor-tag"> Logout </a>
+            </li>
         
-        <li class="link"> 
-            <a href="#" class="anchor-tag"> <i class="fa fa-bell" aria-hidden="true"></i> </a>
-        </li>
-        <li class="link"> 
-            <a href="#" class="anchor-tag"> Home </a>
-        </li>
-        <li class="link"> 
-            <a href="#" class="anchor-tag"> FAQ </a>
-        </li>
-        <li class="link"> 
-            <a href="#" class="anchor-tag"> Services </a>
-        </li>
-        <li class="link"> 
-            <a href="#" class="anchor-tag"> About Us </a>
-        </li>
-        <li class="link"> 
-            <a href="#" class="anchor-tag"> Logout </a>
-        </li>
-       
-        <li class="link"> 
-            <a href="#" class="anchor-tag" style="font-size: 1.2em;"><i class="fa fa-user" aria-hidden="true"></i> </a>
-            <!-- <div class="dropdown">
-                <button class="dropbtn" style="font-size: 1.2em;">
-                <a href="#" class="anchor-tag"><i class="fa fa-user" aria-hidden="true"></i> </a>
-                <i class="fa fa-caret-down"></i> 
-                </button>
-                <div class="dropdown-content">
-                    <a href="#"><i class="fa fa-user" aria-hidden="true"></i> My Profile</a>
-                    <a href="#"><i class="fa fa-print" aria-hidden="true"></i> Post Ads</a>
-                    <a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a>
-                </div> 
-            </div> -->
-        </li> 
+            <li class="link"> 
+                <a href="#" class="anchor-tag" style="font-size: 1.2em;"><i class="fa fa-user" aria-hidden="true"></i> </a>
+                <!-- <div class="dropdown">
+                    <button class="dropbtn" style="font-size: 1.2em;">
+                    <a href="#" class="anchor-tag"><i class="fa fa-user" aria-hidden="true"></i> </a>
+                    <i class="fa fa-caret-down"></i> 
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#"><i class="fa fa-user" aria-hidden="true"></i> My Profile</a>
+                        <a href="#"><i class="fa fa-print" aria-hidden="true"></i> Post Ads</a>
+                        <a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a>
+                    </div> 
+                </div> -->
+            </li> 
 
-        <!-- <li class="link">
-        <a href="#" class='anchor-tag'>
-            <img src="../../public/img/4140048.png" class='logo' alt='logo' />
-        </a>
-        </li>-->
-    </ul>
-</nav>
+            <!-- <li class="link">
+            <a href="#" class='anchor-tag'>
+                <img src="../../public/img/4140048.png" class='logo' alt='logo' />
+            </a>
+            </li>-->
+        </ul>
+    </nav>
 
 
