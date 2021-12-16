@@ -2,7 +2,7 @@
 <link rel='stylesheet' href="../../../public/css/home/sidenav.css"/>
 
 
-    <a class='card-link'>
+    <a href="admin_profile.php" class='card-link'>
         <div class="card">
             <div class="img-container">
                 <img src="../../../public/img/4140048.png" alt="propic" class="img1"/>
