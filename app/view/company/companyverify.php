@@ -106,7 +106,10 @@
     </form>
 </div>
 
-
+<!---------------------------Arrow button----------------------------------------->
+<div class="arrow">
+	<a href="#"><img src="../../../public/img/arrow.png" alt="up_arrow"></a>
+</div> 
 
 
 <?php include("../home/footer.php"); ?>

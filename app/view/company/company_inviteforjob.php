@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
 
 <!--------------------------search bar------------------------------->
-<div class="wrap" style="margin top:50px;">
+<div class="wrap" style="margin-top:50px;">
     <div class="search">
         <input type="text" class="searchTerm" placeholder="Search">
         <button type="submit" class="searchButton">
@@ -629,8 +629,13 @@
         </div>
     </div>
 
-    <!------------------Java Script------------------------------->
-    <script type="text/javascript" src="../../../public/js/pink-button-popup.js"> 
-    </script>
+<!------------------Java Script------------------------------->
+<script type="text/javascript" src="../../../public/js/pink-button-popup.js"> 
+</script>
+
+<!---------------------------Arrow button----------------------------------------->
+<div class="arrow">
+	<a href="#"><img src="../../../public/img/arrow.png" alt="up_arrow"></a>
+</div> 
 
 <?php include("../home/footer.php"); ?>
