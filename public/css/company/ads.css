@@ -75,14 +75,14 @@ label {
 }
   
 
-.ad-col-35 {
+.ad-col-40 {
     float: left;
-    width: 35%;
+    width: 40%;
   }
   
-  .ad-col-65 {
+  .ad-col-60 {
     float: left;
-    width: 65%;
+    width: 60%;
   }
   
   /* Clear floats after the columns */
