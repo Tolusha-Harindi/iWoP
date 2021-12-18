@@ -20,56 +20,56 @@
 <div class="heading" id="due" style="margin-top: 2em; margin-bottom: 1.5em;"> <p> Due Payments List </p> </div>
 
 <!------------------- due payments table-------------------->
-    <div class= "table"> 
-        <div class="table-wrapper">
-            <table style="border-spacing: 25px" class="fl-table">
-                <thead>
-                    <tr>
-                        <th>Profile Pic</th>
-                        <th>Name</th>
-                        <th>Status</th>
-                        <th>Pay</th>
-                        <th>Message</th>
-                    </tr>
-                </thead>
-                <tbody>
-                
-                    <tr>
-                        <td><img src="../../../public/img/admin.jpg" class="table-image" style="border-radius: 50px;"></td>
-                        <td>Kasun Perera</td>
-                        <td style="color: #F10B67;">Due Payment</td>
-                        <td> <button  id="myBtn" class="yellow-out-button">Pay </button></td>
-                        <td> <input type="reset" class="blue-out-button" value="Message"/></td>
-                    </tr>
+<div class= "table"> 
+    <div class="table-wrapper">
+        <table style="border-spacing: 25px" class="fl-table">
+            <thead>
+                <tr>
+                    <th>Profile Pic</th>
+                    <th>Name</th>
+                    <th>Status</th>
+                    <th>Pay</th>
+                    <th>Message</th>
+                </tr>
+            </thead>
+            <tbody>
+            
+                <tr>
+                    <td><img src="../../../public/img/admin.jpg" class="table-image" style="border-radius: 50px;"></td>
+                    <td>Kasun Perera</td>
+                    <td style="color: #F10B67;">Due Payment</td>
+                    <td> <button  id="myBtn" class="yellow-out-button">Pay </button></td>
+                    <td> <input type="reset" class="blue-out-button" value="Message"/></td>
+                </tr>
+
+                <tr>
+                    <td><img src="../../../public/img/w1.jpg" class="table-image" style="border-radius: 50px;"></td>
+                    <td>Nishini Guruge</td>
+                    <td style="color: #F10B67;">Due Payment</td>
+                    <td> <button  id="myBtn" class="yellow-out-button">Pay </button></td>
+                    <td> <input type="reset" class="blue-out-button" value="Message"/></td>
+                </tr>
+
+                <tr>
+                    <td><img src="../../../public/img/w2.jpg" class="table-image" style="border-radius: 50px;"></td>
+                    <td>Sandani Perera</td>
+                    <td style="color: #F10B67;">Due Payment</td>
+                    <td> <button  id="myBtn" class="yellow-out-button">Pay </button></td>
+                    <td> <input type="reset" class="blue-out-button" value="Message"/></td>
+                </tr>
 
                     <tr>
-                        <td><img src="../../../public/img/w1.jpg" class="table-image" style="border-radius: 50px;"></td>
-                        <td>Nishini Guruge</td>
-                        <td style="color: #F10B67;">Due Payment</td>
-                        <td> <button  id="myBtn" class="yellow-out-button">Pay </button></td>
-                        <td> <input type="reset" class="blue-out-button" value="Message"/></td>
-                    </tr>
+                    <td><img src="../../../public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td>
+                    <td>Nimal Perera</td>
+                    <td style="color: #F10B67;">Due Payment</td>
+                    <td> <button  id="myBtn" class="yellow-out-button">Pay </button></td>
+                    <td> <input type="reset" class="blue-out-button" value="Message"/></td>
+                </tr>
 
-                    <tr>
-                        <td><img src="../../../public/img/w2.jpg" class="table-image" style="border-radius: 50px;"></td>
-                        <td>Sandani Perera</td>
-                        <td style="color: #F10B67;">Due Payment</td>
-                        <td> <button  id="myBtn" class="yellow-out-button">Pay </button></td>
-                        <td> <input type="reset" class="blue-out-button" value="Message"/></td>
-                    </tr>
-
-                     <tr>
-                        <td><img src="../../../public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td>
-                        <td>Nimal Perera</td>
-                        <td style="color: #F10B67;">Due Payment</td>
-                        <td> <button  id="myBtn" class="yellow-out-button">Pay </button></td>
-                        <td> <input type="reset" class="blue-out-button" value="Message"/></td>
-                    </tr>
-
-                </tbody>
-            </table> 
-        </div> 
-    </div>
+            </tbody>
+        </table> 
+    </div> 
+</div>
 
 
 <!------------------------------------------------------------popoup window-------------------------------------------------->
@@ -106,61 +106,61 @@
 <div class="heading" id="paid"> <p> Paid List </p> </div>
 
 <!------------------- Customer table-------------------->
-    <div class= "table"> 
-        <div class="table-wrapper" style="margin-top: 3em;">
-            <table  class="fl-table" style="border-spacing: 25px;">
-                <thead>
-                    <tr>
-                        <th>Profile Pic</th>
-                        <th>Name</th>
-                        <th>Date</th>
-                        <th>Status</th>
-                        <th>Category</th>
-                        <th>Message</th>
-                    </tr>
-                </thead>
-                <tbody>
-                
-                    <tr>
-                        <td><img src="../../../public/img/w1.jpg" class="table-image" style="border-radius: 50px;"></td>
-                        <td> Nishini Guruge</td>
-                        <td>10/10/2021</td>
-                        <td style="color: #0526BA;">Paid</td>
-                        <td>Plumber</td>
-                        <td> <input type="reset" class="blue-out-button" value="Message"/></td>
-                    </tr>
+<div class= "table"> 
+    <div class="table-wrapper" style="margin-top: 3em;">
+        <table  class="fl-table" style="border-spacing: 25px;">
+            <thead>
+                <tr>
+                    <th>Profile Pic</th>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                    <th>Category</th>
+                    <th>Message</th>
+                </tr>
+            </thead>
+            <tbody>
+            
+                <tr>
+                    <td><img src="../../../public/img/w1.jpg" class="table-image" style="border-radius: 50px;"></td>
+                    <td> Nishini Guruge</td>
+                    <td>10/10/2021</td>
+                    <td style="color: #0526BA;">Paid</td>
+                    <td>Plumber</td>
+                    <td> <input type="reset" class="blue-out-button" value="Message"/></td>
+                </tr>
+
+                <tr>
+                    <td><img src="../../../public/img/w2.jpg" class="table-image" style="border-radius: 50px;"></td>
+                    <td> Nishini Guruge</td>
+                    <td>10/10/2021</td>
+                    <td style="color: #0526BA;">Paid</td>
+                    <td>Plumber</td>
+                    <td> <input type="reset" class="blue-out-button" value="Message"/></td>
+                </tr>
+
+                <tr>
+                    <td><img src="../../../public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td>
+                    <td> Nishini Guruge</td>
+                    <td>10/10/2021</td>
+                    <td style="color: #0526BA;">Paid</td>
+                    <td>Plumber</td>
+                    <td> <input type="reset" class="blue-out-button" value="Message"/></td>
+                </tr>
 
                     <tr>
-                        <td><img src="../../../public/img/w2.jpg" class="table-image" style="border-radius: 50px;"></td>
-                        <td> Nishini Guruge</td>
-                        <td>10/10/2021</td>
-                        <td style="color: #0526BA;">Paid</td>
-                        <td>Plumber</td>
-                        <td> <input type="reset" class="blue-out-button" value="Message"/></td>
-                    </tr>
+                    <td><img src="../../../public/img/admin.jpg" class="table-image" style="border-radius: 50px;"></td>
+                    <td> Nishini Guruge</td>
+                    <td>10/10/2021</td>
+                    <td style="color: #0526BA;">Paid</td>
+                    <td>Plumber</td>
+                    <td> <input type="reset" class="blue-out-button" value="Message"/></td>
+                </tr>
 
-                    <tr>
-                        <td><img src="../../../public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td>
-                        <td> Nishini Guruge</td>
-                        <td>10/10/2021</td>
-                        <td style="color: #0526BA;">Paid</td>
-                        <td>Plumber</td>
-                        <td> <input type="reset" class="blue-out-button" value="Message"/></td>
-                    </tr>
-
-                     <tr>
-                        <td><img src="../../../public/img/admin.jpg" class="table-image" style="border-radius: 50px;"></td>
-                        <td> Nishini Guruge</td>
-                        <td>10/10/2021</td>
-                        <td style="color: #0526BA;">Paid</td>
-                        <td>Plumber</td>
-                        <td> <input type="reset" class="blue-out-button" value="Message"/></td>
-                    </tr>
-
-                </tbody>
-            </table> 
-        </div> 
-    </div>
+            </tbody>
+        </table> 
+    </div> 
+</div>
 
     <!---------------------------Arrow button----------------------------------------->
     <div class="arrow">
