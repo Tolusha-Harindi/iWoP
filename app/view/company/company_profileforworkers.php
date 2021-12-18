@@ -230,7 +230,7 @@ table,th,td{
 
  <div class="company-dis">
      <!-- last active -->
-      <h5>Last Active 2 days ago</h5>
+      <!-- <h5>Last Active 2 days ago</h5> -->
             <div class="img-container">
                 <img src="../../../public/img/comp.png" alt="propic" class="img1"/>
             </div>
@@ -326,8 +326,8 @@ table,th,td{
 </div>
 <!-- rating stars -->
 <div class="star-container">
-  <input type="radio" name="star" id="five">
-  <label for="five">
+    <input type="radio" name="star" id="five">
+    <label for="five">
     <svg class="star">
       <use xlink:href="#star"/>
     </svg>
