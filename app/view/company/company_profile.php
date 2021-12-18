@@ -100,5 +100,9 @@
 </br> </br>
 <input type="reset" value="Delete Account" class="pink-button" style="float: right; margin-right:13.2em;">
 
+<!---------------------------Arrow button----------------------------------------->
+<div class="arrow">
+	<a href="#"><img src="../../../public/img/arrow.png" alt="up_arrow"></a>
+</div> 
 
 <?php include("../home/footer.php"); ?>

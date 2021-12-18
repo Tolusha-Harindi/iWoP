@@ -57,13 +57,14 @@
 }
 
 .companyname{
-    font size:10px;
+    font-size:10px;
     /* margin-left:150px; */
     font-weight:bold;
     text-align:center;
 }
+
 .user_ratings{
-    font size:8px;
+    font-size:8px;
     /* margin-left:125px; */
     font-weight:bold;
     color:blue;
@@ -71,7 +72,7 @@
 }
 .ex{
     color:rgba(241, 11, 103, 1);
-    font size:10px;
+    font-size:10px;
     /* margin-left:120px; */
     text-align:center;
 }
@@ -500,5 +501,10 @@ table,th,td{
     <!------------------Java Script------------------------------->
     <script type="text/javascript" src="../../../public/js/pink-button-popup.js"> 
     </script>
+
+<!---------------------------Arrow button----------------------------------------->
+<div class="arrow">
+	<a href="#"><img src="../../../public/img/arrow.png" alt="up_arrow"></a>
+</div> 
 
 <?php include("../home/footer.php"); ?>
