@@ -1,7 +1,7 @@
 <link rel='stylesheet' href="../../../public/css/home/sidenav.css"/>
 
 
-<a class='card-link'>
+<a href="worker_profile.php" class='card-link'>
     <div class="card">
         <div class="img-container">
             <img src="../../../public/img/w3.jpg" alt="propic" class="img1"/>

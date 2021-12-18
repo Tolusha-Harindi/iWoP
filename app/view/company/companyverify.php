@@ -7,9 +7,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
 
 
-<!-- <a href="#my-profile" class="top-button1" style="margin-top:-550px ;"> My Profile </a> -->
-<!-- <a href="#change-password" class="top-button2" style="margin-top: -550px;"> Change Password </a> -->
-<!-- -14em -->
 <!------heading----------->
 <div class="category" id="my-profile" style="margin-top: -14em;"> <p> My Profile </p> </div>
 
