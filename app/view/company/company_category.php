@@ -4,6 +4,7 @@
 <?php include("../home/company_sidenav.php"); ?>
 
 <link rel='stylesheet' href="../../../public/css/company/category.css"/>
+<link rel='stylesheet' href="../../../public/css/home/button.css"/>
 <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
 
 <div class="headingcategory"> Categories</div>

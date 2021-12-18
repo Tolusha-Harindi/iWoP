@@ -4,19 +4,20 @@
 <?php include("../home/company_sidenav.php"); ?>
 
 <link rel='stylesheet' href="../../../public/css/company/dashboard.css"/>
+<link rel='stylesheet' href="../../../public/css/home/button.css"/>
 <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
 
 
 
 <!------heading----------->
-<div class="dashboard"> <p> Dashboard </p> </div>
+<div class="dashboard" style="margin-top: -14em;"> <p> Dashboard </p> </div>
 
 <!------------------------------------------------- dashboard count boxes----------------------------------------------------------->
 <div class="tile-line">
     <div class="row1">
 
         <div class="dash-card" id="card1">
-            <h3>Manager Count</h3>
+            <h3>Messages Count</h3>
             <h1> 28 </h1>
             <img src="../../../public/img/manager.png" alt="">
         </div>
@@ -28,75 +29,32 @@
         </div>
 
         <div class="dash-card" id="card3">
-            <h3>Pending Ads Count</h3>
+            <h3>Recent workers Count</h3>
             <h1> 255 </h1>
             <img src="../../../public/img/ads1.png" alt="">
         </div>
 
     </div>
 
-    <div class="row1">
-
-        <div class="dash-card" id="card1">
-            <h3>Customer Complaint Count</h3>
-            <h1> 28 </h1>
-            <img src="../../../public/img/complaint1.png" alt="">
-        </div>
-
-        <div class="dash-card" id="card2">
-            <h3>Worker Complaint Count</h3>
-            <h1> 255 </h1>
-            <img src="../../../public/img/complaint2.png" alt="">
-        </div>
-
-        <div class="dash-card" id="card3">
-            <h3>Company Complaint Count</h3>
-            <h1> 255 </h1>
-            <img src="../../../public/img/complaint3.png" alt="">
-        </div>
-
-    </div>
 
     <div class="row1">
 
         <div class="dash-card" id="card1">
-            <h3>Customers Count</h3>
-            <h1> 28 </h1>
-            <img src="../../../public/img/customer.png" alt="">
-        </div>
-
-        <div class="dash-card" id="card2">
-            <h3>Workers Count</h3>
-            <h1> 255 </h1>
-            <img src="../../../public/img/worker.png" alt="">
-        </div>
-
-        <div class="dash-card" id="card3">
-            <h3>Companies Count</h3>
-            <h1> 255 </h1>
-            <img src="../../../public/img/company.png" alt="">
-        </div>
-
-    </div>
-
-    <div class="row1">
-
-        <div class="dash-card" id="card1">
-            <h3>Removed Customers Count</h3>
+            <h3>Posted Ads Count</h3>
             <h1> 28 </h1>
             <img src="../../../public/img/customer-remove.png" alt="">
         </div>
 
         <div class="dash-card" id="card2">
-            <h3>Removed Workers Count</h3>
+            <h3>Deletedted Ads Count</h3>
             <h1> 255 </h1>
             <img src="../../../public/img/worker-remove.png" alt="">
         </div>
 
         <div class="dash-card" id="card3">
-            <h3>Removed Companies Count</h3>
+            <h3>Accepted count by workers</h3>
             <h1> 255 </h1>
-            <img src="../../../public/img/comp-remove.png" alt="">
+            <img src="../../../public/img/ads1.png" alt="">
         </div>
 
     </div>
