@@ -146,7 +146,7 @@
     </div>
 
 
-<!---------------------------------------Job invite responses---------------------------------------->
+	<!---------------------------------------Job invite responses---------------------------------------->
 <div class="heading" id="responses" style="margin-top: 15em; margin-left:15em;"> <p> Job invite responses </p> </div>
 
 <div class= "table" style="margin-left:-7em;"> 
