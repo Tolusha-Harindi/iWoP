@@ -78,7 +78,7 @@
 
 
 <!------------------------------------------------------Top five categories------------------------------------------------------>
-<div class="heading"> <p> Top Five Job Categories </p> </div>
+<div class="heading"> <p> Top Job Categories </p> </div>
 
 <div class="tile-line">
     <div class="row1">
@@ -114,7 +114,7 @@
 
 
 <!------------------------------------------------------Top five Service Providers------------------------------------------------------>
-<div class="heading"> <p> Top Five Service Providers </p> </div>
+<div class="heading"> <p> Top Service Providers </p> </div>
 
 <div class="tile-line">
     <div class="row1">
