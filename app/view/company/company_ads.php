@@ -1,143 +1,28 @@
-
 <?php include("../home/topnav.php"); ?>
 
 <?php include("../home/company_sidenav.php"); ?>
 
-<link rel='stylesheet' href="../../../public/css/home/button.css"/>
-<link rel='stylesheet' href="../../../public/css/company/ads.css"/>
-<link rel='stylesheet' href="../../../public/css/home/popup.css"/>
 <link rel='stylesheet' href="../../../public/css/home/table.css"/>
-
-
-
+<link rel='stylesheet' href="../../../public/css/home/button.css"/>
+<link rel='stylesheet' href="../../../public/css/customer/ads.css"/>
+<link rel='stylesheet' href="../../../public/css/home/popup.css"/>
 <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
 
-<style>
-   .right-upper{
-       width:70%;
-       height:600px;
-       margin-left:350px;
-      
-   }
-   .pink-outer-button{
-    border-radius:5px;
-    border: none;
-    color:#F10B67 ;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    background-color: white; 
- 
-     border: 2px solid  #F10B67;
-   }
 
-   .pink-outer-button:hover{
-    background-color:#f0488b ;
-    color: white;
-   }
-   .title{
-       left:-25px;
-   }
-   .dis{
-       margin-left:30px;
-   }
-   .worker-request{
-       /* background-color:white; */
-       height:400px;
-       width:95%;
-       /* border:2px solid green;  */
-       margin-left:20px;
-       /* box-shadow: 4px 8px 16px lightgray; */
-
-   }
-   table{
-       
-       width: 100%;
-       background: white;
-    box-shadow: 4px 8px 16px lightgray;
-
-   }
-   .request{
-    background: white;
-    box-shadow: 4px 8px 16px lightgray;
-   
-    border:2px solid white; 
-   }
-   .pink-button2{
-    background: #F10B67;
-    color: white;
-    border:none;
-    padding: 8px 25px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.pink-button2:hover{
-    background: #f0488b;
-}
-td {
-  text-align: center;
-}
-
-input[type=tel]{
-    width: 91%;
-    padding: 10px;
-    border: 1px solid #6f7dd8;
-    border-radius: 4px;
-    resize: vertical;
-    box-sizing: border-box;
-}
-#category{
-    width: 91%;
-    padding: 10px;
-    border: 1px solid #6f7dd8;
-    border-radius: 4px;
-    resize: vertical;
-    box-sizing: border-box;
-    
-    
-    /* margin: 0 auto;*/
-    }
-
- /* #work{
-    width: 91%;
-    padding: 10px;
-    border: 1px solid #6f7dd8;
-    border-radius: 4px;
-    resize: vertical;
-    
- }    */
-
-</style>
-                
+<a href="#post-new-ad" class="top-button1" style="margin-top: -37em;margin-left:78em; width:10em;"> Post a New ad </a>
+<a href="#posted-ads" class="top-button3" style="margin-top: -37em; margin-left:65em; width:8em;"> Posted Ads</a>
 
 
-<a href="#post a new Ad" class="top-button1" style="margin-top:-550px"> Post a new Ad  </a>
-<a href="#Posted ads" class="top-button2" style="margin-top: -550px;"> Posted Ads </a>
- <div class="right-upper" style=" border:1px solid white; margin-top: -500px">
+<div class="heading" id="posted-ads" style="margin-top: -18em; margin-left:15em;"> <p>Requests for posted Ads </p> </div>
+<div class="customer-ad" >
+    <div class="ad-space-row">
+            <!----------------------------------------posted-ad------------------------------------------------------------>
+            <div class="ad-space" style="margin-left:-0.5em;">
 
- 
- <div class="heading1" style="font-family:Rancho; font-size:35px; margin-left:65px;"> <p> Requested for posted Ads </p> </div>
-            <!---------------------------------------------------------------------------------------------------->
-            <div class="ad-space">
-                    <div class="img-user">
-                        <button class="pink-outer-button" style="margin-left:250px;">
-                             Delete
-                        </button>
-                    </div>
-                    <p class="title"> Need a Plumber</p>
-
-                    <p class="dis">
-                        Need a well experienced plumber 
-                    </p>
+                    <p class="title1" style="margin-top:1.5em"> Need a Plumber</p>
                         <div class="ad-row">
                             <div class="ad-col-35">
-                                <label for="name1"><b>Category:</b> </label>
+                                <label for="name"> <b>Category :</b> </label>
                             </div>
                             <div class="ad-col-65">
                                 <p class="detail">Plumber </p>
@@ -146,43 +31,52 @@ input[type=tel]{
 
                         <div class="ad-row">
                             <div class="ad-col-35">
-                                <label for="name">&nbsp<b>Location:</b> </label>
+                                <label for="name"> <b>Contact :</b> </label>
                             </div>
                             <div class="ad-col-65">
-                                <p class="detail">Galle</p>
+                                <p class="detail">071 777 7778 </p>
                             </div>
                         </div>
 
                         <div class="ad-row">
                             <div class="ad-col-35">
-                                <label for="name"> &nbsp<b>Contact:</b> </label>
+                                <label for="name"> <b>Location :</b> </label>
                             </div>
                             <div class="ad-col-65">
-                                <p class="detail"> 077-1452683</p>
+                                <p class="detail">Colombo </p>
                             </div>
                         </div>
 
                         <div class="ad-row">
                             <div class="ad-col-35">
-                                <label for="name"> <b>Start date:</b> </label>
+                                <label for="name"> <b>Description :</b> </label>
                             </div>
                             <div class="ad-col-65">
-                                <p class="detail">12/20/2021 </p>
+                                <p class="detail"> Need a well experienced plumber </p>
                             </div>
                         </div>
 
                         <div class="ad-row">
                             <div class="ad-col-35">
-                                <label for="name"> <b>End date:</b> </label>
+                                <label for="date"> <b>Start Date :</b> </label>
                             </div>
                             <div class="ad-col-65">
-                                <p class="detail">20/20/2021 </p>
+                                <p class="detail"> 10/10/2021 </p>
                             </div>
                         </div>
 
                         <div class="ad-row">
                             <div class="ad-col-35">
-                                <label for="name"> <b>Budget :</b> </label>
+                                <label for="date"> <b>End Date :</b> </label>
+                            </div>
+                            <div class="ad-col-65">
+                                <p class="detail"> 10/10/2021 </p>
+                            </div>
+                        </div>
+						
+                        <div class="ad-row">
+                            <div class="ad-col-35">
+                                <label for="name"> <b> Budget :</b> </label>
                             </div>
                             <div class="ad-col-65">
                                 <p class="detail"> Rs.2500.00 </p>
@@ -198,190 +92,167 @@ input[type=tel]{
                                 <img src="../../../public/img/work.jpg" class="work">
                             </div>
                         </div>
+                        </br> </br>
 
-                      
-                        
+                        <div class="ad-row">
+                                <div class="ad-col-35">
+                                    <label for="name"> <b style="color: gray; margin-bottom:0.5em;"> Posted on :</b> </label>
+                                </div>
+                                <div class="ad-col-65">
+                                    <p class="detail" style="color: gray;margin-bottom:0.5em;">10/10/2020 </p>
+                                </div>
+                        </div>
+
+                        <div class="ad-row" style="margin-bottom: 1.5em; margin-top:1.5em">
+                            <input type="submit" value="Edit" class="blue-out-button" style="padding: 8px 24px; margin-left:29%; display:inline;">
+                            <input type="submit" value="Delete" class="pink-out-button" style="padding: 8px 15px; float:right; margin-right:29%; display:inline;">
+                        </div>
+						</br> </br>
+        	
             </div>
-            <!-- right-requests of workers -->
-            <div class="request" style="  margin-top:-450px; margin-left:450px; width:450px; height:450px;">
-            <p class="number-of-applicants" style="margin-left:20px; font-weight:bold;">
-                5 Applicants  applied
-            </p>
-                      <div class="worker-request" >
-                           <table>
-                              <tr>
-                                  <td>
-                                  <img src="../../../public/img/w3.jpg" class="img-ad">
-                                  </td>
-                                  <td>
-                                     <b>Amal Perera</b> <br>
-                                      <b>Galle</b>
-                                  </td>
-                                  <td>
-                                      <button class="blue-button">
-                                               Accept
-                                      </button>
-                                  </td>
-                                  <td>
-                                      <button class="pink-button2">
-                                              Decline
-                                      </button>
-                                  </td>
-                              </tr>
-
-                           </table>
-                          <br>
-
-                           <table>
-                              <tr>
-                                  <td>
-                                  <img src="../../../public/img/w3.jpg" class="img-ad">
-                                  </td>
-                                  <td>
-                                     <b>Amal Perera</b> <br>
-                                      <b>Galle</b>
-                                  </td>
-                                  <td>
-                                      <button class="blue-button">
-                                               Accept
-                                      </button>
-                                  </td>
-                                  <td>
-                                      <button class="pink-button2">
-                                              Decline
-                                      </button>
-                                  </td>
-                              </tr>
-
-                           </table>
-                           <br>
-
-                           <table>
-                              <tr>
-                                  <td>
-                                  <img src="../../../public/img/w3.jpg" class="img-ad">
-                                  </td>
-                                  <td>
-                                     <b>Amal Perera</b> <br>
-                                      <b>Galle</b>
-                                  </td>
-                                  <td>
-                                      <button class="blue-button">
-                                               Accept
-                                      </button>
-                                  </td>
-                                  <td>
-                                      <button class="pink-button2">
-                                              Decline
-                                      </button>
-                                  </td>
-                              </tr>
-
-                           </table>
-                            <br>
-                           <table>
-                              <tr>
-                                  <td>
-                                  <img src="../../../public/img/w3.jpg" class="img-ad">
-                                  </td>
-                                  <td>
-                                     <b>Amal Perera</b> <br>
-                                      <b>Galle</b>
-                                  </td>
-                                  <td>
-                                      <button class="blue-button">
-                                               Accept
-                                      </button>
-                                  </td>
-                                  <td>
-                                      <button class="pink-button2">
-                                              Decline
-                                      </button>
-                                  </td>
-                              </tr>
-
-                           </table>
-                          
-                           <table>
-                              <tr>
-                                  <td>
-                                  <img src="../../../public/img/w3.jpg" class="img-ad">
-                                  </td>
-                                  <td>
-                                     <b>Amal Perera</b> <br>
-                                      <b>Galle</b>
-                                  </td>
-                                  <td>
-                                      <button class="blue-button">
-                                               Accept
-                                      </button>
-                                  </td>
-                                  <td>
-                                      <button class="pink-button2">
-                                              Decline
-                                      </button>
-                                  </td>
-                              </tr>
-
-                           </table>
-                         
-                           
-                      </div>
-            </div>   
-        
+	</div>
 </div>
-     
-           
-     <!------------------------------------------------------------popoup window-------------------------------------------------->
+
+<!---------------------------responses------------------------->
+	<div class= "table" style="margin-left:20em; margin-top: -40em; width:80%;"> 
+        <div class="table-wrapper"   style="margin-top: 5em;">
+            <table class="fl-table">
+                <tbody>
+                    <tr>
+						<td><img src="../../../public/img/admin.jpg" class="response-img"></td>
+						<td><b>Namya Tharindi</b></td>
+						<td>Galle</td>
+						<td> <input type="reset" class="blue-button" style="padding: 8px 14px"  value="Accept"/></td>
+						<td> <input type="reset" class="pink-button" value="Reject"/></td>
+                    </tr>
+					<tr>
+						<td><img src="../../../public/img/admin.jpg" class="response-img"></td>
+						<td><b>Namya Tharindi</b></td>
+						<td>Ratnapura</td>
+						<td> <input type="reset" class="blue-button" style="padding: 8px 14px" value="Accept"/></td>
+						<td> <input type="reset" class="pink-button" value="Reject"/></td>
+                    </tr>
+					<tr>
+						<td><img src="../../../public/img/admin.jpg" class="response-img"></td>
+						<td><b>Namya Tharindi</b></td>
+						<td>Ratnapura</td>
+						<td> <input type="reset" class="blue-button" style="padding: 8px 14px" value="Accept"/></td>
+						<td> <input type="reset" class="pink-button" value="Reject"/></td>
+                    </tr>
+                </tbody>
+            </table> 
+        </div> 
+    </div>
+
+
+<!---------------------------------------Job invite responses---------------------------------------->
+<div class="heading" id="responses" style="margin-top: 15em; margin-left:15em;"> <p> Job invite responses </p> </div>
+
+<div class= "table" style="margin-left:-7em;"> 
+        <div class="table-wrapper">
+            <table style="border-spacing: 25px" class="fl-table">
+                <thead>
+                    <tr>
+                        <th>Profile Pic</th>
+                        <th>Name</th>
+                        <th>Status</th>
+                        <th>Category</th>
+                        <th>Message</th>
+                    </tr>
+                </thead>
+                <tbody>
+                
+                    <tr>
+                        <td><img src="../../../public/img/admin.jpg" class="table-image" style="border-radius: 50px;"></td>
+                        <td>Kasun Perera</td>
+                        <td style="color: #F10B67;">Accepted</td>
+                        <td>Plumber</td>
+                        <td> <input type="reset" class="blue-out-button" value="Message"/></td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="../../../public/img/w1.jpg" class="table-image" style="border-radius: 50px;"></td>
+                        <td>Nishini Guruge</td>
+                        <td style="color: #F10B67;">Rejected</td>
+                        <td>Electrician</td>
+                        <td> <input type="reset" class="blue-out-button" value="Message"/></td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="../../../public/img/w2.jpg" class="table-image" style="border-radius: 50px;"></td>
+                        <td>Sandani Perera</td>
+                        <td style="color: #F10B67;">Accepted</td>
+                        <td>Plumber</td>
+                        <td> <input type="reset" class="blue-out-button" value="Message"/></td>
+                    </tr>
+
+                     <tr>
+                        <td><img src="../../../public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td>
+                        <td>Nimal Perera</td>
+                        <td style="color: #F10B67;">Accepted</td>
+                        <td>Plumber</td>
+                        <td> <input type="reset" class="blue-out-button" value="Message"/></td>
+                    </tr>
+
+                </tbody>
+            </table> 
+        </div> 
+</div>
+    
+<!------------------------------------------------------------popoup window------------------------------------------------------------->
 
 <div id="myModal" class="modal">
         <!-- Modal content -->
-        <div class="modal-content" style="margin-top: 10%;">
+        <div class="modal-content" style="margin-top: 2%;">
                 <form action="">
+
                     <span class="close">&times;</span>
-                    <p class="heading" style="margin-top: 1em; margin-left:35%;">Hire a service provider <img src="../../../public/img/service.png" class="popup-image"></p>
+                    <p class="heading" style="margin-top: 1em; margin-left:35%;">Hire a Service Provider <img src="../../../public/img/ad.png" class="popup-image"></p>
                         <div class="row">
                             <div class="col-25">
-                            <label for="category" style="color: #0526BA; font-size:15px;">category</label>
+                            <label for="category" style="color: #0526BA; font-size:15px;">Category</label>
                             </div>
                             <div class="col-75">
-                            
-                            <select name="category" id="category">
-                            <option value="">Plumber</option>
-                            <option value="">Masons</option>
-                            <option value="">Tile</option>
-                            <option value="">Carpenter</option>
-                            <option value="">Painter</option>
-                            <option value="">Electrician</option>
-                            <option value="">Landscaping</option>
-                            <option value="">  Contractors</option>
-                            <option value="">  Professionals</option>
-                            <option value=""> Stones/Sand/soil</option>
-                            <option value="">Concrete slab</option>
-                            <option value=""> Equipment Repairing</option>
-                            <option value=""> A/C</option>
-                            <option value=""> Welding</option>
-                            <option value="">Cooking</option>
-                            <option value="">Cushion works</option>
-                            <option value="">Vehicle repairs</option>
-                            <option value="">Cleaners</option>
-                            <option value="">CCTV</option>
-                            <option value="">Ceiling</option>
-                            <option value="">Well</option>
-                            <option value=""> Chair weavers</option>
-                            <option value="">Solar panel fixing</option>
-                            <option value=""> Demolishing</option>
-                            <option value=""> Pest control</option>
-                            <option value="">Mug Designer</option>
-                            <option value="">Movers</option>
-                            <option value=""> Aluminium</option>
-                            <option value="">Catering</option>
-                            <option value="">Makeup Artists</option>
-
-
-                             </select>
+                            <!-- <input type="text" id="category" name="category" placeholder="Select category" required> -->
+                                        <!------------------------------------------------------------------------------------------------------>
+        
+                                <select name="categoty" id="list3" style="border: 1px solid #6f7dd8; padding:10px; width:91%; border-radius:5px;">
+                                    <option value =" "  selected label="Category"> Select Category</option>
+                                    <option value="#" > Plumber</option>
+                                    <option value="#" > Masons</option>
+                                    <option value="#" > Tile</option>
+                                    <option value="#" > Carpenters</option>
+                                    <option value="#" > Painters</option>
+                                    <option value="#" > Electricians</option>
+                                    <option value="#" > Landscaping</option>
+                                    <option value="#" > Contractors</option>
+                                    <option value="#" > Professionals</option>
+                                    <option value="#" > Stones/sand/soil</option>
+                                    <option value="#" > Concrete Slab</option>
+                                    <option value="#" > Equipment Repairing </option>
+                                    <option value="#" > A/C</option>
+                                    <option value="#" > Welding</option>
+                                    <option value="#" > Cooking</option>
+                                    <option value="#" > Cushion Works</option>
+                                    <option value="#" > Vehicle Repairs</option>
+                                    <option value="#" > Cleaners</option>
+                                    <option value="#" > CCTV</option>
+                                    <option value="#" > Ceiling</option>
+                                    <option value="#" > Well</option>
+                                    <option value="#" > Chair Weavers</option>
+                                    <option value="#" > Rent Tools</option>
+                                    <option value="#" > Curtains</option>
+                                    <option value="#" > Solar Panel fixing</option>
+                                    <option value="#" > Demolishing</option>
+                                    <option value="#" > Pest Control</option>
+                                    <option value="#" > Design</option>
+                                    <option value="#" > Movers</option>
+                                    <option value="#" > Aluminium</option>
+                                    <option value="#" > Catering</option>
+                                </select>
                             </div>
                         </div>
+
                         <div class="row">
                             <div class="col-25">
                             <label for="title" style="color: #0526BA; font-size:15px;">Title</label>
@@ -390,14 +261,16 @@ input[type=tel]{
                             <input type="text" id="title" name="title" placeholder="Enter title" required>
                             </div>
                         </div>
+
                         <div class="row">
                             <div class="col-25">
-                            <label for="time" style="color: #0526BA; font-size:15px;">Job Description</label>
+                            <label for="job" style="color: #0526BA; font-size:15px;">Job Description</label>
                             </div>
                             <div class="col-75">
-                            <input type="text" id="" name="" placeholder="Enter job description " required>
+                            <input type="text" id="job" name="job" placeholder="Enter job description" required>
                             </div>
                         </div>
+                        
                         <div class="row">
                             <div class="col-25">
                             <label for="address" style="color: #0526BA; font-size:15px;">Address</label>
@@ -409,12 +282,13 @@ input[type=tel]{
 
                         <div class="row">
                             <div class="col-25">
-                            <label for="address" style="color: #0526BA; font-size:15px;">Contact Number</label>
+                            <label for="contact" style="color: #0526BA; font-size:15px;">Contact Number</label>
                             </div>
                             <div class="col-75">
-                            <input type="tel" id="" name="" placeholder="Enter Contact number" required>
+                            <input type="text" id="contact" name="contact" placeholder="Enter contact number" required>
                             </div>
                         </div>
+
                         <div class="row">
                             <div class="col-25">
                             <label for="sdate" style="color: #0526BA; font-size:15px;">Start Date</label>
@@ -423,16 +297,16 @@ input[type=tel]{
                             <input type="date" id="sdate" name="sdate" placeholder="Enter star date" required>
                             </div>
                         </div>
+
                         <div class="row">
                             <div class="col-25">
-                            <label for="sdate" style="color: #0526BA; font-size:15px;">End Date</label>
+                            <label for="edate" style="color: #0526BA; font-size:15px;">End Date</label>
                             </div>
                             <div class="col-75">
                             <input type="date" id="edate" name="edate" placeholder="Enter end date" required>
                             </div>
                         </div>
-                        
-                        
+
                         <div class="row">
                             <div class="col-25">
                             <label for="amount" style="color: #0526BA; font-size:15px;">Budget</label>
@@ -444,10 +318,10 @@ input[type=tel]{
 
                         <div class="row">
                             <div class="col-25">
-                            <label for="amount" style="color: #0526BA; font-size:15px;">Work to be done</label>
+                            <label for="work" style="color: #0526BA; font-size:15px;">Work to be done</label>
                             </div>
                             <div class="col-75">
-                            <input type="file" id="work" name="work" placeholder="" required>
+                            <input type="file" id="work" name="work"  required>
                             </div>
                         </div>
                         </br> </br>
@@ -457,15 +331,16 @@ input[type=tel]{
                         </br>
                 </form>
         </div>
-    </div>
+</div>
 
-    <!------------------Java Script------------------------------->
-    <script src="../../../public/js/top-button1-popup.js"> 
+<!------------------Java Script -  popup message------------------------------->
+<script type="text/javascript" src="../../../public/js/top-button1-popup.js"> 
     </script>
+
 
 <!---------------------------Arrow button----------------------------------------->
 <div class="arrow">
-	<a href="#"><img src="../../../public/img/arrow.png" alt="up_arrow"></a>
-</div> 
-            
+		<a href="#"><img src="../../../public/img/arrow.png" alt="up_arrow"></a>
+</div>
+
 <?php include("../home/footer.php"); ?>
