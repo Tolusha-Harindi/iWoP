@@ -68,97 +68,69 @@
                 <form action="">
 
                     <span class="close">&times;</span>
-                    <p class="heading" style="margin-top: 1em; margin-left:35%;"> Service Provider <img src="../../../public/img/ad.png" class="popup-image"></p>
-                        <div class="row">
-                            <div class="col-25">
-                            <label for="title" style="color: #0526BA; font-size:15px;">Name</label>
-                            </div>
-                            <div class="col-75">
-                            <p> Kamal Gunasekara </p>
-                            </div>
-                        </div>
-                        
-                        <div class="row">
-                            <div class="col-25">
-                            <label for="title" style="color: #0526BA; font-size:15px;">Address</label>
-                            </div>
-                            <div class="col-75">
-                            <input type="text" id="title" name="title" placeholder="Enter title" required>
-                            </div>
-                        </div>
+                    <p class="heading" style="margin-top: 1em; margin-left:35%;"> Service Provider <img src="../../../public/img/admin.jpg" class="popup-image" style="border-radius:400px;"></p>
 
-                        <div class="row">
-                            <div class="col-25">
-                            <label for="job" style="color: #0526BA; font-size:15px;">Category</label>
-                            </div>
-                            <div class="col-75">
-                            <input type="text" id="job" name="job" placeholder="Enter job description" required>
-                            </div>
-                        </div>
-                        
-                        <div class="row">
-                            <div class="col-25">
-                            <label for="address" style="color: #0526BA; font-size:15px;">NIC Number</label>
-                            </div>
-                            <div class="col-75">
-                            <input type="text" id="address" name="address" placeholder="Enter address" required>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-25">
-                            <label for="contact" style="color: #0526BA; font-size:15px;">Email</label>
-                            </div>
-                            <div class="col-75">
-                            <input type="text" id="contact" name="contact" placeholder="Enter contact number" required>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-25">
-                            <label for="sdate" style="color: #0526BA; font-size:15px;">Contact Number</label>
-                            </div>
-                            <div class="col-75">
-                            <input type="date" id="sdate" name="sdate" placeholder="Enter star date" required>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-25">
-                            <label for="edate" style="color: #0526BA; font-size:15px;">Qualification</label>
-                            </div>
-                            <div class="col-75">
-                            <input type="date" id="edate" name="edate" placeholder="Enter end date" required>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-25">
-                            <label for="amount" style="color: #0526BA; font-size:15px;">GS Certificate</label>
-                            </div>
-                            <div class="col-75">
-                            <input type="text" id="amount" name="amount" placeholder="Enter amount" required>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-25">
-                            <label for="work" style="color: #0526BA; font-size:15px;">Scan copy of NIC</label>
-                            </div>
-                            <div class="col-75">
-                            <input type="file" id="work" name="work"  required>
-                            </div>
-                        </div>
-                        </br> </br>
-                        <div class="row">
-                            <input type="submit" value="Submit" class="blue-button" style="margin-left:45%;">
-                        </div>
-                        </br>
+                        <table>
+                            <tr>
+                                <td> <label for="name" style="color: #0526BA; font-size:15px;">Name</label></td>
+                                <td style="padding: 2em 4em;"> </td>
+                                <td> Kamal Gunasekara</td>
+                            </tr>
+                            <tr>
+                                <td> <label for="address" style="color: #0526BA; font-size:15px;">Address</label></td>
+                                <td style="padding: 2em 4em;"> </td>
+                                <td> Kirulupana, Colombo</td>
+                            </tr>
+                            <tr>
+                                <td> <label for="category" style="color: #0526BA; font-size:15px;">Category</label></td>
+                                <td style="padding: 2em 4em;"> </td>
+                                <td> Carpenter</td>
+                            </tr>
+                            <tr>
+                                <td> <label for="nic-number" style="color: #0526BA; font-size:15px;">NIC Number</label></td>
+                                <td style="padding: 2em 4em;"> </td>
+                                <td> 123456789V</td>
+                            </tr>
+                            <tr>
+                                <td><label for="email" style="color: #0526BA; font-size:15px;">Email</label> </td>
+                                <td style="padding: 2em 4em;"> </td>
+                                <td> 123@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>  <label for="contact" style="color: #0526BA; font-size:15px;">Contact Number</label></td>
+                                <td style="padding: 2em 4em;"> </td>
+                                <td> 0717777777</td>
+                            </tr>
+                            <tr>
+                                <td><label for="qualification" style="color: #0526BA; font-size:15px;">Qualification</label> </td>
+                                <td style="padding: 2em 4em;"> </td>
+                                <td> NVQ level 1</td>
+                            </tr>
+                            <tr>
+                                <td> <label for="gs" style="color: #0526BA; font-size:15px;">GS Certificate</label></td>
+                                <td style="padding: 2em 4em;"> </td>
+                                <td> <img src="../../../public/img/gscertificate.jpg"></td>
+                            </tr>
+                            <tr> <td style="padding: 2em 4em;"> </td> </tr>
+                            <tr>
+                                <td> <label for="nic" style="color: #0526BA; font-size:15px;">Scan copy of NIC</label></td>
+                                <td style="padding: 2em 4em;"> </td>
+                                <td><img src="../../../public/img/nic.jpg"></td>
+                                <td><img src="../../../public/img/nic.jpg"></td>
+                            </tr>
+                            <tr> <td style="padding: 2em 4em;"> </td> </tr>
+                            <tr>
+                                <td> <input type="submit" value="Approve" class="blue-button" style="margin-left:160%;"></td>
+                                <td><input type="submit" value="Reject" class="pink-button" style="margin-left:180%; width:7.5em;"></td>
+                            </tr>
+                            <tr> <td style="padding: 1em 4em;"> </td></tr>
+                            </br>
+                        </table>
                 </form>
         </div>
 </div>
 
-<!------------------Java Script -  popup message------------------------------->
+<!-----------------------------------------------------Java Script -  popup message------------------------------->
 <script type="text/javascript" src="../../../public/js/blue-out-button-popup.js"> </script>
 
 
@@ -184,28 +156,28 @@
                         <td><img src="../../../public/img/company.png" class="table-image" style="border-radius: 50px;"></td>
                         <td> Dream wave</td>
                         <td>10/10/2021</td>
-                        <td> <input type="reset" class="blue-out-button" value="More" style="width:6em";/></td>
+                        <td> <input type="reset" class="yellow-out-button" value="More" style="width:6em";/></td>
                     </tr>
 
                     <tr>
                         <td><img src="../../../public/img/company.png" class="table-image" style="border-radius: 50px;"></td>
                         <td> Dream wave</td>
                         <td>10/10/2021</td>
-                        <td> <input type="reset" class="blue-out-button" value="More" style="width:6em";/></td>
+                        <td> <input type="reset" class="yellow-out-button" value="More" style="width:6em";/></td>
                     </tr>
 
                     <tr>
                         <td><img src="../../../public/img/company.png" class="table-image" style="border-radius: 50px;"></td>
                         <td> Dream wave</td>
                         <td>10/10/2021</td>
-                        <td> <input type="reset" class="blue-out-button" value="More" style="width:6em";/></td>
+                        <td> <input type="reset" class="yellow-out-button" value="More" style="width:6em";/></td>
                     </tr>
 
                      <tr>
                         <td><img src="../../../public/img/company.png" class="table-image" style="border-radius: 50px;"></td>
                         <td> Dream wave</td>
                         <td>10/10/2021</td>
-                        <td> <input type="reset" class="blue-out-button" value="More" style="width:6em";/></td>
+                        <td> <input type="reset" class="yellow-out-button" value="More" style="width:6em";/></td>
                     </tr>
 
                 </tbody>
@@ -213,7 +185,72 @@
         </div> 
     </div>
 
+<!------------------------------------------------------------popoup window------------------------------------------------------------->
 
+<div id="yellowModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content" style="margin-top: 2%;">
+                <form action="">
+
+                    <span class="close">&times;</span>
+                    <p class="heading" style="margin-top: 1em; margin-left:35%;"> Company <img src="../../../public/img/w1.jpg" class="popup-image" style="border-radius:400px;"></p>
+
+                        <table>
+                            <tr>
+                                <td> <label for="comp-name" style="color: #0526BA; font-size:15px;">Company Name</label></td>
+                                <td style="padding: 2em 4em;"> </td>
+                                <td> Dream wave</td>
+                            </tr>
+                            <tr>
+                                <td> <label for="owner-name" style="color: #0526BA; font-size:15px;">Owners Name </label></td>
+                                <td style="padding: 2em 4em;"> </td>
+                                <td> Dimuth Perera</td>
+                            </tr>
+                            <tr>
+                                <td> <label for="address" style="color: #0526BA; font-size:15px;">Address</label></td>
+                                <td style="padding: 2em 4em;"> </td>
+                                <td> Kirulupana, Colombo</td>
+                            </tr>
+                            <tr>
+                                <td> <label for="reg-number" style="color: #0526BA; font-size:15px;">Registered Number</label></td>
+                                <td style="padding: 2em 4em;"> </td>
+                                <td> 657876-vfg/77897/9808</td>
+                            </tr>
+                            <tr>
+                                <td><label for="email" style="color: #0526BA; font-size:15px;">Email</label> </td>
+                                <td style="padding: 2em 4em;"> </td>
+                                <td> 123@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>  <label for="contact" style="color: #0526BA; font-size:15px;">Contact Number</label></td>
+                                <td style="padding: 2em 4em;"> </td>
+                                <td> 0717777777</td>
+                            </tr>
+                            <tr>
+                                <td> <label for="gs" style="color: #0526BA; font-size:15px;">GS Certificate</label></td>
+                                <td style="padding: 2em 4em;"> </td>
+                                <td> <img src="../../../public/img/gscertificate.jpg"></td>
+                            </tr>
+                            <tr> <td style="padding: 2em 4em;"> </td> </tr>
+                            <tr>
+                                <td> <label for="nic" style="color: #0526BA; font-size:15px;">Registered Certificate</label></td>
+                                <td style="padding: 2em 4em;"> </td>
+                                <td><img src="../../../public/img/nic.jpg"></td>
+                            </tr>
+                            <tr> <td style="padding: 2em 4em;"> </td> </tr>
+                            <tr>
+                                <td> <input type="submit" value="Approve" class="blue-button" style="margin-left:160%;"></td>
+                                <td><input type="submit" value="Reject" class="pink-button" style="margin-left:180%; width:7.5em;"></td>
+                            </tr>
+                            <tr> <td style="padding: 1em 4em;"> </td></tr>
+                            </br>
+                        </table>
+                </form>
+        </div>
+</div>
+
+<!-----------------------------------------------------Java Script -  popup message------------------------------->
+<script type="text/javascript" src="../../../public/js/yellow-out-button-popup.js"> </script>
 
 
 <!---------------------------Arrow button----------------------------------------->

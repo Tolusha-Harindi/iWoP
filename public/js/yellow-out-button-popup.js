@@ -1,5 +1,5 @@
 // Get the modal
-var modal = document.getElementById("myModal");
+var modal = document.getElementById("yellowModal");
 
 // Get the button that opens the modal
 var btn = document.getElementsByClassName("yellow-out-button");
