@@ -16,8 +16,8 @@
 </a>
 
 
-    <div class="sidebar">
-        <div class="description">
+<div class="sidebar">
+    <div class="description">
         <a href="manager_dashboard.php" class='side-link-active'>
                 <ul class='side-list-active'>
                     <li>Dashboard</li>
@@ -42,9 +42,8 @@
                 <ul class='side-list'>
                     <li>Companies</li>
                 </ul>
-        </a>
-                
-        </div>
+        </a>        
     </div>
+</div>
 
 
