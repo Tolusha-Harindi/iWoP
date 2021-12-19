@@ -264,13 +264,14 @@ table,th,td{
 
 </div>
 <div class="vertical-line">
-
+<!-- Report button -->
   <div class="reportbutton">
-      <button class="pink-button" style="margin-left:650px; margin-top:22px; font-size:20px; width:100px;">
+      <button class="pink-button" style="margin-left:650px; margin-top:32px; font-size:20px; width:100px; ">
           Report 
        </button>
   </div>
-   <div class="right">
+  <!-- Write a review -->
+  <div class="right">
        <h3>Write a review</h3>
        <div class="right-upper">
          <form action="/action_page.php">
