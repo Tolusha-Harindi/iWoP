@@ -38,7 +38,7 @@
                     <li>Service Providers</li>
                 </ul>
         </a>
-        <a href="manager_companies.php" class='side-link'>
+        <a href="manager_company.php" class='side-link'>
                 <ul class='side-list'>
                     <li>Companies</li>
                 </ul>
