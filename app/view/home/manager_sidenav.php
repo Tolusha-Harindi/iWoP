@@ -18,27 +18,27 @@
 
     <div class="sidebar">
         <div class="description">
-        <a class='side-link-active'>
+        <a href="manager_dashboard.php" class='side-link-active'>
                 <ul class='side-list-active'>
                     <li>Dashboard</li>
                 </ul>
         </a>
-        <a class='side-link'>
+        <a href="manager_pending_requests.php" class='side-link'>
                 <ul class='side-list'>
                     <li>Pending Requests</li>
                 </ul>
         </a>
-        <a class='side-link'>
+        <a href="manager_category.php" class='side-link'>
                 <ul class='side-list'>
                     <li>Category</li>
                 </ul>
         </a>
-        <a class='side-link'>
+        <a href="manager_service_providers.php" class='side-link'>
                 <ul class='side-list'>
                     <li>Service Providers</li>
                 </ul>
         </a>
-        <a class='side-link'>
+        <a href="manager_companies.php" class='side-link'>
                 <ul class='side-list'>
                     <li>Companies</li>
                 </ul>
