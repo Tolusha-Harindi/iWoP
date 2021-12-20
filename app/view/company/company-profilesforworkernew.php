@@ -477,7 +477,7 @@ h3{
   <!-- Write a review -->
 
 
-  <div class="right" style="border: 1px solid red ; margin-top:0px;">
+  <div class="right" style="border: 1px solid white ; margin-top:0px;">
          <h3>Write a review</h3>
              <div class="right-lower"style="border: 1px solid white"; >
                 <div class="container">
