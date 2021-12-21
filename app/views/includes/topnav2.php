@@ -16,7 +16,7 @@
 <nav class = "navbar" style="position:absolute">
     <ul class="link-list">
         <div class='logo-container'>
-            <a href="<?php echo URLROOT;?> /homes/landing.php" class="anchor-tag-logo">iWoP</a>
+            <a href="<?php echo URLROOT;?> /homes/landing" class="anchor-tag-logo">iWoP</a>
         </div>
         
         <li class="link"> 
