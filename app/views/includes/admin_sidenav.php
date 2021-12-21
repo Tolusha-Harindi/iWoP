@@ -1,11 +1,11 @@
 
-<link rel='stylesheet' href="../../../public/css/home/sidenav.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?>/public/css/home/sidenav.css"/>
 
 
     <a href="admin_profile.php" class='card-link'>
         <div class="card">
             <div class="img-container">
-                <img src="../../../public/img/4140048.png" alt="propic" class="img1"/>
+                <img src="<?php echo URLROOT;?>/public/img/4140048.png" alt="propic" class="img1"/>
             </div>
             <p class='title'> Nimal Perera</p>
             <div class="description">
