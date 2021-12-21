@@ -20,19 +20,19 @@
         <div class="dash-card" id="card1">
             <h3>Category Count</h3>
             <h1> 28 </h1>
-            <img src="../../../public/img/message.png" alt="">
+            <img src="../../../public/img/ads1.png" alt="">
         </div>
     
         <div class="dash-card" id="card2">
             <h3>Workers Request Count</h3>
             <h1> 25 </h1>
-            <img src="../../../public/img/due-payments.png" alt="">
+            <img src="../../../public/img/worker-requests.png" alt="">
         </div>
 
         <div class="dash-card" id="card3">
             <h3>Company Request Count</h3>
             <h1> 255 </h1>
-            <img src="../../../public/img/worker-conut.png" alt="">
+            <img src="../../../public/img/company-requests.png" alt="">
         </div>
 
     </div>
@@ -42,13 +42,13 @@
         <div class="dash-card" id="card1">
             <h3>Workers Count</h3>
             <h1> 28 </h1>
-            <img src="../../../public/img/ads1.png" alt="">
+            <img src="../../../public/img/worker-conut.png" alt="">
         </div>
 
         <div class="dash-card" id="card2">
             <h3>Company Count</h3>
             <h1> 255 </h1>
-            <img src="../../../public/img/delete.png" alt="">
+            <img src="../../../public/img/company.png" alt="">
         </div>
 
     </div>
