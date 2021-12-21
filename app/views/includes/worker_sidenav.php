@@ -1,10 +1,10 @@
-<link rel='stylesheet' href="../../../public/css/home/sidenav.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/home/sidenav.css"/>
 
 
-<a href="worker_profile.php" class='card-link'>
+<a href="<?php echo URLROOT;?>/workers/worker_profile" class='card-link'>
     <div class="card">
         <div class="img-container">
-            <img src="../../../public/img/w3.jpg" alt="propic" class="img1"/>
+            <img src="<?php echo URLROOT;?> /public/img/w3.jpg" alt="propic" class="img1"/>
         </div>
         <p class='title'>Murugadhas Aathiran</p>
         <div class="description">
@@ -18,42 +18,42 @@
 
     <div class="sidebar">
         <div class="description">
-        <a class='side-link-active'>
+        <a href="<?php echo URLROOT;?>/workers/worker_dashboard"class='side-link-active'>
                 <ul class='side-list-active'>
                     <li>Dashboard</li>
                 </ul>
         </a>
-        <a class='side-link'>
+        <a href="<?php echo URLROOT;?>/workers/worker_chat"class='side-link'>
                 <ul class='side-list'>
                     <li>Message</li>
                 </ul>
         </a>
-        <a class='side-link'>
+        <a href="<?php echo URLROOT;?>/workers/worker_schedule"class='side-link'>
                 <ul class='side-list'>
                     <li>Schedule</li>
                 </ul>
         </a>
-        <a class='side-link'>
+        <a href="<?php echo URLROOT;?>/workers/worker_job_vaccancies"class='side-link'>
                 <ul class='side-list'>
                     <li>Job Vaccancies</li>
                 </ul>
         </a>
-        <a class='side-link'>
+        <a href="<?php echo URLROOT;?>/workers/worker_all_ads"class='side-link'>
                 <ul class='side-list'>
                     <li>Posted Ads</li>
                 </ul>
         </a>
-        <a class='side-link'>
+        <a href="<?php echo URLROOT;?>/workers/worker_job_invite"class='side-link'>
                 <ul class='side-list'>
                     <li>Job Invites</li>
                 </ul>
         </a>
-        <a class='side-link'>
+        <a href="<?php echo URLROOT;?>/workers/worker_bank_detail"class='side-link'>
                 <ul class='side-list'>
                     <li>Bank Details</li>
                 </ul>
         </a>
-        <a class='side-link'>
+        <a href="<?php echo URLROOT;?>/workers/worker_payment"class='side-link'>
                 <ul class='side-list'>
                     <li>Payments</li>
                 </ul>

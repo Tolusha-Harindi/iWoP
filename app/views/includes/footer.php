@@ -8,12 +8,12 @@
         <div class='links-container'>
             <ul class='footer-list'>
                 <li class='footer-list-item'>
-                    <a class='footer-link' href='../pages/faq.php'>
+                    <a class='footer-link' href='<?php echo URLROOT;?>/homes/faq'>
                         FAQ
                     </a>
                 </li>
                 <li class='footer-list-item'>
-                    <a class='footer-link' href='../pages/suggestions.php'>
+                    <a class='footer-link' href='<?php echo URLROOT;?>/homes/home'>
                         About Us
                     </a>
                 </li>
@@ -22,12 +22,12 @@
         <div class='social-media-container'>
             <ul class='footer-list'>
                 <li class='footer-list-item'>
-                    <a class='footer-link' href="#" target='_blank'>
+                    <a class='footer-link' href="<?php echo URLROOT;?>/homes/home" target='_blank'>
                         Privacy and Policy
                     </a>
                 </li>
                 <li class='footer-list-item'>
-                    <a class='footer-link' href="#" target='_blank'>
+                    <a class='footer-link' href="<?php echo URLROOT;?>/homes/home" target='_blank'>
                         Terms and Conditions
                     </a>
                 </li>
@@ -36,12 +36,12 @@
         <div class='social-media-container'>
             <ul class='footer-list'>
                 <li class='footer-list-item'>
-                    <a class='footer-link' href="#" target='_blank'>
+                    <a class='footer-link' href="<?php echo URLROOT;?>/homes/home" target='_blank'>
                         Contact Us
                     </a>
                 </li>
                 <li class='footer-list-item'>
-                    <a class='footer-link' href="#" target='_blank'>
+                    <a class='footer-link' href="<?php echo URLROOT;?>/homes/home" target='_blank'>
                         +94 333 334 555
                     </a>
                 </li>

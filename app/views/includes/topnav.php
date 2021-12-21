@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iWoP</title>
 
-    <link rel="stylesheet" href="../../../public/css/home/topnav.css">
+    <link rel="stylesheet" href="<?php echo URLROOT;?>/public/css/home/topnav.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Ribeye Marrow' rel='stylesheet'>
 
@@ -17,26 +17,26 @@
     <nav class = "navbar">
         <ul class="link-list">
             <div class='logo-container'>
-                <a href="#" class="anchor-tag-logo">iWoP</a>
+                <a href="<?php echo URLROOT;?> /homes/landing" class="anchor-tag-logo">iWoP</a>
             </div>
             
             <li class="link"> 
                 <a href="#" class="anchor-tag"> <i class="fa fa-bell" aria-hidden="true"></i> </a>
             </li>
             <li class="link"> 
-                <a href="#" class="anchor-tag"> Home </a>
+                <a href="<?php echo URLROOT;?> /homes/home" class="anchor-tag"> Home </a>
             </li>
             <li class="link"> 
-                <a href="#" class="anchor-tag"> FAQ </a>
+                <a href="<?php echo URLROOT;?> /homes/faq" class="anchor-tag"> FAQ </a>
             </li>
             <li class="link"> 
-                <a href="#" class="anchor-tag"> Services </a>
+                <a href="<?php echo URLROOT;?> /homes/home" class="anchor-tag"> Services </a>
             </li>
             <li class="link"> 
-                <a href="#" class="anchor-tag"> About Us </a>
+                <a href="<?php echo URLROOT;?> /homes/home" class="anchor-tag"> About Us </a>
             </li>
             <li class="link"> 
-                <a href="#" class="anchor-tag"> Logout </a>
+                <a href="<?php echo URLROOT;?> /homes/home" class="anchor-tag"> Logout </a>
             </li>
         
             <li class="link"> 
