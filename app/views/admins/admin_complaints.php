@@ -1,7 +1,7 @@
 
-<?php include("../home/topnav.php"); ?>
+<?php include_once APPROOT . '/views/includes/topnav.php'; ?>
 
-<?php include("../home/admin_sidenav.php"); ?>
+<?php include_once APPROOT . '/views/includes/admin_sidenav.php'; ?>
 
 <link rel='stylesheet' href="<?php echo URLROOT;?>/public/css/home/table.css"/>
 <link rel='stylesheet' href="<?php echo URLROOT;?>/public/css/home/button.css"/>
@@ -186,4 +186,4 @@
 </div>  
 
 
-<?php include("../home/footer.php"); ?>
+<?php include_once APPROOT . '/views/includes/footer.php'; ?>
