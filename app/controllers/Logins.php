@@ -60,7 +60,7 @@
 
             //$users = $this->pageModel-> getUsers();
             $data = [
-                'title' => 'Company register page',
+                'title' => 'Worker register page',
                 //'users' => $users
 
             ];

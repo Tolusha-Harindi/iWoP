@@ -38,7 +38,7 @@
             <div>
                 <h2><b>Do your company like to provide job opportunities ?</b></h2>
                 <img src="<?php echo URLROOT?>/public/img/comp.png" class="reg-img"/>
-                <a href="<?php echo APPROOT?> views/logins/company_register.php" input type="button"  value ="submit" class="button" style="margin-top: 0.7em;"> Register </a>
+                <a href="<?php echo APPROOT?> /views/logins/company_register.php" input type="button"  value ="submit" class="button" style="margin-top: 0.7em;"> Register </a>
             </div>
         </div>
     </div>
