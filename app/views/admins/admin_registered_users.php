@@ -1,10 +1,10 @@
 
-<?php include("../home/topnav.php"); ?>
+<?php include_once APPROOT . '/views/includes/topnav.php'; ?>
 
-<?php include("../home/admin_sidenav.php"); ?>
+<?php include_once APPROOT . '/views/includes/admin_sidenav.php'; ?>
 
-<link rel='stylesheet' href="../../../public/css/home/table.css"/>
-<link rel='stylesheet' href="../../../public/css/home/button.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?>/public/css/home/table.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?>/public/css/home/button.css"/>
 <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
 
 <a href="#customer" class="top-button1" style="margin-left:78em; width:7em;"> Customers</a>
@@ -35,7 +35,7 @@
                 <tbody>
                 
                     <tr>
-                        <td><img src="../../../public/img/company.png" class="table-image" style="border-radius: 50px;"></td>
+                        <td><img src="<?php echo URLROOT;?>/public/img/company.png" class="table-image" style="border-radius: 50px;"></td>
                         <td>Dream wave</td>
                         <td> 28/10/2021</td>
                         <td> 5 d ago</td>
@@ -43,7 +43,7 @@
                     </tr>
 
                     <tr>
-                        <td><img src="../../../public/img/company.png" class="table-image" style="border-radius: 50px;"></td>
+                        <td><img src="<?php echo URLROOT;?>/public/img/company.png" class="table-image" style="border-radius: 50px;"></td>
                         <td>Dream wave</td>
                         <td> 28/10/2021</td>
                         <td> 5 d ago</td>
@@ -51,7 +51,7 @@
                     </tr>
 
                     <tr>
-                        <td><img src="../../../public/img/company.png" class="table-image" style="border-radius: 50px;"></td>
+                        <td><img src="<?php echo URLROOT;?>/public/img/company.png" class="table-image" style="border-radius: 50px;"></td>
                         <td>Dream wave</td>
                         <td> 28/10/2021</td>
                         <td> 5 d ago</td>
@@ -59,7 +59,7 @@
                     </tr>
 
                      <tr>
-                        <td><img src="../../../public/img/company.png" class="table-image" style="border-radius: 50px;"></td>
+                        <td><img src="<?php echo URLROOT;?>/public/img/company.png" class="table-image" style="border-radius: 50px;"></td>
                         <td>Dream wave</td>
                         <td> 28/10/2021</td>
                         <td> 5 d ago</td>
@@ -93,7 +93,7 @@
                 <tbody>
                 
                     <tr>
-                        <td><img src="../../../public/img/admin.jpg" class="table-image" style="border-radius: 50px;"></td>
+                        <td><img src="<?php echo URLROOT;?>/public/img/admin.jpg" class="table-image" style="border-radius: 50px;"></td>
                         <td>Kasun Perera</td>
                         <td> 28/10/2021</td>
                         <td> 5 d ago</td>
@@ -101,7 +101,7 @@
                     </tr>
 
                     <tr>
-                        <td><img src="../../../public/img/w1.jpg" class="table-image" style="border-radius: 50px;"></td>
+                        <td><img src="<?php echo URLROOT;?>/public/img/w1.jpg" class="table-image" style="border-radius: 50px;"></td>
                         <td>Kasun Perera</td>
                         <td> 28/10/2021</td>
                         <td> 5 d ago</td>
@@ -109,7 +109,7 @@
                     </tr>
 
                     <tr>
-                        <td><img src="../../../public/img/w2.jpg" class="table-image" style="border-radius: 50px;"></td>
+                        <td><img src="<?php echo URLROOT;?>/public/img/w2.jpg" class="table-image" style="border-radius: 50px;"></td>
                         <td>Kasun Perera</td>
                         <td> 28/10/2021</td>
                         <td> 5 d ago</td>
@@ -117,7 +117,7 @@
                     </tr>
 
                      <tr>
-                        <td><img src="../../../public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td>
+                        <td><img src="<?php echo URLROOT;?>/public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td>
                         <td>Kasun Perera</td>
                         <td> 28/10/2021</td>
                         <td> 5 d ago</td>
@@ -149,7 +149,7 @@
             <tbody>
             
                 <tr>
-                    <td><img src="../../../public/img/admin.jpg" class="table-image" style="border-radius: 50px;"></td>
+                    <td><img src="<?php echo URLROOT;?>/public/img/admin.jpg" class="table-image" style="border-radius: 50px;"></td>
                     <td>Kasun Perera</td>
                     <td> 28/10/2021</td>
                     <td> 5 d ago</td>
@@ -157,7 +157,7 @@
                 </tr>
 
                 <tr>
-                    <td><img src="../../../public/img/w1.jpg" class="table-image" style="border-radius: 50px;"></td>
+                    <td><img src="<?php echo URLROOT;?>/public/img/w1.jpg" class="table-image" style="border-radius: 50px;"></td>
                     <td>Kasun Perera</td>
                     <td> 28/10/2021</td>
                     <td> 5 d ago</td>
@@ -165,7 +165,7 @@
                 </tr>
 
                 <tr>
-                    <td><img src="../../../public/img/w2.jpg" class="table-image" style="border-radius: 50px;"></td>
+                    <td><img src="<?php echo URLROOT;?>/public/img/w2.jpg" class="table-image" style="border-radius: 50px;"></td>
                     <td>Kasun Perera</td>
                     <td> 28/10/2021</td>
                     <td> 5 d ago</td>
@@ -173,7 +173,7 @@
                 </tr>
 
                     <tr>
-                    <td><img src="../../../public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td>
+                    <td><img src="<?php echo URLROOT;?>/public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td>
                     <td>Kasun Perera</td>
                     <td> 28/10/2021</td>
                     <td> 5 d ago</td>
@@ -187,9 +187,9 @@
 
 <!---------------------------Arrow button----------------------------------------->
 <div class="arrow">
-	<a href="#"><img src="../../../public/img/arrow.png" alt="up_arrow"></a>
+	<a href="#"><img src="<?php echo URLROOT;?>/public/img/arrow.png" alt="up_arrow"></a>
 </div>  
 
 
       
-<?php include("../home/footer.php"); ?>
+<?php include_once APPROOT . '/views/includes/topnav.php'; ?>
