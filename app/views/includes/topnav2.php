@@ -16,14 +16,14 @@
 <nav class = "navbar" style="position:absolute">
     <ul class="link-list">
         <div class='logo-container'>
-            <a href="<?php echo URLROOT?> /home/landing.php" class="anchor-tag-logo">iWoP</a>
+            <a href="<?php echo URLROOT?> /homes/landing.php" class="anchor-tag-logo">iWoP</a>
         </div>
         
         <li class="link"> 
             <a href="#" class="anchor-tag"> Home </a>
         </li>
         <li class="link"> 
-            <a href="<?php echo URLROOT?> /homes/faq" class="anchor-tag"> FAQ </a>
+            <a href="<?php echo URLROOT;?> /homes/faq" class="anchor-tag"> FAQ </a>
         </li>
         <li class="link"> 
             <a href="#" class="anchor-tag"> Services </a>
@@ -32,10 +32,10 @@
             <a href="#" class="anchor-tag"> About Us </a>
         </li>
         <li class="link"> 
-            <a href="<?php echo URLROOT?> /logins/login" class="anchor-tag"> Login </a>
+            <a href="<?php echo URLROOT;?> /logins/login" class="anchor-tag"> Login </a>
         </li>
         <li class="link"> 
-            <a href="<?php echo URLROOT?> /logins/register" class="anchor-tag"> Sign-up </a>
+            <a href="<?php echo URLROOT;?> /logins/register" class="anchor-tag"> Sign-up </a>
         </li>
 
         <!-- <li class="link">
