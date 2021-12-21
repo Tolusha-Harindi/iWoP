@@ -17,4 +17,30 @@
           
         }
 
+        public function faq() {
+
+            //$users = $this->pageModel-> getUsers();
+            $data = [
+                'title' => 'faq page',
+                //'users' => $users
+
+            ];
+
+            $this->view('homes/faq', $data);
+          
+        }
+
+        public function home() {
+
+            //$users = $this->pageModel-> getUsers();
+            $data = [
+                'title' => 'home page',
+                //'users' => $users
+
+            ];
+
+            $this->view('homes/home', $data);
+          
+        }
+
     }

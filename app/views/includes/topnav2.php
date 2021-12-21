@@ -20,16 +20,16 @@
         </div>
         
         <li class="link"> 
-            <a href="#" class="anchor-tag"> Home </a>
+            <a href="<?php echo URLROOT;?> /homes/home" class="anchor-tag"> Home </a>
         </li>
         <li class="link"> 
             <a href="<?php echo URLROOT;?> /homes/faq" class="anchor-tag"> FAQ </a>
         </li>
         <li class="link"> 
-            <a href="#" class="anchor-tag"> Services </a>
+            <a href="<?php echo URLROOT;?> /homes/home" class="anchor-tag"> Services </a>
         </li>
         <li class="link"> 
-            <a href="#" class="anchor-tag"> About Us </a>
+            <a href="<?php echo URLROOT;?> /homes/home" class="anchor-tag"> About Us </a>
         </li>
         <li class="link"> 
             <a href="<?php echo URLROOT;?>/logins/login" class="anchor-tag"> Login </a>
