@@ -32,10 +32,10 @@
             <a href="#" class="anchor-tag"> About Us </a>
         </li>
         <li class="link"> 
-            <a href="<?php echo URLROOT?> /login/login" class="anchor-tag"> Login </a>
+            <a href="<?php echo URLROOT?> /logins/login" class="anchor-tag"> Login </a>
         </li>
         <li class="link"> 
-            <a href="<?php echo URLROOT?> /login/register" class="anchor-tag"> Sign-up </a>
+            <a href="<?php echo URLROOT?> /logins/register" class="anchor-tag"> Sign-up </a>
         </li>
 
         <!-- <li class="link">
