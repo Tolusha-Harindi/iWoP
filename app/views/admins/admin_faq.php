@@ -1,7 +1,7 @@
 
 <?php include_once APPROOT . '/views/includes/topnav.php'; ?>
 
-<?php include_once APPROOT . '/views/includes/admin_sidenva.php'; ?>
+<?php include_once APPROOT . '/views/includes/admin_sidenav.php'; ?>
 
 <link rel='stylesheet' href="<?php echo URLROOT;?>/public/css/home/table.css"/>
 <link rel='stylesheet' href="<?php echo URLROOT;?>/public/css/home/button.css"/>
