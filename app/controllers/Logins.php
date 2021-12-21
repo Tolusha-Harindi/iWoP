@@ -5,10 +5,9 @@
         }
 
         public function login() {
-
             //$users = $this->pageModel-> getUsers();
             $data = [
-                'title' => 'Login page',
+                'title' => 'login page',
                 //'users' => $users
 
             ];
@@ -18,7 +17,6 @@
         }
 
         public function register() {
-
             //$users = $this->pageModel-> getUsers();
             $data = [
                 'title' => 'register page',
@@ -31,10 +29,9 @@
         }
 
         public function worker_register() {
-
             //$users = $this->pageModel-> getUsers();
             $data = [
-                'title' => 'Worker register page',
+                'title' => 'worker_register page',
                 //'users' => $users
 
             ];
@@ -44,10 +41,9 @@
         }
 
         public function customer_register() {
-
             //$users = $this->pageModel-> getUsers();
             $data = [
-                'title' => 'Customer register page',
+                'title' => 'customer_register page',
                 //'users' => $users
 
             ];
@@ -57,10 +53,9 @@
         }
 
         public function company_register() {
-
             //$users = $this->pageModel-> getUsers();
             $data = [
-                'title' => 'Company register page',
+                'title' => 'company_register page',
                 //'users' => $users
 
             ];

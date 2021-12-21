@@ -1,10 +1,10 @@
 <?php include_once APPROOT . '/views/includes/topnav2.php'; ?>
 
-<link rel='stylesheet' href="<?php echo URLROOT?> /public/css/home/login.css"/>
-<link rel='stylesheet' href="<?php echo URLROOT?> /public/css/home/button.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/home/login.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/home/button.css"/>
 
 <div class="shape"> </div>
-<img src="<?php echo URLROOT?>/public/img/log-1.png" class="image" style="right:60%; height:35rem; top:7.7em;" alt="" />
+<img src="<?php echo URLROOT;?>/public/img/log-1.png" class="image" style="right:60%; height:35rem; top:7.7em;" alt="" />
 
 <form action="check-login.php" method="post" name="myform" onsubmit="return validateform()">
     <div class="container">
