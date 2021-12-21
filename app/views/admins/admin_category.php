@@ -99,4 +99,5 @@
 	<a href="#"><img src="<?php echo URLROOT;?>/public/img/arrow.png" alt="up_arrow"></a>
 </div>
 
+
 <?php include_once APPROOT . '/views/includes/footer.php'; ?>
