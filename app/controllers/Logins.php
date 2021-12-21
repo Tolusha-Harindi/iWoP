@@ -29,4 +29,43 @@
             $this->view('logins/register', $data);
           
         }
+
+        public function customer_register() {
+
+            //$users = $this->pageModel-> getUsers();
+            $data = [
+                'title' => 'Customer register page',
+                //'users' => $users
+
+            ];
+
+            $this->view('logins/customer_register', $data);
+          
+        }
+
+        public function company_register() {
+
+            //$users = $this->pageModel-> getUsers();
+            $data = [
+                'title' => 'Company register page',
+                //'users' => $users
+
+            ];
+
+            $this->view('logins/company_register', $data);
+          
+        }
+
+        public function worker_register() {
+
+            //$users = $this->pageModel-> getUsers();
+            $data = [
+                'title' => 'Company register page',
+                //'users' => $users
+
+            ];
+
+            $this->view('logins/worker_register', $data);
+          
+        }
     }
