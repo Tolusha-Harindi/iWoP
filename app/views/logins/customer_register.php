@@ -1,10 +1,10 @@
-<?php include("topnav2.php"); ?>
+<?php include_once APPROOT . '/views/includes/topnav2.php'; ?>
 
-<link rel='stylesheet' href="../../../public/css/home/login.css"/>
-<link rel='stylesheet' href="../../../public/css/home/button.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?>/public/css/home/login.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?>/public/css/home/button.css"/>
 
 <div class="shape" style="background-color: #F10B67; height:148.5%;"> </div>
-<img src="../../../public/img/reg-1.png" class="image" alt="" />
+<img src="<?php echo URLROOT;?>/public/img/reg-1.png" class="image" alt="" />
 
 <form action="check.php" method="post">
         <div class="container">
@@ -31,9 +31,9 @@
             <input type="password" placeholder="Re-Enter Password" name="repasw" required>
 
             <button type="submit" class="blue-button">Sign-Up</button>
-            <p class="register-link"><a href="login.php">Back to Login >></a> </p>
+            <p class="register-link"><a href="<?php echo URLROOT;?>/logins/login">Back to Login >></a> </p>
         </div>  
 </form>
 
 
-<?php include("footer.php"); ?>
+<?php include_once APPROOT . '/views/includes/footer.php'; ?>
