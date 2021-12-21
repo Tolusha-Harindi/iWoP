@@ -3,8 +3,8 @@
 
 <?php include("../home/admin_sidenav.php"); ?>
 
-<link rel='stylesheet' href="../../../public/css/home/table.css"/>
-<link rel='stylesheet' href="../../../public/css/home/button.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?>/public/css/home/table.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?>/public/css/home/button.css"/>
 <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
 
 <a href="#cus-complaint" class="top-button1"  style="margin-left:78em; width:10em;"> Customer Complaints </a>
@@ -35,7 +35,7 @@
                 
                     <tr>
                         <td>Charges are high</td>
-                        <td><img src="../../../public/img/admin.jpg" class="table-image" style="border-radius: 50px;"></td>
+                        <td><img src="<?php echo URLROOT;?>/public/img/admin.jpg" class="table-image" style="border-radius: 50px;"></td>
                         <td>5</td>
                         <td> <input type="reset" class="blue-button" value="Edit"/></td>
                         <td> <input type="reset" class="pink-button" value="Remove"/></td>
@@ -43,7 +43,7 @@
 
                     <tr>
                         <td>Not satisfied</td>
-                        <td><img src="../../../public/img/w1.jpg" class="table-image" style="border-radius: 50px;"></td>
+                        <td><img src="<?php echo URLROOT;?>/public/img/w1.jpg" class="table-image" style="border-radius: 50px;"></td>
                         <td>1</td>
                         <td> <input type="reset" class="blue-button" value="Edit"/></td>
                         <td> <input type="reset" class="pink-button" value="Remove"/></td>
@@ -51,7 +51,7 @@
 
                     <tr>
                         <td>Not responding</td>
-                        <td><img src="../../../public/img/w2.jpg" class="table-image" style="border-radius: 50px;"></td>
+                        <td><img src="<?php echo URLROOT;?>/public/img/w2.jpg" class="table-image" style="border-radius: 50px;"></td>
                         <td>4</td>
                         <td> <input type="reset" class="blue-button" value="Edit"/></td>
                         <td> <input type="reset" class="pink-button" value="Remove"/></td>
@@ -59,7 +59,7 @@
 
                      <tr>
                         <td>Charges are high</td>
-                        <td><img src="../../../public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td>
+                        <td><img src="<?php echo URLROOT;?>/public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td>
                         <td>6</td>
                         <td> <input type="reset" class="blue-button" value="Edit"/></td>
                         <td> <input type="reset" class="pink-button" value="Remove"/></td>
@@ -93,7 +93,7 @@
                 
                     <tr>
                         <td>Not Paid</td>
-                        <td><img src="../../../public/img/w1.jpg" class="table-image" style="border-radius: 50px;"></td>
+                        <td><img src="<?php echo URLROOT;?>/public/img/w1.jpg" class="table-image" style="border-radius: 50px;"></td>
                         <td>5</td>
                         <td> <input type="reset" class="blue-button" value="Edit"/></td>
                         <td> <input type="reset" class="pink-button" value="Remove"/></td>
@@ -101,7 +101,7 @@
 
                     <tr>
                         <td>Not paid</td>
-                        <td><img src="../../../public/img/w2.jpg" class="table-image" style="border-radius: 50px;"></td>
+                        <td><img src="<?php echo URLROOT;?>/public/img/w2.jpg" class="table-image" style="border-radius: 50px;"></td>
                         <td>1</td>
                         <td> <input type="reset" class="blue-button" value="Edit"/></td>
                         <td> <input type="reset" class="pink-button" value="Remove"/></td>
@@ -109,7 +109,7 @@
 
                     <tr>
                         <td>Not responding</td>
-                        <td><img src="../../../public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td>
+                        <td><img src="<?php echo URLROOT;?>/public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td>
                         <td>4</td>
                         <td> <input type="reset" class="blue-button" value="Edit"/></td>
                         <td> <input type="reset" class="pink-button" value="Remove"/></td>
@@ -117,7 +117,7 @@
 
                      <tr>
                         <td>Not paid</td>
-                        <td><img src="../../../public/img/admin.jpg" class="table-image" style="border-radius: 50px;"></td>
+                        <td><img src="<?php echo URLROOT;?>/public/img/admin.jpg" class="table-image" style="border-radius: 50px;"></td>
                         <td>6</td>
                         <td> <input type="reset" class="blue-button" value="Edit"/></td>
                         <td> <input type="reset" class="pink-button" value="Remove"/></td>
@@ -145,7 +145,7 @@
                 
                     <tr>
                         <td>Not paid</td>
-                        <td><img src="../../../public/img/comp.png" class="table-image" style="border-radius: 50px;"></td>
+                        <td><img src="<?php echo URLROOT;?>/public/img/comp.png" class="table-image" style="border-radius: 50px;"></td>
                         <td>5</td>
                         <td> <input type="reset" class="blue-button" value="Edit"/></td>
                         <td> <input type="reset" class="pink-button" value="Remove"/></td>
@@ -153,7 +153,7 @@
 
                     <tr>
                         <td>Not satisfied</td>
-                        <td><img src="../../../public/img/comp.png" class="table-image" style="border-radius: 50px;"></td>
+                        <td><img src="<?php echo URLROOT;?>/public/img/comp.png" class="table-image" style="border-radius: 50px;"></td>
                         <td>1</td>
                         <td> <input type="reset" class="blue-button" value="Edit"/></td>
                         <td> <input type="reset" class="pink-button" value="Remove"/></td>
@@ -161,7 +161,7 @@
 
                     <tr>
                         <td>Not paid</td>
-                        <td><img src="../../../public/img/comp.png" class="table-image" style="border-radius: 50px;"></td>
+                        <td><img src="<?php echo URLROOT;?>/public/img/comp.png" class="table-image" style="border-radius: 50px;"></td>
                         <td>4</td>
                         <td> <input type="reset" class="blue-button" value="Edit"/></td>
                         <td> <input type="reset" class="pink-button" value="Remove"/></td>
@@ -169,7 +169,7 @@
 
                      <tr>
                         <td>Not paid</td>
-                        <td><img src="../../../public/img/comp.png" class="table-image" style="border-radius: 50px;"></td>
+                        <td><img src="<?php echo URLROOT;?>/public/img/comp.png" class="table-image" style="border-radius: 50px;"></td>
                         <td>6</td>
                         <td> <input type="reset" class="blue-button" value="Edit"/></td>
                         <td> <input type="reset" class="pink-button" value="Remove"/></td>
@@ -182,7 +182,7 @@
     
 <!---------------------------Arrow button----------------------------------------->
 <div class="arrow">
-	<a href="#"><img src="../../../public/img/arrow.png" alt="up_arrow"></a>
+	<a href="#"><img src="<?php echo URLROOT;?>/public/img/arrow.png" alt="up_arrow"></a>
 </div>  
 
 

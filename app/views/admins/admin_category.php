@@ -1,10 +1,10 @@
 
-<?php include("../home/topnav.php"); ?>
+<?php include_once APPROOT . '/views/includes/topnav.php'; ?>
 
-<?php include("../home/admin_sidenav.php"); ?>
+<?php include_once APPROOT . '/views/includes/admin_sidenav.php'; ?>
 
-<link rel='stylesheet' href="../../../public/css/home/table.css"/>
-<link rel='stylesheet' href="../../../public/css/home/button.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?>/public/css/home/table.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?>/public/css/home/button.css"/>
 <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
 
 
@@ -29,7 +29,7 @@
                 
                     <tr>
                         <td>Painter</td>
-                        <td><img src="../../../public/img/category/paintbrush.png" class="table-image"></td>
+                        <td><img src="<?php echo URLROOT;?>/public/img/category/paintbrush.png" class="table-image"></td>
                         <td>04/11/2021</td>
                         <td> <input type="reset" class="blue-button" value="Edit"/></td>
                         <td> <input type="reset" class="pink-button" value="Remove"/></td>
@@ -37,7 +37,7 @@
 
                     <tr>
                         <td>CCTV repair</td>
-                        <td><img src="../../../public/img/category/cctv.png" class="table-image"></td>
+                        <td><img src="<?php echo URLROOT;?>/public/img/category/cctv.png" class="table-image"></td>
                         <td>04/11/2021</td>
                         <td> <input type="reset" class="blue-button" value="Edit"/></td>
                         <td> <input type="reset" class="pink-button" value="Remove"/></td>
@@ -45,7 +45,7 @@
 
                     <tr>
                         <td>Cleaner</td>
-                        <td><img src="../../../public/img/category/cleaning.png" class="table-image"></td>
+                        <td><img src="<?php echo URLROOT;?>/public/img/category/cleaning.png" class="table-image"></td>
                         <td>04/11/2021</td>
                         <td> <input type="reset" class="blue-button" value="Edit"/></td>
                         <td> <input type="reset" class="pink-button" value="Remove"/></td>
@@ -53,7 +53,7 @@
 
                      <tr>
                         <td>Plumber</td>
-                        <td><img src="../../../public/img/category/plumber.png" class="table-image"></td>
+                        <td><img src="<?php echo URLROOT;?>/public/img/category/plumber.png" class="table-image"></td>
                         <td>04/11/2021</td>
                         <td> <input type="reset" class="blue-button" value="Edit"/></td>
                         <td> <input type="reset" class="pink-button" value="Remove"/></td>
@@ -96,7 +96,7 @@
     
 <!---------------------------Arrow button----------------------------------------->
 <div class="arrow">
-	<a href="#"><img src="../../../public/img/arrow.png" alt="up_arrow"></a>
+	<a href="#"><img src="<?php echo URLROOT;?>/public/img/arrow.png" alt="up_arrow"></a>
 </div>
 
-<?php include("../home/footer.php"); ?>
+<?php include_once APPROOT . '/views/includes/footer.php'; ?>
