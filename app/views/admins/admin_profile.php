@@ -84,4 +84,4 @@
 	<a href="#"><img src="<?php echo URLROOT;?>/public/img/arrow.png" alt="up_arrow"></a>
 </div>  
 
-<?php include_once APPROOT . '/views/includes/admin_sidenav.php'; ?>
+<?php include_once APPROOT . '/views/includes/footer.php'; ?>
