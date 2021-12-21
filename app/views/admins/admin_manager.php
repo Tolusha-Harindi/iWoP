@@ -1,15 +1,15 @@
-<?php include("../home/topnav.php"); ?>
+<?php include_once APPROOT . '/views/includes/topnav.php'; ?>
 
-<?php include("../home/admin_sidenav.php"); ?>
+<?php include_once APPROOT . '/views/includes/admin_sidenav.php'; ?>
 
-<link rel='stylesheet' href="../../../public/css/home/table.css"/>
-<link rel='stylesheet' href="../../../public/css/home/button.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?>/public/css/home/table.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?>/public/css/home/button.css"/>
 <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
 
 <!------heading----------->
 <div class="category"> <p> Manager </p> </div>
 
-<img src="../../../public/img/admin.jpg" style="border-radius: 200px; height:160px; width: 160px; margin-left:55%">
+<img src="<?php echo URLROOT;?>/public/img/admin.jpg" style="border-radius: 200px; height:160px; width: 160px; margin-left:55%">
 <p style="color: #113CFC; font-size:14px; margin-left:57.5%"> last active 5m </p>
 <p style="font-size:16px; margin-left:57%;"> Kasun Perera </p>
 
@@ -99,7 +99,7 @@
 
 <!---------------------------Arrow button----------------------------------------->
 <div class="arrow">
-	<a href="#"><img src="../../../public/img/arrow.png" alt="up_arrow"></a>
+	<a href="#"><img src="<?php echo URLROOT;?>/public/img/arrow.png" alt="up_arrow"></a>
 </div>
 
-<?php include("../home/footer.php"); ?>
+<?php include_once APPROOT . '/views/includes/footer.php'; ?>
