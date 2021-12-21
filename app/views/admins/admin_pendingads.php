@@ -1,11 +1,11 @@
 
-<?php include("../home/topnav.php"); ?>
+<?php include_once APPROOT . '/views/includes/topnav.php'; ?>
 
-<?php include("../home/admin_sidenav.php"); ?>
+<?php include_once APPROOT . '/views/includes/admin_sidenav.php'; ?>
 
-<link rel='stylesheet' href="../../../public/css/home/table.css"/>
-<link rel='stylesheet' href="../../../public/css/home/button.css"/>
-<link rel='stylesheet' href="../../../public/css/admin/ads.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?>/public/css/home/table.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?>/public/css/home/button.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?>/public/css/admin/ads.css"/>
 <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
 
 <a href="#customer-ads" class="top-button1"  style="margin-left:78em; width:7em;"> Customer Ads </a>
@@ -22,7 +22,7 @@
             <!---------------------------------------------------------------------------------------------------->
             <div class="ad-space">
                     <div class="img-user">
-                        <img src="../../../public/img/w3.jpg" alt="propic" class="img-ad"/>
+                        <img src="<?php echo URLROOT;?>/public/img/w3.jpg" alt="propic" class="img-ad"/>
                     </div>
                     <p class="title1"> Need a Plumber</p>
                         <div class="ad-row">
@@ -84,8 +84,8 @@
                                 <label for="name"> <b>Work to be done:</b> </label>
                             </div>
                             <div class="ad-col-65">
-                                <img src="../../../public/img/work.jpg" class="work">
-                                <img src="../../../public/img/work.jpg" class="work">
+                                <img src="<?php echo URLROOT;?>/public/img/work.jpg" class="work">
+                                <img src="<?php echo URLROOT;?>/public/img/work.jpg" class="work">
                             </div>
                         </div>
 
@@ -99,7 +99,7 @@
             <!---------------------------------------------------------------------------------------------------->
             <div class="ad-space">
                     <div class="img-user">
-                        <img src="../../../public/img/w3.jpg" alt="propic" class="img-ad"/>
+                        <img src="<?php echo URLROOT;?>/public/img/w3.jpg" alt="propic" class="img-ad"/>
                     </div>
                     <p class="title1"> Need a Plumber</p>
                         <div class="ad-row">
@@ -161,8 +161,8 @@
                                 <label for="name"> <b>Work to be done:</b> </label>
                             </div>
                             <div class="ad-col-65">
-                                <img src="../../../public/img/work.jpg" class="work">
-                                <img src="../../../public/img/work.jpg" class="work">
+                                <img src="<?php echo URLROOT;?>/public/img/work.jpg" class="work">
+                                <img src="<?php echo URLROOT;?>/public/img/work.jpg" class="work">
                             </div>
                         </div>
 
@@ -186,7 +186,7 @@
             <!---------------------------------------------------------------------------------------------------->
             <div class="ad-space">
                     <div class="img-user">
-                        <img src="../../../public/img/w3.jpg" alt="propic" class="img-ad"/>
+                        <img src="<?php echo URLROOT;?>/public/img/w3.jpg" alt="propic" class="img-ad"/>
                     </div>
                     <p class="title1"> Need a Plumber</p>
                         <div class="ad-row">
@@ -248,8 +248,8 @@
                                 <label for="name"> <b>Work to be done:</b> </label>
                             </div>
                             <div class="ad-col-65">
-                                <img src="../../../public/img/work.jpg" class="work">
-                                <img src="../../../public/img/work.jpg" class="work">
+                                <img src="<?php echo URLROOT;?>/public/img/work.jpg" class="work">
+                                <img src="<?php echo URLROOT;?>/public/img/work.jpg" class="work">
                             </div>
                         </div>
 
@@ -263,7 +263,7 @@
             <!---------------------------------------------------------------------------------------------------->
             <div class="ad-space">
                     <div class="img-user">
-                        <img src="../../../public/img/w3.jpg" alt="propic" class="img-ad"/>
+                        <img src="<?php echo URLROOT;?>/public/img/w3.jpg" alt="propic" class="img-ad"/>
                     </div>
                     <p class="title1"> Need a Plumber</p>
                         <div class="ad-row">
@@ -325,8 +325,8 @@
                                 <label for="name"> <b>Work to be done:</b> </label>
                             </div>
                             <div class="ad-col-65">
-                                <img src="../../../public/img/work.jpg" class="work">
-                                <img src="../../../public/img/work.jpg" class="work">
+                                <img src="<?php echo URLROOT;?>/public/img/work.jpg" class="work">
+                                <img src="<?php echo URLROOT;?>/public/img/work.jpg" class="work">
                             </div>
                         </div>
 
@@ -342,7 +342,7 @@
   
 <!---------------------------Arrow button----------------------------------------->
 <div class="arrow">
-	<a href="#"><img src="../../../public/img/arrow.png" alt="up_arrow"></a>
+	<a href="#"><img src="<?php echo URLROOT;?>/public/img/arrow.png" alt="up_arrow"></a>
 </div>  
 
-<?php include("../home/footer.php"); ?>
+<?php include_once APPROOT . '/views/includes/footer.php'; ?>
