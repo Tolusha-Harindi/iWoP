@@ -1,7 +1,7 @@
-<?php include("topnav2.php"); ?>
+<?php include_once APPROOT . '/views/includes/topnav2.php'; ?>
 
-<link rel='stylesheet' href="../../../public/css/home/landing.css"/>
-<link rel='stylesheet' href="../../../public/css/home/button.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT ?>/public/css/home/landing.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT ?>/public/css/home/button.css"/>
 
 <main>
     <div class="featured">
@@ -13,34 +13,34 @@
 
 <div class="slideshow-container">
     <div class="slideshow fade">
-        <img src="../../../public/img/landing/7.jpg" style="width:100% ; height:auto">
+        <img src="<?php echo URLROOT ?>/public/img/landing/7.jpg" style="width:100% ; height:auto">
     </div>
     <div class="slideshow fade">
-        <img src="../../../public/img/landing/14.jpg" style="width:100% ; height:auto">
-    </div>
-
-    <div class="slideshow fade">
-        <img src="../../../public/img/landing/2.jpg" style="width:100% ; height:auto">
+        <img src="<?php echo URLROOT ?>/public/img/landing/14.jpg" style="width:100% ; height:auto">
     </div>
 
     <div class="slideshow fade">
-        <img src="../../../public/img/landing/3.jpg" style="width:100% ; height:auto">
+        <img src="<?php echo URLROOT ?>/public/img/landing/2.jpg" style="width:100% ; height:auto">
     </div>
 
     <div class="slideshow fade">
-        <img src="../../../public/img/landing/8.jpg" style="width:100% ; height:auto">
+        <img src="<?php echo URLROOT ?>/public/img/landing/3.jpg" style="width:100% ; height:auto">
+    </div>
+
+    <div class="slideshow fade">
+        <img src="<?php echo URLROOT ?>/public/img/landing/8.jpg" style="width:100% ; height:auto">
     </div>
     <div class="slideshow fade">
-        <img src="../../../public/img/landing/9.jpg" style="width:100% ; height:auto">
+        <img src="<?php echo URLROOT ?>/public/img/landing/9.jpg" style="width:100% ; height:auto">
     </div>
     <div class="slideshow fade">
-        <img src="../../../public/img/landing/18.jpg" style="width:100% ; height:auto">
+        <img src="<?php echo URLROOT ?>/public/img/landing/18.jpg" style="width:100% ; height:auto">
     </div>
     <div class="slideshow fade">
-        <img src="../../../public/img/landing/12.jpg" style="width:100% ; height:auto">
+        <img src="<?php echo URLROOT ?>/public/img/landing/12.jpg" style="width:100% ; height:auto">
     </div>
     <div class="slideshow fade">
-        <img src="../../../public/img/landing/22.jpg" style="width:100% ; height:auto">
+        <img src="<?php echo URLROOT ?>/public/img/landing/22.jpg" style="width:100% ; height:auto">
     </div>
 
 </div>
@@ -89,7 +89,7 @@
                                 <div class="type-lb">
                                     <p class="new">New</p>
                                 </div>
-                                <img src="../../../public/img/landing/1.jpg" class="img-fluid" alt="Image">
+                                <img src="<?php echo URLROOT ?>/public/img/landing/1.jpg" class="img-fluid" alt="Image">
                                 <div class="mask-icon">
                                     <a class="cart" href="" style="width: 100%;">View Service</a>
                                 </div>
@@ -106,7 +106,7 @@
                                 <div class="type-lb">
                                     <p class="new">New</p>
                                 </div>
-                                <img src="../../../public/img/landing/23.jpg" class="img-fluid" alt="Image">
+                                <img src="<?php echo URLROOT ?>/public/img/landing/23.jpg" class="img-fluid" alt="Image">
                                 <div class="mask-icon">
                                     <a class="cart" href=">" style="width: 100%;">View Service</a>
                                 </div>
@@ -123,7 +123,7 @@
                                 <div class="type-lb">
                                     <p class="new">New</p>
                                 </div>
-                                <img src="../../../public/img/landing/3.jpg" class="img-fluid" alt="Image">
+                                <img src="<?php echo URLROOT ?>/public/img/landing/3.jpg" class="img-fluid" alt="Image">
                                 <div class="mask-icon">
                                     <a class="cart" href="" style="width: 100%;">View Service</a>
                                 </div>
@@ -140,7 +140,7 @@
                                 <div class="type-lb">
                                     <p class="new">New</p>
                                 </div>
-                                <img src="../../../public/img/landing/4.jpg" class="img-fluid" alt="Image">
+                                <img src="<?php echo URLROOT ?>/public/img/landing/4.jpg" class="img-fluid" alt="Image">
                                 <div class="mask-icon">
                                     <a class="cart" href="" style="width: 100%;">View Service</a>
                                 </div>
@@ -205,4 +205,4 @@
 
 
 
-<?php include("footer.php"); ?>
+<?php include_once APPROOT . '/views/includes/footer.php'; ?>
