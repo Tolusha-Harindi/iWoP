@@ -28,7 +28,7 @@
             <input type="password" placeholder="Re-Enter Password" name="repasw" required>
 
             <button type="submit" class="blue-button">Sign-Up</button>
-            <p class="register-link"><a href="<?php echo URLROOT;?>/logins/login.php">Back to Login >></a> </p>
+            <p class="register-link"><a href="<?php echo URLROOT;?>/logins/login">Back to Login >></a> </p>
         </div>  
 </form>
 
