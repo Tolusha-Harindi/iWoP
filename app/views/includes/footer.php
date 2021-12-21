@@ -1,4 +1,4 @@
-<link rel='stylesheet' href="../../../public/css/home/footer.css" />
+<link rel='stylesheet' href="<?php echo URLROOT?>/public/css/home/footer.css" />
 
 <div class='footer'>
     <div class='top'>
