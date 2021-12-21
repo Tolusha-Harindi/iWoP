@@ -22,12 +22,12 @@
         <div class='social-media-container'>
             <ul class='footer-list'>
                 <li class='footer-list-item'>
-                    <a class='footer-link' href="<?php echo URLROOT;?>/homes/home" target='_blank'>
+                    <a class='footer-link' href="<?php echo URLROOT;?>/homes/home">
                         Privacy and Policy
                     </a>
                 </li>
                 <li class='footer-list-item'>
-                    <a class='footer-link' href="<?php echo URLROOT;?>/homes/home" target='_blank'>
+                    <a class='footer-link' href="<?php echo URLROOT;?>/homes/home">
                         Terms and Conditions
                     </a>
                 </li>
@@ -36,12 +36,12 @@
         <div class='social-media-container'>
             <ul class='footer-list'>
                 <li class='footer-list-item'>
-                    <a class='footer-link' href="<?php echo URLROOT;?>/homes/home" target='_blank'>
+                    <a class='footer-link' href="<?php echo URLROOT;?>/homes/home">
                         Contact Us
                     </a>
                 </li>
                 <li class='footer-list-item'>
-                    <a class='footer-link' href="<?php echo URLROOT;?>/homes/home" target='_blank'>
+                    <a class='footer-link' href="<?php echo URLROOT;?>/homes/home">
                         +94 333 334 555
                     </a>
                 </li>
