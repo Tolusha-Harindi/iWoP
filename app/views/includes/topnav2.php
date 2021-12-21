@@ -23,7 +23,7 @@
             <a href="#" class="anchor-tag"> Home </a>
         </li>
         <li class="link"> 
-            <a href="#" class="anchor-tag"> FAQ </a>
+            <a href="<?php echo URLROOT?> /homes/faq" class="anchor-tag"> FAQ </a>
         </li>
         <li class="link"> 
             <a href="#" class="anchor-tag"> Services </a>

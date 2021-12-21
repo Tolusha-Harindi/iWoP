@@ -16,4 +16,13 @@
             $this->view('homes/landing', $data);
           
         }
+
+        public function faq(){
+            $data = [
+                'title' => 'faq',
+                //'users' => $users
+            ];
+
+            $this->view('homes/faq', $data);
+        }
     }
