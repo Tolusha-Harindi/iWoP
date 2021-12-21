@@ -18,7 +18,7 @@
 
             <button type="submit" class="blue-button">Login</button>
         </div>
-        <p class="register-link">Haven't Registered yet? Click here to <a href="<?php echo URLROOT?>/logins/register">Register</a> </p>
+        <p class="register-link">Haven't Registered yet? Click here to <a href="<?php echo URLROOT;?>/logins/register">Register</a> </p>
     </div>
 </form>
 

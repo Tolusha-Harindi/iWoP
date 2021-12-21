@@ -30,6 +30,19 @@
           
         }
 
+        public function worker_register() {
+
+            //$users = $this->pageModel-> getUsers();
+            $data = [
+                'title' => 'Worker register page',
+                //'users' => $users
+
+            ];
+
+            $this->view('logins/worker_register', $data);
+          
+        }
+
         public function customer_register() {
 
             //$users = $this->pageModel-> getUsers();
@@ -56,16 +69,4 @@
           
         }
 
-        public function worker_register() {
-
-            //$users = $this->pageModel-> getUsers();
-            $data = [
-                'title' => 'Worker register page',
-                //'users' => $users
-
-            ];
-
-            $this->view('logins/worker_register', $data);
-          
-        }
     }
