@@ -81,5 +81,18 @@
             $this->view('customers/customer_service_providers', $data);
           
         }
+
+        public function customer_chat() {
+
+            //$users = $this->pageModel-> getUsers();
+            $data = [
+                'title' => 'customer_chat page',
+                //'users' => $users
+
+            ];
+
+            $this->view('customers/customer_chat', $data);
+          
+        }
     
 }
