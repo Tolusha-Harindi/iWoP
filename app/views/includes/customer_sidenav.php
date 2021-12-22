@@ -19,32 +19,32 @@
 
     <div class="sidebar">
         <div class="description">
-        <a href="<?php echo URLROOT;?>/customers/ustomer_dashboard" class='side-link-active'>
+        <a href="<?php echo URLROOT;?>/customers/customer_dashboard" class='side-link-active'>
                 <ul class='side-list-active'>
                     <li>Dashboard</li>
                 </ul>
         </a>
-        <a href="<?php echo URLROOT;?>/customers/ustomer_message" class='side-link'>
+        <a href="<?php echo URLROOT;?>/customers/customer_message" class='side-link'>
                 <ul class='side-list'>
                     <li>Message</li>
                 </ul>
         </a>
-        <a href="<?php echo URLROOT;?>/customers/ustomer_responses" class='side-link'>
+        <a href="<?php echo URLROOT;?>/customers/customer_responses" class='side-link'>
                 <ul class='side-list'>
                     <li>Ads & Responses</li>
                 </ul>
         </a>
-        <a href="<?php echo URLROOT;?>/customers/ustomer_recent_workers" class='side-link'>
+        <a href="<?php echo URLROOT;?>/customers/customer_recent_workers" class='side-link'>
                 <ul class='side-list'>
                     <li>Recent Workers</li>
                 </ul>
         </a>
-        <a href="<?php echo URLROOT;?>/customers/ustomer_category" class='side-link'>
+        <a href="<?php echo URLROOT;?>/customers/customer_category" class='side-link'>
                 <ul class='side-list'>
                     <li>Category</li>
                 </ul>
         </a>
-        <a href="<?php echo URLROOT;?>/customers/ustomer_service_providers" class='side-link'>
+        <a href="<?php echo URLROOT;?>/customers/customer_service_providers" class='side-link'>
                 <ul class='side-list'>
                     <li>Service Providers</li>
                 </ul>
