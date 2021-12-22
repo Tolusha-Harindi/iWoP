@@ -1,11 +1,11 @@
-<?php include("../home/topnav.php"); ?>
+<?php include_once APPROOT . '/views/includes/topnav.php'; ?>
 
-<?php include("../home/company_sidenav.php"); ?>
+<?php include_once APPROOT . '/views/includes/company_sidenav.php'; ?>
 
-<link rel='stylesheet' href="../../../public/css/home/table.css"/>
-<link rel='stylesheet' href="../../../public/css/home/button.css"/>
-<link rel='stylesheet' href="../../../public/css/company/ads.css"/>
-<link rel='stylesheet' href="../../../public/css/home/popup.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/home/table.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/home/button.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/company/ads.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/home/popup.css"/>
 <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
 
 <!--------------------------search bar------------------------------->
@@ -147,7 +147,7 @@
                     <table style="margin-top: 2em; margin-left:2em; margin-right:1em;">
                         <tr>
                             <td rowspan="5">
-                                <img src="../../../public/img/w3.jpg" alt="propic" class="img-ad-worker"/>
+                                <img src="<?php echo URLROOT;?> /public/img/w3.jpg" alt="propic" class="img-ad-worker"/>
                             </td>
                             <td> Supun Guruge</td>
                         </tr>
@@ -220,7 +220,7 @@
                     <table style="margin-top: 2em; margin-left:2em; margin-right:1em;">
                         <tr>
                             <td rowspan="5">
-                                <img src="../../../public/img/w3.jpg" alt="propic" class="img-ad-worker"/>
+                                <img src="<?php echo URLROOT;?> /public/img/w3.jpg" alt="propic" class="img-ad-worker"/>
                             </td>
                             <td> Supun Guruge</td>
                         </tr>
@@ -290,7 +290,7 @@
                     <table style="margin-top: 2em; margin-left:2em; margin-right:1em;">
                         <tr>
                             <td rowspan="5">
-                                <img src="../../../public/img/w3.jpg" alt="propic" class="img-ad-worker"/>
+                                <img src="<?php echo URLROOT;?> /public/img/w3.jpg" alt="propic" class="img-ad-worker"/>
                             </td>
                             <td> Supun Guruge</td>
                         </tr>
@@ -366,7 +366,7 @@
                     <table style="margin-top: 2em; margin-left:2em; margin-right:1em;">
                         <tr>
                             <td rowspan="5">
-                                <img src="../../../public/img/w3.jpg" alt="propic" class="img-ad-worker"/>
+                                <img src="<?php echo URLROOT;?> /public/img/w3.jpg" alt="propic" class="img-ad-worker"/>
                             </td>
                             <td> Supun Guruge</td>
                         </tr>
@@ -436,7 +436,7 @@
                     <table style="margin-top: 2em; margin-left:2em; margin-right:1em;">
                         <tr>
                             <td rowspan="5">
-                                <img src="../../../public/img/w3.jpg" alt="propic" class="img-ad-worker"/>
+                                <img src="<?php echo URLROOT;?> /public/img/w3.jpg" alt="propic" class="img-ad-worker"/>
                             </td>
                             <td> Supun Guruge</td>
                         </tr>
@@ -506,7 +506,7 @@
                     <table style="margin-top: 2em; margin-left:2em; margin-right:1em;">
                         <tr>
                             <td rowspan="5">
-                                <img src="../../../public/img/w3.jpg" alt="propic" class="img-ad-worker"/>
+                                <img src="<?php echo URLROOT;?> /public/img/w3.jpg" alt="propic" class="img-ad-worker"/>
                             </td>
                             <td> Supun Guruge</td>
                         </tr>
@@ -584,7 +584,7 @@
         <div class="modal-content" style="margin-top: 10%;">
                 <form action="">
                     <span class="close">&times;</span>
-                    <p class="heading" style="margin-top: 1em; margin-left:35%;">Invite for Job <img src="../../../public/img/invite.png" class="popup-image"></p>
+                    <p class="heading" style="margin-top: 1em; margin-left:35%;">Invite for Job <img src="<?php echo URLROOT;?> /public/img/invite.png" class="popup-image"></p>
                         <div class="row">
                             <div class="col-25">
                             <label for="time" style="color: #0526BA; font-size:15px;">Time</label>
@@ -630,12 +630,12 @@
     </div>
 
 <!------------------Java Script------------------------------->
-<script type="text/javascript" src="../../../public/js/pink-button-popup.js"> 
+<script type="text/javascript" src="<?php echo URLROOT;?> /public/js/pink-button-popup.js"> 
 </script>
 
 <!---------------------------Arrow button----------------------------------------->
 <div class="arrow">
-	<a href="#"><img src="../../../public/img/arrow.png" alt="up_arrow"></a>
+	<a href="#"><img src="<?php echo URLROOT;?> /public/img/arrow.png" alt="up_arrow"></a>
 </div> 
 
-<?php include("../home/footer.php"); ?>
+<?php include_once APPROOT . '/views/includes/footer.php'; ?>
