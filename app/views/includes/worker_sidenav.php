@@ -48,7 +48,7 @@
                     <li>Job Invites</li>
                 </ul>
         </a>
-        <a href="<?php echo URLROOT;?>/workers/worker_bank_detail"class='side-link'>
+        <a href="<?php echo URLROOT;?>/workers/worker_bank_edit"class='side-link'>
                 <ul class='side-list'>
                     <li>Bank Details</li>
                 </ul>
