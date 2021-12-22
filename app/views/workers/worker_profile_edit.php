@@ -1,20 +1,20 @@
-<?php include("../home/topnav.php"); ?>
+<?php include_once APPROOT . '/views/includes/topnav.php'; ?>
 
-<?php include("../home/worker_sidenav.php"); ?>
+<?php include_once APPROOT . '/views/includes/worker_sidenav.php'; ?>
 
-<link rel='stylesheet' href="../../../public/css/home/table.css"/>
-<link rel='stylesheet' href="../../../public/css/home/button.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/home/table.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/home/button.css"/>
 <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-<a href="#my-profile" class="top-button3" style="margin-top: -41em; margin-right: 26.8em;"> My Profile </a>
-<a href="#change-password" class="top-button1" style="margin-top: -41em; margin-right: 14em;"> Change Password </a>
-<a href="#my-service" class="top-button2" style="margin-top: -41em;"> My Service </a>
+<a href="#my-profile" class="top-button3" style="margin-top: -45em; margin-left: 55em;"> My Profile </a>
+<a href="#change-password" class="top-button1" style="margin-top: -45em; margin-left: 65em; width:10em;"> Change Password </a>
+<a href="#my-service" class="top-button2" style="margin-top: -45em;  margin-left: 80em;"> My Service </a>
 
 <!------------------profile edit------------------------>
 <div class="category" id="my-profile" style="margin-top: -14em;"> <p> My Profile </p> </div>
 
-<img src="../../../public/img/w3.jpg" style="border-radius: 200px; height:160px; width: 160px; margin-left:55%">
+<img src="<?php echo URLROOT;?> /public/img/w3.jpg" style="border-radius: 200px; height:160px; width: 160px; margin-left:55%">
 
 <div class="form-space">
     <form action="/action_page.php">
@@ -100,7 +100,7 @@
 
 <!-----------------------------------Edit Service------------------------------------------------>
 
-<div class="heading" id="change-password"> <p> My Service </p> </div>
+<div class="heading" id="my-service"> <p> My Service </p> </div>
 
 <div class="form-space">
     <form action="/action_page.php">
@@ -226,7 +226,10 @@
 
 </br> </br>
 <input type="reset" value="Delete Account" class="pink-button" style="float: right; margin-right:13.2em;"> 
-<a href=# style="margin-left:90%; margin-top: -60%;"><i class="fas fa-angle-double-up"></i></a>
 
+<!---------------------------Arrow button----------------------------------------->
+<div class="arrow">
+	<a href="#"><img src="<?php echo URLROOT;?>/public/img/arrow.png" alt="up_arrow"></a>
+</div>   
 
-<?php include("../home/footer.php"); ?>
+<?php include_once APPROOT . '/views/includes/footer.php'; ?>
