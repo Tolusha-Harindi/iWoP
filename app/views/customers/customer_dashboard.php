@@ -1,10 +1,10 @@
 
-<?php include("../home/topnav.php"); ?>
+<?php include_once APPROOT . '/views/includes/topnav.php'; ?>
 
 <?php include_once APPROOT . '/views/includes/customer_sidenav.php'; ?>
 
-<link rel='stylesheet' href="../../../public/css/customer/dashboard.css"/>
-<link rel='stylesheet' href="../../../public/css/home/button.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/customer/dashboard.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/home/button.css"/>
 <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
 
 
@@ -20,19 +20,19 @@
         <div class="dash-card" id="card1">
             <h3>Message Count</h3>
             <h1> 28 </h1>
-            <img src="../../../public/img/message.png" alt="">
+            <img src="<?php echo URLROOT;?> /public/img/message.png" alt="">
         </div>
     
         <div class="dash-card" id="card2">
             <h3>Due Payment Count</h3>
             <h1> 25 </h1>
-            <img src="../../../public/img/due-payments.png" alt="">
+            <img src="<?php echo URLROOT;?> /public/img/due-payments.png" alt="">
         </div>
 
         <div class="dash-card" id="card3">
             <h3>Recent Workers Count</h3>
             <h1> 255 </h1>
-            <img src="../../../public/img/worker-conut.png" alt="">
+            <img src="<?php echo URLROOT;?> /public/img/worker-conut.png" alt="">
         </div>
 
     </div>
@@ -42,19 +42,19 @@
         <div class="dash-card" id="card1">
             <h3>Posted Ads Count</h3>
             <h1> 28 </h1>
-            <img src="../../../public/img/ads1.png" alt="">
+            <img src="<?php echo URLROOT;?> /public/img/ads1.png" alt="">
         </div>
 
         <div class="dash-card" id="card2">
             <h3>Deleted Ads Count</h3>
             <h1> 255 </h1>
-            <img src="../../../public/img/delete.png" alt="">
+            <img src="<?php echo URLROOT;?> /public/img/delete.png" alt="">
         </div>
 
         <div class="dash-card" id="card3">
             <h3>Workers Request Count</h3>
             <h1> 255 </h1>
-            <img src="../../../public/img/complaint3.png" alt="">
+            <img src="<?php echo URLROOT;?> /public/img/complaint3.png" alt="">
         </div>
 
     </div>
@@ -64,13 +64,13 @@
         <div class="dash-card" id="card1">
             <h3>Accepted Count by Workers</h3>
             <h1> 28 </h1>
-            <img src="../../../public/img/accept.png" alt="">
+            <img src="<?php echo URLROOT;?> /public/img/accept.png" alt="">
         </div>
 
         <div class="dash-card" id="card2">
             <h3>Rejected Count by Workers</h3>
             <h1> 255 </h1>
-            <img src="../../../public/img/reject.png" alt="">
+            <img src="<?php echo URLROOT;?> /public/img/reject.png" alt="">
         </div>
 
     </div>
@@ -84,27 +84,27 @@
     <div class="row1">
 
         <div class="dash-card-top" id="card">
-            <img src="../../../public/img/category/air-conditioner.png" alt=""> </br>
+            <img src="<?php echo URLROOT;?> /public/img/category/air-conditioner.png" alt=""> </br>
             <p>AC repair</p>
         </div>
     
         <div class="dash-card-top" id="card">
-            <img src="../../../public/img/category/cctv.png" alt="">
+            <img src="<?php echo URLROOT;?> /public/img/category/cctv.png" alt="">
             <p>CCTV repair</p>
         </div>
 
         <div class="dash-card-top" id="card">
-            <img src="../../../public/img/category/electrician.png" alt="">
+            <img src="<?php echo URLROOT;?> /public/img/category/electrician.png" alt="">
             <p>Electrician</p>
         </div>
 
         <div class="dash-card-top" id="card">
-            <img src="../../../public/img/category/plumber.png" alt="">
+            <img src="<?php echo URLROOT;?> /public/img/category/plumber.png" alt="">
             <p>Plumber</p>
         </div>
 
         <div class="dash-card-top" id="card">
-            <img src="../../../public/img/category/waiter.png" alt="">
+            <img src="<?php echo URLROOT;?> /public/img/category/waiter.png" alt="">
             <p>Waiter</p>
         </div>
 
@@ -120,7 +120,7 @@
     <div class="row1">
 
         <div class="dash-card-top-service" id="card">
-            <img src="../../../public/img/admin.jpg" alt="" style="border-radius: 50px;"> </br>
+            <img src="<?php echo URLROOT;?> /public/img/admin.jpg" alt="" style="border-radius: 50px;"> </br>
             <p>Kamal Perera</p>
             <p style="color: #1E3CC0;">AC repair</p>
             <p>Colombo</p>
@@ -134,7 +134,7 @@
         </div>
     
         <div class="dash-card-top-service" id="card">
-            <img src="../../../public/img/admin.jpg" alt="" style="border-radius: 50px;">
+            <img src="<?php echo URLROOT;?> /public/img/admin.jpg" alt="" style="border-radius: 50px;">
             <p>Kamal Perera</p>
             <p style="color: #1E3CC0;">CCTV repair</p>
             <p>Colombo</p>
@@ -148,7 +148,7 @@
         </div>
 
         <div class="dash-card-top-service" id="card">
-            <img src="../../../public/img/admin.jpg" alt="" style="border-radius: 50px;">
+            <img src="<?php echo URLROOT;?> /public/img/admin.jpg" alt="" style="border-radius: 50px;">
             <p>Kamal Perera</p>
             <p style="color: #1E3CC0;">Electrician</p>
             <p>Colombo</p>
@@ -162,7 +162,7 @@
         </div>
 
         <div class="dash-card-top-service" id="card">
-            <img src="../../../public/img/admin.jpg" alt="" style="border-radius: 50px;">
+            <img src="<?php echo URLROOT;?> /public/img/admin.jpg" alt="" style="border-radius: 50px;">
             <p>Kamal Perera</p>
             <p style="color: #1E3CC0;">Plumber</p>
             <p>Colombo</p>
@@ -176,7 +176,7 @@
         </div>
 
         <div class="dash-card-top-service" id="card">
-            <img src="../../../public/img/admin.jpg" alt="" style="border-radius: 50px;">
+            <img src="<?php echo URLROOT;?> /public/img/admin.jpg" alt="" style="border-radius: 50px;">
             <p>Kamal Perera</p>
             <p style="color: #1E3CC0;">Waiter</p>
             <p>Colombo</p>
@@ -194,7 +194,7 @@
 
 <!---------------------------Arrow button----------------------------------------->
 <div class="arrow">
-	<a href="#"><img src="../../../public/img/arrow.png" alt="up_arrow"></a>
+	<a href="#"><img src="<?php echo URLROOT;?> /public/img/arrow.png" alt="up_arrow"></a>
 </div>  
 
-<?php include("../home/footer.php"); ?>
+<?php include_once APPROOT . '/views/includes/footer.php'; ?>
