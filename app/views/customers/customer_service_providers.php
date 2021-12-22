@@ -1,4 +1,4 @@
-<?php include("../home/topnav.php"); ?>
+<?php include_once APPROOT . '/views/includes/topnav.php'; ?>
 
 <?php include("../home/customer_sidenav.php"); ?>
 
