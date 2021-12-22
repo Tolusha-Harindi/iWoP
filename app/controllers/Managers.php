@@ -1,5 +1,5 @@
 <?php
-    class Customers extends Controller {
+    class Managers extends Controller {
         public function __construct() {
             //$this->pageModel = $this->model('Page');
         }
