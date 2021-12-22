@@ -1,3 +1,6 @@
+<?php include_once APPROOT . '/views/includes/topnav.php'; ?>
+
+<?php include_once APPROOT . '/views/includes/worker_sidenav.php'; ?>
 
         <link rel="stylesheet" href="<?php echo URLROOT;?> /public/css/home/chat.css">
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
