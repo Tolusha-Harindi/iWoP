@@ -1,11 +1,11 @@
-<?php include("../home/topnav.php"); ?>
+<?php include_once APPROOT . '/views/includes/topnav.php'; ?>
 
-<?php include("../home/worker_sidenav.php"); ?>
+<?php include_once APPROOT . '/views/includes/worker_sidenav.php'; ?>
 
-<link rel='stylesheet' href="../../../public/css/home/button.css"/>
-<link rel='stylesheet' href="../../../public/css/home/table.css"/>
-<link rel='stylesheet' href="../../../public/css/home/popup.css"/>
-<link rel='stylesheet' href="../../../public/css/worker/container.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/home/button.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/home/table.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/home/popup.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/worker/container.css"/>
 <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
@@ -146,7 +146,7 @@
                     <table style="margin-top: 2em; margin-left:1.5em; margin-right:0.8em; padding-bottom:5px;">
                         <tr>
                             <td rowspan="6">
-                                <img src="../../../public/img/w3.jpg" alt="propic" class="img-worker"/>
+                                <img src="<?php echo URLROOT;?> /public/img/w3.jpg" alt="propic" class="img-worker"/>
                             </td>
                             <td>Dream Wave</td>
                         </tr>
@@ -211,7 +211,7 @@
                     <table style="margin-top: 2em; margin-left:1.5em; margin-right:0.8em; padding-bottom:5px;">
                         <tr>
                             <td rowspan="6">
-                                <img src="../../../public/img/w3.jpg" alt="propic" class="img-worker"/>
+                                <img src="<?php echo URLROOT;?> /public/img/w3.jpg" alt="propic" class="img-worker"/>
                             </td>
                             <td>Dream Wave</td>
                         </tr>
@@ -276,7 +276,7 @@
                     <table style="margin-top: 2em; margin-left:1.5em; margin-right:0.8em; padding-bottom:5px;">
                         <tr>
                             <td rowspan="6">
-                                <img src="../../../public/img/w3.jpg" alt="propic" class="img-worker"/>
+                                <img src="<?php echo URLROOT;?> /public/img/w3.jpg" alt="propic" class="img-worker"/>
                             </td>
                             <td>Dream Wave</td>
                         </tr>
@@ -347,7 +347,7 @@
                     <table style="margin-top: 2em; margin-left:1.5em; margin-right:0.8em; padding-bottom:5px;">
                         <tr>
                             <td rowspan="6">
-                                <img src="../../../public/img/w3.jpg" alt="propic" class="img-worker"/>
+                                <img src="<?php echo URLROOT;?> /public/img/w3.jpg" alt="propic" class="img-worker"/>
                             </td>
                             <td>Dream Wave</td>
                         </tr>
@@ -412,7 +412,7 @@
                     <table style="margin-top: 2em; margin-left:1.5em; margin-right:0.8em; padding-bottom:5px;">
                         <tr>
                             <td rowspan="6">
-                                <img src="../../../public/img/w3.jpg" alt="propic" class="img-worker"/>
+                                <img src="<?php echo URLROOT;?> /public/img/w3.jpg" alt="propic" class="img-worker"/>
                             </td>
                             <td>Dream Wave</td>
                         </tr>
@@ -477,7 +477,7 @@
                     <table style="margin-top: 2em; margin-left:1.5em; margin-right:0.8em; padding-bottom:5px;">
                         <tr>
                             <td rowspan="6">
-                                <img src="../../../public/img/w3.jpg" alt="propic" class="img-worker"/>
+                                <img src="<?php echo URLROOT;?> /public/img/w3.jpg" alt="propic" class="img-worker"/>
                             </td>
                             <td>Dream Wave</td>
                         </tr>
@@ -541,6 +541,9 @@
 </div>
 
 <br/>
-<a href=# style="margin-left:96%; margin-top: -60%;"><i class="fas fa-chevron-circle-up"></i></a>
+<!---------------------------Arrow button----------------------------------------->
+<div class="arrow">
+	<a href="#"><img src="<?php echo URLROOT;?>/public/img/arrow.png" alt="up_arrow"></a>
+</div>   
 
-<?php include("../home/footer.php"); ?>
+<?php include_once APPROOT . '/views/includes/footer.php'; ?>

@@ -82,16 +82,16 @@
           
         }
 
-        public function worker_job_vacanccies() {
+        public function worker_job_vaccancies() {
 
             //$users = $this->pageModel-> getUsers();
             $data = [
-                'title' => 'worker_job_vacanccies page',
+                'title' => 'worker_job_vaccancies page',
                 //'users' => $users
 
             ];
 
-            $this->view('workers/worker_job_vacanccies', $data);
+            $this->view('workers/worker_job_vaccancies', $data);
           
         }
 
