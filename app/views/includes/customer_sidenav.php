@@ -24,7 +24,7 @@
                     <li>Dashboard</li>
                 </ul>
         </a>
-        <a href="<?php echo URLROOT;?>/customers/customer_message" class='side-link'>
+        <a href="<?php echo URLROOT;?>/customers/customer_chat" class='side-link'>
                 <ul class='side-list'>
                     <li>Message</li>
                 </ul>
