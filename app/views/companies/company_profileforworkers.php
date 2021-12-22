@@ -1,8 +1,9 @@
-<?php include("../home/topnav.php"); ?>
-<link rel='stylesheet' href="../../../public/css/home/button.css"/>
-<link rel='stylesheet' href="../../../public/css/home/table.css"/>
-<link rel='stylesheet' href="../../../public/css/home/popup.css"/>
-<link rel='stylesheet' href="../../../public/css/company/star.css"/>
+<?php include_once APPROOT . '/views/includes/topnav.php'; ?>
+
+<link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/home/button.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/home/table.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/home/popup.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/company/star.css"/>
 
 <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
 
@@ -232,7 +233,7 @@ table,th,td{
      <!-- last active -->
       <!-- <h5>Last Active 2 days ago</h5> -->
             <div class="img-container">
-                <img src="../../../public/img/comp.png" alt="propic" class="img1"/>
+                <img src="<?php echo URLROOT;?> /public/img/comp.png" alt="propic" class="img1"/>
             </div>
            <p class="companyname">
                Dream Wave
@@ -242,7 +243,7 @@ table,th,td{
            </p>
 
            <div class="img-container2">
-                <img src="../../../public/img/star.png" alt="propic" class="img2"/>
+                <img src="<?php echo URLROOT;?> /public/img/star.png" alt="propic" class="img2"/>
             </div>
             <p class="ex">
                10+ Years Experience
@@ -382,7 +383,7 @@ table,th,td{
             <table >
                 <tr>
                     <td>
-                        <img src="../../../public/img/review.png" alt="review" id="rimg">
+                        <img src="<?php echo URLROOT;?> /public/img/review.png" alt="review" id="rimg">
                     </td>
 
                     <td>
@@ -395,7 +396,7 @@ table,th,td{
                 </tr>
                 <tr>
                    <td></td> 
-                   <td>   &nbsp&nbsp&nbsp<img src="../../../public/img/star.png" alt=" star" id="star"></td> 
+                   <td>   &nbsp&nbsp&nbsp<img src="<?php echo URLROOT;?> /public/img/star.png" alt=" star" id="star"></td> 
                 </tr>
                 <tr>
                     <td></td>
@@ -424,7 +425,7 @@ table,th,td{
         <div class="modal-content" style="margin-top: 10%;">
                 <form action="">
                     <span class="close">&times;</span>
-                    <p class="heading" style="margin-top: 1em; margin-left:35%; color:red">Report User <img src="../../../public/img/invite.png" class="popup-image"></p>
+                    <p class="heading" style="margin-top: 1em; margin-left:35%; color:red">Report User <img src="<?php echo URLROOT;?> /public/img/invite.png" class="popup-image"></p>
                         <p class="pop-up-heading">
                             Please select your issue type
                        </p>
@@ -442,17 +443,17 @@ table,th,td{
                         <label for=""> Not Responding</label>
                         
                      </div>   -->
-                     <input type="radio" id="first" name="report" value="NOT">
-    <label for="html">Not Responding</label>
-    <input type="radio" id="second" name="report" value="Unprof">
-    <label for="css">Unprofessional</label><br>
-    <input type="radio" id="third" name="report" value="notcom">
-    <label for="css">Did not complete the job</label>
-    <input type="radio" id="fourth" name="report" value="high">
-    <label for="css">Chargers are high</label>
-                       <textarea id="reporttext" name="reporttext" placeholder="Provide additional details.." ></textarea><br>
+                        <input type="radio" id="first" name="report" value="NOT">
+                        <label for="html">Not Responding</label>
+                        <input type="radio" id="second" name="report" value="Unprof">
+                        <label for="css">Unprofessional</label><br>
+                        <input type="radio" id="third" name="report" value="notcom">
+                        <label for="css">Did not complete the job</label>
+                        <input type="radio" id="fourth" name="report" value="high">
+                        <label for="css">Chargers are high</label>
+                        <textarea id="reporttext" name="reporttext" placeholder="Provide additional details.." ></textarea><br>
 
-                       </textarea>
+                        </textarea>
                     <!-- <div class="row">
                             <div class="col-25">
                             <label for="time" style="color: #0526BA; font-size:15px;">Time</label>
@@ -500,12 +501,12 @@ table,th,td{
     </div>
 
     <!------------------Java Script------------------------------->
-    <script type="text/javascript" src="../../../public/js/pink-button-popup.js"> 
+    <script type="text/javascript" src="<?php echo URLROOT;?> /public/js/pink-button-popup.js"> 
     </script>
 
 <!---------------------------Arrow button----------------------------------------->
 <div class="arrow">
-	<a href="#"><img src="../../../public/img/arrow.png" alt="up_arrow"></a>
+	<a href="#"><img src="<?php echo URLROOT;?> /public/img/arrow.png" alt="up_arrow"></a>
 </div> 
 
-<?php include("../home/footer.php"); ?>
+<?php include_once APPROOT . '/views/includes/footer.php'; ?>
