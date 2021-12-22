@@ -1,9 +1,9 @@
-<?php include("../home/topnav.php"); ?>
+<?php include_once APPROOT . '/views/includes/topnav.php'; ?>
 
-<link rel='stylesheet' href="../../../public/css/home/button.css"/>
-<link rel='stylesheet' href="../../../public/css/worker/container.css"/>
-<link rel='stylesheet' href="../../../public/css/home/table.css"/>
-<link rel='stylesheet' href="../../../public/css/home/popup.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/home/button.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/worker/container.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/home/table.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/home/popup.css"/>
 <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
@@ -17,7 +17,7 @@
                     <table style="margin-top: 2em; margin-left:1.5em; margin-right:0.8em; padding-bottom:5px;">
                         <tr>
                             <td colspan="6" >
-                                <img src="../../../public/img/w3.jpg" alt="propic" class="img-worker" style="margin-left:39%; width:100px; height:100px;"/>
+                                <img src="<?php echo URLROOT;?> /public/img/w3.jpg" alt="propic" class="img-worker" style="margin-left:39%; width:100px; height:100px;"/>
                             </td>
                         </tr>
                         <tr>
@@ -79,7 +79,7 @@
                     <table style="margin-top: 2em; margin-left:1.5em; margin-right:0.8em; padding-bottom:5px;">
                         <tr>
                             <td rowspan="6">
-                                <img src="../../../public/img/w3.jpg" alt="propic" class="img-worker"/>
+                                <img src="<?php echo URLROOT;?> /public/img/w3.jpg" alt="propic" class="img-worker"/>
                             </td>
                             <td>Mahadev Warun</td>
                         </tr>
@@ -143,4 +143,9 @@
     </div>
 </div>
 
-<?php include("../home/footer.php"); ?>
+<!---------------------------Arrow button----------------------------------------->
+<div class="arrow">
+	<a href="#"><img src="<?php echo URLROOT;?>/public/img/arrow.png" alt="up_arrow"></a>
+</div>   
+
+<?php include_once APPROOT . '/views/includes/footer.php'; ?>
