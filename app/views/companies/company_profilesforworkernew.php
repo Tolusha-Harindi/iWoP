@@ -1,10 +1,11 @@
-<?php include("../home/topnav.php"); ?>
-<link rel='stylesheet' href="../../../public/css/home/button.css"/>
-<link rel='stylesheet' href="../../../public/css/home/table.css"/>
-<link rel='stylesheet' href="../../../public/css/home/popup.css"/>
-<link rel='stylesheet' href="../../../public/css/company/star.css"/>
-<link rel='stylesheet' href="../../../public/css/company/ratingsbar.css"/>
-<link rel='stylesheet' href="../../../public/css/company/form.css"/>
+<?php include_once APPROOT . '/views/includes/topnav.php'; ?>
+
+<link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/home/button.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/home/table.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/home/popup.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/company/star.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/company/ratingsbar.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/company/form.css"/>
 
 <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
 
@@ -295,7 +296,7 @@ h3{
      <!-- last active -->
       <!-- <h5>Last Active 2 days ago</h5> -->
             <div class="img-container">
-                <img src="../../../public/img/comp.png" alt="propic" class="img1"/>
+                <img src="<?php echo URLROOT;?> /public/img/comp.png" alt="propic" class="img1"/>
             </div>
            <p class="companyname">
                Dream Wave
@@ -305,7 +306,7 @@ h3{
            </p>
 
            <div class="img-container2">
-                <img src="../../../public/img/star.png" alt="propic" class="img2"/>
+                <img src="<?php echo URLROOT;?> /public/img/star.png" alt="propic" class="img2"/>
             </div>
             <p class="ex">
                10+ Years Business
@@ -389,7 +390,7 @@ h3{
            </div>
         <div class="user-reviews-heading">
              <div class="heading-img" >
-               <img src="../../../public/img/headingrating.png" alt="heading">
+               <img src="<?php echo URLROOT;?> /public/img/headingrating.png" alt="heading">
              </div>
                <div class="heading-review">
                    <b>User Reviews</b>
@@ -404,7 +405,7 @@ h3{
           <div class="user-reviews" style="border:1px ;">
           
                 <div class="user-img">
-                 <img src="../../../public/img/review.png" alt="">
+                 <img src="<?php echo URLROOT;?> /public/img/review.png" alt="">
               </div>
 
                  <div class="time-wrapper">
@@ -421,7 +422,7 @@ h3{
                    <br>
                    <br>
                         <div class="review-star">
-                              <img src="../../../public/img/star.png" alt="star" class="star">
+                              <img src="<?php echo URLROOT;?> /public/img/star.png" alt="star" class="star">
                        </div>
 
               </div>
@@ -537,7 +538,7 @@ h3{
         <div class="modal-content" style="margin-top: 5%;">
                 <form action="">
                     <span class="close">&times;</span>
-                    <p class="heading" style="margin-top: 1em; margin-left:35%; color:blue">Report User <img src="../../../public/img/report.png" class="popup-image"></p>
+                    <p class="heading" style="margin-top: 1em; margin-left:35%; color:blue">Report User <img src="<?php echo URLROOT;?> /public/img/report.png" class="popup-image"></p>
                         
                      <div class="row" style="margin-left:50px";>
                               <input type="radio" id="first" name="report" value="NOT">
@@ -570,12 +571,12 @@ h3{
 </div>
 
     <!------------------Java Script------------------------------->
-    <script type="text/javascript" src="../../../public/js/pink-button-popup.js"> 
+    <script type="text/javascript" src="<?php echo URLROOT;?> /public/js/pink-button-popup.js"> 
     </script>
 
 <!---------------------------Arrow button----------------------------------------->
 <div class="arrow">
-	<a href="#"><img src="../../../public/img/arrow.png" alt="up_arrow"></a>
+	<a href="#"><img src="<?php echo URLROOT;?> /public/img/arrow.png" alt="up_arrow"></a>
 </div> 
 
-<?php include("../home/footer.php"); ?>
+<?php include_once APPROOT . '/views/includes/footer.php'; ?>
