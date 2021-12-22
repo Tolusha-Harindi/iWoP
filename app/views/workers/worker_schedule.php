@@ -1,19 +1,19 @@
-<?php include("../home/topnav.php"); ?>
+<?php include_once APPROOT . '/views/includes/topnav.php'; ?>
 
-<?php include("../home/worker_sidenav.php"); ?>
+<?php include_once APPROOT . '/views/includes/worker_sidenav.php'; ?>
 
-<link rel='stylesheet' href="../../../public/css/home/button.css"/>
-<link rel='stylesheet' href="../../../public/css/worker/calender.css"/>
-<link rel='stylesheet' href="../../../public/css/home/table.css"/>
-<link rel='stylesheet' href="../../../public/css/home/popup.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/home/button.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/worker/calender.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/home/table.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/home/popup.css"/>
 <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-<a href="#change-password" class="top-button1" style="margin-top: -44em;"> Work Schedule </a>
-<a href="#my-service" class="top-button2" style="margin-top: -44em;"> Pending Works </a>
+<a href="#work-schedule" class="top-button1" style="margin-top: -45em; margin-left:65em;"> Work Schedule </a>
+<a href="#pending-works" class="top-button2" style="margin-top: -45em; margin-left:77em;"> Pending Works </a>
 
 <!----------------------------------------Schedule calender------------------------------------------------>
-<div class="category" id="my-profile" style="margin-top: -15em; margin-left: 8em;"> <p> Work Schedule</p> </div>
+<div class="category" id="work-schedule" style="margin-top: -15em; margin-left: 8em;"> <p> Work Schedule</p> </div>
 
 <div class="calender">
     <div class="row-01">
@@ -37,7 +37,7 @@
         <div class="modal-content" style="margin-top: 10%;">
                 <form action="">
                     <span class="close">&times;</span>
-                    <p class="heading" style="margin-top:1em; margin-left:30%;">Work Schedule <img src="../../../public/img/schedule.png" class="popup-image"></p>
+                    <p class="heading" style="margin-top:1em; margin-left:30%;">Work Schedule <img src="<?php echo URLROOT;?> /public/img/schedule.png" class="popup-image"></p>
                         <div class="row">
                             <div class="col-25" style="width: 30%;">
                             <label for="name" style="color: #0526BA;">Name of Customer</label>
@@ -100,7 +100,7 @@
         </div>
     </div>
 
-            <script type="text/javascript" src="../../../public/js/pink-button-popup.js"></script>
+            <script type="text/javascript" src="<?php echo URLROOT;?> /public/js/pink-button-popup.js"></script>
 
 <!----------------------------------------------Scheduling-------------------------------------------------->
 <!--<div class="sheduling">
@@ -114,7 +114,7 @@
 </div>-->
 
 <!--------------------------------------Pending Works--------------------------------------------------------->
-<div class="category" id="my-profile" style="margin-top: 3em; margin-left:8em;"> <p > Pending Works</p> </div>
+<div class="category" id="pending-works" style="margin-top: 3em; margin-left:8em;"> <p > Pending Works</p> </div>
 
 <div class="table">
     <div class="table-wrapper" style=" margin-left:23em;">
@@ -134,7 +134,7 @@
             <tbody>
                 
                 <tr>
-                    <td><img src="../../../public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td>
+                    <td><img src="<?php echo URLROOT;?> /public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td>
                     <td>Galle</td>
                     <td>10/11/2021</td>
                     <td>8.00AM-9.00AM</td>
@@ -144,7 +144,7 @@
                 </tr>
 
                 <tr>
-                    <td><img src="../../../public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td>
+                    <td><img src="<?php echo URLROOT;?> /public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td>
                     <td>Galle</td>
                     <td>10/11/2021</td>
                     <td>8.00AM-9.00AM</td>
@@ -154,7 +154,7 @@
                 </tr>
 
                 <tr>
-                    <td><img src="../../../public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td>
+                    <td><img src="<?php echo URLROOT;?> /public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td>
                     <td>Galle</td>
                     <td>10/11/2021</td>
                     <td>8.00AM-9.00AM</td>
@@ -164,7 +164,7 @@
                 </tr>
 
                 <tr>
-                    <td><img src="../../../public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td>
+                    <td><img src="<?php echo URLROOT;?> /public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td>
                     <td>Galle</td>
                     <td>10/11/2021</td>
                     <td>8.00AM-9.00AM</td>
@@ -179,4 +179,9 @@
     </div> 
 </div>
 
-<?php include("../home/footer.php"); ?>
+<!---------------------------Arrow button----------------------------------------->
+<div class="arrow">
+	<a href="#"><img src="<?php echo URLROOT;?>/public/img/arrow.png" alt="up_arrow"></a>
+</div>   
+
+<?php include_once APPROOT . '/views/includes/footer.php'; ?>
