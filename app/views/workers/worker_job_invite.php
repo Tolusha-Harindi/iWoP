@@ -1,10 +1,10 @@
-<?php include("../home/topnav.php"); ?>
+<?php include_once APPROOT . '/views/includes/topnav.php'; ?>
 
-<?php include("../home/worker_sidenav.php"); ?>
+<?php include_once APPROOT . '/views/includes/worker_sidenav.php'; ?>
 
-<link rel='stylesheet' href="../../../public/css/home/button.css"/>
-<link rel='stylesheet' href="../../../public/css/home/table.css"/>
-<link rel='stylesheet' href="../../../public/css/home/popup.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/home/button.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/home/table.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/home/popup.css"/>
 <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
@@ -28,7 +28,7 @@
                 
                 <tr>
                     <td>Vishnu Gowtham</td>
-                    <td><img src="../../../public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td>
+                    <td><img src="<?php echo URLROOT;?> /public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td>
                     <td>Plumber</td>
                     <td> <button  id="myBtn" class="blue-out-button">More </button></td>
                     <td> <input type="reset" class="blue-out-button" value="Message"/></td>
@@ -36,7 +36,7 @@
 
                 <tr>
                     <td>Vishnu Gowtham</td>
-                    <td><img src="../../../public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td>
+                    <td><img src="<?php echo URLROOT;?> /public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td>
                     <td>Plumber</td>
                     <td> <button  id="myBtn" class="blue-out-button">More </button></td>
                     <td> <input type="reset" class="blue-out-button" value="Message"/></td>
@@ -44,7 +44,7 @@
 
                 <tr>
                     <td>Vishnu Gowtham</td>
-                    <td><img src="../../../public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td>
+                    <td><img src="<?php echo URLROOT;?> /public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td>
                     <td>Plumber</td>
                     <td> <button  id="myBtn" class="blue-out-button">More </button></td>
                     <td> <input type="reset" class="blue-out-button" value="Message"/></td>
@@ -52,7 +52,7 @@
 
                 <tr>
                     <td>Vishnu Gowtham</td>
-                    <td><img src="../../../public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td>
+                    <td><img src="<?php echo URLROOT;?> /public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td>
                     <td>Plumber</td>
                     <td> <button  id="myBtn" class="blue-out-button">More </button></td>
                     <td> <input type="reset" class="blue-out-button" value="Message"/></td>
@@ -60,7 +60,7 @@
 
                 <tr>
                     <td>Vishnu Gowtham</td>
-                    <td><img src="../../../public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td>
+                    <td><img src="<?php echo URLROOT;?> /public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td>
                     <td>Plumber</td>
                     <td> <button  id="myBtn" class="blue-out-button">More </button></td>
                     <td> <input type="reset" class="blue-out-button" value="Message"/></td>
@@ -71,7 +71,7 @@
 </div>
 
 <br/><br/>
-<a href=# style="margin-left:90%; margin-top: -60%;"><i class="fas fa-chevron-circle-up"></i></a>
+
 
 <!-------------------------------------------------popup message--------------------------------------->
 <div id="myModal" class="modal">
@@ -79,7 +79,7 @@
         <div class="modal-content" style="margin-top: 7%;">
                 <form action="">
                     <span class="close" style="margin-top:0.2em;">&times;</span>
-                    <img src="../../../public/img/w3.jpg" class="table-image" style="border-radius: 200px; height:50px; width: 50px; margin-left:5%; margin-top:1em;">
+                    <img src="<?php echo URLROOT;?> /public/img/w3.jpg" class="table-image" style="border-radius: 200px; height:50px; width: 50px; margin-left:5%; margin-top:1em;">
                     <p class="heading" style="margin-top: -0.5em; margin-left:40%;">Job Invites</p>
                         <div class="row" style="margin-left:3em;">
                             <div class="col-25" style="margin-top:0.7em; width: 30%;">
@@ -148,8 +148,13 @@
         </div>
     </div>
 
-            <script type="text/javascript" src="../../../public/js/blue-out-button-popup.js"></script>
+<script type="text/javascript" src="<?php echo URLROOT;?> /public/js/blue-out-button-popup.js"></script>
 
 
-<?php include("../home/footer.php"); ?>
+<!---------------------------Arrow button----------------------------------------->
+<div class="arrow">
+	<a href="#"><img src="<?php echo URLROOT;?>/public/img/arrow.png" alt="up_arrow"></a>
+</div>   
+
+<?php include_once APPROOT . '/views/includes/footer.php'; ?>
 
