@@ -1,10 +1,10 @@
-<?php include("../home/topnav.php"); ?>
+<?php include_once APPROOT . '/views/includes/topnav.php'; ?>
 
-<?php include("../home/manager_sidenav.php"); ?>
+<?php  include_once APPROOT . '/views/includes/manager_sidenav.php'; ?>
 
-<link rel='stylesheet' href="../../../public/css/home/button.css"/>
-<link rel='stylesheet' href="../../../public/css/home/table.css"/>
-<link rel='stylesheet' href="../../../public/css/home/popup.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/home/button.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/home/table.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/home/popup.css"/>
 <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
 
 <a href="#service" class="top-button1" style="margin-top: -37em; margin-left:78em;width:10em;"> Service Providers </a>
@@ -28,28 +28,28 @@
                 <tbody>
                 
                     <tr>
-                        <td><img src="../../../public/img/w1.jpg" class="table-image" style="border-radius: 50px;"></td>
+                        <td><img src="<?php echo URLROOT;?> /public/img/w1.jpg" class="table-image" style="border-radius: 50px;"></td>
                         <td> Nishini Guruge</td>
                         <td>10/10/2021</td>
                         <td> <input type="reset" class="blue-out-button" value="More" style="width:6em";/></td>
                     </tr>
 
                     <tr>
-                        <td><img src="../../../public/img/w2.jpg" class="table-image" style="border-radius: 50px;"></td>
+                        <td><img src="<?php echo URLROOT;?> /public/img/w2.jpg" class="table-image" style="border-radius: 50px;"></td>
                         <td> Nishini Guruge</td>
                         <td>10/10/2021</td>
                         <td> <input type="reset" class="blue-out-button" value="More" style="width:6em";/></td>
                     </tr>
 
                     <tr>
-                        <td><img src="../../../public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td>
+                        <td><img src="<?php echo URLROOT;?> /public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td>
                         <td> Nishini Guruge</td>
                         <td>10/10/2021</td>
                         <td> <input type="reset" class="blue-out-button" value="More" style="width:6em";/></td>
                     </tr>
 
                      <tr>
-                        <td><img src="../../../public/img/admin.jpg" class="table-image" style="border-radius: 50px;"></td>
+                        <td><img src="<?php echo URLROOT;?> /public/img/admin.jpg" class="table-image" style="border-radius: 50px;"></td>
                         <td> Nishini Guruge</td>
                         <td>10/10/2021</td>
                         <td> <input type="reset" class="blue-out-button" value="More" style="width:6em";/></td>
@@ -68,7 +68,7 @@
                 <form action="">
 
                     <span class="close">&times;</span>
-                    <p class="heading" style="margin-top: 1em; margin-left:35%;"> Service Provider <img src="../../../public/img/admin.jpg" class="popup-image" style="border-radius:400px;"></p>
+                    <p class="heading" style="margin-top: 1em; margin-left:35%;"> Service Provider <img src="<?php echo URLROOT;?> /public/img/admin.jpg" class="popup-image" style="border-radius:400px;"></p>
 
                         <table>
                             <tr>
@@ -109,14 +109,14 @@
                             <tr>
                                 <td> <label for="gs" style="color: #0526BA; font-size:15px;">GS Certificate</label></td>
                                 <td style="padding: 2em 4em;"> </td>
-                                <td> <img src="../../../public/img/gscertificate.jpg"></td>
+                                <td> <img src="<?php echo URLROOT;?> /public/img/gscertificate.jpg"></td>
                             </tr>
                             <tr> <td style="padding: 2em 4em;"> </td> </tr>
                             <tr>
                                 <td> <label for="nic" style="color: #0526BA; font-size:15px;">Scan copy of NIC</label></td>
                                 <td style="padding: 2em 4em;"> </td>
-                                <td><img src="../../../public/img/nic.jpg"></td>
-                                <td><img src="../../../public/img/nic.jpg"></td>
+                                <td><img src="<?php echo URLROOT;?> /public/img/nic.jpg"></td>
+                                <td><img src="<?php echo URLROOT;?> /public/img/nic.jpg"></td>
                             </tr>
                             <tr> <td style="padding: 2em 4em;"> </td> </tr>
                             <tr>
@@ -131,7 +131,7 @@
 </div>
 
 <!-----------------------------------------------------Java Script -  popup message------------------------------->
-<script type="text/javascript" src="../../../public/js/blue-out-button-popup.js"> </script>
+<script type="text/javascript" src="<?php echo URLROOT;?> /public/js/blue-out-button-popup.js"> </script>
 
 
 
@@ -153,28 +153,28 @@
                 <tbody>
                 
                     <tr>
-                        <td><img src="../../../public/img/company.png" class="table-image" style="border-radius: 50px;"></td>
+                        <td><img src="<?php echo URLROOT;?> /public/img/company.png" class="table-image" style="border-radius: 50px;"></td>
                         <td> Dream wave</td>
                         <td>10/10/2021</td>
                         <td> <input type="reset" class="yellow-out-button" value="More" style="width:6em";/></td>
                     </tr>
 
                     <tr>
-                        <td><img src="../../../public/img/company.png" class="table-image" style="border-radius: 50px;"></td>
+                        <td><img src="<?php echo URLROOT;?> /public/img/company.png" class="table-image" style="border-radius: 50px;"></td>
                         <td> Dream wave</td>
                         <td>10/10/2021</td>
                         <td> <input type="reset" class="yellow-out-button" value="More" style="width:6em";/></td>
                     </tr>
 
                     <tr>
-                        <td><img src="../../../public/img/company.png" class="table-image" style="border-radius: 50px;"></td>
+                        <td><img src="<?php echo URLROOT;?> /public/img/company.png" class="table-image" style="border-radius: 50px;"></td>
                         <td> Dream wave</td>
                         <td>10/10/2021</td>
                         <td> <input type="reset" class="yellow-out-button" value="More" style="width:6em";/></td>
                     </tr>
 
                      <tr>
-                        <td><img src="../../../public/img/company.png" class="table-image" style="border-radius: 50px;"></td>
+                        <td><img src="<?php echo URLROOT;?> /public/img/company.png" class="table-image" style="border-radius: 50px;"></td>
                         <td> Dream wave</td>
                         <td>10/10/2021</td>
                         <td> <input type="reset" class="yellow-out-button" value="More" style="width:6em";/></td>
@@ -193,7 +193,7 @@
                 <form action="">
 
                     <span class="close">&times;</span>
-                    <p class="heading" style="margin-top: 1em; margin-left:35%;"> Company <img src="../../../public/img/w1.jpg" class="popup-image" style="border-radius:400px;"></p>
+                    <p class="heading" style="margin-top: 1em; margin-left:35%;"> Company <img src="<?php echo URLROOT;?> /public/img/w1.jpg" class="popup-image" style="border-radius:400px;"></p>
 
                         <table>
                             <tr>
@@ -229,13 +229,13 @@
                             <tr>
                                 <td> <label for="gs" style="color: #0526BA; font-size:15px;">GS Certificate</label></td>
                                 <td style="padding: 2em 4em;"> </td>
-                                <td> <img src="../../../public/img/gscertificate.jpg"></td>
+                                <td> <img src="<?php echo URLROOT;?> /public/img/gscertificate.jpg"></td>
                             </tr>
                             <tr> <td style="padding: 2em 4em;"> </td> </tr>
                             <tr>
                                 <td> <label for="nic" style="color: #0526BA; font-size:15px;">Registered Certificate</label></td>
                                 <td style="padding: 2em 4em;"> </td>
-                                <td><img src="../../../public/img/nic.jpg"></td>
+                                <td><img src="<?php echo URLROOT;?> /public/img/nic.jpg"></td>
                             </tr>
                             <tr> <td style="padding: 2em 4em;"> </td> </tr>
                             <tr>
@@ -250,12 +250,12 @@
 </div>
 
 <!-----------------------------------------------------Java Script -  popup message------------------------------->
-<script type="text/javascript" src="../../../public/js/yellow-out-button-popup.js"> </script>
+<script type="text/javascript" src="<?php echo URLROOT;?> /public/js/yellow-out-button-popup.js"> </script>
 
 
 <!---------------------------Arrow button----------------------------------------->
 <div class="arrow">
-	<a href="#"><img src="../../../public/img/arrow.png" alt="up_arrow"></a>
+	<a href="#"><img src="<?php echo URLROOT;?> /public/img/arrow.png" alt="up_arrow"></a>
 </div>  
 
-<?php include("../home/footer.php"); ?>
+<?php include_once APPROOT . '/views/includes/footer.php'; ?>
