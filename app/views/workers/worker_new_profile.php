@@ -1,14 +1,14 @@
-<?php include("../home/topnav.php"); ?>
+<?php include_once APPROOT . '/views/includes/topnav.php'; ?>
 
-<?php include("../home/worker_sidenav.php"); ?>
+<?php include_once APPROOT . '/views/includes/worker_sidenav.php'; ?>
 
-<link rel='stylesheet' href="../../../public/css/home/table.css"/>
-<link rel='stylesheet' href="../../../public/css/home/button.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/home/table.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/home/button.css"/>
 <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
 
 <div class="category" id="my-profile"> <p> My Profile </p> </div>
 
-<img src="../../../public/img/w3.jpg" style="border-radius: 200px; height:160px; width: 160px; margin-left:55%">
+<img src="<?php echo URLROOT;?> /public/img/w3.jpg" style="border-radius: 200px; height:160px; width: 160px; margin-left:55%">
 
 <div class="form-space">
     <form action="/action_page.php">
@@ -97,4 +97,9 @@
 </div>
 
 
-<?php include("../home/footer.php"); ?>
+<!---------------------------Arrow button----------------------------------------->
+<div class="arrow">
+	<a href="#"><img src="<?php echo URLROOT;?>/public/img/arrow.png" alt="up_arrow"></a>
+</div>   
+
+<?php include_once APPROOT . '/views/includes/footer.php'; ?>
