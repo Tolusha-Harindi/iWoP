@@ -13,7 +13,7 @@
 
             ];
 
-            $this->view('managers/worker_all_ads', $data);
+            $this->view('workers/worker_all_ads', $data);
           
         }
 
@@ -26,7 +26,7 @@
 
             ];
 
-            $this->view('managers/worker_bank_detail', $data);
+            $this->view('workers/worker_bank_detail', $data);
           
         }
 
@@ -39,7 +39,7 @@
 
             ];
 
-            $this->view('managers/worker_bank_edit', $data);
+            $this->view('workers/worker_bank_edit', $data);
           
         }
 
@@ -52,7 +52,7 @@
 
             ];
 
-            $this->view('managers/worker_chat', $data);
+            $this->view('workers/worker_chat', $data);
           
         }
 
@@ -65,7 +65,7 @@
 
             ];
 
-            $this->view('managers/worker_dashboard', $data);
+            $this->view('workers/worker_dashboard', $data);
           
         }
 
@@ -78,7 +78,7 @@
 
             ];
 
-            $this->view('managers/worker_job_invite', $data);
+            $this->view('workers/worker_job_invite', $data);
           
         }
 
@@ -91,7 +91,7 @@
 
             ];
 
-            $this->view('managers/worker_job_vacanccies', $data);
+            $this->view('workers/worker_job_vacanccies', $data);
           
         }
 
@@ -104,7 +104,7 @@
 
             ];
 
-            $this->view('managers/worker_new_profile', $data);
+            $this->view('workers/worker_new_profile', $data);
           
         }
 
@@ -117,7 +117,7 @@
 
             ];
 
-            $this->view('managers/worker_payment', $data);
+            $this->view('workers/worker_payment', $data);
           
         }
 
@@ -130,7 +130,7 @@
 
             ];
 
-            $this->view('managers/worker_profile_edit', $data);
+            $this->view('workers/worker_profile_edit', $data);
           
         }
 
@@ -143,7 +143,7 @@
 
             ];
 
-            $this->view('managers/worker_schedule', $data);
+            $this->view('workers/worker_schedule', $data);
           
         }
 
@@ -156,7 +156,7 @@
 
             ];
 
-            $this->view('managers/worker_service', $data);
+            $this->view('workers/worker_service', $data);
           
         }
 
@@ -169,7 +169,7 @@
 
             ];
 
-            $this->view('managers/worker_view_profile', $data);
+            $this->view('workers/worker_view_profile', $data);
           
         }
 
