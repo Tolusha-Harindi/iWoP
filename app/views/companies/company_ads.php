@@ -1,11 +1,11 @@
-<?php include("../home/topnav.php"); ?>
+<?php include_once APPROOT . '/views/includes/topnav.php'; ?>
 
-<?php include("../home/company_sidenav.php"); ?>
+<?php include_once APPROOT . '/views/includes/company_sidenav.php'; ?>
 
-<link rel='stylesheet' href="../../../public/css/home/table.css"/>
-<link rel='stylesheet' href="../../../public/css/home/button.css"/>
-<link rel='stylesheet' href="../../../public/css/customer/ads.css"/>
-<link rel='stylesheet' href="../../../public/css/home/popup.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?>/public/css/home/table.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?>/public/css/home/button.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?>/public/css/customer/ads.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT;?>/public/css/home/popup.css"/>
 <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
 
 
@@ -88,8 +88,8 @@
                                 <label for="name"> <b>Work to be done:</b> </label>
                             </div>
                             <div class="ad-col-65">
-                                <img src="../../../public/img/work.jpg" class="work">
-                                <img src="../../../public/img/work.jpg" class="work">
+                                <img src="<?php echo URLROOT;?>/public/img/work.jpg" class="work">
+                                <img src="<?php echo URLROOT;?>/public/img/work.jpg" class="work">
                             </div>
                         </div>
                         </br> </br>
@@ -119,21 +119,21 @@
             <table class="fl-table">
                 <tbody>
                     <tr>
-						<td><img src="../../../public/img/admin.jpg" class="response-img"></td>
+						<td><img src="<?php echo URLROOT;?>/public/img/admin.jpg" class="response-img"></td>
 						<td><b>Namya Tharindi</b></td>
 						<td>Galle</td>
 						<td> <input type="reset" class="blue-button" style="padding: 8px 14px"  value="Accept"/></td>
 						<td> <input type="reset" class="pink-button" value="Reject"/></td>
                     </tr>
 					<tr>
-						<td><img src="../../../public/img/admin.jpg" class="response-img"></td>
+						<td><img src="<?php echo URLROOT;?>/public/img/admin.jpg" class="response-img"></td>
 						<td><b>Namya Tharindi</b></td>
 						<td>Ratnapura</td>
 						<td> <input type="reset" class="blue-button" style="padding: 8px 14px" value="Accept"/></td>
 						<td> <input type="reset" class="pink-button" value="Reject"/></td>
                     </tr>
 					<tr>
-						<td><img src="../../../public/img/admin.jpg" class="response-img"></td>
+						<td><img src="<?php echo URLROOT;?>/public/img/admin.jpg" class="response-img"></td>
 						<td><b>Namya Tharindi</b></td>
 						<td>Ratnapura</td>
 						<td> <input type="reset" class="blue-button" style="padding: 8px 14px" value="Accept"/></td>
@@ -163,7 +163,7 @@
                 <tbody>
                 
                     <tr>
-                        <td><img src="../../../public/img/admin.jpg" class="table-image" style="border-radius: 50px;"></td>
+                        <td><img src="<?php echo URLROOT;?>/public/img/admin.jpg" class="table-image" style="border-radius: 50px;"></td>
                         <td>Kasun Perera</td>
                         <td style="color: #F10B67;">Accepted</td>
                         <td>Plumber</td>
@@ -171,7 +171,7 @@
                     </tr>
 
                     <tr>
-                        <td><img src="../../../public/img/w1.jpg" class="table-image" style="border-radius: 50px;"></td>
+                        <td><img src="<?php echo URLROOT;?>/public/img/w1.jpg" class="table-image" style="border-radius: 50px;"></td>
                         <td>Nishini Guruge</td>
                         <td style="color: #F10B67;">Rejected</td>
                         <td>Electrician</td>
@@ -179,7 +179,7 @@
                     </tr>
 
                     <tr>
-                        <td><img src="../../../public/img/w2.jpg" class="table-image" style="border-radius: 50px;"></td>
+                        <td><img src="<?php echo URLROOT;?>/public/img/w2.jpg" class="table-image" style="border-radius: 50px;"></td>
                         <td>Sandani Perera</td>
                         <td style="color: #F10B67;">Accepted</td>
                         <td>Plumber</td>
@@ -187,7 +187,7 @@
                     </tr>
 
                      <tr>
-                        <td><img src="../../../public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td>
+                        <td><img src="<?php echo URLROOT;?>/public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td>
                         <td>Nimal Perera</td>
                         <td style="color: #F10B67;">Accepted</td>
                         <td>Plumber</td>
@@ -207,7 +207,7 @@
                 <form action="">
 
                     <span class="close">&times;</span>
-                    <p class="heading" style="margin-top: 1em; margin-left:35%;">Hire a Service Provider <img src="../../../public/img/ad.png" class="popup-image"></p>
+                    <p class="heading" style="margin-top: 1em; margin-left:35%;">Hire a Service Provider <img src="<?php echo URLROOT;?>/public/img/ad.png" class="popup-image"></p>
                         <div class="row">
                             <div class="col-25">
                             <label for="category" style="color: #0526BA; font-size:15px;">Category</label>
@@ -334,13 +334,13 @@
 </div>
 
 <!------------------Java Script -  popup message------------------------------->
-<script type="text/javascript" src="../../../public/js/top-button1-popup.js"> 
+<script type="text/javascript" src="<?php echo URLROOT;?>/public/js/top-button1-popup.js"> 
     </script>
 
 
 <!---------------------------Arrow button----------------------------------------->
 <div class="arrow">
-		<a href="#"><img src="../../../public/img/arrow.png" alt="up_arrow"></a>
+	<a href="#"><img src="<?php echo URLROOT;?>/public/img/arrow.png" alt="up_arrow"></a>
 </div>
 
-<?php include("../home/footer.php"); ?>
+<?php include_once APPROOT . '/views/includes/footer.php'; ?>
