@@ -1,7 +1,7 @@
 
-<?php include("../home/topnav.php"); ?>
+<?php include_once APPROOT . '/views/includes/topnav.php'; ?>
 
-<?php include("../home/customer_sidenav.php"); ?>
+<?php include_once APPROOT . '/views/includes/customer_sidenav.php'; ?>
 
 <link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/customer/category.css"/>
 <link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/home/button.css"/>

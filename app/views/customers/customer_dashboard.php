@@ -1,7 +1,7 @@
 
 <?php include("../home/topnav.php"); ?>
 
-<?php include("../home/customer_sidenav.php"); ?>
+<?php include_once APPROOT . '/views/includes/customer_sidenav.php'; ?>
 
 <link rel='stylesheet' href="../../../public/css/customer/dashboard.css"/>
 <link rel='stylesheet' href="../../../public/css/home/button.css"/>
