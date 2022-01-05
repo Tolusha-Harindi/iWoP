@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 22, 2021 at 07:23 PM
+-- Generation Time: Dec 24, 2021 at 04:44 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 7.3.27
 
@@ -159,10 +159,27 @@ CREATE TABLE `jobs` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `login`
+--
+
+CREATE TABLE `login` (
+  `user_id` int(11) NOT NULL,
+  `cus_id` int(11) NOT NULL,
+  `worker_id` int(11) NOT NULL,
+  `reg_no` varchar(15) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `adm_nic` varchar(12) NOT NULL,
+  `manager_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `manager`
 --
 
 CREATE TABLE `manager` (
+  `manager_id` int(11) NOT NULL,
   `name` varchar(50) NOT NULL,
   `email` varchar(50) NOT NULL,
   `contact_no` int(11) NOT NULL,
@@ -285,6 +302,28 @@ CREATE TABLE `service_qualification` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `user`
+--
+
+CREATE TABLE `user` (
+  `user_id` int(11) NOT NULL,
+  `user_name` varchar(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`user_id`, `user_name`) VALUES
+(1, 'admin'),
+(2, 'manager'),
+(3, 'worker'),
+(4, 'customer'),
+(5, 'company');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `worker`
 --
 
@@ -304,6 +343,19 @@ CREATE TABLE `worker` (
   `prof_pic` blob NOT NULL,
   `status` varchar(15) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `worker`
+--
+
+INSERT INTO `worker` (`worker_id`, `nic`, `first_name`, `last_name`, `email`, `contact_no`, `password`, `address`, `district`, `city`, `nic_front`, `nic_back`, `prof_pic`, `status`) VALUES
+(1, '995960087V', 'Nitharsha ', 'Thevakumar', 'nitharshathev@gmail.com', 761680630, 'tkkn1999', '', '', '', '', '', '', ''),
+(4, '996073480V', 'Hirthika ', 'Aanantharaasa', 'hirthi@gmail.com', 725090056, 'hirthi99', '', '', '', '', '', '', ''),
+(7, '897664544V', 'Vithushini', 'Niththiyaseelan', 'matheesha@gmail.com', 725090056, 'vithu99', '', '', '', '', '', '', ''),
+(9, '995900567V', 'Tolusha ', 'Haridi', 'tolu99@gmail.com', 713364590, '1234', '', '', '', '', '', '', ''),
+(10, '897664544V', 'Sashangan ', 'Manojan', 'sasha@gmail.com', 763489728, 'sasha', '', '', '', '', '', '', ''),
+(11, '897664544V', 'Sashangan ', 'Manojan', 'sasha@gmail.com', 763489728, 'sasha99', '', '', '', '', '', '', ''),
+(12, '995900567V', 'Vithushini', 'Manojan', 'seelan@gmail.com', 725536476, 'seelan45', '', '', '', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -394,10 +446,21 @@ ALTER TABLE `jobs`
   ADD KEY `reg_no` (`reg_no`);
 
 --
+-- Indexes for table `login`
+--
+ALTER TABLE `login`
+  ADD KEY `adm_nic` (`adm_nic`),
+  ADD KEY `cus_id` (`cus_id`),
+  ADD KEY `manager_id` (`manager_id`),
+  ADD KEY `reg_no` (`reg_no`),
+  ADD KEY `user_id` (`user_id`),
+  ADD KEY `worker_id` (`worker_id`);
+
+--
 -- Indexes for table `manager`
 --
 ALTER TABLE `manager`
-  ADD PRIMARY KEY (`email`);
+  ADD PRIMARY KEY (`manager_id`);
 
 --
 -- Indexes for table `past_experience`
@@ -455,6 +518,12 @@ ALTER TABLE `service_category`
 --
 ALTER TABLE `service_qualification`
   ADD KEY `service_id` (`service_id`);
+
+--
+-- Indexes for table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`user_id`);
 
 --
 -- Indexes for table `worker`
@@ -521,6 +590,12 @@ ALTER TABLE `jobs`
   MODIFY `job_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT for table `manager`
+--
+ALTER TABLE `manager`
+  MODIFY `manager_id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `payment`
 --
 ALTER TABLE `payment`
@@ -551,10 +626,16 @@ ALTER TABLE `service`
   MODIFY `service_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT for table `user`
+--
+ALTER TABLE `user`
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
 -- AUTO_INCREMENT for table `worker`
 --
 ALTER TABLE `worker`
-  MODIFY `worker_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `worker_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- Constraints for dumped tables
@@ -577,6 +658,17 @@ ALTER TABLE `bank`
 --
 ALTER TABLE `jobs`
   ADD CONSTRAINT `jobs_ibfk_1` FOREIGN KEY (`reg_no`) REFERENCES `company` (`reg_no`);
+
+--
+-- Constraints for table `login`
+--
+ALTER TABLE `login`
+  ADD CONSTRAINT `login_ibfk_1` FOREIGN KEY (`adm_nic`) REFERENCES `admin` (`nic`),
+  ADD CONSTRAINT `login_ibfk_2` FOREIGN KEY (`cus_id`) REFERENCES `customer` (`cus_id`),
+  ADD CONSTRAINT `login_ibfk_3` FOREIGN KEY (`manager_id`) REFERENCES `manager` (`manager_id`),
+  ADD CONSTRAINT `login_ibfk_4` FOREIGN KEY (`reg_no`) REFERENCES `company` (`reg_no`),
+  ADD CONSTRAINT `login_ibfk_5` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`),
+  ADD CONSTRAINT `login_ibfk_6` FOREIGN KEY (`worker_id`) REFERENCES `worker` (`worker_id`);
 
 --
 -- Constraints for table `past_experience`
