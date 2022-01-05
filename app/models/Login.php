@@ -45,6 +45,25 @@
             }
          }
 
+         public function company_register($data){
+            $this->db->query('INSERT INTO company (reg_no, com_name, contact, email, password) VALUES (:reg_no, :com_name, :contact, :email, :password)');
+ 
+            //Bind values
+            $this->db->bind(':com_name', $data['com_name']);
+            $this->db->bind(':contact', $data['contact']);
+            $this->db->bind(':reg_no', $data['reg_no']);
+            $this->db->bind(':email', $data['email']);
+            $this->db->bind(':password', $data['password']);
+ 
+            //Execute the function
+            if($this->db->execute()){
+                return true;
+            }
+            else{
+                return false;
+            }
+         }
+
         //login
         // public function login($email, $password){
         //     $this->db->query('SELECT * FROM customer WHERE email = :email');
