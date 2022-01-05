@@ -168,6 +168,7 @@
           
         }
 
+/*------------------------------------customer register ---------------------------------------*/
         public function customer_register() {
             //$users = $this->pageModel-> getUsers();
             $data = [
@@ -306,13 +307,127 @@
           
         }
 
+        /*-----------------------------company register -------------------------------------------------*/
         public function company_register() {
             //$users = $this->pageModel-> getUsers();
             $data = [
-                'title' => 'company_register page',
-                //'users' => $users
+                'com_name' => '',
+                'contact' => '',
+                'reg_no' => '',
+                'email' => '',
+                'password' => '',
+                're-enterpassword' => '',
+                'nameError' => '',
+                'contactError' => '',
+                'reg_noError' => '',
+                'emailError' => '',
+                'passwordError' => '',
+                're-enterpasswordError' => ''
 
             ];
+
+            if($_SERVER['REQUEST_METHOD'] == 'POST'){
+                //Sanitize post data
+                $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+                
+                $data = [
+                    'com_name' => trim($_POST['com_name']),
+                    'contact' => trim($_POST['contact']),
+                    'reg_no' => trim($_POST['reg_no']),
+                    'email' => trim($_POST['email']),
+                    'password' => trim($_POST['password']),
+                    're-enterpassword' => trim($_POST['re-enterpassword']),
+                    'nameError' => '',
+                    'contactError' => '',
+                    'reg_noError' => '',
+                    'emailError' => '',
+                    'passwordError' => '',
+                    're-enterpasswordError' => '',
+                ];
+                    $nameValidation = "/^[a-zA-Z0-9]*$/";
+                    $passwordValidation = "/^(.{0,7}|[^a-z]*|[^\d]*)$/i";
+                    $contactValidation ="/^\d{10}$/";
+                    $reg_noValidation = "/^\d{9}$/";
+                    //$reg_noValidation = "/^[\d/]{14}$/";
+                   
+                     //validate company name on letters/numbers
+                     if(empty($data['com_name'])){
+                        $data['nameError'] = 'Please enter Company name';
+                    }
+                    elseif (!preg_match($nameValidation, $data['com_name'])){
+                        $data['nameError'] = 'Name can only contain letters and numbers';
+                    }
+
+                     //validating Contact
+                     if(empty($data['contact'])){
+                        $data['contactError'] = 'Please Enter the Contact';
+                    }
+                    elseif (!preg_match($contactValidation, $data['contact'])){
+                        $data['contactError'] = 'Please enter valid contact number';
+                    }
+
+                    //validating company registerd number
+                    if(empty($data['reg_no'])){
+                        $data['reg_noError'] = 'Please Enter the company register number';
+                    }
+                    elseif (!preg_match($reg_noValidation, $data['reg_no'])){
+                        $data['reg_noError'] = 'Please enter valid comapny registered number';
+                    }
+
+                    /*-----------------------------------------------------------------------------------*/
+                    //validate email on letters/numbers
+                    if(empty($data['email'])){
+                        $data['emailError'] = 'Please enter your email';
+                    }
+                    elseif(!filter_var($data['email'], FILTER_VALIDATE_EMAIL)){
+                        $data['emailError'] = 'Please enter Correct format';
+                    }
+                    else{
+                        //check if email exists
+                        if($this->loginModel->findLoginByEmail($data['email'])){
+                            $data['emailError'] = 'Email is already taken';
+                        }
+                    }
+
+                    //Validate password on length and numeric values
+                    if(empty($data['password'])){
+                        $data['passwordError'] ='Please enter password';
+                    }
+                    elseif(strlen($data['password'] < 6)){
+                        $data['passwordError'] ='password must be atleast 6  characters';
+                    }
+                    elseif (preg_match($passwordValidation, $data['password'])){
+                        $data['passwordError'] = 'Password must have at least one numeric value.';
+                    }
+
+                    //validate confirm password
+                    if(empty($data['re-enterpassword'])){
+                        $data['re-enterpasswordError'] ='Please enter password again';
+                    }
+                    else{
+                        if($data['password'] !=$data['re-enterpassword']){
+                            $data['re-enterpasswordError'] = 'Passwords do not match, Please enter correct password';
+                        }
+                    }
+
+                   
+                    //Make sure that errors are empty
+                    if(empty($data['nameError'])  && empty($data['contactError']) && empty($data['reg_noError']) && empty($data['emailError']) && empty($data['passwordError'])&& empty($data['re-enterpasswordError'])){
+                        
+                        //hash password
+                        $data['password'] = password_hash($data['password'], PASSWORD_DEFAULT);
+
+                        //Register user from model function
+                        if($this->loginModel->company_register($data)){
+                            //Redirect to the login page
+                            header('location: ' . URLROOT . '/logins/login');
+                        }
+                        else{
+                            die('Something went wrong');
+                        }
+                    }
+            }
+
 
             $this->view('logins/company_register', $data);
           
