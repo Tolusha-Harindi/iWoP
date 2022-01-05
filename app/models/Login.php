@@ -25,6 +25,26 @@
            }
         }
 
+        public function worker_register($data){
+            $this->db->query('INSERT INTO worker (fname, lname, contact, nic, email, password) VALUES (:fname, :lname, :contact, :nic, :email, :password)');
+ 
+            //Bind values
+            $this->db->bind(':fname', $data['fname']);
+            $this->db->bind(':lname', $data['lname']);
+            $this->db->bind(':contact', $data['contact']);
+            $this->db->bind(':nic', $data['nic']);
+            $this->db->bind(':email', $data['email']);
+            $this->db->bind(':password', $data['password']);
+ 
+            //Execute the function
+            if($this->db->execute()){
+                return true;
+            }
+            else{
+                return false;
+            }
+         }
+
         //login
         // public function login($email, $password){
         //     $this->db->query('SELECT * FROM customer WHERE email = :email');
