@@ -6,15 +6,21 @@
 <div class="shape"> </div>
 <img src="<?php echo URLROOT;?>/public/img/log-1.png" class="image" style="right:60%; height:35rem; top:7.7em;" alt="" />
 
-<form action="check-login.php" method="post" name="myform" onsubmit="return validateform()">
+<form action="<?php echo URLROOT; ?>/logins/login" method="POST">
     <div class="container">
         <h1>LOGIN</h1>
         <div class="form-style">
             <label for="email"><b>EMAIL</b></label>
             <input type="email" placeholder="Enter Email" name="email" required>
+            <span class="invalidFeedback">
+                <?php  echo $data['emailError'];?>
+            </span>
 
-            <label for="psw"><b>PASSWORD</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
+            <label for="password"><b>PASSWORD</b></label>
+            <input type="password" placeholder="Enter Password" name="password" required>
+            <span class="invalidFeedback">
+                <?php  echo $data['passwordError'];?>
+            </span>
 
             <button type="submit" class="blue-button">Login</button>
         </div>

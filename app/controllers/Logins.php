@@ -1,7 +1,7 @@
 <?php
     class Logins extends Controller {
         public function __construct() {
-            //$this->pageModel = $this->model('Page');
+            //$this->loginModel = $this->model('Login');
         }
 
         public function login() {
