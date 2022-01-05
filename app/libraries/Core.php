@@ -6,7 +6,7 @@
    */
   class Core {
     protected $currentController = 'Homes';
-    protected $currentMethod = 'index';
+    protected $currentMethod = 'landing';
     protected $params = [];
 
     public function __construct(){
