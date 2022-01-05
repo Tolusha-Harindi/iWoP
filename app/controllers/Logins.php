@@ -8,6 +8,8 @@
             //$users = $this->pageModel-> getUsers();
             $data = [
                 'title' => 'login page',
+                'emailError' =>'',
+                'passwordError' => ''
                 //'users' => $users
 
             ];
@@ -74,7 +76,7 @@
                     'address' => trim($_POST['address']),
                     'password' => trim($_POST['password']),
                     're-enterpassword' => trim($_POST['re-enterpassword']),
-                    'nameError' =>'',
+                    //'nameError' =>'',
                     'firstnameError' =>'',
                     'lastnameError' => '',
                     'contactError' => '',
@@ -92,14 +94,14 @@
                     if(empty($data['fname'])){
                         $data['firstnameError'] = 'Please enter First name';
                     }
-                    else if (!preg_match($nameValidation, $data['fname'])){
+                    elseif (!preg_match($nameValidation, $data['fname'])){
                         $data['firstnameError'] = 'Name can only contain letters and numbers';
                     }
                      //validate last name on letters/numbers
                      if(empty($data['lname'])){
                         $data['lastnameError'] = 'Please enter Last name';
                     }
-                    else if (!preg_match($nameValidation, $data['lname'])){
+                    elseif (!preg_match($nameValidation, $data['lname'])){
                         $data['lastnameError'] = 'Name can only contain letters and numbers';
                     }
 
@@ -107,7 +109,7 @@
                      if(empty($data['contact'])){
                         $data['contactError'] = 'Please Enter the Contact';
                     }
-                    else if (!preg_match($contactValidation, $data['contact'])){
+                    elseif (!preg_match($contactValidation, $data['contact'])){
                         $data['contactError'] = 'Please enter valid contact number';
                     }
 
@@ -121,7 +123,7 @@
                     }
                     else{
                         //check if email exists
-                        if($this->homeModel->findHomeByEmail($data['email'])){
+                        if($this->loginModel->findLoginByEmail($data['email'])){
                             $data['emailError'] = 'Email is already taken';
                         }
                     }
