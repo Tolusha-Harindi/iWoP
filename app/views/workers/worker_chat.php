@@ -162,10 +162,10 @@
                 </div>
               <!---------chat input----------------------------------------->
                 <div class="chatbox_input">
-                    <ion-icon name="happy-outline"></ion-icon>
+<!--                     <ion-icon name="happy-outline"></ion-icon> -->
                     <ion-icon name="attach-outline"></ion-icon>
                     <input type="text" placeholder="Type a message">
-                    <ion-icon name="mic"></ion-icon>
+                    <ion-icon name="send"></ion-icon>
                 </div>
 
             </div>
