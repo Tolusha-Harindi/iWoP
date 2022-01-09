@@ -4,17 +4,14 @@
             $this->loginModel = $this->model('Login');
         }
 
-        public function login() {
+        public function loginas() {
             //$users = $this->pageModel-> getUsers();
             $data = [
                 'title' => 'login page',
-                'emailError' =>'',
-                'passwordError' => ''
-                //'users' => $users
 
             ];
 
-            $this->view('logins/login', $data);
+            $this->view('logins/loginas', $data);
           
         }
 
@@ -30,6 +27,7 @@
           
         }
 
+/*---------------------------------Worker Register--------------------------------------------------------------*/
         public function worker_register() {
             //$users = $this->pageModel-> getUsers();
             $data = [
@@ -80,14 +78,14 @@
 
                     //validate first name on letters/numbers
                     if(empty($data['fname'])){
-                        $data['firstnameError'] = 'Please enter First name';
+                        $data['firstnameError'] = 'Please Enter First name';
                     }
                     elseif (!preg_match($nameValidation, $data['fname'])){
                         $data['firstnameError'] = 'Name can only contain letters and numbers';
                     }
                      //validate last name on letters/numbers
                      if(empty($data['lname'])){
-                        $data['lastnameError'] = 'Please enter Last name';
+                        $data['lastnameError'] = 'Please Enter Last name';
                     }
                     elseif (!preg_match($nameValidation, $data['lname'])){
                         $data['lastnameError'] = 'Name can only contain letters and numbers';
@@ -98,7 +96,7 @@
                         $data['contactError'] = 'Please Enter the Contact';
                     }
                     elseif (!preg_match($contactValidation, $data['contact'])){
-                        $data['contactError'] = 'Please enter valid contact number';
+                        $data['contactError'] = 'Please Enter valid contact number';
                     }
 
                     //validating NIC
@@ -106,27 +104,27 @@
                         $data['nicError'] = 'Please Enter the NIC number';
                     }
                     elseif (!preg_match($nicValidation, $data['nic'])){
-                        $data['nicError'] = 'Please enter valid NIC number';
+                        $data['nicError'] = 'Please Enter valid NIC number';
                     }
 
                     /*-----------------------------------------------------------------------------------*/
                     //validate email on letters/numbers
                     if(empty($data['email'])){
-                        $data['emailError'] = 'Please enter your email';
+                        $data['emailError'] = 'Please Enter your email';
                     }
                     elseif(!filter_var($data['email'], FILTER_VALIDATE_EMAIL)){
-                        $data['emailError'] = 'Please enter Correct format';
+                        $data['emailError'] = 'Please Enter Correct format';
                     }
                     else{
                         //check if email exists
-                        if($this->loginModel->findLoginByEmail($data['email'])){
+                        if($this->loginModel->findWorkerByEmail($data['email'])){
                             $data['emailError'] = 'Email is already taken';
                         }
                     }
 
                     //Validate password on length and numeric values
                     if(empty($data['password'])){
-                        $data['passwordError'] ='Please enter password';
+                        $data['passwordError'] ='Please Enter password';
                     }
                     elseif(strlen($data['password'] < 6)){
                         $data['passwordError'] ='password must be atleast 6  characters';
@@ -137,11 +135,11 @@
 
                     //validate confirm password
                     if(empty($data['re-enterpassword'])){
-                        $data['re-enterpasswordError'] ='Please enter password again';
+                        $data['re-enterpasswordError'] ='Please Enter password again';
                     }
                     else{
                         if($data['password'] !=$data['re-enterpassword']){
-                            $data['re-enterpasswordError'] = 'Passwords do not match, Please enter correct password';
+                            $data['re-enterpasswordError'] = 'Passwords do not match, Please Enter correct password';
                         }
                     }
 
@@ -155,7 +153,7 @@
                         //Register user from model function
                         if($this->loginModel->worker_register($data)){
                             //Redirect to the login page
-                            header('location: ' . URLROOT . '/logins/login');
+                            header('location: ' . URLROOT . '/logins/worker_login');
                         }
                         else{
                             die('Something went wrong');
@@ -168,7 +166,7 @@
           
         }
 
-/*------------------------------------customer register ---------------------------------------*/
+/*-----------------------------------------------------------customer register --------------------------------------------------------*/
         public function customer_register() {
             //$users = $this->pageModel-> getUsers();
             $data = [
@@ -219,14 +217,14 @@
 
                     //validate first name on letters/numbers
                     if(empty($data['fname'])){
-                        $data['firstnameError'] = 'Please enter First name';
+                        $data['firstnameError'] = 'Please Enter First name';
                     }
                     elseif (!preg_match($nameValidation, $data['fname'])){
                         $data['firstnameError'] = 'Name can only contain letters and numbers';
                     }
                      //validate last name on letters/numbers
                      if(empty($data['lname'])){
-                        $data['lastnameError'] = 'Please enter Last name';
+                        $data['lastnameError'] = 'Please Enter Last name';
                     }
                     elseif (!preg_match($nameValidation, $data['lname'])){
                         $data['lastnameError'] = 'Name can only contain letters and numbers';
@@ -237,20 +235,20 @@
                         $data['contactError'] = 'Please Enter the Contact';
                     }
                     elseif (!preg_match($contactValidation, $data['contact'])){
-                        $data['contactError'] = 'Please enter valid contact number';
+                        $data['contactError'] = 'Please Enter valid contact number';
                     }
 
                     /*-----------------------------------------------------------------------------------*/
                     //validate email on letters/numbers
                     if(empty($data['email'])){
-                        $data['emailError'] = 'Please enter your email';
+                        $data['emailError'] = 'Please Enter your email';
                     }
                     elseif(!filter_var($data['email'], FILTER_VALIDATE_EMAIL)){
-                        $data['emailError'] = 'Please enter Correct format';
+                        $data['emailError'] = 'Please Enter Correct format';
                     }
                     else{
                         //check if email exists
-                        if($this->loginModel->findLoginByEmail($data['email'])){
+                        if($this->loginModel->findCustomerByEmail($data['email'])){
                             $data['emailError'] = 'Email is already taken';
                         }
                     }
@@ -265,7 +263,7 @@
 
                     //Validate password on length and numeric values
                     if(empty($data['password'])){
-                        $data['passwordError'] ='Please enter password';
+                        $data['passwordError'] ='Please Enter password';
                     }
                     elseif(strlen($data['password'] < 6)){
                         $data['passwordError'] ='password must be atleast 6  characters';
@@ -276,11 +274,11 @@
 
                     //validate confirm password
                     if(empty($data['re-enterpassword'])){
-                        $data['re-enterpasswordError'] ='Please enter password again';
+                        $data['re-enterpasswordError'] ='Please Enter password again';
                     }
                     else{
                         if($data['password'] !=$data['re-enterpassword']){
-                            $data['re-enterpasswordError'] = 'Passwords do not match, Please enter correct password';
+                            $data['re-enterpasswordError'] = 'Passwords do not match, Please Enter correct password';
                         }
                     }
 
@@ -295,7 +293,7 @@
                         //Register user from model function
                         if($this->loginModel->customer_register($data)){
                             //Redirect to the login page
-                            header('location: ' . URLROOT . '/logins/login');
+                            header('location: ' . URLROOT . '/logins/customer_login');
                         }
                         else{
                             die('Something went wrong');
@@ -307,7 +305,84 @@
           
         }
 
-        /*-----------------------------company register -------------------------------------------------*/
+/*----------------------------------------------Customer login -------------------------------------------------------------------*/
+public function Customer_login() {
+    //$users = $this->pageModel-> getUsers();
+    $data = [
+        'email' => '',
+        'password' =>'',
+        'emailError' =>'',
+        'passwordError' => ''
+        //'users' => $users
+
+    ];
+
+      //check for post data
+      if($_SERVER['REQUEST_METHOD'] == 'POST'){
+        // Process form
+        // Sanitize POST data
+        $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+
+              $data = [
+                'email' => trim($_POST['email']),
+                'password' => trim($_POST['password']),
+                'emailError' => '',
+                'passwordError' => '' 
+              ];
+
+        //Validate email
+        if(empty($data['email'])){
+            $data['emailError'] = 'Please enter email.';
+        }
+
+        //Validate password
+        if(empty($data['password'])){
+            $data['passwordError'] = 'Please enter password.';
+        }
+         //check if all errors are empty
+         if(empty($data['emailError']) && empty($data['passwordError'])){
+            $loggedInCustomer = $this->loginModel->Customer_login($data['email'], $data['password']);
+        
+        if ($loggedInCustomer) {
+            $this->createCustomerSession($loggedInCustomer);
+        } else {
+            $data['passwordError'] = 'Password or username is incorrect. Please try again.';
+
+            $this->view('logins/Customer_login', $data);
+        }
+    }
+    }else{
+        $data = [
+            'email' => '',
+            'password' => '',
+            'emailError' => '',
+            'passwordError' => '' 
+        ];
+    }
+
+    $this->view('logins/customer_login', $data);
+  
+}
+
+public function createCustomerSession($user) {
+    //session_start();
+    $_SESSION['cus_id'] = $user->cus_id;
+    $_SESSION['firstname'] = $user->firstname;
+    $_SESSION['email'] = $user->email;
+
+    header('location:' . URLROOT . '/customer/customer_dashboard');
+
+    }
+
+    public function logout() {
+        unset($_SESSION['cus_id']);
+        unset($_SESSION['firstname']);
+        unset($_SESSION['Email']);
+        header('location:' . URLROOT . '/logins/loginas');
+        }
+    
+
+/*-------------------------------------------------------------------------company register -------------------------------------------------*/
         public function company_register() {
             //$users = $this->pageModel-> getUsers();
             $data = [
@@ -352,7 +427,7 @@
                    
                      //validate company name on letters/numbers
                      if(empty($data['com_name'])){
-                        $data['nameError'] = 'Please enter Company name';
+                        $data['nameError'] = 'Please Enter Company name';
                     }
                     elseif (!preg_match($nameValidation, $data['com_name'])){
                         $data['nameError'] = 'Name can only contain letters and numbers';
@@ -363,7 +438,7 @@
                         $data['contactError'] = 'Please Enter the Contact';
                     }
                     elseif (!preg_match($contactValidation, $data['contact'])){
-                        $data['contactError'] = 'Please enter valid contact number';
+                        $data['contactError'] = 'Please Enter valid contact number';
                     }
 
                     //validating company registerd number
@@ -371,27 +446,27 @@
                         $data['reg_noError'] = 'Please Enter the company register number';
                     }
                     elseif (!preg_match($reg_noValidation, $data['reg_no'])){
-                        $data['reg_noError'] = 'Please enter valid comapny registered number';
+                        $data['reg_noError'] = 'Please Enter valid comapny registered number';
                     }
 
                     /*-----------------------------------------------------------------------------------*/
                     //validate email on letters/numbers
                     if(empty($data['email'])){
-                        $data['emailError'] = 'Please enter your email';
+                        $data['emailError'] = 'Please Enter your email';
                     }
                     elseif(!filter_var($data['email'], FILTER_VALIDATE_EMAIL)){
-                        $data['emailError'] = 'Please enter Correct format';
+                        $data['emailError'] = 'Please Enter Correct format';
                     }
                     else{
                         //check if email exists
-                        if($this->loginModel->findLoginByEmail($data['email'])){
+                        if($this->loginModel->findCompanyByEmail($data['email'])){
                             $data['emailError'] = 'Email is already taken';
                         }
                     }
 
                     //Validate password on length and numeric values
                     if(empty($data['password'])){
-                        $data['passwordError'] ='Please enter password';
+                        $data['passwordError'] ='Please Enter password';
                     }
                     elseif(strlen($data['password'] < 6)){
                         $data['passwordError'] ='password must be atleast 6  characters';
@@ -402,11 +477,11 @@
 
                     //validate confirm password
                     if(empty($data['re-enterpassword'])){
-                        $data['re-enterpasswordError'] ='Please enter password again';
+                        $data['re-enterpasswordError'] ='Please Enter password again';
                     }
                     else{
                         if($data['password'] !=$data['re-enterpassword']){
-                            $data['re-enterpasswordError'] = 'Passwords do not match, Please enter correct password';
+                            $data['re-enterpasswordError'] = 'Passwords do not match, Please Enter correct password';
                         }
                     }
 
@@ -420,7 +495,7 @@
                         //Register user from model function
                         if($this->loginModel->company_register($data)){
                             //Redirect to the login page
-                            header('location: ' . URLROOT . '/logins/login');
+                            header('location: ' . URLROOT . '/logins/company_login');
                         }
                         else{
                             die('Something went wrong');

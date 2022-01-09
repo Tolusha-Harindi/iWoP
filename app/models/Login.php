@@ -5,6 +5,7 @@
             $this->db = new Database;
         }
 
+//Customer register /////////////////////////////////////////////////////////////////
         public function customer_register($data){
            $this->db->query('INSERT INTO customer (fname, lname, contact, email, address, password) VALUES (:fname, :lname, :contact, :email, :address, :password)');
 
@@ -23,6 +24,23 @@
            else{
                return false;
            }
+        }
+
+//Customer login ///////////////////////////////////////////////////////////////
+        public function Customer_login($email, $password){
+            $this->db->query('SELECT * FROM customer WHERE email = :email');
+
+            //bind value
+            $this->db->bind(':email', $email);
+            $row = $this->db->single();
+            $hashedPassword = $row->password;
+
+            if(password_verify($password, $hashedPassword)){
+                return $row;
+            }
+            else{
+                return false;
+            }
         }
 
         public function worker_register($data){
@@ -82,7 +100,7 @@
         // }
 
         //Find user by email, Email is passed in by the controller
-        public function findLoginByEmail($email){
+        public function findCustomerByEmail($email){
             //prepared statement
             $this->db->query('SELECT * FROM customer WHERE email=:email');
 
