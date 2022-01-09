@@ -1,11 +1,11 @@
 <?php 
-    // session_start();
+    session_start();
 
-    // function isLoggedIn(){
-    //     if(isset($_SESSION['user_id'])){
-    //         return true;
-    //     }
-    //     else{
-    //         return false;
-    //     }
-    // }
+    function isLoggedIn(){
+        if(isset($_SESSION['admin_id']) || isset($_SESSION['manager_id']) || isset($_SESSION['customer_id']) || isset($_SESSION['worker_id']) ||isset($_SESSION['company_id'])){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
