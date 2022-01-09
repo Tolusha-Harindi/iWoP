@@ -346,7 +346,7 @@ public function Customer_login() {
         if ($loggedInCustomer) {
             $this->createCustomerSession($loggedInCustomer);
         } else {
-            $data['passwordError'] = 'Password or username is incorrect. Please try again.';
+            $data['passwordError'] = 'Password or Email is incorrect. Please try again.';
 
             $this->view('logins/Customer_login', $data);
         }
@@ -370,7 +370,7 @@ public function createCustomerSession($user) {
     $_SESSION['firstname'] = $user->firstname;
     $_SESSION['email'] = $user->email;
 
-    header('location:' . URLROOT . '/customer/customer_dashboard');
+    header('location:' . URLROOT . '/customers/customer_dashboard');
 
     }
 
