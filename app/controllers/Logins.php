@@ -168,11 +168,104 @@
                             die('Something went wrong');
                         }
                     }
+            }else{
+                $data = [
+                    'fname' => '',
+                    'lname' => '',
+                    'contact' => '',
+                    'nic' => '',
+                    'email' => '',
+                    'password' => '',
+                    're-enterpassword' => '',
+                    'firstnameError' =>'',
+                    'lastnameError' => '',
+                    //'nameError' => '',
+                    'contactError' => '',
+                    'nicError' => '',
+                    'emailError' => '',
+                    'passwordError' => '',
+                    're-enterpasswordError' => ''
+    
+                ];
             }
-
-
             $this->view('logins/worker_register', $data);
           
+        }
+
+
+    /*-------------------------------------Worker login --------------------------------------------------------------------*/
+        public function Worker_login() {
+            //$users = $this->pageModel-> getUsers();
+            $data = [
+                'email' => '',
+                'password' =>'',
+                'emailError' =>'',
+                'passwordError' => ''
+        
+            ];
+        
+              //check for post data
+              if($_SERVER['REQUEST_METHOD'] == 'POST'){
+                // Process form
+                // Sanitize POST data
+                $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+        
+                      $data = [
+                        'email' => trim($_POST['email']),
+                        'password' => trim($_POST['password']),
+                        'emailError' => '',
+                        'passwordError' => '' 
+                      ];
+        
+                //Validate email
+                if(empty($data['email'])){
+                    $data['emailError'] = 'Please enter email.';
+                }
+        
+                //Validate password
+                if(empty($data['password'])){
+                    $data['passwordError'] = 'Please enter password.';
+                }
+                 //check if all errors are empty
+                 if(empty($data['emailError']) && empty($data['passwordError'])){
+                    $loggedInWorker = $this->loginModel->Worker_login($data['email'], $data['password']);
+                
+                if ($loggedInWorker) {
+                    $this->createWorkerSession($loggedInWorker);
+                } else {
+                    $data['passwordError'] = 'Password or Email is incorrect. Please try again.';
+        
+                    $this->view('logins/Worker_login', $data);
+                }
+            }
+            }else{
+                $data = [
+                    'email' => '',
+                    'password' => '',
+                    'emailError' => '',
+                    'passwordError' => '' 
+                ];
+            }
+        
+            $this->view('logins/worker_login', $data);
+          
+        }
+        
+        public function createWorkerSession($user) {
+            //session_start();
+            $_SESSION['worker_id'] = $user->worker_id;
+            $_SESSION['fname'] = $user->fname;
+            $_SESSION['email'] = $user->email;
+    
+            header('location:' . URLROOT . '/workers/worker_dashboard');
+    
+        }
+    
+        public function Workerlogout() {
+            unset($_SESSION['worker_id']);
+            unset($_SESSION['fname']);
+            unset($_SESSION['email']);
+            header('location:' . URLROOT . '/logins/loginas');
         }
 
 
@@ -343,7 +436,6 @@ public function Customer_login() {
         'password' =>'',
         'emailError' =>'',
         'passwordError' => ''
-        //'users' => $users
 
     ];
 
@@ -394,13 +486,13 @@ public function Customer_login() {
   
 }
 
-public function createCustomerSession($user) {
-    //session_start();
-    $_SESSION['cus_id'] = $user->cus_id;
-    $_SESSION['firstname'] = $user->firstname;
-    $_SESSION['email'] = $user->email;
+    public function createCustomerSession($user) {
+        //session_start();
+        $_SESSION['cus_id'] = $user->cus_id;
+        $_SESSION['firstname'] = $user->firstname;
+        $_SESSION['email'] = $user->email;
 
-    header('location:' . URLROOT . '/customers/customer_dashboard');
+        header('location:' . URLROOT . '/customers/customer_dashboard');
 
     }
 
@@ -409,7 +501,7 @@ public function createCustomerSession($user) {
         unset($_SESSION['firstname']);
         unset($_SESSION['Email']);
         header('location:' . URLROOT . '/logins/loginas');
-        }
+    }
     
 
 ////   company register /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -531,6 +623,22 @@ public function createCustomerSession($user) {
                             die('Something went wrong');
                         }
                     }
+            }else{
+                $data = [
+                    'com_name' => '',
+                    'contact' => '',
+                    'reg_no' => '',
+                    'email' => '',
+                    'password' => '',
+                    're-enterpassword' => '',
+                    'nameError' => '',
+                    'contactError' => '',
+                    'reg_noError' => '',
+                    'emailError' => '',
+                    'passwordError' => '',
+                    're-enterpasswordError' => ''
+    
+                ];
             }
 
 
