@@ -51,7 +51,7 @@
 
             <!----- if company logged in ---------------->
                 <?php elseif(isset($_SESSION['reg_no'])) : ?>
-                <a href="<?php echo URLROOT;?> /logins/Comapnylogout" class="anchor-tag"> Logout </a>
+                <a href="<?php echo URLROOT;?> /logins/Companylogout" class="anchor-tag"> Logout </a>
 
 
                 <?php else : ?>

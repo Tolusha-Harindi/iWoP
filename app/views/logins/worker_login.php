@@ -11,16 +11,18 @@
         <h1>LOGIN</h1>
         <div class="form-style">
             <label for="email"><b>EMAIL</b></label>
-            <input type="email" placeholder="Enter Email" name="email" required>
+            <input type="email" placeholder="Enter Email" name="email">
             <span class="invalidFeedback">
                 <?php  echo $data['emailError'];?>
             </span>
+            </br> </br>
 
             <label for="password"><b>PASSWORD</b></label>
-            <input type="password" placeholder="Enter Password" name="password" required>
+            <input type="password" placeholder="Enter Password" name="password">
             <span class="invalidFeedback">
                 <?php  echo $data['passwordError'];?>
             </span>
+            </br> </br>
 
             <button type="submit" id="submit" class="blue-button">Login</button>
         </div>
