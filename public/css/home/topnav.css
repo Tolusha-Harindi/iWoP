@@ -18,7 +18,7 @@ body{
 
 /*-----navbar box-----*/
 .navbar{
-    position: fixed;
+    position: absolute;
     box-shadow: 0 0 10px lightgray;
     padding: 0.1em 0.2em;
     display: flex;

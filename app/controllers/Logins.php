@@ -4,6 +4,8 @@
             $this->loginModel = $this->model('Login');
         }
 
+
+////  Login as /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         public function loginas() {
             //$users = $this->pageModel-> getUsers();
             $data = [
@@ -15,6 +17,10 @@
           
         }
 
+
+
+
+/////    Register as ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         public function register() {
             //$users = $this->pageModel-> getUsers();
             $data = [
@@ -27,7 +33,10 @@
           
         }
 
-/*---------------------------------Worker Register--------------------------------------------------------------*/
+
+
+
+///   Worker Register /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         public function worker_register() {
             //$users = $this->pageModel-> getUsers();
             $data = [
@@ -166,7 +175,11 @@
           
         }
 
-/*-----------------------------------------------------------customer register --------------------------------------------------------*/
+
+
+
+
+////  customer register  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         public function customer_register() {
             //$users = $this->pageModel-> getUsers();
             $data = [
@@ -299,8 +312,25 @@
                             die('Something went wrong');
                         }
                     }
+            }else{
+                $data = [
+                    'fname' => '',
+                    'lname' => '',
+                    'contact' => '',
+                    'email' => '',
+                    'address' => '',
+                    'password' => '',
+                    're-enterpassword' => '',
+                    'firstnameError' =>'',
+                    'lastnameError' => '',
+                    //'nameError' => '',
+                    'contactError' => '',
+                    'emailError' => '',
+                    'addressError' => '',
+                    'passwordError' => '',
+                    're-enterpasswordError' => ''
+                ];
             }
-
             $this->view('logins/customer_register', $data);
           
         }
@@ -382,7 +412,7 @@ public function createCustomerSession($user) {
         }
     
 
-/*-------------------------------------------------------------------------company register -------------------------------------------------*/
+////   company register /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         public function company_register() {
             //$users = $this->pageModel-> getUsers();
             $data = [
