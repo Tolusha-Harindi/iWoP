@@ -20,6 +20,8 @@
 
 
 
+
+
 /////    Register as ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         public function register() {
             //$users = $this->pageModel-> getUsers();
@@ -32,6 +34,7 @@
             $this->view('logins/register', $data);
           
         }
+
 
 
 
@@ -193,7 +196,8 @@
         }
 
 
-    /*-------------------------------------Worker login --------------------------------------------------------------------*/
+
+/*-------------------------------------Worker login --------------------------------------------------------------------*/
         public function Worker_login() {
             //$users = $this->pageModel-> getUsers();
             $data = [
@@ -267,6 +271,9 @@
             unset($_SESSION['email']);
             header('location:' . URLROOT . '/logins/loginas');
         }
+
+
+
 
 
 
@@ -499,10 +506,17 @@ public function Customer_login() {
     public function logout() {
         unset($_SESSION['cus_id']);
         unset($_SESSION['firstname']);
-        unset($_SESSION['Email']);
+        unset($_SESSION['email']);
         header('location:' . URLROOT . '/logins/loginas');
     }
     
+
+
+
+
+
+
+
 
 ////   company register /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         public function company_register() {
@@ -644,6 +658,83 @@ public function Customer_login() {
 
             $this->view('logins/company_register', $data);
           
+        }
+
+
+
+/*----------------------------------------------Company login -------------------------------------------------------------------*/
+        public function Company_login() {
+            //$users = $this->pageModel-> getUsers();
+            $data = [
+                'email' => '',
+                'password' =>'',
+                'emailError' =>'',
+                'passwordError' => ''
+
+            ];
+
+            //check for post data
+            if($_SERVER['REQUEST_METHOD'] == 'POST'){
+                // Process form
+                // Sanitize POST data
+                $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+
+                    $data = [
+                        'email' => trim($_POST['email']),
+                        'password' => trim($_POST['password']),
+                        'emailError' => '',
+                        'passwordError' => '' 
+                    ];
+
+                //Validate email
+                if(empty($data['email'])){
+                    $data['emailError'] = 'Please enter email.';
+                }
+
+                //Validate password
+                if(empty($data['password'])){
+                    $data['passwordError'] = 'Please enter password.';
+                }
+                //check if all errors are empty
+                if(empty($data['emailError']) && empty($data['passwordError'])){
+                    $loggedInCompany = $this->loginModel->Company_login($data['email'], $data['password']);
+                
+                if ($loggedInCompany) {
+                    $this->createCompanySession($loggedInCompany);
+                } else {
+                    $data['passwordError'] = 'Password or Email is incorrect. Please try again.';
+
+                    $this->view('logins/Company_login', $data);
+                }
+            }
+            }else{
+                $data = [
+                    'email' => '',
+                    'password' => '',
+                    'emailError' => '',
+                    'passwordError' => '' 
+                ];
+            }
+
+            $this->view('logins/company_login', $data);
+        
+        }
+
+        public function createCompanySession($user) {
+            //session_start();
+            $_SESSION['reg_no'] = $user->reg_no;
+            $_SESSION['com_name'] = $user->com_name;
+            $_SESSION['email'] = $user->email;
+
+            header('location:' . URLROOT . '/companies/company_dashboard');
+
+        }
+
+        public function Companylogout() {
+            unset($_SESSION['reg_no']);
+            unset($_SESSION['com_name']);
+            unset($_SESSION['email']);
+            header('location:' . URLROOT . '/logins/loginas');
         }
 
     }

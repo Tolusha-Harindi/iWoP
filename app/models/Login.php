@@ -29,7 +29,6 @@
 
 
 
-
 //Customer login ///////////////////////////////////////////////////////////////
         public function Customer_login($email, $password){
             $this->db->query('SELECT * FROM customer WHERE email = :email');
@@ -68,6 +67,8 @@
 
  
  
+
+
 
 
 
@@ -143,6 +144,7 @@
 
 
 
+
 //////////////////////////////////////////////////////////////// Company Register  /////////////////////////////////////////////////////////////
          public function company_register($data){
             $this->db->query('INSERT INTO company (reg_no, com_name, contact, email, password) VALUES (:reg_no, :com_name, :contact, :email, :password)');
@@ -163,28 +165,28 @@
             }
          }
 
-        //login
-        // public function login($email, $password){
-        //     $this->db->query('SELECT * FROM customer WHERE email = :email');
+        //Company login
+        public function Company_login($email, $password){
+            $this->db->query('SELECT * FROM company WHERE email = :email');
 
-        //     //bind value
-        //     $this->db->bind(':email', $email);
-        //     $row = $this->db->single();
-        //     $hashedPassword = $row->password;
+            //bind value
+            $this->db->bind(':email', $email);
+            $row = $this->db->single();
+            $hashedPassword = $row->password;
 
-        //     if(password_verify($password, $hashedPassword)){
-        //         return $row;
-        //     }
-        //     else{
-        //         return false;
-        //     }
-        // }
+            if(password_verify($password, $hashedPassword)){
+                return $row;
+            }
+            else{
+                return false;
+            }
+        }
 
         
         //Find user by email, Email is passed in by the controller of customer
         public function findCompanyByEmail($email){
             //prepared statement
-            $this->db->query('SELECT * FROM customer WHERE email=:email');
+            $this->db->query('SELECT * FROM company WHERE email=:email');
 
             //Email param will be binded with the email variable
             $this->db->bind(':email', $email);
