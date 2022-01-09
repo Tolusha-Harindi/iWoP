@@ -5,7 +5,7 @@
             $this->db = new Database;
         }
 
-//Customer register /////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////Customer register /////////////////////////////////////////////////////////////////
         public function customer_register($data){
            $this->db->query('INSERT INTO customer (fname, lname, contact, email, address, password) VALUES (:fname, :lname, :contact, :email, :address, :password)');
 
@@ -26,6 +26,10 @@
            }
         }
 
+
+
+
+
 //Customer login ///////////////////////////////////////////////////////////////
         public function Customer_login($email, $password){
             $this->db->query('SELECT * FROM customer WHERE email = :email');
@@ -43,6 +47,34 @@
             }
         }
 
+        
+
+        //Find user by email, Email is passed in by the controller of customer
+        public function findCustomerByEmail($email){
+            //prepared statement
+            $this->db->query('SELECT * FROM customer WHERE email=:email');
+
+            //Email param will be binded with the email variable
+            $this->db->bind(':email', $email);
+
+            //check if email is already registered 
+            if($this->db->rowCount()>0){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+
+ 
+ 
+
+
+
+
+
+ 
+ ///////////////////////////////////////////////////////////////////  Worker Register  ///////////////////////////////////////////////////////
         public function worker_register($data){
             $this->db->query('INSERT INTO worker (fname, lname, contact, nic, email, password) VALUES (:fname, :lname, :contact, :nic, :email, :password)');
  
@@ -63,6 +95,55 @@
             }
          }
 
+
+
+// Worker login ///////////////////////////////////////////////////////////////
+         public function Worker_login($email, $password){
+            $this->db->query('SELECT * FROM worker WHERE email = :email');
+
+            //bind value
+            $this->db->bind(':email', $email);
+            $row = $this->db->single();
+            $hashedPassword = $row->password;
+
+            if(password_verify($password, $hashedPassword)){
+                return $row;
+            }
+            else{
+                return false;
+            }
+        }
+
+
+
+//Find user by email, Email is passed in by the controller of customer
+        public function findWorkerByEmail($email){
+            //prepared statement
+            $this->db->query('SELECT * FROM worker WHERE email=:email');
+
+            //Email param will be binded with the email variable
+            $this->db->bind(':email', $email);
+
+            //check if email is already registered 
+            if($this->db->rowCount()>0){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////// Company Register  /////////////////////////////////////////////////////////////
          public function company_register($data){
             $this->db->query('INSERT INTO company (reg_no, com_name, contact, email, password) VALUES (:reg_no, :com_name, :contact, :email, :password)');
  
@@ -99,8 +180,9 @@
         //     }
         // }
 
-        //Find user by email, Email is passed in by the controller
-        public function findCustomerByEmail($email){
+        
+        //Find user by email, Email is passed in by the controller of customer
+        public function findCompanyByEmail($email){
             //prepared statement
             $this->db->query('SELECT * FROM customer WHERE email=:email');
 

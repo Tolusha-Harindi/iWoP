@@ -36,8 +36,23 @@
                 <a href="<?php echo URLROOT;?> /homes/home" class="anchor-tag"> About Us </a>
             </li>
             <li class="link"> 
+
+            <!--------   if customer logged in  --------->
                 <?php if(isset($_SESSION['cus_id'])) : ?>
                 <a href="<?php echo URLROOT;?> /logins/logout" class="anchor-tag"> Logout </a>
+                
+
+
+            <!-----  if worker logged in --------------->
+                <?php elseif(isset($_SESSION['worker_id'])) : ?>
+                <a href="<?php echo URLROOT;?> /logins/Workerlogout" class="anchor-tag"> Logout </a>
+
+
+
+            <!----- if company logged in ---------------->
+                <?php elseif(isset($_SESSION['reg_no'])) : ?>
+                <a href="<?php echo URLROOT;?> /logins/Comapnylogout" class="anchor-tag"> Logout </a>
+
 
                 <?php else : ?>
                     <a href="<?php echo URLROOT ;?> /logins/loginas" class="anchor-tag"> Login </a>
