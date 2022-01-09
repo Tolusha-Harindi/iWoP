@@ -1,4 +1,4 @@
-<?php include_once APPROOT . '/views/includes/topnav2.php'; ?>
+<?php include_once APPROOT . '/views/includes/topnav.php'; ?>
 
 <link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/home/login.css"/>
 <link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/home/button.css"/>
@@ -6,7 +6,7 @@
 <div class="shape"> </div>
 <img src="<?php echo URLROOT;?>/public/img/log-1.png" class="image" style="right:60%; height:35rem; top:7.7em;" alt="" />
 
-<form action="<?php echo URLROOT; ?>/logins/login" method="POST">
+<form action="<?php echo URLROOT; ?>/logins/worker_login" method="POST">
     <div class="container">
         <h1>LOGIN</h1>
         <div class="form-style">

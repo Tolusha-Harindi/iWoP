@@ -20,9 +20,9 @@
                 <a href="<?php echo URLROOT;?> /homes/landing" class="anchor-tag-logo">iWoP</a>
             </div>
             
-            <li class="link"> 
+            <!-- <li class="link"> 
                 <a href="#" class="anchor-tag"> <i class="fa fa-bell" aria-hidden="true"></i> </a>
-            </li>
+            </li> -->
             <li class="link"> 
                 <a href="<?php echo URLROOT;?> /homes/home" class="anchor-tag"> Home </a>
             </li>
@@ -36,12 +36,17 @@
                 <a href="<?php echo URLROOT;?> /homes/home" class="anchor-tag"> About Us </a>
             </li>
             <li class="link"> 
-                <a href="<?php echo URLROOT;?> /homes/home" class="anchor-tag"> Logout </a>
+                <?php if(isset($_SESSION['cus_id'])) : ?>
+                <a href="<?php echo URLROOT;?> /logins/logout" class="anchor-tag"> Logout </a>
+
+                <?php else : ?>
+                    <a href="<?php echo URLROOT ;?> /logins/loginas" class="anchor-tag"> Login </a>
+                <?php endif; ?>
             </li>
         
-            <li class="link"> 
+            <!-- <li class="link"> 
                 <a href="#" class="anchor-tag" style="font-size: 1.2em;"><i class="fa fa-user" aria-hidden="true"></i> </a>
-                <!-- <div class="dropdown">
+                <div class="dropdown">
                     <button class="dropbtn" style="font-size: 1.2em;">
                     <a href="#" class="anchor-tag"><i class="fa fa-user" aria-hidden="true"></i> </a>
                     <i class="fa fa-caret-down"></i> 
@@ -51,8 +56,8 @@
                         <a href="#"><i class="fa fa-print" aria-hidden="true"></i> Post Ads</a>
                         <a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a>
                     </div> 
-                </div> -->
-            </li> 
+                </div>
+            </li>  -->
 
             <!-- <li class="link">
             <a href="#" class='anchor-tag'>

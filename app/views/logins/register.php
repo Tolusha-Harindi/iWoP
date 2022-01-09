@@ -1,4 +1,4 @@
-<?php include_once APPROOT . '/views/includes/topnav2.php'; ?>
+<?php include_once APPROOT . '/views/includes/topnav.php'; ?>
 
 <link rel='stylesheet' href="<?php echo URLROOT;?>/public/css/home/register.css"/>
 <link rel='stylesheet' href="<?php echo URLROOT;?>/public/css/home/button.css"/>
