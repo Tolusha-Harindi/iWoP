@@ -8,7 +8,12 @@
 
 <div class="category" id="my-profile"> <p> My Profile </p> </div>
 
-<img src="<?php echo URLROOT;?> /public/img/w3.jpg" style="border-radius: 200px; height:160px; width: 160px; margin-left:55%">
+<div id="profile-container">
+    <image id="profileImage" src="<?php echo URLROOT;?> /public/img/profile.jpg" />
+</div>
+<input id="imageUpload" type="file"  name="profile_photo" placeholder="Photo" required="" capture>
+<p style="margin-left:54.5%; color: lightgrey; font-size:13px;"><i>Click the image to upload pic</i></p>
+<script type="text/javascript" src="<?php echo URLROOT;?> /public/js/pic.js"></script>
 
 <div class="form-space">
     <form action="/action_page.php">
