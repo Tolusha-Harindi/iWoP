@@ -117,7 +117,7 @@
 
 
 
-//Find user by email, Email is passed in by the controller of customer
+//Find user by email, Email is passed in by the controller of worker
         public function findWorkerByEmail($email){
             //prepared statement
             $this->db->query('SELECT * FROM worker WHERE email=:email');
@@ -183,7 +183,7 @@
         }
 
         
-        //Find user by email, Email is passed in by the controller of customer
+        //Find user by email, Email is passed in by the controller of company
         public function findCompanyByEmail($email){
             //prepared statement
             $this->db->query('SELECT * FROM company WHERE email=:email');
