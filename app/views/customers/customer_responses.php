@@ -2,119 +2,129 @@
 
 <?php include_once APPROOT . '/views/includes/customer_sidenav.php'; ?>
 
+<link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/home/login.css"/>
 <link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/home/table.css"/>
 <link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/home/button.css"/>
 <link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/customer/ads.css"/>
 <link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/home/popup.css"/>
 <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
 
-
-<a href="#post-new-ad" class="top-button1" style="margin-top: -41em;margin-left:78em; width:10em;"> Post a New ad </a>
-<a href="#responses" class="top-button2" style="margin-top: -41em; margin-left:62em;"> Responses for requests </a>
-<a href="#posted-ads" class="top-button3" style="margin-top: -41em; margin-left:51em"> Posted Ads</a>
+<?php if(isLoggedIn()): ?>
+<a href="<?php echo URLROOT; ?>/customers/customer_responses#post-new-ad" class="top-button1" style="margin-top: -40em;margin-left:78em; width:10em;"> Post a New ad </a>
+<?php endif; ?>
+<a href="#responses" class="top-button2" style="margin-top: -40em; margin-left:62em;"> Responses for requests </a>
+<a href="#posted-ads" class="top-button3" style="margin-top: -40em; margin-left:51em"> Posted Ads</a>
 
 
 <div class="heading" id="posted-ads" style="margin-top: -20em; margin-left:15em;"> <p>Requests for posted Ads </p> </div>
-<div class="customer-ad" >
-    <div class="ad-space-row">
-            <!----------------------------------------posted-ad------------------------------------------------------------>
-            <div class="ad-space" style="margin-left:-0.5em;">
 
-                    <p class="title1" style="margin-top:1.5em"> Need a Plumber</p>
-                        <div class="ad-row">
-                            <div class="ad-col-35">
-                                <label for="name"> <b>Category :</b> </label>
-                            </div>
-                            <div class="ad-col-65">
-                                <p class="detail">Plumber </p>
-                            </div>
-                        </div>
+<?php foreach($data['newPosts'] as $newPosts): ?>
+    <div class="customer-ad" >
+        <div class="ad-space-row">
+                <!----------------------------------------posted-ad------------------------------------------------------------>
+                <div class="ad-space" style="margin-left:-0.5em;">
 
-                        <div class="ad-row">
-                            <div class="ad-col-35">
-                                <label for="name"> <b>Contact :</b> </label>
-                            </div>
-                            <div class="ad-col-65">
-                                <p class="detail">071 777 7778 </p>
-                            </div>
-                        </div>
-
-                        <div class="ad-row">
-                            <div class="ad-col-35">
-                                <label for="name"> <b>Location :</b> </label>
-                            </div>
-                            <div class="ad-col-65">
-                                <p class="detail">Colombo </p>
-                            </div>
-                        </div>
-
-                        <div class="ad-row">
-                            <div class="ad-col-35">
-                                <label for="name"> <b>Description :</b> </label>
-                            </div>
-                            <div class="ad-col-65">
-                                <p class="detail"> Need a well experienced plumber </p>
-                            </div>
-                        </div>
-
-                        <div class="ad-row">
-                            <div class="ad-col-35">
-                                <label for="date"> <b>Start Date :</b> </label>
-                            </div>
-                            <div class="ad-col-65">
-                                <p class="detail"> 10/10/2021 </p>
-                            </div>
-                        </div>
-
-                        <div class="ad-row">
-                            <div class="ad-col-35">
-                                <label for="date"> <b>End Date :</b> </label>
-                            </div>
-                            <div class="ad-col-65">
-                                <p class="detail"> 10/10/2021 </p>
-                            </div>
-                        </div>
-						
-                        <div class="ad-row">
-                            <div class="ad-col-35">
-                                <label for="name"> <b> Budget :</b> </label>
-                            </div>
-                            <div class="ad-col-65">
-                                <p class="detail"> Rs.2500.00 </p>
-                            </div>
-                        </div>
-
-                        <div class="ad-row">
-                            <div class="ad-col-35">
-                                <label for="name"> <b>Work to be done:</b> </label>
-                            </div>
-                            <div class="ad-col-65">
-                                <img src="<?php echo URLROOT;?> /public/img/work.jpg" class="work">
-                                <img src="<?php echo URLROOT;?> /public/img/work.jpg" class="work">
-                            </div>
-                        </div>
-                        </br> </br>
-
-                        <div class="ad-row">
+                        <p class="title1" style="margin-top:1.5em"> <?php echo $newPosts->title; ?></p>
+                            <div class="ad-row">
                                 <div class="ad-col-35">
-                                    <label for="name"> <b style="color: gray; margin-bottom:0.5em;"> Posted on :</b> </label>
+                                    <label for="name"> <b>Category :</b> </label>
                                 </div>
                                 <div class="ad-col-65">
-                                    <p class="detail" style="color: gray;margin-bottom:0.5em;">10/10/2020 </p>
+                                    <p class="detail"> <?php echo $newPosts->category ?> </p>
                                 </div>
-                        </div>
+                            </div>
 
-                        <div class="ad-row" style="margin-bottom: 1.5em; margin-top:1.5em">
-                            <input type="submit" value="Edit" class="blue-out-button" style="padding: 8px 24px; margin-left:29%; display:inline;">
-                            <input type="submit" value="Delete" class="pink-out-button" style="padding: 8px 15px; float:right; margin-right:29%; display:inline;">
-                        </div>
-						</br> </br>
-        	
-            </div>
-	</div>
-</div>
+                            <div class="ad-row">
+                                <div class="ad-col-35">
+                                    <label for="name"> <b>Contact :</b> </label>
+                                </div>
+                                <div class="ad-col-65">
+                                    <p class="detail"> <?php echo $newPosts->contact ?> </p>
+                                </div>
+                            </div>
 
-<!---------------------------responses------------------------->
+                            <div class="ad-row">
+                                <div class="ad-col-35">
+                                    <label for="name"> <b>Location :</b> </label>
+                                </div>
+                                <div class="ad-col-65">
+                                    <p class="detail"> <?php echo $newPosts->address ?></p>
+                                </div>
+                            </div>
+
+                            <div class="ad-row">
+                                <div class="ad-col-35">
+                                    <label for="name"> <b>Description :</b> </label>
+                                </div>
+                                <div class="ad-col-65">
+                                    <p class="detail"> <?php echo $newPosts->description ?> </p>
+                                </div>
+                            </div>
+
+                            <div class="ad-row">
+                                <div class="ad-col-35">
+                                    <label for="date"> <b>Start Date :</b> </label>
+                                </div>
+                                <div class="ad-col-65">
+                                    <p class="detail"> <?php echo $newPosts->start_date ?> </p>
+                                </div>
+                            </div>
+
+                            <div class="ad-row">
+                                <div class="ad-col-35">
+                                    <label for="date"> <b>End Date :</b> </label>
+                                </div>
+                                <div class="ad-col-65">
+                                    <p class="detail"> <?php echo $newPosts->end_date ?> </p>
+                                </div>
+                            </div>
+                            
+                            <div class="ad-row">
+                                <div class="ad-col-35">
+                                    <label for="name"> <b> Budget :</b> </label>
+                                </div>
+                                <div class="ad-col-65">
+                                    <p class="detail"> Rs. <?php echo $newPosts->budget ?> .00 </p>
+                                </div>
+                            </div>
+
+                            <div class="ad-row">
+                                <div class="ad-col-35">
+                                    <label for="name"> <b>Work to be done:</b> </label>
+                                </div>
+                                <div class="ad-col-65">
+                                    <img src="<?php echo URLROOT ?> /public/img/<?php echo $newPosts->work; ?>" class="work">
+                                </div>
+                            </div>
+                            </br> </br>
+
+                            <div class="ad-row">
+                                    <div class="ad-col-35">
+                                        <label for="name"> <b style="color: gray; margin-bottom:0.5em;"> Posted on :</b> </label>
+                                    </div>
+                                    <div class="ad-col-65">
+                                        <p class="detail" style="color: gray;margin-bottom:0.5em;"><?php echo date('F j h:m', strtotime($newPosts->post_date)) ?> </p>
+                                    </div>
+                            </div>
+
+                            <div class="ad-row" style="margin-bottom: 1.5em; margin-top:1.5em">
+                                <input type="submit" value="Edit" class="blue-out-button" style="padding: 8px 24px; margin-left:29%; display:inline;">
+                                <input type="submit" value="Delete" class="pink-out-button" style="padding: 8px 15px; float:right; margin-right:29%; display:inline;">
+                            </div>
+                            </br> </br>
+                
+                </div>
+        </div>
+    </div>
+<?php endforeach; ?>
+
+
+
+
+
+
+
+<!---------------------------responses--------------------------------------------------------------------------------->
 	<div class= "table" style="margin-left:20em; margin-top: -40em; width:80%;"> 
         <div class="table-wrapper"   style="margin-top: 5em;">
             <table class="fl-table">
@@ -146,7 +156,13 @@
     </div>
 
 
-	<!---------------------------------------Job invite responses---------------------------------------->
+
+
+
+
+
+
+<!---------------------------------------Job invite responses---------------------------------------->
 <div class="heading" id="responses" style="margin-top: 15em; margin-left:15em;"> <p> Job invite responses </p> </div>
 
 <div class= "table" style="margin-left:-7em;"> 
@@ -199,14 +215,21 @@
             </table> 
         </div> 
 </div>
-    
+ 
+
+
+
+
+
+
+
 
 <!------------------------------------------------------------popoup window------------------------------------------------------------->
 
 <div id="myModal" class="modal">
         <!-- Modal content -->
         <div class="modal-content" style="margin-top: 2%;">
-                <form action="">
+                <form action="<?php echo URLROOT; ?>/customers/customer_responses" method="POST">
 
                     <span class="close">&times;</span>
                     <p class="heading" style="margin-top: 1em; margin-left:35%;">Hire a Service Provider <img src="<?php echo URLROOT;?> /public/img/ad.png" class="popup-image"></p>
@@ -218,113 +241,149 @@
                             <!-- <input type="text" id="category" name="category" placeholder="Select category" required> -->
                                         <!------------------------------------------------------------------------------------------------------>
         
-                                <select name="categoty" id="list3" style="border: 1px solid #6f7dd8; padding:10px; width:91%; border-radius:5px;">
+                                <select name="category" id="list3" style="border: 1px solid #6f7dd8; padding:10px; width:91%; border-radius:5px;">
                                     <option value =" "  selected label="Category"> Select Category</option>
-                                    <option value="#" > Plumber</option>
-                                    <option value="#" > Masons</option>
-                                    <option value="#" > Tile</option>
-                                    <option value="#" > Carpenters</option>
-                                    <option value="#" > Painters</option>
-                                    <option value="#" > Electricians</option>
-                                    <option value="#" > Landscaping</option>
-                                    <option value="#" > Contractors</option>
-                                    <option value="#" > Professionals</option>
-                                    <option value="#" > Stones/sand/soil</option>
-                                    <option value="#" > Concrete Slab</option>
-                                    <option value="#" > Equipment Repairing </option>
-                                    <option value="#" > A/C</option>
-                                    <option value="#" > Welding</option>
-                                    <option value="#" > Cooking</option>
-                                    <option value="#" > Cushion Works</option>
-                                    <option value="#" > Vehicle Repairs</option>
-                                    <option value="#" > Cleaners</option>
-                                    <option value="#" > CCTV</option>
-                                    <option value="#" > Ceiling</option>
-                                    <option value="#" > Well</option>
-                                    <option value="#" > Chair Weavers</option>
-                                    <option value="#" > Rent Tools</option>
-                                    <option value="#" > Curtains</option>
-                                    <option value="#" > Solar Panel fixing</option>
-                                    <option value="#" > Demolishing</option>
-                                    <option value="#" > Pest Control</option>
-                                    <option value="#" > Design</option>
-                                    <option value="#" > Movers</option>
-                                    <option value="#" > Aluminium</option>
-                                    <option value="#" > Catering</option>
+                                    <option value="Plumber" > Plumber</option>
+                                    <option value="Mason" > Masons</option>
+                                    <option value="Tile repair" > Tile</option>
+                                    <option value="Carpenter" > Carpenters</option>
+                                    <option value="Painter" > Painters</option>
+                                    <option value="Electrician" > Electricians</option>
+                                    <option value="Landscaping" > Landscaping</option>
+                                    <option value="Contractor" > Contractors</option>
+                                    <option value="Professional" > Professionals</option>
+                                    <option value="Stones/ sand/ Soil" > Stones/sand/soil</option>
+                                    <option value="Concrete slab repair" > Concrete Slab</option>
+                                    <option value="Equipment Repairing" > Equipment Repairing </option>
+                                    <option value="A/C Repair" > A/C</option>
+                                    <option value="Weilding Repair" > Welding</option>
+                                    <option value="Cook" > Cooking</option>
+                                    <option value="Cushion Work" > Cushion Works</option>
+                                    <option value="Vehicle Repair" > Vehicle Repairs</option>
+                                    <option value="Cleaner" > Cleaners</option>
+                                    <option value="CCTV Repair" > CCTV</option>
+                                    <option value="Ceiling Repair" > Ceiling</option>
+                                    <option value="Well Cleaner" > Well</option>
+                                    <option value="Chair Weaver" > Chair Weavers</option>
+                                    <option value="Rent Tools" > Rent Tools</option>
+                                    <option value="Curtains Repair" > Curtains</option>
+                                    <option value="Solar Panel Fixing" > Solar Panel fixing</option>
+                                    <option value="Demolishing" > Demolishing</option>
+                                    <option value="Pest Control" > Pest Control</option>
+                                    <option value="Designer" > Designer</option>
+                                    <option value="Mover" > Movers</option>
+                                    <option value="Aluminium Repair" > Aluminium Repair</option>
+                                    <option value="Catering Service" > Catering Service</option>
                                 </select>
+                                </br> 
+                                <span class="invalidFeedback">
+                                    <?php echo $data['categoryError']; ?>
+                                </span>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-25">
-                            <label for="title" style="color: #0526BA; font-size:15px;">Title</label>
+                                <label for="title" style="color: #0526BA; font-size:15px;">Title</label>
                             </div>
                             <div class="col-75">
-                            <input type="text" id="title" name="title" placeholder="Enter title" required>
+                                <input type="text" id="title" name="title" placeholder="Enter title" required>
+                                </br> 
+                                <span class="invalidFeedback">
+                                    <?php echo $data['titleError']; ?>
+                                </span>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-25">
-                            <label for="job" style="color: #0526BA; font-size:15px;">Job Description</label>
+                                <label for="description" style="color: #0526BA; font-size:15px;">Job Description</label>
                             </div>
                             <div class="col-75">
-                            <input type="text" id="job" name="job" placeholder="Enter job description" required>
+                                <input type="text" id="description" name="description" placeholder="Enter job description" required>
+                                </br> 
+                                <span class="invalidFeedback">
+                                    <?php echo $data['descriptionError']; ?>
+                                </span>
                             </div>
                         </div>
                         
                         <div class="row">
                             <div class="col-25">
-                            <label for="address" style="color: #0526BA; font-size:15px;">Address</label>
+                                <label for="address" style="color: #0526BA; font-size:15px;">Address</label>
                             </div>
                             <div class="col-75">
-                            <input type="text" id="address" name="address" placeholder="Enter address" required>
+                                <input type="text" id="address" name="address" placeholder="Enter address" required>
+                                </br> 
+                                <span class="invalidFeedback">
+                                    <?php echo $data['addressError']; ?>
+                                </span>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-25">
-                            <label for="contact" style="color: #0526BA; font-size:15px;">Contact Number</label>
+                                <label for="contact" style="color: #0526BA; font-size:15px;">Contact Number</label>
                             </div>
                             <div class="col-75">
-                            <input type="text" id="contact" name="contact" placeholder="Enter contact number" required>
+                                <input type="text" id="contact" name="contact" placeholder="Enter contact number" required>
+                                </br> 
+                                <span class="invalidFeedback">
+                                    <?php echo $data['contactError']; ?>
+                                </span>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-25">
-                            <label for="sdate" style="color: #0526BA; font-size:15px;">Start Date</label>
+                                <label for="start_date" style="color: #0526BA; font-size:15px;">Start Date</label>
                             </div>
                             <div class="col-75">
-                            <input type="date" id="sdate" name="sdate" placeholder="Enter star date" required>
+                                <input type="date" id="start_date" name="start_date" placeholder="Enter start date" required>
+                            </br> 
+                                <span class="invalidFeedback">
+                                    <?php echo $data['start_dateError']; ?>
+                                </span>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-25">
-                            <label for="edate" style="color: #0526BA; font-size:15px;">End Date</label>
+                                <label for="end_date" style="color: #0526BA; font-size:15px;">End Date</label>
                             </div>
                             <div class="col-75">
-                            <input type="date" id="edate" name="edate" placeholder="Enter end date" required>
+                                <input type="date" id="end_date" name="end_date" placeholder="Enter end date" required>
+                            </br> 
+                                <span class="invalidFeedback">
+                                    <?php echo $data['end_dateError']; ?>
+                                </span>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-25">
-                            <label for="amount" style="color: #0526BA; font-size:15px;">Budget</label>
+                                <label for="budget" style="color: #0526BA; font-size:15px;">Budget</label>
                             </div>
                             <div class="col-75">
-                            <input type="text" id="amount" name="amount" placeholder="Enter amount" required>
+                                <input type="text" id="budget" name="budget" placeholder="Enter budget" required>
+                            </br> 
+                                <span class="invalidFeedback">
+                                    <?php echo $data['budgetError']; ?>
+                                </span>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-25">
-                            <label for="work" style="color: #0526BA; font-size:15px;">Work to be done</label>
+                                <label for="work" style="color: #0526BA; font-size:15px;">Work to be done</label>
                             </div>
                             <div class="col-75">
-                            <input type="file" id="work" name="work"  required>
+                                <input type="file" id="work" name="work"  required>
                             </div>
+                            </br> 
+                                <span class="invalidFeedback">
+                                    <?php echo $data['workError']; ?>
+                                </span>
                         </div>
                         </br> </br>
                         <div class="row">

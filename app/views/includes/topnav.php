@@ -39,23 +39,23 @@
 
             <!--------   if customer logged in  --------->
                 <?php if(isset($_SESSION['cus_id'])) : ?>
-                <a href="<?php echo URLROOT;?> /logins/logout" class="anchor-tag"  style="border: 1px solid #ffffff; padding: 6px 24px; border-radius:5px;"> Logout </a>
+                <a href="<?php echo URLROOT;?> /logins/logout" class="anchor-tag"  style="border: 1px solid #ffffff; padding: 8px 24px; border-radius:5px;"> Logout </a>
                 
 
 
             <!-----  if worker logged in --------------->
                 <?php elseif(isset($_SESSION['worker_id'])) : ?>
-                <a href="<?php echo URLROOT;?> /logins/Workerlogout" class="anchor-tag"  style="border: 1px solid #ffffff; padding: 6px 24px; border-radius:5px;"> Logout </a>
+                <a href="<?php echo URLROOT;?> /logins/Workerlogout" class="anchor-tag"  style="border: 1px solid #ffffff; padding: 8px 24px; border-radius:5px;"> Logout </a>
 
 
 
             <!----- if company logged in ---------------->
                 <?php elseif(isset($_SESSION['reg_no'])) : ?>
-                <a href="<?php echo URLROOT;?> /logins/Companylogout" class="anchor-tag"  style="border: 1px solid #ffffff; padding: 6px 24px; border-radius:5px;"> Logout </a>
+                <a href="<?php echo URLROOT;?> /logins/Companylogout" class="anchor-tag"  style="border: 1px solid #ffffff; padding: 8px 24px; border-radius:5px;"> Logout </a>
 
 
                 <?php else : ?>
-                    <a href="<?php echo URLROOT ;?> /logins/loginas" class="anchor-tag"  style="border: 1px solid #ffffff; padding: 6px 24px; border-radius:5px;"> Login </a>
+                    <a href="<?php echo URLROOT ;?> /logins/loginas" class="anchor-tag"  style="border: 1px solid #ffffff; padding: 8px 24px; border-radius:5px;"> Login </a>
                 <?php endif; ?>
             </li>
         
