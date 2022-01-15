@@ -32,7 +32,7 @@
             <label for="email">Email</label>
             </div>
             <div class="col-75">
-            <input type="email" id="email" name="nic" placeholder=" your email" required>
+            <input type="email" id="email" name="email" placeholder=" your email" required>
             </div>
         </div>
 
