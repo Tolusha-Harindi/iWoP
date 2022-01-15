@@ -13,7 +13,7 @@
     
 
 .vertical-line{
-  border-left: 2px solid grey;
+  
   height: 100%;
   margin-left:550px;
   margin-top:-1500px;
@@ -263,15 +263,16 @@ h3{
     background-color:rgba(236, 239, 255, 1);
     border:1px solid white;
     height:30px;
-    width:100px;
+    width:200px;
     margin-top:-100px;
-    margin-left:350px;
+    margin-left:300px;
    
 }
 .time{
     color:rgba(5, 38, 186, 1); 
     
     margin-top:5px;
+
     text-align: center;
 }
 
@@ -288,7 +289,12 @@ h3{
     width:100px;
 }
 /* report-pop-up */
-
+.reviews{
+    height: 400px;
+    overflow-x: clip;
+    /* width: 35em; */
+    overflow-y: scroll;
+}
 </style>
  <div  class = "left" style="margin-top: 100px; border:1px ;">
 
@@ -394,40 +400,49 @@ h3{
              </div>
                <div class="heading-review">
                    <b>User Reviews</b>
+                   <br>
               </div>
               
               </div>
            
        <hr>
-
-          <!-- example of user review -->
-
-          <div class="user-reviews" style="border:1px ;">
-          
+    <div class="reviews">
+        <?php foreach($data['review'] as $review): ?>
+            <!-- example of user review -->
+            <div class="user-reviews" style="border:1px ;">
                 <div class="user-img">
-                 <img src="<?php echo URLROOT;?> /public/img/review.png" alt="">
-              </div>
+                    <img src="<?php echo URLROOT;?> /public/img/review.png" alt=""> 
+                </div>
 
-                 <div class="time-wrapper">
-                      <div class="time">
-                          2M ago
-                      </div>
-                 </div>
+                <div class="time-wrapper">
+                    <div class="time">
+                        <?php echo "".$review->daysAgo." d ".$review->hoursAgo."h ".$review->minsAgo."m ago";?>
+                    </div>
+                </div>
 
-              <div class="name-of-user">
-                     Posted by Namal Perera 
-                   <br>
-                   <br>
-                           Good service
-                   <br>
-                   <br>
-                        <div class="review-star">
-                              <img src="<?php echo URLROOT;?> /public/img/star.png" alt="star" class="star">
-                       </div>
+                <div class="name-of-user">
+                    Posted by <?php echo $review->name; ?>
+                <br><br>
+                    <?php echo $review->reviewContent; ?>
+                <br><br>      
+                </div>      
+                <div class="review-star">
+                    <img src="<?php echo URLROOT;?> /public/img/star.png" alt="star" class="star">
+                </div>
 
-              </div>
-        </div> 
-  </div>
+                <a
+                    href="<?php echo URLROOT . "/reviews/fillReviewForm/" . $review->reviewID ?>">
+                    Update
+                </a>
+
+                <form action="<?php echo URLROOT . "/reviews/delete/" . $review->reviewID ?>" method="POST">
+                    <input type="submit" name="delete" value="Delete" >
+                </form>
+
+            </div>    
+        <?php endforeach; ?>
+    </div>
+</div>
   
 </div>
 
@@ -475,21 +490,21 @@ h3{
      </div>
 
 
-  <!-- Write a review -->
-
-
+  <!-- Write a review ------------------------------------------------------------------------------->
   <div class="right" style="border: 1px solid white ; margin-top:0px;">
          <h3>Write a review</h3>
+        
              <div class="right-lower"style="border: 1px solid white"; >
                 <div class="container">
-                     <form action="/action_page.php">
+                     <form action="<?php echo URLROOT; ?>/reviews/createOrUpdate" method="POST">
                          <div class="row">
                             <div class="col-25">
                                  <label for="fname"> Name</label>
                              </div>
 
                             <div class="col-75">
-                                 <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                                 <input type="text" id="fname" name="firstname"  
+                                  value=" <?php echo $data['fillingData']->name?>">
                             </div>
                          </div>
                             <br>
@@ -500,7 +515,8 @@ h3{
                                 </div>
 
                                 <div class="col-75">
-                                     <input type="text" id="email" name="email" placeholder="Your email..">
+                                     <input type="text" id="email" name="email" 
+                                     value="<?php echo $data['fillingData']->email?>">
                                </div>
                              </div>
                                       <br>
@@ -510,13 +526,13 @@ h3{
                                          <label for="subject">Review</label>
                                  </div>
                                  <div class="col-75">
-                                        <textarea id="subject" name="subject" placeholder="Write review.." style="height:100px"></textarea>
+                                        <textarea id="subject" name="subject"  style="height:100px">
+                                         <?php echo rtrim($data['fillingData']->reviewContent)?></textarea>
                                  </div>
                             </div>
                                     <br>
                                     <br>
-               
-
+                            <input type="hidden" name="review_Id" value="<?php echo $data['fillingData']->reviewID?>">
                             <div class="row">
                                  <input type="submit" value="submit" class="green-button">
                              </div>
@@ -570,13 +586,13 @@ h3{
     </div>
 </div>
 
-    <!------------------Java Script------------------------------->
+ <!------------------Java Script-----------------------------
     <script type="text/javascript" src="<?php echo URLROOT;?> /public/js/pink-button-popup.js"> 
     </script>
 
-<!---------------------------Arrow button----------------------------------------->
+
 <div class="arrow">
 	<a href="#"><img src="<?php echo URLROOT;?> /public/img/arrow.png" alt="up_arrow"></a>
 </div> 
-
 <?php include_once APPROOT . '/views/includes/footer.php'; ?>
+-->

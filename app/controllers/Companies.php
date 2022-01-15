@@ -1,111 +1,98 @@
 <?php
-    class Companies extends Controller {
-        public function __construct() {
-            //$this->pageModel = $this->model('Page');
-        }
+class Companies extends Controller {
+    public function __construct() {
+        $this->reviewModel = $this->model('Review');
+        // $this->companyAddModel = $this->model('CompanyAdd');
+    }
 
-        public function company_ads() {
+    //load the main page related to company
+    public function index(){
+       
+    }
 
-            //$users = $this->pageModel-> getUsers();
-            $data = [
-                'title' => 'company_ads page',
-                //'users' => $users
+    public function company_profilesforworkernew() {
+        $reviews = $this->reviewModel->getReviews();
+        echo 'Type of the reviews - '.getType($reviews);
+        $fillingData = (Object)[
+            'reviewID'=>'',
+            'name'=>'',
+            'email'=>'',
+            'reviewContent'=>''
+        ];
 
-            ];
+        $newReviews = array();
+        //adding timeAgo and dateAgo
+        foreach($reviews as $row){
+            date_default_timezone_set('Asia/Kolkata');
+            $c_date =  new DateTime("now"); //get current datetime
+            $posted_date = new DateTime($row->date);
+            $stringDate = $c_date->format('Y-m-d H:i:s');
+            
+            $interval = $c_date->diff($posted_date);
+            $minsAgo = $interval->i;
+            $hoursAgo = $interval->h;
+            $daysAgo = $interval->days;
 
-            $this->view('companies/company_ads', $data);
-          
-        }
+            $foo = (array)$row;
+            $foo['daysAgo'] = $daysAgo;
+            $foo['minsAgo'] = $minsAgo;
+            $foo['hoursAgo'] = $hoursAgo;
+            $row = (object)$foo;
 
-        public function company_category() {
+            array_push($newReviews , $row);
+        
+        };
 
-            //$users = $this->pageModel-> getUsers();
-            $data = [
-                'title' => 'company_category page',
-                //'users' => $users
+     
+        $data = [
+            'review'=>$newReviews,
+            'fillingData'=>$fillingData
+        ];
 
-            ];
+        $this->view('companies/company_profilesforworkernew', $data);      
+    }
 
-            $this->view('companies/company_category', $data);
-          
-        }
+    
+     public function company_ads() {
 
-        public function company_dashboard() {
+    
+       
+        $this->view('companies/company_ads', $data); 
+     }
 
-            //$users = $this->pageModel-> getUsers();
-            $data = [
-                'title' => 'company_dashboard page',
-                //'users' => $users
 
-            ];
+    //-----------------------------------------------------------------------------------------
+    public function company_category() {
+        $this->view('companies/company_category', $data);      
+    }
 
-            $this->view('companies/company_dashboard', $data);
-          
-        }
+    public function company_dashboard() {
 
-        public function company_inviteforjob() {
-
-            //$users = $this->pageModel-> getUsers();
-            $data = [
-                'title' => 'company_inviteforjob page',
-                //'users' => $users
-
-            ];
-
-            $this->view('companies/company_inviteforjob', $data);
-          
-        }
-
-        public function company_profile() {
-
-            //$users = $this->pageModel-> getUsers();
-            $data = [
-                'title' => 'company_profile page',
-                //'users' => $users
-
-            ];
-
-            $this->view('companies/company_profile', $data);
-          
-        }
-
-        public function company_profileforworkers() {
-
-            //$users = $this->pageModel-> getUsers();
-            $data = [
-                'title' => 'company_profileforworkers page',
-                //'users' => $users
-
-            ];
-
-            $this->view('companies/company_profileforworkers', $data);
-          
-        }
-
-        public function company_profilesforworkernew() {
-
-            //$users = $this->pageModel-> getUsers();
-            $data = [
-                'title' => 'company_profilesforworkernew page',
-                //'users' => $users
-
-            ];
-
-            $this->view('companies/company_profilesforworkernew', $data);
-          
-        }
-
-        public function companyverify() {
-
-            //$users = $this->pageModel-> getUsers();
-            $data = [
-                'title' => 'companyverify page',
-                //'users' => $users
-
-            ];
-
-            $this->view('companies/companyverify', $data);
-          
-        }
+        $this->view('companies/company_dashboard', $data);
 
     }
+
+    public function company_inviteforjob() {
+        $this->view('companies/company_inviteforjob', $data);          
+    }
+
+    public function company_profile() {
+        $this->view('companies/company_profile', $data);
+          
+    }
+
+    public function company_profileforworkers() {
+
+        $this->view('companies/company_profileforworkers', $data);
+          
+    }
+
+ 
+
+    public function companyverify() {
+
+        $this->view('companies/companyverify', $data);
+          
+    }
+
+}
