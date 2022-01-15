@@ -75,9 +75,30 @@ class Reviews extends Controller {
             'email'=>$review->email,
             'reviewContent'=>$review->reviewContent
         ];
+        $newReviews = array();
+        //adding timeAgo and dateAgo
+        foreach($reviews as $row){
+            date_default_timezone_set('Asia/Kolkata');
+            $c_date =  new DateTime("now"); //get current datetime
+            $posted_date = new DateTime($row->date);
+            $stringDate = $c_date->format('Y-m-d H:i:s');
+            
+            $interval = $c_date->diff($posted_date);
+            $minsAgo = $interval->i;
+            $hoursAgo = $interval->h;
+            $daysAgo = $interval->days;
 
+            $foo = (array)$row;
+            $foo['daysAgo'] = $daysAgo;
+            $foo['minsAgo'] = $minsAgo;
+            $foo['hoursAgo'] = $hoursAgo;
+            $row = (object)$foo;
+
+            array_push($newReviews , $row);
+        
+        };
         $data = [
-            'review'=>$reviews,
+            'review'=>$newReviews,
             'fillingData'=>$fillingData
         ];
         $this->view('companies/company_profilesforworkernew', $data);  
