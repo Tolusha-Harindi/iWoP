@@ -57,9 +57,9 @@
         }
 
         public function customer_responses() {
-            if(!isLoggedIn()){
-                header("Location: " . URLROOT . "/customers");
-            }
+            // if(!isLoggedIn()){
+            //     header("Location: " . URLROOT . "/customers");
+            // }
 
             $newPosts = $this->customerModel-> postNewAds();  /*postNewads() function created inside the customer file*/
 

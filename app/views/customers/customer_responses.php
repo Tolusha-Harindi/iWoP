@@ -9,9 +9,10 @@
 <link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/home/popup.css"/>
 <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
 
-<?php if(isLoggedIn()): ?>
+<!-- <?php if(isLoggedIn()): ?>
 <a href="<?php echo URLROOT; ?>/customers/customer_responses#post-new-ad" class="top-button1" style="margin-top: -40em;margin-left:78em; width:10em;"> Post a New ad </a>
-<?php endif; ?>
+<?php endif; ?> -->
+<a href="<?php echo URLROOT; ?>/customers/customer_responses#post-new-ad" class="top-button1" style="margin-top: -40em;margin-left:78em; width:10em;"> Post a New ad </a>
 <a href="#responses" class="top-button2" style="margin-top: -40em; margin-left:62em;"> Responses for requests </a>
 <a href="#posted-ads" class="top-button3" style="margin-top: -40em; margin-left:51em"> Posted Ads</a>
 
@@ -103,7 +104,7 @@
                                         <label for="name"> <b style="color: gray; margin-bottom:0.5em;"> Posted on :</b> </label>
                                     </div>
                                     <div class="ad-col-65">
-                                        <p class="detail" style="color: gray;margin-bottom:0.5em;"><?php echo date('F j h:m', strtotime($newPosts->post_date)) ?> </p>
+                                        <p class="detail" style="color: gray;margin-bottom:0.5em;"><?php echo date('j F Y h:m', strtotime($newPosts->post_date)) ?> </p>
                                     </div>
                             </div>
 
