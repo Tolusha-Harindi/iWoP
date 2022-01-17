@@ -74,13 +74,49 @@
 
 <!------------------------------------------------------------popoup window-------------------------------------------------->
 
-    <div id="myModal" class="modal">
+    <div id="yellowModal" class="modal">
         <!-- Modal content -->
         <div class="modal-content" style="margin-top: 10%;">
-                <form action="">
+                <form action="https://sandbox.payhere.lk/pay/checkout" name = "reg-w" method="post">
                     <span class="close">&times;</span>
                     <p class="heading" style="margin-top: 1em; margin-left:30%;">Pay Your Service Provider <img src="<?php echo URLROOT;?> /public/img/atm.png" class="popup-image"></p>
-                        
+                      
+                        <input type="hidden" name="merchant_id" value="1218941">    <!-- Replace your Merchant ID -->
+                        <input type="hidden" name="return_url" value="http://localhost/iWoP-test/customers/customer_recent_workers">
+                        <input type="hidden" name="cancel_url" value="http://sample.com/cancel">
+                        <input type="hidden" name="notify_url" value="http://sample.com/notify">  
+                        <input type="hidden" name="order_id" value="ItemNo12345">
+                        <input type="hidden" name="items" value="iWoP Service"><br>
+                        <input type="hidden" name="currency" value="LKR">
+                        <input type="hidden" name="email" value="samanp@gmail.com">
+                        <input type="hidden" name="address" value="No.1, Galle Road">
+                        <input type="hidden" name="city" value="Colombo">       
+                        <input type="hidden" name="country" value="Sri Lanka"><br><br> 
+
+                        <div class="row">
+                        <div class="col-25">
+                            <label for="first_name" style="color: #0526BA;">First Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="first_name" name="first_name" placeholder="Enter your First Name" required>
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="last_name" style="color: #0526BA;">Last Name</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="last_name" name="last_name" placeholder="Enter your Last Name" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="phone" style="color: #0526BA;">Contact Number</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="phone" name="phone" placeholder="Enter your Contact Number" required>
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="col-25">
                             <label for="amount" style="color: #0526BA;">Amount</label>
