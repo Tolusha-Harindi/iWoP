@@ -12,7 +12,7 @@
 <style>
     
 
-.vertical-line{
+ .vertical-line{
   
   height: 100%;
   margin-left:550px;
@@ -294,7 +294,7 @@ h3{
     overflow-x: clip;
     /* width: 35em; */
     overflow-y: scroll;
-}
+} 
 </style>
  <div  class = "left" style="margin-top: 100px; border:1px ;">
 
@@ -406,6 +406,13 @@ h3{
               </div>
            
        <hr>
+
+       <!-- Report button -->
+  <div class="reportbutton">
+      <button class="pink-button" style="margin-left:1200px; margin-top:-900px; font-size:20px; width:100px; ">
+          Report 
+       </button>
+  </div>
     <div class="reviews">
         <?php foreach($data['review'] as $review): ?>
             <!-- example of user review -->
@@ -586,7 +593,7 @@ h3{
     </div>
 </div>
 
- <!------------------Java Script-----------------------------
+ 
     <script type="text/javascript" src="<?php echo URLROOT;?> /public/js/pink-button-popup.js"> 
     </script>
 
@@ -594,5 +601,6 @@ h3{
 <div class="arrow">
 	<a href="#"><img src="<?php echo URLROOT;?> /public/img/arrow.png" alt="up_arrow"></a>
 </div> 
-<?php include_once APPROOT . '/views/includes/footer.php'; ?>
--->
+
+<!-- <?php include_once APPROOT . '/views/includes/footer.php'; ?> -->
+
