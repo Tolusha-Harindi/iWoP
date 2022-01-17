@@ -93,30 +93,30 @@
                         <input type="hidden" name="city" value="Colombo">       
                         <input type="hidden" name="country" value="Sri Lanka"><br><br> 
 
-                        <div class="row">
+                        <!-- <div class="row">
                         <div class="col-25">
                             <label for="first_name" style="color: #0526BA;">First Name</label>
                         </div>
-                        <div class="col-75">
-                            <input type="text" id="first_name" name="first_name" placeholder="Enter your First Name" required>
-                        </div>
+                        <div class="col-75"> -->
+                            <input type="hidden" id="first_name" name="first_name" placeholder="Enter your First Name" required>
+                        <!-- </div>
                         </div>
                         <div class="row">
                             <div class="col-25">
                                 <label for="last_name" style="color: #0526BA;">Last Name</label>
                             </div>
-                            <div class="col-75">
-                                <input type="text" id="last_name" name="last_name" placeholder="Enter your Last Name" required>
-                            </div>
+                            <div class="col-75"> -->
+                                <input type="hidden" id="last_name" name="last_name" placeholder="Enter your Last Name" required>
+                            <!-- </div>
                         </div>
                         <div class="row">
                             <div class="col-25">
                                 <label for="phone" style="color: #0526BA;">Contact Number</label>
                             </div>
-                            <div class="col-75">
-                                <input type="text" id="phone" name="phone" placeholder="Enter your Contact Number" required>
-                            </div>
-                        </div>
+                            <div class="col-75"> -->
+                                <input type="hidden" id="phone" name="phone" placeholder="Enter your Contact Number" required>
+                            <!-- </div>
+                        </div> -->
                         <div class="row">
                             <div class="col-25">
                             <label for="amount" style="color: #0526BA;">Amount</label>
@@ -135,6 +135,9 @@
     </div>
 
             <script type="text/javascript" src="<?php echo URLROOT;?> /public/js/yellow-out-button-popup.js"></script>
+
+
+
 
 
 <!----------------------------------------Worker complaints----------------------------------------------->
