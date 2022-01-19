@@ -171,9 +171,16 @@
                     </div>
                 </div>
                 </br> </br>
-                <div class="row">
-                    <input type="submit" value="Submit" class="blue-button" style="margin-left:45%;">
-                </div>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="submit" value="Update" class="blue-button" style="margin-left:21em">
+                        </td>
+                        <td>
+                            <a class="pink-button" style="text-decoration:none; font-size:13px; margin-left:2em; margin-top:2.5em; padding: 9px 24px; display:inline;" href="<?php echo URLROOT; ?> /companies/company_ads/"> Cancel </a>
+                        </td>
+                    </tr>
+                </table>
                 </br>
         </form>
 </div>
