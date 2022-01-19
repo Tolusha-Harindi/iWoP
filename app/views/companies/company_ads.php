@@ -118,7 +118,7 @@
                                     <td>
                                         <?php if(isset($_SESSION['reg_no']) && $_SESSION['reg_no'] == $post->reg_no): ?>
                                            
-                                            <a class="blue-out-button" style="text-decoration:none; font-size:13px; margin-left:55%; margin-top:2.5em; padding: 8px 24px; display:inline;" href="<?php echo URLROOT . "/companies/update_ads/" . $post->ads_id ?>"> Edit </a>
+                                            <a class="blue-out-button" style="text-decoration:none; font-size:13px; margin-left:55%; margin-top:2.5em; padding: 8px 24px; display:inline;" href="<?php echo URLROOT . "/companies/update/" . $post->ads_id ?>"> Edit </a>
                                        
                                     </td>
                                     <td>
