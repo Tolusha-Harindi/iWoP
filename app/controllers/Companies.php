@@ -165,7 +165,9 @@ class Companies extends Controller {
 
 
 
-     ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
     public function update($ads_id) {
 
         $post = $this->companyModel->findPostById($ads_id);
@@ -318,6 +320,57 @@ class Companies extends Controller {
  $this->view('companies/update', $data); 
 
 }
+
+//// delete ads/////////////////////////////////////////////////////////////////////////////////
+public function delete_ads($ads_id){
+    $post = $this->companyModel->findPostById($ads_id);
+
+        if(!isLoggedIn()){
+            header("Location: " . URLROOT . "/companies");
+        }elseif($post->reg_no != $_SESSION['reg_no']){
+            header("Location: " . URLROOT . "/companies");
+        }
+        //var_dump($post);
+
+        $data = [
+            'post' => $post,
+            'title' => '',
+            'category' => '',
+            'description' => '',
+            'address'=> '',
+            'contact' => '',
+            'start_date' => '',
+            'end_date' => '',
+            'budget' => '',
+            'work' => '',
+            'titleError' => '',
+            'categoryError' => '',
+            'descriptionError' => '',
+            'addressError' => '',
+            'contactError' => '',
+            'start_dateError' => '',
+            'end_dateError' => '',
+            'budgetError' =>'',
+            'workError' => '',
+            
+        ];
+
+        if($_SERVER['REQUEST_METHOD'] == 'POST'){
+            $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+
+            if($this->companyModel->deletePost($ads_id)){
+                header("Location: " . URLROOT . "/companies/company_ads");
+                
+            }else {
+                die('Something went wrong');
+            }
+
+        }
+}
+
+
+
+
 
 
     //-----------------------------------------------------------------------------------------

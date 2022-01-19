@@ -73,4 +73,18 @@ class Customer{
         }
 
      }
+
+
+///  Delete ads /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    public function deletePost($ads_id){
+        $this->db->query('DELETE FROM customer_ads WHERE ads_id = :ads_id');
+
+        $this->db->bind(':ads_id', $ads_id);
+
+        if ($this->db->execute()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
