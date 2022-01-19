@@ -53,6 +53,10 @@ class Companies extends Controller {
     }
 
     
+
+
+
+
      public function company_ads() {
             if(!isLoggedIn()){
                 header("Location: " . URLROOT . "/companies");
@@ -158,6 +162,162 @@ class Companies extends Controller {
           
      $this->view('companies/company_ads', $data); 
      }
+
+
+
+     ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    public function update($ads_id) {
+
+        $post = $this->companyModel->findPostById($ads_id);
+
+        if(!isLoggedIn()){
+            header("Location: " . URLROOT . "/companies");
+        }elseif($post->reg_no != $_SESSION['reg_no']){
+            header("Location: " . URLROOT . "/companies");
+        }
+        //var_dump($post);
+
+        $data = [
+            'post' => $post,
+            'title' => '',
+            'category' => '',
+            'description' => '',
+            'address'=> '',
+            'contact' => '',
+            'start_date' => '',
+            'end_date' => '',
+            'budget' => '',
+            'work' => '',
+            'titleError' => '',
+            'categoryError' => '',
+            'descriptionError' => '',
+            'addressError' => '',
+            'contactError' => '',
+            'start_dateError' => '',
+            'end_dateError' => '',
+            'budgetError' =>'',
+            'workError' => '',
+            
+        ];
+        
+
+    if($_SERVER['REQUEST_METHOD'] == 'POST'){
+        $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+
+        $data = [
+            'ads_id' => $ads_id,
+            'post' => $post,
+            'reg_no' => $_SESSION['reg_no'],
+            'category' => trim($_POST['category']),
+            'title' => trim($_POST['title']),
+            'description' => trim($_POST['description']),
+            'address' => trim($_POST['address']),
+            'contact' => trim($_POST['contact']),
+            'start_date' => trim($_POST['start_date']),
+            'end_date' => trim($_POST['end_date']),
+            'budget' => trim($_POST['budget']),
+            'work' => trim($_POST['work']),
+            'categoryError' => '',
+            'titleError' => '',
+            'descriptionError' => '',
+            'addressError' => '',
+            'contactError' => '',
+            'start_dateError' => '',
+            'end_dateError' => '',
+            'budgetError' => '',
+            'workError' => '',
+
+        ];
+
+        if(empty($data['category'])){
+            $data['categoryError'] = "The category of a Post cannot be empty";
+        }
+
+        if(empty($data['title'])){
+            $data['titleError'] = "The Title of a Post cannot be empty";
+        }
+
+        if(empty($data['description'])){
+            $data['descriptionError'] = "The description of a Post cannot be empty";
+        }
+
+        if(empty($data['address'])){
+            $data['addressError'] = "The address of a Post cannot be empty";
+        }
+
+        if(empty($data['contact'])){
+            $data['contactError'] = "The contact of a Post cannot be empty";
+        }
+
+        if(empty($data['start_date'])){
+            $data['start_dateError'] = "The start date of a Post cannot be empty";
+        }
+
+        if(empty($data['end_date'])){
+            $data['end_dateError'] = "The end date of a Post cannot be empty";
+        }
+
+        if(empty($data['budget'])){
+            $data['budgetError'] = "The budget of a Post cannot be empty";
+        }
+
+        if(empty($data['work'])){
+            $data['workError'] = "The work of a Post cannot be empty";
+        }
+
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////
+        if($data['title'] == $this->companyModel->findPostById($ads_id)->title){
+            $data['titleError'] == 'At least change the title';
+        }
+
+        if($data['category'] == $this->companyModel->findPostById($ads_id)->category){
+            $data['categoryError'] == 'At least change the category';
+        }
+
+        if($data['description'] == $this->companyModel->findPostById($ads_id)->description){
+            $data['descriptionError'] == 'At least change the description';
+        }
+
+        if($data['address'] == $this->companyModel->findPostById($ads_id)->address){
+            $data['addressError'] == 'At least change the address';
+        }
+
+        if($data['contact'] == $this->companyModel->findPostById($ads_id)->contact){
+            $data['contactError'] == 'At least change the contact number';
+        }
+
+        if($data['start_date'] == $this->companyModel->findPostById($ads_id)->start_date){
+            $data['start_dateError'] == 'At least change the start_date';
+        }
+
+        if($data['end_date'] == $this->companyModel->findPostById($ads_id)->end_date){
+            $data['end_dateError'] == 'At least change the end_date';
+        }
+
+        if($data['budget'] == $this->companyModel->findPostById($ads_id)->budget){
+            $data['budgetError'] == 'At least change the budget';
+        }
+
+        if($data['work'] == $this->companyModel->findPostById($ads_id)->work){
+            $data['workError'] == 'At least change the work to be done';
+        }
+
+
+        /*check error messages are empty*/
+        if(empty($data['categoryError']) && empty($data['titleError']) && empty($data['descriptionError']) && empty($data['addressError']) && empty($data['contactError']) && empty($data['start_dateError']) && empty($data['end_dateError']) && empty($data['budgetError']) && empty($data['workError'])){
+            if($this->companyModel->updatePost($data)){
+                header("Location: ". URLROOT . "/companies/company_ads"); //redirect to
+            }else{
+                echo "<script>alert('Something went wrong, Please try again!'); </script>";
+            }
+        }else{
+            $this->view('companies/update_ads', $data);
+        }
+    }         
+      
+ $this->view('companies/update_ads', $data); 
+
+}
 
 
     //-----------------------------------------------------------------------------------------

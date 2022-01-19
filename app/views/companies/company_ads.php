@@ -108,10 +108,27 @@
                                     </div>
                             </div>
 
-                            <div class="ad-row" style="margin-bottom: 1.5em; margin-top:1.5em">
-                                <input type="submit" value="Edit" class="blue-out-button" style="padding: 8px 24px; margin-left:29%; display:inline;">
-                                <input type="submit" value="Delete" class="pink-out-button" style="padding: 8px 15px; float:right; margin-right:29%; display:inline;">
-                            </div>
+                            <table>
+                                <tr> 
+                                    <td>
+                                        </br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <?php if(isset($_SESSION['reg_no']) && $_SESSION['reg_no'] == $post->reg_no): ?>
+                                           
+                                            <a class="blue-out-button" style="text-decoration:none; font-size:13px; margin-left:55%; margin-top:2.5em; padding: 8px 24px; display:inline;" href="<?php echo URLROOT . "/companies/update_ads/" . $post->ads_id ?>"> Edit </a>
+                                       
+                                    </td>
+                                    <td>
+                                        <form action="<?php echo URLROOT . "/companies/delete_ads/" . $post->ads_id ?>" method="POST">
+                                            <input type="submit" name="delete" value="Delete" class="pink-out-button" style="text-decoration:none; font-size:13px; margin-left:15%; margin-top:0.2em; padding: 8px 20px; display:inline;">
+                                        </form>
+                                        <?php endif; ?> 
+                                    </td>
+                                </tr>
+                            </table>
                             </br> </br>
                 
                 </div>
