@@ -3,6 +3,7 @@
 
 <?php include_once APPROOT . '/views/includes/admin_sidenav.php'; ?>
 
+<link rel='stylesheet' href="<?php echo URLROOT;?>/public/css/home/login.css"/>
 <link rel='stylesheet' href="<?php echo URLROOT;?>/public/css/home/table.css"/>
 <link rel='stylesheet' href="<?php echo URLROOT;?>/public/css/home/button.css"/>
 <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
@@ -27,64 +28,56 @@
                 </thead>
                 <tbody>
                 
-                    <tr>
-                        <td>Painter</td>
-                        <td><img src="<?php echo URLROOT;?>/public/img/category/paintbrush.png" class="table-image"></td>
-                        <td>04/11/2021</td>
-                        <td> <input type="reset" class="blue-button" value="Edit"/></td>
-                        <td> <input type="reset" class="pink-button" value="Remove"/></td>
-                    </tr>
-
-                    <tr>
-                        <td>CCTV repair</td>
-                        <td><img src="<?php echo URLROOT;?>/public/img/category/cctv.png" class="table-image"></td>
-                        <td>04/11/2021</td>
-                        <td> <input type="reset" class="blue-button" value="Edit"/></td>
-                        <td> <input type="reset" class="pink-button" value="Remove"/></td>
-                    </tr>
-
-                    <tr>
-                        <td>Cleaner</td>
-                        <td><img src="<?php echo URLROOT;?>/public/img/category/cleaning.png" class="table-image"></td>
-                        <td>04/11/2021</td>
-                        <td> <input type="reset" class="blue-button" value="Edit"/></td>
-                        <td> <input type="reset" class="pink-button" value="Remove"/></td>
-                    </tr>
-
-                     <tr>
-                        <td>Plumber</td>
-                        <td><img src="<?php echo URLROOT;?>/public/img/category/plumber.png" class="table-image"></td>
-                        <td>04/11/2021</td>
-                        <td> <input type="reset" class="blue-button" value="Edit"/></td>
-                        <td> <input type="reset" class="pink-button" value="Remove"/></td>
-                    </tr>
-
+                    <?php foreach($data['add'] as $add): ?>
+                        <tr>
+                            <td> <?php echo $add->category; ?> </td>
+                            <td>  <img src="<?php echo URLROOT ?> /public/img/category/<?php echo $add->logo; ?>" class="table-image"> </td>
+                            <td> <?php echo date('j F Y', strtotime($add->add_date)) ?> </td>
+                            <td> <input type="reset" class="blue-button" value="Edit"/></td>
+                            <td> <input type="reset" class="pink-button" value="Remove"/></td>
+                        </tr>
+                    <?php endforeach; ?>
+                    
                 </tbody>
             </table> 
         </div> 
     </div>
 
 
+
+
+
+
     <!-----------------------------------Add new category--------------------------------------->
     <div class="heading"> <p> Add New Category </p> </div>
 
     <div class="form-space">
-        <form action="/action_page.php">
+        <form action= "<?php echo URLROOT; ?>/admins/admin_category" method="POST">
             <div class="row">
                 <div class="col-25">
-                <label for="category">Category</label>
+                    <label for="category">Category</label>
                 </div>
                 <div class="col-75">
-                <input type="text" id="category" name="category" placeholder="Enter new Category" required>
+                    <input type="text" id="category" name="category" placeholder="Enter new Category">
+
+                    </br> </br>
+                    <span class="invalidFeedback">
+                        <?php echo $data['categoryError']; ?>
+                    </span>
                 </div>
             </div>
             
             <div class="row">
                 <div class="col-25">
                     <label for="category">Image</label>
-                    </div>
-                    <div class="col-75">
-                    <input type="file"  name="upload_file"  class="fileupload" required>
+                </div>
+                <div class="col-75">
+                    <input type="file"  name="logo"  class="fileupload">
+
+                    </br> </br>
+                    <span class="invalidFeedback">
+                        <?php echo $data['logoError']; ?>
+                    </span>
                 </div>
             </div>
             <div class="row">
