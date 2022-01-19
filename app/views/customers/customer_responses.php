@@ -9,10 +9,9 @@
 <link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/home/popup.css"/>
 <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
 
-<!-- <?php if(isLoggedIn()): ?>
-<a href="<?php echo URLROOT; ?>/customers/customer_responses#post-new-ad" class="top-button1" style="margin-top: -40em;margin-left:78em; width:10em;"> Post a New ad </a>
-<?php endif; ?> -->
-<a href="<?php echo URLROOT; ?>/customers/customer_responses#post-new-ad" class="top-button1" style="margin-top: -40em;margin-left:78em; width:10em;"> Post a New ad </a>
+<?php if(isLoggedIn()): ?>
+    <a href="<?php echo URLROOT; ?>/customers/customer_responses#post-new-ad" class="top-button1" style="margin-top: -40em;margin-left:78em; width:10em;"> Post a New ad </a>
+<?php endif; ?>
 <a href="#responses" class="top-button2" style="margin-top: -40em; margin-left:62em;"> Responses for requests </a>
 <a href="#posted-ads" class="top-button3" style="margin-top: -40em; margin-left:51em"> Posted Ads</a>
 
@@ -108,10 +107,29 @@
                                     </div>
                             </div>
 
-                            <div class="ad-row" style="margin-bottom: 1.5em; margin-top:1.5em">
-                                <input type="submit" value="Edit" class="blue-out-button" style="padding: 8px 24px; margin-left:29%; display:inline;">
-                                <input type="submit" value="Delete" class="pink-out-button" style="padding: 8px 15px; float:right; margin-right:29%; display:inline;">
-                            </div>
+
+                            <table>
+                                <tr> 
+                                    <td>
+                                        </br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <?php if(isset($_SESSION['cus_id']) && $_SESSION['cus_id'] == $newPosts->cus_id): ?>
+                                           
+                                            <a class="blue-out-button" style="text-decoration:none; font-size:13px; margin-left:55%; margin-top:2.5em; padding: 8px 24px; display:inline;" href="<?php echo URLROOT . "/customers/update_ads/" . $newPosts->ads_id ?>"> Edit </a>
+                                       
+                                    </td>
+                                <td>
+
+                                    <form action="<?php echo URLROOT . "/customers/delete_ads/" . $newPosts->ads_id ?>" method="POST">
+                                        <input type="submit" name="delete" value="Delete" class="pink-out-button" style="text-decoration:none; font-size:13px; margin-left:15%; margin-top:0.2em; padding: 8px 20px; display:inline;">
+                                    </form>
+                                    <?php endif; ?> 
+                                </td>
+                                </tr>
+                            </table>
                             </br> </br>
                 
                 </div>
