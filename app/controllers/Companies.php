@@ -311,11 +311,11 @@ class Companies extends Controller {
                 echo "<script>alert('Something went wrong, Please try again!'); </script>";
             }
         }else{
-            $this->view('companies/update_ads', $data);
+            $this->view('companies/update', $data);
         }
     }         
       
- $this->view('companies/update_ads', $data); 
+ $this->view('companies/update', $data); 
 
 }
 
