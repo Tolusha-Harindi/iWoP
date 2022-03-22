@@ -1,0 +1,106 @@
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: red;
+    background: url("../../img/w3.jpg");
+    height: 500px;
+    width: 1000px;
+    margin: 12% auto;
+    border-radius: 5px;
+    margin-left: 10em;
+    background-repeat: no-repeat;
+}
+
+.content-holder {
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    margin-top: 15%;
+    padding: 50px;
+}
+
+.content-holder h2 {
+    font-size: 34px;
+    margin: 10px auto;
+    color: black;
+}
+
+.content-holder p {
+    margin: 30px auto;
+}
+
+.content-holder button {
+    border: none;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: rgb(224, 43, 112);
+    width: 250px;
+    margin: 20px auto;
+    color: white;
+}
+
+
+
+.login1-form-container {
+    text-align: center;
+    margin-top: -52em;
+    margin-left: 50%;
+    width: 30%;
+}
+
+.login1-form-container h1 {
+    color: black;
+    font-size: 24px;
+    padding: 20px;
+}
+
+.input-field {
+    box-sizing: border-box;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid rgb(168, 168, 168);
+    width: 10%;
+    outline: none;
+    margin: 10px;
+}
+
+.login-button {
+    box-sizing: border-box;
+    color: white;
+    font-size: 18px;
+    padding: 13px;
+    border-radius: 7px;
+    border: none;
+    width: 300px;
+    outline: none;
+    background-color: #1E3CC0;
+    margin: 20px;
+}
+
+.button-2 {
+    display: none;
+}
+
+.login2-form-container {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    text-align: center;
+    display: none;
+    margin-top: -36em;
+    margin-left: 15%;
+    width: 30%;
+}
+
+.login2-form-container h1 {
+    color: black;
+    font-size: 24px;
+    padding: 20px;
+}

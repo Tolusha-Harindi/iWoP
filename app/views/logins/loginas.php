@@ -1,7 +1,7 @@
 <?php include_once APPROOT . '/views/includes/topnav.php'; ?>
 
-<link rel='stylesheet' href="<?php echo URLROOT ?> /public/css/login.css"/>
-<link rel='stylesheet' href="<?php echo URLROOT ?> /public/css/button.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT ?> /public/css/home/login.css"/>
+<link rel='stylesheet' href="<?php echo URLROOT ?> /public/css/home/button.css"/>
 <link href="https://fonts.googleapis.com/css2?family=Rosarivo:ital@1&display=swap" rel="stylesheet">
 
 <table cellspacing="5" cellpadding="50" align="center">
