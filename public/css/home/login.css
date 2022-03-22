@@ -20,6 +20,13 @@ label {
     object-fit: contain;
 }
 
+.pic1{
+    height: 50px;
+    width: 50px;
+    margin-left: 0.5em;
+}
+ 
+
 
 /* Full-width inputs */
 

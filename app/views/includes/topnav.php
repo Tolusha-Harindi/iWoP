@@ -57,6 +57,11 @@
             <!----- if admin logged in ---------------->
                 <?php elseif(isset($_SESSION['admin_id'])) : ?>
                     <a href="<?php echo URLROOT;?> /logins/Adminlogout" class="anchor-tag"  style="border: 1px solid #ffffff; padding: 8px 24px; border-radius:5px;"> Logout </a>
+
+
+            <!----- if manager logged in ---------------->
+                <?php elseif(isset($_SESSION['manager_id'])) : ?>
+                    <a href="<?php echo URLROOT;?> /logins/Managerlogout" class="anchor-tag"  style="border: 1px solid #ffffff; padding: 8px 24px; border-radius:5px;"> Logout </a>
                 
                 <?php else : ?>
                     <a href="<?php echo URLROOT ;?> /logins/loginas" class="anchor-tag"  style="border: 1px solid #ffffff; padding: 8px 24px; border-radius:5px;"> Login </a>

@@ -1,3 +1,4 @@
+
 <?php include_once APPROOT . '/views/includes/topnav.php'; ?>
 
 <?php include_once APPROOT . '/views/includes/admin_sidenav.php'; ?>
@@ -10,59 +11,18 @@
 <!------heading----------->
 <div class="category"> <p> Manager </p> </div>
 
-<!----<img src="<?php echo URLROOT;?>/public/img/ <?php //echo $manager->pro_pic; ?> " style="border-radius: 200px; height:160px; width: 160px; margin-left:55%">------>
-<!--------<p style="color: #113CFC; font-size:14px; margin-left:57.5%"> last active 5m </p> ------->
-<!---------<p style="font-size:16px; margin-left:57%;"> <?php //echo $manager->name; ?> </p> ------->
 
-<div class= "table"> 
-        <div class="table-wrapper">
-            <table style="border-spacing: 25px" class="fl-table">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>NIC</th>
-                        <th>Contact</th>
-                        <th>Email</th>
-                        <th>Profile picture</th>
-                        <th>Edit</th>
-                        <th>Remove</th>
-                    </tr>
-                </thead>
-                <tbody>
-                
-                    <?php foreach($data['manager'] as $manager): ?>
-                        <tr>
-                            <td> <?php echo $manager->name; ?> </td>
-                            <td> <?php echo $manager->nic; ?> </td>
-                            <td> <?php echo $manager->contact; ?> </td>
-                            <td> <?php echo $manager->email; ?> </td>
-                            <td>  <img src="<?php echo URLROOT ?> /public/img/<?php echo $manager->profile; ?>" class="pic1"> </td>
-                            <?php if(isset($_SESSION['admin_id']) && $_SESSION['admin_id'] == $manager->admin_id): ?>
-                                <td>  
-                                    <a class="blue-button"  href="<?php echo URLROOT . "/admins/update_manager/" . $manager->manager_id ?>"> Edit </a>
-                                </td>
-                                <td> 
-                                <form action="<?php echo URLROOT . "/admins/delete_manager/" . $manager->manager_id ?>" method="POST">
-                                    <input type="submit" class="pink-button" value="Remove"/></td>
-                            <?php endif; ?>
-                        </tr>
-                    <?php endforeach; ?>
-                </tbody>
-            </table> 
-        </div> 
-    </div>
-
-<!-----------------------------------Add new Manager--------------------------------------->
-<div class="heading"> <p> Add New Manager </p> </div>
+<!-----------------------------------Update Manager--------------------------------------->
+<div class="heading"> <p> Update Manager </p> </div>
 
 <div class="form-space">
-    <form action="<?php echo URLROOT; ?>/admins/admin_manager" method="POST">
+    <form action="<?php echo URLROOT; ?>/admins/update_manager/ <?php echo $data['manager']-> manager_id ?>" method="POST">
         <div class="row">
             <div class="col-25">
             <label for="name">Name</label>
             </div>
             <div class="col-75">
-            <input type="text" id="name" name="name" placeholder="Enter Manager Name">
+            <input type="text" id="name" name="name" value ="<?php echo $data['manager']->name ?>">
             </br> </br>
                 <span class="invalidFeedback">
                     <?php echo $data['nameError']; ?>
@@ -75,7 +35,7 @@
             <label for="nic">NIC Number</label>
             </div>
             <div class="col-75">
-            <input type="text" id="nic" name="nic" placeholder="Enter NIC Number">
+            <input type="text" id="nic" name="nic" value ="<?php echo $data['manager']->nic ?>">
             </br> </br>
                 <span class="invalidFeedback">
                     <?php echo $data['nicError']; ?>
@@ -88,7 +48,7 @@
             <label for="contact">Contact Number</label>
             </div>
             <div class="col-75">
-            <input type="text" id="contact" name="contact" placeholder="Enter Contact Number">
+            <input type="text" id="contact" name="contact" value ="<?php echo $data['manager']->contact ?>">
             </br> </br>
                     <span class="invalidFeedback">
                         <?php echo $data['contactError']; ?>
@@ -101,7 +61,7 @@
             <label for="email">Email</label>
             </div>
             <div class="col-75">
-            <input type="email" id="email" name="email" placeholder="Enter Email">
+            <input type="email" id="email" name="email" value ="<?php echo $data['manager']->email ?>">
             </br> </br>
                 <span class="invalidFeedback">
                     <?php echo $data['emailError']; ?>
@@ -114,7 +74,7 @@
             <label for="address">Address</label>
             </div>
             <div class="col-75">
-                <input type="text" id="address" name="address" placeholder="Enter address">
+                <input type="text" id="address" name="address" value ="<?php echo $data['manager']->address ?>">
             </br> </br>
                 <span class="invalidFeedback">
                     <?php echo $data['addressError']; ?>
@@ -140,7 +100,7 @@
             <label for="password">Password</label>
             </div>
             <div class="col-75">
-            <input type="password" id="password" name="password" placeholder="Enter Password">
+            <input type="password" id="password" name="password" value ="<?php echo $data['manager']->password ?>">
             </br> </br>
                 <span class="invalidFeedback">
                     <?php echo $data['addressError']; ?>
@@ -151,7 +111,7 @@
 
         </br>
         <div class="row">
-            <input type="submit" value="Submit" class="green-button">
+            <input type="submit" value="Edit" class="green-button">
         </div>
     </form>
 </div>
