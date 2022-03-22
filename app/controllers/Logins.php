@@ -857,12 +857,12 @@ public function Manager_login() {
               ];
         //Validate email
         if(empty($data['email'])){
-            $data['emailError'] = 'please enter email.';
+            $data['emailError'] = 'Please enter email.';
     }
 
         //Validate password
         if(empty($data['password'])){
-            $data['passwordError'] = 'please enter password.';
+            $data['passwordError'] = 'Please enter password.';
         }
 
         //check if all errors are empty
