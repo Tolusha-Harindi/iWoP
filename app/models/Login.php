@@ -199,4 +199,80 @@
                 return false;
             }
         }
+
+
+/////// Admin Login //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        public function Admin_login($email, $password) {
+            $this->db->query('SELECT * FROM admin WHERE email = :email');
+
+            //Bind value
+            $this->db->bind(':email', $email);
+
+            $row = $this->db->single();
+
+            $currentPassword = $row->password; 
+
+            if ($password == $currentPassword) {
+                return $row;
+            } else {
+                return false;
+            }
+        }
+
+    //Find user by email. Email is passed in by the controller 
+    public function findAdminByEmail($email) {
+        //Prepared statement
+        $this->db->query('SELECT * FROM admin WHERE email = :email');
+
+        //Email param will be binded with the email variable
+        $this->db->bind(':email', $email);
+
+        //Check if email is already registered
+        if($this->db->rowCount() > 0) {
+            return true;
+        } else {
+            return false;
+        }
     }
+
+
+
+    
+
+//////// Manager Login ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+public function Manager_login($email, $password) {
+    $this->db->query('SELECT * FROM manager WHERE email = :email');
+
+    //Bind value
+    $this->db->bind(':email', $email);
+
+    $row = $this->db->single();
+
+     $currentPassword = $row->password; 
+
+    if ($password == $currentPassword) {
+        return $row;
+    } else {
+        return false;
+    }
+}
+
+//Find user by email. Email is passed in by the controller 
+public function findManagerByEmail($email) {
+    //Prepared statement
+    $this->db->query('SELECT * FROM manager WHERE email = :email');
+
+    //Email param will be binded with the email variable
+    $this->db->bind(':email', $email);
+
+    //Check if email is already registered
+    if($this->db->rowCount() > 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+}
+    

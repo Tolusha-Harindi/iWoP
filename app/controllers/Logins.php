@@ -738,4 +738,187 @@ public function Customer_login() {
             header('location:' . URLROOT . '/logins/loginas');
         }
 
+
+
+
+    /////// Admin login //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    public function Admin_login() {
+
+        $data = [
+            'email' => '',
+            'password' => '',
+            'emailError' => '',
+            'passwordError' => '',
+
+        ];
+
+        //check for post data
+        if($_SERVER['REQUEST_METHOD'] == 'POST'){
+            // Process form
+            // Sanitize POST data
+            $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+    
+                  $data = [
+                    'email' => trim($_POST['email']),
+                    'password' => trim($_POST['password']),
+                    'emailError' => '',
+                    'passwordError' => '' 
+                  ];
+            //Validate email
+            if(empty($data['email'])){
+                $data['emailError'] = 'Please enter email.';
+        }
+
+            //Validate password
+            if(empty($data['password'])){
+                $data['passwordError'] = 'Please enter password.';
+            }
+
+            //check if all errors are empty
+            if(empty($data['emailError']) && empty($data['passwordError'])){
+                $loggedInAdmin = $this->loginModel->Admin_login($data['email'], $data['password']);
+            
+            if ($loggedInAdmin) {
+                $this->createAdminSession($loggedInAdmin);
+            } else {
+                $data['passwordError'] = 'Password or username is incorrect. Please try again.';
+
+                $this->view('login/am_login', $data);
+            }
+        }  
+        }else{
+
+            $data = [
+                'email' => '',
+                'password' => '',
+                'emailError' => '',
+                'passwordError' => '' 
+            ];
+        }   
+        
+       $this-> view('logins/am_login', $data);
+    }
+
+
+
+    public function createAdminSession($admin) {
+        //session_start();
+        $_SESSION['admin_id'] = $admin->admin_id;
+        $_SESSION['name'] = $admin->name;
+        $_SESSION['email'] = $admin->email;
+    
+        header('location:' . URLROOT . '/admins/admin_dashboard');
+    
+    }
+    
+    public function Adminlogout() {
+        unset($_SESSION['admin_id']);
+        unset($_SESSION['name']);
+        unset($_SESSION['email']);
+        header('location:' . URLROOT . '/logins/admin_login');
+    }
+
+    public function AM_login(){
+
+        $data = [
+            'email' => '',
+            'password' => '',
+            'emailError' => '',
+            'passwordError' => '' 
+        ];
+
+        $this-> view('logins/am_login',$data);
+    }
+
+
+
+
+///// Manager Login ////////////////////////////////////////////////////////////////////////////////////////////////////////
+public function Manager_login() {
+
+    $data = [
+        'email' => '',
+        'password' => '',
+        'emailError' => '',
+        'passwordError' => '' 
+    ];
+
+    //check for post data
+    if($_SERVER['REQUEST_METHOD'] == 'POST'){
+        // Process form
+        // Sanitize POST data
+        $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+
+              $data = [
+                'email' => trim($_POST['email']),
+                'password' => trim($_POST['password']),
+                'emailError' => '',
+                'passwordError' => '' 
+              ];
+        //Validate email
+        if(empty($data['email'])){
+            $data['emailError'] = 'please enter email.';
+    }
+
+        //Validate password
+        if(empty($data['password'])){
+            $data['passwordError'] = 'please enter password.';
+        }
+
+        //check if all errors are empty
+        if(empty($data['emailError']) && empty($data['passwordError'])){
+            $loggedInManager = $this->userModel->Manager_login($data['email'], $data['password']);
+        
+        if ($loggedInManager) {
+            $this->createManagerSession($loggedInManager);
+        } else {
+            $data['passwordError'] = 'Password or username is incorrect. Please try again.';
+
+            $this->view('logins/am_login', $data);
+        }
+    }  
+    }else{
+
+        $data = [
+            'email' => '',
+            'password' => '',
+            'emailError' => '',
+            'passwordError' => '' 
+        ];
+    }   
+    
+   $this-> view('logins/am_login', $data);
+}
+
+
+
+public function createManagerSession($manager) {
+    //session_start();
+    $_SESSION['manager_id'] = $manager->manager_id;
+    $_SESSION['email'] = $manager->email;
+
+    header('location:' . URLROOT . '/managers/manager_dashboard');
+
+}
+
+
+
+public function Managerlogout() {
+    unset($_SESSION['manager_id']);
+    unset($_SESSION['email']);
+    header('location:' . URLROOT . '/logins/am_login');
+}
+
+/* public function am_login(){
+
+    $data = [
+        'email' => '',
+        'password' => '',
+        'emailError' => '',
+        'passwordError' => '' 
+    ];
+
+    $this-> view('logins/am_login',$data);
+} */
+
     }
