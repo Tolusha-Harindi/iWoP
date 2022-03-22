@@ -31,14 +31,74 @@
         }
 
         public function worker_bank_edit() {
+             if(!isLoggedIn()){
+                header("Location: " . URLROOT . "/workers");
+            }
+           
+            $bankdata = $this->workerModel->getbank($_SESSION['worker_id']);
 
-            //$users = $this->pageModel-> getUsers();
             $data = [
-                'title' => 'worker_bank_edit page',
-                //'users' => $users
-
+                'bankdata'=> $bankdata,
+                'name'=>'',
+                'bname'=>'',
+                'branch'=>'',
+                'code'=>'',
+                'account'=>'',
+                'nameError'=>'',
+                'bnameError'=>'',
+                'branchError'=>'',
+                'codeError'=>'',
+                'accountError'=>''
             ];
 
+            if($_SERVER['REQUEST_METHOD'] == 'POST'){
+                $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+                
+                $data = [
+                    'worker_id'=> $_SESSION['worker_id'],
+                    //'bankdata'=>$bankdata,
+                    'name'=>trim($_POST['name']),
+                    'bname'=>trim($_POST['bname']),
+                    'branch'=>trim($_POST['branch']),
+                    'code'=>trim($_POST['code']),
+                    'account'=>trim($_POST['account']),
+                    'nameError'=>'',
+                    'bnameError'=>'',
+                    'branchError'=>'',
+                    'codeError'=>'',
+                    'accountError'=>''
+                ];
+
+                if(empty($data['name'])){
+                    $data['nameError'] = "The name of a Holder cannot be empty";
+                }
+
+                if(empty($data['bname'])){
+                    $data['bnameError'] = "The name of a Bank cannot be empty";
+                }
+
+                if(empty($data['branch'])){
+                    $data['branchError'] = "The branch name cannot be empty";
+                }
+
+                if(empty($data['code'])){
+                    $data['codeError'] = "The code cannot be empty";
+                }
+
+                if(empty($data['account'])){
+                    $data['accountError'] = "The account number cannot be empty";
+                }
+
+                if(empty($data['nameError']) && empty($data['bnameError']) && empty($data['branchError']) && empty($data['codeError']) && empty($data['accountError'])){
+                    if($this->workerModel->editbank($data)){
+                        header("Location: ". URLROOT . "/workers/worker_bank_edit"); //redirect to
+                    }else{
+                        echo "<script>alert('Something went wrong, Please try again!'); </script>";
+                    }
+                }else{
+                    $this->view('workers/worker_bank_edit', $data);
+                }
+            }
             $this->view('workers/worker_bank_edit', $data);
           
         }
@@ -57,12 +117,8 @@
         }
 
         public function worker_dashboard() {
-
-            //$users = $this->pageModel-> getUsers();
             $data = [
-                'title' => 'worker_dashboard page',
-                //'users' => $users
-
+                'title' => 'worker_dashboard page'
             ];
 
             $this->view('workers/worker_dashboard', $data);
