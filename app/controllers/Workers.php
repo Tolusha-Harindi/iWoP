@@ -103,18 +103,6 @@
           
         }
 
-        public function worker_chat() {
-
-            //$users = $this->pageModel-> getUsers();
-            $data = [
-                'title' => 'worker_chat page',
-                //'users' => $users
-
-            ];
-
-            $this->view('workers/worker_chat', $data);
-          
-        }
 
         public function worker_dashboard() {
             $data = [
@@ -191,15 +179,91 @@
         }
 
         public function worker_schedule() {
+            if(!isLoggedIn()){
+                header("Location: " . URLROOT . "/workers");
+            }
 
-            //$users = $this->pageModel-> getUsers();
             $data = [
-                'title' => 'worker_schedule page',
-                //'users' => $users
-
+                'name' => '',
+                'address' => '',
+                'contact' => '',
+                'startTime' => '',
+                'endTime' => '',
+                'date' => '',
+                'nameError' => '',
+                'addressError' => '',
+                'contactError' => '',
+                'startTimeError' => '',
+                'endTimeError' => '',
+                'dateError' => ''
             ];
 
+            if($_SERVER['REQUEST_METHOD'] == 'POST'){
+                //Sanitize post data
+                $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+                
+                $data = [
+                    'worker_id' => $_SESSION['worker_id'],
+                    'name' => trim($_POST['name']),
+                    'address' => trim($_POST['address']),
+                    'contact' => trim($_POST['contact']),
+                    'startTime' => trim($_POST['start']),
+                    'endTime' => trim($_POST['end']),
+                    'date' => trim($_POST['date']),
+                    'nameError' => '',
+                    'addressError' => '',
+                    'contactError' => '',
+                    'startTimeError' => '',
+                    'endTimeError' => '',
+                    'dateError' => ''
+                ];
+               
+               //validate name on letters/numbers
+               if(empty($data['name'])){
+                $data['nameError'] = 'Please Enter Name';
+               }
+
+                //validate address on letters/numbers
+                if(empty($data['address'])){
+                    $data['addressError'] = 'Please Enter Address';
+                   }
+
+                //validate contact number on numbers
+                if(empty($data['contact'])){
+                    $data['contactError'] = 'Please Enter Contact';
+                }
+
+                //validation time
+                if(empty($data['startTime'])){
+                    $data['startTimeError'] = 'Please Enter Start Time';
+                }
+
+                //validation time
+                if(empty($data['endTime'])){
+                    $data['endTimeError'] = 'Please Enter End Time';
+                }
+
+                //validation date 
+                if(empty($data['date'])){
+                    $data['dateError'] = 'Please Enter Date.';
+                }
+
+                if(empty($data['nameError']) && empty($data['contactError']) && empty($data['addressError']) && empty($data['startTimeError']) && empty($data['endTimeError']) && empty($data['dateError'])){
+                    if($this->workerModel->worker_schedule($data)){
+                      echo "<script>alert('planned successfully!'); </script>";
+                    
+                        header('location: ' . URLROOT . '/workers/worker_schedule');
+                    }
+                    else{
+                        echo "<script>alert('Something went wrong, Please try again!'); </script>";
+                    }
+                }
+            }else{
+                $this->view('workers/worker_schedule', $data);
+            }            
+
             $this->view('workers/worker_schedule', $data);
+          
           
         }
 
