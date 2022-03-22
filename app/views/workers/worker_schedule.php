@@ -19,23 +19,53 @@
     <div class="row-01">
     
         <div class="day-time">
-            <div class="date"><p><b>30<sup>th</sup> October 2021<br/>4.30 PM</b></p></div>
-            <div class="btn-plan"><button id="myBtn" class="pink-button" style="padding: 8px 43px; margin-left:-25em;">Plan</button></div>
-        </div>
-
-        <div class="day-time">
-            <div class="date"><p><b>30<sup>th</sup> October 2021<br/>4.30 PM</b></p></div>
-            <div class="btn-plan"><button class="pink-button" style="padding: 8px 43px; margin-left:-25em;">Plan</button></div>
+            <div class="date"><p><?php echo date("jS \of F Y"); ?><br/><?php echo date("h:i:sa");?></b></p></div>
+            <div class="btn-plan"><button id="myBtn" class="pink-button" style="padding: 8px 43px; margin-left:-27em; margin-top:0em;">Plan</button></div>
         </div>
 
     </div>
 </div>
 
+<!----------------------------------------------Scheduling-------------------------------------------------->
+<div class="sheduling">
+   <div class="event-calendar" id="event-calendar">
+       <div class="calendar-bar">
+            <button class="prev soft-btn" style="margin-top:0.5em; margin-left: 10px;"><i class="fas fa-chevron-left"></i></button>
+            <div class="current-month"></div>
+            <button class="next soft-btn" style="margin-top:-4.5em; margin-left: 64.5em;"><i class="fas fa-chevron-right" style="margin-top:-4.8em;"></i></button>
+       </div>
+ 
+    <div class="calendar">
+        <div class="weekdays-name">
+            <div class="days-name">Sat</div>
+            <div class="days-name">Sun</div>
+            <div class="days-name">Mon</div>
+            <div class="days-name">Tues</div>
+            <div class="days-name" style=" padding-right: 35px; padding-left: 50px;">Wed</div>
+            <div class="days-name">Thurs</div>
+            <div class="days-name">Fri</div>
+        </div>
+        <div class="calendar-days"></div>
+    </div>
+
+    <div class="goto-buttons">
+        <button type="button" class="btn prev-year">Prev Year</button>
+        <button type="button" class="btn today">Today</button>
+        <button type="button" class="btn next-year">Next Year</button>
+    </div>
+
+   </div>
+         
+</div>
+
+<script type="text/javascript" src="<?php echo URLROOT;?> /public/js/calendar.js"></script>
+
+
 <!----------------------------------------Popup message------------------------------------------------------>
 <div id="myModal" class="modal">
         <!-- Modal content -->
         <div class="modal-content" style="margin-top: 10%;">
-                <form action="">
+                <form action="<?php echo URLROOT;?> /workers/worker_schedule" method="POST">
                     <span class="close">&times;</span>
                     <p class="heading" style="margin-top:1em; margin-left:30%;">Work Schedule <img src="<?php echo URLROOT;?> /public/img/schedule.png" class="popup-image"></p>
                         <div class="row">
@@ -44,6 +74,9 @@
                             </div>
                             <div class="col-75" style="width: 70%;">
                             <input type="text" id="name" name="name" placeholder="Enter your Name" required>
+                            <span class="invalidFeedback">
+                                <?php  echo $data['nameError'];?>
+                            </span> </br> </br>
                             </div>
                         </div>
 
@@ -53,6 +86,9 @@
                             </div>
                             <div class="col-75" style="width: 70%;">
                             <input type="text" id="address" name="address" placeholder="Enter your Address" required>
+                            <span class="invalidFeedback">
+                                <?php  echo $data['addressError'];?>
+                            </span> </br> </br>
                             </div>
                         </div>
                         
@@ -62,6 +98,9 @@
                             </div>
                             <div class="col-75" style="width: 70%;">
                             <input type="text" id="contact" name="contact" placeholder="Enter Contact Number" required>
+                            <span class="invalidFeedback">
+                                <?php  echo $data['contactError'];?>
+                            </span> </br> </br>
                             </div>
                         </div>
 
@@ -71,6 +110,9 @@
                             </div>
                             <div class="col-75" style="width: 70%;">
                             <input type="time" id="start" name="start" placeholder="Enter Start Time" required>
+                            <span class="invalidFeedback">
+                                <?php  echo $data['startTimeError'];?>
+                            </span> </br> </br>
                             </div>
                         </div>
 
@@ -80,6 +122,9 @@
                             </div>
                             <div class="col-75" style="width: 70%;">
                             <input type="time" id="end" name="end" placeholder="Enter End Time" required>
+                            <span class="invalidFeedback">
+                                <?php  echo $data['endTimeError'];?>
+                            </span> </br> </br>
                             </div>
                         </div>
 
@@ -89,11 +134,14 @@
                             </div>
                             <div class="col-75" style="width: 70%;">
                             <input type="date" id="date" name="date" placeholder="Enter Date" required>
+                            <span class="invalidFeedback">
+                                <?php  echo $data['dateError'];?>
+                            </span> </br> </br>
                             </div>
                         </div>
                         </br> </br>
                         <div class="row">
-                            <input type="submit" value="Submit" class="blue-button" style="margin-left:45%;">
+                            <button type="submit" class="blue-button" style="margin-left:45%;">Submit</button>
                         </div>
                         </br>
                 </form>
@@ -101,17 +149,6 @@
     </div>
 
             <script type="text/javascript" src="<?php echo URLROOT;?> /public/js/pink-button-popup.js"></script>
-
-<!----------------------------------------------Scheduling-------------------------------------------------->
-<!--<div class="sheduling">
-    <div class="row-01">
-
-        <div class="event">
-            <p>scheduling</p>
-        </div>
-
-    </div>
-</div>-->
 
 <!--------------------------------------Pending Works--------------------------------------------------------->
 <div class="category" id="pending-works" style="margin-top: 3em; margin-left:8em;"> <p > Pending Works</p> </div>
