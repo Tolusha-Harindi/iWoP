@@ -32,6 +32,27 @@
             return false;
         }
     }
+      
+      public function worker_schedule($data){
+        $this->db->query('INSERT INTO schedule (worker_id, cus_name, address, contact_no, date, start_time, end_time) VALUES (:worker_id, :name, :address, :contact, :date, :startTime, :endTime)');
+
+        //Bind values
+        $this->db->bind(':worker_id', $data['worker_id']);
+        $this->db->bind(':name', $data['name']);
+        $this->db->bind(':address', $data['address']);
+        $this->db->bind(':contact', $data['contact']);
+        $this->db->bind(':startTime', $data['startTime']);
+        $this->db->bind(':endTime', $data['endTime']);
+        $this->db->bind(':date', $data['date']);
+
+        //Execute the function
+        if($this->db->execute()){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 
    
 }
