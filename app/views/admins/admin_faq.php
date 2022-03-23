@@ -3,6 +3,7 @@
 
 <?php include_once APPROOT . '/views/includes/admin_sidenav.php'; ?>
 
+<link rel='stylesheet' href="<?php echo URLROOT;?>/public/css/home/login.css"/>
 <link rel='stylesheet' href="<?php echo URLROOT;?>/public/css/home/table.css"/>
 <link rel='stylesheet' href="<?php echo URLROOT;?>/public/css/home/button.css"/>
 <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
@@ -12,7 +13,7 @@
 <!------heading----------->
 <div class="category"> <p> FAQ </p> </div>
 
-<!------------------- Category table-------------------->
+<!------------------- FAQ table-------------------->
     <div class= "table"> 
         <div class="table-wrapper">
             <table style="border-spacing: 25px" class="fl-table">
@@ -26,51 +27,46 @@
                 </thead>
                 <tbody>
                 
+                    <?php foreach($data['faq'] as $faq): ?>
                     <tr>
-                        <td>How to add my service?</td>
-                        <td>Refer services Page</td>
-                        <td> <input type="reset" class="blue-button" value="Edit"/></td>
-                        <td> <input type="reset" class="pink-button" value="Remove"/></td>
+                        <td> <?php echo $faq->question; ?> </td>
+                        <td> <?php echo $faq->answer; ?> </td>
+                        <td> 
+                            <?php if(isset($_SESSION['admin_id']) && $_SESSION['admin_id'] == $faq->admin_id): ?>
+                                <!--<input type="reset" class="blue-button" value="Edit"/> -->
+                                <a class="blue-button" style="text-decoration:none;" href="<?php echo URLROOT . "/admins/update_faq/" . $faq->faq_id ?>"> Edit </a>
+                            <?php endif; ?> 
+                        </td>
+                        <td> 
+                            <?php if(isset($_SESSION['admin_id']) && $_SESSION['admin_id'] == $faq->admin_id): ?>
+                            <form action="<?php echo URLROOT . "/admins/delete_faq/" . $faq->faq_id ?>" method="POST">
+                                <input type="submit" name="delete" class="pink-button" value="Remove"/>
+                            </form>
+                            <?php endif; ?> 
+                        </td>
                     </tr>
-
-                    <tr>
-                        <td>How to add my service?</td>
-                        <td>Refer services Page</td>
-                        <td> <input type="reset" class="blue-button" value="Edit"/></td>
-                        <td> <input type="reset" class="pink-button" value="Remove"/></td>
-                    </tr>
-
-                    <tr>
-                        <td>How to add my service?</td>
-                        <td>Refer services Page</td>
-                        <td> <input type="reset" class="blue-button" value="Edit"/></td>
-                        <td> <input type="reset" class="pink-button" value="Remove"/></td>
-                    </tr>
-
-                     <tr>
-                        <td>How to add my service?</td>
-                        <td>Refer services Page</td>
-                        <td> <input type="reset" class="blue-button" value="Edit"/></td>
-                        <td> <input type="reset" class="pink-button" value="Remove"/></td>
-                    </tr>
-
+                    <?php endforeach; ?>
                 </tbody>
             </table> 
         </div> 
     </div>
 
 
-    <!-----------------------------------Add new category--------------------------------------->
+    <!-----------------------------------Add new Question--------------------------------------->
     <div class="heading"> <p> Add  Questions and Answers </p> </div>
 
     <div class="form-space">
-        <form action="/action_page.php">
+        <form action="<?php echo URLROOT; ?>/admins/admin_faq" method="POST">
             <div class="row">
                 <div class="col-25">
                 <label for="question">Question</label>
                 </div>
                 <div class="col-75">
-                <input type="text" id="question" name="question" placeholder="Enter your Question" required>
+                <input type="text" id="question" name="question" placeholder="Enter your Question">
+                </br> </br>
+                <span class="invalidFeedback">
+                    <?php echo $data['questionError']; ?>
+                </span>
                 </div>
             </div>
 
@@ -79,7 +75,11 @@
                 <label for="answer">Answer</label>
                 </div>
                 <div class="col-75">
-                <input type="text" id="answer" name="answer" placeholder="Enter your Answer" required>
+                <input type="text" id="answer" name="answer" placeholder="Enter your Answer">
+                </br> </br>
+                <span class="invalidFeedback">
+                    <?php echo $data['answerError']; ?>
+                </span>
                 </div>
             </div>
             <br>

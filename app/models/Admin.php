@@ -74,7 +74,7 @@ public function addManager($data){
     }
 
 
-    ///  Delete manager /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+   /*----------------------- Delete Manager --------------------------------------------------------------------------------*/
         public function deleteManager($manager_id){
             $this->db->query('DELETE FROM manager WHERE manager_id = :manager_id');
 
@@ -91,6 +91,87 @@ public function addManager($data){
 
 
 
+
+
+
+
+/////////////////////////////////////////   FAQ      ////////////////////////////////////////////////////////////////////////////////////////
+public function findAllQuestions(){
+    $this->db->query('SELECT * FROM faq');
+
+    $results = $this->db->resultSet();
+
+    return $results;
+}
+
+
+/*--------------------------- Add FAQ ----------------------------------------------------------------------------------------------------*/
+    public function addFAQ($data){
+        $this->db->query('INSERT INTO faq (admin_id, question, answer) VALUES (:admin_id, :question, :answer)');
+
+        //Bind values
+        $this->db->bind(':admin_id', $data['admin_id']);
+        $this->db->bind(':question', $data['question']);
+        $this->db->bind(':answer', $data['answer']);
+
+
+        //execute the function
+        if($this->db->execute()){
+            return true;
+        }else{
+            return false;
+        } 
+
+    }
+
+
+
+/*------------------------------ update faq ------------------------------------------------------------------------------------------------*/
+    public function findFAQById($faq_id){
+        $this->db->query('SELECT * FROM faq WHERE faq_id = :faq_id');
+
+        //Bind values
+        $this->db->bind(':faq_id', $faq_id);
+
+        $row = $this->db->single();
+        
+        return $row;
+    }
+
+
+    public function updateFAQ($data){
+        $this->db->query('UPDATE faq SET question = :question, answer = :answer WHERE faq_id = :faq_id');
+
+        $this->db->bind(':faq_id', $data['faq_id']);
+        $this->db->bind(':question', $data['question']);
+        $this->db->bind(':answer', $data['answer']);
+
+        //execute the function
+        if($this->db->execute()){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+/*-------------------------- Delete faq --------------------------------------------------------------------*/
+    public function deleteFAQ($faq_id){
+        $this->db->query('DELETE FROM faq WHERE faq_id = :faq_id');
+
+        $this->db->bind(':faq_id', $faq_id);
+
+        if ($this->db->execute()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+
+
+
+
+    
 
 //////////////   Category    ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
