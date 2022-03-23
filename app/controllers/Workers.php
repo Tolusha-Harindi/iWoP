@@ -156,16 +156,20 @@
         }
 
         public function worker_payment() {
+           if(!isLoggedIn()){
+                header("Location: " . URLROOT . "/workers");
+            }
+             
+            $rows=$this->workerModel->receivePayment();
 
-            //$users = $this->pageModel-> getUsers();
+            $gets=$this->workerModel->getPayment();
+
             $data = [
-                'title' => 'worker_payment page',
-                //'users' => $users
-
+               'rows' => $rows,
+               'gets'=> $gets,
             ];
 
             $this->view('workers/worker_payment', $data);
-          
         }
 
         public function worker_profile_edit() {
