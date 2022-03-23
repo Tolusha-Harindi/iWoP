@@ -7,7 +7,11 @@
             <div class="img-container">
                 <img src="<?php echo URLROOT;?>/public/img/4140048.png" alt="propic" class="img1"/>
             </div>
-            <p class='title'> Nimal Perera</p>
+
+            <?php //foreach($data['adname'] as $adname): ?>
+                <p class='title'> Tolusha Harindi<?php ///echo $adname->name ; ?> </p>
+            <?php //endforeach; ?>
+            
             <div class="description">
                     <ul class='list'>
                         <li>Edit profile</li>

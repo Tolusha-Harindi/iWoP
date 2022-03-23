@@ -41,7 +41,10 @@
 ///////////////////////////////////////////// Customer Profile //////////////////////////////////////////////////////////////////////////////////////////
         public function customer_profile() {
 
+            //$customer = $this->customerModel->changePassword();
+
             $data = [
+                //'customer' => $customer,
                 'cpassword' =>'',
                 'new-password' =>'',
                 'confirm-password' =>'',
@@ -55,7 +58,7 @@
                 $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
     
                 $data = [
-                    
+                    //'customer' =>$customer,
                     'cpassword' => $_POST['cpassword'],
                     'new-password' => $_POST['new-password'],
                     'confirm-password' => $_POST['confirm-password'],
@@ -64,7 +67,17 @@
                     'confirm-passwordError' =>'',
                 ];
     
+                $passwordValidation = "/^(.{0,7}|[^a-z]|[^\d])$/i";
     
+                // Validate password on length, numeric values,
+                if(empty($data['new-password'])){
+                    $data['new-passwordError'] = 'Please enter password.';
+                } else if(strlen($data['new-password']) < 6){
+                    $data['new-passwordError'] = 'Password must be at least 8 characters';
+                } else if (preg_match($passwordValidation, $data['new-password'])) {
+                    $data['new-passwordError'] = 'Password must be have at least one numeric value.';
+                }
+
                 //Validate confirm password
                 if (empty($data['confirm-password'])) {
                     $data['confirm-passwordError'] = 'Please enter confirm password.';
@@ -74,7 +87,6 @@
                     }
                 }
 
-                $data['cpassword'] = password_hash($data['cpassword'], PASSWORD_DEFAULT);
     
                 if(empty($data['confirm-passwordError'])){
                     $customer = $this->customerModel->findCustomerPassword();
@@ -83,7 +95,11 @@
                         'customer' => $customer
                     ];
     
-                    if ($data['cpassword'] == $Passworddata['customer'][0]->password ){
+                    if (password_verify($data['cpassword'],  $Passworddata['customer'][0]->password )){
+
+                        //Hash Password
+                        $data['new-password'] = password_hash($data['new-password'], PASSWORD_DEFAULT);
+
                         if ($this->customerModel->changePassword($data)) {
                             //Redirect to the login page
                             header('location: ' . URLROOT . '/customers/customer_profile');
@@ -98,9 +114,9 @@
         }
                
 
-            $this->view('customers/customer_profile', $data);
+        $this->view('customers/customer_profile', $data);
           
-        }
+    }
 
 
 
