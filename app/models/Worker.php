@@ -97,6 +97,23 @@
 
         return $results;
     }
+      
+      public function receivePayment(){
+        $this->db->query("SELECT * FROM payment WHERE worker_id='{$_SESSION['worker_id']}' ORDER BY paid_at DESC");
+                        
+        $row = $this->db->resultSet();
+
+        return $row;
+    }
+
+    public function getPayment(){
+        $this->db->query("SELECT * FROM `schedule` AS s JOIN invite_jobs AS i ON i.cus_id=s.cus_id
+                          WHERE s.worker_id='{$_SESSION['worker_id']}' AND s.date < CURRENT_TIMESTAMP");
+                        
+        $row = $this->db->resultSet();
+
+        return $row;
+    }
 
    
 }
