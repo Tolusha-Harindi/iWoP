@@ -5,12 +5,14 @@
         }
 
         public function worker_all_ads() {
+            if(!isLoggedIn()){
+                header("Location: " . URLROOT . "/workers");
+            }
 
-            //$users = $this->pageModel-> getUsers();
+            $ads = $this->workerModel->allCusAds();
+
             $data = [
-                'title' => 'worker_all_ads page',
-                //'users' => $users
-
+                'ads'=> $ads
             ];
 
             $this->view('workers/worker_all_ads', $data);
@@ -114,12 +116,13 @@
         }
 
         public function worker_job_invite() {
-
-            //$users = $this->pageModel-> getUsers();
+            if(!isLoggedIn()){
+                header("Location: " . URLROOT . "/workers");
+            }
+             
+            $jobs=$this->workerModel->inviteJob($_SESSION['worker_id']);
             $data = [
-                'title' => 'worker_job_invite page',
-                //'users' => $users
-
+               'jobs'=> $jobs
             ];
 
             $this->view('workers/worker_job_invite', $data);
