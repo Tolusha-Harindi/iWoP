@@ -95,6 +95,38 @@ class Customer{
 
     ////////////////////////////////// Customer Profile////////////////////////////////////////////////////////////////////////////////////
 
+    /*------------------------------------Edit Pofile details------------------------------------------------------------------------------------*/
+    public function findCustomerDetails(){
+        $this->db->query("SELECT * FROM customer Where cus_id = '{$_SESSION['cus_id']}'");
+
+        $results = $this->db->resultSet();
+        
+        return $results;
+    }
+
+
+    public function changeProfile($data){
+
+        $this->db->query("UPDATE customer SET fname = :fname,  lname = :lname, email = :email, contact=:contact, address = :address, prof_pic = :prof_pic WHERE cus_id = '{$_SESSION['cus_id']}'");
+
+        $this->db->bind(':prof_pic', $data['prof_pic']);
+        $this->db->bind(':fname', $data['fname']);
+        $this->db->bind(':lname', $data['lname']);
+        $this->db->bind(':email', $data['email']);
+        $this->db->bind(':contact', $data['contact']);
+        $this->db->bind(':address', $data['address']);
+
+     
+
+        if($this->db->execute()){
+            return true;
+        }else {
+            return false;
+        }
+    
+    }
+
+
     /*----------------- customer change password-----------------------------------------------------------------------------------------------------*/
 
     public function findCustomerPassword(){

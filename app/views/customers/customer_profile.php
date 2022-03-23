@@ -8,22 +8,50 @@
 <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
 
 
-<a href="#my-profile" class="top-button1" style="margin-top: -36em; margin-left:78em;width:7em;"> My Profile </a>
-<a href="#change-password" class="top-button2" style="margin-top: -36em;  margin-left:64em;"> Change Password </a>
+<!--<a href="#my-profile" class="top-button1" style="margin-top: -36em; margin-left:78em;width:7em;"> My Profile </a>
+<a href="#change-password" class="top-button2" style="margin-top: -36em;  margin-left:64em;"> Change Password </a>---->
 
 <!------heading----------->
 <div class="category" id="my-profile" style="margin-top: -12em;"> <p> My Profile </p> </div>
 
-<img src="<?php echo URLROOT;?> /public/img/w3.jpg" style="border-radius: 200px; height:160px; width: 160px; margin-left:55%">
+
+<?php foreach($data['customer'] as $customer): ?>
+    <img src="<?php echo URLROOT?>/public/img/<?php echo $customer->prof_pic; ?>" style="border-radius: 200px; height:160px; width: 160px; margin-left:55%; margin-top:2em;">
+<?php endforeach; ?>
 
 <div class="form-space">
-    <form action="/action_page.php">
+    <form action="<?php echo URLROOT; ?> /customers/customer_profile" method="POST">
+        
+        <div class="col-75" style="margin-left:20em;">
+            <input type="file" id="prof_pic" name="prof_pic">
+            </br> </br>
+                <span class="invalidFeedback">
+                    <?php echo $data['prof_picError']; ?>
+                </span>
+        </div>
         <div class="row">
             <div class="col-25">
-            <label for="name">Name</label>
+            <label for="name">First Name</label>
             </div>
             <div class="col-75">
-            <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+            <input type="text" id="fname" name="fname" placeholder="Enter Your First Name">
+            </br> </br>
+                <span class="invalidFeedback">
+                    <?php echo $data['fnameError']; ?>
+                </span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+            <label for="name"> Last Name</label>
+            </div>
+            <div class="col-75">
+            <input type="text" id="lname" name="lname" placeholder="Enter Your Last Name">
+            </br> </br>
+                <span class="invalidFeedback">
+                    <?php echo $data['lnameError']; ?>
+                </span>
             </div>
         </div>
 
@@ -32,7 +60,11 @@
             <label for="email">Email</label>
             </div>
             <div class="col-75">
-            <input type="email" id="email" name="nic" placeholder="Enter your email" required>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+            </br> </br>
+                <span class="invalidFeedback">
+                    <?php echo $data['emailError']; ?>
+                </span>
             </div>
         </div>
 
@@ -41,7 +73,11 @@
             <label for="contact">Contact Number</label>
             </div>
             <div class="col-75">
-            <input type="text" id="contact" name="contact" placeholder="Enter Contact Number" required>
+            <input type="text" id="contact" name="contact" placeholder="Enter Contact Number">
+            </br> </br>
+                <span class="invalidFeedback">
+                    <?php echo $data['contactError']; ?>
+                </span>
             </div>
         </div>
 
@@ -50,7 +86,11 @@
             <label for="address">Address</label>
             </div>
             <div class="col-75">
-            <input type="text" id="address" name="address" placeholder="Enter address" required>
+            <input type="text" id="address" name="address" placeholder="Enter address">
+            </br> </br>
+                <span class="invalidFeedback">
+                    <?php echo $data['addressError']; ?>
+                </span>
             </div>
         </div>
         </br>
@@ -60,57 +100,6 @@
     </form>
 </div>
 
-<!-----------------------------------Change Password--------------------------------------->
-<div class="heading" id="change-password"> <p> Change Password </p> </div>
-
-<div class="form-space">
-    <form action="<?php echo URLROOT; ?> /customers/customer_profile" method="POST">
-        <div class="row">
-            <div class="col-25">
-            <label for="password">Password</label>
-            </div>
-            <div class="col-75">
-            <input type="password" id="cpassword" name="cpassword" placeholder="Current Password">
-            
-            </br> </br>
-                <span class="invalidFeedback">
-                    <?php echo $data['cpasswordError']; ?>
-                </span>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-25">
-            <label for="new-password">New Password</label>
-            </div>
-            <div class="col-75">
-            <input type="password" id="new-password" name="new-password" placeholder="New Password">
-            </br> </br>
-                <span class="invalidFeedback">
-                    <?php echo $data['new-passwordError']; ?>
-                </span>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-25">
-            <label for="confirm-password">Confirm Password</label>
-            </div>
-            <div class="col-75">
-            <input type="password" id="confirm-password" name="confirm-password" placeholder="Renter New Password">
-            </br> </br>
-                <span class="invalidFeedback">
-                    <?php echo $data['confirm-passwordError']; ?>
-                </span>
-            </div>
-        </div>
-        </br>
-        <div class="row">
-            <input type="submit" value="Change Password" class="green-button">
-            <input type="submit" value="Cancel" class="pink-button" style="width:10em; margin-left:30em; padding:10px;">
-        </div>
-    </form>
-</div>
 
 </br> </br>
 <input type="reset" value="Delete Account" class="pink-button" style="float: right; margin-right:13.2em;">
