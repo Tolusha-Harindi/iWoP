@@ -4,6 +4,15 @@
     public function __construct(){
         $this->db = new Database;
     }
+      
+      public function getprofile($wid){
+        $this->db->query('SELECT * FROM worker WHERE worker_id = :worker_id');
+
+        $this->db->bind(':worker_id', $wid);
+        $row = $this->db->single();
+
+        return $row;
+    }
      
      public function getbank($wid){
         $this->db->query('SELECT * FROM bank WHERE worker_id = :worker_id');
@@ -52,6 +61,18 @@
         else{
             return false;
         }
+    }
+      
+      public function allCusAds(){
+        $this->db->query('SELECT c.fname, a.category, a.post_date, a.address, a.contact, a.title, a.description, a.start_date, a.end_date, a.budget, a.work
+                          FROM customer_ads AS a 
+                          INNER JOIN customer AS c
+                          ON a.cus_id = c.cus_id
+                          ORDER BY post_date DESC');
+       
+        $results = $this->db->resultSet(); //results inside array
+
+        return $results;
     }
 
    
