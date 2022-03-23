@@ -10,7 +10,7 @@
 
 <!--------------------------search bar------------------------------->
 <div class="wrap">
-    <div class="search" style="margin-top:-34em">
+    <div class="search" style="margin-top:-36em">
         <input type="text" class="searchTerm" placeholder="Search">
         <button type="submit" class="searchButton">
             <i class="fa fa-search"></i>

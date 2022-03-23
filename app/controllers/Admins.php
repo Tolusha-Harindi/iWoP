@@ -691,8 +691,75 @@ public function admin_faq() {
 
 
 
-/////////////////////// Admin Profile///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    public function admin_profile() {
+
+
+////////////////////////////////////////////// Admin Profile /////////////////////////////////////////////////////////////////////////////////////////////////////
+public function admin_profile() {
+
+    if(!isLoggedIn()){
+        header("Location: " . URLROOT . "/admins");
+    }
+
+    $admin = $this->adminModel->findAdminDetails();
+
+
+    $data = [
+        'admin' => $admin,
+        'name' => '',
+        'email' => '',
+        'prof_pic' => '',
+        'nameError' => '',
+        'emailError' => '',
+        'prof_picError' => ''
+        
+
+    ];
+
+    if($_SERVER['REQUEST_METHOD'] == 'POST')
+    {
+        $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+
+        $data = [
+            'admin' => $admin,
+            'name' => $_POST['name'],
+            'email' => $_POST['email'],
+            'prof_pic' =>  $_POST['prof_pic'],
+            'nameError' => '',
+            'emailError' => '',
+            'prof_picError' => ''
+            
+    
+        ];
+
+        if(empty($data['name'])){
+            $data['nameError'] = "The  name field cannot be empty";
+        }
+
+        if(empty($data['email'])){
+            $data['emailError'] = "The email field cannot be empty";
+        }
+
+         /*error messages are empty*/
+         if(empty($data['nameError']) && empty($data['emailError'])){
+            if($this->adminModel->changeProfile($data)){
+                header("Location: ". URLROOT . "/admins/admin_profile"); //redirect to
+            }else{
+                die('Something went wrong.');
+            }
+        }
+         else{
+            $this->view('admins/admin_profile', $data);
+        }
+
+    }
+
+    $this->view('admins/admin_profile', $data);
+          
+}
+
+
+/////////////////////// Admin Change password///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    public function admin_change_password() {
 
             
         $data = [
@@ -738,20 +805,20 @@ public function admin_faq() {
                 if ($data['cpassword'] == $Passworddata['admin'][0]->password ){
                     if ($this->adminModel->changePassword($data)) {
                         //Redirect to the login page
-                        header('location: ' . URLROOT . '/admins/admin_profile');
+                        header('location: ' . URLROOT . '/admins/admin_change_password');
                     } else {
                         die('Something went wrong.');
                     }  
             } else{
                 $data['cpasswordError'] = 'Passwords do not match, please try again.';
             }
-        $this-> view('admins/admin_profile', $data);
+        $this-> view('admins/admin_change_password', $data);
             }
     }
            
-            $this->view('admins/admin_profile', $data);
+    $this->view('admins/admin_change_password', $data);
           
-        }
+}
 
 
 

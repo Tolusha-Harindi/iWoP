@@ -7,11 +7,11 @@
 <link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/home/popup.css"/>
 <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
 
-<a href="#due" class="top-button1" style="margin-top: -36em; margin-left:78em;width:7em;"> Due Payments </a>
-<a href="#paid" class="top-button2" style="margin-top: -36em; margin-left:70em;"> Paid </a>
+<a href="#due" class="top-button1" style="margin-top: -38em; margin-left:78em;width:7em;"> Due Payments </a>
+<a href="#paid" class="top-button2" style="margin-top: -38em; margin-left:70em;"> Paid </a>
 
 <!------heading----------->
-<div class="category"  style="margin-top: -12em;margin-left:17em"> <p> Recent Workers list </p> </div>
+<div class="category"  style="margin-top: -13em;margin-left:17em"> <p> Recent Workers list </p> </div>
 
 
 

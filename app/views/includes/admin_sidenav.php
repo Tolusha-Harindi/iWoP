@@ -58,6 +58,12 @@
                         <li>Registered Users</li>
                     </ul>
             </a>
+
+            <a href="<?php echo URLROOT;?>/admins/admin_change_password" class='side-link'>
+                    <ul class='side-list'>
+                        <li>Change Password</li>
+                    </ul>
+            </a>
                     
             </div>
         </div>
