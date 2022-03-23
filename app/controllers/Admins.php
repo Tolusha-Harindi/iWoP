@@ -88,22 +88,174 @@
           
         }
 
-        public function admin_faq() {
 
-            //$users = $this->pageModel-> getUsers();
+
+
+
+
+/////////////////////  FAQ      //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        
+/*------------------------ Add FAQ --------------------------------------------------------------------------------------------------------------------------------------------------*/
+public function admin_faq() {
+
+            $faq = $this->adminModel->findAllQuestions();
+
+            if(!isLoggedIn()){
+                header("Location: "  . URLROOT . "/admins");
+            }
+
             $data = [
-                'title' => 'admin_faq page',
-                //'users' => $users
+                'faq' => $faq,
+                'question' => '',
+                'answer' => '',
+                'questionError' => '',
+                'answerError' => ''
 
             ];
 
+            if($_SERVER['REQUEST_METHOD'] == 'POST'){
+                $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+
+
+                $data = [
+                    'admin_id' => $_SESSION['admin_id'],
+                    'question' => trim($_POST['question']),
+                    'answer' => trim($_POST['answer']),
+                    'questionError' => '',
+                    'answerError' => ''
+    
+                ];
+
+                if(empty($data['question'])){
+                    $data['questionError'] = 'The question field cannot be empty';
+                }
+
+                if(empty($data['answer'])){
+                    $data['answerError'] = 'The answer field cannot be empty';
+                }
+
+                /*error messages are empty*/
+                if(empty($data['questionError']) && empty($data['answerError'])){
+                    if ($this->adminModel->addFAQ($data)){
+                        header("Location: " . URLROOT . "/admins/admin_faq");
+                     
+                    }else{
+                        die("Something went wrong, please try again");
+                    }
+                }else{
+                    $this->view('admins/admin_faq', $data);
+                }
+            }  
             $this->view('admins/admin_faq', $data);
           
         }
 
 
 
+/*--------------------------- Update FAQ -------------------------------------------------------------------------------------------------------------------------------------*/
+    public function update_faq($faq_id){
 
+         $faq = $this->adminModel->findFAQById($faq_id);
+
+         if(!isLoggedIn()){
+            header("Location: " . URLROOT . "/admins");
+         }elseif($faq->admin_id != $_SESSION['admin_id']){
+            header("Location: " . URLROOT . "/admins");
+
+         }
+        
+         $data = [
+            'faq' => $faq,
+            'question' => '',
+            'answer' => '',
+            'questionError' => '',
+            'answerError' => ''
+        ];
+
+
+        if($_SERVER['REQUEST_METHOD'] == 'POST'){
+            $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+
+
+            $data = [
+                'faq_id' => $faq_id,
+                'faq' => $faq,
+                'admin_id' => $_SESSION['admin_id'],
+                'question' => trim($_POST['question']),
+                'answer' => trim($_POST['answer']),
+                'questionError' => '',
+                'answerError' => ''
+
+            ];
+
+            if(empty($data['question'])){
+                $data['questionError'] = 'The question field cannot be empty';
+            }
+
+            if(empty($data['answer'])){
+                $data['answerError'] = 'The answer field cannot be empty';
+            }
+
+
+             /////////////////////////////////////////////////////////////////////////////////////////////////
+             if($data['question'] == $this->adminModel->findFAQById($faq_id)->question){
+                $data['questionError'] == 'At least change the question!';
+            }
+
+            if($data['answer'] == $this->adminModel->findFAQById($faq_id)->answer){
+                $data['answerError'] == 'At least change the answer!';
+            }
+
+            /*error messages are empty*/
+            if(empty($data['questionError']) && empty($data['answerError'])){
+                if ($this->adminModel->updateFAQ($data)){
+                    header("Location: " . URLROOT . "/admins/update_faq");
+                 
+                }else{
+                    die("Something went wrong, please try again");
+                }
+            }else{
+                $this->view('admins/update_faq', $data);
+            }
+        }  
+
+        $this->view('admins/update_faq', $data);
+
+    }
+
+
+
+/*---------------------------- Delete FAQ --------------------------------------------------------------------------------------------------------------------------*/
+        public function delete_faq($faq_id){
+            $faq = $this->adminModel->findFAQById($faq_id);
+
+            if(!isLoggedIn()){
+                header("Location: " . URLROOT . "/admins");
+            }elseif($faq->admin_id != $_SESSION['admin_id']){
+                header("Location: " . URLROOT . "/admins");
+            } 
+            
+            $data = [
+                'faq' => $faq,
+                'question' => '',
+                'answer' => '',
+                'questionError' => '',
+                'answerError' => '',
+            ];
+
+            if($_SERVER['REQUEST_METHOD'] == 'POST'){
+                $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+    
+                if($this->adminModel->deleteFAQ($faq_id)){
+                    header("Location: " . URLROOT . "/admins/admin_faq");
+                    
+                }else {
+                    die('Something went wrong');
+                }
+    
+            }
+
+        }
 
 
 
@@ -210,7 +362,7 @@
 
     
     /*------------- update manager -------------------------------------------------------------------------------------------------------------------------------------*/
-        public function update_Manager($manager_id){
+        public function update_manager($manager_id){
 
             $manager = $this->adminModel->findManagerById($manager_id);
 
