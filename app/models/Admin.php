@@ -246,4 +246,39 @@ public function deleteCategory($cat_id){
     }
 }
 
+
+
+
+
+
+
+
+///////////////////////////////////// Registered usesrs //////////////////////////////////////////////////////////////////////
+    public function findAllComapny(){
+        
+        $this->db->query('SELECT * FROM company');
+
+        $results = $this->db->resultSet();
+
+        return $results;
+    }
+
+    public function findAllCustomer(){
+        
+        $this->db->query('SELECT * FROM customer');
+
+        $results = $this->db->resultSet();
+
+        return $results;
+    }
+
+    public function findAllWorker(){
+        
+        $this->db->query('SELECT * FROM worker');
+
+        $results = $this->db->resultSet();
+
+        return $results;
+    }
+
 }

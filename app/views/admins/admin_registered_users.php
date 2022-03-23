@@ -19,53 +19,30 @@
 <!------heading----------->
 <div class="heading" id="company" style="margin-bottom:1.5em;"> <p> Company list </p> </div>
 
-<!------------------- customer table-------------------->
+<!------------------- company table-------------------->
     <div class= "table"> 
         <div class="table-wrapper" style="margin-top:2em;">
             <table style="border-spacing: 25px" class="fl-table">
                 <thead>
                     <tr>
                         <th>Profile Pic</th>
-                        <th>Name</th>
-                        <th>Registered date</th>
-                        <th>Last Active</th>
-                        <th>Address</th>
+                        <th>Company Name</th>
+                        <!----<th>Registered date</th>---->
+                        <th>Email</th>
+                        <th>Contact</th>
                     </tr>
                 </thead>
                 <tbody>
                 
+                    <?php foreach($data['com'] as $com): ?>
                     <tr>
-                        <td><img src="<?php echo URLROOT;?>/public/img/company.png" class="table-image" style="border-radius: 50px;"></td>
-                        <td>Dream wave</td>
-                        <td> 28/10/2021</td>
-                        <td> 5 d ago</td>
-                        <td> No 11, Galle Road, Galle</td>
+                        <td><img src="<?php echo URLROOT ?> /public/img/<?php echo $com->prof_pic; ?>" class="table-image" style="border-radius: 50px;"></td>
+                        <td> <?php echo $com->com_name; ?></td>
+                        <!-----<td> <?php //echo date('j F Y', strtotime($com->add_date)) ?> </td> ----->
+                        <td> <?php echo $com->email; ?></td>
+                        <td> <?php echo $com->contact; ?></td>
                     </tr>
-
-                    <tr>
-                        <td><img src="<?php echo URLROOT;?>/public/img/company.png" class="table-image" style="border-radius: 50px;"></td>
-                        <td>Dream wave</td>
-                        <td> 28/10/2021</td>
-                        <td> 5 d ago</td>
-                        <td> No 11, Galle Road, Galle</td>
-                    </tr>
-
-                    <tr>
-                        <td><img src="<?php echo URLROOT;?>/public/img/company.png" class="table-image" style="border-radius: 50px;"></td>
-                        <td>Dream wave</td>
-                        <td> 28/10/2021</td>
-                        <td> 5 d ago</td>
-                        <td> No 11, Galle Road, Galle</td>
-                    </tr>
-
-                     <tr>
-                        <td><img src="<?php echo URLROOT;?>/public/img/company.png" class="table-image" style="border-radius: 50px;"></td>
-                        <td>Dream wave</td>
-                        <td> 28/10/2021</td>
-                        <td> 5 d ago</td>
-                        <td> No 11, Galle Road, Galle</td>
-                    </tr>
-
+                    <?php endforeach; ?>
                 </tbody>
             </table> 
         </div> 
@@ -84,46 +61,24 @@
                 <thead>
                     <tr>
                         <th>Profile Pic</th>
-                        <th>Name</th>
-                        <th>Registered date</th>
-                        <th>Last Active</th>
-                        <th>Address</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Contact</th>
+                        <th>Email</th>
                     </tr>
                 </thead>
                 <tbody>
-                
+                <?php foreach($data['cus'] as $cus): ?>
                     <tr>
-                        <td><img src="<?php echo URLROOT;?>/public/img/admin.jpg" class="table-image" style="border-radius: 50px;"></td>
-                        <td>Kasun Perera</td>
-                        <td> 28/10/2021</td>
-                        <td> 5 d ago</td>
-                        <td> No 11, Galle Road, Galle</td>
+                        <td><img src="<?php echo URLROOT ?> /public/img/<?php echo $cus->prof_pic; ?>" class="table-image" style="border-radius: 50px;"></td>
+                        <td><?php echo $cus->fname; ?></td>
+                        <td><?php echo $cus->lname; ?></td>
+                        <td><?php echo $cus->contact; ?></td>
+                        <td><?php echo $cus->email; ?></td>
                     </tr>
+                <?php endforeach; ?>
 
-                    <tr>
-                        <td><img src="<?php echo URLROOT;?>/public/img/w1.jpg" class="table-image" style="border-radius: 50px;"></td>
-                        <td>Kasun Perera</td>
-                        <td> 28/10/2021</td>
-                        <td> 5 d ago</td>
-                        <td> No 11, Galle Road, Galle</td>
-                    </tr>
-
-                    <tr>
-                        <td><img src="<?php echo URLROOT;?>/public/img/w2.jpg" class="table-image" style="border-radius: 50px;"></td>
-                        <td>Kasun Perera</td>
-                        <td> 28/10/2021</td>
-                        <td> 5 d ago</td>
-                        <td> No 11, Galle Road, Galle</td>
-                    </tr>
-
-                     <tr>
-                        <td><img src="<?php echo URLROOT;?>/public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td>
-                        <td>Kasun Perera</td>
-                        <td> 28/10/2021</td>
-                        <td> 5 d ago</td>
-                        <td> No 11, Galle Road, Galle</td>
-                    </tr>
-
+                   
                 </tbody>
             </table> 
         </div> 
@@ -140,45 +95,22 @@
             <thead>
                 <tr>
                     <th>Profile Pic</th>
-                    <th>Name</th>
-                    <th>Registered date</th>
-                    <th>Last Active</th>
-                    <th>Category</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Contact</th>
+                    <th>Email</th>
                 </tr>
             </thead>
             <tbody>
-            
-                <tr>
-                    <td><img src="<?php echo URLROOT;?>/public/img/admin.jpg" class="table-image" style="border-radius: 50px;"></td>
-                    <td>Kasun Perera</td>
-                    <td> 28/10/2021</td>
-                    <td> 5 d ago</td>
-                    <td> Plumber</td>
-                </tr>
-
-                <tr>
-                    <td><img src="<?php echo URLROOT;?>/public/img/w1.jpg" class="table-image" style="border-radius: 50px;"></td>
-                    <td>Kasun Perera</td>
-                    <td> 28/10/2021</td>
-                    <td> 5 d ago</td>
-                    <td>Electrician</td>
-                </tr>
-
-                <tr>
-                    <td><img src="<?php echo URLROOT;?>/public/img/w2.jpg" class="table-image" style="border-radius: 50px;"></td>
-                    <td>Kasun Perera</td>
-                    <td> 28/10/2021</td>
-                    <td> 5 d ago</td>
-                    <td> Designer</td>
-                </tr>
-
+                <?php foreach($data['wor'] as $wor): ?>
                     <tr>
-                    <td><img src="<?php echo URLROOT;?>/public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td>
-                    <td>Kasun Perera</td>
-                    <td> 28/10/2021</td>
-                    <td> 5 d ago</td>
-                    <td> Technician</td>
-                </tr>
+                        <td><img src="<?php echo URLROOT?>/public/img/<?php echo $wor->prof_pic; ?>" class="table-image" style="border-radius: 50px;"></td>
+                        <td> <?php echo $wor->fname; ?></td>
+                        <td> <?php echo $wor->lname; ?></td>
+                        <td> <?php echo $wor->contact; ?></td>
+                        <td> <?php echo $wor->email; ?></td>
+                    </tr>
+                <?php endforeach; ?>
 
             </tbody>
         </table> 

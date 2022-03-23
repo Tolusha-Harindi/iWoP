@@ -168,6 +168,14 @@
 
 
 
+
+
+
+
+
+
+
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         public function admin_complaints() {
 
@@ -182,6 +190,17 @@
           
         }
 
+
+
+
+
+
+
+
+
+
+
+
         public function admin_dashboard() {
 
             //$users = $this->pageModel-> getUsers();
@@ -194,6 +213,12 @@
             $this->view('admins/admin_dashboard', $data);
           
         }
+
+
+
+
+
+
 
 
 
@@ -672,12 +697,26 @@ public function admin_faq() {
         }
 
 
+
+
+
+
+
+
+
+    
+
+    ////////////////////////  Registered Users //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         public function admin_registered_users() {
 
-            //$users = $this->pageModel-> getUsers();
+            $com  = $this->adminModel->findAllComapny();
+            $cus = $this->adminModel->findAllCustomer();
+            $wor = $this->adminModel->findAllWorker();
+          
             $data = [
-                'title' => 'admin_registered_users page',
-                //'users' => $users
+                'com' => $com,
+                'cus' => $cus,
+                'wor' => $wor
 
             ];
 
