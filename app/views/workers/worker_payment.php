@@ -18,52 +18,28 @@
         <table style="border-spacing: 25px" class="fl-table">
             <thead>
                 <tr>
-                    <th>Profile Pic</th>
+                    <!-- <th>Profile Pic</th> -->
                     <th>Name</th>
                     <th>Amount</th>
+                    <th>Contact</th>
                     <th>Completed Date</th>
                     <th>Status</th>
-                    <th>Message</th>
                 </tr>
             </thead>
 
             <tbody>
-                
+            <?php foreach($data['gets'] as $gets):?> 
                 <tr>
-                    <td><img src="<?php echo URLROOT;?> /public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td>
-                    <td>Vishnu Gowtham</td>
-                    <td style="color: #1E3CC0;">5000.00</td>
-                    <td>20/11/2021</td>
+                    <!-- <td><img src="<?php echo URLROOT;?> /public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td> -->
+                    <td><?php echo $gets->cus_name ?></td>
+                    <td style="color: #1E3CC0;"><?php echo $gets->budget ?></td>
+                    <td><?php echo $gets->contact_no ?></td>
+                    <td><?php echo $gets->date . $gets->end_time ?></td>
                     <td> <input type="reset" class="pink-out-button" value="Recieved"/></td>
-                    <td> <input type="reset" class="blue-out-button" value="Message"/></td>
                 </tr>
-
-                <tr>
-                    <td><img src="<?php echo URLROOT;?> /public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td>
-                    <td>Vishnu Gowtham</td>
-                    <td style="color: #1E3CC0;">5000.00</td>
-                    <td>20/11/2021</td>
-                    <td> <input type="reset" class="pink-out-button" value="Recieved"/></td>
-                    <td> <input type="reset" class="blue-out-button" value="Message"/></td>
-                </tr>
-
-                <tr>
-                    <td><img src="<?php echo URLROOT;?> /public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td>
-                    <td>Vishnu Gowtham</td>
-                    <td style="color: #1E3CC0;">5000.00</td>
-                    <td>20/11/2021</td>
-                    <td> <input type="reset" class="pink-out-button" value="Recieved"/></td>
-                    <td> <input type="reset" class="blue-out-button" value="Message"/></td>
-                </tr>
-
-                <tr>
-                    <td><img src="<?php echo URLROOT;?> /public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td>
-                    <td>Vishnu Gowtham</td>
-                    <td style="color: #1E3CC0;">5000.00</td>
-                    <td>20/11/2021</td>
-                    <td> <input type="reset" class="pink-out-button" value="Recieved"/></td>
-                    <td> <input type="reset" class="blue-out-button" value="Message"/></td>
-                </tr>
+            
+            <?php endforeach;?>
+        
             </tbody>
         </table> 
     </div> 
@@ -77,67 +53,33 @@
             <table class="fl-table" style="border-spacing: 25px;" >
                 <thead>
                     <tr>
-                        <th>Profile Pic</th>
-                        <th>Name</th>
+                        <!-- <th>Profile Pic</th> -->
+                        <th>FirstName</th>
+                        <th>LastName</th>
                         <th>Date</th>
                         <th>Amount</th>
-                        <th>Category</th>
-                        <th>Message</th>
+                        <th>Contact</th>
                     </tr>
                 </thead>
 
                 <tbody>
-
+                <?php foreach($data['rows'] as $rows):?>
                 <tr>
-                    <td><img src="<?php echo URLROOT;?> /public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td>
-                    <td>Vishnu Gowtham</td>
-                    <td>20/11/2021</td>
-                    <td style="color: #1E3CC0;">5000.00</td>
-                    <td>Plumber</td>
-                    <td> <input type="reset" class="blue-out-button" value="Message"/></td>
+                    <!-- <td><img src="<?php echo URLROOT;?> /public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td> -->
+                    <td><?php echo $rows->fname ?></td>
+                    <td><?php echo $rows->lname; ?></td>
+                    <td><?php echo $rows->paid_at; ?></td>
+                    <td style="color: #1E3CC0;">Rs.<?php echo $rows->amount; ?>.00</td>
+                    <td><?php echo $rows->contact_no; ?></td>
                 </tr>
 
-                <tr>
-                    <td><img src="<?php echo URLROOT;?> /public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td>
-                    <td>Vishnu Gowtham</td>
-                    <td>20/11/2021</td>
-                    <td style="color: #1E3CC0;">5000.00</td>
-                    <td>Plumber</td>
-                    <td> <input type="reset" class="blue-out-button" value="Message"/></td>
-                </tr>
-
-                <tr>
-                    <td><img src="<?php echo URLROOT;?> /public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td>
-                    <td>Vishnu Gowtham</td>
-                    <td>20/11/2021</td>
-                    <td style="color: #1E3CC0;">5000.00</td>
-                    <td>Plumber</td>
-                    <td> <input type="reset" class="blue-out-button" value="Message"/></td>
-                </tr>
-
-                <tr>
-                    <td><img src="<?php echo URLROOT;?> /public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td>
-                    <td>Vishnu Gowtham</td>
-                    <td>20/11/2021</td>
-                    <td style="color: #1E3CC0;">5000.00</td>
-                    <td>Plumber</td>
-                    <td> <input type="reset" class="blue-out-button" value="Message"/></td>
-                </tr>
-
-                <tr>
-                    <td><img src="<?php echo URLROOT;?> /public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td>
-                    <td>Vishnu Gowtham</td>
-                    <td>20/11/2021</td>
-                    <td style="color: #1E3CC0;">5000.00</td>
-                    <td>Plumber</td>
-                    <td> <input type="reset" class="blue-out-button" value="Message"/></td>
-                </tr>
-
+                <?php endforeach;
+                //}?>
                 </tbody>
             </table> 
         </div> 
     </div>
- 
+   
     <br/><br/>
     
 <!---------------------------Arrow button----------------------------------------->
