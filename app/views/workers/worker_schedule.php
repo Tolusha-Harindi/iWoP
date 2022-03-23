@@ -162,55 +162,23 @@
                     <th>Location</th>
                     <th>Date</th>
                     <th>Time</th>
-                    <th>Category</th>
-                    <th>Message</th>
+                    <th>Schedule Time</th>
                     <th>Finish</th>
                 </tr>
             </thead>
 
             <tbody>
+            <?php foreach($data['work'] as $work): ?>
+                <tr>
+                    <td><img src="<?php $work->prof_pic?>" class="table-image" style="border-radius: 50px;"></td>
+                    <td><?php echo $work->address?></td>
+                    <td><?php echo $work->date?></td>
+                    <td><?php echo $work->start_time . "-" . $work->end_time?></td>
+                    <td><?php echo $work->created_at?></td>
+                    <td> <input type="reset" class="pink-out-button" value="Finish"/></td>
+                </tr>
+                <?php endforeach; ?>
                 
-                <tr>
-                    <td><img src="<?php echo URLROOT;?> /public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td>
-                    <td>Galle</td>
-                    <td>10/11/2021</td>
-                    <td>8.00AM-9.00AM</td>
-                    <td>Driver</td>
-                    <td> <input type="reset" class="blue-out-button" value="Message"/></td>
-                    <td> <input type="reset" class="pink-out-button" value="Finish"/></td>
-                </tr>
-
-                <tr>
-                    <td><img src="<?php echo URLROOT;?> /public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td>
-                    <td>Galle</td>
-                    <td>10/11/2021</td>
-                    <td>8.00AM-9.00AM</td>
-                    <td>Driver</td>
-                    <td> <input type="reset" class="blue-out-button" value="Message"/></td>
-                    <td> <input type="reset" class="pink-out-button" value="Finish"/></td>
-                </tr>
-
-                <tr>
-                    <td><img src="<?php echo URLROOT;?> /public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td>
-                    <td>Galle</td>
-                    <td>10/11/2021</td>
-                    <td>8.00AM-9.00AM</td>
-                    <td>Driver</td>
-                    <td> <input type="reset" class="blue-out-button" value="Message"/></td>
-                    <td> <input type="reset" class="pink-out-button" value="Finish"/></td>
-                </tr>
-
-                <tr>
-                    <td><img src="<?php echo URLROOT;?> /public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td>
-                    <td>Galle</td>
-                    <td>10/11/2021</td>
-                    <td>8.00AM-9.00AM</td>
-                    <td>Driver</td>
-                    <td> <input type="reset" class="blue-out-button" value="Message"/></td>
-                    <td> <input type="reset" class="pink-out-button" value="Finish"/></td>
-                </tr>
-
-
             </tbody>
         </table> 
     </div> 
