@@ -261,8 +261,11 @@
             if(!isLoggedIn()){
                 header("Location: " . URLROOT . "/workers");
             }
+            
+            $work = $this->workerModel->pendingWork();
 
             $data = [
+                'work'=>$work,
                 'name' => '',
                 'address' => '',
                 'contact' => '',
