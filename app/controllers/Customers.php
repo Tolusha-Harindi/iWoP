@@ -6,12 +6,12 @@
 
         public function customer_category() {
 
-            //$users = $this->pageModel-> getUsers();
-            $data = [
-                'title' => 'customer_category page',
-                //'users' => $users
+            $cate = $this->customerModel->findAllCategory();
 
+            $data = [
+                'cate' => $cate
             ];
+            
 
             $this->view('customers/customer_category', $data);
           
@@ -30,18 +30,86 @@
           
         }
 
+
+
+
+
+
+
+
+
+///////////////////////////////////////////// Customer Profile //////////////////////////////////////////////////////////////////////////////////////////
         public function customer_profile() {
 
-            //$users = $this->pageModel-> getUsers();
             $data = [
-                'title' => 'customer_profile page',
-                //'users' => $users
-
+                'cpassword' =>'',
+                'new-password' =>'',
+                'confirm-password' =>'',
+                'cpasswordError' =>'',
+                'new-passwordError' =>'',
+                'confirm-passwordError' =>'',
             ];
+    
+            if($_SERVER['REQUEST_METHOD'] == 'POST')
+            {
+                $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+    
+                $data = [
+                    
+                    'cpassword' => $_POST['cpassword'],
+                    'new-password' => $_POST['new-password'],
+                    'confirm-password' => $_POST['confirm-password'],
+                    'cpasswordError' =>'',
+                    'new-passwordError' =>'',
+                    'confirm-passwordError' =>'',
+                ];
+    
+    
+                //Validate confirm password
+                if (empty($data['confirm-password'])) {
+                    $data['confirm-passwordError'] = 'Please enter confirm password.';
+                } else {
+                    if ($data['new-password'] != $data['confirm-password']) {
+                    $data['confirm-passwordError'] = 'Passwords do not match, please try again.';
+                    }
+                }
+
+                $data['cpassword'] = password_hash($data['cpassword'], PASSWORD_DEFAULT);
+    
+                if(empty($data['confirm-passwordError'])){
+                    $customer = $this->customerModel->findCustomerPassword();
+    
+                    $Passworddata = [
+                        'customer' => $customer
+                    ];
+    
+                    if ($data['cpassword'] == $Passworddata['customer'][0]->password ){
+                        if ($this->customerModel->changePassword($data)) {
+                            //Redirect to the login page
+                            header('location: ' . URLROOT . '/customers/customer_profile');
+                        } else {
+                            die('Something went wrong.');
+                        }  
+                } else{
+                    $data['cpasswordError'] = 'Passwords do not match, please try again.';
+                }
+            $this-> view('customers/customer_profile', $data);
+                }
+        }
+               
 
             $this->view('customers/customer_profile', $data);
           
         }
+
+
+
+
+
+
+
+
+
 
         public function customer_recent_workers() {
 
@@ -390,17 +458,5 @@
           
         }
 
-        public function customer_chat() {
-
-            //$users = $this->pageModel-> getUsers();
-            $data = [
-                'title' => 'customer_chat page',
-                //'users' => $users
-
-            ];
-
-            $this->view('customers/customer_chat', $data);
-          
-        }
-    
+        
 }

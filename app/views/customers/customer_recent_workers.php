@@ -7,11 +7,11 @@
 <link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/home/popup.css"/>
 <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
 
-<a href="#due" class="top-button1" style="margin-top: -41em; margin-left:78em;width:7em;"> Due Payments </a>
-<a href="#paid" class="top-button2" style="margin-top: -41em; margin-left:70em;"> Paid </a>
+<a href="#due" class="top-button1" style="margin-top: -36em; margin-left:78em;width:7em;"> Due Payments </a>
+<a href="#paid" class="top-button2" style="margin-top: -36em; margin-left:70em;"> Paid </a>
 
 <!------heading----------->
-<div class="category"  style="margin-top: -14em;margin-left:17em"> <p> Recent Workers list </p> </div>
+<div class="category"  style="margin-top: -12em;margin-left:17em"> <p> Recent Workers list </p> </div>
 
 
 
@@ -29,7 +29,6 @@
                     <th>Name</th>
                     <th>Status</th>
                     <th>Pay</th>
-                    <th>Message</th>
                 </tr>
             </thead>
             <tbody>
@@ -39,7 +38,6 @@
                     <td>Kasun Perera</td>
                     <td style="color: #F10B67;">Due Payment</td>
                     <td> <button  id="myBtn" class="yellow-out-button">Pay </button></td>
-                    <td> <input type="reset" class="blue-out-button" value="Message"/></td>
                 </tr>
 
                 <tr>
@@ -47,7 +45,6 @@
                     <td>Nishini Guruge</td>
                     <td style="color: #F10B67;">Due Payment</td>
                     <td> <button  id="myBtn" class="yellow-out-button">Pay </button></td>
-                    <td> <input type="reset" class="blue-out-button" value="Message"/></td>
                 </tr>
 
                 <tr>
@@ -55,7 +52,6 @@
                     <td>Sandani Perera</td>
                     <td style="color: #F10B67;">Due Payment</td>
                     <td> <button  id="myBtn" class="yellow-out-button">Pay </button></td>
-                    <td> <input type="reset" class="blue-out-button" value="Message"/></td>
                 </tr>
 
                     <tr>
@@ -63,7 +59,6 @@
                     <td>Nimal Perera</td>
                     <td style="color: #F10B67;">Due Payment</td>
                     <td> <button  id="myBtn" class="yellow-out-button">Pay </button></td>
-                    <td> <input type="reset" class="blue-out-button" value="Message"/></td>
                 </tr>
 
             </tbody>
@@ -155,7 +150,6 @@
                     <th>Date</th>
                     <th>Status</th>
                     <th>Category</th>
-                    <th>Message</th>
                 </tr>
             </thead>
             <tbody>
@@ -166,7 +160,6 @@
                     <td>10/10/2021</td>
                     <td style="color: #0526BA;">Paid</td>
                     <td>Plumber</td>
-                    <td> <input type="reset" class="blue-out-button" value="Message"/></td>
                 </tr>
 
                 <tr>
@@ -175,7 +168,6 @@
                     <td>10/10/2021</td>
                     <td style="color: #0526BA;">Paid</td>
                     <td>Plumber</td>
-                    <td> <input type="reset" class="blue-out-button" value="Message"/></td>
                 </tr>
 
                 <tr>
@@ -184,7 +176,6 @@
                     <td>10/10/2021</td>
                     <td style="color: #0526BA;">Paid</td>
                     <td>Plumber</td>
-                    <td> <input type="reset" class="blue-out-button" value="Message"/></td>
                 </tr>
 
                     <tr>
@@ -193,7 +184,6 @@
                     <td>10/10/2021</td>
                     <td style="color: #0526BA;">Paid</td>
                     <td>Plumber</td>
-                    <td> <input type="reset" class="blue-out-button" value="Message"/></td>
                 </tr>
 
             </tbody>

@@ -19,14 +19,9 @@
 
     <div class="sidebar">
         <div class="description">
-        <a href="<?php echo URLROOT;?>/customers/customer_dashboard" class='side-link-active'>
-                <ul class='side-list-active'>
-                    <li>Dashboard</li>
-                </ul>
-        </a>
-        <a href="<?php echo URLROOT;?>/customers/customer_chat" class='side-link'>
+        <a href="<?php echo URLROOT;?>/customers/customer_dashboard" class='side-link'>
                 <ul class='side-list'>
-                    <li>Message</li>
+                    <li>Dashboard</li>
                 </ul>
         </a>
         <a href="<?php echo URLROOT;?>/customers/customer_responses" class='side-link'>

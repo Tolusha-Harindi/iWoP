@@ -87,4 +87,49 @@ class Customer{
             return false;
         }
     }
+
+
+
+
+
+
+    ////////////////////////////////// Customer Profile////////////////////////////////////////////////////////////////////////////////////
+
+    /*----------------- customer change password-----------------------------------------------------------------------------------------------------*/
+
+    public function findCustomerPassword(){
+        $this->db->query("SELECT password FROM customer Where cus_id = '{$_SESSION['cus_id']}'");
+
+        $results = $this->db->resultSet();
+        
+        return $results;
+    }
+
+
+    public function changePassword($data){
+
+        $this->db->query("UPDATE customer SET password = :newpassword WHERE cus_id = '{$_SESSION['cus_id']}'");
+
+        $this->db->bind(':newpassword', $data['new-password']);
+     
+
+        if($this->db->execute()){
+            return true;
+        }else {
+            return false;
+        }
+    
+    }
+
+
+
+    ////////////////////////  View added Categories ///////////////////////////////////////////////////////////////////////////////////////////////
+    public function findAllCategory(){
+        $this->db->query('SELECT * FROM category');
+
+        $results = $this->db->resultSet();
+
+        return $results;
+
+    }
 }
