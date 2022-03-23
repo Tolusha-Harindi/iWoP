@@ -683,15 +683,72 @@ public function admin_faq() {
           
         }
 
-        public function admin_profile() {
 
-            //$users = $this->pageModel-> getUsers();
+
+
+
+
+
+
+
+/////////////////////// Admin Profile///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    public function admin_profile() {
+
+            
+        $data = [
+            'cpassword' =>'',
+            'new-password' =>'',
+            'confirm-password' =>'',
+            'cpasswordError' =>'',
+            'new-passwordError' =>'',
+            'confirm-passwordError' =>'',
+        ];
+
+        if($_SERVER['REQUEST_METHOD'] == 'POST')
+        {
+            $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+
             $data = [
-                'title' => 'admin_profile page',
-                //'users' => $users
-
+                
+                'cpassword' => $_POST['cpassword'],
+                'new-password' => $_POST['new-password'],
+                'confirm-password' => $_POST['confirm-password'],
+                'cpasswordError' =>'',
+                'new-passwordError' =>'',
+                'confirm-passwordError' =>'',
             ];
 
+
+            //Validate confirm password
+            if (empty($data['confirm-password'])) {
+                $data['confirm-passwordError'] = 'Please enter confirm password.';
+            } else {
+                if ($data['new-password'] != $data['confirm-password']) {
+                $data['confirm-passwordError'] = 'Passwords do not match, please try again.';
+                }
+            }
+
+            if(empty($data['confirm-passwordError'])){
+                $admin = $this->adminModel->findAdminPassword();
+
+                $Passworddata = [
+                    'admin' => $admin
+                ];
+
+                if ($data['cpassword'] == $Passworddata['admin'][0]->password ){
+                    if ($this->adminModel->changePassword($data)) {
+                        //Redirect to the login page
+                        header('location: ' . URLROOT . '/admins/admin_profile');
+                    } else {
+                        die('Something went wrong.');
+                    }  
+            } else{
+                $data['cpasswordError'] = 'Passwords do not match, please try again.';
+            }
+        $this-> view('admins/admin_profile', $data);
+            }
+    }
+           
             $this->view('admins/admin_profile', $data);
           
         }

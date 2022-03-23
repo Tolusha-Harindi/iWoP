@@ -281,4 +281,33 @@ public function deleteCategory($cat_id){
         return $results;
     }
 
+
+
+    ////////////////////////////////// Admin Profile////////////////////////////////////////////////////////////////////////////////////
+
+    /*----------------- admin change password-----------------------------------------------------------------------------------------------------*/
+
+    public function findAdminPassword(){
+        $this->db->query("SELECT password FROM admin Where admin_id = '{$_SESSION['admin_id']}'");
+
+        $results = $this->db->resultSet();
+        
+        return $results;
+    }
+
+
+    public function changePassword($data){
+
+        $this->db->query("UPDATE admin SET password = :newpassword WHERE admin_id = '{$_SESSION['admin_id']}'");
+
+        $this->db->bind(':newpassword', $data['new-password']);
+     
+
+        if($this->db->execute()){
+            return true;
+        }else {
+            return false;
+        }
+    
+    }
 }
