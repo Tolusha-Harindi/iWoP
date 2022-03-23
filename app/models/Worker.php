@@ -13,6 +13,29 @@
 
         return $row;
     }
+      
+      public function findWorkerPassword(){
+        $this->db->query("SELECT password FROM worker Where worker_id = '{$_SESSION['worker_id']}'");
+
+        $results = $this->db->resultSet();
+        
+        return $results;
+    }
+
+
+    public function changePassword($data){
+        $this->db->query("UPDATE worker SET password = :newpassword WHERE worker_id = '{$_SESSION['worker_id']}'");
+
+        $this->db->bind(':newpassword', $data['new-password']);
+     
+
+        if($this->db->execute()){
+            return true;
+        }else {
+            return false;
+        }
+    
+    }
      
      public function getbank($wid){
         $this->db->query('SELECT * FROM bank WHERE worker_id = :worker_id');
