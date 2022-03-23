@@ -18,10 +18,11 @@ public function findAllManager(){
 
 
 public function addManager($data){
-    $this->db->query('INSERT INTO manager (name, nic, contact, email, address, password, profile) VALUES (:name, :nic, :contact, :email, :address, :password, :profile)');
+    $this->db->query('INSERT INTO manager (admin_id, name, nic, contact, email, address, password, profile) VALUES (:admin_id, :name, :nic, :contact, :email, :address, :password, :profile)');
 
     //Bind values
-    //$this->db->bind('admin_id', $data['admin_id']);
+    $this->db->bind('admin_id', $data['admin_id']);
+    //$this->db->bind('manager_id', $data['manager_id']);
     $this->db->bind('name', $data['name']);
     $this->db->bind('nic', $data['nic']);
     $this->db->bind('contact', $data['contact']);
@@ -188,9 +189,9 @@ public function findAllQuestions(){
     
 //////////  Add category ///////////////////////////////////////////////////////////////////////////////////////////////////////
     public function addCategory($data){
-        $this->db->query('INSERT INTO category (/*admin_id,*/ category, logo) VALUES (/*:admin_id,*/ :category, :logo)');
+        $this->db->query('INSERT INTO category (admin_id, category, logo) VALUES (:admin_id, :category, :logo)');
 
-        // $this->db->bind(':admin_id', $data['admin_id']);
+        $this->db->bind(':admin_id', $data['admin_id']);
         $this->db->bind(':category', $data['category']);
         $this->db->bind(':logo', $data['logo']);
 
@@ -202,4 +203,47 @@ public function findAllQuestions(){
 
     }
     
+    public function findCategoryById($cat_id){
+        $this->db->query('SELECT * FROM category WHERE cat_id = :cat_id');
+
+        //Bind values
+        $this->db->bind(':cat_id', $cat_id);
+
+        $row = $this->db->single();
+        
+        return $row;
+    }
+
+
+
+/*--------------------------- Update category ----------------------------------------------------------------------------------*/
+public function updateCategory($data){
+
+    $this->db->query('UPDATE category SET category = :category, logo = :logo  WHERE cat_id = :cat_id');
+
+    $this->db->bind(':cat_id', $data['cat_id']);
+    $this->db->bind(':category', $data['category']);
+    $this->db->bind(':logo', $data['logo']);
+
+    if ($this->db->execute()) {
+        return true;
+    } else {
+        return false;
+    }
+
+}
+
+/*-------------------------- Delete category --------------------------------------------------------------------*/
+public function deleteCategory($cat_id){
+    $this->db->query('DELETE FROM category WHERE cat_id = :cat_id');
+
+    $this->db->bind(':cat_id', $cat_id);
+
+    if ($this->db->execute()) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
 }
