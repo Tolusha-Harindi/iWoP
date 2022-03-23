@@ -1,7 +1,7 @@
 <?php
     class includes extends Controller {
         public function __construct() {
-            //$this->pageModel = $this->model('Page');
+            $this->includModel = $this->model('Includ');
         }
 
         public function topnav() {
@@ -45,11 +45,13 @@
 
         public function admin_sidenav() {
 
-            //$users = $this->pageModel-> getUsers();
-            $data = [
-                'title' => 'admin_sidenav',
-                //'users' => $users
+            $adname = $this->includModel->findName();
 
+            
+            
+            $data = [
+                'adname' => $adname
+                
             ];
 
             $this->view('includes/admin_sidenav', $data);
