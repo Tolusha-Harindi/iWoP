@@ -30,6 +30,9 @@
             </div>
         </div>
 
+        <!--<input type="hidden" name="faq" value="<?php //echo $data['faq']->faq_id;?>"> --->
+
+
         <div class="row">
             <div class="col-25">
             <label for="answer">Answer</label>

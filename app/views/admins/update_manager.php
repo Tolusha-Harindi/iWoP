@@ -111,7 +111,8 @@
 
         </br>
         <div class="row">
-            <input type="submit" value="Edit" class="green-button">
+                        <input type="submit" value="Edit" class="green-button">
+                        <a class="pink-button" style="text-decoration:none; font-size:13px; margin-left:2em; margin-top:2.5em; padding: 9px 24px; display:inline;" href="<?php echo URLROOT; ?> /admins/admin_manager/"> Cancel </a>
         </div>
     </form>
 </div>

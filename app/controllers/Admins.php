@@ -8,17 +8,17 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         public function admin_category() {
 
-            // if(!isLoggedIn()){
-            //     header("Location: " . URLROOT . "/admins");
-            // }
-
             $add = $this->adminModel->findAllCategory();
+
+             if(!isLoggedIn()){
+                 header("Location: " . URLROOT . "/admins");
+             }
 
             $data = [
                 'add'  => $add,
                 'category' => '',
                 'logo' => '',
-                'add_date' => '',
+                //'add_date' => '',
                 'categoryError' => '',
                 'logoError' => ''
             ];
@@ -27,8 +27,8 @@
                 $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING); 
 
                 $data = [
-                    'add'  => $add,
-                    // 'admin_id' => $_SESSION['admin_id'],
+                    //'add'  => $add,
+                    'admin_id' => $_SESSION['admin_id'],
                     'category' => trim($_POST['category']),
                     'logo' => trim($_POST['logo']),
                     'categoryError' => '',
@@ -55,6 +55,113 @@
 
             $this->view('admins/admin_category', $data);
           
+        }
+
+
+
+
+        /*---------------------- Update category -----------------------------------------------------------------------------------------------------------------------------------*/
+        public function update_category($cat_id){
+
+            $add = $this->adminModel->findCategoryById($cat_id);
+
+            if(!isLoggedIn()){
+                header("Location:" . URLROOT . "/admins");
+            }elseif($add->admin_id != $_SESSION['admin_id']){
+                header("Location: " . URLROOT . "/admins");
+            }
+
+            $data = [
+                'add' => $add,
+                'category' => '',
+                'logo' => '',
+                'categoryError' => '',
+                'logoError' => ''
+            ];
+
+            
+            if($_SERVER['REQUEST_METHOD'] == 'POST'){
+                $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+        
+            $data = [
+                'cat_id' => $cat_id,
+                'add' => $add,
+                'admin_id' => $_SESSION['admin_id'],
+                'category' => trim($_POST['category']),
+                'logo' => trim($_POST['logo']),
+                'categoryError' => '',
+                'logoError' => ''
+            ];
+
+            if(empty($data['category'])){
+                $data['categoryError'] = "The category field cannot be empty";
+            }
+
+            if(empty($data['logo'])){
+                $data['logoError'] = "The logo field cannot be empty";
+            }
+
+            //////////////////////////////////////////////////////////////////////////////////////////////////////////
+            if($data['category'] == $this->adminModel->findCategoryById($cat_id)->category){
+                $data['categoryError'] == 'At least change the category';
+            }
+
+            if($data['logo'] == $this->adminModel->findCategoryById($cat_id)->logo){
+                $data['logoError'] == 'At least change the logo';
+            }
+
+              /*check error messages are empty*/
+              if(empty($data['categoryError']) && empty($data['logoError'])){
+                if($this->adminModel->updateCategory($data)){
+                    header("Location: ". URLROOT . "/admins/admin_category"); //redirect to
+                }else{
+                    die("Something went wrong, please try again");
+                    
+                }
+            }else{
+                $this->view('admins/update_category', $data);
+            }
+        }
+
+            $this->view('admins/update_category', $data);     
+
+        }
+
+
+
+
+        /*---------------------------- Delete category --------------------------------------------------------------------------------------------------------------------------*/
+        public function delete_category($cat_id){
+            $add = $this->adminModel->findCategoryById($cat_id);
+
+            if(!isLoggedIn()){
+                header("Location: " . URLROOT . "/admins");
+            }elseif($add->admin_id != $_SESSION['admin_id']){
+                header("Location: " . URLROOT . "/admins");
+            } 
+            
+            $data = [
+                'add' => $add,
+                'category' => '',
+                'logo' => '',
+                'add_date' => '',
+                'categoryError' => '',
+                'logoError' => '',
+                'add_dateError' => ''
+            ];
+
+            if($_SERVER['REQUEST_METHOD'] == 'POST'){
+                $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+    
+                if($this->adminModel->deleteCategory($cat_id)){
+                    header("Location: " . URLROOT . "/admins/admin_category");
+                    
+                }else {
+                    die('Something went wrong');
+                }
+    
+            }
+
         }
 
 
@@ -98,14 +205,14 @@
 /*------------------------ Add FAQ --------------------------------------------------------------------------------------------------------------------------------------------------*/
 public function admin_faq() {
 
-            $faq = $this->adminModel->findAllQuestions();
+            $newfaq = $this->adminModel->findAllQuestions();
 
             if(!isLoggedIn()){
                 header("Location: "  . URLROOT . "/admins");
             }
 
             $data = [
-                'faq' => $faq,
+                'newfaq' => $newfaq,
                 'question' => '',
                 'answer' => '',
                 'questionError' => '',
@@ -492,7 +599,7 @@ public function admin_faq() {
 
 
 ////////////////////DElete Manager///////////////////////////
-    public function deleteManager($manager_id){
+    public function delete_manager($manager_id){
         $manager = $this->adminModel->findManagerById($manager_id);
 
         if(isLoggedIn()){

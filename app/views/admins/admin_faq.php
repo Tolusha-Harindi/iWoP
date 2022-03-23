@@ -27,19 +27,19 @@
                 </thead>
                 <tbody>
                 
-                    <?php foreach($data['faq'] as $faq): ?>
+                    <?php foreach($data['newfaq'] as $newfaq): ?>
                     <tr>
-                        <td> <?php echo $faq->question; ?> </td>
-                        <td> <?php echo $faq->answer; ?> </td>
+                        <td> <?php echo $newfaq->question; ?> </td>
+                        <td> <?php echo $newfaq->answer; ?> </td>
                         <td> 
-                            <?php if(isset($_SESSION['admin_id']) && $_SESSION['admin_id'] == $faq->admin_id): ?>
+                            <?php if(isset($_SESSION['admin_id']) && $_SESSION['admin_id'] == $newfaq->admin_id): ?>
                                 <!--<input type="reset" class="blue-button" value="Edit"/> -->
-                                <a class="blue-button" style="text-decoration:none;" href="<?php echo URLROOT . "/admins/update_faq/" . $faq->faq_id ?>"> Edit </a>
+                                <a class="blue-button" style="text-decoration:none;" href="<?php echo URLROOT . "/admins/update_faq/" . $newfaq->faq_id ?>"> Edit </a>
                             <?php endif; ?> 
                         </td>
                         <td> 
-                            <?php if(isset($_SESSION['admin_id']) && $_SESSION['admin_id'] == $faq->admin_id): ?>
-                            <form action="<?php echo URLROOT . "/admins/delete_faq/" . $faq->faq_id ?>" method="POST">
+                            <?php if(isset($_SESSION['admin_id']) && $_SESSION['admin_id'] == $newfaq->admin_id): ?>
+                            <form action="<?php echo URLROOT . "/admins/delete_faq/" . $newfaq->faq_id ?>" method="POST">
                                 <input type="submit" name="delete" class="pink-button" value="Remove"/>
                             </form>
                             <?php endif; ?> 

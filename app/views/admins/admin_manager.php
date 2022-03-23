@@ -37,14 +37,17 @@
                             <td> <?php echo $manager->contact; ?> </td>
                             <td> <?php echo $manager->email; ?> </td>
                             <td>  <img src="<?php echo URLROOT ?> /public/img/<?php echo $manager->profile; ?>" class="pic1"> </td>
-                            <?php if(isset($_SESSION['admin_id']) && $_SESSION['admin_id'] == $manager->admin_id): ?>
                                 <td>  
-                                    <a class="blue-button"  href="<?php echo URLROOT . "/admins/update_manager/" . $manager->manager_id ?>"> Edit </a>
+                                    <?php if(isset($_SESSION['admin_id']) && $_SESSION['admin_id'] == $manager->admin_id): ?>
+                                        <a class="blue-button" style="text-decoration:none;"  href="<?php echo URLROOT . "/admins/update_manager/" . $manager->manager_id ?>"> Edit </a>
+                                    <?php endif; ?>       
                                 </td>
-                                <td> 
-                                <form action="<?php echo URLROOT . "/admins/delete_manager/" . $manager->manager_id ?>" method="POST">
-                                    <input type="submit" class="pink-button" value="Remove"/></td>
-                            <?php endif; ?>
+                                <td>
+                                    <?php if(isset($_SESSION['admin_id']) && $_SESSION['admin_id'] == $manager->admin_id): ?>
+                                        <form action="<?php echo URLROOT . "/admins/delete_manager/" . $manager->manager_id ?>" method="POST">
+                                        <input type="submit" class="pink-button" value="Remove"/>
+                                    <?php endif; ?>
+                                </td>
                         </tr>
                     <?php endforeach; ?>
                 </tbody>
@@ -143,7 +146,7 @@
             <input type="password" id="password" name="password" placeholder="Enter Password">
             </br> </br>
                 <span class="invalidFeedback">
-                    <?php echo $data['addressError']; ?>
+                    <?php echo $data['passwordError']; ?>
                 </span>
             </div>
         </div>

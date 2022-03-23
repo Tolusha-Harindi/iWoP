@@ -33,8 +33,19 @@
                             <td> <?php echo $add->category; ?> </td>
                             <td>  <img src="<?php echo URLROOT ?> /public/img/category/<?php echo $add->logo; ?>" class="table-image"> </td>
                             <td> <?php echo date('j F Y', strtotime($add->add_date)) ?> </td>
-                            <td> <input type="reset" class="blue-button" value="Edit"/></td>
-                            <td> <input type="reset" class="pink-button" value="Remove"/></td>
+                            <td> 
+                                <?php if(isset($_SESSION['admin_id']) && $_SESSION['admin_id'] == $add->admin_id): ?>
+                                    <a class="blue-button" style="text-decoration:none" href="<?php echo URLROOT . "/admins/update_category/" . $add->cat_id ?>"> Edit </a>
+                                <?php endif; ?> 
+                            </td>
+                            
+                            <td> 
+                                <?php if(isset($_SESSION['admin_id']) && $_SESSION['admin_id'] == $add->admin_id): ?>
+                                    <form action="<?php echo URLROOT . "/admins/delete_category/" . $add->cat_id ?>" method="POST">
+                                        <input type="submit" name="delete" class="pink-button" value="Remove"/>
+                                    </form>
+                                <?php endif; ?> 
+                            </td>
                         </tr>
                     <?php endforeach; ?>
                     
