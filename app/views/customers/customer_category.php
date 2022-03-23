@@ -7,7 +7,7 @@
 <link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/home/button.css"/>
 <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
 
-<div class="headingcategory" style="margin-top:-11em;"> Categories</div>
+<div class="headingcategory" style="margin-top:-12em;"> Categories</div>
 
      <div class="box1">
          <div class="outer">

@@ -283,7 +283,55 @@ public function deleteCategory($cat_id){
 
 
 
-    ////////////////////////////////// Admin Profile////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+    //////////////////////////////// Admin Profile //////////////////////////////////////////////////////////////////////////////////////////////////
+ /*------------------------------------Edit Pofile details------------------------------------------------------------------------------------*/
+ public function findAdminDetails(){
+        $this->db->query("SELECT * FROM admin Where admin_id = '{$_SESSION['admin_id']}'");
+
+        $results = $this->db->resultSet();
+        
+        return $results;
+}
+
+
+public function changeProfile($data){
+
+    $this->db->query("UPDATE admin SET name = :name,  email = :email, prof_pic = :prof_pic  WHERE admin_id = '{$_SESSION['admin_id']}'");
+
+    $this->db->bind(':name', $data['name']);
+    $this->db->bind(':email', $data['email']);
+    $this->db->bind(':prof_pic', $data['prof_pic']);
+
+
+ 
+
+    if($this->db->execute()){
+        return true;
+    }else {
+        return false;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ////////////////////////////////// Admin Change Password////////////////////////////////////////////////////////////////////////////////////
 
     /*----------------- admin change password-----------------------------------------------------------------------------------------------------*/
 
