@@ -44,6 +44,12 @@
                     <li>Service Providers</li>
                 </ul>
         </a>
+
+        <a href="<?php echo URLROOT;?>/customers/customer_change_password" class='side-link'>
+                <ul class='side-list'>
+                    <li>Change Password</li>
+                </ul>
+        </a>
                 
         </div>
     </div>
