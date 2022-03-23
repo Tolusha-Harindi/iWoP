@@ -14,16 +14,23 @@
 <!------------------profile edit------------------------>
 <div class="category" id="my-profile" style="margin-top: -14em;"> <p> My Profile </p> </div>
 
-<img src="<?php echo URLROOT;?> /public/img/w3.jpg" style="border-radius: 200px; height:160px; width: 160px; margin-left:55%">
-
 <div class="form-space">
-    <form action="/action_page.php">
+    <form action="<?php echo URLROOT;?> /workers/worker_profile_edit" method="POST">
+      
+    <div id="profile-container" style="margin-left:41%; padding: 0; margin-top: 5px;">
+    <img id="profileImage" src="<?php $date['profiledata']->prof_pic; ?>" />
+    </div>
+    <input id="imageUpload" type="file"  name="imageUpload" placeholder="Photo" required="" capture>
+    <p style="margin-left:40%; color: lightgrey; font-size:13px;"><i>Click the image to change pic</i></p>
+    <script type="text/javascript" src="<?php echo URLROOT;?> /public/js/pic.js"></script>
+
+
         <div class="row">
             <div class="col-25">
             <label for="name">Name</label>
             </div>
             <div class="col-75">
-            <input type="text" id="name" name="name" placeholder="Worker Name" required>
+            <input type="text" id="name" name="name" value="<?php echo $data['profiledata']->fname; ?>" required>
             </div>
         </div>
 
@@ -32,7 +39,7 @@
             <label for="email">Email</label>
             </div>
             <div class="col-75">
-            <input type="email" id="email" name="email" placeholder=" your email" required>
+            <input type="email" id="email" name="email" value="<?php echo $data['profiledata']->email; ?>" required>
             </div>
         </div>
 
@@ -41,7 +48,7 @@
             <label for="contact">Contact Number</label>
             </div>
             <div class="col-75">
-            <input type="text" id="contact" name="contact" placeholder="Contact Number" required>
+            <input type="text" id="contact" name="contact" value="<?php echo $data['profiledata']->contact; ?>" required>
             </div>
         </div>
 
@@ -50,12 +57,12 @@
             <label for="address">Address</label>
             </div>
             <div class="col-75">
-            <input type="text" id="address" name="address" placeholder="Your Address" required>
+            <input type="text" id="address" name="address" value="<?php echo $data['profiledata']->address; ?>" required>
             </div>
         </div>
         </br>
         <div class="row">
-            <input type="submit" value="Update" class="green-button">
+        <input type="submit" value="Update" class="green-button">
         </div>
     </form>
 </div>
@@ -64,13 +71,17 @@
 <div class="heading" id="change-password"> <p> Change Password </p> </div>
 
 <div class="form-space">
-    <form action="/action_page.php">
+    <form action="<?php echo URLROOT; ?> /workers/password_edit" method = "POST">
         <div class="row">
             <div class="col-25">
             <label for="password">Password</label>
             </div>
             <div class="col-75">
-            <input type="password" id="password" name="password" placeholder="Enter your Password" required>
+            <input type="password" id="wpassword" name="wpassword" placeholder="Enter your Password" required>
+            </br> </br>
+                <span class="invalidFeedback">
+                    <?php echo $data['wpasswordError']; ?>
+                </span>
             </div>
         </div>
 
@@ -80,6 +91,10 @@
             </div>
             <div class="col-75">
             <input type="password" id="new-password" name="new-password" placeholder="Enter New Password" required>
+            </br> </br>
+                <span class="invalidFeedback">
+                    <?php echo $data['new-passwordError']; ?>
+                </span>
             </div>
         </div>
 
@@ -89,6 +104,10 @@
             </div>
             <div class="col-75">
             <input type="password" id="confirm-password" name="confirm-password" placeholder="Renter New Password" required>
+            </br> </br>
+                <span class="invalidFeedback">
+                    <?php echo $data['confirm-passwordError']; ?>
+                </span>
             </div>
         </div>
         </br>
