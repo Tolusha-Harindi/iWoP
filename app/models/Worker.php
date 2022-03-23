@@ -114,6 +114,16 @@
 
         return $row;
     }
+      
+      public function pendingWork(){
+        $this->db->query("SELECT * FROM `schedule` AS s JOIN customer AS c ON s.cus_id=c.cus_id 
+                          WHERE worker_id='{$_SESSION['worker_id']}' AND date > CURRENT_TIMESTAMP AND s.status!='FINISH' ORDER BY s.date");
+                        
+        $count=$this->db->resultSet();
+
+        return $count;
+    }
+   }
 
    
 }
