@@ -180,6 +180,78 @@
             $this->view('workers/worker_profile_edit', $data);
           
         }
+        
+        public function password_edit(){
+            $data = [
+                'wpassword' =>'',
+                'new-password' =>'',
+                'confirm-password' =>'',
+                'wpasswordError' =>'',
+                'new-passwordError' =>'',
+                'confirm-passwordError' =>'',
+            ];
+    
+            if($_SERVER['REQUEST_METHOD'] == 'POST')
+            {
+                $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+    
+                $data = [
+                    'wpassword' => $_POST['wpassword'],
+                    'new-password' => $_POST['new-password'],
+                    'confirm-password' => $_POST['confirm-password'],
+                    'wpasswordError' =>'',
+                    'new-passwordError' =>'',
+                    'confirm-passwordError' =>'',
+                ];
+    
+                $passwordValidation = "/^(.{0,7}|[^a-z]|[^\d])$/i";
+    
+                // Validate password on length, numeric values,
+                if(empty($data['new-password'])){
+                    $data['new-passwordError'] = 'Please enter password.';
+                } else if(strlen($data['new-password']) < 6){
+                    $data['new-passwordError'] = 'Password must be at least 8 characters';
+                } else if (preg_match($passwordValidation, $data['new-password'])) {
+                    $data['new-passwordError'] = 'Password must be have at least one numeric value.';
+                }
+
+                //Validate confirm password
+                if (empty($data['confirm-password'])) {
+                    $data['confirm-passwordError'] = 'Please enter confirm password.';
+                } else {
+                    if ($data['new-password'] != $data['confirm-password']) {
+                    $data['confirm-passwordError'] = 'Passwords do not match, please try again.';
+                    }
+                }
+
+    
+                if(empty($data['confirm-passwordError'])){
+                    $worker = $this->workerModel->findWorkerPassword();
+    
+                    $Passworddata = [
+                        'worker' => $worker
+                    ];
+    
+                    if (password_verify($data['wpassword'],  $Passworddata['worker'][0]->password )){
+
+                        //Hash Password
+                        $data['new-password'] = password_hash($data['new-password'], PASSWORD_DEFAULT);
+
+                        if ($this->workerModel->changePassword($data)) {
+                            //Redirect to the login page
+                            header('location: ' . URLROOT . '/workers/worker_profile_edit');
+                        } else {
+                            die('Something went wrong.');
+                        }  
+                } else{
+                    $data['wpasswordError'] = 'Passwords do not match, please try again.';
+                }
+            $this-> view('workers/workers_profile_edit', $data);
+                }
+        
+            }     
+        $this->view('workers/workers_profile_edit', $data);
+        }
 
         public function worker_schedule() {
             if(!isLoggedIn()){
