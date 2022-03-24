@@ -783,7 +783,7 @@ public function Customer_login() {
             } else {
                 $data['passwordError'] = 'Password or username is incorrect. Please try again.';
 
-                $this->view('login/am_login', $data);
+                $this->view('logins/am_login', $data);
             }
         }  
         }else{

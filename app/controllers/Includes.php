@@ -43,14 +43,15 @@
           
         }
 
+
+
+///////////////////////////////////////////////////////////        Admin          ////////////////////////////////////////////////////////////////////////////////////////
         public function admin_sidenav() {
 
-            $adname = $this->includModel->findName();
-
-            
-            
+            $admin = $this->includModel->findName();
+ 
             $data = [
-                'adname' => $adname
+                'admin' => $admin
                 
             ];
 
@@ -58,12 +59,16 @@
           
         }
 
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         public function company_sidenav() {
 
-            //$users = $this->pageModel-> getUsers();
             $data = [
                 'title' => 'company_sidenav',
-                //'users' => $users
 
             ];
 
@@ -71,12 +76,15 @@
           
         }
 
+
+
+////////////////////////////////////////////////  Customer /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         public function customer_sidenav() {
 
-            //$users = $this->pageModel-> getUsers();
+            $customer = $this->includModel->findCustomer();
+            
             $data = [
-                'title' => 'customer_sidenav',
-                //'users' => $users
+                'customer' => $customer
 
             ];
 

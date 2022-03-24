@@ -4,13 +4,20 @@
 
     <a href="<?php echo URLROOT;?>/admins/admin_profile" class='card-link'>
         <div class="card">
+        <!-- <?php foreach($data['admin'] as $admin): ?>
             <div class="img-container">
-                <img src="<?php echo URLROOT;?>/public/img/4140048.png" alt="propic" class="img1"/>
+                <img src="<?php echo URLROOT ?>/public/img/<?php echo $admin->prof_pic; ?>"  class="img1"/>
             </div>
 
-            <?php //foreach($data['adname'] as $adname): ?>
-                <p class='title'> Tolusha Harindi<?php ///echo $adname->name ; ?> </p>
-            <?php //endforeach; ?>
+            <p class='title'><?php echo $admin->name; ?></p>
+        <?php endforeach; ?> -->
+
+        <div class="img-container">
+                <img src="<?php echo URLROOT ?>/public/img/admin.jpg ?>"  class="img1"/>
+        </div>
+
+        <p class='title'>Tolusha Harindi</p>
+
             
             <div class="description">
                     <ul class='list'>

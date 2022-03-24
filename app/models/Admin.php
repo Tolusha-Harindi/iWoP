@@ -291,7 +291,7 @@ public function deleteCategory($cat_id){
     //////////////////////////////// Admin Profile //////////////////////////////////////////////////////////////////////////////////////////////////
  /*------------------------------------Edit Pofile details------------------------------------------------------------------------------------*/
  public function findAdminDetails(){
-        $this->db->query("SELECT * FROM admin Where admin_id = '{$_SESSION['admin_id']}'");
+        $this->db->query("SELECT * FROM admin WHERE admin_id = '{$_SESSION['admin_id']}'");
 
         $results = $this->db->resultSet();
         

@@ -1,7 +1,7 @@
 <?php
     class Homes extends Controller {
         public function __construct() {
-            //$this->pageModel = $this->model('Page');
+            $this->homeModel = $this->model('Home');
         }
 
         public function index() {
@@ -17,12 +17,18 @@
           
         }
 
+
+
+
+
+
+//////////////////////////////////     FAQ     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         public function faq() {
 
-            //$users = $this->pageModel-> getUsers();
+            $faq = $this->homeModel-> findFAQ();
+
             $data = [
-                'title' => 'faq page',
-                //'users' => $users
+                'faq' => $faq
 
             ];
 
@@ -30,6 +36,13 @@
           
         }
 
+
+
+
+
+
+
+/////////////////////////////    Home  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         public function home() {
 
             //$users = $this->pageModel-> getUsers();
