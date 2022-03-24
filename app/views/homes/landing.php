@@ -76,7 +76,7 @@
                             <div class="button-group filter-button-group">
                                 <button class="active" data-filter="*">All</button>
                                 <button data-filter=".top-featured">Top featured</button>
-                                <button data-filter=".best-seller">Best service provider</button>
+                                <button data-filter=".best-seller">Best service providers can find</button>
                             </div></center>
                         </div>
                     </div>
@@ -91,11 +91,11 @@
                                 </div>
                                 <img src="<?php echo URLROOT ?>/public/img/landing/1.jpg" class="img-fluid" alt="Image">
                                 <div class="mask-icon">
-                                    <a class="cart" href="" style="width: 100%;">View Service</a>
+                                    <a class="cart" href="" style="width: 100%; text-decoration:none">Welcome</a>
                                 </div>
                             </div>
                             <div class="why-text">
-                                <h4> Workers | 15</h4>
+                                <h4> iWoP</h4>
                                 <h5> Masons</h5>
                             </div>
                         </div>
@@ -108,11 +108,11 @@
                                 </div>
                                 <img src="<?php echo URLROOT ?>/public/img/landing/23.jpg" class="img-fluid" alt="Image">
                                 <div class="mask-icon">
-                                    <a class="cart" href=">" style="width: 100%;">View Service</a>
+                                    <a class="cart" href=">" style="width: 100%;text-decoration:none">Welcome</a>
                                 </div>
                             </div>
                             <div class="why-text">
-                                <h4>Workers | 21</h4>
+                                <h4>iWoP</h4>
                                 <h5>Welding</h5>
                             </div>
                         </div>
@@ -125,11 +125,11 @@
                                 </div>
                                 <img src="<?php echo URLROOT ?>/public/img/landing/3.jpg" class="img-fluid" alt="Image">
                                 <div class="mask-icon">
-                                    <a class="cart" href="" style="width: 100%;">View Service</a>
+                                    <a class="cart" href="" style="width: 100%;text-decoration:none">Welcome</a>
                                 </div>
                             </div>
                             <div class="why-text">
-                                <h4>Workers | 20</h4>
+                                <h4>iWoP</h4>
                                 <h5>Landscaping</h5>
                             </div>
                         </div>
@@ -142,11 +142,11 @@
                                 </div>
                                 <img src="<?php echo URLROOT ?>/public/img/landing/4.jpg" class="img-fluid" alt="Image">
                                 <div class="mask-icon">
-                                    <a class="cart" href="" style="width: 100%;">View Service</a>
+                                    <a class="cart" href="" style="width: 100%;text-decoration:none">Welcome</a>
                                 </div>
                             </div>
                             <div class="why-text">
-                                <h4>Workers | 12</h4>
+                                <h4>iWoP</h4>
                                 <h5>Electrician</h5>
                             </div>
                         </div>
