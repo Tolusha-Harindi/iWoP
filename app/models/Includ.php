@@ -10,7 +10,7 @@ class Includ{
 
 //////////////////////////////   Admin ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     public function findName(){
-        $this->db->query("SELECT * FROM admin  WHERE admin_id = '{$_SESSION['admin_id']}'");
+        $this->db->query ('SELECT * FROM admin');
 
         $results = $this->db->resultSet();
 
