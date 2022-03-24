@@ -245,12 +245,13 @@ h3{
 
 /* user review */
 .user-reviews{
-    height:180px;
+    height:200px;
     margin-top:50px;
     width:85%;
     border-radius:5px;
     margin-left:50px; 
      box-shadow: 4px 8px 16px lightgray;
+    
 }
 .user-img{
     border:1px ;
@@ -290,11 +291,16 @@ h3{
 }
 /* report-pop-up */
 .reviews{
-    height: 400px;
+    height: 500px;
     overflow-x: clip;
     /* width: 35em; */
     overflow-y: scroll;
 } 
+
+/* inline button for update and delete */
+.inlinebutton{
+    display: inline;
+}
 </style>
  <div  class = "left" style="margin-top: 100px; border:1px ;">
 
@@ -439,11 +445,23 @@ h3{
 
                 <a
                     href="<?php echo URLROOT . "/reviews/fillReviewForm/" . $review->reviewID ?>">
+                    <button  style="background: #14A76C; color: white; margin-left:100px;  border:none; margin-bottom: 2em;
+                    padding: 5px 6px;
+                    border-radius: 5px;
+                    cursor: pointer;"
+                    class="inlinebutton"; 
+                  text-decoration:none; >
                     Update
+                 </button>
+                   
                 </a>
 
                 <form action="<?php echo URLROOT . "/reviews/delete/" . $review->reviewID ?>" method="POST">
-                    <input type="submit" name="delete" value="Delete" >
+                    <input type="submit" name="delete" value="Delete" class="pink-button"
+                    style="margin-top:-50px;
+                     class="inlinebutton";>
+
+                   
                 </form>
 
             </div>    
