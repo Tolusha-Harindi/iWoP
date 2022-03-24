@@ -16,7 +16,7 @@
 <div class="heading"> <p> Update  Questions and Answers </p> </div>
 
 <div class="form-space" style="margin-top: 5em;">
-    <form action="<?php echo URLROOT; ?>/admins/update_faq/<?php echo $data['faq']->faq_id ?>" method="POST">
+    <form action = "<?php echo URLROOT; ?>/admins/update_faq/<?php echo $data['faq']->faq_id ?>" method="POST">
         <div class="row">
             <div class="col-25">
             <label for="question">Question</label>
@@ -48,7 +48,7 @@
         <br>
         <div class="row">
             <input type="submit" value="Update" class="green-button" style="margin-bottom:4em;">
-            <!-----<a class="pink-button" style="text-decoration:none; font-size:13px; margin-left:40em; margin-bottom:-2em; padding: 12px 24px; display:inline;" href="<?php echo URLROOT; ?> /admins/admin_faq/"> Cancel </a>---->
+            <!-----<a class="pink-button" style="text-decoration:none; font-size:13px; margin-left:40em; margin-bottom:-2em; padding: 12px 24px; display:inline;" href="<?php //echo URLROOT; ?> /admins/admin_faq/"> Cancel </a>---->
         </div>
     </form>
 </div>

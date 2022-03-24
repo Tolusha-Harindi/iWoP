@@ -16,7 +16,7 @@
 <div class="heading"> <p> Update Category </p> </div>
 
 <div class="form-space">
-    <form action= "<?php echo URLROOT; ?>/admins/update_category   <?php echo $data['add']->cat_id ?>" method="POST">
+    <form action= "<?php echo URLROOT; ?>/admins/update_category/<?php echo $data['add']->cat_id ?>" method="POST">
         <div class="row">
             <div class="col-25">
                 <label for="category">Category</label>
