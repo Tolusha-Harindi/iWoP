@@ -1,5 +1,5 @@
 <?php
-    class includes extends Controller {
+    class Includes extends Controller {
         public function __construct() {
             $this->includModel = $this->model('Includ');
         }
@@ -48,10 +48,10 @@
 ///////////////////////////////////////////////////////////        Admin          ////////////////////////////////////////////////////////////////////////////////////////
         public function admin_sidenav() {
 
-            $admin = $this->includModel->findName();
+            $includes = $this->includModel->findName();
  
             $data = [
-                'admin' => $admin
+                'includes' => $includes
                 
             ];
 
