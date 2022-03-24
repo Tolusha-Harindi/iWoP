@@ -105,7 +105,7 @@ button:hover {
 
 /*login as*/
 .container1 {
-    max-width: 300px;
+    max-width: 400px;
     height: 100px;
     margin: 20px 100px 10px;
     background-color: #ffffff;
@@ -117,12 +117,13 @@ button:hover {
 
 .loginImage {
     position: absolute;
-    width: 578px;
-    height: 850px;
+    width: 600px;
+    height: 500px;
     left: 10px;
     top: 70px;
     margin: 0 0 0 0;
     padding-left: 0px;
+    margin-top: 1em;
 }
 
 .usertype {
@@ -131,6 +132,7 @@ button:hover {
     color: black;
     margin-bottom: 0.5em;
     height: 60px;
+    width: 20em;
 }
 
 .loginverticalRuler {
