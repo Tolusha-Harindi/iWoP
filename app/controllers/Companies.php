@@ -407,4 +407,8 @@ public function delete_ads($ads_id){
           
     }
 
+    public function company_recent_workers() {
+    $this->view('companies/company_recent_workers'/*, $data*/);          
+    }
+
 }
