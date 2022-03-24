@@ -269,18 +269,18 @@
 
                         if ($this->workerModel->changePassword($data)) {
                             //Redirect to the login page
-                            header('location: ' . URLROOT . '/workers/worker_profile_edit');
+                            header('location: ' . URLROOT . '/workers/worker_change_password');
                         } else {
                             die('Something went wrong.');
                         }  
                 } else{
                     $data['wpasswordError'] = 'Passwords do not match, please try again.';
                 }
-            $this-> view('workers/workers_profile_edit', $data);
+            $this-> view('workers/worker_change_password', $data);
                 }
         
             }     
-        $this->view('workers/workers_profile_edit', $data);
+        $this->view('workers/worker_change_password', $data);
         }
 
         public function worker_schedule() {
