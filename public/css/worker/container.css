@@ -14,8 +14,8 @@
     cursor: pointer;
     box-shadow: 4px 8px 16px lightgray;
     border-radius: 10px;
-    width: 37%;
-    max-width: 37%;
+    width: 80%;
+    max-width: 100%;
     margin-left: 3em;
     margin-bottom: 1em;
     padding: 0 0.5em;
@@ -28,6 +28,15 @@
     box-shadow: 1px 2px 4px gray;
     background: #3E5AD8;
     color: white;
+}
+
+.grid-container {
+  display: grid;
+  width:100%;
+  grid-template-columns: auto auto auto;
+  background-color:white;
+  padding: 6px;
+  margin-top: 2em;
 }
 
 .img-ad{
