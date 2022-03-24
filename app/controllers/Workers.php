@@ -107,8 +107,34 @@
 
 
         public function worker_dashboard() {
+           $invites=$this->workerModel->CountInviteJobs();
+            $pending=$this->workerModel->pendingWorkCount();
+            $complete=$this->workerModel->completedWorks();
+            $applyJob=$this->workerModel->appliedJobCount();
+            $applyAds=$this->workerModel->appliedAdsCount();
+            $works=$this->workerModel->totalWorks();
+            $acceptAds=$this->workerModel->acceptads();
+            $rejectAds=$this->workerModel->rejectads();
+            $acceptJobs=$this->workerModel->acceptjobs();
+            $rejectJobs=$this->workerModel->rejectjobs();
+            $category=$this->workerModel->topCategory();
+            $worker=$this->workerModel->topWorker();
+            $company=$this->workerModel->topCompany();
+
             $data = [
-                'title' => 'worker_dashboard page'
+                'invites' => $invites,
+                'pending' => $pending,
+                'complete'=> $complete,
+                'applyJob'=> $applyJob,
+                'applyAds'=> $applyAds,
+                'works'=> $works,
+                'acceptads'=> $acceptAds,
+                'rejectads'=> $rejectAds,
+                'acceptjobs'=> $acceptJobs,
+                'rejectjobs'=> $rejectJobs,
+                'category'=> $category,
+                'worker'=> $worker,
+                'company' => $company
             ];
 
             $this->view('workers/worker_dashboard', $data);
