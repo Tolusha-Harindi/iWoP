@@ -867,7 +867,7 @@ public function Manager_login() {
 
         //check if all errors are empty
         if(empty($data['emailError']) && empty($data['passwordError'])){
-            $loggedInManager = $this->userModel->Manager_login($data['email'], $data['password']);
+            $loggedInManager = $this->loginModel->Manager_login($data['email'], $data['password']);
         
         if ($loggedInManager) {
             $this->createManagerSession($loggedInManager);

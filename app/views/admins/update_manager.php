@@ -16,7 +16,7 @@
 <div class="heading"> <p> Update Manager </p> </div>
 
 <div class="form-space">
-    <form action="<?php echo URLROOT; ?>/admins/update_manager/ <?php echo $data['manager']-> manager_id ?>" method="POST">
+    <form action="<?php echo URLROOT; ?>/admins/update_manager/<?php echo $data['manager']->manager_id ?>" method="POST">
         <div class="row">
             <div class="col-25">
             <label for="name">Name</label>

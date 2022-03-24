@@ -23,7 +23,7 @@
     <!-- login as admin -->
     <div class="box-2">
         <div class="login1-form-container">
-            <h1>Login As Admin</h1>
+            <h1 style="margin-top:13em;">Login As Admin</h1>
             <form action="<?php echo URLROOT; ?>/logins/admin_login" method="post">
 
                 <input type="text" placeholder="Email" class="input-field" name="email"><br>
@@ -48,7 +48,7 @@
 
     <!-- login as manager -->
     <div class="login2-form-container">
-        <h1>Login As Manager</h1>
+        <h1 style="margin-top:13em;">Login As Manager</h1>
         <form action="<?php echo URLROOT; ?>/logins/manager_login" method="post">
         <input type="text" placeholder="Email" class="input-field" name="email"><br>
         <span style="color:red;">
