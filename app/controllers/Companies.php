@@ -411,4 +411,8 @@ public function delete_ads($ads_id){
     $this->view('companies/company_recent_workers'/*, $data*/);          
     }
 
+    public function company_change_password() {
+    $this->view('companies/company_change_password'/*, $data*/);          
+    }
+
 }
