@@ -672,10 +672,24 @@ public function admin_faq() {
 
         public function admin_pendingads() {
 
-            //$users = $this->pageModel-> getUsers();
+            if(!isLoggedIn()){
+                header("Location: " . URLROOT . "/admins");
+            }
+
+            $ads = $this->adminModel->getAds();
+            $adsw = $this->adminModel->getAdsw();
+
+
             $data = [
-                'title' => 'admin_pendingads page',
-                //'users' => $users
+                'ads' => $ads,
+                'adsw' => $adsw
+                // 'title' => '',
+                // 'category' => '',
+                // 'description' => '',
+                // 'address' => '',
+                // 'contact' => '',
+                // 'work' => '',
+
 
             ];
 
