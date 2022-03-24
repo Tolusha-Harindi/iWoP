@@ -123,7 +123,105 @@
 
         return $count;
     }
-   }
+   
+      public function pendingWorkCount(){
+        $this->db->query("SELECT schedule_id FROM schedule
+                          WHERE worker_id='{$_SESSION['worker_id']}' AND status!='FINISH'");
 
+        $count=$this->db->rowCount();
+        return $count;
+    }
+
+    public function CountInviteJobs(){
+        $this->db->query('SELECT job_id FROM invite_jobs');
+
+        $count=$this->db->rowCount();
+        return $count;
+    }
+
+    public function completedWorks(){
+        $this->db->query("SELECT schedule_id FROM schedule
+                          WHERE worker_id='{$_SESSION['worker_id']}' AND status='FINISH'");
+
+        $count=$this->db->rowCount();
+        return $count;
+    }
+
+    public function appliedJobCount(){
+        $this->db->query("SELECT request_id FROM company_ads_request
+                          WHERE worker_id='{$_SESSION['worker_id']}'");
+
+        $count=$this->db->rowCount();
+        return $count;
+    }
+
+    public function appliedAdsCount(){
+        $this->db->query("SELECT request_id FROM customer_ads_request
+                          WHERE worker_id='{$_SESSION['worker_id']}'");
+
+        $count=$this->db->rowCount();
+        return $count;
+    }
+
+    public function totalWorks(){
+        $this->db->query("SELECT schedule_id FROM schedule
+                          WHERE worker_id='{$_SESSION['worker_id']}'");
+
+        $count=$this->db->rowCount();
+        return $count;
+    }
+
+    public function acceptjobs(){
+        $this->db->query("SELECT job_id FROM invite_company_jobs
+                          WHERE worker_id='{$_SESSION['worker_id']}' AND status='ACCEPT'");
+
+        $count=$this->db->rowCount();
+        return $count;
+    }
+
+    public function rejectjobs(){
+        $this->db->query("SELECT job_id FROM invite_company_jobs
+                          WHERE worker_id='{$_SESSION['worker_id']}' AND status='REJECT'");
+
+        $count=$this->db->rowCount();
+        return $count;
+    }
+
+    public function acceptads(){
+        $this->db->query("SELECT job_id FROM invite_jobs
+                          WHERE worker_id='{$_SESSION['worker_id']}' AND status='ACCEPT'");
+
+        $count=$this->db->rowCount();
+        return $count;
+    }
+
+    public function rejectads(){
+        $this->db->query("SELECT job_id FROM invite_jobs
+                          WHERE worker_id='{$_SESSION['worker_id']}' AND status='REJECT'");
+
+        $count=$this->db->rowCount();
+        return $count;
+    }
+
+    public function topCategory(){
+        $this->db->query("SELECT* FROM category LIMIT 5");
+
+        $row=$this->db->resultSet();
+        return $row;
+    }
+
+    public function topWorker(){
+        $this->db->query("SELECT* FROM worker AS w JOIN service AS s ON w.worker_id=s.worker_id ORDER BY created_at ASC LIMIT 5");
+
+        $row=$this->db->resultSet();
+        return $row;
+    }
+
+    public function topCompany(){
+        $this->db->query("SELECT* FROM company ORDER BY com_name ASC LIMIT 5");
+
+        $row=$this->db->resultSet();
+        return $row;
+    }
    
 }
