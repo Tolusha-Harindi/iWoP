@@ -9,7 +9,7 @@
         <tr>
             <td>
                 <div>
-                    <img src="<?php echo URLROOT ?>/public/img/log.png" class="loginImage" alt="photo">   
+                    <img src="<?php echo URLROOT ?>/public/img/loginas.jpg" class="loginImage" alt="photo">   
                 </div>
             </td>
             <td>
