@@ -12,17 +12,19 @@
 <a href="#change-password" class="top-button2" style="margin-top: -36em;  margin-left:64em;"> Change Password </a>---->
 
 <!------heading----------->
-<div class="category" id="my-profile" style="margin-top: -12em;"> <p> My Profile </p> </div>
+<div class="category" id="my-profile" style="margin-top: -14em;"> <p> My Profile </p> </div>
 
 
-<?php foreach($data['customer'] as $customer): ?>
-    <img src="<?php echo URLROOT?>/public/img/<?php echo $customer->prof_pic; ?>" style="border-radius: 200px; height:160px; width: 160px; margin-left:55%; margin-top:2em;">
-<?php endforeach; ?>
+
 
 <div class="form-space">
+
+    <?php foreach($data['customer'] as $customer): ?>
+        <img src="<?php echo URLROOT?>/public/img/<?php echo $customer->prof_pic; ?>" style="border-radius: 200px; height:160px; width: 160px; margin-left:40%; margin-top:2em;">
+    <?php endforeach; ?>
     <form action="<?php echo URLROOT; ?> /customers/customer_profile" method="POST">
         
-        <div class="col-75" style="margin-left:20em;">
+        <div class="col-75" style="margin-left:21em;">
             <input type="file" id="prof_pic" name="prof_pic">
             </br> </br>
                 <span class="invalidFeedback">

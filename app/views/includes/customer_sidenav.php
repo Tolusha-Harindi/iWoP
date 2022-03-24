@@ -3,11 +3,23 @@
 
 
 <a href ="<?php echo URLROOT;?>/customers/customer_profile" class='card-link'>
+    
     <div class="card">
+    <!-- <?php foreach($data['customers'] as $customers): ?>
         <div class="img-container">
-            <img src="<?php echo URLROOT;?>/public/img/w3.jpg" alt="propic" class="img1"/>
+            <img src="<?php echo URLROOT ?>/public/img/<?php echo $customers->prof_pic; ?>" class="img1"/>
         </div>
-        <p class='title'> Adhithya Bandara</p>
+        
+        <p class='title'><?php echo $customers->fname; ?></p>
+    <?php endforeach; ?>   -->
+
+    <div class="img-container">
+            <img src="<?php echo URLROOT ?>/public/img/w3.jpg" class="img1"/>
+    </div>
+
+    <p class='title'>Tolusha</p>
+
+
         <div class="description">
                 <ul class='list'>
                     <li>Edit profile</li>
