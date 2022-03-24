@@ -2,6 +2,11 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+
+*{
+	box-sizing: border-box;
+}
+
 .fade-in {
     animation: fadeIn 3s;
 }

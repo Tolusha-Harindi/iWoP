@@ -30,10 +30,10 @@
                 <a href="<?php echo URLROOT;?> /homes/faq" class="anchor-tag"> FAQ </a>
             </li>
             <li class="link"> 
-                <a href="<?php echo URLROOT;?> /homes/home" class="anchor-tag"> Services </a>
+                <a href="#services" class="anchor-tag"> Services </a>
             </li>
             <li class="link"> 
-                <a href="<?php echo URLROOT;?> /homes/home" class="anchor-tag"> About Us </a>
+                <a href="#about" class="anchor-tag"> About Us </a>
             </li>
             <li class="link"> 
 
