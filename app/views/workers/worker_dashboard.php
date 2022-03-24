@@ -17,20 +17,20 @@
     <div class="row1">
 
         <div class="dash-card" id="card1">
-            <h3>Messages Count</h3>
-            <h1> 28 </h1>
+            <h3>Invite Jobs  Count</h3>
+            <h1><?php echo $data['invites'];?></h1>
             <img src="<?php echo URLROOT;?> /public/img/message.png" alt="">
         </div>
     
         <div class="dash-card" id="card2">
             <h3>Pending Works Count</h3>
-            <h1> 25 </h1>
+            <h1><?php echo $data['pending'];?> </h1>
             <img src="<?php echo URLROOT;?> /public/img/pending_work.png" alt="">
         </div>
 
         <div class="dash-card" id="card3">
             <h3>Completed Works Count</h3>
-            <h1> 255 </h1>
+            <h1><?php echo $data['complete'];?></h1>
             <img src="<?php echo URLROOT;?> /public/img/completed.png" alt="">
         </div>
 
@@ -40,19 +40,19 @@
 
         <div class="dash-card" id="card1">
             <h3>Applied Job Vaccancies Count</h3>
-            <h1> 28 </h1>
+            <h1><?php echo $data['applyJob'];?></h1>
             <img src="<?php echo URLROOT;?> /public/img/applied_job.png" alt="">
         </div>
 
         <div class="dash-card" id="card2">
             <h3>Applied Ads Count</h3>
-            <h1> 255 </h1>
+            <h1><?php echo $data['applyAds'];?></h1>
             <img src="<?php echo URLROOT;?> /public/img/applied_ads.png" alt="">
         </div>
 
         <div class="dash-card" id="card3">
             <h3>Total Works Count</h3>
-            <h1> 255 </h1>
+            <h1><?php echo $data['works'];?></h1>
             <img src="<?php echo URLROOT;?> /public/img/works.png" alt="">
         </div>
 
@@ -62,13 +62,13 @@
 
         <div class="dash-card" id="card1">
             <h3>Accepted Job Vaccancies Count</h3>
-            <h1> 28 </h1>
+            <h1><?php echo $data['acceptjobs'];?></h1>
             <img src="<?php echo URLROOT;?> /public/img/accept.png" alt="">
         </div>
 
         <div class="dash-card" id="card2">
             <h3>Rejected Job Vaccancies Count</h3>
-            <h1> 255 </h1>
+            <h1><?php echo $data['rejectjobs'];?></h1>
             <img src="<?php echo URLROOT;?> /public/img/reject.png" alt="">
         </div>
 
@@ -78,13 +78,13 @@
 
         <div class="dash-card" id="card1">
             <h3>Accepted Work(Ads) Count</h3>
-            <h1> 20 </h1>
+            <h1><?php echo $data['acceptads'];?></h1>
             <img src="<?php echo URLROOT;?> /public/img/accept_ad.png" alt="">
         </div>
 
         <div class="dash-card" id="card2">
             <h3>Rejected Work(Ads) Count</h3>
-            <h1> 235 </h1>
+            <h1><?php echo $data['rejectads'];?></h1>
             <img src="<?php echo URLROOT;?> /public/img/reject_ad.png" alt="">
         </div>
 
@@ -93,7 +93,7 @@
 
 <!--------------------------------------------------Range amount and Total income----------------------------------------------->
 
-<script src="<?php echo URLROOT;?> /public/js/dashboard.js"></script>
+<!-- <script src="<?php echo URLROOT;?> /public/js/dashboard.js"></script>
 <div class="range">
     <div class="ran-1">
         <div class="project col-md-4">
@@ -112,119 +112,43 @@
             <div class="bar"></div>
         <div>
     </div>
-</div>
+</div> -->
 
 <!------------------------------------------------------Top five categories------------------------------------------------------>
 <div class="heading"> <p> Top Five Job Categories </p> </div>
 
 <div class="tile-line">
     <div class="row1">
-
+     <?php foreach($data['category'] as $category):?>
         <div class="dash-card-top" id="card">
-            <img src="<?php echo URLROOT;?> /public/img/category/air-conditioner.png" alt=""> </br>
-            <p>AC repair</p>
+            <img src="<?php $category->logo ?>" alt=""> </br>
+            <p><?php echo $category->category ?></p>
         </div>
-    
-        <div class="dash-card-top" id="card">
-            <img src="<?php echo URLROOT;?> /public/img/category/cctv.png" alt="">
-            <p>CCTV repair</p>
-        </div>
-
-        <div class="dash-card-top" id="card">
-            <img src="<?php echo URLROOT;?> /public/img/category/electrician.png" alt="">
-            <p>Electrician</p>
-        </div>
-
-        <div class="dash-card-top" id="card">
-            <img src="<?php echo URLROOT;?> /public/img/category/plumber.png" alt="">
-            <p>Plumber</p>
-        </div>
-
-        <div class="dash-card-top" id="card">
-            <img src="<?php echo URLROOT;?> /public/img/category/waiter.png" alt="">
-            <p>Waiter</p>
-        </div>
+    <?php endforeach;?>
 
     </div>
 </div>
-
-
 
 <!------------------------------------------------------Top five Service Providers------------------------------------------------------>
 <div class="heading"> <p> Top Five Service Providers </p> </div>
 
 <div class="tile-line">
     <div class="row1">
-
+    <?php foreach($data['worker'] as $worker):?>
         <div class="dash-card-top-service" id="card">
-            <img src="<?php echo URLROOT;?> /public/img/admin.jpg" alt="" style="border-radius: 50px;"> </br>
-            <p>Kamal Perera</p>
-            <p style="color: #1E3CC0;">AC repair</p>
-            <p>Colombo</p>
-            <p>
-                <span class="fa fa-star checked" style="color: orange;"></span>
+            <img src="<?php $worker->prof_pic;?>" alt="" style="border-radius: 50px;"> </br>
+            <p><?php echo $worker->fname ?></p>
+            <p style="color: #1E3CC0;"><?php echo $worker->category;?></p>
+            <p><?php echo $worker->city;?></p>
+            <p><?php echo $worker->district;?>
+                <!-- <span class="fa fa-star checked" style="color: orange;"></span>
                 <span class="fa fa-star checked" style="color: orange;"></span>
                 <span class="fa fa-star checked" style="color: orange;"></span>
                 <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span> -->
             </p>
         </div>
-    
-        <div class="dash-card-top-service" id="card">
-            <img src="<?php echo URLROOT;?> /public/img/admin.jpg" alt="" style="border-radius: 50px;">
-            <p>Kamal Perera</p>
-            <p style="color: #1E3CC0;">CCTV repair</p>
-            <p>Colombo</p>
-            <p>
-                <span class="fa fa-star checked" style="color: orange;"></span>
-                <span class="fa fa-star checked" style="color: orange;"></span>
-                <span class="fa fa-star checked" style="color: orange;"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-            </p>
-        </div>
-
-        <div class="dash-card-top-service" id="card">
-            <img src="<?php echo URLROOT;?> /public/img/admin.jpg" alt="" style="border-radius: 50px;">
-            <p>Kamal Perera</p>
-            <p style="color: #1E3CC0;">Electrician</p>
-            <p>Colombo</p>
-            <p>
-                <span class="fa fa-star checked" style="color: orange;"></span>
-                <span class="fa fa-star checked" style="color: orange;"></span>
-                <span class="fa fa-star checked" style="color: orange;"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-            </p>
-        </div>
-
-        <div class="dash-card-top-service" id="card">
-            <img src="<?php echo URLROOT;?> /public/img/admin.jpg" alt="" style="border-radius: 50px;">
-            <p>Kamal Perera</p>
-            <p style="color: #1E3CC0;">Plumber</p>
-            <p>Colombo</p>
-            <p>
-                <span class="fa fa-star checked" style="color: orange;"></span>
-                <span class="fa fa-star checked" style="color: orange;"></span>
-                <span class="fa fa-star checked" style="color: orange;"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-            </p>
-        </div>
-
-        <div class="dash-card-top-service" id="card">
-            <img src="<?php echo URLROOT;?> /public/img/admin.jpg" alt="" style="border-radius: 50px;">
-            <p>Kamal Perera</p>
-            <p style="color: #1E3CC0;">Waiter</p>
-            <p>Colombo</p>
-            <p>
-                <span class="fa fa-star checked" style="color: orange;"></span>
-                <span class="fa fa-star checked" style="color: orange;"></span>
-                <span class="fa fa-star checked" style="color: orange;"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-            </p>
-        </div>
+        <?php endforeach;?>
 
     </div>
 </div>
@@ -234,32 +158,12 @@
 
 <div class="tile-line">
     <div class="row1">
-
+    <?php foreach($data['company'] as $company):?>
         <div class="dash-card-top" id="card">
-            <img src="<?php echo URLROOT;?> /public/img/comp.png" alt="" style="border-radius: 50px;"> </br>
-            <p>Dream Wave</p>
+            <img src="<?php $company->prof_pic;?>" alt="" style="border-radius: 50px;"> </br>
+            <p><?php echo $company->com_name;?></p>
         </div>
-    
-        <div class="dash-card-top" id="card">
-            <img src="<?php echo URLROOT;?> /public/img/comp.png" alt="" style="border-radius: 50px;">
-            <p>Dream Wave</p>
-        </div>
-
-        <div class="dash-card-top" id="card">
-            <img src="<?php echo URLROOT;?> /public/img/comp.png" alt="" style="border-radius: 50px;">
-            <p>Dream Wave</p>
-        </div>
-
-        <div class="dash-card-top" id="card">
-            <img src="<?php echo URLROOT;?> /public/img/comp.png" alt="" style="border-radius: 50px;">
-            <p>Dream Wave</p>
-        </div>
-
-        <div class="dash-card-top" id="card">
-            <img src="<?php echo URLROOT;?> /public/img/comp.png" alt="" style="border-radius: 50px;">
-            <p>Dream Wave</p>
-        </div>
-
+        <?php endforeach;?>
     </div>
 </div>
 
