@@ -12,8 +12,8 @@
     background-color: white;
     box-shadow: 4px 8px 16px lightgray;
     border-radius: 10px;
-    width: 35%;
-    max-width: 35%;
+    width: 95%;
+    max-width: 100%;
     margin-left: 5em;
     margin-bottom: 1em;
     padding: 0 0.5em;
@@ -21,6 +21,15 @@
     flex-direction: column;
     transition: all ease-in-out 0.5s;
 }
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color:white;
+    padding: 6px;
+    margin-top: 2em;
+ }
 
 .ad-space:hover{
     box-shadow: 1px 2px 4px gray;

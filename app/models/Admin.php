@@ -358,4 +358,36 @@ public function changeProfile($data){
         }
     
     }
+
+
+
+
+
+
+
+
+    /////////////////////       Pending Ads     ///////////////////////////////////////////////////////////////////////////////////////////////////
+
+    /*-------------------   Customer Ads  --------------------------------------------------------------------------------------------------------*/
+    public function getAds(){
+
+        $this->db->query('SELECT * FROM customer_ads');
+
+        $results = $this->db->resultSet();
+        
+        return $results;
+
+    }
+
+
+    /*------------------------  company ads   ----------------------------------------------------------------------------------------------------------*/
+    public function getAdsw(){
+
+        $this->db->query('SELECT * FROM company_ads');
+
+        $results = $this->db->resultSet();
+        
+        return $results;
+
+    }
 }
