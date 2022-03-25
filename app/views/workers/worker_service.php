@@ -8,45 +8,21 @@
 
 <div class="category" id="my-profile"> <p> My Service </p> </div>
 
-<div class="form-space">
-    <form action="/action_page.php">
+div class="form-space">
+    <form action="<?php echo URLROOT;?> /workers/worker_service" method="POST">
         <div class="row">
             <div class="col-25">
             <label for="cat-1">Category 1</label>
             </div>
             <div class="col-75">
-            <select>
-                <option value="0">Plumbers</option>
-                <option value="1">Masons</option>
-                <option value="2">Tile</option>
-                <option value="3">Carpenters</option>
-                <option value="4">Painters</option>
-                <option value="5">Electricians</option>
-                <option value="6">Landscape</option>
-                <option value="7">Worker</option>
-                <option value="8">Professionals</option>
-                <option value="9">Truck</option>
-                <option value="10">Concrete slab</option>
-                <option value="11">Equipment repairing</option>
-                <option value="12">A/C</option>
-                <option value="13">Welding</option>
-                <option value="14">Cooking</option>
-                <option value="15">Cushions</option>
-                <option value="16">Vehicle Repairs</option>
-                <option value="17">Cleaners</option>
-                <option value="18">CCTV</option>
-                <option value="19">Ceiling</option>
-                <option value="20">Well</option>
-                <option value="21">Chairs</option>
-                <option value="22">Rent-tools</option>
-                <option value="23">Curtains</option>
-                <option value="24">Solar</option>
-                <option value="25">Demolition</option>
-                <option value="26">Pest</option>
-                <option value="27">Mug designer</option>
-                <option value="28">Movers</option>
-                <option value="29">Aluminium</option>
-                <option value="30">Catering</option>
+            <select id="category1" name="category1">
+                <?php foreach($data['allcat'] as $cat):?>
+                <option value="0"></option>
+                <option value="<?php echo $cat->category ?>"><?php echo $cat->category ?></option>
+                <span class="invalidFeedback">
+                <?php  echo $data['category1Error'];?>
+            </span> </br> </br>
+            <?php endforeach; ?>
             </select>
             </div>
         </div>
@@ -56,38 +32,11 @@
             <label for="cat-2">Category 2</label>
             </div>
             <div class="col-75">
-            <select>
-                <option value="0">Plumbers</option>
-                <option value="1">Masons</option>
-                <option value="2">Tile</option>
-                <option value="3">Carpenters</option>
-                <option value="4">Painters</option>
-                <option value="5">Electricians</option>
-                <option value="6">Landscape</option>
-                <option value="7">Worker</option>
-                <option value="8">Professionals</option>
-                <option value="9">Truck</option>
-                <option value="10">Concrete slab</option>
-                <option value="11">Equipment repairing</option>
-                <option value="12">A/C</option>
-                <option value="13">Welding</option>
-                <option value="14">Cooking</option>
-                <option value="15">Cushions</option>
-                <option value="16">Vehicle Repairs</option>
-                <option value="17">Cleaners</option>
-                <option value="18">CCTV</option>
-                <option value="19">Ceiling</option>
-                <option value="20">Well</option>
-                <option value="21">Chairs</option>
-                <option value="22">Rent-tools</option>
-                <option value="23">Curtains</option>
-                <option value="24">Solar</option>
-                <option value="25">Demolition</option>
-                <option value="26">Pest</option>
-                <option value="27">Mug designer</option>
-                <option value="28">Movers</option>
-                <option value="29">Aluminium</option>
-                <option value="30">Catering</option>
+            <select id="category2" name="category2" >
+            <?php foreach($data['allcat'] as $cat):?>
+                <option value="0"></option>
+                <option value="<?php echo $cat->category ?>"><?php echo $cat->category ?></option>
+            <?php endforeach; ?>
             </select>
             </div>
         </div>
@@ -97,38 +46,11 @@
             <label for="cat-3">Category 3</label>
             </div>
             <div class="col-75">
-            <select>
-                <option value="0">Plumbers</option>
-                <option value="1">Masons</option>
-                <option value="2">Tile</option>
-                <option value="3">Carpenters</option>
-                <option value="4">Painters</option>
-                <option value="5">Electricians</option>
-                <option value="6">Landscape</option>
-                <option value="7">Worker</option>
-                <option value="8">Professionals</option>
-                <option value="9">Truck</option>
-                <option value="10">Concrete slab</option>
-                <option value="11">Equipment repairing</option>
-                <option value="12">A/C</option>
-                <option value="13">Welding</option>
-                <option value="14">Cooking</option>
-                <option value="15">Cushions</option>
-                <option value="16">Vehicle Repairs</option>
-                <option value="17">Cleaners</option>
-                <option value="18">CCTV</option>
-                <option value="19">Ceiling</option>
-                <option value="20">Well</option>
-                <option value="21">Chairs</option>
-                <option value="22">Rent-tools</option>
-                <option value="23">Curtains</option>
-                <option value="24">Solar</option>
-                <option value="25">Demolition</option>
-                <option value="26">Pest</option>
-                <option value="27">Mug designer</option>
-                <option value="28">Movers</option>
-                <option value="29">Aluminium</option>
-                <option value="30">Catering</option>
+            <select id="category3" name="category3">
+            <?php foreach($data['allcat'] as $cat):?>
+                <option value="0"></option>
+                <option value="<?php echo $cat->category ?>"><?php echo $cat->category ?></option>
+            <?php endforeach; ?>
             </select>
             </div>
         </div>
@@ -138,38 +60,11 @@
             <label for="cat-4">Category 4</label>
             </div>
             <div class="col-75">
-            <select>
-                <option value="0">Plumbers</option>
-                <option value="1">Masons</option>
-                <option value="2">Tile</option>
-                <option value="3">Carpenters</option>
-                <option value="4">Painters</option>
-                <option value="5">Electricians</option>
-                <option value="6">Landscape</option>
-                <option value="7">Worker</option>
-                <option value="8">Professionals</option>
-                <option value="9">Truck</option>
-                <option value="10">Concrete slab</option>
-                <option value="11">Equipment repairing</option>
-                <option value="12">A/C</option>
-                <option value="13">Welding</option>
-                <option value="14">Cooking</option>
-                <option value="15">Cushions</option>
-                <option value="16">Vehicle Repairs</option>
-                <option value="17">Cleaners</option>
-                <option value="18">CCTV</option>
-                <option value="19">Ceiling</option>
-                <option value="20">Well</option>
-                <option value="21">Chairs</option>
-                <option value="22">Rent-tools</option>
-                <option value="23">Curtains</option>
-                <option value="24">Solar</option>
-                <option value="25">Demolition</option>
-                <option value="26">Pest</option>
-                <option value="27">Mug designer</option>
-                <option value="28">Movers</option>
-                <option value="29">Aluminium</option>
-                <option value="30">Catering</option>
+            <select id="category4" name="category4" >
+            <?php foreach($data['allcat'] as $cat):?>
+                <option value="0"></option>
+                <option value="<?php echo $cat->category ?>"><?php echo $cat->category ?></option>
+            <?php endforeach; ?>
             </select>
             </div>
         </div>
@@ -179,38 +74,11 @@
             <label for="cat-5">Category 5</label>
             </div>
             <div class="col-75">
-            <select>
-                <option value="0">Plumbers</option>
-                <option value="1">Masons</option>
-                <option value="2">Tile</option>
-                <option value="3">Carpenters</option>
-                <option value="4">Painters</option>
-                <option value="5">Electricians</option>
-                <option value="6">Landscape</option>
-                <option value="7">Worker</option>
-                <option value="8">Professionals</option>
-                <option value="9">Truck</option>
-                <option value="10">Concrete slab</option>
-                <option value="11">Equipment repairing</option>
-                <option value="12">A/C</option>
-                <option value="13">Welding</option>
-                <option value="14">Cooking</option>
-                <option value="15">Cushions</option>
-                <option value="16">Vehicle Repairs</option>
-                <option value="17">Cleaners</option>
-                <option value="18">CCTV</option>
-                <option value="19">Ceiling</option>
-                <option value="20">Well</option>
-                <option value="21">Chairs</option>
-                <option value="22">Rent-tools</option>
-                <option value="23">Curtains</option>
-                <option value="24">Solar</option>
-                <option value="25">Demolition</option>
-                <option value="26">Pest</option>
-                <option value="27">Mug designer</option>
-                <option value="28">Movers</option>
-                <option value="29">Aluminium</option>
-                <option value="30">Catering</option>
+            <select id="category5" name="category5" >
+            <?php foreach($data['allcat'] as $cat):?>
+                <option value="0"></option>
+                <option value="<?php echo $cat->category ?>"><?php echo $cat->category ?></option>
+            <?php endforeach; ?>
             </select>
             </div>
         </div>
@@ -221,6 +89,9 @@
             </div>
             <div class="col-75">
             <input type="text" id="wo-district" name="wo-district" placeholder="Enter Your Disricts" required>
+            <span class="invalidFeedback">
+                <?php  echo $data['work_districtError'];?>
+            </span> </br> </br>
             </div>
         </div>
 
@@ -230,6 +101,9 @@
             </div>
             <div class="col-75">
             <input type="text" id="wo-city" name="wo-city" placeholder="Enter Your Cities" required>
+            <span class="invalidFeedback">
+                <?php  echo $data['work_cityError'];?>
+            </span> </br> </br>
             </div>
         </div>
 
@@ -239,6 +113,9 @@
             </div>
             <div class="col-75">
             <input type="file" id="qualification" name="qualification" style="background-color: white" required>
+            <span class="invalidFeedback">
+                <?php  echo $data['qualificationError'];?>
+            </span> </br> </br>
             </div>
         </div>
 
@@ -248,6 +125,9 @@
             </div>
             <div class="col-75">
             <input type="file" id="gs" name="gs" style="background-color: white" required>
+            <span class="invalidFeedback">
+                <?php  echo $data['gs_certiError'];?>
+            </span> </br> </br>
             </div>
         </div>
 
@@ -257,6 +137,9 @@
             </div>
             <div class="col-75">
             <input type="number" id="experience" name="experience" placeholder="Enter Your Experience Years" required>
+            <span class="invalidFeedback">
+                <?php  echo $data['exp_yearError'];?>
+            </span> </br> </br>
             </div>
         </div>
 
@@ -266,6 +149,9 @@
             </div>
             <div class="col-75">
             <input type="number" id="hour" name="hour" placeholder="Enter Your Working Hours" required>
+            <span class="invalidFeedback">
+                <?php  echo $data['work_hourError'];?>
+            </span> </br> </br>
             </div>
         </div>
 
@@ -275,6 +161,9 @@
             </div>
             <div class="col-75">
             <input type="time" id="call" name="call" placeholder="Enter Your Best Time" required>
+            <span class="invalidFeedback">
+                <?php  echo $data['call_timeError'];?>
+            </span> </br> </br>
             </div>
         </div>
 
@@ -284,6 +173,9 @@
             </div>
             <div class="col-75">
             <input type="text" id="wo-days" name="wo-days" placeholder="Enter Your Working Days" required>
+            <span class="invalidFeedback">
+                <?php  echo $data['work_dayError'];?>
+            </span> </br> </br>
             </div>
         </div>
 
@@ -292,10 +184,14 @@
             <label for="past">Past Experience</label>
             </div>
             <div class="col-75">
-            <input type="image" id="past" name="past" style="background-color: white" required>
+            <input type="file" id="past" name="past" style="background-color: white" required>
+            <span class="invalidFeedback">
+                <?php  echo $data['past_expError'];?>
+            </span> </br> </br>
             </div>
         </div>
         </br>
+
         <div class="row">
             <input type="submit" value="Save" class="green-button">
         </div>
