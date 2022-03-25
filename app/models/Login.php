@@ -100,7 +100,7 @@
 
 // Worker login ///////////////////////////////////////////////////////////////
          public function Worker_login($email, $password){
-            $this->db->query('SELECT * FROM worker WHERE email = :email');
+            $this->db->query('SELECT * FROM worker AS w JOIN worker_personal_detail AS p ON w.worker_id=p.worker_id WHERE email = :email');
 
             //bind value
             $this->db->bind(':email', $email);
