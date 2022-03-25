@@ -104,7 +104,8 @@
                             </td>
                         
                             <td>         
-            <form action ="<?php echo URLROOT; ?>/admins/admin_pendingads" method="POST">  
+            <form action ="<?php echo URLROOT; ?>/admins/admin_rejectads" method="POST">  
+                            <input type="hidden" name="ads_id" value="<?php echo $ads->ads_id; ?>">
                             <input type="submit" value="Reject" class="pink-button" style="float:right; margin-left:2em; display:inline; width:100px">
             </form>
                             </td>
@@ -210,6 +211,7 @@
                         
                             <td>         
             <form action="<?php echo URLROOT; ?>/admins/admin_pendingads" method="POST" >  
+                            <input type="hidden" name="ads_id" value="<?php echo $adsw->ads_id; ?>">
                             <input type="submit" value="Reject" class="pink-button" style="float:right; margin-left:2em; display:inline; width:100px">
             </form>
                             </td>

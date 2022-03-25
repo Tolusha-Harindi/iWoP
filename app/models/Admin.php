@@ -442,7 +442,7 @@ public function changeProfile($data){
 
     
     /*---------------- Reject Company Ads   --------------------------------------------------------------------------------------------------------------------------------*/
-    public function rejectAcceptAds($data){
+    public function rejectComAds($data){
         $this->db->query('UPDATE company_ads SET status="reject" WHERE ads_id=:ads_id');
 
         $this->db->bind(':ads_id', $data['ads_id']);
