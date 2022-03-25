@@ -3,6 +3,218 @@
         public function __construct() {
             //$this->pageModel = $this->model('Page');
         }
+        
+        public function worker_new_profile(){
+            if(!isLoggedIn()){
+                header("Location: " . URLROOT . "/workers");
+            }
+            $worker=$this->workerModel->getprofile($_SESSION['worker_id']);
+            $data = [
+                'worker'=> $worker,
+                'profile' => '',
+                'name'=>'',
+                'email' => '',
+                'adderss' => '',
+                'district' => '',
+                'city' => '',
+                'frontside' => '',
+                'backside' => '',
+                'profileError' => '',
+                'nameError'=>'',
+                'emailError' => '',
+                'addressError' => '',
+                'districtError' => '',
+                'cityError' => '',
+                'frontsideError' => '',
+                'backsideError' => ''
+            ];
+
+            if($_SERVER['REQUEST_METHOD'] == 'POST'){
+                $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+                
+                $data = [
+                    'worker_id'=>$_SESSION['worker_id'],
+                    'profile' => trim($_POST['prof_pic']),
+                    'name'=>trim($_POST['name']),
+                    'email' => trim($_POST['email']),
+                    'address' => trim($_POST['address']),
+                    'district' => trim($_POST['district']),
+                    'city' => trim($_POST['city']),
+                    'frontside' => trim($_POST['front']),
+                    'backside' => trim($_POST['back']),
+                    'profileError' => '',
+                    'nameError'=>'',
+                    'emailError' => '',
+                    'addressError' => '',
+                    'districtError' => '',
+                    'cityError' => '',
+                    'frontsideError' => '',
+                    'backsideError' => ''
+                ];
+
+                $nameValidation = "/^[a-zA-Z0-9]*$/";
+                //$imgAllowed = array('jpeg','jpg', "png", "JPEG","JPG", "PNG"); //allow only these file of extensions
+                //$ext= pathinfo(check_input($data['profile']), PATHINFO_EXTENSION);
+                $textValidation = "/^[a-zA-z]*$/";
+
+                //Validation for profile image upload
+                if(empty($data['profile'])){
+                    $data['profileError'] = 'Please upload your image.';
+                }
+                // else if(!in_array($ext,$imgAllowed)){
+                //     $data['profileError'] = 'JPEG only.';
+                // }
+
+                 //validate district name on letters
+                 if(empty($data['district'])){
+                    $data['districtError'] = 'Please Enter District';
+                }
+
+                //validate city name on letters/numbers
+                if(empty($data['city'])){
+                    $data['cityError'] = 'Please Enter City';
+                }
+
+                if(empty($data['email'])){
+                    $data['emailError'] = 'Please Enter Email';
+                }
+
+                if(empty($data['name'])){
+                    $data['nameError'] = 'Please Enter Name';
+                }
+
+                if(empty($data['profileError']) && empty($data['nameError']) && empty($data['addressError']) && empty($data['districtError']) && empty($data['cityError']) && empty($data['emailError']) && empty($data['frontsideError'])&& empty($data['backsideError'])){
+                    echo "omg";
+                    if($this->workerModel->worker_profile($data)){
+                        echo "success";
+                        header('location: ' . URLROOT . '/workers/worker_service');
+                    }
+                    else{
+                        echo "wrong email!";
+                    }
+                    $this->view('workers/worker_new_profile', $data);
+                }
+            }
+
+            $this->view('workers/worker_new_profile', $data);
+        }
+
+        
+        public function worker_service(){
+            $category=$this->workerModel->allCategories();
+            $data = [
+                'allcat'=>$category,
+                'category1' => '',
+                'category2' =>'',
+                'category3' =>'',
+                'category4' =>'',
+                'category5' =>'',
+                'work_district'=>'',
+                'work_city'=>'',
+                'qualification'=>'',
+                'gs_certi'=>'',
+                'exp_year'=>'',
+                'work_hour'=>'',
+                'call_time'=>'',
+                'work_day'=>'',
+                'past_exp'=>'',
+                'category1Error' =>'',
+                'work_districtError'=>'',
+                'work_cityError'=>'',
+                'qualificationError'=>'',
+                'gs_certiError'=>'',
+                'exp_yearError'=>'',
+                'work_hourError'=>'',
+                'call_timeError'=>'',
+                'work_dayError'=>'',
+                'past_expError'=>''
+            ];
+
+            if($_SERVER['REQUEST_METHOD'] == 'POST'){
+                //Sanitize post data
+                $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+
+                $data = [
+                    'allcat'=>$category,
+                    'worker_id'=> $_SESSION['worker_id'],
+                    'category1' => trim($_POST['category1']),
+                    'category2' => trim($_POST['category2']),
+                    'category3' => trim($_POST['category3']),
+                    'category4' => trim($_POST['category4']),
+                    'category5' => trim($_POST['category5']),
+                    'work_district'=> trim($_POST['wo-district']),
+                    'work_city'=> trim($_POST['wo-city']),
+                    'qualification'=> trim($_POST['qualification']),
+                    'gs_certi'=> trim($_POST['gs']),
+                    'exp_year'=> trim($_POST['experience']),
+                    'work_hour'=> trim($_POST['hour']),
+                    'call_time'=> trim($_POST['call']),
+                    'work_day'=> trim($_POST['wo-days']),
+                    'past_exp'=> trim($_POST['past']),
+                    'category1Error' =>'',
+                    'work_districtError'=>'',
+                    'work_cityError'=>'',
+                    'qualificationError'=>'',
+                    'gs_certiError'=>'',
+                    'exp_yearError'=>'',
+                    'work_hourError'=>'',
+                    'call_timeError'=>'',
+                    'work_dayError'=>'',
+                    'past_expError'=>''
+                ];
+
+                if(empty($data['category1'])){
+                    $data['category1Error'] = 'Please Select one Category';
+                }
+
+                if(empty($data['work_district'])){
+                    $data['work_districtError'] = 'Please Enter the district';
+                }
+
+                if(empty($data['work_city'])){
+                    $data['work_cityError'] = 'Please Enter the city';
+                }
+
+                if(empty($data['qualification'])){
+                    $data['qualificationError'] = 'Please upload the qualification';
+                }
+
+                if(empty($data['gs_certi'])){
+                    $data['gs_certiError'] = 'Please upload the gs certificate';
+                }
+
+                if(empty($data['exp_year'])){
+                    $data['exp_yearError'] = 'Please Enter the experience year';
+                }
+
+                if(empty($data['work_hour'])){
+                    $data['work_hourError'] = 'Please Enter the working hour';
+                }
+
+                if(empty($data['call_time'])){
+                    $data['call_timeError'] = 'Please Enter the best call time';
+                }
+
+                if(empty($data['work_day'])){
+                    $data['work_dayError'] = 'Please Enter the working day';
+                }
+
+                if(empty($data['past_exp'])){
+                    $data['past_expError'] = 'Please Enter the past experience';
+                }
+
+                if(empty($data['category1Error']) && empty($data['work_districtError']) && empty($data['work_cityError']) && empty($data['qualificationError']) && empty($data['gs_certiError']) && empty($data['exp_yearError']) && empty($data['call_timeError']) && empty($data['work_hourError']) && empty($data['work_dayError']) && empty($data['past_expError'])){
+                    if($this->workerModel->insertService($data)){
+                        header('location: ' . URLROOT . '/workers/worker_bank_detail');   
+                    }
+                    else{
+                        die('Something went wrong');
+                    }
+                }
+            }
+
+            $this->view('workers/worker_service', $data);
+        }
 
         public function worker_all_ads() {
             if(!isLoggedIn()){
