@@ -14,6 +14,74 @@
         return $row;
     }
       
+      public function worker_profile($data){
+        $this->db->query("INSERT INTO worker_personal_detail(worker_id, address, district, city, nic_front, nic_back, prof_pic) 
+                          VALUES (:worker_id, :address, :district, :city, :frontside, :backside, :profile) ");
+
+        //Bind values
+        $this->db->bind(':worker_id', $data['worker_id']);
+        $this->db->bind(':profile', $data['profile']);
+        $this->db->bind(':address', $data['address']);
+        $this->db->bind(':district', $data['district']);
+        $this->db->bind(':city', $data['city']);
+        $this->db->bind(':frontside', $data['frontside']);
+        $this->db->bind(':backside', $data['backside']);
+
+        if($this->db->execute()){
+            return true;
+        }else {
+            return false;
+        }
+    
+     }
+      
+      public function getservice($wid){
+        $this->db->query('SELECT * FROM service WHERE worker_id = :worker_id');
+
+        $this->db->bind(':worker_id', $wid);
+        $row = $this->db->single();
+
+        return $row;
+    }
+
+    public function allCategories(){
+        $this->db->query('SELECT * FROM category');
+
+        $row = $this->db->resultSet();
+
+        return $row;
+    }
+
+    public function insertService($data){
+        $this->db->query('INSERT INTO service (worker_id, category1, category2, category3, category4, category5, working_district, working_city, working_days, gs_certi, qualification, exp_year, work_hour, call_time, experience) 
+                          VALUES (:worker_id, :category1, :category2, :category3, :category4, :category5, :work_district, :work_city, :work_day, :gs, :qualification, :exp_year, :work_hour, :call_time, :past)');
+
+        //Bind values
+        $this->db->bind(':worker_id', $data['worker_id']);
+        $this->db->bind(':category1', $data['category1']);
+        $this->db->bind(':category2', $data['category2']);
+        $this->db->bind(':category3', $data['category3']);
+        $this->db->bind(':category4', $data['category4']);
+        $this->db->bind(':category5', $data['category5']);
+        $this->db->bind(':work_district', $data['work_district']);
+        $this->db->bind(':work_city', $data['work_city']);
+        $this->db->bind(':work_day', $data['work_day']);
+        $this->db->bind(':gs', $data['gs_certi']);
+        $this->db->bind(':qualification', $data['qualification']);
+        $this->db->bind(':exp_year', $data['exp_year']);
+        $this->db->bind(':work_hour', $data['work_hour']);
+        $this->db->bind(':call_time', $data['call_time']);
+        $this->db->bind(':past', $data['past_exp']);
+
+        //Execute the function
+        if($this->db->execute()){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+      
       public function findWorkerPassword(){
         $this->db->query("SELECT password FROM worker Where worker_id = '{$_SESSION['worker_id']}'");
 
