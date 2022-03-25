@@ -1,0 +1,271 @@
+.category{
+    font-family: 'Rancho', sans-serif;
+    font-size:45px;
+    margin-left: 55%;
+    color:#051A77;
+    margin-top: -16em;
+}
+
+/*------------------------------------------------------------------upload a profile pic---------------------------------------------------------*/
+#imageUpload
+{
+    display: none;
+}
+
+#profileImage
+{
+    cursor: pointer;
+}
+
+#profile-container {
+    margin-left: 55%;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+#profile-container img {
+    width: 150px;
+    height: 150px;
+}
+
+
+/*---------------------------------------------------------------------form---------------------------------------------------------------------*/
+.heading{
+    font-family: 'Rancho', sans-serif;
+    color:#051A77; 
+    font-size:30px;
+    margin-top: 3em;
+    margin-left: 19em;
+}
+
+
+.form-space {
+    cursor: pointer;
+    background-color: #ECEFFF;
+    box-shadow: 4px 8px 16px lightgray;
+    border-radius: 5px;
+    width: 54%;
+    max-width: 54%;
+    margin-left: 35em;
+    margin-right: 10em;
+    margin-top: 2em;
+    padding: 0 0.5em;
+    display: flex;
+    flex-direction: column;
+    transition: all ease-in-out 0.5s;
+}
+
+.form-space:hover {
+    box-shadow: 1px 2px 4px gray;
+}
+
+input[type=text], input[type=email], input[type=password], input[type=time], input[type=date],input[type=image], input[type=number], select{
+    width: 91%;
+    padding: 10px;
+    border: 1px solid #6f7dd8;
+    border-radius: 4px;
+    resize: vertical;
+    box-sizing: border-box;
+}
+  
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-left: 3em;
+    font-size: 14px;
+}
+
+/*------------------choose file button -------------------*/
+::-webkit-file-upload-button {
+    background: #7184D9;
+    color: white;
+    padding: 8px;
+    font-size: 12px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: all 0.15s ease;
+    box-sizing: border-box;
+    outline: none;
+    cursor: pointer;
+    line-height: 0.6;
+    vertical-align: middle;
+    user-select: none;
+    text-align: center;
+    border: 1px solid transparent;
+    width: 60%;
+    height: 25px;
+    margin-bottom: 2em;
+    margin-top: 0.5em;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 2em;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 2em;
+  }
+
+  .col-35 {
+    float: left;
+    width: 35%;
+    margin-top: 2em;
+  }
+  
+  .col-65 {
+    float: left;
+    width: 65%;
+    margin-top: 1.8em;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, .col-35, .col-65,input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+
+
+  /*--------------------select district, city, category- customer_service_provider----------------------------*/
+  .select-relate{
+      margin-left: 20em;
+  }
+
+
+/*----------------------------------------------------------------------tables--------------------------------------------------------------*/
+.table-wrapper {
+    margin-top: 2em;
+    margin-left: 35em;
+    margin-right: 7em;
+    box-shadow: 0px 4px 8px 0px rgba( 0, 0, 0, 0.5);
+}
+
+.fl-table {
+    font-size: 18px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color:white;
+}
+
+.fl-table td, .fl-table th {
+    text-align: center;
+    padding:15px;  
+}
+
+.fl-table td {
+    border-right: 1px solid white;
+    font-size: 15px;
+    padding: 7px;
+}
+
+.fl-table thead th {
+    color: #ffffff;
+    background: #6F87F2;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+
+.fl-table thead th:nth-child(odd) {
+    color: #ffffff;
+    background-color: #6F87F2;
+}
+
+.fl-table tr:nth-child(even) {
+    background: #F8F8F8;
+}
+
+.fl-table .table-image{
+    height: 2em;
+    width: 2em;
+}
+
+/* Responsive */
+
+@media (max-width: 767px) {
+.fl-table {
+        display: block;
+        width: 100%;
+}
+.table-wrapper:before{
+        content: "Scroll horizontally >";
+        display: block;
+        text-align: right;
+        font-size: 13px;
+        color: white;
+        padding: 0 0 10px;
+}
+.fl-table thead, .fl-table tbody, .fl-table thead th {
+        display: block;
+}
+.fl-table thead th:last-child{
+        border-bottom: none;
+}
+.fl-table thead {
+        float: left;
+}
+.fl-table tbody {
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+}
+.fl-table td, .fl-table th {
+        padding: 20px .625em .625em .625em;
+        height: 60px;
+        vertical-align: middle;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 120px;
+        font-size: 15px;
+        text-overflow: ellipsis;
+    }
+    .fl-table thead th {
+        text-align: left;
+        border-bottom: 1px solid #f7f7f9;
+    }
+    .fl-table tbody tr {
+        display: table-cell;
+    }
+    .fl-table tbody tr:nth-child(odd) {
+        background: none;
+    }
+    .fl-table tr:nth-child(even) {
+        background: transparent;
+    }
+    .fl-table tr td:nth-child(odd) {
+        background: #F8F8F8;
+        border-right: 1px solid #E6E4E4;
+    }
+    .fl-table tr td:nth-child(even) {
+        border-right: 1px solid #E6E4E4;
+    }
+    .fl-table tbody td {
+        display: block;
+        text-align: center;
+    }
+  }

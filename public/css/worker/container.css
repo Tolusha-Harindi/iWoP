@@ -1,0 +1,342 @@
+.search{
+    margin-left: 80em;
+    display: flex;
+}
+.customer-ad{
+    margin-left: 22em;
+}
+
+.ad-space-row{
+    display: flex;
+}
+
+.ad-space{
+    cursor: pointer;
+    box-shadow: 4px 8px 16px lightgray;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 100%;
+    margin-left: 3em;
+    margin-bottom: 1em;
+    padding: 0 0.5em;
+    display: flex;
+    flex-direction: column;
+    transition: all ease-in-out 0.5s;
+}
+
+.ad-space:hover{
+    box-shadow: 1px 2px 4px gray;
+    background: #3E5AD8;
+    color: white;
+}
+
+.grid-container {
+  display: grid;
+  width:100%;
+  grid-template-columns: auto auto auto;
+  background-color:white;
+  padding: 6px;
+  margin-top: 2em;
+}
+
+.img-ad{
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+    display: block;
+    float: right;
+    margin-right: 0.5em;
+    margin-top: 1em;   
+}
+
+.title1{
+    color: #113CFC;
+    font-size: 20px;
+    margin-top: -2em ;
+    margin-left: 1em;
+}
+
+.title1:hover{
+    color: orange;
+}
+ 
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-left: 2.5em;
+    margin-top: -1em;
+    font-size: 12px;
+}
+
+.detail{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    resize: vertical;
+    box-sizing: border-box;
+    margin-right: 2em;
+    margin-top: -1em;
+    font-size: 12px;
+}
+
+.work{
+    height: 50px;
+    width: 50px;
+    margin-left: 0.5em;
+}
+  
+
+.ad-col-35 {
+    float: left;
+    width: 35%;
+  }
+  
+  .ad-col-65 {
+    float: left;
+    width: 65%;
+  }
+  
+  /* Clear floats after the columns */
+  .ad-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .ad-col-25, .ad-col-75, p, .box{
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+.ad-bottom{
+    cursor: pointer;
+    box-shadow: 4px 8px 16px lightgray;
+    border-radius: 10px;
+    height: 400px;
+    width: 37%;
+    max-width: 37%;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    padding: 0 0.5em;
+    display: flex;
+    flex-direction: column;
+    transition: all ease-in-out 0.5s;
+    overflow-y: auto;
+}
+
+.review-box{
+    background: white;
+    box-shadow: 4px 8px 16px lightgray;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 95%;
+    max-width: 95%;
+    padding:0.5em 0.5em 1em 0.5em;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    transition: all ease-in-out 0.5s;
+}
+
+.vertical-line{
+    border-left: 2px solid grey;
+    height: 100%;
+    margin-left:550px;
+    margin-top:-750px;
+  }
+
+.right-con{
+    width: 720px;
+    height: 1220px;
+    margin-left:45%;
+    margin-top:-35em;
+}
+
+.right-space{
+  cursor: pointer;
+  box-shadow: 4px 8px 16px lightgray;
+  border-radius: 10px;
+  width: 95%;
+  max-width: 95%;
+  margin-top: 0;
+  margin-left: 3em;
+  margin-bottom: 1em;
+  padding: 0 0.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.right{
+    width: 750px;
+    height: 800px;
+    margin-left:45%;
+    margin-top:-39em;
+  }
+
+.right-upper{
+    margin-top:0px;
+    width: 90%;
+    height: 500px;
+    box-sizing: border-box;
+    margin-left:20px;
+    background-color: #ECEFFF;
+    box-shadow: 4px 8px 16px lightgray;
+    border-radius:5px;
+  }
+
+#review{
+      border: 1px solid #6f7dd8;
+      resize:none;
+      height:150px;
+      width:380px;
+  }
+
+#star{
+      width:90px;
+  }
+
+  /*------------------------------------------customer_service_provider--------------------------------------*/
+
+.img-worker{
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    align-items: center;   
+}
+  
+.box{
+    background: white;
+    padding: 1px 1px 3px 6px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.box .slider{
+    height: 20px;
+    width: 220px;
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.box .slider input{
+    height: 100%;
+    width:100%;
+    -webkit-appearance: none;
+    outline: none;
+    background: #f2f2f2;
+    border-radius: 25px;
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+.slider input::-moz-range-progress{
+    height: 10px;
+    border-radius: 25px;
+    background: #3498db;
+}
+
+.slider input::-moz-range-thumb{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 4px solid #3498db;
+    background: white;
+    -webkit-appearance: none;
+}
+
+.box .value{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Ribeye Marrow', sans-serif;
+    color: #3498db;
+    width: 55px;
+    text-align: center;
+}
+
+/*-------------------------------------star---------------------------------------------*/
+
+label {
+    cursor: pointer;
+  }
+  
+svg {
+    width: 2rem;
+    height: 2rem;
+    padding: -5rem;
+  }
+  
+  
+  /* hide radio buttons */
+  
+input[name="star"] {
+    display: inline-block;
+    width: 0;
+    opacity: 0;
+    margin-left: -2px;
+  }
+  
+  /* hide source svg */
+  
+.star-source {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+  
+  
+  /* set initial color to transparent so fill is empty*/
+  
+.star {
+    color: transparent;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  
+  /* set direction to row-reverse so 5th star is at the end and ~ can be used to fill all sibling stars that precede last starred element*/
+  
+.star-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+  
+  label:hover ~ label .star,
+  svg.star:hover,
+  input[name="star"]:focus ~ label .star,
+  input[name="star"]:checked ~ label .star {
+    color: #d62a9d;
+  }
+  
+  input[name="star"]:checked + label .star {
+    animation: starred 0.5s;
+  }
+  
+  input[name="star"]:checked + label {
+    animation: scaleup 1s;
+  }
+  
+  @keyframes scaleup {
+    from {
+      transform: scale(1.2);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes starred {
+    from {
+      color: #600040;
+    }
+    to {
+      color: #d62a9d;
+    }
+  }
+
+

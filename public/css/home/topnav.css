@@ -1,0 +1,146 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+*{
+	box-sizing: border-box;
+}
+
+.fade-in {
+    animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/*-----navbar box-----*/
+.navbar{
+    position: absolute;
+    box-shadow: 0 0 10px lightgray;
+    padding: 0.1em 0.2em;
+    display: flex;
+    background: #0526BA;
+    overflow: hidden;
+    width: 100%;
+    left:0;
+    top:0;
+}
+
+/*-----logo-iwop outer container-----*/
+.logo-container {
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/*-----logo iwop-----*/
+.logo {
+    cursor: pointer;
+}
+
+/*-----navigation bar links-----*/
+.link-list {
+    list-style: none;
+    flex-grow: 10;
+    justify-content: center;
+    display: flex;
+    gap: 0.01em;
+}
+
+.link {
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    margin-top: 0.7em;
+    margin-right:4em;
+}
+
+.link:hover {
+    font-weight: 750;
+}
+
+.anchor-tag {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.anchor-tag:hover{
+    color:orange;
+}
+
+.anchor-tag-logo {
+    text-decoration: none;
+    color: white;
+    font-family: 'Ribeye Marrow', sans-serif;
+    font-size: 32px;
+}
+
+/* The dropdown container*/
+/* .dropdown {
+    float: right;
+    overflow: hidden;
+    margin-top: -0.7em;
+    right:6em;
+} */
+
+/*drop down icon hover color*/
+/* .dropdown :hover{
+    color:#F10B67;
+}
+   */
+/* Dropdown button */
+/* .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px 12px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    /*margin: 0;  Important for vertical align on mobile phones  
+    cursor: pointer;
+}  */
+
+/* Dropdown content (hidden by default) */
+/* .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px hsla(253, 82%, 31%, 0.5);
+    z-index: 1;
+} */
+
+/* Links inside the dropdown */
+/* .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-weight: 100;
+    transition: background-color 0.5s ease-out 100ms;
+    font-size: 14px;
+} */
+  
+/* Add a light blue background color to dropdown links on hover */
+/* .dropdown-content a:hover {
+    background-color: #d1d8fc;
+    color: #0526BA;
+    font-size: 16px;
+} */
+  
+/* Show the dropdown menu on hover */
+/* .dropdown:hover .dropdown-content {
+    display: block;
+}   */

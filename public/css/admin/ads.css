@@ -1,0 +1,131 @@
+
+.customer-ad{
+    margin-left: 28em;
+}
+
+.ad-space-row{
+    display: flex;
+}
+
+.ad-space{
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 4px 8px 16px lightgray;
+    border-radius: 10px;
+    width: 95%;
+    max-width: 100%;
+    margin-left: 5em;
+    margin-bottom: 1em;
+    padding: 0 0.5em;
+    display: flex;
+    flex-direction: column;
+    transition: all ease-in-out 0.5s;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color:white;
+    padding: 6px;
+    margin-top: 2em;
+ }
+
+.ad-space:hover{
+    box-shadow: 1px 2px 4px gray;
+    background: #3E5AD8;
+    color: white;
+}
+
+.img-ad{
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+    display: block;
+    float: right;
+    margin-right: 0.5em;
+    margin-top: 1em;   
+}
+
+.title1{
+    color: #F10B67;
+    font-size: 20px;
+    margin-top: -2em ;
+    margin-left: 1em;
+}
+
+.title1:hover{
+    color: orange;
+}
+ 
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-left: 2.5em;
+    margin-top: -1em;
+    font-size: 12px;
+}
+
+.detail{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    resize: vertical;
+    box-sizing: border-box;
+    margin-right: 2em;
+    margin-top: -1em;
+    font-size: 12px;
+}
+
+.work{
+    height: 50px;
+    width: 50px;
+    margin-left: 0.5em;
+}
+  
+
+.ad-col-35 {
+    float: left;
+    width: 35%;
+  }
+  
+  .ad-col-65 {
+    float: left;
+    width: 65%;
+  }
+  
+  /* Clear floats after the columns */
+  .ad-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .ad-col-25, .ad-col-75, p{
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+
+  /*------------------------------------------customer_service_provider--------------------------------------*/
+
+  .img-ad-worker{
+    border-radius: 50px;
+    height: 80px;
+    width: 80px;
+    align-items: center;   
+}
+
+
+/*----------------------------customer-response---------------------------*/
+.response-img{
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+    display: block;
+    float: left;
+    margin-left: 1em;
+}

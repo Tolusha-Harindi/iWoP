@@ -1,0 +1,62 @@
+.fluid-container {
+    width: 50em;
+    margin: 0 auto;
+    margin-top: 10px;
+   
+}
+
+.fluid-container h2 {
+    color: #3a3b3c;
+    position: relative;
+    width: 23rem;
+}
+
+.fluid-container h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 12px;
+    width: 50em;
+    height: 2px;
+    background-color: #3a3b3c;
+}
+
+.accordian {
+    width: 50em;
+    padding: 0 5px;
+    border: 3px solid #333333		;
+    cursor: pointer;
+    /* border-radius: 100px; */
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+}
+.accordian .icon {
+    margin: 0 10px 0 0;
+    width: 30px;
+    height: 30px;
+    background: url(plus.png) no-repeat 8px 7px #CC9933;
+    border-radius: 50%;
+    float: left;
+    transition: all .5s ease-in;
+}
+.accordian h5 {
+    font-size: 16px;
+    margin: 0;
+    padding: 3px 0 0 0 ;
+    font-weight: normal;
+    color: black;
+}
+.panel {
+    padding: 0 15px;
+    border-left: 1px solid #6db5ff;
+    margin-left: 25px;
+    font-size: 14px;
+    text-align: justify;
+    overflow: hidden;
+    max-height: 0;
+    transition: all .5s ease-in;
+}
+.panel p {
+    color: #000000;
+}

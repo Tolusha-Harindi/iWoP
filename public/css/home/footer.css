@@ -1,0 +1,66 @@
+.footer {
+	padding-top: 5em;
+    margin-top: 7em;
+    box-shadow: 2px 4px 8px gray;
+}
+
+.top {
+    display: flex;
+    padding: 1em 4em;
+    background: #F3F1F5;
+}
+
+.logo-img {
+    margin: 0;
+    padding: 0;
+}
+
+.iwop-logo {
+    text-decoration: none;
+    color: black;
+    font-family: 'Ribeye Marrow', sans-serif;
+    font-size: 45px;
+    margin-right: 6em;
+}
+
+.links-container {
+    flex-grow: 2;
+}
+
+.social-media-container {
+    flex-grow: 2;
+}
+
+.footer-list {
+    list-style-type: none;
+    padding: 0;
+    line-height: 1.4em;
+    font-size: 1.1em;
+}
+
+.footer-list-item {
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+    margin-top: 1em;
+}
+
+
+.footer-link {
+    text-decoration: none;
+    color: black;
+    
+}
+
+.footer-list-item:hover, .footer-link:hover {
+    color: #1E3CC0;
+    transition: all ease-in-out 0.5s;
+}
+
+.copyright {
+    background: #0526BA;
+    color: whitesmoke;
+    font-size: 14px;
+    text-align: center;
+    padding: 0.8em;
+    border-top: 1px solid lightgray;
+}
