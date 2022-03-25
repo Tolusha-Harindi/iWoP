@@ -371,7 +371,7 @@ public function changeProfile($data){
     /*-------------------   Customer Ads  --------------------------------------------------------------------------------------------------------*/
     public function getAds(){
 
-        $this->db->query('SELECT  customer_ads.*, customer.prof_pic, customer.fname, customer.lname FROM customer_ads INNER JOIN customer ON customer_ads.cus_id = customer.cus_id WHERE status = "Pending"');
+        $this->db->query('SELECT  customer_ads.*, customer.prof_pic, customer.fname, customer.lname FROM customer_ads INNER JOIN customer ON customer_ads.cus_id = customer.cus_id WHERE customer_ads.status = "Pending"');
 
         $results = $this->db->resultSet();
         
@@ -383,7 +383,10 @@ public function changeProfile($data){
     /*------------------------  company ads   ----------------------------------------------------------------------------------------------------------*/
     public function getAdsw(){
 
-        $this->db->query('SELECT * FROM company_ads WHERE status = "Pending"');
+        $this->db->query('SELECT company_ads.*, company.prof_pic, company.com_name FROM company_ads INNER JOIN company ON company_ads.reg_no = company.reg_no WHERE company_ads.status = "Pending"');
+
+        //$this->db->query('SELECT * FROM company_ads   WHERE status = "Pending"');
+        //$this->db->query('SELECT company_ads.*, company.com_name FROM company_ads INNER JOIN company ON company_ads.reg_no = company.reg_no WHERE status = "Pending"');
 
         $results = $this->db->resultSet();
         

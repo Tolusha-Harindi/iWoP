@@ -133,7 +133,7 @@
             <div class="ad-space">
                 <input type="hidden" name="ads_id" value="<?php echo $adsw->ads_id; ?>">
                     <div class="img-user">
-                        <img src="<?php echo URLROOT;?>/public/img/w3.jpg" alt="propic" class="img-ad"/>
+                        <img src="<?php echo URLROOT; ?>/public/img/<?php echo $adsw->prof_pic; ?>" alt="propic" class="img-ad"/>
                     </div>
                     <p class="title1"><?php echo $adsw->title; ?></p>
                         <div class="ad-row">
@@ -150,7 +150,7 @@
                                 <label for="name"> <b>Posted by :</b> </label>
                             </div>
                             <div class="ad-col-65">
-                                <p class="detail">Pathum Gamage </p>
+                                <p class="detail"><?php echo $adsw->com_name; ?></p>
                             </div>
                         </div>
 
