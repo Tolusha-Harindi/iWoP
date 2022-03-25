@@ -23,9 +23,11 @@
         <div class="grid-container">
             <!---------------------------------------------------------------------------------------------------->
             <?php foreach($data['ads'] as $ads): ?> 
+            <form action="<?php echo URLROOT; ?>/admins/admin_pendingads" method="POST">
                 <div class="ad-space">
+                <input type="hidden" name="ads_id" value="<?php echo $ads->ads_id; ?>">
                     <div class="img-user">
-                        <img src="<?php echo URLROOT;?>/public/img/w3.jpg" alt="propic" class="img-ad"/>
+                        <img src="<?php echo URLROOT;?>/public/img/<?php echo $ads->prof_pic; ?>" alt="propic" class="img-ad"/>
                     </div>
                     <p class="title1"><?php echo $ads->title; ?></p>
                         <div class="ad-row">
@@ -42,7 +44,7 @@
                                 <label for="name"> <b>Posted by :</b> </label>
                             </div>
                             <div class="ad-col-65">
-                                <p class="detail">Pathum Gamage </p>
+                                <p class="detail"><?php echo $ads->fname; ?> <?php echo $ads->lname; ?> </p>
                             </div>
                         </div>
 
@@ -93,8 +95,21 @@
 
                         </br>
                         <div class="ad-row" style="margin-bottom: 1.5em; margin-top:1.5em">
-                            <input type="submit" value="Approve" class="blue-button" style="padding: 8px 7px; margin-left:30%;display:inline;">
-                            <input type="submit" value="Reject" class="pink-button" style="float:right; margin-right:30%; display:inline;">
+                        
+                            <table>
+                            <tr>
+                                <td>
+                            <input type="submit" value="Approve" class="blue-button" style="padding: 8px 24px; margin-left:5em;display:inline;">
+            </form> 
+                            </td>
+                        
+                            <td>         
+            <form action ="<?php echo URLROOT; ?>/admins/admin_pendingads" method="POST">  
+                            <input type="submit" value="Reject" class="pink-button" style="float:right; margin-left:2em; display:inline; width:100px">
+            </form>
+                            </td>
+                            </tr>
+                            </table>
                         </div>
                 </div>
             <?php endforeach; ?>
@@ -104,7 +119,7 @@
 
 
 
-<!----------------------------------------Worker complaints----------------------------------------------->
+<!----------------------------------------Company ads----------------------------------------------->
 <!------heading----------->
 <div class="heading" id="company-ads"> <p> Company Pending Ads </p> </div>
 
@@ -113,7 +128,9 @@
         <div class="grid-container">
             <!---------------------------------------------------------------------------------------------------->
             <?php foreach($data['adsw'] as $adsw): ?> 
+            <form action="<?php echo URLROOT; ?>/admins/admin_pendingads" method="POST">
             <div class="ad-space">
+                <input type="hidden" name="ads_id" value="<?php echo $adsw->ads_id; ?>">
                     <div class="img-user">
                         <img src="<?php echo URLROOT;?>/public/img/w3.jpg" alt="propic" class="img-ad"/>
                     </div>
@@ -183,8 +200,21 @@
 
                         </br>
                         <div class="ad-row" style="margin-bottom: 1.5em; margin-top:1.5em">
-                            <input type="submit" value="Approve" class="blue-button" style="padding: 8px 7px; margin-left:30%;display:inline;">
-                            <input type="submit" value="Reject" class="pink-button" style="float:right; margin-right:30%; display:inline;">
+                           
+                <table>
+                            <tr>
+                                <td>
+                            <input type="submit" value="Approve" class="blue-button" style="padding: 8px 24px; margin-left:5em;display:inline;">
+            </form> 
+                            </td>
+                        
+                            <td>         
+            <form action="<?php echo URLROOT; ?>/admins/admin_pendingads" method="POST" >  
+                            <input type="submit" value="Reject" class="pink-button" style="float:right; margin-left:2em; display:inline; width:100px">
+            </form>
+                            </td>
+                            </tr>
+                            </table>
                         </div>
             </div>
             <?php endforeach; ?>

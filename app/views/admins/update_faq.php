@@ -16,7 +16,7 @@
 <div class="heading"> <p> Update  Questions and Answers </p> </div>
 
 <div class="form-space" style="margin-top: 5em;">
-    <form action = "<?php echo URLROOT; ?>/admins/update_faq/<?php echo $data['faq']->faq_id ?>" method="POST">
+    <form action= "<?php echo URLROOT; ?>/admins/update_faq/<?php echo $data['faq']->faq_id ?>" method="POST">
         <div class="row">
             <div class="col-25">
             <label for="question">Question</label>

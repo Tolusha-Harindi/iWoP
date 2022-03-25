@@ -16,9 +16,9 @@
                 <img src="<?php echo URLROOT ?>/public/img/admin.jpg ?>"  class="img1"/>
         </div>
 
-        <!-- <?php foreach($data['includes'] as $include): ?>
-                <p class='title'><?php echo $include->name; ?></p>
-            <?php endforeach; ?>  -->
+        <!-- <?php foreach($data['adminName'] as $adminName): ?>
+                <p class='title'><?php echo $adminName->name; ?></p>
+        <?php endforeach; ?>  -->
 
         <p class='title'>Tolusha Harindi</p>
 

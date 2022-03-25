@@ -199,7 +199,6 @@
                         </tr>
                         <tr> 
                             <td> 12  </td>
-                            <td> <button class="blue-out-button" style="float:right; margin-right: 2em; "> Message</button>  </td>
                         </tr>
                         <tr> 
                             <td> </br> </br> </br> </td>

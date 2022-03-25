@@ -193,7 +193,6 @@
                         <th>Name</th>
                         <th>Status</th>
                         <th>Category</th>
-                        <th>Message</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -203,7 +202,6 @@
                         <td>Kasun Perera</td>
                         <td style="color: #F10B67;">Accepted</td>
                         <td>Plumber</td>
-                        <td> <input type="reset" class="blue-out-button" value="Message"/></td>
                     </tr>
 
                     <tr>
@@ -211,7 +209,6 @@
                         <td>Nishini Guruge</td>
                         <td style="color: #F10B67;">Rejected</td>
                         <td>Electrician</td>
-                        <td> <input type="reset" class="blue-out-button" value="Message"/></td>
                     </tr>
 
                     <tr>
@@ -219,7 +216,6 @@
                         <td>Sandani Perera</td>
                         <td style="color: #F10B67;">Accepted</td>
                         <td>Plumber</td>
-                        <td> <input type="reset" class="blue-out-button" value="Message"/></td>
                     </tr>
 
                      <tr>
@@ -227,7 +223,6 @@
                         <td>Nimal Perera</td>
                         <td style="color: #F10B67;">Accepted</td>
                         <td>Plumber</td>
-                        <td> <input type="reset" class="blue-out-button" value="Message"/></td>
                     </tr>
 
                 </tbody>
