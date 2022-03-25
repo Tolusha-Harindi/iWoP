@@ -17,18 +17,7 @@
           
         }
 
-        public function topnav2() {
-
-            //$users = $this->pageModel-> getUsers();
-            $data = [
-                'title' => 'topnav2',
-                //'users' => $users
-
-            ];
-
-            $this->view('includes/topnav2', $data);
-          
-        }
+        
 
         public function footer() {
 
@@ -48,10 +37,15 @@
 ///////////////////////////////////////////////////////////        Admin          ////////////////////////////////////////////////////////////////////////////////////////
         public function admin_sidenav() {
 
-            $includes = $this->includModel->findName();
+            if(!isLoggedIn()){
+                header("Location: " . URLROOT . "/includes");
+            }
+
+
+            $adminName = $this->includModel->findName();
  
             $data = [
-                'includes' => $includes
+                'adminName' => $adminName
                 
             ];
 

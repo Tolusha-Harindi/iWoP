@@ -90,7 +90,7 @@
 
 ////// Company Ads ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
      public function findAllPosts(){
-         $this->db->query('SELECT * FROM company_ads ORDER BY created_at DESC');
+         $this->db->query("SELECT * FROM company_ads WHERE reg_no='{$_SESSION['reg_no']}' AND status = 'accept' ORDER BY created_at DESC");
 
          $results = $this->db->resultSet();
 

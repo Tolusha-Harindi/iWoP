@@ -7,7 +7,7 @@ class Customer{
      }
 
      public function postNewAds(){
-         $this->db->query('SELECT * FROM customer_ads ORDER BY post_date DESC');
+         $this->db->query("SELECT * FROM customer_ads WHERE cus_id='{$_SESSION['cus_id']}' AND status = 'accept' ORDER BY post_date DESC");
 
          $results = $this->db->resultSet(); //results inside array
 

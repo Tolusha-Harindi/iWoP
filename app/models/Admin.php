@@ -371,7 +371,7 @@ public function changeProfile($data){
     /*-------------------   Customer Ads  --------------------------------------------------------------------------------------------------------*/
     public function getAds(){
 
-        $this->db->query('SELECT * FROM customer_ads');
+        $this->db->query('SELECT  customer_ads.*, customer.prof_pic, customer.fname, customer.lname FROM customer_ads INNER JOIN customer ON customer_ads.cus_id = customer.cus_id WHERE status = "Pending"');
 
         $results = $this->db->resultSet();
         
@@ -383,11 +383,74 @@ public function changeProfile($data){
     /*------------------------  company ads   ----------------------------------------------------------------------------------------------------------*/
     public function getAdsw(){
 
-        $this->db->query('SELECT * FROM company_ads');
+        $this->db->query('SELECT * FROM company_ads WHERE status = "Pending"');
 
         $results = $this->db->resultSet();
         
         return $results;
 
+    }
+
+
+    /*-------------------------  Accept Customer ads -------------------------------------------------------------------------------------------------------------------*/
+    public function cusacceptAds($data){
+        $this->db->query('UPDATE customer_ads SET status="accept" WHERE ads_id=:ads_id');
+
+        $this->db->bind(':ads_id', $data['ads_id']);
+
+        if ($this->db->execute()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+
+
+
+
+    /*---------------- Reject Customer Ads   --------------------------------------------------------------------------------------------------------------------------------*/
+    public function rejectCusAds($data){
+        $this->db->query('UPDATE company_ads SET status = "reject" WHERE ads_id = :ads_id');
+
+        $this->db->bind(':ads_id', $data['ads_id']);
+
+        if ($this->db->execute()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+
+
+
+    /*-------------------------  Accept Company ads -------------------------------------------------------------------------------------------------------------------*/
+    public function comacceptAds($data){
+        $this->db->query('UPDATE company_ads SET status = "accept" WHERE ads_id = :ads_id');
+
+        $this->db->bind(':ads_id', $data['ads_id']);
+
+        if ($this->db->execute()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+
+
+    
+    /*---------------- Reject Company Ads   --------------------------------------------------------------------------------------------------------------------------------*/
+    public function rejectAcceptAds($data){
+        $this->db->query('UPDATE company_ads SET status="reject" WHERE ads_id=:ads_id');
+
+        $this->db->bind(':ads_id', $data['ads_id']);
+
+        if ($this->db->execute()) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }

@@ -669,8 +669,9 @@ public function admin_faq() {
 
 
 
+/////////////////////////  Admin Pending ads ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        public function admin_pendingads() {
+public function admin_pendingads() {
 
             if(!isLoggedIn()){
                 header("Location: " . URLROOT . "/admins");
@@ -678,11 +679,13 @@ public function admin_faq() {
 
             $ads = $this->adminModel->getAds();
             $adsw = $this->adminModel->getAdsw();
+            
 
 
             $data = [
                 'ads' => $ads,
-                'adsw' => $adsw
+                'adsw' => $adsw,
+                'status' => ''
                 // 'title' => '',
                 // 'category' => '',
                 // 'description' => '',
@@ -692,6 +695,72 @@ public function admin_faq() {
 
 
             ];
+
+
+            /*--------customer accept ads-----------*/
+            if($_SERVER['REQUEST_METHOD'] == 'POST')
+            {
+                $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+    
+                $data = [
+                    'ads_id' => trim($_POST['ads_id']),
+    
+                ];
+                    if($this->adminModel->cusacceptAds($data))
+                    {
+                        header("Location: " . URLROOT . "/admins/admin_pendingads");
+                    }else{
+                        die("Something went wrong, Please try again!");
+                    }
+            
+    
+           $this-> view('admins/admin_pendingads', $data);
+    
+            }
+
+
+            /*-------- Customer reject ads -----------*/
+            if($_SERVER['REQUEST_METHOD'] == 'POST')
+            {
+                $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+    
+                $data = [
+                    'ads_id' => trim($_POST['ads_id']),
+    
+                ];
+                    if($this->adminModel->rejectCusAds($data))
+                    {
+                        header("Location: " . URLROOT . "/admins/admin_pendingads");
+                    }else{
+                        die("Something went wrong, Please try again!");
+                    }
+            
+    
+           $this-> view('admins/admin_pendingads', $data);
+    
+            }
+
+
+            /*------- Company accept Ads --------------*/
+            if($_SERVER['REQUEST_METHOD'] == 'POST')
+            {
+                $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+    
+                $data = [
+                    'ads_id' => trim($_POST['ads_id']),
+    
+                ];
+                    if($this->adminModel->comacceptAds($data))
+                    {
+                        header("Location: " . URLROOT . "/admins/admin_pendingads");
+                    }else{
+                        die("Something went wrong, Please try again!");
+                    }
+            
+    
+           $this-> view('admins/admin_pendingads', $data);
+    
+            }
 
             $this->view('admins/admin_pendingads', $data);
           
