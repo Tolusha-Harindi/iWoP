@@ -194,6 +194,21 @@
             $this->view('logins/worker_register', $data);
           
         }
+        
+/*--------------------------------------------------for new worker------------------------------------------------------*/
+        public function worker_new_account(){
+            $data = [
+                'title'=>'New Account'
+            ];
+
+            if($_SERVER['REQUEST_METHOD'] == 'POST'){
+                $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+                
+                header('location: ' . URLROOT . '/workers/worker_new_profile');
+            }
+
+            $this->view('logins/worker_new_account', $data);
+        }
 
 
 
@@ -260,8 +275,13 @@
             $_SESSION['worker_id'] = $user->worker_id;
             $_SESSION['fname'] = $user->fname;
             $_SESSION['email'] = $user->email;
-    
-            header('location:' . URLROOT . '/workers/worker_dashboard');
+             $_SESSION['address'] = $user->address;
+            
+            if(!empty($_SESSION['address'])){
+                header('location:' . URLROOT . '/workers/worker_dashboard');
+            }else{
+                header('location:' . URLROOT . '/logins/worker_new_account');
+            }
     
         }
     
@@ -269,6 +289,8 @@
             unset($_SESSION['worker_id']);
             unset($_SESSION['fname']);
             unset($_SESSION['email']);
+            unset($_SESSION['address']);
+            
             header('location:' . URLROOT . '/logins/loginas');
         }
 
