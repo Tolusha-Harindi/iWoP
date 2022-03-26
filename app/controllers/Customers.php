@@ -19,10 +19,14 @@
 
         public function customer_dashboard() {
 
-            //$users = $this->pageModel-> getUsers();
+            $pending = $this->customerModel-> pendingAds();
+            $accepted = $this->customerModel-> acceptedAds();
+            $rejected = $this->customerModel-> rejectedAds();
+
             $data = [
-                'title' => 'customer_dashboard page',
-                //'users' => $users
+                'accepted' => $accepted,
+                'rejected'  => $rejected,
+                'pending' => $pending,
 
             ];
 
