@@ -7,7 +7,7 @@
 <link rel='stylesheet' href="<?php echo URLROOT;?>/public/css/home/button.css"/>
 <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
 
-<a href="#cus-complaint" class="top-button1"  style="margin-left:78em; width:10em;"> Customer Complaints </a>
+<a href="#cus-complaint" class="top-button1"  style="margin-left:78em; width:14em;"> Customer Complaints </a>
 <a href="#worker-complaint" class="top-button2"  style="margin-left:64em;"> Worker Complaints </a>
                 
 
@@ -25,7 +25,7 @@
                 <thead>
                     <tr>
                         <th>Reason</th>
-                        <th>Worker</th>
+                        <th>Customer</th>
                         <th>Complaint count</th>
                         <th>Cancel</th>
                         <th>Remove</th>
@@ -83,7 +83,7 @@
                 <thead>
                     <tr>
                         <th>Reason</th>
-                        <th>Customer</th>
+                        <th>Worker</th>
                         <th>Complaint count</th>
                         <th>Cancel</th>
                         <th>Remove</th>
@@ -127,6 +127,12 @@
             </table> 
         </div> 
     </div>
+
+
+
+
+<!------heading----------->
+<div class="heading"  style="margin-bottom: 1.5em;"> <p> Company complaints </p> </div>
 
     <!------------------- Company table-------------------->
     <div class= "table"> 

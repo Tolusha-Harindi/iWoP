@@ -1,16 +1,15 @@
-
 <link rel='stylesheet' href="<?php echo URLROOT;?>/public/css/home/sidenav.css"/>
 
 
     <a href="<?php echo URLROOT;?>/admins/admin_profile" class='card-link'>
         <div class="card">
-        <!-- <?php foreach($data['admin'] as $admin): ?>
+        <!-- <?php foreach($data['adminName'] as $adminName): ?>
             <div class="img-container">
-                <img src="<?php echo URLROOT ?>/public/img/<?php echo $admin->prof_pic; ?>"  class="img1"/>
+                <img src="<?php echo URLROOT ?>/public/img/<?php echo $adminName->prof_pic; ?>"  class="img1"/>
             </div>
-            <?php endforeach; ?>-->
+            <?php endforeach; ?> -->
 
-        
+
 
         <div class="img-container">
                 <img src="<?php echo URLROOT ?>/public/img/admin.jpg ?>"  class="img1"/>
@@ -20,7 +19,7 @@
                 <p class='title'><?php echo $adminName->name; ?></p>
         <?php endforeach; ?>  -->
 
-        <p class='title'>Tolusha Harindi</p>
+        <p class='title'>Tolushaa Harindi</p>
 
             
             <div class="description">
