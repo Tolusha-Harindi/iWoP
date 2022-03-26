@@ -40,21 +40,27 @@
     <div class="row1">
 
         <div class="dash-card" id="card1">
-            <h3>Posted Ads Count</h3>
-            <h1> 28 </h1>
-            <img src="<?php echo URLROOT;?> /public/img/ads1.png" alt="">
+            <h3>Pending Ads Count</h3>
+            <?php foreach($data['pending'] as $pending): ?>
+                <h1> <?php echo $pending->pendingCount; ?> </h1>
+            <?php endforeach; ?>
+            <img src="<?php echo URLROOT;?> /public/img/complaint3.png" alt="">
         </div>
 
         <div class="dash-card" id="card2">
-            <h3>Deleted Ads Count</h3>
-            <h1> 255 </h1>
-            <img src="<?php echo URLROOT;?> /public/img/delete.png" alt="">
+            <h3>Accepted Ads Count</h3>
+            <?php foreach($data['accepted'] as $accepted): ?>
+                <h1> <?php echo $accepted->acceptedCount; ?> </h1>
+            <?php endforeach; ?>
+            <img src="<?php echo URLROOT;?> /public/img/ads1.png" alt="">
         </div>
 
         <div class="dash-card" id="card3">
-            <h3>Workers Request Count</h3>
-            <h1> 255 </h1>
-            <img src="<?php echo URLROOT;?> /public/img/complaint3.png" alt="">
+            <h3>Rejected ads Count</h3>
+            <?php foreach($data['rejected'] as $rejected): ?>
+            <h1> <?php echo $rejected->rejectedCount; ?> </h1>
+            <?php endforeach; ?>
+            <img src="<?php echo URLROOT;?> /public/img/delete.png" alt="">
         </div>
 
     </div>

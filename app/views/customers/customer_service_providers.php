@@ -161,9 +161,6 @@
                             <td style="color: #F10B67;">Full day</td>
                         </tr>
                         <tr>
-                            <td style="color:#0526BA;">Last active 3d ago</td>
-                        </tr>
-                        <tr>
                             <td>
                                 <span class="fa fa-star checked" style="color: orange;"></span>
                                 <span class="fa fa-star checked" style="color: orange;"></span>

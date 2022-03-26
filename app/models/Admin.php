@@ -528,5 +528,16 @@ public function changeProfile($data){
         return $results;
         
     }
+
+
+    public function viewComPendingadsCount(){
+        $this->db->query("SELECT COUNT(*) AS comadsCount FROM company_ads WHERE status= 'Pending'");
+
+
+        $results = $this->db->resultSet();
+        
+        return $results;
+        
+    }
     
 }

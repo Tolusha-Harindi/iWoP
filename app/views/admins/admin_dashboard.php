@@ -31,7 +31,7 @@
         </div>
 
         <div class="dash-card" id="card3">
-            <h3>Pending Ads Count</h3>
+            <h3>Customer Pending Ads Count</h3>
             <?php foreach($data['cusads'] as $cusads): ?>
                 <h1> <?php echo $cusads->cusadsCount; ?> </h1>
             <?php endforeach; ?>
@@ -42,10 +42,18 @@
 
     <div class="row1">
 
-        <div class="dash-card" id="card1">
+        <!-- <div class="dash-card" id="card1">
             <h3>Customer Complaint Count</h3>
                 <h1> 255 </h1>
             <img src="<?php echo URLROOT;?>/public/img/complaint1.png" alt="">
+        </div> -->
+
+        <div class="dash-card" id="card3">
+            <h3>Company Pending Ads Count</h3>
+            <?php foreach($data['comads'] as $comads): ?>
+                <h1> <?php echo $comads->comadsCount; ?> </h1>
+            <?php endforeach; ?>
+            <img src="<?php echo URLROOT;?>/public/img/ads1.png" alt="">
         </div>
 
         <div class="dash-card" id="card2">

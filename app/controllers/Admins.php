@@ -209,6 +209,7 @@
             $worker = $this->adminModel->viewWorkerCount();
             $company = $this->adminModel->viewCompanyCount();
             $cusads = $this->adminModel->viewCusPendingadsCount();
+            $comads = $this->adminModel->viewComPendingadsCount();
 
 
             $data = [
@@ -217,7 +218,8 @@
                 'customer' => $customer,
                 'worker' => $worker,
                 'company' => $company,
-                'cusads' => $cusads
+                'cusads' => $cusads,
+                'comads' => $comads,
             ];
 
             $this->view('admins/admin_dashboard', $data);

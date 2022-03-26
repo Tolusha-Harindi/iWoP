@@ -14,6 +14,13 @@ class Customer{
          return $results;
      }
 
+
+
+
+
+
+
+///////////////////////   Add Posts     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
      public function addpost($data){
         $this->db->query('INSERT INTO customer_ads (cus_id, category, title, description, address, contact, start_date, end_date, budget, work) VALUES (:cus_id, :category, :title, :description, :address, :contact, :start_date, :end_date, :budget, :work)');
 
@@ -163,5 +170,36 @@ class Customer{
 
         return $results;
 
+    }
+
+
+
+
+
+
+    /////////////////  Customer Dashboard       /////////////////////////////////////////////////////////////////////////////////////////////////////////
+    public function pendingAds(){
+        $this->db->query("SELECT COUNT(*) AS pendingCount FROM customer_ads WHERE status= 'Pending'");
+
+        $results = $this->db->resultSet();
+        
+        return $results;
+    }
+
+    public function acceptedAds(){
+        $this->db->query("SELECT COUNT(*) AS acceptedCount FROM customer_ads WHERE status= 'accept'");
+
+        $results = $this->db->resultSet();
+        
+        return $results;
+    }
+
+
+    public function rejectedAds(){
+        $this->db->query("SELECT COUNT(*) AS rejectedCount FROM customer_ads WHERE status= 'reject'");
+
+        $results = $this->db->resultSet();
+        
+        return $results;
     }
 }
