@@ -19,8 +19,8 @@
     
     <div class="sidebar">
         <div class="description">
-        <a href="<?php echo URLROOT;?>/companies/company_dashboard" class='side-link-active'>
-                <ul class='side-list-active'>
+        <a href="<?php echo URLROOT;?>/companies/company_dashboard" class='side-link'>
+                <ul class='side-list'>
                     <li>Dashboard</li>
                 </ul>
         </a>
