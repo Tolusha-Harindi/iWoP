@@ -15,22 +15,26 @@
 <!------------------------------------------------- dashboard count boxes----------------------------------------------------------->
 <div class="tile-line">
     <div class="row1">
-
         <div class="dash-card" id="card1">
             <h3>Manager Count</h3>
-            <h1> 28 </h1>
+            <?php foreach($data['dashbrd'] as $dashbrd): ?>
+                <h1><?php echo $dashbrd->managerCount; ?> </h1>
+            <?php endforeach; ?>
             <img src="<?php echo URLROOT;?>/public/img/manager.png" alt="">
         </div>
-    
         <div class="dash-card" id="card2">
             <h3>Category Count</h3>
-            <h1> 25 </h1>
+            <?php foreach($data['category'] as $category): ?>
+                <h1> <?php echo $category->categoryCount; ?> </h1>
+            <?php endforeach; ?>
             <img src="<?php echo URLROOT;?>/public/img/category.png" alt="">
         </div>
 
         <div class="dash-card" id="card3">
             <h3>Pending Ads Count</h3>
-            <h1> 255 </h1>
+            <?php foreach($data['cusads'] as $cusads): ?>
+                <h1> <?php echo $cusads->cusadsCount; ?> </h1>
+            <?php endforeach; ?>
             <img src="<?php echo URLROOT;?>/public/img/ads1.png" alt="">
         </div>
 
@@ -40,7 +44,7 @@
 
         <div class="dash-card" id="card1">
             <h3>Customer Complaint Count</h3>
-            <h1> 28 </h1>
+                <h1> 255 </h1>
             <img src="<?php echo URLROOT;?>/public/img/complaint1.png" alt="">
         </div>
 
@@ -62,25 +66,31 @@
 
         <div class="dash-card" id="card1">
             <h3>Customers Count</h3>
-            <h1> 28 </h1>
+            <?php foreach($data['customer'] as $customer): ?>
+            <h1> <?php echo $customer->customerCount; ?> </h1>
+            <?php endforeach; ?>
             <img src="<?php echo URLROOT;?>/public/img/customer.png" alt="">
         </div>
 
         <div class="dash-card" id="card2">
             <h3>Workers Count</h3>
-            <h1> 255 </h1>
+            <?php foreach($data['worker'] as $worker): ?>
+                <h1> <?php echo $worker->workerCount; ?> </h1>
+            <?php endforeach; ?>
             <img src="<?php echo URLROOT;?>/public/img/worker.png" alt="">
         </div>
 
         <div class="dash-card" id="card3">
             <h3>Companies Count</h3>
-            <h1> 255 </h1>
+            <?php foreach($data['company'] as $company): ?>
+                <h1> <?php echo $company->companyCount; ?> </h1>
+            <?php endforeach; ?>
             <img src="<?php echo URLROOT;?>/public/img/company.png" alt="">
         </div>
 
     </div>
 
-    <div class="row1">
+    <!-- <div class="row1">
 
         <div class="dash-card" id="card1">
             <h3>Removed Customers Count</h3>
@@ -100,7 +110,7 @@
             <img src="<?php echo URLROOT;?>/public/img/comp-remove.png" alt="">
         </div>
 
-    </div>
+    </div> -->
 </div>
 
 

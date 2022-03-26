@@ -336,7 +336,7 @@ public function changeProfile($data){
     /*----------------- admin change password-----------------------------------------------------------------------------------------------------*/
 
     public function findAdminPassword(){
-        $this->db->query("SELECT password FROM admin Where admin_id = '{$_SESSION['admin_id']}'");
+        $this->db->query("SELECT password FROM admin WHERE admin_id = '{$_SESSION['admin_id']}'");
 
         $results = $this->db->resultSet();
         
@@ -456,4 +456,77 @@ public function changeProfile($data){
             return false;
         }
     }
+
+
+
+
+
+
+
+
+
+
+    /////////////////////    Dashboard        ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+    public function viewManagerCount(){
+        $this->db->query('SELECT COUNT(*) AS managerCount FROM manager');
+
+
+        $results = $this->db->resultSet();
+        
+        return $results;
+        
+    }
+
+
+    public function viewCategoryCount(){
+        $this->db->query('SELECT COUNT(*) AS categoryCount FROM category');
+
+
+        $results = $this->db->resultSet();
+        
+        return $results;
+        
+    }
+
+
+    public function viewCustomerCount(){
+        $this->db->query('SELECT COUNT(*) AS customerCount FROM customer');
+
+
+        $results = $this->db->resultSet();
+        
+        return $results;
+        
+    }
+
+    public function viewWorkerCount(){
+        $this->db->query('SELECT COUNT(*) AS workerCount FROM worker');
+
+
+        $results = $this->db->resultSet();
+        
+        return $results;
+        
+    }
+
+    public function viewCompanyCount(){
+        $this->db->query('SELECT COUNT(*) AS companyCount FROM company');
+
+
+        $results = $this->db->resultSet();
+        
+        return $results;
+        
+    }
+
+    public function viewCusPendingadsCount(){
+        $this->db->query("SELECT COUNT(*) AS cusadsCount FROM customer_ads WHERE status= 'Pending'");
+
+
+        $results = $this->db->resultSet();
+        
+        return $results;
+        
+    }
+    
 }

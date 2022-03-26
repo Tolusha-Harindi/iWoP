@@ -200,14 +200,24 @@
 
 
 
-
+///////////////// Admin Dashboard   /////////////////////////////////////////////////////////////////////////////////////
         public function admin_dashboard() {
 
-            //$users = $this->pageModel-> getUsers();
-            $data = [
-                'title' => 'admin_dashboard page',
-                //'users' => $users
+            $dashbrd = $this->adminModel-> viewManagerCount();
+            $category = $this->adminModel->viewCategoryCount();
+            $customer = $this->adminModel->viewCustomerCount();
+            $worker = $this->adminModel->viewWorkerCount();
+            $company = $this->adminModel->viewCompanyCount();
+            $cusads = $this->adminModel->viewCusPendingadsCount();
 
+
+            $data = [
+                'dashbrd' => $dashbrd,
+                'category' => $category,
+                'customer' => $customer,
+                'worker' => $worker,
+                'company' => $company,
+                'cusads' => $cusads
             ];
 
             $this->view('admins/admin_dashboard', $data);
@@ -341,7 +351,7 @@ public function admin_faq() {
             /*error messages are empty*/
             if(empty($data['questionError']) && empty($data['answerError'])){
                 if ($this->adminModel->updateFAQ($data)){
-                    header("Location: " . URLROOT . "/admins/update_faq");
+                    header("Location: " . URLROOT . "/admins/update_faq ");
                  
                 }else{
                     die("Something went wrong, please try again");
