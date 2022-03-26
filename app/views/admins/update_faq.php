@@ -16,13 +16,14 @@
 <div class="heading"> <p> Update  Questions and Answers </p> </div>
 
 <div class="form-space" style="margin-top: 5em;">
-    <form action= "<?php echo URLROOT; ?>/admins/update_faq/<?php echo $data['faq']->faq_id ?>" method="POST">
+    <form action= "<?php echo URLROOT . "/admins/update_faq/" . $data['faq_id'] ?>" method="POST">
         <div class="row">
             <div class="col-25">
             <label for="question">Question</label>
             </div>
             <div class="col-75">
             <input type="text" name="question" value="<?php echo $data['faq']->question ?>">
+            <input type="hidden" name="faq_id" value="<?php echo $data['faq_id']?>">
             </br> </br>
             <span class="invalidFeedback">
                 <?php echo $data['questionError']; ?>

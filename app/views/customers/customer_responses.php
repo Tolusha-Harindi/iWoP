@@ -124,7 +124,7 @@
                                 <td>
 
                                     <form action="<?php echo URLROOT . "/customers/delete_ads/" . $newPosts->ads_id ?>" method="POST">
-                                        <input type="submit" name="delete" value="Delete" class="pink-out-button" style="text-decoration:none; font-size:13px; margin-left:15%; margin-top:0.2em; padding: 8px 20px; display:inline;">
+                                        <input type="submit" name="delete" value="Delete" class="pink-out-button" style="text-decoration:none; font-size:13px; margin-left:15%; margin-bottom:2em; padding: 8px 20px; display:inline;">
                                     </form>
                                     <?php endif; ?> 
                                 </td>

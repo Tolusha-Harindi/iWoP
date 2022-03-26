@@ -301,14 +301,15 @@ public function admin_faq() {
 
          $faq = $this->adminModel->findFAQById($faq_id);
 
-         if(!isLoggedIn()){
-            header("Location: " . URLROOT . "/admins");
-         }elseif($faq->admin_id != $_SESSION['admin_id']){
-            header("Location: " . URLROOT . "/admins");
+        //  if(!isLoggedIn()){
+        //     header("Location: " . URLROOT . "/admins");
+        //  }elseif($faq->admin_id != $_SESSION['admin_id']){
+        //     header("Location: " . URLROOT . "/admins");
 
-         }
+         //}
         
          $data = [
+            'faq_id' => $faq_id,
             'faq' => $faq,
             'question' => '',
             'answer' => '',
@@ -322,7 +323,7 @@ public function admin_faq() {
 
 
             $data = [
-                'faq_id' => $faq_id,
+                'faq_id' => $_POST['faq_id'],
                 'faq' => $faq,
                 'admin_id' => $_SESSION['admin_id'],
                 'question' => trim($_POST['question']),
@@ -353,7 +354,7 @@ public function admin_faq() {
             /*error messages are empty*/
             if(empty($data['questionError']) && empty($data['answerError'])){
                 if ($this->adminModel->updateFAQ($data)){
-                    header("Location: " . URLROOT . "/admins/update_faq ");
+                    header("Location: " . URLROOT . "/admins/admin_faq");
                  
                 }else{
                     die("Something went wrong, please try again");
