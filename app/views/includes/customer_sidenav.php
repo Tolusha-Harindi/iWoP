@@ -17,7 +17,7 @@
             <img src="<?php echo URLROOT ?>/public/img/w3.jpg" class="img1"/>
     </div>
 
-    <p class='title'>Tolusha</p>
+    <!-- <p class='title'>Tolusha</p> -->
 
 
         <div class="description">

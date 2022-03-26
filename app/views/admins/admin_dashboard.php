@@ -48,7 +48,7 @@
             <img src="<?php echo URLROOT;?>/public/img/complaint1.png" alt="">
         </div> -->
 
-        <div class="dash-card" id="card3">
+        <div class="dash-card" id="card1">
             <h3>Company Pending Ads Count</h3>
             <?php foreach($data['comads'] as $comads): ?>
                 <h1> <?php echo $comads->comadsCount; ?> </h1>
