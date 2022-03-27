@@ -1,6 +1,6 @@
 <?php
     //Database params
-    define('DB_HOST', 'localhost'); //Add your db host
+    define('DB_HOST', 'localhost:3308'); //Add your db host
     define('DB_USER', 'root'); // Add your DB root
     define('DB_PASS', ''); //Add your DB pass
     define('DB_NAME', 'iwop'); //Add your DB Name
@@ -19,7 +19,7 @@
  ?>
 
 <?php 
-$servername = "localhost";
+$servername = "localhost:3308";
 $username = "root";
 $password = "";
 $dbname = "iwop";

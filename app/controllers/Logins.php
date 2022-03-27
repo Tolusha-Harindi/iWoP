@@ -655,7 +655,7 @@ public function Customer_login() {
                     if(empty($data['nameError'])  && empty($data['ownerError']) && empty($data['contactError']) && empty($data['reg_noError']) && empty($data['emailError']) && empty($data['addressError']) && empty($data['passwordError'])&& empty($data['re-enterpasswordError'])){
                         
                         //hash password
-                        $data['password'] = password_hash($data['password'], PASSWORD_DEFAULT);
+                        //$data['password'] = password_hash($data['password'], PASSWORD_DEFAULT);
 
                         //Register user from model function
                         if($this->loginModel->company_register($data)){

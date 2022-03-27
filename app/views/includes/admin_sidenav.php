@@ -1,9 +1,9 @@
-
 <link rel='stylesheet' href="<?php echo URLROOT;?>/public/css/home/sidenav.css"/>
 
 
     <a href="<?php echo URLROOT;?>/admins/admin_profile" class='card-link'>
         <div class="card">
+			
         <!-- <?php foreach($data['admin'] as $admin): ?>
             <div class="img-container">
                 <img src="<?php echo URLROOT ?>/public/img/<?php echo $admin->prof_pic; ?>"  class="img1"/>

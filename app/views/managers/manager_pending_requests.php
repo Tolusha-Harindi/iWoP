@@ -7,8 +7,8 @@
 <link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/home/popup.css"/>
 <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
 
-<a href="#service" class="top-button1" style="margin-top: -37em; margin-left:78em;width:10em;"> Service Providers </a>
-<a href="#company" class="top-button2" style="margin-top: -37em; margin-left:65em;"> Companies </a>
+<a href="#service" class="top-button1" style="margin-top: -47em; margin-left:78em;width:10em; position: inherit;"> Service Providers </a>
+<a href="#company" class="top-button2" style="margin-top: -47em; margin-left:65em; position: inherit;" > Companies </a>
 
 <!--------------------------------- Service Providers----------------------------------------------------->
 <div class="heading" id="service" style="margin-top: -18em; margin-bottom: 1.5em;"> <p> Service Providers </p> </div>

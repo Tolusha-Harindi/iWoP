@@ -7,9 +7,9 @@
 <link rel='stylesheet' href="<?php echo URLROOT;?>/public/css/home/button.css"/>
 <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
 
-<a href="#customer" class="top-button1" style="margin-left:78em; width:7em;"> Customers</a>
-<a href="#worker" class="top-button2"  style="margin-left:65em;"> Service Providers</a>
-<a href="#company" class="top-button3" style="margin-left:55em"> Companies </a>
+<a href="#customer" class="top-button1" style="margin-left:78em; width:7em; position: inherit;"> Customers</a>
+<a href="#worker" class="top-button2"  style="margin-left:65em; position: inherit;"> Service Providers</a>
+<a href="#company" class="top-button3" style="margin-left:55em;position: inherit;" > Companies </a>
                 
 
 <!------heading----------->
@@ -27,7 +27,6 @@
                     <tr>
                         <th>Profile Pic</th>
                         <th>Company Name</th>
-                        <!----<th>Registered date</th>---->
                         <th>Email</th>
                         <th>Contact</th>
                     </tr>
@@ -38,7 +37,6 @@
                     <tr>
                         <td><img src="<?php echo URLROOT ?> /public/img/<?php echo $com->prof_pic; ?>" class="table-image" style="border-radius: 50px;"></td>
                         <td> <?php echo $com->com_name; ?></td>
-                        <!-----<td> <?php //echo date('j F Y', strtotime($com->add_date)) ?> </td> ----->
                         <td> <?php echo $com->email; ?></td>
                         <td> <?php echo $com->contact; ?></td>
                     </tr>

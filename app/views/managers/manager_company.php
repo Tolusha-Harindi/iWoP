@@ -11,77 +11,43 @@
 <div class="heading" id="service" style="margin-top: -18em; margin-bottom: 1.5em;"> <p> Companies</p> </div>
 
 <!--------------------------------companies----------------------------------------->
-    <div class= "table"> 
-        <div class="table-wrapper" style="margin-top: 3em;">
-            <table  class="fl-table" style="border-spacing: 25px;">
+ 
+<div class= "table"> 
+        <div class="table-wrapper" style="margin-top:2em;">
+            <table style="border-spacing: 25px" class="fl-table">
                 <thead>
                     <tr>
                         <th>Profile Pic</th>
-                        <th>Name</th>
-                        <th>Registered Date</th>
-                        <!-- <th>Last Active</th> -->
+                        <th>Company Name</th>
+                        <th>Owner Name</th>
+                        <th>Contact</th>
+                        <th>Email</th>
                         <th>Address</th>
+                        <th>Contact</th>
                     </tr>
                 </thead>
                 <tbody>
                 
+                    <?php foreach($data['com'] as $com): ?>
                     <tr>
-                        <td><img src="<?php echo URLROOT;?> /public/img/w1.jpg" class="table-image" style="border-radius: 50px;"></td>
-                        <td>Dream Wave</td>
-                        <td>10/10/2021</td>
-                        <!-- <td>2h ago </td> -->
-                        <td> aaa..................................</td>
+                        <td><img src="<?php echo URLROOT ?> /public/img/<?php echo $com->prof_pic; ?>" class="table-image" style="border-radius: 50px;"></td>
+                        <td> <?php echo $com->com_name; ?></td>
+                        <td> <?php echo $com->owner_name; ?></td>
+                        <td> <?php echo $com->contact; ?></td>
+                        <td> <?php echo $com->email; ?></td>
+                        <td> <?php echo $com->address; ?></td>
+                        <td> <?php echo $com->contact; ?></td>
                     </tr>
-
-                    <tr>
-                        <td><img src="<?php echo URLROOT;?> /public/img/w2.jpg" class="table-image" style="border-radius: 50px;"></td>
-                        <td>Dream Wave</td>
-                        <td>10/10/2021</td>
-                        <!-- <td>2h ago </td> -->
-                        <td> aaa..................................</td>
-                    </tr>
-
-                    <tr>
-                        <td><img src="<?php echo URLROOT;?> /public/img/w3.jpg" class="table-image" style="border-radius: 50px;"></td>
-                        <td>Dream Wave</td>
-                        <td>10/10/2021</td>
-                        <!-- <td>2h ago </td> -->
-                        <td> aaa..................................</td>
-                    </tr>
-
-                     <tr>
-                        <td><img src="<?php echo URLROOT;?> /public/img/admin.jpg" class="table-image" style="border-radius: 50px;"></td>
-                        <td>Dream Wave</td>
-                        <td>10/10/2021</td>
-                        <!-- <td>2h ago </td> -->
-                        <td> aaa..................................</td>
-                    </tr>
-
-                    <tr>
-                        <td><img src="<?php echo URLROOT;?> /public/img/admin.jpg" class="table-image" style="border-radius: 50px;"></td>
-                        <td>Dream Wave</td>
-                        <td>10/10/2021</td>
-                        <!-- <td>2h ago </td> -->
-                        <td> aaa..................................</td>
-                    </tr>
-
-                    <tr>
-                        <td><img src="<?php echo URLROOT;?> /public/img/admin.jpg" class="table-image" style="border-radius: 50px;"></td>
-                        <td>Dream Wave</td>
-                        <td>10/10/2021</td>
-                        <!-- <td>2h ago </td> -->
-                        <td> aaa..................................</td>
-                    </tr>
-
+                    <?php endforeach; ?>
                 </tbody>
             </table> 
         </div> 
     </div>
-
 
 <!---------------------------Arrow button----------------------------------------->
 <div class="arrow">
 	<a href="#"><img src="<?php echo URLROOT;?> /public/img/arrow.png" alt="up_arrow"></a>
 </div>  
 
-<?php include_once APPROOT . '/views/includes/footer.php'; ?>
+<div class="footer" style="margin-top: 800px;">
+<?php include_once APPROOT . '/views/includes/footer.php'; ?></div>

@@ -262,6 +262,15 @@ public function deleteCategory($cat_id){
 
         return $results;
     }
+	
+	 public function findAllWorker(){
+        
+        $this->db->query('SELECT * FROM worker');
+
+        $results = $this->db->resultSet();
+
+        return $results;
+    }
 
     public function findAllCustomer(){
         
@@ -272,14 +281,7 @@ public function deleteCategory($cat_id){
         return $results;
     }
 
-    public function findAllWorker(){
-        
-        $this->db->query('SELECT * FROM worker');
-
-        $results = $this->db->resultSet();
-
-        return $results;
-    }
+   
 
 
 
@@ -391,3 +393,4 @@ public function changeProfile($data){
 
     }
 }
+?>
