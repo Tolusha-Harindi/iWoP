@@ -70,14 +70,9 @@
 
 
 
-
-
-
-
- 
- ///////////////////////////////////////////////////////////////////  Worker Register  ///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////  Worker Register  ///////////////////////////////////////////////////////
         public function worker_register($data){
-            $this->db->query('INSERT INTO worker (fname, lname, contact, nic, email, password) VALUES (:fname, :lname, :contact, :nic, :email, :password)');
+            $this->db->query('INSERT INTO worker (fname, lname, contact, nic, email, password, verify_token) VALUES (:fname, :lname, :contact, :nic, :email, :password, :verify_token)');
  
             //Bind values
             $this->db->bind(':fname', $data['fname']);
@@ -86,7 +81,8 @@
             $this->db->bind(':nic', $data['nic']);
             $this->db->bind(':email', $data['email']);
             $this->db->bind(':password', $data['password']);
- 
+            $this->db->bind(':verify_token', $data['verify_token']);
+
             //Execute the function
             if($this->db->execute()){
                 return true;
@@ -100,7 +96,7 @@
 
 // Worker login ///////////////////////////////////////////////////////////////
          public function Worker_login($email, $password){
-            $this->db->query('SELECT * FROM worker AS w JOIN worker_personal_detail AS p ON w.worker_id=p.worker_id WHERE email = :email');
+            $this->db->query('SELECT *  FROM worker WHERE email = :email');
 
             //bind value
             $this->db->bind(':email', $email);
@@ -113,6 +109,14 @@
             else{
                 return false;
             }
+        }
+
+        public function findById($wid){
+            $this->db->query('SELECT *  FROM worker_personal_detail WHERE worker_id = :worker_id');
+
+            $this->db->bind(':worker_id', $wid);
+            $row = $this->db->single();
+            return $row;
         }
 
 
@@ -133,7 +137,6 @@
                 return false;
             }
         }
-
 
 
 
