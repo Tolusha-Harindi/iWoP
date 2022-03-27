@@ -74,6 +74,7 @@
         <div class="row">
             <button type="submit" class="green-button">Update</button>
         </div>
+        <?php //endforeach; ?>
     </form>
 </div>
 
