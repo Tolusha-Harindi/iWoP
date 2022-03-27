@@ -7,9 +7,11 @@
  <?php //foreach($data['prof'] as $prof): ?>
     <div class="card">
         <div class="img-container">
-            <img src="<?php echo URLROOT ?>/public/img/<?php $data['prof']->prof_pic;?>" alt="propic" class="img1"/>
+
+            <img src="<?php echo URLROOT; ?>/public/img/<?php echo $_SESSION['prof_pic']?>" alt="propic" class="img1"/>
         </div>
-        <p class='title'><?php echo $_SESSION['fname'];?></p>
+        <p class='title'><?php echo $_SESSION['fname']?></p>
+
         <div class="description">
                 <ul class='list'>
                     <li>Edit profile</li>

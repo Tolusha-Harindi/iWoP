@@ -269,6 +269,11 @@ public function worker_register() {
             $_SESSION['worker_id'] = $user->worker_id;
             $_SESSION['fname'] = $user->fname;
             $_SESSION['email'] = $user->email;
+
+            $_SESSION['prof_pic'] = $user->prof_pic;
+
+    
+            header('location:' . URLROOT . '/workers/worker_dashboard');
             
             $data=$this->loginModel->findById($_SESSION['worker_id']);
             if($data!=null){
@@ -277,6 +282,7 @@ public function worker_register() {
                 header('location:' . URLROOT . '/logins/worker_new_account');
             }
             
+
     
         }
     
@@ -284,6 +290,9 @@ public function worker_register() {
             unset($_SESSION['worker_id']);
             unset($_SESSION['fname']);
             unset($_SESSION['email']);
+
+            unset($_SESSION['prof_pic']);
+
 
             header('location:' . URLROOT . '/logins/loginas');
         }
@@ -463,7 +472,8 @@ public function Customer_login() {
         'email' => '',
         'password' =>'',
         'emailError' =>'',
-        'passwordError' => ''
+        'passwordError' => '',
+        
 
     ];
 
@@ -477,7 +487,8 @@ public function Customer_login() {
                 'email' => trim($_POST['email']),
                 'password' => trim($_POST['password']),
                 'emailError' => '',
-                'passwordError' => '' 
+                'passwordError' => '',
+                
               ];
 
         //Validate email
@@ -506,7 +517,8 @@ public function Customer_login() {
             'email' => '',
             'password' => '',
             'emailError' => '',
-            'passwordError' => '' 
+            'passwordError' => '',
+             
         ];
     }
 
@@ -517,8 +529,12 @@ public function Customer_login() {
     public function createCustomerSession($user) {
         //session_start();
         $_SESSION['cus_id'] = $user->cus_id;
-        $_SESSION['firstname'] = $user->firstname;
+        $_SESSION['fname'] = $user->fname;
         $_SESSION['email'] = $user->email;
+        $_SESSION['prof_pic'] = $user->prof_pic;
+
+        
+
 
         header('location:' . URLROOT . '/customers/customer_dashboard');
 
@@ -526,8 +542,10 @@ public function Customer_login() {
 
     public function logout() {
         unset($_SESSION['cus_id']);
-        unset($_SESSION['firstname']);
+        unset($_SESSION['fname']);
         unset($_SESSION['email']);
+        unset($_SESSION['prof_pic']);
+
         header('location:' . URLROOT . '/logins/loginas');
     }
     
@@ -746,6 +764,8 @@ public function Customer_login() {
             $_SESSION['reg_no'] = $user->reg_no;
             $_SESSION['com_name'] = $user->com_name;
             $_SESSION['email'] = $user->email;
+            $_SESSION['prof_pic'] = $user->prof_pic;
+
 
             header('location:' . URLROOT . '/companies/company_dashboard');
 
@@ -755,6 +775,9 @@ public function Customer_login() {
             unset($_SESSION['reg_no']);
             unset($_SESSION['com_name']);
             unset($_SESSION['email']);
+            unset($_SESSION['prof_pic']);
+
+            
             header('location:' . URLROOT . '/logins/loginas');
         }
 
@@ -826,6 +849,8 @@ public function Customer_login() {
         $_SESSION['admin_id'] = $admin->admin_id;
         $_SESSION['name'] = $admin->name;
         $_SESSION['email'] = $admin->email;
+        $_SESSION['prof_pic'] = $admin->prof_pic;
+
     
         header('location:' . URLROOT . '/admins/admin_dashboard');
     
@@ -835,6 +860,8 @@ public function Customer_login() {
         unset($_SESSION['admin_id']);
         unset($_SESSION['name']);
         unset($_SESSION['email']);
+        unset($_SESSION['prof_pic']);
+
         header('location:' . URLROOT . '/logins/admin_login');
     }
 
@@ -916,6 +943,10 @@ public function createManagerSession($manager) {
     //session_start();
     $_SESSION['manager_id'] = $manager->manager_id;
     $_SESSION['email'] = $manager->email;
+    $_SESSION['profile'] = $manager->profile;
+    $_SESSION['name'] = $manager->name;
+
+
 
     header('location:' . URLROOT . '/managers/manager_dashboard');
 
@@ -926,6 +957,11 @@ public function createManagerSession($manager) {
 public function Managerlogout() {
     unset($_SESSION['manager_id']);
     unset($_SESSION['email']);
+    unset($_SESSION['profile']);
+    unset($_SESSION['name']);
+
+
+
     header('location:' . URLROOT . '/logins/am_login');
 }
 

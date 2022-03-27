@@ -1,6 +1,6 @@
 
 .customer-ad{
-    margin-left: 28em;
+    margin-left: 30em;
 }
 
 .ad-space-row{
@@ -12,8 +12,8 @@
     background-color: white;
     box-shadow: 4px 8px 16px lightgray;
     border-radius: 10px;
-    width: 35%;
-    max-width: 35%;
+    width: 90%;
+    max-width: 100%;
     margin-left: 5em;
     margin-bottom: 1em;
     padding: 0 0.5em;
@@ -30,8 +30,8 @@
 
 .img-ad{
     border-radius: 50px;
-    height: 40px;
-    width: 40px;
+    height: 70px;
+    width: 70px;
     display: block;
     float: right;
     margin-right: 0.5em;
@@ -73,6 +73,14 @@ label {
     width: 50px;
     margin-left: 0.5em;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color:white;
+    padding: 6px;
+    margin-top: 2em;
+ }
   
 
 .ad-col-35 {

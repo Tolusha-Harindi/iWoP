@@ -45,3 +45,8 @@
       width:40px;
       margin-left:1em;
   }
+
+  .invalidFeedback{
+    color: #ff0000;
+    font-size: 14px;
+}

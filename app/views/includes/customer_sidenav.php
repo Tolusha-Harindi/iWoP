@@ -14,10 +14,10 @@
     <?php endforeach; ?>   -->
 
     <div class="img-container">
-            <img src="<?php echo URLROOT ?>/public/img/w3.jpg" class="img1"/>
+            <img src="<?php echo URLROOT ?>/public/img/<?php echo $_SESSION['prof_pic']?>" class="img1"/>
     </div>
 
-    <!-- <p class='title'>Tolusha</p> -->
+    <p class='title'><?php echo $_SESSION['fname']?></p>
 
 
         <div class="description">
