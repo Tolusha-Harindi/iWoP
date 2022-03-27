@@ -26,12 +26,22 @@ class Includ{
 
 ////////////////////////    Customer   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     public function findCustomer(){
-        $this->db->query("SELECT * FROM customer  WHERE cus_id = '{$_SESSION['cus_id']}'");
+        $this->db->query("SELECT * FROM `customer`  WHERE cus_id = '{$_SESSION['cus_id']}'");
 
         $results = $this->db->resultSet();
 
         return $results;
     }
+
+
+////////////////////////    Company   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+public function findCompany(){
+    $this->db->query("SELECT * FROM `company`  WHERE reg_no = '{$_SESSION['reg_no']}'");
+
+    $results = $this->db->resultSet();
+
+    return $results;
+}
 
 }
  

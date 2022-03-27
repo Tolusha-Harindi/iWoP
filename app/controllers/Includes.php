@@ -59,8 +59,14 @@
 ///////////////////////////////////////////////////////  Company       ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         public function company_sidenav() {
 
+            if(!isLoggedIn()){
+                header("Location: " . URLROOT . "/includes");
+            }
+
+            $company = $this->includModel->findCompany();
+            
             $data = [
-                'title' => 'company_sidenav',
+                'company' => $company
 
             ];
 
@@ -72,6 +78,10 @@
 
 ////////////////////////////////////////////////  Customer /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         public function customer_sidenav() {
+
+            if(!isLoggedIn()){
+                header("Location: " . URLROOT . "/includes");
+            }
 
             $customer = $this->includModel->findCustomer();
             

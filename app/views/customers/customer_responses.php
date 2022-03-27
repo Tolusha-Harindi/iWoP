@@ -20,7 +20,7 @@
 
 <?php foreach($data['newPosts'] as $newPosts): ?>
     <div class="customer-ad" >
-        <div class="ad-space-row">
+        <div class="ad-space-row" style="width:40%">
                 <!----------------------------------------posted-ad------------------------------------------------------------>
                 <div class="ad-space" style="margin-left:-0.5em;">
 
@@ -118,13 +118,13 @@
                                     <td>
                                         <?php if(isset($_SESSION['cus_id']) && $_SESSION['cus_id'] == $newPosts->cus_id): ?>
                                            
-                                            <a class="blue-out-button" style="text-decoration:none; font-size:13px; margin-left:55%; margin-top:2.5em; padding: 8px 24px; display:inline;" href="<?php echo URLROOT . "/customers/update_ads/" . $newPosts->ads_id ?>"> Edit </a>
+                                            <a class="blue-out-button" style="text-decoration:none; font-size:13px; margin-left:55%;  padding: 8px 24px; display:inline;" href="<?php echo URLROOT . "/customers/update_ads/" . $newPosts->ads_id ?>"> Edit </a>
                                        
                                     </td>
                                 <td>
 
                                     <form action="<?php echo URLROOT . "/customers/delete_ads/" . $newPosts->ads_id ?>" method="POST">
-                                        <input type="submit" name="delete" value="Delete" class="pink-out-button" style="text-decoration:none; font-size:13px; margin-left:15%; margin-bottom:2em; padding: 8px 20px; display:inline;">
+                                        <input type="submit" name="delete" value="Delete" class="pink-out-button" style="text-decoration:none; font-size:13px; margin-left:15%;  padding: 8px 20px; display:inline;">
                                     </form>
                                     <?php endif; ?> 
                                 </td>

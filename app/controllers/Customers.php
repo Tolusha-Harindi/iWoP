@@ -565,16 +565,131 @@
 
         public function customer_service_providers() {
 
-            //$users = $this->pageModel-> getUsers();
+            $worker = $this->customerModel->viewWorkers();
+
+            if(!isLoggedIn()){
+                header("Location: " . URLROOT . "/customers");
+            }
+
             $data = [
-                'title' => 'customer_service_providers page',
-                //'users' => $users
+                'worker' => $worker,
+                
+                'district' => '',
+                'city' =>'',
+                'category' => '',
+                // 'time' => '',
+                // 'sdate' => '',
+                // 'fdate' => '',
+                // 'address' => '',
+                // 'amount' => '',
+                // 'timeError' => '',
+                // 'sdateError' => '',
+                // 'fdateError' => '',
+                // 'addressError' => '',
+                // 'amountError' => '',
+
 
             ];
 
-            $this->view('customers/customer_service_providers', $data);
+            if($_SERVER['REQUEST_METHOD'] == 'POST'){
+                $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING); 
+
+                $data = [
+                    //'add'  => $add,
+                    'worker' => $worker,
+                   
+                    'district' => trim($_POST['district']),
+                    'city' => trim($_POST['city']),
+                    'category' => trim($_POST['category']),
+                    // 'time' => trim($_POST['time']) ,
+                    // 'sdate' => trim($_POST['sdate']) ,
+                    // 'fdate' => trim($_POST['fdate']) ,
+                    // 'address' => trim($_POST['address']) ,
+                    // 'amount' => trim($_POST['amount']) ,
+                    // 'timeError' => '',
+                    // 'sdateError' => '',
+                    // 'fdateError' => '',
+                    // 'addressError' => '',
+                    // 'amountError' => '',
+                   
+                 ];
+
+                if(empty($data['district'])){
+                    $data['districtError'] = 'The district field cannot be empty';
+                }
+                if(empty($data['city'])){
+                    $data['cityError'] = 'The city field cannot be empty';
+                }
+
+                if(empty($data['category'])){
+                    $data['categoryError'] = 'The category field cannot be empty';
+                }
+
+                if(empty($data['categoryError']) && empty($data['cityError']) && empty($data['districtError'])){
+                    
+                        $worker = $this->customerModel->searchWorkers($data);
+
+                        $data = [
+                    //'add'  => $add,
+                    'worker' => $worker,
+                    
+                    'district' => trim($_POST['district']),
+                    'city' => trim($_POST['city']),
+                    'category' => trim($_POST['category']),
+                   
+                 ];
+                    
+                }else{
+                    $data = [
+                        //'add'  => $add,
+                        'worker' => $worker,
+                        
+                        'district' => trim($_POST['district']),
+                        'city' => trim($_POST['city']),
+                        'category' => trim($_POST['category']),
+                       
+                     ];
+                    $this->view('customers/customer_service_providers', $data);
+                }
+
+
+            //     if(empty($data['time'])){
+            //         $data['timeError'] = "The time of a Post cannot be empty";
+            //     }
+
+            //     if(empty($data['sdate'])){
+            //         $data['sdateError'] = "The start date of a Post cannot be empty";
+            //     }
+
+            //     if(empty($data['fdate'])){
+            //         $data['fdateError'] = "The finish date of a Post cannot be empty";
+            //     }
+
+            //     if(empty($data['address'])){
+            //         $data['addressError'] = "The address of a Post cannot be empty";
+            //     }
+
+            //     if(empty($data['amount'])){
+            //         $data['amountError'] = "The budget of a Post cannot be empty";
+            //     }
+
+            //     /*error messages are empty*/
+            //     if(empty($data['timeError']) && empty($data['sdateError']) && empty($data['fdateError']) && empty($data['addressError']) && empty($data['amountError'])){
+            //         if($this->customerModel->requestWorkers($data)){
+            //             header("Location: ". URLROOT . "/customers/customer_service_providers"); //redirect to
+            //         }else{
+            //             die("Something went wrong, please try again");
+            //         }
+            //     }
+            // else{
+            //     $this->view('customers/customer_service_providers', $data);
+               // }
+            
           
         }
+        $this->view('customers/customer_service_providers', $data);
+    }
+
 
         
 }

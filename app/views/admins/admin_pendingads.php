@@ -20,7 +20,6 @@
 
 <div class="customer-ad">
     <div class="ad-space-row">
-        <div class="grid-container">
             <!---------------------------------------------------------------------------------------------------->
             <?php foreach($data['ads'] as $ads): ?> 
             <form action="<?php echo URLROOT; ?>/admins/admin_pendingads" method="POST">
@@ -115,18 +114,17 @@
                 </div>
             <?php endforeach; ?>
         </div>
-    </div>
-</div>
+    
 
 
 
 <!----------------------------------------Company ads----------------------------------------------->
 <!------heading----------->
-<div class="heading" id="company-ads"> <p> Company Pending Ads </p> </div>
+<div class="heading" id="company-ads" style="margin-left: 4em;"> <p> Company Pending Ads </p> </div>
 
 <div class="customer-ad">
-    <div class="ad-space-row">
-        <div class="grid-container">
+    <div class="ad-space-row" style="margin-left: -28em;">
+        <!-- <div class="grid-container"> -->
             <!---------------------------------------------------------------------------------------------------->
             <?php foreach($data['adsw'] as $adsw): ?> 
             <form action="<?php echo URLROOT; ?>/admins/admin_pendingads" method="POST">

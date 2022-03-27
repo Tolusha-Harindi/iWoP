@@ -4,9 +4,9 @@
 <a href="<?php echo URLROOT;?>/managers/manager_profile" class='card-link'>
     <div class="card">
         <div class="img-container">
-            <img src="<?php echo URLROOT;?>/public/img/w3.jpg" alt="propic" class="img1"/>
+            <img src="<?php echo URLROOT;?>/public/img/<?php echo $_SESSION['profile']?>" alt="propic" class="img1"/>
         </div>
-        <p class='title'>Nipun Gallage</p>
+        <p class='title'><?php echo $_SESSION['name']?></p>
         <div class="description">
                 <ul class='list'>
                     <li>Edit profile</li>

@@ -202,4 +202,56 @@ class Customer{
         
         return $results;
     }
+
+
+    ////////////////////////////////   Service Providers Page //////////////////////////////////////////////////////////////////////////////////////////////
+    public function viewWorkers(){
+        $this->db->query("SELECT *  FROM worker");
+
+        $results = $this->db->resultSet();
+        
+        return $results;
+    }
+
+
+
+
+
+
+
+
+    ////////////////////////  Service providers     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    public function searchWorkers($data){
+
+        $this->db->query('select * from worker where district = :district and city = :city and category= :category');
+
+        $this->db->bind(':district', $data['district']);
+        $this->db->bind(':city', $data['city']);
+        $this->db->bind(':category', $data['category']);
+        $results = $this->db->resultSet();
+        
+        return $results;
+        
+    }
+
+
+
+    ///////////////  Send request for worker    /////////////////////////////////////////////////////////////////////////////////////////////////////
+    public function requestWorkers($data){
+        $this->db->query('INSERT INTO worker (time, sdate, fname, address, amount) VALUES (:time, :sdate, :fdate,  :address, :amount)');
+
+        //Bind values
+        $this->db->bind(':time', $data['time']);
+        $this->db->bind(':sdate', $data['sdate']);
+        $this->db->bind(':fname', $data['fname']);
+        $this->db->bind(':address', $data['address']);
+        $this->db->bind(':amount', $data['amount']);
+
+        //execute the function
+        if($this->db->execute()){
+            return true;
+        }else{
+            return false;
+        }
+     }
 }

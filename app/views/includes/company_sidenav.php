@@ -5,9 +5,9 @@
     <a href="<?php echo URLROOT;?>/companies/company_profile" class='card-link'>
         <div class="card" style ="width: 15vm;">
             <div class="img-container">
-                <img src="<?php echo URLROOT;?> /public/img/comp.png" alt="propic" class="img1"/>
+                <img src="<?php echo URLROOT;?> /public/img/<?php echo $_SESSION['prof_pic']?>" alt="propic" class="img1"/>
             </div>
-            <p class='title'> Dream wave</p>
+            <p class='title'><?php echo $_SESSION['com_name']?></p>
             <div class="description">
                     <ul class='list'>
                         <li style="margin-top: -5px;">Edit profile </li>
@@ -19,8 +19,8 @@
     
     <div class="sidebar">
         <div class="description">
-        <a href="<?php echo URLROOT;?>/companies/company_dashboard" class='side-link-active'>
-                <ul class='side-list-active'>
+        <a href="<?php echo URLROOT;?>/companies/company_dashboard" class='side-link'>
+                <ul class='side-list'>
                     <li>Dashboard</li>
                 </ul>
         </a>
