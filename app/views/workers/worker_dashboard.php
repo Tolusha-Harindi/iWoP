@@ -91,29 +91,6 @@
     </div>
 </div>
 
-<!--------------------------------------------------Range amount and Total income----------------------------------------------->
-
-<!-- <script src="<?php echo URLROOT;?> /public/js/dashboard.js"></script>
-<div class="range">
-    <div class="ran-1">
-        <div class="project col-md-4">
-            <h3 class="text-left">Completed Works</h3>
-            <h2 class="text-left">
-              <input type="text" class="percent" readonly />
-            </h2>
-            <div class="bar"></div>
-        <div>
-        
-        <div class="project col-md-4">
-            <h3 class="text-left">Pending Works</h3>
-            <h2 class="text-left">
-              <input type="text" class="percent" readonly />
-            </h2>
-            <div class="bar"></div>
-        <div>
-    </div>
-</div> -->
-
 <!------------------------------------------------------Top five categories------------------------------------------------------>
 <div class="heading"> <p> Top Five Job Categories </p> </div>
 
@@ -121,7 +98,7 @@
     <div class="row1">
      <?php foreach($data['category'] as $category):?>
         <div class="dash-card-top" id="card">
-            <img src="<?php $category->logo ?>" alt=""> </br>
+            <img src="<?php echo URLROOT . "/public/img/category/" . $category->logo;?><?php //$category->logo ?>" alt=""> </br>
             <p><?php echo $category->category ?></p>
         </div>
     <?php endforeach;?>
@@ -136,16 +113,11 @@
     <div class="row1">
     <?php foreach($data['worker'] as $worker):?>
         <div class="dash-card-top-service" id="card">
-            <img src="<?php $worker->prof_pic;?>" alt="" style="border-radius: 50px;"> </br>
+            <img src="<?php echo URLROOT . "/public/img/" . $worker->prof_pic;?>" alt="" style="border-radius: 50px;"> </br>
             <p><?php echo $worker->fname ?></p>
-            <p style="color: #1E3CC0;"><?php echo $worker->category;?></p>
+            <p style="color: #1E3CC0;"><?php echo $worker->category1;?></p>
             <p><?php echo $worker->city;?></p>
             <p><?php echo $worker->district;?>
-                <!-- <span class="fa fa-star checked" style="color: orange;"></span>
-                <span class="fa fa-star checked" style="color: orange;"></span>
-                <span class="fa fa-star checked" style="color: orange;"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span> -->
             </p>
         </div>
         <?php endforeach;?>
@@ -160,7 +132,7 @@
     <div class="row1">
     <?php foreach($data['company'] as $company):?>
         <div class="dash-card-top" id="card">
-            <img src="<?php $company->prof_pic;?>" alt="" style="border-radius: 50px;"> </br>
+            <img src="<?php echo URLROOT . "/public/img/" . $company->prof_pic;?><?php //$company->prof_pic;?>" alt="" style="border-radius: 50px;"> </br>
             <p><?php echo $company->com_name;?></p>
         </div>
         <?php endforeach;?>
