@@ -8,7 +8,7 @@
 
 <div class="category" id="my-profile"> <p> My Service </p> </div>
 
-div class="form-space">
+<div class="form-space">
     <form action="<?php echo URLROOT;?> /workers/worker_service" method="POST">
         <div class="row">
             <div class="col-25">
