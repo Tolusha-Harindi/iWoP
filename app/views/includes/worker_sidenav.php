@@ -1,19 +1,24 @@
 <link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/home/sidenav.css"/>
 
 
-<a href="<?php echo URLROOT;?>/workers/worker_profile_edit" class='card-link'>
+<?php// else :?>
+<!-- <form action="<?php //echo URLROOT;?> /includes/worker_sidenav/"> -->
+<a href="<?php echo URLROOT . "/workers/worker_profile_edit/" . $_SESSION['worker_id']?>" class='card-link'>
+ <?php //foreach($data['prof'] as $prof): ?>
     <div class="card">
         <div class="img-container">
-            <img src="<?php echo URLROOT;?> /public/img/w3.jpg" alt="propic" class="img1"/>
+            <img src="<?php echo URLROOT ?>/public/img/<?php $data['prof']->prof_pic;?>" alt="propic" class="img1"/>
         </div>
-        <p class='title'>Murugadhas Aathiran</p>
+        <p class='title'><?php echo $_SESSION['fname'];?></p>
         <div class="description">
                 <ul class='list'>
                     <li>Edit profile</li>
                 </ul>
         </div>
     </div>
+    <?php //endforeach; ?>
 </a>
+ <!-- </form> -->
 
 
     <div class="sidebar">
@@ -23,12 +28,7 @@
                     <li>Dashboard</li>
                 </ul>
         </a>
-        <a href="<?php echo URLROOT;?>/workers/worker_chat"class='side-link'>
-                <ul class='side-list'>
-                    <li>Message</li>
-                </ul>
-        </a>
-        <a href="<?php echo URLROOT;?>/workers/worker_schedule"class='side-link'>
+        <a href="<?php echo URLROOT . "/workers/worker_schedule/" . $_SESSION['worker_id']?>"class='side-link'>
                 <ul class='side-list'>
                     <li>Schedule</li>
                 </ul>
@@ -56,6 +56,11 @@
         <a href="<?php echo URLROOT;?>/workers/worker_payment"class='side-link'>
                 <ul class='side-list'>
                     <li>Payments</li>
+                </ul>
+        </a>
+        <a href="<?php echo URLROOT;?>/workers/password_edit"class='side-link'>
+                <ul class='side-list'>
+                    <li>Change Password</li>
                 </ul>
         </a>
                 
