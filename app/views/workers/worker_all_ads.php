@@ -99,38 +99,10 @@
         <td  style="padding:0.5em 7em; width:8em; height:3em;">
             <form name = "select" action="<?php echo URLROOT; ?>/workers/search_ads_category/ <?php echo $data['post']->cat ?>"  method="post">
                     <select name="categoty" id="list3" style="background-color: #3E5AD8; height:35px; color:white; border:none;">
-                        <option value =" "  selected label="Category"> Select Category</option>
-                        <option value="#" style="background-color: white; color:black"> Plumber</option>
-                        <option value="#" style="background-color: white; color:black"> Masons</option>
-                        <option value="#" style="background-color: white; color:black"> Tile</option>
-                        <option value="#" style="background-color: white; color:black"> Carpenters</option>
-                        <option value="#" style="background-color: white; color:black"> Painters</option>
-                        <option value="#" style="background-color: white; color:black"> Electricians</option>
-                        <option value="#" style="background-color: white; color:black"> Landscaping</option>
-                        <option value="#" style="background-color: white; color:black"> Contractors</option>
-                        <option value="#" style="background-color: white; color:black"> Professionals</option>
-                        <option value="#" style="background-color: white; color:black"> Stones/sand/soil</option>
-                        <option value="#" style="background-color: white; color:black"> Concrete Slab</option>
-                        <option value="#" style="background-color: white; color:black"> Equipment Repairing </option>
-                        <option value="#" style="background-color: white; color:black"> A/C</option>
-                        <option value="#" style="background-color: white; color:black"> Welding</option>
-                        <option value="#" style="background-color: white; color:black"> Cooking</option>
-                        <option value="#" style="background-color: white; color:black"> Cushion Works</option>
-                        <option value="#" style="background-color: white; color:black"> Vehicle Repairs</option>
-                        <option value="#" style="background-color: white; color:black"> Cleaners</option>
-                        <option value="#" style="background-color: white; color:black"> CCTV</option>
-                        <option value="#" style="background-color: white; color:black"> Ceiling</option>
-                        <option value="#" style="background-color: white; color:black"> Well</option>
-                        <option value="#" style="background-color: white; color:black"> Chair Weavers</option>
-                        <option value="#" style="background-color: white; color:black"> Rent Tools</option>
-                        <option value="#" style="background-color: white; color:black"> Curtains</option>
-                        <option value="#" style="background-color: white; color:black"> Solar Panel fixing</option>
-                        <option value="#" style="background-color: white; color:black"> Demolishing</option>
-                        <option value="#" style="background-color: white; color:black"> Pest Control</option>
-                        <option value="#" style="background-color: white; color:black"> Design</option>
-                        <option value="#" style="background-color: white; color:black"> Movers</option>
-                        <option value="#" style="background-color: white; color:black"> Aluminium</option>
-                        <option value="#" style="background-color: white; color:black"> Catering</option>
+                    <?php foreach($data['allcat'] as $cat):?>
+                            <option value =" "  selected label="Category"> Select Category</option>
+                <option value="<?php echo $cat->category ?>"><?php echo $cat->category ?></option>
+                   <?php endforeach; ?>   
                     </select>
             </form>
         </td>
