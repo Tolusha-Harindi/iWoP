@@ -26,7 +26,13 @@
         </a>
         <a href="<?php echo URLROOT;?>/companies/company_ads" class='side-link'>
                 <ul class='side-list'>
-                    <li>Responses</li>
+                    <li>Ads & Responses</li>
+                </ul>
+        </a>
+
+        <a href="<?php echo URLROOT;?>/companies/company_recent_workers" class='side-link'>
+                <ul class='side-list'>
+                    <li>Recent Workers</li>
                 </ul>
         </a>
         <a href="<?php echo URLROOT;?>/companies/company_category" class='side-link'>
@@ -39,9 +45,9 @@
                     <li>Service providers</li>
                 </ul>
         </a>
-        <a href="<?php echo URLROOT;?>/companies/company_messagee" class='side-link'>
+        <a href="<?php echo URLROOT;?>/companies/company_change_password" class='side-link'>
                 <ul class='side-list'>
-                    <li>Message</li>
+                    <li>Change Password</li>
                 </ul>
         </a>
                 

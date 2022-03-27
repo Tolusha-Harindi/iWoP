@@ -34,14 +34,10 @@
             $this->view('logins/register', $data);
           
         }
-
-
-
-
-
-///   Worker Register /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        public function worker_register() {
-            //$users = $this->pageModel-> getUsers();
+       
+/////////////////worker register///////////////////////////////////////////////////////////////////////////////////////////////////////////
+public function worker_register() {
+            
             $data = [
                 'fname' => '',
                 'lname' => '',
@@ -49,10 +45,10 @@
                 'nic' => '',
                 'email' => '',
                 'password' => '',
+                'verify_token' => '',
                 're-enterpassword' => '',
                 'firstnameError' =>'',
                 'lastnameError' => '',
-                //'nameError' => '',
                 'contactError' => '',
                 'nicError' => '',
                 'emailError' => '',
@@ -73,7 +69,7 @@
                     'email' => trim($_POST['email']),
                     'password' => trim($_POST['password']),
                     're-enterpassword' => trim($_POST['re-enterpassword']),
-                    //'nameError' =>'',
+                    'verify_token' => md5(rand()),
                     'firstnameError' =>'',
                     'lastnameError' => '',
                     'contactError' => '',
@@ -164,8 +160,10 @@
 
                         //Register user from model function
                         if($this->loginModel->worker_register($data)){
+                            //$this->sendmail_verify($data['fname'], $data['email'], $data['verify_token']);
                             //Redirect to the login page
                             header('location: ' . URLROOT . '/logins/worker_login');
+                            
                         }
                         else{
                             die('Something went wrong');
@@ -180,9 +178,9 @@
                     'email' => '',
                     'password' => '',
                     're-enterpassword' => '',
+                    'verify_token'=> '',
                     'firstnameError' =>'',
                     'lastnameError' => '',
-                    //'nameError' => '',
                     'contactError' => '',
                     'nicError' => '',
                     'emailError' => '',
@@ -195,7 +193,18 @@
           
         }
 
+        public function worker_new_account(){
+            $data = [
+                'title'=>'New Account'
+            ];
+            if($_SERVER['REQUEST_METHOD'] == 'POST'){
+                $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+                
+                header('location: ' . URLROOT . '/workers/worker_new_profile');
+            }
 
+            $this->view('logins/worker_new_account', $data);
+        }
 
 /*-------------------------------------Worker login --------------------------------------------------------------------*/
         public function Worker_login() {
@@ -260,10 +269,20 @@
             $_SESSION['worker_id'] = $user->worker_id;
             $_SESSION['fname'] = $user->fname;
             $_SESSION['email'] = $user->email;
+
             $_SESSION['prof_pic'] = $user->prof_pic;
 
     
             header('location:' . URLROOT . '/workers/worker_dashboard');
+            
+            $data=$this->loginModel->findById($_SESSION['worker_id']);
+            if($data!=null){
+                header('location:' . URLROOT . '/workers/worker_dashboard');
+            }else{
+                header('location:' . URLROOT . '/logins/worker_new_account');
+            }
+            
+
     
         }
     
@@ -271,9 +290,16 @@
             unset($_SESSION['worker_id']);
             unset($_SESSION['fname']);
             unset($_SESSION['email']);
+
             unset($_SESSION['prof_pic']);
+
+
             header('location:' . URLROOT . '/logins/loginas');
         }
+
+
+
+
 
 
 

@@ -12,7 +12,7 @@
 <style>
     
 
-.vertical-line{
+ .vertical-line{
   
   height: 100%;
   margin-left:550px;
@@ -245,12 +245,13 @@ h3{
 
 /* user review */
 .user-reviews{
-    height:180px;
+    height:200px;
     margin-top:50px;
     width:85%;
     border-radius:5px;
     margin-left:50px; 
      box-shadow: 4px 8px 16px lightgray;
+    
 }
 .user-img{
     border:1px ;
@@ -290,10 +291,15 @@ h3{
 }
 /* report-pop-up */
 .reviews{
-    height: 400px;
+    height: 500px;
     overflow-x: clip;
     /* width: 35em; */
     overflow-y: scroll;
+} 
+
+/* inline button for update and delete */
+.inlinebutton{
+    display: inline;
 }
 </style>
  <div  class = "left" style="margin-top: 100px; border:1px ;">
@@ -406,6 +412,13 @@ h3{
               </div>
            
        <hr>
+
+       <!-- Report button -->
+  <div class="reportbutton">
+      <button class="pink-button" style="margin-left:1200px; margin-top:-900px; font-size:20px; width:100px; ">
+          Report 
+       </button>
+  </div>
     <div class="reviews">
         <?php foreach($data['review'] as $review): ?>
             <!-- example of user review -->
@@ -432,11 +445,23 @@ h3{
 
                 <a
                     href="<?php echo URLROOT . "/reviews/fillReviewForm/" . $review->reviewID ?>">
+                    <button  style="background: #14A76C; color: white; margin-left:100px;  border:none; margin-bottom: 2em;
+                    padding: 5px 6px;
+                    border-radius: 5px;
+                    cursor: pointer;"
+                    class="inlinebutton"; 
+                  text-decoration:none; >
                     Update
+                 </button>
+                   
                 </a>
 
                 <form action="<?php echo URLROOT . "/reviews/delete/" . $review->reviewID ?>" method="POST">
-                    <input type="submit" name="delete" value="Delete" >
+                    <input type="submit" name="delete" value="Delete" class="pink-button"
+                    style="margin-top:-50px;
+                     class="inlinebutton";>
+
+                   
                 </form>
 
             </div>    
@@ -586,7 +611,7 @@ h3{
     </div>
 </div>
 
- <!------------------Java Script-----------------------------
+ 
     <script type="text/javascript" src="<?php echo URLROOT;?> /public/js/pink-button-popup.js"> 
     </script>
 
@@ -594,5 +619,6 @@ h3{
 <div class="arrow">
 	<a href="#"><img src="<?php echo URLROOT;?> /public/img/arrow.png" alt="up_arrow"></a>
 </div> 
-<?php include_once APPROOT . '/views/includes/footer.php'; ?>
--->
+
+<!-- <?php include_once APPROOT . '/views/includes/footer.php'; ?> -->
+
