@@ -34,4 +34,14 @@ class Includ{
     }
 
 }
+
+public function findWorker(){
+    $this->db->query("SELECT * FROM worker_personal_detail  WHERE worker_id = '{$_SESSION['worker_id']}'");
+
+    $results = $this->db->single();
+
+    return $results;
+}
+
+}
  
