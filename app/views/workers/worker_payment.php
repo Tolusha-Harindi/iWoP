@@ -7,8 +7,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-<a href="#payments" class="top-button1" style="margin-top: -45em; margin-left:60em; width:8em;"> Payments to get </a>
-<a href="#recieved" class="top-button2" style="margin-top: -45em; margin-left:74em; width:10em;"> Received Payments </a>
+<a href="#payments" class="top-button1" style="margin-top: -45em; margin-left:55em; width:8em;"> Payments to get </a>
+<a href="#recieved" class="top-button2" style="margin-top: -45em; margin-left:68em; width:10em;"> Received Payments </a>
 
 <!-----------------------payments to get------------------------------------>
 <div class="category" id="payments" style="margin-top: -14em;"> <p> Payments to get</p> </div>
@@ -23,7 +23,7 @@
                     <th>Amount</th>
                     <th>Contact</th>
                     <th>Completed Date</th>
-                    <th>Status</th>
+                    <!-- <th>Status</th> -->
                 </tr>
             </thead>
 
@@ -34,8 +34,8 @@
                     <td><?php echo $gets->cus_name ?></td>
                     <td style="color: #1E3CC0;"><?php echo $gets->budget ?></td>
                     <td><?php echo $gets->contact_no ?></td>
-                    <td><?php echo $gets->date . $gets->end_time ?></td>
-                    <td> <input type="reset" class="pink-out-button" value="Recieved"/></td>
+                    <td><?php echo $gets->date ." " . " ". $gets->end_time ?></td>
+                    <!-- <td> <form action=""><input type="reset" class="pink-out-button" value="Recieved"/></td> -->
                 </tr>
             
             <?php endforeach;?>
@@ -47,6 +47,8 @@
 
 <!--------------------------------Recieved Payments--------------------------------------------->
 <div class="heading" id="recieved"> <p> Received Payments </p> </div>
+
+<!-- <form action="<?php echo URLROOT;?> /workers/worker_receive_payment/$data"> -->
 
 <div class= "table"> 
         <div class="table-wrapper" style="margin-top: 3em;">
@@ -79,7 +81,8 @@
             </table> 
         </div> 
     </div>
-   
+    
+</form>
     <br/><br/>
     
 <!---------------------------Arrow button----------------------------------------->
@@ -88,3 +91,4 @@
 </div>   
 
 <?php include_once APPROOT . '/views/includes/footer.php'; ?>
+
