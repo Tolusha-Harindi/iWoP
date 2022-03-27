@@ -6,16 +6,19 @@
 <link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/home/button.css"/>
 <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
 
-<div class="category" id="my-profile" style="margin-top: -15em"> <p> Bank Details </p> </div>
+<div class="category" id="my-profile" style="margin-top: -15em; margin-left:19em;"> <p> Bank Details </p> </div>
 
 <div class="form-space"->
-    <form action="/action_page.php">
+    <form action="<?php echo URLROOT;?> /workers/worker_bank_detail" method="POST">
         <div class="row">
             <div class="col-25">
-            <label for="name">Name</label>
+            <label for="name">Holder's Name</label>
             </div>
             <div class="col-75">
             <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+            <span class="invalidFeedback">
+                <?php  echo $data['nameError'];?>
+            </span> </br> </br>
             </div>
         </div>
 
@@ -25,6 +28,9 @@
             </div>
             <div class="col-75">
             <input type="text" id="b-name" name="b-name" placeholder="Enter Your Bank Name" required>
+            <span class="invalidFeedback">
+                <?php  echo $data['b-nameError'];?>
+            </span> </br> </br>
             </div>
         </div>
 
@@ -34,6 +40,9 @@
             </div>
             <div class="col-75">
             <input type="text" id="branch" name="branch" placeholder="Enter Your Bank Branch" required>
+            <span class="invalidFeedback">
+                <?php  echo $data['branchError'];?>
+            </span> </br> </br>
             </div>
         </div>
 
@@ -43,6 +52,9 @@
             </div>
             <div class="col-75">
             <input type="text" id="code" name="code" placeholder="Enter Your Bank Code" required>
+            <span class="invalidFeedback">
+                <?php  echo $data['codeError'];?>
+            </span> </br> </br>
             </div>
         </div>
 
@@ -52,12 +64,15 @@
             </div>
             <div class="col-75">
             <input type="text" id="account" name="account" placeholder="Enter Your Account number" required>
+            <span class="invalidFeedback">
+                <?php  echo $data['accountError'];?>
+            </span> </br> </br>
             </div>
         </div>
 
         </br>
         <div class="row">
-            <input type="submit" value="Save" class="green-button">
+            <button type="submit" class="green-button">Save </button>
         </div>
     </form>
 </div>
