@@ -30,8 +30,8 @@
 
     <tr>
         <td  style="padding:0.5em 7em; width:8em; height:3em;"> 
-            <form name = "select"  method="post">
-                <select name="District" id="list1" style="background-color: #3E5AD8; height:35px; color:white; border:none;">
+            <form name = "select" action="<?php echo URLROOT; ?>/workers/worker_all_ads/ <?php echo $data['post']->dis ?>" method="POST">
+                <select name="District" id="list1" value="<?php //echo $data['post']->category ?>" style="background-color: #3E5AD8; height:35px; color:white; border:none;">
                     <option value =" "  selected label="District" style="background-color: white; color:black"> Select District</option>
                     <option value ="Colombo"    label="Colombo" style="background-color: white; color:black"> Colombo</option>
                     <option value ="Kalutara"   label="Kalutara" style="background-color: white; color:black"> Kaluatara</option>
@@ -63,7 +63,7 @@
         </td>
         <!---------------------------------------------------------------------------------------------------->
         <td  style="padding:0.5em 7em; width:8em; height:3em;">
-            <form name = "select"  method="post">
+            <form name = "select" action="<?php echo URLROOT; ?>/workers/worker_all_ads/ <?php echo $data['post']->city ?>"  method="post">
                     <select name="city" id="list2" style="background-color: #3E5AD8; height:35px; color:white; border:none;">
                         <option value =" "  selected label="City" style="background-color: white; color:black"> Select City</option>
                         <option value ="Colombo"    label="Colombo" style="background-color: white; color:black"> Colombo</option>
@@ -97,7 +97,7 @@
 
         <!------------------------------------------------------------------------------------------------------>
         <td  style="padding:0.5em 7em; width:8em; height:3em;">
-            <form name = "select"  method="post">
+            <form name = "select" action="<?php echo URLROOT; ?>/workers/search_ads_category/ <?php echo $data['post']->cat ?>"  method="post">
                     <select name="categoty" id="list3" style="background-color: #3E5AD8; height:35px; color:white; border:none;">
                         <option value =" "  selected label="Category"> Select Category</option>
                         <option value="#" style="background-color: white; color:black"> Plumber</option>
@@ -140,405 +140,80 @@
 
 <!--------------------job vaccancies-------------------------------------------------------------------------->
 <div class="customer-ad">
-    <div class="ad-space-row">
+    <div class="ad-space-row" >
+       <div class="grid-container">
+    <?php foreach($data['ads'] as $ads): ?>
 <!---------------------------------------------------------------------------------------------------------------------------------------------->
-            <div class="ad-space" style="width: 30%; margin-left: 0em; margin-top:4em; margin-right:3em; font-size:13px;">
-                    <table style="margin-top: 2em; margin-left:1.5em; margin-right:0.8em; padding-bottom:5px;">
-                        <tr>
+           <div class="ad-space" style="margin-left: 0em; margin-top:4em; font-size:13px; ">
+                    <table style="margin-top: 2em; margin-left:1.5em; padding-bottom:5px;">
+                    
+                    <tr>
                             <td rowspan="6">
-                                <img src="<?php echo URLROOT;?>/public/img/w3.jpg" alt="propic" class="img-worker"/>
+                                <img src="<?php $ads->prof_pic;?>" alt="propic" class="img-worker"/>
                             </td>
-                            <td>Mahadev Warun</td>
+                            <td><?php echo $ads->fname; ?></td>
                         </tr>
                         <tr>
-                            <td><b>Colombo </b></td>
+                            <td><b><?php echo $ads->address; ?></b></td>
                         </tr>
                         <tr>
-                            <td>071 777 4445</td>
+                            <td><?php echo $ads->contact; ?></td>
                         </tr>
                         <tr>
-                            <td style="color:#0526BA;">Last active 3d ago</td>
+                            <td style="color:#0526BA;"><?php echo $ads->title; ?></td>
                         </tr>
                         <tr> 
-                            <td style="color: #F10B67;">Start Date: 01/11/2021</td>
+                            <td style="color: #F10B67;">Start Date: <?php echo $ads->start_date; ?></td>
                         </tr>
                         <tr> 
-                            <td style="color: #F10B67;">End Date: 05/12/2021</td>
+                            <td style="color: #F10B67;">End Date: <?php echo $ads->end_date; ?></td>
                         </tr>
                         <tr> 
-                            <td> </br> </br> </br> </td>
+                            <td> </br> </td>
                         </tr>
                         <tr> 
-                            <td> <b>Description</b> :</td>
+                            <td style="font-size:14;"> <b>Description</b>:</td>
                         </tr>
                         <tr> 
-                            <td colspan="2"> aaaaaa aaaa aaaaaaaa aaaa ................. ............... .........</td>
+                            <td colspan="2"><?php echo $ads->description; ?></td>
                         </tr> 
                         <tr> 
                             <td> </br>  </td>
                         </tr>
                         <tr> 
-                            <td><b>Focus Area : </b></td>
-                            <td><b>Work to be done : </b></td>
+                            <td><b>Focus Area: </b></td>
+                            <td><button class="focus-area"><?php echo $ads->category; ?></button></td>
                         </tr>
                         <tr> 
-                            <td> <button class="focus-area">Designer</button> </td>
-                            <td> <button class="focus-area">Designer</button> </td>
+                            <td colspan="2"><b>Work To Be Done:</b> </td>
+                        </tr>
+                        <tr> 
+                            <td colspan="2"> <button class="focus-area"><?php echo $ads->work; ?></button> </td>
                         </tr>
                         <tr> 
                             <td> </br>  </td>
                         </tr>
                         <tr> 
-                            <td> <b> Budget :</b> </td>
+                            <td> <b> Budget:</b> </td>
+                            <td> <?php echo $ads->budget; ?></td>
                         </tr>
                         <tr> 
-                            <td> 3000.00 per day  </td>
-                            <td> <button class="blue-out-button" style="float:right; margin-right: 2em; "> Message</button>  </td>
-                        </tr>
-                        <tr> 
-                            <td> </br> </br> </br> </td>
+                            <td> </br> </br></td>
                         </tr>
                         <tr> 
                             <td colspan="2"> 
-                                <!-- <input type="submit" value="Invite for Job" class="pink-button" style="margin-left:7%;  margin-bottom:2em; width:80%;">   -->
-                                <button id="myBtn" class="pink-button" style="margin-left:7%;  margin-bottom:2em; width:80%; text-decoration:none;"> Apply for Job </button>
+                                <form action="<?php echo URLROOT ."/workers/apply_ads/". $ads->ads_id; ?>" method="POST">
+                                  <button id="myBtn" class="pink-button" style="margin-left:9%;  margin-bottom:2em; width:75%; text-decoration:none;"> Apply for Job </button>
+                                </form>
                             </td>
                         </tr>
+                        
                     </table>
             </div>
-
-            <div class="ad-space" style="width: 30%; margin-left: 0em; margin-top:4em; margin-right:3em; font-size:13px;">
-                    <table style="margin-top: 2em; margin-left:1.5em; margin-right:0.8em; padding-bottom:5px;">
-                        <tr>
-                            <td rowspan="6">
-                                <img src="<?php echo URLROOT;?>/public/img/w3.jpg" alt="propic" class="img-worker"/>
-                            </td>
-                            <td>Mahadev Warun</td>
-                        </tr>
-                        <tr>
-                            <td><b>Colombo </b></td>
-                        </tr>
-                        <tr>
-                            <td>071 777 4445</td>
-                        </tr>
-                        <tr>
-                            <td style="color:#0526BA;">Last active 3d ago</td>
-                        </tr>
-                        <tr> 
-                            <td style="color: #F10B67;">Start Date: 01/11/2021</td>
-                        </tr>
-                        <tr> 
-                            <td style="color: #F10B67;">End Date: 05/12/2021</td>
-                        </tr>
-                        <tr> 
-                            <td> </br> </br> </br> </td>
-                        </tr>
-                        <tr> 
-                            <td> <b>Description</b> :</td>
-                        </tr>
-                        <tr> 
-                            <td colspan="2"> aaaaaa aaaa aaaaaaaa aaaa ................. ............... .........</td>
-                        </tr> 
-                        <tr> 
-                            <td> </br>  </td>
-                        </tr>
-                        <tr> 
-                            <td><b>Focus Area : </b></td>
-                            <td><b>Work to be done : </b></td>
-                        </tr>
-                        <tr> 
-                            <td> <button class="focus-area">Designer</button> </td>
-                            <td> <button class="focus-area">Designer</button> </td>
-                        </tr>
-                        <tr> 
-                            <td> </br>  </td>
-                        </tr>
-                        <tr> 
-                            <td> <b> Budget :</b> </td>
-                        </tr>
-                        <tr> 
-                            <td> 3000.00 per day  </td>
-                            <td> <button class="blue-out-button" style="float:right; margin-right: 2em; "> Message</button>  </td>
-                        </tr>
-                        <tr> 
-                            <td> </br> </br> </br> </td>
-                        </tr>
-                        <tr> 
-                            <td colspan="2"> 
-                                <!-- <input type="submit" value="Invite for Job" class="pink-button" style="margin-left:7%;  margin-bottom:2em; width:80%;">   -->
-                                <button id="myBtn" class="pink-button" style="margin-left:7%;  margin-bottom:2em; width:80%; text-decoration:none;"> Apply for Job </button>
-                            </td>
-                        </tr>
-                    </table>
-            </div>
-
-            <div class="ad-space" style="width: 30%; margin-left: 0em; margin-top:4em; margin-right:3em; font-size:13px;">
-                    <table style="margin-top: 2em; margin-left:1.5em; margin-right:0.8em; padding-bottom:5px;">
-                        <tr>
-                            <td rowspan="6">
-                                <img src="<?php echo URLROOT;?>/public/img/w3.jpg" alt="propic" class="img-worker"/>
-                            </td>
-                            <td>Mahadev Warun</td>
-                        </tr>
-                        <tr>
-                            <td><b>Colombo </b></td>
-                        </tr>
-                        <tr>
-                            <td>071 777 4445</td>
-                        </tr>
-                        <tr>
-                            <td style="color:#0526BA;">Last active 3d ago</td>
-                        </tr>
-                        <tr> 
-                            <td style="color: #F10B67;">Start Date: 01/11/2021</td>
-                        </tr>
-                        <tr> 
-                            <td style="color: #F10B67;">End Date: 05/12/2021</td>
-                        </tr>
-                        <tr> 
-                            <td> </br> </br> </br> </td>
-                        </tr>
-                        <tr> 
-                            <td> <b>Description</b> :</td>
-                        </tr>
-                        <tr> 
-                            <td colspan="2"> aaaaaa aaaa aaaaaaaa aaaa ................. ............... .........</td>
-                        </tr> 
-                        <tr> 
-                            <td> </br>  </td>
-                        </tr>
-                        <tr> 
-                            <td><b>Focus Area : </b></td>
-                            <td><b>Work to be done : </b></td>
-                        </tr>
-                        <tr> 
-                            <td> <button class="focus-area">Designer</button> </td>
-                            <td> <button class="focus-area">Designer</button> </td>
-                        </tr>
-                        <tr> 
-                            <td> </br>  </td>
-                        </tr>
-                        <tr> 
-                            <td> <b> Budget :</b> </td>
-                        </tr>
-                        <tr> 
-                            <td> 3000.00 per day  </td>
-                            <td> <button class="blue-out-button" style="float:right; margin-right: 2em; "> Message</button>  </td>
-                        </tr>
-                        <tr> 
-                            <td> </br> </br> </br> </td>
-                        </tr>
-                        <tr> 
-                            <td colspan="2"> 
-                                <!-- <input type="submit" value="Invite for Job" class="pink-button" style="margin-left:7%;  margin-bottom:2em; width:80%;">   -->
-                                <button id="myBtn" class="pink-button" style="margin-left:7%;  margin-bottom:2em; width:80%; text-decoration:none;"> Apply for Job </button>
-                            </td>
-                        </tr>
-                    </table>
-            </div>
-    </div>
-</div>
-
-<!------------------------------------------next row------------------------------------------------------>
-<div class="customer-ad">
-    <div class="ad-space-row">
-<!---------------------------------------------------------------------------------------------------------------------------------------------->
-            <div class="ad-space" style="width: 30%; margin-left: 0em; margin-top:4em; margin-right:3em; font-size:13px;">
-                    <table style="margin-top: 2em; margin-left:1.5em; margin-right:0.8em; padding-bottom:5px;">
-                        <tr>
-                            <td rowspan="6">
-                                <img src="<?php echo URLROOT;?>/public/img/w3.jpg" alt="propic" class="img-worker"/>
-                            </td>
-                            <td>Mahadev Warun</td>
-                        </tr>
-                        <tr>
-                            <td><b>Colombo </b></td>
-                        </tr>
-                        <tr>
-                            <td>071 777 4445</td>
-                        </tr>
-                        <tr>
-                            <td style="color:#0526BA;">Last active 3d ago</td>
-                        </tr>
-                        <tr> 
-                            <td style="color: #F10B67;">Start Date: 01/11/2021</td>
-                        </tr>
-                        <tr> 
-                            <td style="color: #F10B67;">End Date: 05/12/2021</td>
-                        </tr>
-                        <tr> 
-                            <td> </br> </br> </br> </td>
-                        </tr>
-                        <tr> 
-                            <td> <b>Description</b> :</td>
-                        </tr>
-                        <tr> 
-                            <td colspan="2"> aaaaaa aaaa aaaaaaaa aaaa ................. ............... .........</td>
-                        </tr> 
-                        <tr> 
-                            <td> </br>  </td>
-                        </tr>
-                        <tr> 
-                            <td><b>Focus Area : </b></td>
-                            <td><b>Work to be done : </b></td>
-                        </tr>
-                        <tr> 
-                            <td> <button class="focus-area">Designer</button> </td>
-                            <td> <button class="focus-area">Designer</button> </td>
-                        </tr>
-                        <tr> 
-                            <td> </br>  </td>
-                        </tr>
-                        <tr> 
-                            <td> <b> Budget :</b> </td>
-                        </tr>
-                        <tr> 
-                            <td> 3000.00 per day  </td>
-                            <td> <button class="blue-out-button" style="float:right; margin-right: 2em; "> Message</button>  </td>
-                        </tr>
-                        <tr> 
-                            <td> </br> </br> </br> </td>
-                        </tr>
-                        <tr> 
-                            <td colspan="2"> 
-                                <!-- <input type="submit" value="Invite for Job" class="pink-button" style="margin-left:7%;  margin-bottom:2em; width:80%;">   -->
-                                <button id="myBtn" class="pink-button" style="margin-left:7%;  margin-bottom:2em; width:80%; text-decoration:none;"> Apply for Job </button>
-                            </td>
-                        </tr>
-                    </table>
-            </div>
-
-            <div class="ad-space" style="width: 30%; margin-left: 0em; margin-top:4em; margin-right:3em; font-size:13px;">
-                    <table style="margin-top: 2em; margin-left:1.5em; margin-right:0.8em; padding-bottom:5px;">
-                        <tr>
-                            <td rowspan="6">
-                                <img src="<?php echo URLROOT;?>/public/img/w3.jpg" alt="propic" class="img-worker"/>
-                            </td>
-                            <td>Mahadev Warun</td>
-                        </tr>
-                        <tr>
-                            <td><b>Colombo </b></td>
-                        </tr>
-                        <tr>
-                            <td>071 777 4445</td>
-                        </tr>
-                        <tr>
-                            <td style="color:#0526BA;">Last active 3d ago</td>
-                        </tr>
-                        <tr> 
-                            <td style="color: #F10B67;">Start Date: 01/11/2021</td>
-                        </tr>
-                        <tr> 
-                            <td style="color: #F10B67;">End Date: 05/12/2021</td>
-                        </tr>
-                        <tr> 
-                            <td> </br> </br> </br> </td>
-                        </tr>
-                        <tr> 
-                            <td> <b>Description</b> :</td>
-                        </tr>
-                        <tr> 
-                            <td colspan="2"> aaaaaa aaaa aaaaaaaa aaaa ................. ............... .........</td>
-                        </tr> 
-                        <tr> 
-                            <td> </br>  </td>
-                        </tr>
-                        <tr> 
-                            <td><b>Focus Area : </b></td>
-                            <td><b>Work to be done : </b></td>
-                        </tr>
-                        <tr> 
-                            <td> <button class="focus-area">Designer</button> </td>
-                            <td> <button class="focus-area">Designer</button> </td>
-                        </tr>
-                        <tr> 
-                            <td> </br>  </td>
-                        </tr>
-                        <tr> 
-                            <td> <b> Budget :</b> </td>
-                        </tr>
-                        <tr> 
-                            <td> 3000.00 per day  </td>
-                            <td> <button class="blue-out-button" style="float:right; margin-right: 2em; "> Message</button>  </td>
-                        </tr>
-                        <tr> 
-                            <td> </br> </br> </br> </td>
-                        </tr>
-                        <tr> 
-                            <td colspan="2"> 
-                                <!-- <input type="submit" value="Invite for Job" class="pink-button" style="margin-left:7%;  margin-bottom:2em; width:80%;">   -->
-                                <button id="myBtn" class="pink-button" style="margin-left:7%;  margin-bottom:2em; width:80%; text-decoration:none;"> Apply for Job </button>
-                            </td>
-                        </tr>
-                    </table>
-            </div>
-
-            <div class="ad-space" style="width: 30%; margin-left: 0em; margin-top:4em; margin-right:3em; font-size:13px;">
-                    <table style="margin-top: 2em; margin-left:1.5em; margin-right:0.8em; padding-bottom:5px;">
-                        <tr>
-                            <td rowspan="6">
-                                <img src="<?php echo URLROOT;?>/public/img/w3.jpg" alt="propic" class="img-worker"/>
-                            </td>
-                            <td>Mahadev Warun</td>
-                        </tr>
-                        <tr>
-                            <td><b>Colombo </b></td>
-                        </tr>
-                        <tr>
-                            <td>071 777 4445</td>
-                        </tr>
-                        <tr>
-                            <td style="color:#0526BA;">Last active 3d ago</td>
-                        </tr>
-                        <tr> 
-                            <td style="color: #F10B67;">Start Date: 01/11/2021</td>
-                        </tr>
-                        <tr> 
-                            <td style="color: #F10B67;">End Date: 05/12/2021</td>
-                        </tr>
-                        <tr> 
-                            <td> </br> </br> </br> </td>
-                        </tr>
-                        <tr> 
-                            <td> <b>Description</b> :</td>
-                        </tr>
-                        <tr> 
-                            <td colspan="2"> aaaaaa aaaa aaaaaaaa aaaa ................. ............... .........</td>
-                        </tr> 
-                        <tr> 
-                            <td> </br>  </td>
-                        </tr>
-                        <tr> 
-                            <td><b>Focus Area : </b></td>
-                            <td><b>Work to be done : </b></td>
-                        </tr>
-                        <tr> 
-                            <td> <button class="focus-area">Designer</button> </td>
-                            <td> <button class="focus-area">Designer</button> </td>
-                        </tr>
-                        <tr> 
-                            <td> </br>  </td>
-                        </tr>
-                        <tr> 
-                            <td> <b> Budget :</b> </td>
-                        </tr>
-                        <tr> 
-                            <td> 3000.00 per day  </td>
-                            <td> <button class="blue-out-button" style="float:right; margin-right: 2em; "> Message</button>  </td>
-                        </tr>
-                        <tr> 
-                            <td> </br> </br> </br> </td>
-                        </tr>
-                        <tr> 
-                            <td colspan="2"> 
-                                <!-- <input type="submit" value="Invite for Job" class="pink-button" style="margin-left:7%;  margin-bottom:2em; width:80%;">   -->
-                                <button id="myBtn" class="pink-button" style="margin-left:7%;  margin-bottom:2em; width:80%; text-decoration:none;"> Apply for Job </button>
-                            </td>
-                        </tr>
-                    </table>
-            </div>
-    </div>
-</div>
+            <?php endforeach; ?>
+        </div>
+     </div>
+</div> 
 
 <br/>
 
