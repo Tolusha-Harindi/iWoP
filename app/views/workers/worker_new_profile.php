@@ -8,8 +8,6 @@
 
 <div class="category" id="my-profile"> <p> My Profile </p> </div>
 
-<script type="text/javascript" src="<?php echo URLROOT;?> /public/js/pic.js"></script>
-
 <div class="form-space">
     <form action="<?php echo URLROOT;?> /workers/worker_new_profile" method="POST">
     <div id="profile-container" style="margin-left:40%; margin-top:10px;">
