@@ -8,9 +8,10 @@
 <link rel='stylesheet' href="<?php echo URLROOT;?> /public/css/home/popup.css"/>
 <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
 
-<a href="#work-schedule" class="top-button1" style="margin-top: -45em; margin-left:65em;"> Work Schedule </a>
-<a href="#pending-works" class="top-button2" style="margin-top: -45em; margin-left:77em;"> Pending Works </a>
+<a href="#work-schedule" class="top-button1" style="margin-top: -45em; margin-left:58em; width:8em;"> Work Schedule </a>
+<a href="#pending-works" class="top-button2" style="margin-top: -45em; margin-left:70em; width:8em;"> Pending Works </a>
 
 <!----------------------------------------Schedule calender------------------------------------------------>
 <div class="category" id="work-schedule" style="margin-top: -15em; margin-left: 8em;"> <p> Work Schedule</p> </div>
@@ -59,7 +60,6 @@
 </div>
 
 <script type="text/javascript" src="<?php echo URLROOT;?> /public/js/calendar.js"></script>
-
 
 <!----------------------------------------Popup message------------------------------------------------------>
 <div id="myModal" class="modal">
@@ -163,7 +163,6 @@
                     <th>Date</th>
                     <th>Time</th>
                     <th>Schedule Time</th>
-                    <th>Finish</th>
                 </tr>
             </thead>
 
@@ -175,7 +174,7 @@
                     <td><?php echo $work->date?></td>
                     <td><?php echo $work->start_time . "-" . $work->end_time?></td>
                     <td><?php echo $work->created_at?></td>
-                    <td> <input type="reset" class="pink-out-button" value="Finish"/></td>
+                    <!-- <td> <form action="<?php //echo URLROOT . "/workers/finish_work/". $work->schedule_id;?>" method="POST"><input type="reset" class="pink-out-button" value="Finish"/></form></td> -->
                 </tr>
                 <?php endforeach; ?>
                 
