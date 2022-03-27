@@ -97,18 +97,18 @@
           
         }
 
-        public function worker_sidenav() {
+         public function worker_sidenav() {
+            $prof = $this->includModel->findWorker();
 
-            //$users = $this->pageModel-> getUsers();
             $data = [
                 'title' => 'worker_sidenav',
-                //'users' => $users
-
+                'prof'=> $prof
             ];
 
             $this->view('includes/worker_sidenav', $data);
           
         }
+
 
 
     }
