@@ -273,7 +273,7 @@ public function worker_register() {
             $_SESSION['prof_pic'] = $user->prof_pic;
 
     
-            header('location:' . URLROOT . '/workers/worker_dashboard');
+            //header('location:' . URLROOT . '/workers/worker_dashboard');
             
             $data=$this->loginModel->findById($_SESSION['worker_id']);
             if($data!=null){
