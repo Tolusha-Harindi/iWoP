@@ -45,16 +45,7 @@ class Customer{
      }
 
 
-      //////select ads data - upadte ads   //////////////////////////////////////////////////////////////////////////////////////////////////////
-      public function findPostbyId($ads_id){
-        $this->db->query('SELECT * FROM customer_ads WHERE ads_id = :ads_id');
-
-        $this->db->bind(':ads_id', $ads_id);
-        $row = $this->db->single();
-
-        return $row;
-
-     }
+     
 
      //////upadte ads   //////////////////////////////////////////////////////////////////////////////////////////////////////
     
@@ -82,18 +73,6 @@ class Customer{
      }
 
 
-///  Delete ads /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    public function deletePost($ads_id){
-        $this->db->query('DELETE FROM customer_ads WHERE ads_id = :ads_id');
-
-        $this->db->bind(':ads_id', $ads_id);
-
-        if ($this->db->execute()) {
-            return true;
-        } else {
-            return false;
-        }
-    }
 
 
 
@@ -177,81 +156,7 @@ class Customer{
 
 
 
-    /////////////////  Customer Dashboard       /////////////////////////////////////////////////////////////////////////////////////////////////////////
-    public function pendingAds(){
-        $this->db->query("SELECT COUNT(*) AS pendingCount FROM customer_ads WHERE status= 'Pending'");
-
-        $results = $this->db->resultSet();
-        
-        return $results;
-    }
-
-    public function acceptedAds(){
-        $this->db->query("SELECT COUNT(*) AS acceptedCount FROM customer_ads WHERE status= 'accept'");
-
-        $results = $this->db->resultSet();
-        
-        return $results;
-    }
+  
 
 
-    public function rejectedAds(){
-        $this->db->query("SELECT COUNT(*) AS rejectedCount FROM customer_ads WHERE status= 'reject'");
-
-        $results = $this->db->resultSet();
-        
-        return $results;
-    }
-
-
-    ////////////////////////////////   Service Providers Page //////////////////////////////////////////////////////////////////////////////////////////////
-    public function viewWorkers(){
-        $this->db->query("SELECT *  FROM worker");
-
-        $results = $this->db->resultSet();
-        
-        return $results;
-    }
-
-
-
-
-
-
-
-
-    ////////////////////////  Service providers     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    public function searchWorkers($data){
-
-        $this->db->query('select * from worker where district = :district and city = :city and category= :category');
-
-        $this->db->bind(':district', $data['district']);
-        $this->db->bind(':city', $data['city']);
-        $this->db->bind(':category', $data['category']);
-        $results = $this->db->resultSet();
-        
-        return $results;
-        
-    }
-
-
-
-    ///////////////  Send request for worker    /////////////////////////////////////////////////////////////////////////////////////////////////////
-    public function requestWorkers($data){
-        $this->db->query('INSERT INTO worker (time, sdate, fname, address, amount) VALUES (:time, :sdate, :fdate,  :address, :amount)');
-
-        //Bind values
-        $this->db->bind(':time', $data['time']);
-        $this->db->bind(':sdate', $data['sdate']);
-        $this->db->bind(':fname', $data['fname']);
-        $this->db->bind(':address', $data['address']);
-        $this->db->bind(':amount', $data['amount']);
-
-        //execute the function
-        if($this->db->execute()){
-            return true;
-        }else{
-            return false;
-        }
-     }
 }
