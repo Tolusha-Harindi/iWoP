@@ -13,12 +13,19 @@
                         <li style="margin-top: -5px;">Edit profile </li>
                     </ul>
             </div>
+            
+            
         </div>
     </a>
 
     
     <div class="sidebar">
         <div class="description">
+        <!-- <a href="<?php echo URLROOT;?>/companies/companyverify" class='side-link'>
+                <ul class='side-list'>
+                    <li>Verify</li>
+                </ul>
+        </a> -->
         <a href="<?php echo URLROOT;?>/companies/company_dashboard" class='side-link'>
                 <ul class='side-list'>
                     <li>Dashboard</li>
